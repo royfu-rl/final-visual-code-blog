@@ -1,0 +1,60 @@
+{
+ "note_id": "6abf31bc000000001303e00d",
+ "url": "https://www.xiaohongshu.com/explore/6abf31bc000000001303e00d?xsec_token=ABkErRgXsGlWkArzUeQ5bcW5D1KlCuHJ5E4cvAixop_4c=&xsec_source=pc_search",
+ "type": "normal",
+ "title": "Claude Opus 5.5 怎么做视频的",
+ "desc": "别被「Opus 5.5 生成视频」这个词骗了。\n\t\nOpus 5.5 没在生成画面，它在写程序。10 秒视频就是 300 张静态图，每一帧该长什么样都由代码算出来，再让无头浏览器一帧帧截图，FFmpeg 拼成 MP4。\n\t\n所以强项很直白：文字不会错、能精确对齐旁白、改一行代码就重出、同一份代码每次结果一样。弱项也很直白：画人脸和动物一塌糊涂，一支 3 分钟短片吃掉每周额度约 7%。\n\t\n我更在意的是另一件事——这套流程已经有现成工具了，HyperFrames、Remotion 都给了智能体技能包。能不能出片，越来越取决于你会不会把需求讲清楚、有没有审美把关，而不是会不会写动画代码。\n\t\n#AI视频[话题]# #Claude[话题]# #opus[话题]# #创意短片[话题]# #科普[话题]# #Remotion[话题]# #AIGC[话题]# #效率工具[话题]# #AI编程[话题]#",
+ "tags": [
+  "AI视频",
+  "Claude",
+  "opus",
+  "创意短片",
+  "科普",
+  "Remotion",
+  "AIGC",
+  "效率工具",
+  "AI编程"
+ ],
+ "author": "卡帕东",
+ "user_id": "5a177f8e4eacab46931c0ebd",
+ "time": 1790915004000,
+ "ip_location": null,
+ "likes": "35",
+ "collects": "33",
+ "comments_count": "2",
+ "keywords": [
+  "Claude Code 做视频",
+  "Claude 做视频",
+  "Remotion"
+ ],
+ "duration": null,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040137/8d1c88cfccc0ad224e1b6bdae237a99e/spectrum/1040g0k0325qu31ol4a0049vqkuvos3ltq9ktau8!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040137/0f28676b168ca74bbeae908ec572f666/notes_pre_post/1040g3k8325qcr20skq7g49vqkuvos3lte9j3a6o!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040137/07b72375804a7fcd78bbf568ad6195a1/notes_pre_post/1040g3k8325qcr20skq8049vqkuvos3ltl7kl908!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040137/78ee46c1336324ad9ef3704b711f9c17/notes_pre_post/1040g3k8325qcr20skq8g49vqkuvos3ltu3oo410!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040137/56d31e9465a81f54cd2627effa0a7fd7/notes_pre_post/1040g3k8325qcr20skqbg49vqkuvos3lttp02efg!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040137/7d844e68bce0bf715935f8dafa9f8e80/notes_pre_post/1040g3k8325qcr20skq9g49vqkuvos3ltfp3mqt0!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040137/56f188addbe63ba9dbe45c89352d6a30/notes_pre_post/1040g3k8325qcr20skqa049vqkuvos3lttte9db0!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040137/2eaea8059a444cf00b3434cd32768137/notes_pre_post/1040g3k8325qcr20skqag49vqkuvos3ltaf3q5s8!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040137/d960982428785a42438b4e4558b3ec90/notes_pre_post/1040g3k8325qcr20skqb049vqkuvos3ltuq42kig!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "小红薯564AB07A",
+   "content": "所以建议博主顺便说说它与see dance的区别[捂脸R]",
+   "likes": "1"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg",
+  "images/1.jpg",
+  "images/2.jpg",
+  "images/3.jpg",
+  "images/4.jpg",
+  "images/5.jpg",
+  "images/6.jpg",
+  "images/7.jpg",
+  "images/8.jpg"
+ ]
+}

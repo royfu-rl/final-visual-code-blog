@@ -1,0 +1,52 @@
+{
+ "note_id": "6ae4a3ec00000000260245ae",
+ "url": "https://www.xiaohongshu.com/explore/6ae4a3ec00000000260245ae?xsec_token=ABDmuXPveVZgB4MUKjdl4yRpL5UscyZRo2KEHH1hXgGUM=&xsec_source=pc_search",
+ "type": "normal",
+ "title": "Codex做视频，Skill排行榜｜第一名7.3万星",
+ "desc": "剪一条视频 4 小时，一半时间在跟软件较劲。\n我把开源社区里视频类 Skill 扒了一遍，\n从剪辑到解说一条龙，第一名 7.3 万星断层领先。\n\t\n🏆 先看前四名\n· · ·\n1️⃣ OpenMontage ★73.2k\n开源智能体视频制作系统：12 条生产流水线、100 多个工具、700 多份技能文件，等于把一整个摄制组塞进你的 AI。断层第一。\n2️⃣ video-shotcraft ★15k\n电影感产品视频：124 张镜头配方卡、卡点、声音设计。我自己装过的其中一个，出片质感真的不一样。\n3️⃣ ffmpeg-skill ★4.1k\n本地剪辑台：42 个 ffmpeg 工具，剪片、加字幕、改画幅、调音量。全在自己电脑上跑，素材不上传。\n4️⃣ drama-skills ★3.6k\nAI 短剧／漫剧合集：剧本、角色资产、分镜、视频提示词一条龙。做短剧的人最常提的一套，中文友好。\n\t\n📦 5~8 名\n5️⃣ chengfeng-videocut ★3.2k：说人话剪片的剪辑 Agent\n6️⃣ anything2explainer ★2.9k：给个话题，出带配音字幕的解说视频\n7️⃣ OpenChatCut ★2.8k：对话式多轨剪辑器，说一句话改一处\n8️⃣ herk-edit-kit ★2.4k：竖屏短视频包，406 张动效卡按文稿挑镜头\n\t\n🛠 怎么装（三步）\n1️⃣ 图里复制仓库名\n2️⃣ 发给 Codex，让它自己装\n3️⃣ 一句话开工：“把这段口播剪掉废话，加字幕”\n\t\n· · ·\n💬 三句大实话 本地跑的那几个最踏实，素材不出电脑；\n第一名功能太猛，新手别一次全装；\nAI 出的是初剪，节奏和音乐还得你自己拿主意。\n\t\n👇 你最想让 AI 替你做哪种视频？\n口播／产品片／短剧／解说，评论区报一个，点最多的我拿真素材跑一遍。\n#AI实测[话题]#  #AI工具[话题]#  #视频剪辑[话题]#  #人工智能[话题]#  #效率提升[话题]# #办公神器howto[话题]# #AI使用技巧[话题]# #创作者必备[话题]# #codex[话题]#",
+ "tags": [
+  "AI实测",
+  "AI工具",
+  "视频剪辑",
+  "人工智能",
+  "效率提升",
+  "办公神器howto",
+  "AI使用技巧",
+  "创作者必备",
+  "codex"
+ ],
+ "author": "AI萧船长",
+ "user_id": "5cef5aa7000000000503f5d3",
+ "time": 1793419504000,
+ "ip_location": "江苏",
+ "likes": "335",
+ "collects": "643",
+ "comments_count": "2",
+ "keywords": [
+  "视频 skill"
+ ],
+ "duration": null,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040117/aed9b338470af4ef982d6038d875db73/spectrum/1040g0k0326uv41v46i005n7fbajhftejkhvrat8!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040117/5c8a52a3417ab259fddafcbe7eb9e934/spectrum/1040g0k0326uv41v46i0g5n7fbajhftej12632po!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040117/f7638c8fbad7c55398945d7f13bb827f/spectrum/1040g0k0326uv41v46i105n7fbajhftejqc7r07o!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040117/f80994aad19a8682497f8753d2a02706/spectrum/1040g0k0326uv41v46i1g5n7fbajhftejpv6h2mo!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040117/c7cadafb123c3b86ddd771e5ecf50c72/spectrum/1040g0k0326uv41v46i205n7fbajhftejabneggo!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040117/a19a48bf9b9f79bc588a5a861aebac3e/spectrum/1040g0k0326uv41v46i2g5n7fbajhftejdl433c8!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "晚晚的慢生活",
+   "content": "@点点 提到哪些skill，给出完整清单",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg",
+  "images/1.jpg",
+  "images/2.jpg",
+  "images/3.jpg",
+  "images/4.jpg",
+  "images/5.jpg"
+ ]
+}

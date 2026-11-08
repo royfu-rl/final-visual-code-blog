@@ -1,0 +1,86 @@
+{
+ "note_id": "6ae95be7000000000e02ec6c",
+ "url": "https://www.xiaohongshu.com/explore/6ae95be7000000000e02ec6c?xsec_token=ABUIkL4O4zdknKGujQbqDwengdMTsLjXBJDbaDvfSSJzE=&xsec_source=pc_search",
+ "type": "video",
+ "title": "这么强？据说是Fable 5.5，纯代码做动画",
+ "desc": "太震撼了，博主chetaslua表示，他用Claude Fable 5.5制作了2D动漫短片，全长约66秒。\n\t\n整个作品完全由代码驱动，通过AI自己编写的程序生成。\n\t\n全程没有调用AI视频模型，也没有用图像生成模型。\n\t\n这段动画据说只花了2小时40分钟，最终交付一个独立的HTML文件，分辨率1920×804，24帧每秒，连声音都包含在里面，直接用浏览器就能播放。\n\t\n这意味着，理论上想修改某个动作，不必像传统AI视频那样反复抽卡，可以直接修改对应的动画逻辑。\n\t\n有网友问作者，究竟是通过什么渠道获得了Fable 5.5模型的使用权限，作者没有回答。#Fable[话题]# #Claude[话题]# #AI视频[话题]#",
+ "tags": [
+  "Fable",
+  "Claude",
+  "AI视频"
+ ],
+ "author": "量子位",
+ "user_id": "6228870a0000000010008e88",
+ "time": 1793678311000,
+ "ip_location": "北京",
+ "likes": "142",
+ "collects": "59",
+ "comments_count": "25",
+ "keywords": [
+  "AI 写代码做动画",
+  "Claude 做视频",
+  "Claude 数据可视化动画",
+  "Claude 片头动画",
+  "代码生成视频",
+  "纯代码视频"
+ ],
+ "duration": 58,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040130/7af23650f2bdc09ef58b206a20cb8e25/spectrum/1040g0k03273ikgsh6e005oh8gs5413k8q4tlgg0!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "carsonfly",
+   "content": "和seadance还有很大差距",
+   "likes": "1"
+  },
+  {
+   "user": "想变成猫",
+   "content": "震撼[石化R]照这种进步速度，感觉一年内就能有效果很好的动画了[石化R]",
+   "likes": "2"
+  },
+  {
+   "user": "Jay",
+   "content": "Fable is fabulous , but fortunately I cannot use here",
+   "likes": "2"
+  },
+  {
+   "user": "小红薯6272E3B6",
+   "content": "[doge]日本匠人可以自豪的说我工资比他低",
+   "likes": "1"
+  },
+  {
+   "user": "呆呆的野指针",
+   "content": "这就非常牛了",
+   "likes": "0"
+  },
+  {
+   "user": "万物之主",
+   "content": "神 请降临吧[呃R]",
+   "likes": "0"
+  },
+  {
+   "user": "致远湖边小蟛蜞",
+   "content": "吉普力可以转换成js吗",
+   "likes": "0"
+  },
+  {
+   "user": "左心室",
+   "content": "@转生人 @香煎TA三文鱼搭配水煮土豆 @Hale",
+   "likes": "0"
+  },
+  {
+   "user": "事橙",
+   "content": "@小陈小陈心想事橙",
+   "likes": "0"
+  },
+  {
+   "user": "風起涅槃云飞扬",
+   "content": "丑的一批，这叫动画？",
+   "likes": "1"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

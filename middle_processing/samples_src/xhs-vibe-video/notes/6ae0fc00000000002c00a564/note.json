@@ -1,0 +1,47 @@
+{
+ "note_id": "6ae0fc00000000002c00a564",
+ "url": "https://www.xiaohongshu.com/explore/6ae0fc00000000002c00a564?xsec_token=ABkO331-1_JUvU687Ik2AJPzVV39svlVQh1qNpSsoNM9U=&xsec_source=pc_search",
+ "type": "normal",
+ "title": "干货｜Opus 5.5 做视频的 10 个 Skill",
+ "desc": "整理了10个视频制作 Skill 和工具包，配合 Agent 使用，按用途列好了：\n\t\n1. HyperFrames：网页动画转视频\n2. Hypit：参考视频结构复用与改编\n3. brag / brag-slim：产品代码库转发布短片\n4. Lemo-Opuscar：多种画风的代码短片\n5. Remotion Skills：视频编排、字幕与渲染\n6. onetake：一镜到底的连贯动效\n7. Claude Video Toolkit：脚本、配音、素材与导出\n8. Motion Video Kit：商业动效与审片迭代\n9. motion-graphics：口播补画、抠像与音效\n10. 归藏 Product Video：复用真实组件制作产品宣传片\n\t\n其中 brag-slim 和 Lemo-Opuscar 明确面向 Opus5.5，其余基本大多数 Agent 视频工具都能用。\n\t\n#Claude[话题]# #AI视频制作[话题]# #Skills[话题]# #AI工具[话题]# #干货分享[话题]# #opus55[话题]# #opus55短片[话题]# #howto用好AI[话题]# #内容营销[话题]#",
+ "tags": [
+  "Claude",
+  "AI视频制作",
+  "Skills",
+  "AI工具",
+  "干货分享",
+  "opus55",
+  "opus55短片",
+  "howto用好AI",
+  "内容营销"
+ ],
+ "author": "云谷404",
+ "user_id": "5ca2df530000000017011b47",
+ "time": 1793129472000,
+ "ip_location": "浙江",
+ "likes": "167",
+ "collects": "292",
+ "comments_count": "",
+ "keywords": [
+  "Claude Code 做视频",
+  "Claude 做视频",
+  "Claude 口播视频",
+  "HyperFrames",
+  "Hypit 视频",
+  "Motion Canvas",
+  "Opus5.5 做视频",
+  "Remotion",
+  "opuscar",
+  "视频 skill"
+ ],
+ "duration": null,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040126/7b41568afe8629b1312755f397101053/spectrum/1040g0k0326rcrdunk6005n52rt9lq6q762cod68!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040126/3c83a764949e4b966f47f5501b534184/spectrum/1040g0k0326rcrdunk60g5n52rt9lq6q73fvo6c0!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [],
+ "image_files": [
+  "images/0.jpg",
+  "images/1.jpg"
+ ]
+}

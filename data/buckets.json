@@ -1,0 +1,1006 @@
+{
+ "bench": {
+  "Design2Code": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "WebCode2M": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "Web2Code": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "含网页 QA 子任务，但生成侧是截图→单页 HTML"
+  },
+  "Sketch2Code": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "有多轮反馈/主动提问，但产物是单页静态网页还原，主轴仍是草图→HTML"
+  },
+  "Image2Struct": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "含 LaTeX/乐谱，非纯网页；但都是「渲染回图比对」的单文件静态视觉还原"
+  },
+  "Interaction2Code": {
+   "bucket": "html",
+   "confidence": "low",
+   "note": "单页交互还原：产物是单文件 HTML/CSS/JS 且按视觉相似度评，故归 html；但主轴是动态交互行为，离 webdev 很近"
+  },
+  "DesignBench": {
+   "bucket": "webdev",
+   "confidence": "high",
+   "note": "React/Vue/Angular 多框架工程，含生成/编辑/修复三类任务"
+  },
+  "WebUIBench": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "CANVAS": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=gui：VLM 调设计软件工具操作 UI，语言无关，不写代码"
+  },
+  "Figma2Code": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "产出 HTML+Tailwind 单页，主轴是设计稿视觉保真"
+  },
+  "WebIGBench": {
+   "bucket": "html",
+   "confidence": "low",
+   "note": "单页 HTML/CSS/JS 的交互还原，用 UI 自动化回放交互；归 html 因产物是单文件还原，但「执行测试」属性靠近 webdev"
+  },
+  "UI2App": {
+   "bucket": "webdev",
+   "confidence": "high",
+   "note": "多页截图→React+TS 可执行应用，agent 实测"
+  },
+  "WebDev Arena": {
+   "bucket": "webdev",
+   "confidence": "high",
+   "note": ""
+  },
+  "WebGen-Bench": {
+   "bucket": "webdev",
+   "confidence": "high",
+   "note": ""
+  },
+  "FullFront": {
+   "bucket": "html",
+   "confidence": "low",
+   "note": "产物是单页 HTML/CSS/JS，但号称「前端全流程」且含页面感知 QA，介于 html 与 webdev 之间"
+  },
+  "ArtifactsBench": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "单文件自包含 artifact（Web 组件/SVG/小游戏），小游戏只是子集，主轴是单文件可视化产物"
+  },
+  "UI-Bench": {
+   "bucket": "webdev",
+   "confidence": "high",
+   "note": "评 text-to-app 产品产出的应用设计质量"
+  },
+  "WebGen-V Bench": {
+   "bucket": "html",
+   "confidence": "low",
+   "note": "指令→单页 HTML 并按分区打分，归 html；但属 WebGen 系（多文件网站）谱系"
+  },
+  "FronTalk": {
+   "bucket": "webdev",
+   "confidence": "high",
+   "note": "多轮需求对话 + agent 实测"
+  },
+  "WebCoderBench": {
+   "bucket": "webdev",
+   "confidence": "high",
+   "note": "指令→Web App，24 指标真实需求评测"
+  },
+  "1D-Bench": {
+   "bucket": "webdev",
+   "confidence": "high",
+   "note": "产物是固定工具链下的可执行 React 工程，且为多轮组件级编辑"
+  },
+  "Vibe Code Bench": {
+   "bucket": "webdev",
+   "confidence": "high",
+   "note": ""
+  },
+  "WebCompass": {
+   "bucket": "webdev",
+   "confidence": "high",
+   "note": "React/Vue/Vanilla 三框架 + 生成/编辑/修复全生命周期"
+  },
+  "The Single-File Test": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "Cookie-Bench": {
+   "bucket": "webdev",
+   "confidence": "high",
+   "note": "React agent scaffold + agent 自主交互三阶段评测"
+  },
+  "I-WebGenBench": {
+   "bucket": "webdev",
+   "confidence": "high",
+   "note": "论文→React+TS 交互式科学 web 应用，agent 实测交互逻辑"
+  },
+  "LongWebBench": {
+   "bucket": "html",
+   "confidence": "low",
+   "note": "单页长 HTML 的结构保真为主轴，故归 html；但另有 DOM 增强 agent 验证多步交互，带 webdev 色彩"
+  },
+  "LiveEvalBench": {
+   "bucket": "webdev",
+   "confidence": "high",
+   "note": "开放前端项目，多 agent 构建/审查/UI 测试"
+  },
+  "SVG-Bench（StarVector）": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "ChartX": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "chart-to-code（matplotlib）"
+  },
+  "Plot2Code": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "ChartMimic": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "同名条目在 bench_meta_web 与 bench_meta_video 各出现一次，同归 html"
+  },
+  "VGBench": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "SVG/TikZ/Graphviz 静态矢量图代码"
+  },
+  "ChartEdit": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "SVGenius": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "ChartM³": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "UniSVG": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "SArena（InternSVG）": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "Chart2Code": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "ChartEditBench": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "多轮增量编辑，但对象是 matplotlib 图表绘图代码，按主要考察对象归 html"
+  },
+  "VectorGym": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "Vision2Code": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "跨领域（图表/几何/文档/3D）但统一要求写 Python+matplotlib 渲染代码，属静态图转码"
+  },
+  "UFO（L3GO）": {
+   "bucket": "blender",
+   "confidence": "high",
+   "note": ""
+  },
+  "BlenderGym": {
+   "bucket": "blender",
+   "confidence": "high",
+   "note": ""
+  },
+  "BlenderBench（VIGA）": {
+   "bucket": "blender",
+   "confidence": "high",
+   "note": ""
+  },
+  "3DCodeBench": {
+   "bucket": "blender",
+   "confidence": "high",
+   "note": "Blender 5.0 程序化代码"
+  },
+  "WorldCoder-Bench": {
+   "bucket": "3js",
+   "confidence": "high",
+   "note": "文本→Three.js 可交互 3D 世界"
+  },
+  "P3D-Bench": {
+   "bucket": "3js",
+   "confidence": "low",
+   "note": "四种目标格式（minimal JSON / OpenSCAD / CadQuery / Three.js）混合，跨 3js 与 cad；按「参数化 3D 代码」主轴归 3js"
+  },
+  "4DBuildBench（SimWorlds）": {
+   "bucket": "blender",
+   "confidence": "high",
+   "note": "动态 4D 场景，但考察的是 bpy 场景构建与物理求解器配置，不是出片，故留在 blender"
+  },
+  "Nova3D-Bench": {
+   "bucket": "blender",
+   "confidence": "high",
+   "note": ""
+  },
+  "3DHarnessBench": {
+   "bucket": "blender",
+   "confidence": "high",
+   "note": ""
+  },
+  "Text2CAD": {
+   "bucket": "cad",
+   "confidence": "high",
+   "note": "CAD 构造序列（DeepCAD 格式）"
+  },
+  "CADPrompt": {
+   "bucket": "cad",
+   "confidence": "high",
+   "note": "CadQuery"
+  },
+  "VideoCAD": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=gui：Onshape 里的 UI 操作序列，语言无关"
+  },
+  "CADTests（CADTestBench）": {
+   "bucket": "cad",
+   "confidence": "high",
+   "note": ""
+  },
+  "BenchCAD": {
+   "bucket": "cad",
+   "confidence": "high",
+   "note": ""
+  },
+  "CADBench": {
+   "bucket": "cad",
+   "confidence": "high",
+   "note": ""
+  },
+  "Text2CAD-Bench": {
+   "bucket": "cad",
+   "confidence": "high",
+   "note": ""
+  },
+  "MUSE": {
+   "bucket": "cad",
+   "confidence": "high",
+   "note": "CadQuery 装配体"
+  },
+  "CADEngBench": {
+   "bucket": "cad",
+   "confidence": "high",
+   "note": ""
+  },
+  "CADWorld": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=gui：桌面 CAD 软件 computer-use，语言无关"
+  },
+  "T³Bench": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=diffusion-asset"
+  },
+  "GPTEval3D": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=diffusion-asset"
+  },
+  "GT23D-Bench": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=diffusion-asset"
+  },
+  "MATE-3D": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=diffusion-asset"
+  },
+  "3DGen-Bench": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=diffusion-asset"
+  },
+  "Hi3DEval": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=diffusion-asset"
+  },
+  "V-GameGym": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=game：Pygame"
+  },
+  "GameDevBench": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=game：Godot"
+  },
+  "PlayEval（PlayCoder）": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=game：agent 试玩 GUI 应用/游戏验证可玩性"
+  },
+  "GBQA": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=game：游戏找 bug"
+  },
+  "PlaytestArena": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=game"
+  },
+  "GameCraft-Bench": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=game：Godot"
+  },
+  "JAMER / JamBench": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=game：Godot GDScript 项目"
+  },
+  "GameEngineBench": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=game：UE5 C++"
+  },
+  "OSWorld": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=gui"
+  },
+  "ScreenSpot-Pro": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=gui"
+  },
+  "CutVerse": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=gui：剪辑软件长程操作"
+  },
+  "AutomaTikZ": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "TikZ 静态科学矢量图代码，非动画，按「静态图即代码」归 html"
+  },
+  "DeTikZify": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "同上，TikZ 静态矢量图逆向代码"
+  },
+  "DiagramAgent": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "TeX/DOT 静态图代码"
+  },
+  "AutoPresent · SlidesBench": {
+   "bucket": "ppt",
+   "confidence": "high",
+   "note": "Python SlidesLib 幻灯片代码"
+  },
+  "PPTAgent · PPTEval": {
+   "bucket": "ppt",
+   "confidence": "high",
+   "note": "python-pptx 套模板编辑"
+  },
+  "TheoremExplainBench": {
+   "bucket": "manim",
+   "confidence": "high",
+   "note": ""
+  },
+  "Paper2Poster · PaperQuiz": {
+   "bucket": "ppt",
+   "confidence": "high",
+   "note": "海报用 python-pptx 生成，归 ppt"
+  },
+  "PresentAgent · PresentEval": {
+   "bucket": "ppt",
+   "confidence": "high",
+   "note": "最终产物是配音演讲视频，但代码产物是 python-pptx 幻灯片，视频只是渲帧+TTS 合成，按代码对象归 ppt"
+  },
+  "Code2Video · MMMC": {
+   "bucket": "manim",
+   "confidence": "high",
+   "note": ""
+  },
+  "DCG-Bench · OpusAnimation": {
+   "bucket": "video_web",
+   "confidence": "high",
+   "note": "动画图表代码走 HTML/JS(ECharts) + 逐帧截图成片，Web 技术栈出视频"
+  },
+  "Paper2Video": {
+   "bucket": "ppt",
+   "confidence": "high",
+   "note": "LaTeX(Beamer) 幻灯片 + 讲解视频，代码对象是 Beamer 幻灯片，故归 ppt 而非 video_*"
+  },
+  "DTVBench · JanusCoder": {
+   "bucket": "manim",
+   "confidence": "high",
+   "note": "task_form 明示 Manim 引擎；另含 Mathematica 等少量可视化任务"
+  },
+  "VisualEDU": {
+   "bucket": "manim",
+   "confidence": "high",
+   "note": ""
+  },
+  "MermaidSeqBench": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "Mermaid 静态时序图代码，归静态图即代码 html"
+  },
+  "Vector Prism": {
+   "bucket": "video_web",
+   "confidence": "high",
+   "note": "SVG→CSS 动画"
+  },
+  "SimuScene": {
+   "bucket": "manim",
+   "confidence": "low",
+   "note": "Python(cv2) 直写 mp4 的物理动画代码：既不是 Web 栈也不是 Blender，按「代码驱动的动画视频引擎」同类归 manim"
+  },
+  "MMLottieBench · OmniLottie": {
+   "bucket": "video_web",
+   "confidence": "high",
+   "note": "Lottie 矢量动画"
+  },
+  "Graphic-Design-Bench": {
+   "bucket": "video_web",
+   "confidence": "low",
+   "note": "含静态图形设计与 Lottie 动画两部分；本条在 video 表中以动画轴（Lottie FrameSSIM）为主，故归 video_web，静态部分其实偏 html"
+  },
+  "VAnim · SVGAnim-134k": {
+   "bucket": "video_web",
+   "confidence": "high",
+   "note": "SVG 动画"
+  },
+  "3JSBench": {
+   "bucket": "3js",
+   "confidence": "high",
+   "note": "文生 three.js，确定性几何检查"
+  },
+  "BlenderWorld": {
+   "bucket": "blender",
+   "confidence": "high",
+   "note": "bpy 场景创作，9 个 domain"
+  }
+ },
+ "pipe": {
+  "pix2code": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "含 iOS/Android DSL，但确立的是截图→代码配对范式，归 html"
+  },
+  "WebSight": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "Design2Code": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "Vision2UI → WebCode2M": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "UICoder": {
+   "bucket": "html",
+   "confidence": "low",
+   "note": "文本→SwiftUI：不是 Web 栈，但属「单文件声明式 UI 渲染代码 + 编译/CLIP 视觉筛选」，在现有桶里最接近 html"
+  },
+  "Web2Code": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "Sketch2Code": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "Interaction2Code": {
+   "bucket": "html",
+   "confidence": "low",
+   "note": "同 bench 条目：单页交互式 HTML 还原，主轴是动态交互，归 html 但接近 webdev"
+  },
+  "WebGen-Bench / WebGen-Instruct": {
+   "bucket": "webdev",
+   "confidence": "high",
+   "note": "指令→多文件网站 + GUI 测试用例 + Bolt.diy 轨迹"
+  },
+  "ArtifactsBench": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "单文件交互 artifact + checklist reward 模板"
+  },
+  "ScreenCoder": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "WebGen-Agent": {
+   "bucket": "webdev",
+   "confidence": "high",
+   "note": "多步 agent 轨迹，截图分 + GUI 测试分做 step reward"
+  },
+  "WebRenderBench / ALISA": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "截图→网页代码 + 渲染一致性奖励"
+  },
+  "ReLook": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "3,000 个纯前端任务的生成-诊断-修复 RL，视觉 critic 看截图打分，仍属单页视觉还原"
+  },
+  "WebVIA": {
+   "bucket": "html",
+   "confidence": "low",
+   "note": "产物是单页交互式 HTML/CSS/JS，归 html；但数据由 agent 多状态探索产出并验证交互，带 webdev 色彩"
+  },
+  "UI2Code^N": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "起草/打磨/编辑多轮任务，但对象始终是截图→单页 HTML"
+  },
+  "AnyDoc / DocHTML": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "HTML/CSS 文档合成"
+  },
+  "MT-Web2Code": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "多轮修复轨迹，但对象是单页网页还原（反向腐蚀金标页），按对象归 html"
+  },
+  "AutomaTikZ / DaTikZ": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "TikZ 静态矢量图语料"
+  },
+  "StarVector / SVG-Stack": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "DeTikZify / DaTikZv2": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "ReachQA (CIT)": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "matplotlib 绘图代码当中介造图+QA，归 chart-to-code 侧 html"
+  },
+  "LLM4SVG / SVGX-SFT": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "ChartCoder / Chart2Code-160k": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "CoSyn-400K": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "Python/HTML/LaTeX 渲染代码造图"
+  },
+  "OmniSVG / MMSVG-2M": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "ChartGen": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "ChartGalaxy": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "D3.js 信息图程序化合成"
+  },
+  "RLRF": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "图像→SVG 的渲染反馈 RL"
+  },
+  "Reason-SVG / SVGX-DwT-10k": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "VisCoder / VisCode-200K": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "UniSVG": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "SVGen / SVG-1M": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "ChartMaster / ReChartPrompt-240K": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": ""
+  },
+  "InternSVG / SAgoge": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "16M SVG 全任务库，含 61K 动画子集；主体是静态 SVG，故归 html（动画侧见 pipe 里的 InternSVG 条）"
+  },
+  "VisCoder2 / VisCode-Multi-679K": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "12 语言可视化代码"
+  },
+  "VinciCoder": {
+   "bucket": "html",
+   "confidence": "high",
+   "note": "图→多域渲染代码 + 修正对"
+  },
+  "DeepCAD": {
+   "bucket": "cad",
+   "confidence": "high",
+   "note": ""
+  },
+  "Infinigen": {
+   "bucket": "blender",
+   "confidence": "high",
+   "note": "Blender 程序化生成器"
+  },
+  "SceneCraft": {
+   "bucket": "blender",
+   "confidence": "high",
+   "note": ""
+  },
+  "Infinigen Indoors": {
+   "bucket": "blender",
+   "confidence": "high",
+   "note": ""
+  },
+  "Text2CAD": {
+   "bucket": "cad",
+   "confidence": "high",
+   "note": ""
+  },
+  "CAD-MLLM / Omni-CAD": {
+   "bucket": "cad",
+   "confidence": "high",
+   "note": ""
+  },
+  "CAD-Recode": {
+   "bucket": "cad",
+   "confidence": "high",
+   "note": "CadQuery"
+  },
+  "BlenderLLM / BlendNet": {
+   "bucket": "blender",
+   "confidence": "high",
+   "note": ""
+  },
+  "CADFusion": {
+   "bucket": "cad",
+   "confidence": "high",
+   "note": ""
+  },
+  "BlenderGym": {
+   "bucket": "blender",
+   "confidence": "high",
+   "note": ""
+  },
+  "CAD-Coder（VLM 版）/ GenCAD-Code": {
+   "bucket": "cad",
+   "confidence": "high",
+   "note": ""
+  },
+  "CAD-Coder（文本版）": {
+   "bucket": "cad",
+   "confidence": "high",
+   "note": ""
+  },
+  "cadrille": {
+   "bucket": "cad",
+   "confidence": "high",
+   "note": ""
+  },
+  "LL3M": {
+   "bucket": "blender",
+   "confidence": "high",
+   "note": ""
+  },
+  "MeshCoder": {
+   "bucket": "blender",
+   "confidence": "high",
+   "note": "点云→分部件 bpy 代码"
+  },
+  "BlenderRAG": {
+   "bucket": "blender",
+   "confidence": "high",
+   "note": ""
+  },
+  "Objaverse": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=diffusion-asset：纯 3D 资产库"
+  },
+  "Cap3D": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=diffusion-asset：资产 caption 管线"
+  },
+  "Objaverse-XL": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=diffusion-asset"
+  },
+  "G-Objaverse（RichDreamer）": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=diffusion-asset：多视图渲染通道"
+  },
+  "DiffuRank": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=diffusion-asset：caption 去幻觉"
+  },
+  "GT23D-Bench 400K": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=diffusion-asset"
+  },
+  "Objaverse++": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=diffusion-asset：资产质量标签"
+  },
+  "MarioGPT": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=game：瓦片关卡生成"
+  },
+  "Level Generation Through LLMs": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=game：Sokoban 关卡"
+  },
+  "IDGE": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=game：LLM 当游戏引擎"
+  },
+  "Game-RL / Code2Logic / GameQA": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=game：游戏代码产 VQA"
+  },
+  "V-GameGym": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=game：Pygame"
+  },
+  "Code World Models": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=game：游戏规则→世界模型代码"
+  },
+  "GameDevBench": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=game"
+  },
+  "OpenGame / GameCoder-27B": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=game：Phaser 网页游戏"
+  },
+  "GameCWM 蒸馏": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=game"
+  },
+  "PlayTrain": {
+   "bucket": "drop",
+   "confidence": "high",
+   "note": "reason=game：单文件 JS 游戏当 RL 环境"
+  },
+  "Keyframer": {
+   "bucket": "video_web",
+   "confidence": "high",
+   "note": "SVG + CSS 网页动画"
+  },
+  "AutoPresent": {
+   "bucket": "ppt",
+   "confidence": "high",
+   "note": "Python SlidesLib → .pptx"
+  },
+  "PPTAgent": {
+   "bucket": "ppt",
+   "confidence": "high",
+   "note": "python-pptx"
+  },
+  "TheoremExplainAgent": {
+   "bucket": "manim",
+   "confidence": "high",
+   "note": ""
+  },
+  "MoVer": {
+   "bucket": "video_web",
+   "confidence": "high",
+   "note": "JavaScript(GSAP) 网页矢量动画"
+  },
+  "Paper2Poster": {
+   "bucket": "ppt",
+   "confidence": "high",
+   "note": "python-pptx 海报"
+  },
+  "manimator": {
+   "bucket": "manim",
+   "confidence": "high",
+   "note": ""
+  },
+  "PresentAgent": {
+   "bucket": "ppt",
+   "confidence": "high",
+   "note": "pptx 渲帧 + TTS 合成视频，代码对象是幻灯片，故归 ppt"
+  },
+  "Code2Video": {
+   "bucket": "manim",
+   "confidence": "high",
+   "note": ""
+  },
+  "OpusAnimation": {
+   "bucket": "video_web",
+   "confidence": "high",
+   "note": "HTML/JS(ECharts) 逐帧截图 → mp4"
+  },
+  "Paper2Video": {
+   "bucket": "ppt",
+   "confidence": "high",
+   "note": "LaTeX(Beamer) + Python，代码对象是 Beamer 幻灯片"
+  },
+  "InternSVG": {
+   "bucket": "video_web",
+   "confidence": "low",
+   "note": "此条在 video 表中代表含动画的 SVG（SAgoge 动画子集 61K/122K），故归 video_web；同一工作的数据管线主体在 pipe 里以「InternSVG / SAgoge」归 html"
+  },
+  "SimuScene": {
+   "bucket": "manim",
+   "confidence": "low",
+   "note": "Python(cv2) 直写 mp4：非 Web 栈非 Blender，按代码驱动动画引擎同类归 manim"
+  },
+  "OmniLottie": {
+   "bucket": "video_web",
+   "confidence": "high",
+   "note": "Lottie JSON"
+  },
+  "LottieGPT": {
+   "bucket": "video_web",
+   "confidence": "high",
+   "note": "Lottie JSON"
+  },
+  "VAnim": {
+   "bucket": "video_web",
+   "confidence": "high",
+   "note": "SVG 动画"
+  },
+  "ManimAgent": {
+   "bucket": "manim",
+   "confidence": "high",
+   "note": ""
+  },
+  "Lemo-Opuscar": {
+   "bucket": "video_web",
+   "confidence": "high",
+   "note": "JS canvas/WebGL 逐帧成片"
+  },
+  "PDoomVideo": {
+   "bucket": "video_web",
+   "confidence": "high",
+   "note": "p5.js 逐帧 MV"
+  },
+  "huashu-art-motion": {
+   "bucket": "video_web",
+   "confidence": "high",
+   "note": "JS Canvas 逐帧截图 → mp4"
+  },
+  "3b1b/manim": {
+   "bucket": "manim",
+   "confidence": "high",
+   "note": "Manim 渲染器本体"
+  },
+  "Manim Community": {
+   "bucket": "manim",
+   "confidence": "high",
+   "note": ""
+  },
+  "Remotion": {
+   "bucket": "video_web",
+   "confidence": "high",
+   "note": "TypeScript/React + 无头 Chromium 逐帧"
+  },
+  "Motion Canvas": {
+   "bucket": "video_web",
+   "confidence": "high",
+   "note": "TypeScript Canvas 渲染器"
+  },
+  "ranim": {
+   "bucket": "manim",
+   "confidence": "high",
+   "note": "Rust(wgpu) 实现的 Manim 同类动画引擎，按引擎同类归 manim"
+  },
+  "HyperFrames": {
+   "bucket": "video_web",
+   "confidence": "high",
+   "note": "HTML/CSS/JS 无头 Chrome 逐帧"
+  },
+  "Hypit": {
+   "bucket": "video_web",
+   "confidence": "low",
+   "note": ".svml 视频 DSL / 编译器，面向 agent；底层是纯代码视觉 + 字幕/B-roll/特效编译，推测走 Web/ffmpeg 栈，故归 video_web"
+  },
+  "3DCode": {
+   "bucket": "blender",
+   "confidence": "high",
+   "note": ""
+  },
+  "3D-Front-Code": {
+   "bucket": "blender",
+   "confidence": "high",
+   "note": ""
+  },
+  "3DCodeVerse": {
+   "bucket": "blender",
+   "confidence": "high",
+   "note": "多栈，按主力 Blender 归桶"
+  },
+  "BlenderLore": {
+   "bucket": "blender",
+   "confidence": "high",
+   "note": ""
+  }
+ }
+}

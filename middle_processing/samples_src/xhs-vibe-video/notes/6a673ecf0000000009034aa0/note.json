@@ -1,0 +1,101 @@
+{
+ "note_id": "6a673ecf0000000009034aa0",
+ "url": "https://www.xiaohongshu.com/explore/6a673ecf0000000009034aa0?xsec_token=ABIi79alD0g3dxyIjEUCPSqTf_mwOKvhcM0TlAzSIFtT0=&xsec_source=pc_search",
+ "type": "normal",
+ "title": "用AI做视频动效和分镜设计简直太爽了",
+ "desc": "最新一期视频里大概80%左右的分镜设计和动效工作都是由Agent写代码实现的\n\t\n全部由Fable 5 + Remotion产出，带Alpha通道，丢进AE里合成就完事儿\n\t\n几乎一帧没K，只是最后做了一些纹理合成和转场\n\t\n天才程序员兼任天才动效师成功 ✅️\n\t\n做 Vibe Motion 的教程有朋友会看吗 [暗中观察R]\n\t\n#AI动画[话题]# #howto实现一万种vibecoding[话题]# #howto解锁创意剪辑[话题]# #vibecoding[话题]# #AI新手村[话题]#",
+ "tags": [
+  "AI动画",
+  "howto实现一万种vibecoding",
+  "howto解锁创意剪辑",
+  "vibecoding",
+  "AI新手村",
+  "Vibe Motion教程意向征集！！"
+ ],
+ "author": "Nenly同学",
+ "user_id": "623dd3550000000010005437",
+ "time": 1785151183000,
+ "ip_location": null,
+ "likes": "1288",
+ "collects": "1255",
+ "comments_count": "87",
+ "keywords": [
+  "Motion Canvas",
+  "vibe video"
+ ],
+ "duration": null,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040104/35b3b5300b30f847cb764b93408a0f1c/notes_pre_post/1040g3k03234g31g27u4g5ohtqdak0l1nefrf72g!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040104/57949a29a2680ce64074526a7e0e4678/notes_pre_post/1040g3k03234g31g27u505ohtqdak0l1nf6iaqbg!nd_dft_wgth_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040104/28c1d133960e4193680a3650f0fb3abb/notes_pre_post/1040g3k03234g31g27u5g5ohtqdak0l1nfcn6940!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040104/86230246d164b08bd58134ac41ee3b2d/notes_pre_post/1040g3k03234g31g27u605ohtqdak0l1ne1ih00g!nd_dft_wgth_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040104/6761c605313fa999ebf30a8b10d2a593/notes_pre_post/1040g3k03234g31g27u6g5ohtqdak0l1n105587g!nd_dft_wgth_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040104/5b66287c3e040c1fdd1bd619ccdd3fa5/notes_pre_post/1040g3k03234giipgno005ohtqdak0l1ndg0v7a8!nd_dft_wgth_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040104/7522237a6f35447ced9bb65eba5658c8/notes_pre_post/1040g3k03234giipgno0g5ohtqdak0l1n9ci99q8!nd_dft_wgth_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040104/83bce01a339782241f3d158cf17ec366/notes_pre_post/1040g3k03234giipgno105ohtqdak0l1nlso9ohg!nd_dft_wgth_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040104/ee06c159f140771b5c72313c65ec0cf4/notes_pre_post/1040g3k03234giipgno1g5ohtqdak0l1nu1n6ceo!nd_dft_wgth_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "理论家",
+   "content": "P1怎么做的呀[害羞R]",
+   "likes": "3"
+  },
+  {
+   "user": "好运",
+   "content": "图二的文字效果也是AI做的吗",
+   "likes": "2"
+  },
+  {
+   "user": "阿什",
+   "content": "老师对代码零基础的话能吸收你的教程嘛",
+   "likes": "1"
+  },
+  {
+   "user": "Yan澳洲买房军师",
+   "content": "alpha通道是啥",
+   "likes": "1"
+  },
+  {
+   "user": "明義 MingYi",
+   "content": "牛掰 我学！",
+   "likes": "1"
+  },
+  {
+   "user": "小岛Travis",
+   "content": "效果很好呀，还以为是手搓的[偷笑R]",
+   "likes": "0"
+  },
+  {
+   "user": "momo",
+   "content": "感觉remotion好难，好像要代码驱动，但是我完全是代码小白[捂脸R]",
+   "likes": "1"
+  },
+  {
+   "user": "柯白的故事",
+   "content": "P2 是怎么做出来的？提示词是什么 老师",
+   "likes": "0"
+  },
+  {
+   "user": "陈子酸",
+   "content": "P1的特效是如何实现的",
+   "likes": "0"
+  },
+  {
+   "user": "浩然君",
+   "content": "remotion 试了一段时间，也做了一些项目，整体出来的东西 ppt 感还是很强，每个元素的运动曲线还是要单独去调，摄像机运动也没有 ae 做的真实。总结:remotion 目前只适合自媒体做简单数据可视化和基础的特效包装。[微笑R]",
+   "likes": "2"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg",
+  "images/1.jpg",
+  "images/2.jpg",
+  "images/3.jpg",
+  "images/4.jpg",
+  "images/5.jpg",
+  "images/6.jpg",
+  "images/7.jpg",
+  "images/8.jpg"
+ ]
+}

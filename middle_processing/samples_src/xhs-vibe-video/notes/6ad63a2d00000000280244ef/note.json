@@ -1,0 +1,73 @@
+{
+ "note_id": "6ad63a2d00000000280244ef",
+ "url": "https://www.xiaohongshu.com/explore/6ad63a2d00000000280244ef?xsec_token=ABMdcVeXBGNL2R_8HNS5ABLpSqYkOjJMkdvIzcRLMVezE=&xsec_source=pc_search",
+ "type": "video",
+ "title": "Claude 用代码造了一个古希腊世界 🏛️",
+ "desc": "提示词在评论中👇👇👇\n开发者 Leon Lin 用 Claude Opus 5.5 + Three.js，从零搭建了一个细节惊人的古希腊世界。\n\t\n没有使用外部模型、贴图素材，建筑、雕像、树木、瀑布，甚至光影和材质，全部通过代码生成。\n\t\n据作者分享，整个项目经历了约 45 小时、55 个子 Agent 的反复迭代，最终渲染出 4K 视频。\n\t\n看完最大的感受是，AI 写代码已经不只是做网页和工具了，连这种电影级场景也开始有人尝试了。\n\t\n作者还公开了提示词和项目源码\n\t\n来源：X @LexnLin（Leon Lin）\n\t\n#Claude[话题]# #opus[话题]#  #ThreeJS[话题]# #AI编程[话题]# #AIGC[话题]# #3D可视化[话题]# #创意编程[话题]# #视觉设计[话题]##我这行的AI路[话题]#",
+ "tags": [
+  "Claude",
+  "opus",
+  "ThreeJS",
+  "AI编程",
+  "AIGC",
+  "3D可视化",
+  "创意编程",
+  "视觉设计",
+  "我这行的AI路"
+ ],
+ "author": "乌头蜜",
+ "user_id": "601d4fc900000000010040be",
+ "time": 1792424493000,
+ "ip_location": "广东",
+ "likes": "218",
+ "collects": "154",
+ "comments_count": "15",
+ "keywords": [
+  "Claude 3D 动画",
+  "Claude Code 做视频"
+ ],
+ "duration": 54,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040121/065b02411d5adf840534b104a9eee8c7/1040g2sg326gqg4aokc105o0t9v4g8g5unf65ceo!nd_dft_wgth_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "乌头蜜",
+   "content": "提示词如下\n# The prompt\nAll my messages from the session, merged into one prompt. It was used with Claude Code (Opus 5.5, xhigh) plus the 9 reference images.\n```text\nBuild me a massive, ultra-detailed 3D world in three.js based on the 9 reference images I attached.\n（1/3）",
+   "likes": "7"
+  },
+  {
+   "user": "亦恒重楼",
+   "content": "这个开源项目的作者用了很多镜头专属布景，很适合电影，但应该很难用于游戏",
+   "likes": "5"
+  },
+  {
+   "user": "momo",
+   "content": "太美了[飞吻R][飞吻R]",
+   "likes": "0"
+  },
+  {
+   "user": "AI EXP",
+   "content": "Δεν ξέρω που είναι;",
+   "likes": "0"
+  },
+  {
+   "user": "荔枝没吃饱",
+   "content": "什么模型",
+   "likes": "0"
+  },
+  {
+   "user": "成",
+   "content": "厉害",
+   "likes": "0"
+  },
+  {
+   "user": "姜晨宇",
+   "content": "这个也太帅了吧@盐酸不是酸",
+   "likes": "2"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Form/Function 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Space Grotesk",system-ui,sans-serif;background:#f7f6f2;color:#0f0f0f;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1184px;margin:0 auto;padding:0 52px}
+  .mono{font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:.02em}
+  nav{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;align-items:center;height:76px;border-bottom:1.5px solid #0f0f0f}
+  .logo{grid-column:1/5;font-weight:700;font-size:19px}
+  .logo span{color:#ff4122}
+  .links{grid-column:7/13;display:flex;justify-content:space-between;font-size:15px}
+  .links .tix{color:#ff4122;font-weight:700}
+  .hero{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;padding:44px 0 36px}
+  .label{grid-column:1/13;margin-bottom:18px;color:#ff4122}
+  h1{grid-column:1/11;font-size:92px;line-height:.95;letter-spacing:-.035em;font-weight:700;margin-bottom:34px}
+  .intro{grid-column:1/7;font-size:18px;line-height:1.55;color:#3c3c3c}
+  .meta{grid-column:7/13;display:grid;grid-template-columns:repeat(3,1fr);column-gap:24px;align-self:end}
+  .meta b{display:block;font-size:34px;font-weight:500;letter-spacing:-.02em}
+  .meta span{display:block;font-size:13px;color:#6b6b6b;margin-top:4px}
+  .sec{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;border-top:1.5px solid #0f0f0f;padding-top:18px}
+  .sec h2{grid-column:1/4;font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+  .sec .all{grid-column:10/13;text-align:right}
+  .speakers{display:grid;grid-template-columns:repeat(4,1fr);column-gap:24px;padding:22px 0 40px}
+  .ph{height:178px;position:relative;overflow:hidden;margin-bottom:14px}
+  .ph i{position:absolute;border-radius:50%;width:74px;height:74px;left:50%;margin-left:-37px;top:40px}
+  .ph b{position:absolute;width:150px;height:110px;border-radius:75px 75px 0 0;left:50%;margin-left:-75px;bottom:-30px}
+  .p1{background:#e4ded1}.p1 i,.p1 b{background:#2b2b2b}
+  .p2{background:#ff4122}.p2 i,.p2 b{background:#f7f6f2}
+  .p3{background:#2b2b2b}.p3 i,.p3 b{background:#d9d3c5}
+  .p4{background:#d2dbe0}.p4 i,.p4 b{background:#ff4122}
+  .sp h3{font-size:19px;font-weight:500}
+  .sp p{font-size:14px;color:#6b6b6b;margin-top:3px}
+  .sched .row{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;padding:14px 0;border-top:1px solid #cfccc4;font-size:16px}
+  .sched .t{grid-column:1/3}.sched .n{grid-column:3/10}.sched .s{grid-column:10/13;color:#6b6b6b}
+
+  /* B：同样的内容，每块各找各的位置 —— 没有共同的边 */
+  .bad .links{grid-column:5/11;justify-content:center;gap:30px}
+  .bad .label{margin-left:93px}
+  .bad h1{grid-column:1/13;text-align:center;font-size:84px}
+  .bad .intro{grid-column:1/8;margin-left:41px;text-align:center;font-size:17px}
+  .bad .meta{grid-column:8/13;text-align:right;margin-right:-28px;align-self:start;margin-top:22px}
+  .bad .sec h2{grid-column:4/10;text-align:center}
+  .bad .sec .all{grid-column:10/12;text-align:left;margin-left:17px}
+  .bad .sp:nth-child(2){margin-top:30px;margin-left:16px}
+  .bad .sp:nth-child(3){margin-top:9px;width:84%;margin-left:auto;text-align:right}
+  .bad .sp:nth-child(4){margin-top:48px;margin-left:14px;text-align:center}
+  .bad .sched .row:nth-child(2) .n{margin-left:34px}
+  .bad .sched .row:nth-child(3) .t{text-align:center}
+  .bad .sched .row:nth-child(3) .s{text-align:right}
+</style>
+</head>
+<body class="{{V}}">
+<div class="wrap">
+  <nav>
+    <a class="logo" href="#">Form<span>/</span>Function 2026</a>
+    <div class="links"><a href="#">Programme</a><a href="#">Speakers</a><a href="#">Venue</a><a href="#">Workshops</a><a class="tix" href="#">Tickets</a></div>
+  </nav>
+  <section class="hero">
+    <p class="label mono">Lisbon &middot; 14&ndash;16 May 2026 &middot; Cinema S&atilde;o Jorge</p>
+    <h1>Design that works for people.</h1>
+    <p class="intro">Three days of talks and workshops on interfaces that hold up in the real world: on slow phones, in bright sun, for tired people in a hurry.</p>
+    <div class="meta"><div><b>1,200</b><span>attendees</span></div><div><b>48</b><span>talks</span></div><div><b>16</b><span>workshops</span></div></div>
+  </section>
+  <div class="sec"><h2>Speakers</h2><a class="all mono" href="#">All 48 speakers</a></div>
+  <section class="speakers">
+    <div class="sp"><div class="ph p1"><i></i><b></b></div><h3>Ines Carvalho</h3><p>Design Director, Feedzai</p></div>
+    <div class="sp"><div class="ph p2"><i></i><b></b></div><h3>Tomasz Wr&oacute;bel</h3><p>Type Designer, Kontrapunkt</p></div>
+    <div class="sp"><div class="ph p3"><i></i><b></b></div><h3>Amara Okafor</h3><p>Accessibility Lead, GOV.UK</p></div>
+    <div class="sp"><div class="ph p4"><i></i><b></b></div><h3>Kenji Morita</h3><p>Principal Designer, Figma</p></div>
+  </section>
+  <div class="sec"><h2>Day one</h2><a class="all mono" href="#">Full programme</a></div>
+  <section class="sched">
+    <div class="row mono"><span class="t">09:30</span><span class="n">Opening: the cost of a bad default</span><span class="s">Ines Carvalho</span></div>
+    <div class="row mono"><span class="t">10:15</span><span class="n">Type that survives a 4-inch screen</span><span class="s">Tomasz Wr&oacute;bel</span></div>
+    <div class="row mono"><span class="t">11:30</span><span class="n">Forms nobody has to fill twice</span><span class="s">Amara Okafor</span></div>
+  </section>
+</div>
+</body>
+</html>
+

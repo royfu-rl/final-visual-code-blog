@@ -1,0 +1,88 @@
+{
+ "note_id": "6ac4f89b000000001303e359",
+ "url": "https://www.xiaohongshu.com/explore/6ac4f89b000000001303e359?xsec_token=ABi2ZFMsFL6arlz_20OCLAz-MKwGuxXb8LB6k2X5JvPSg=&xsec_source=pc_search",
+ "type": "video",
+ "title": "Opus5.5+Blender做动画｜制作思路分享",
+ "desc": "最近研究动效，想试试 Opus 5.5 配合 Blender 能做到什么程度，就想到这个经典的多米诺动画（说它经典是因为2013 年 Aatma Studio 也做过）。\n大概流程是：先用 Blender 建一台 iPhone 18 Pro 的模型，然后 Opus 5.5 写 three.js 代码，把这个模型复制一万多个。 每台摆在哪、哪一拍倒、屏幕亮什么颜色、镜头怎么追、光怎么打，全让 three.js 去实时算。\n碰撞声和配乐卡点，也让代码合成。\n然后不到一个小时，就看到了这个成片。\n还挺有意思。\n分享一下制作思路。\n#3D造物[话题]# #vibecoding大赏[话题]# #howto用好AI[话题]# #3D动画[话题]# #c4d动画[话题]# #blender[话题]# #claudecode[话题]# #opus[话题]# #AI教程[话题]# #3D教程[话题]#",
+ "tags": [
+  "3D造物",
+  "vibecoding大赏",
+  "howto用好AI",
+  "3D动画",
+  "c4d动画",
+  "blender",
+  "claudecode",
+  "opus",
+  "AI教程",
+  "3D教程"
+ ],
+ "author": "泡椒肥汤圆",
+ "user_id": "5de6288900000000010082ad",
+ "time": 1791332521000,
+ "ip_location": "四川",
+ "likes": "635",
+ "collects": "649",
+ "comments_count": "39",
+ "keywords": [
+  "Claude Blender 动画"
+ ],
+ "duration": 154,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040109/c7b576ca201a1b4bf143ef3160440ba2/spectrum/1040g0k03260118u1k6005nf6524g90ldf3org1o!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "🐢载着理发店",
+   "content": "大佬，onetake pro怎么订阅",
+   "likes": "0"
+  },
+  {
+   "user": "陈困困",
+   "content": "哇好厉害！这个视频是opus根据口播剪吗[哇R]",
+   "likes": "6"
+  },
+  {
+   "user": "文无cyrene",
+   "content": "这个好聪明啊。渲染在哪里出的？opus直接出么",
+   "likes": "1"
+  },
+  {
+   "user": "暇满青春",
+   "content": "这个视频本身做的也好棒，能大概指教一下怎么做的吗[红色心形R]",
+   "likes": "1"
+  },
+  {
+   "user": "DH",
+   "content": "这个讲解视频就很牛",
+   "likes": "0"
+  },
+  {
+   "user": "摘星计划",
+   "content": "感觉很适合做产品宣传片",
+   "likes": "1"
+  },
+  {
+   "user": "设计趋势不迷路",
+   "content": "你这个没有必要拿blender吧[笑哭R]",
+   "likes": "0"
+  },
+  {
+   "user": "咖喱刘肉饭🍛",
+   "content": "好炫酷[派对R]",
+   "likes": "1"
+  },
+  {
+   "user": "神经蛙",
+   "content": "没有开源模型的是不是就做不了了啊",
+   "likes": "0"
+  },
+  {
+   "user": "OiMeRon",
+   "content": "对于我的硬件，本身渲染动画的话 几个小时 慢得要死[生气R]",
+   "likes": "1"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

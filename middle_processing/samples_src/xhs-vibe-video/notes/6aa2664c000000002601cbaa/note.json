@@ -1,0 +1,67 @@
+{
+ "note_id": "6aa2664c000000002601cbaa",
+ "url": "https://www.xiaohongshu.com/explore/6aa2664c000000002601cbaa?xsec_token=ABGZvUTwqF4zXx5RuxCOPCMhAB8b_mb2jHOtXbIGsFTxM=&xsec_source=pc_search",
+ "type": "normal",
+ "title": "GPT6再次采用了我们的数据集😼",
+ "desc": "最近OpenAI发布了GPT-6 Astra，在Blender，CAD等三维建模的任务上的表现有了非常明显的跃升，很开心看到我们BenchCAD能作为3D modeling能力的 benchmark参与在这场变革之中，也恭喜OpenAI团队取得了95.9% 的评分，这几个月看到OAI和A\\的各个模型在3D能力上突飞猛进，真的是又惊讶又感叹又害怕😂\n\t\n我们即将发布更具挑战性的BenchCAD 2.0。这一次，我们希望把评测进一步推向更广泛、更专业、更贴近真实工程的场景：不再只是考察机械标准件最终形状是否相似，而是进一步关注复杂3d建模任务、工程约束以及真实工作流下，AI 到底能够做到什么程度。\n\t\n感谢所有一起参与 BenchCAD 的伙伴们！很开心我们可以为3D AI 社区建设和发展持续做贡献。\n\t\n希望借这个机会认识更多对3D AI、CAD、Physics、Multimodal、Agent感兴趣的朋友。如果你也想参与 我们后续的benchmarks，一起做研究或者探索合作，欢迎联系我们！🚀\n\t\ngithub：BenchCAD/BenchCAD-main\n\t\n#AI[话题]# #OpenAI[话题]# #Anthropic[话题]# #CUA[话题]# #Blender[话题]# #宝宝辅食[话题]# #MLLM[话题]# #科研[话题]# #GPT6[话题]# #GTA6[话题]#",
+ "tags": [
+  "AI",
+  "OpenAI",
+  "Anthropic",
+  "CUA",
+  "Blender",
+  "宝宝辅食",
+  "MLLM",
+  "科研",
+  "GPT6",
+  "GTA6"
+ ],
+ "author": "momo",
+ "user_id": "6aa0ad660000000013023000",
+ "time": 1789027916000,
+ "ip_location": null,
+ "likes": "152",
+ "collects": "62",
+ "comments_count": "5",
+ "keywords": [
+  "Claude Blender 动画"
+ ],
+ "duration": null,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040127/c02d0d202ce503bedb2ee8426c5e06cc/notes_pre_post/1040g3k8324u83tk2jia05ql0llj4sc009tmon80!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040127/21d867848aa91bf806346dc8cc448869/notes_pre_post/1040g3k8324u83tk2jiag5ql0llj4sc005utecvg!nd_dft_wgth_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040127/586317679ada71dbbebe4c349438849a/notes_pre_post/1040g3k8324u83tk2jib05ql0llj4sc00unfeigg!nd_dft_wgth_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "mono",
+   "content": "2.0快端出来吧[派对R]",
+   "likes": "1"
+  },
+  {
+   "user": "韩朋谦",
+   "content": "AI 能否进入工程实践，进入真实工程场景来解决问题，很值得研究和评估，期待 benchCAD 2.0",
+   "likes": "1"
+  },
+  {
+   "user": "阿七的多元宇宙（潜伏vlog版）",
+   "content": "恭喜",
+   "likes": "1"
+  },
+  {
+   "user": "日天旻",
+   "content": "gta6是什么鬼？[笑哭R]",
+   "likes": "0"
+  },
+  {
+   "user": "盖文洛",
+   "content": "[赞R]",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg",
+  "images/1.jpg",
+  "images/2.jpg"
+ ]
+}

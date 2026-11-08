@@ -1,0 +1,46 @@
+{
+ "note_id": "6ae997f8000000001b01c57b",
+ "url": "https://www.xiaohongshu.com/explore/6ae997f8000000001b01c57b?xsec_token=ABUIkL4O4zdknKGujQbqDwenWOPGABaQ2wUpkjN3eVwQI=&xsec_source=pc_search",
+ "type": "video",
+ "title": "Fable 5.5 纯代码搓出 80 秒吉卜力短片！",
+ "desc": "Fable 5.5 一键生成这部吉卜力风动漫短片，纯代码完成，直接碾压主流AI视频模型。\n\t\n据称是 AI 研究者 chetaslua 用最新Fable 5.5（Anthropic旗下高能力模型）只给了一段详细提示词，模型就一次性输出了完整的自包含 HTML 文件。\n\t\n画面是晨雾森林里一尊被青苔、野花和古树覆盖的巨型机器人，小鸟停在它肩上，胸口微光闪烁，随后它缓缓站起、引擎启动、冲上金色天空，落叶与光迹飞舞，全程手绘2D动画质感，线稿、赛璐璐上色、厚涂背景、光影与重量感都极像正式院线动画。\n\t\n整段约 80 秒动画、画面和细节全部由模型直接写出的代码渲染（无外部素材、无图片/视频生成模型），在浏览器里就能播放。\n\t\n作者对比后表示效果明显优于常规 AI 视频模型，并分享了完整提示词和GitHub代码（moss-keeper），方便大家复现验证。\n\t\n如果模型能力真如作者描述所言，那 AI 视频生成的创作边界将被彻底打破，不在受限于视频模型生成了~\n\t\n#Fable55[话题]#  #AI动画[话题]#  #纯代码生成[话题]#  #吉卜力[话题]#  #AI视频[话题]# #AI[话题]#",
+ "tags": [
+  "Fable55",
+  "AI动画",
+  "纯代码生成",
+  "吉卜力",
+  "AI视频",
+  "AI"
+ ],
+ "author": "机器之心",
+ "user_id": "5c6130b900000000110112e8",
+ "time": 1793693688000,
+ "ip_location": "北京",
+ "likes": "53",
+ "collects": "30",
+ "comments_count": "3",
+ "keywords": [
+  "AI 写代码做动画",
+  "代码生成视频",
+  "纯代码视频"
+ ],
+ "duration": 80,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040136/6cb578e2636fd82245133ab41073632b/spectrum/1040g34o3273ps0826e0g5n3162ska4n8je2ec80!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "星环",
+   "content": "代码能模拟渲染真实世界光影纹理人物表情之类的么，如果可以就结束比赛了",
+   "likes": "0"
+  },
+  {
+   "user": "无敌的我",
+   "content": "花费多少呀",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Studio Halde &middot; Architecture and landscape</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Lobster&family=Oswald:wght@500&family=Courier+Prime&family=Comic+Neue:wght@700&family=Playfair+Display:ital,wght@1,700&family=Bebas+Neue&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+<style>
+  /* 尺度 1.333：13 / 16 / 21 / 28 / 37 / 50 / 66；两种字体：DM Serif Display 管标题，DM Sans 管其余 */
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"DM Sans",system-ui,sans-serif;font-size:16px;background:#eceeec;color:#161a1d;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1184px;margin:0 auto;padding:0 52px}
+  nav{display:flex;align-items:center;height:80px;gap:36px;font-size:16px}
+  .logo{font-family:"DM Serif Display",serif;font-size:28px;margin-right:auto}
+  .hero{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:end;padding:36px 0 44px;border-bottom:1px solid #c9ceca}
+  .label{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#4d5b3c;margin-bottom:20px}
+  h1{font-family:"DM Serif Display",serif;font-weight:400;font-size:66px;line-height:1.02;letter-spacing:-.01em;margin-bottom:22px}
+  .intro{font-size:16px;line-height:1.6;color:#4a5157;max-width:30em}
+  .bldg{height:300px;position:relative}
+  .bldg i{position:absolute;bottom:0;background:#c8cfc6;display:block}
+  .bldg .a{left:0;width:38%;height:62%;background:#b9c2b5}
+  .bldg .b{left:30%;width:36%;height:100%;background:#4d5b3c}
+  .bldg .c{left:58%;width:42%;height:48%;background:#d9ddd6}
+  .bldg .d{left:36%;width:6%;height:22%;bottom:18%;background:#eceeec}
+  .bldg .e{left:48%;width:6%;height:22%;bottom:18%;background:#eceeec}
+  .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;padding:36px 0 28px}
+  .img{height:150px;margin-bottom:16px}
+  .i1{background:linear-gradient(#b9c2b5 55%,#4d5b3c 55%)}
+  .i2{background:linear-gradient(90deg,#d9ddd6 40%,#161a1d 40% 46%,#c8cfc6 46%)}
+  .i3{background:radial-gradient(circle at 70% 30%,#4d5b3c 0 22%,#b9c2b5 22%)}
+  .p h3{font-family:"DM Serif Display",serif;font-weight:400;font-size:28px;line-height:1.1}
+  .p .m{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#6a7470;margin:8px 0 8px}
+  .p .d{font-size:16px;line-height:1.55;color:#4a5157}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;border-top:1px solid #c9ceca;padding:28px 0 60px}
+  .stats b{display:block;font-family:"DM Serif Display",serif;font-weight:400;font-size:50px;line-height:1}
+  .stats span{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#6a7470}
+
+  /* B：同样的内容，七种字体、十几种字号，没有尺度 */
+  .bad .logo{font-family:Lobster,cursive;font-size:31px}
+  .bad nav{font-family:"Courier Prime",monospace;font-size:15px}
+  .bad .label{font-family:"Comic Neue",cursive;font-size:17px;letter-spacing:0;text-transform:none;font-weight:700}
+  .bad h1{font-family:Oswald,sans-serif;font-weight:500;font-size:59px;line-height:1.1;text-transform:uppercase;letter-spacing:.01em}
+  .bad .intro{font-family:Merriweather,serif;font-weight:300;font-size:15px}
+  .bad .p:nth-child(1) h3{font-family:"Playfair Display",serif;font-style:italic;font-weight:700;font-size:25px}
+  .bad .p:nth-child(2) h3{font-family:Oswald,sans-serif;font-size:19px;text-transform:uppercase}
+  .bad .p:nth-child(3) h3{font-family:"Bebas Neue",sans-serif;font-size:34px}
+  .bad .p:nth-child(1) .m{font-size:11px}.bad .p:nth-child(2) .m{font-family:"Courier Prime",monospace;font-size:14.5px;letter-spacing:0}.bad .p:nth-child(3) .m{font-size:12px;text-transform:none;letter-spacing:0}
+  .bad .p:nth-child(1) .d{font-size:15px}.bad .p:nth-child(2) .d{font-family:Merriweather,serif;font-weight:300;font-size:14px}.bad .p:nth-child(3) .d{font-size:17.5px}
+  .bad .stats b{font-family:"Bebas Neue",sans-serif;font-size:58px}
+  .bad .stats div:nth-child(2) b{font-family:"Playfair Display",serif;font-style:italic;font-size:41px}
+  .bad .stats span{font-family:"Comic Neue",cursive;font-weight:700;font-size:14px;text-transform:none;letter-spacing:0}
+</style>
+</head>
+<body class="{{V}}">
+<div class="wrap">
+  <nav><a class="logo" href="#">Studio Halde</a><a href="#">Projects</a><a href="#">Practice</a><a href="#">Writing</a><a href="#">Contact</a></nav>
+  <section class="hero">
+    <div>
+      <p class="label">Architecture &amp; landscape &middot; Bergen</p>
+      <h1>Buildings that age well.</h1>
+      <p class="intro">We design schools, housing and small civic buildings in timber and stone, for places where it rains two days out of three.</p>
+    </div>
+    <div class="bldg"><i class="a"></i><i class="b"></i><i class="c"></i><i class="d"></i><i class="e"></i></div>
+  </section>
+  <section class="projects">
+    <div class="p"><div class="img i1"></div><h3>Nordnes School</h3><p class="m">Bergen &middot; 2024</p><p class="d">A primary school for 420 pupils, built around a covered yard that works in any weather.</p></div>
+    <div class="p"><div class="img i2"></div><h3>Fjell Housing</h3><p class="m">Sotra &middot; 2022</p><p class="d">Thirty-six timber flats arranged on a slope so every home gets evening sun.</p></div>
+    <div class="p"><div class="img i3"></div><h3>Harbour Library</h3><p class="m">Florø &middot; 2021</p><p class="d">A reading room in an old net loft, with one window framed on the outer islands.</p></div>
+  </section>
+  <section class="stats"><div><b>27</b><span>years in practice</span></div><div><b>140</b><span>buildings completed</span></div><div><b>9</b><span>national awards</span></div></section>
+</div>
+</body>
+</html>
+

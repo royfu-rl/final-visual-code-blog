@@ -1,0 +1,94 @@
+{
+ "links": [
+  [
+   "CGArtPython/blender_plus_python",
+   "https://github.com/CGArtPython/blender_plus_python"
+  ]
+ ],
+ "cards": [
+  {
+   "img": null,
+   "name": "art_projects/truchet_tiles/",
+   "code": [
+    [
+     "truchet_tiles_start.py",
+     "art_projects__truchet_tiles__truchet_tiles_start.py"
+    ],
+    [
+     "truchet_tiles_done.py",
+     "art_projects__truchet_tiles__truchet_tiles_done.py"
+    ]
+   ]
+  },
+  {
+   "img": null,
+   "name": "loop_of_rings/",
+   "code": [
+    [
+     "loop_of_rings_start.py",
+     "loop_of_rings__loop_of_rings_start.py"
+    ],
+    [
+     "loop_of_rings_done.py",
+     "loop_of_rings__loop_of_rings_done.py"
+    ]
+   ]
+  },
+  {
+   "img": null,
+   "name": "geo_nodes/subdivided_triangulated_cube/",
+   "code": [
+    [
+     "subdivided_triangulated_cube_part_1_start.py",
+     "geo_nodes__subdivided_triangulated_cube__subdivided_triangulated_cube_part_1_start.py"
+    ],
+    [
+     "subdivided_triangulated_cube_part_1_done.py",
+     "geo_nodes__subdivided_triangulated_cube__subdivided_triangulated_cube_part_1_done.py"
+    ]
+   ]
+  },
+  {
+   "img": null,
+   "name": "hex_delay/",
+   "code": [
+    [
+     "hex_delay_start.py",
+     "hex_delay__hex_delay_start.py"
+    ],
+    [
+     "hex_delay_done.py",
+     "hex_delay__hex_delay_done.py"
+    ]
+   ]
+  },
+  {
+   "img": null,
+   "name": "stack_spin/",
+   "code": [
+    [
+     "stack_spin_start.py",
+     "stack_spin__stack_spin_start.py"
+    ],
+    [
+     "stack_spin_done.py",
+     "stack_spin__stack_spin_done.py"
+    ]
+   ]
+  },
+  {
+   "img": null,
+   "name": "weave/",
+   "code": [
+    [
+     "weave_start.py",
+     "weave__weave_start.py"
+    ],
+    [
+     "weave_done.py",
+     "weave__weave_done.py"
+    ]
+   ]
+  }
+ ]
+}

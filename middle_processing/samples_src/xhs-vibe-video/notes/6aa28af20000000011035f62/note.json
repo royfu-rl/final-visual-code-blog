@@ -1,0 +1,83 @@
+{
+ "note_id": "6aa28af20000000011035f62",
+ "url": "https://www.xiaohongshu.com/explore/6aa28af20000000011035f62?xsec_token=ABGZvUTwqF4zXx5RuxCOPCMgoov9LDSXNsneJqFeUcBwo=&xsec_source=pc_search",
+ "type": "video",
+ "title": "一句话让AI剪视频、创意动效，送完整提示词",
+ "desc": "#AI剪辑[话题]# #chatcut[话题]# #codex[话题]# #科技数码生活手账[话题]# #weeklypick[话题]#\n完整提示词\n【大字发光效果】：时间段是第X秒到第X秒，我希望按照参考图的排版设计，在人物的背后生成发光大字，然后做一个粒子散开的效果，并配上符合动效的音效。\n【logo旋转效果】：时间是第X秒到第X秒，参考我给你的视频中的旋转动画，让两个logo先出现在我的手上，短暂停留后，环绕身体进行旋转，最后渐隐消失，全程配上符合动画的音效。\n【视频背景替换】：时间是第X秒到第X秒，根据我上传的背景参考图，调用视频生成模型MinimaxH3。帮我换一个XXX风格的动态背景，要注意人物光影必须和氛围融合在一起，同时希望有XXXX的声音。\n【数字人生成】：我想生成一个古风的青年男性形象的数字人，你帮我去做设计。用数字人去替换口播中的人物形象，并挑选符合形象的男生声音进行配音，时间段是第8秒到第10秒。",
+ "tags": [
+  "AI剪辑",
+  "chatcut",
+  "codex",
+  "科技数码生活手账",
+  "weeklypick"
+ ],
+ "author": "和小武一起学AI",
+ "user_id": "636e65b7000000001f01e9da",
+ "time": 1789046543000,
+ "ip_location": null,
+ "likes": "2539",
+ "collects": "3306",
+ "comments_count": "64",
+ "keywords": [
+  "Codex 做视频"
+ ],
+ "duration": 360,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040101/4181742c92bd7e16a811ccfbef9f8b58/spectrum/1040g0k0324vic2soj4l05orecmrnrqeqine1elg!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "岸许",
+   "content": "chatcut需要充会员不？",
+   "likes": "0"
+  },
+  {
+   "user": "炙然进化",
+   "content": "这个视频也用ai剪的吗",
+   "likes": "0"
+  },
+  {
+   "user": "是Rose不是肉丝",
+   "content": "这种情况怎么处理呀[笑哭R]",
+   "likes": "1"
+  },
+  {
+   "user": "月光布鲁biu",
+   "content": "只能在电脑使用吗？",
+   "likes": "0"
+  },
+  {
+   "user": "PANPAN DES",
+   "content": "windows不行呢",
+   "likes": "0"
+  },
+  {
+   "user": "甜笛子",
+   "content": "@点点 详细总结 有什么要注意的 或者 博主给的提示词都写下来",
+   "likes": "0"
+  },
+  {
+   "user": "TAKE X创作者平台",
+   "content": "把动效限定到具体时间段，修改范围更明确。人物背后的发光字还要检查遮挡顺序和轮廓边缘，才能像处在同一空间。",
+   "likes": "0"
+  },
+  {
+   "user": "米乐happy",
+   "content": "@点点 总结一下",
+   "likes": "1"
+  },
+  {
+   "user": "和小武一起学AI",
+   "content": "想要提示词的小伙伴找我哦[飞吻R]",
+   "likes": "0"
+  },
+  {
+   "user": "小瑾",
+   "content": "我只想说 只有自己试过才知道多拉胯 对于ai的使用 半人工半ai才是最快的 要把所有交给ai简直了 太慢了 还不如人工快",
+   "likes": "2"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

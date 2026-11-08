@@ -1,0 +1,88 @@
+{
+ "note_id": "6add72d2000000003300b7ed",
+ "url": "https://www.xiaohongshu.com/explore/6add72d2000000003300b7ed?xsec_token=ABppXmGidaWMkZ1G1lQkel94Di62DWV82_wB4SLrnBmGI=&xsec_source=pc_search",
+ "type": "video",
+ "title": "claude就是宣传片的严父",
+ "desc": "这样的宣传视频只会让人瘫坐在地上。附上提示词：\n\t\n用代码做一支 64 秒一镜到底动画：主角是 Claude Code 的橙色像素小人，它自己就是鼠标：清晨把鼠标指针踢飞，点开终端，打「做一条视频，主角是你自己」→ 分成 4 个，分别负责建模、写代码、配乐、剪辑，四个窗口同时弹开 → 在真实的音频波形上踩出节拍点，把素材拖进时间线，踩下「渲染」→ 一帧帧画面连成胶片过山车，四个一起坐上去 → 把成片拖进播放器，大屏上放的正是此刻这一帧，画面无限套娃一路推进去 → 合体，打出片名和真实的制作数据 → 捡回鼠标放回原位，回到第一帧无缝循环。",
+ "tags": [],
+ "author": "墨白说",
+ "user_id": "623ad203000000002102bfa6",
+ "time": 1792897746000,
+ "ip_location": "江苏",
+ "likes": "820",
+ "collects": "424",
+ "comments_count": "65",
+ "keywords": [
+  "AI 写代码做动画",
+  "Claude 3D 动画",
+  "Claude Blender 动画",
+  "Claude Code 做视频",
+  "Claude MV",
+  "Claude 产品宣传片",
+  "Claude 做视频",
+  "Claude 动效设计",
+  "Claude 口播视频",
+  "Claude 数据可视化动画",
+  "Claude 片头动画",
+  "Claude 科普动画"
+ ],
+ "duration": 64,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040107/7d496cad357148d40b6222dc171dde4d/1040g2sg326nuajg0k4705ohqq81odft6gc6srl0!nd_dft_wgth_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "今晚还不放假13864",
+   "content": "他做得挺好的 要是不封我的账号就更好了[捂脸R]",
+   "likes": "43"
+  },
+  {
+   "user": "momo",
+   "content": "这个怎么代码做得出来，不得用到视频生成模型吗",
+   "likes": "0"
+  },
+  {
+   "user": "Shiiiiiift",
+   "content": "国内用 claude 怎么解决封号问题呀",
+   "likes": "1"
+  },
+  {
+   "user": "三个水枪手",
+   "content": "纯claude code吗？没用blender或者其他建模吗？",
+   "likes": "1"
+  },
+  {
+   "user": "Alexey_Chen",
+   "content": "claude为啥这么喜欢用这个bgm？",
+   "likes": "3"
+  },
+  {
+   "user": "urtheeastwind",
+   "content": "claude能认识自己，这是我从sonnet3.5开始就感受到的，至今没有第二家给我相同的感觉",
+   "likes": "8"
+  },
+  {
+   "user": "For.",
+   "content": "不是中国号封挺多吗，and中文宣传片[哭惹R]",
+   "likes": "2"
+  },
+  {
+   "user": "KK&King",
+   "content": "你怎么说中文",
+   "likes": "1"
+  },
+  {
+   "user": "RTXON",
+   "content": "请问有用skill吗",
+   "likes": "0"
+  },
+  {
+   "user": "K",
+   "content": "做得好啊[赞R]感觉prompt提供的思路和分镜也是尤为重要",
+   "likes": "3"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

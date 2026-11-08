@@ -1,0 +1,10 @@
+{"link": "https://www.frontendmentor.io/challenges", "id": "frontendmentor.io",
+ "cards": [
+  {"img": "urgzptajdim2zmd4eume.jpg", "name": "typing-speed-test",
+   "code": [["index.html", "typing-speed-test_index.html"], ["style-guide.md", "typing-speed-test_style-guide.md"]]},
+  {"img": "aldppmnkr0tfgyuuabzg.jpg", "name": "weather-app-K1FhddVm49",
+   "code": [["index.html", "weather-app_index.html"], ["style-guide.md", "weather-app_style-guide.md"]]},
+  {"img": "rdasumeaufbhpmdjowwj.jpg", "name": "browser-extension-manager-ui-yNZnOfsMAp",
+   "code": [["index.html", "browser-extensions-manager-ui_index.html"], ["style-guide.md", "browser-extensions-manager-ui_style-guide.md"]]}
+ ]}
+

@@ -1,0 +1,62 @@
+{
+ "note_id": "6aca4b94000000000b004aac",
+ "url": "https://www.xiaohongshu.com/explore/6aca4b94000000000b004aac?xsec_token=ABIjxpLJeqS3QjjOpGf_WvMisItdKj096qIQlNsGSSYVA=&xsec_source=pc_search",
+ "type": "normal",
+ "title": "10套开源视频与动画Skills",
+ "desc": "按 GitHub 仓库总 Star 排序并逐项核验，整理了 10 套开源视频与动画 Skills。每套都有明确开源许可，并标出开源制作路径，覆盖网页动效、白板手绘、数学动画和本地剪辑。\n\t\n01｜OpenMontage｜★ 66,014\n想把选题、脚本和后期串起来，可以看 OpenMontage。用自备素材加 FFmpeg，就能走开源制作路径。\n\t\n02｜HyperFrames｜★ 60,139\n会写网页，就能沿用 HTML 和动画代码做视频。产品介绍、动态图形和字幕包装都有对应流程。\n\t\n03｜SRT 白板动画｜★ 4,224\n手里已有课程字幕或故事口播稿，可以把内容做成逐笔绘制的白板动画。线稿和区域时序需要先确认。\n\t\n04｜OpenStoryline｜★ 3,472\n想通过聊天调整素材、脚本和剪辑，可以看看 OpenStoryline。它需要先部署服务，再由配套 Skills 调用。\n\t\n05｜Drama Skills｜★ 2,698\n做短剧时，可以用它管理剧本和分镜，再用 FFmpeg 剪自备镜头。开源路线覆盖编剧与后期。\n\t\n06｜Pixel2Motion｜★ 2,407\n有一张 Logo 图，想做可改代码的片头动效，可以看 Pixel2Motion。先把矢量形状做准，再安排动画。\n\t\n07｜Lemo-Opuscar｜★ 1,753\n想做有画风的短片，又希望画面由代码生成，可以看 Lemo-Opuscar。Canvas、WebGL 和本地合成是它的主要路线。\n\t\n08｜Manim Skill｜★ 1,155\n公式推导、函数图像和几何演示，Manim Skill 更对路。Community 与 GL 是两套入口，先选定版本。\n\t\n09｜Video Spec Builder｜★ 1,017\n脑子里有视频想法，却说不清每个镜头怎么拍，可以先用 Video Spec Builder。产物是分镜文档，再交给渲染工具。\n\t\n10｜Clipify｜★ 587\n已有访谈或播客长视频，可以用 Clipify 挑片段、做竖屏和逐词字幕。转写与剪辑都在本地完成。\n\t\n先看要做哪类视频，再看开源制作路径。可选云服务和其他许可组件需单独检查；安装前审查源码、权限、依赖和文件修改范围。Star 只代表关注度。\n\t\n#AgentSkills[话题]#  #开源工具[话题]#  #视频动画[话题]#  #GitHub[话题]#  #AI视频[话题]#  #Codex[话题]#  #ClaudeCode[话题]#",
+ "tags": [
+  "AgentSkills",
+  "开源工具",
+  "视频动画",
+  "GitHub",
+  "AI视频",
+  "Codex",
+  "ClaudeCode"
+ ],
+ "author": "晓点技术",
+ "user_id": "6756e582000000000800b289",
+ "time": 1791642516000,
+ "ip_location": "广东",
+ "likes": "72",
+ "collects": "165",
+ "comments_count": "1",
+ "keywords": [
+  "HyperFrames",
+  "Motion Canvas",
+  "视频 skill"
+ ],
+ "duration": null,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040135/f4562b2659be48b5aad935affdfc75ea/spectrum/1040g34o32657u4gi46b05pqmsm121ck9lb2n7ag!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040135/e7787de8e423f2144187b8b1425a0fc9/spectrum/1040g34o32657u4gi46bg5pqmsm121ck95nis0a8!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040135/0c65d448bbd9d5282507dfa9a2a42de2/spectrum/1040g34o32657u4gi46c05pqmsm121ck9b7jp00o!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040135/6e07170e12d07481af1726fea2cb4d38/spectrum/1040g34o32657u4gi46cg5pqmsm121ck9u98tfuo!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040135/2ea26bbc9b59d24284b01c9c07d7b296/spectrum/1040g34o32657u4gi46d05pqmsm121ck9g8q2gf8!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040135/791bb30764b37da3510aa414a04d13cb/spectrum/1040g34o32657u4gi46dg5pqmsm121ck9uvmru80!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040135/4bbc3a9924fd9fd11b5f44b9314b1883/spectrum/1040g34o32657u4gi46e05pqmsm121ck918ct2n0!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040135/12ee90f0cb014b4316ed64137b01cd69/spectrum/1040g34o32657u4gi46eg5pqmsm121ck9naot9d0!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040135/eef63f876450ab15b8545b470f2bc4f3/spectrum/1040g34o32657u4gi46f05pqmsm121ck9i8p4uj0!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040135/0b93e229630feab39b43396292037f34/spectrum/1040g34o32657u4gi46fg5pqmsm121ck9clab4n8!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040135/78d4b45abb1d39cbf9efbbf1f6d06d9a/spectrum/1040g34o32657u4gi46g05pqmsm121ck9104vl5g!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "加载中-_-",
+   "content": "111",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg",
+  "images/1.jpg",
+  "images/2.jpg",
+  "images/3.jpg",
+  "images/4.jpg",
+  "images/5.jpg",
+  "images/6.jpg",
+  "images/7.jpg",
+  "images/8.jpg",
+  "images/9.jpg",
+  "images/10.jpg"
+ ]
+}

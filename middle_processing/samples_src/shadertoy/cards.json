@@ -1,0 +1,94 @@
+{
+ "links": [
+  [
+   "ilabai/3dcodeverse · shadertoy",
+   "https://huggingface.co/datasets/ilabai/3dcodeverse"
+  ]
+ ],
+ "cards": [
+  {
+   "img": "Md23DV.png",
+   "name": "shadertoy/Md/Md23DV/renders/grid03.png",
+   "code": [
+    [
+     "code.glsl",
+     "Md23DV.glsl"
+    ],
+    [
+     "meta.json",
+     "Md23DV.meta.json"
+    ]
+   ]
+  },
+  {
+   "img": "Md23RK.png",
+   "name": "shadertoy/Md/Md23RK/renders/grid04.png",
+   "code": [
+    [
+     "code.glsl",
+     "Md23RK.glsl"
+    ],
+    [
+     "meta.json",
+     "Md23RK.meta.json"
+    ]
+   ]
+  },
+  {
+   "img": "Xs23D3.png",
+   "name": "shadertoy/Xs/Xs23D3/renders/grid04.png",
+   "code": [
+    [
+     "code.glsl",
+     "Xs23D3.glsl"
+    ],
+    [
+     "meta.json",
+     "Xs23D3.meta.json"
+    ]
+   ]
+  },
+  {
+   "img": "ls23DG.png",
+   "name": "shadertoy/ls/ls23DG/renders/grid00.png",
+   "code": [
+    [
+     "code.glsl",
+     "ls23DG.glsl"
+    ],
+    [
+     "meta.json",
+     "ls23DG.meta.json"
+    ]
+   ]
+  },
+  {
+   "img": "3323Rd.png",
+   "name": "shadertoy/33/3323Rd/renders/grid04.png",
+   "code": [
+    [
+     "code.glsl",
+     "3323Rd.glsl"
+    ],
+    [
+     "meta.json",
+     "3323Rd.meta.json"
+    ]
+   ]
+  },
+  {
+   "img": "Md23Rd.png",
+   "name": "shadertoy/Md/Md23Rd/renders/grid05.png",
+   "code": [
+    [
+     "code.glsl",
+     "Md23Rd.glsl"
+    ],
+    [
+     "meta.json",
+     "Md23Rd.meta.json"
+    ]
+   ]
+  }
+ ]
+}

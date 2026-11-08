@@ -1,0 +1,93 @@
+{
+ "note_id": "6ab28e51000000003300ab71",
+ "url": "https://www.xiaohongshu.com/explore/6ab28e51000000003300ab71?xsec_token=AB0RCbAlT6e4Pnw6RLByXzFyxxoDz1lIEjDhzrxikRE7Q=&xsec_source=pc_search",
+ "type": "normal",
+ "title": "别被量子位骗了！3D gen基本上已经结束了",
+ "desc": "code for 3D design已经是很明确的确定性事实了，哪怕是高面数精细物体。\nsimulation重新迎来了属于他的辉煌时代。\n@skzg🥕 @Mercury.\n\t\n#3D造物[话题]# #3d造物[话题]# #3D[话题]# #AI人工智能[话题]# #游戏建模[话题]# #人物建模[话题]# #3D设计[话题]#",
+ "tags": [
+  "3D造物",
+  "3d造物",
+  "3D",
+  "AI人工智能",
+  "游戏建模",
+  "人物建模",
+  "3D设计"
+ ],
+ "author": "保安队长",
+ "user_id": "56b8a20584edcd26d260d993",
+ "time": 1790086737000,
+ "ip_location": null,
+ "likes": "315",
+ "collects": "212",
+ "comments_count": "155",
+ "keywords": [
+  "Claude 3D 动画"
+ ],
+ "duration": null,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040116/8754f12a284124d1458028637a0de93a/notes_pre_post/1040g3k8325e238ho580045grq7h0bmcje9kbhko!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040116/9bbe023351b1f30a10ee1cc089f41768/notes_pre_post/1040g3k8325e238jek60045grq7h0bmcj49j8cig!nd_dft_wgth_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040116/17e7a4695caae402886aa181ca8c1977/notes_pre_post/1040g3k8325e238otk60045grq7h0bmcjjm18veg!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040116/a599f962954f9a73f946fb54c6047509/notes_pre_post/1040g3k8325e1ufi2k44045grq7h0bmcj7sr5g00!nd_dft_wgth_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040116/98d8bd4ea8f7b24a63ed17b4e5395427/notes_pre_post/1040g3k8325e1ufi2k45045grq7h0bmcjhiqeg7g!nd_dft_wgth_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "Han",
+   "content": "理解下，你们有一套工作流能激发 astra 做 3d 做成这样？",
+   "likes": "7"
+  },
+  {
+   "user": "TTS🌇",
+   "content": "不至于…想想复杂物体的computer use就很复杂。3D gen变成了个调用的工具。聪明的AI会合理分配资源（比如这些任务去调3D gen）…且3D还有些别的意义（比如在仿真 具身 物理ai等）",
+   "likes": "16"
+  },
+  {
+   "user": "CloudZera",
+   "content": "开销和效率是一点不算啊",
+   "likes": "4"
+  },
+  {
+   "user": "职高太傅.",
+   "content": "这么刚[doge]",
+   "likes": "1"
+  },
+  {
+   "user": "氓氓",
+   "content": "Astra出来感觉3D跟空间感知的故事就讲不下去了，看到小米mimo v2.8的report 我就彻底死心了",
+   "likes": "14"
+  },
+  {
+   "user": "nekomi",
+   "content": "已经在准备从3dv跑路了",
+   "likes": "1"
+  },
+  {
+   "user": "企企弗斯（多模态大复兴）",
+   "content": "知道为啥这么多人骂你吗[偷笑R]因为你让他们以后没办法水论文了",
+   "likes": "8"
+  },
+  {
+   "user": "小红薯65076C76",
+   "content": "人头我也有一定的方式，当然要付一丢丢成本。大问题是动作的不自然，或者动起来的穿模，你有啥办法吗",
+   "likes": "0"
+  },
+  {
+   "user": "Bili-Sakura",
+   "content": "llm驱动的3d gen的逻辑是什么 这些assets是不是还得去联网下载",
+   "likes": "0"
+  },
+  {
+   "user": "医师",
+   "content": "ber 图 5 也是全 ai 工作流？[捂脸R]",
+   "likes": "2"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg",
+  "images/1.jpg",
+  "images/2.jpg",
+  "images/3.jpg",
+  "images/4.jpg"
+ ]
+}

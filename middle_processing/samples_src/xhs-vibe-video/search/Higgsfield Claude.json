@@ -1,0 +1,2276 @@
+[
+ {
+  "id": "6ad0db5c0000000018007057",
+  "model_type": "note",
+  "note_card": {
+   "interact_info": {
+    "shared_count": "10",
+    "liked": false,
+    "liked_count": "15",
+    "collected": false,
+    "collected_count": "25",
+    "comment_count": "7"
+   },
+   "cover": {
+    "height": 1684,
+    "width": 1263,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/923d15750b5a82de12f399b0e606e1a9/spectrum/1040g0k0326bkv62v46e05or98ofnrlsf19i7dr0!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/62c96a39f0cc648de1f6986a544ecce9/spectrum/1040g0k0326bkv62v46e05or98ofnrlsf19i7dr0!nc_n_webp_prv_1"
+   },
+   "image_list": [
+    {
+     "height": 1684,
+     "width": 1263,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/923d15750b5a82de12f399b0e606e1a9/spectrum/1040g0k0326bkv62v46e05or98ofnrlsf19i7dr0!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/62c96a39f0cc648de1f6986a544ecce9/spectrum/1040g0k0326bkv62v46e05or98ofnrlsf19i7dr0!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "text": "10-17",
+     "type": "publish_time"
+    }
+   ],
+   "type": "video",
+   "display_title": "Opus 5.5 + Higgsfield 做出离谱动态图形",
+   "user": {
+    "nick_name": "马丁没有早晨",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo320l09l4gm8005or98ofnrlsfri9pmi0?imageView2/2/w/80/format/jpg",
+    "user_id": "6369461f000000001f01d78f",
+    "nickname": "马丁没有早晨",
+    "xsec_token": "ABuZGOZwopzUfRyme3tulPl-R5FwMTiiKWuQ0c_W31sGE="
+   }
+  },
+  "xsec_token": "ABvwylVLspYl-WzqrTBmvn4sOt_tLM-M5COu0iu16cCns="
+ },
+ {
+  "id": "6a2a3a2b000000003502d303",
+  "model_type": "note",
+  "note_card": {
+   "type": "video",
+   "display_title": "Claude Fable 5 + Higgsfield=王炸",
+   "user": {
+    "nick_name": "OPENNOING",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/661a08f9492f3e0d1315a35c.jpg?imageView2/2/w/80/format/jpg",
+    "user_id": "5f21b7a30000000001003c3f",
+    "nickname": "OPENNOING",
+    "xsec_token": "ABU8LmF3qJWtNgHf3Zbzh48nEmT-KHGVgG5XiWppBowuw="
+   },
+   "interact_info": {
+    "collected": false,
+    "collected_count": "113",
+    "comment_count": "9",
+    "shared_count": "58",
+    "liked": false,
+    "liked_count": "105"
+   },
+   "cover": {
+    "height": 1685,
+    "width": 1263,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/38afbf26cbd135c40c4c04e9d48b0817/spectrum/1040g0k03218tkbaoms005np1muhg8f1v7n4ble0!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/8863b32446cf285f9751c4620172d7e6/spectrum/1040g0k03218tkbaoms005np1muhg8f1v7n4ble0!nc_n_webp_prv_1"
+   },
+   "image_list": [
+    {
+     "width": 1263,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/38afbf26cbd135c40c4c04e9d48b0817/spectrum/1040g0k03218tkbaoms005np1muhg8f1v7n4ble0!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/8863b32446cf285f9751c4620172d7e6/spectrum/1040g0k03218tkbaoms005np1muhg8f1v7n4ble0!nc_n_webp_prv_1"
+      }
+     ],
+     "height": 1685
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "06-11"
+    }
+   ]
+  },
+  "xsec_token": "AByKmHuT5Uqhc7B4HKw6fADkf3jlb5_-wsXldjOOt3iaQ="
+ },
+ {
+  "id": "6ab4bc9c0000000018004974",
+  "model_type": "note",
+  "note_card": {
+   "type": "video",
+   "display_title": "Claude Opus 5.5视频动画",
+   "user": {
+    "nick_name": "我是个智能体",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo32547fm643c005pbjkn7mducbjjsjkt8?imageView2/2/w/80/format/jpg",
+    "user_id": "6573a5cf000000001902f98b",
+    "nickname": "我是个智能体",
+    "xsec_token": "ABYoHVafJYVlZPYxC4FgOakInYQSd0jfsxsxxvJjxlAqk="
+   },
+   "interact_info": {
+    "liked": false,
+    "liked_count": "261",
+    "collected": false,
+    "collected_count": "181",
+    "comment_count": "41",
+    "shared_count": "62"
+   },
+   "cover": {
+    "height": 1648,
+    "width": 1920,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/bb825aff5f35b728da35cc8c4ea3811c/spectrum/1040g0k0325g67o2hkc005pbjkn7mducb7cj1s48!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/55505ece31b8022005ff6ff5d416b61b/spectrum/1040g0k0325g67o2hkc005pbjkn7mducb7cj1s48!nc_n_webp_prv_1"
+   },
+   "image_list": [
+    {
+     "height": 1648,
+     "width": 1920,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/bb825aff5f35b728da35cc8c4ea3811c/spectrum/1040g0k0325g67o2hkc005pbjkn7mducb7cj1s48!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/55505ece31b8022005ff6ff5d416b61b/spectrum/1040g0k0325g67o2hkc005pbjkn7mducb7cj1s48!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "09-24"
+    }
+   ]
+  },
+  "xsec_token": "AB53s-H5R0ARtHZNZmwfJu5H_v3O3aDUMMg56xD2ezn1s="
+ },
+ {
+  "id": "6ad07b9a000000001b02c6f6",
+  "model_type": "note",
+  "note_card": {
+   "cover": {
+    "height": 1491,
+    "width": 1988,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/46059474c5cdf36e135aa7549318878f/spectrum/1040g34o326b9aegjk6105on4mvj7jkkaj7oem30!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/64bc2ad3de0c3657a10ae54f584fd577/spectrum/1040g34o326b9aegjk6105on4mvj7jkkaj7oem30!nc_n_webp_prv_1"
+   },
+   "image_list": [
+    {
+     "width": 1988,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/46059474c5cdf36e135aa7549318878f/spectrum/1040g34o326b9aegjk6105on4mvj7jkkaj7oem30!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/64bc2ad3de0c3657a10ae54f584fd577/spectrum/1040g34o326b9aegjk6105on4mvj7jkkaj7oem30!nc_n_webp_prv_1"
+      }
+     ],
+     "height": 1491
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "10-17"
+    }
+   ],
+   "type": "video",
+   "display_title": "Claude做3D产品广告，质感太强了！🔥",
+   "user": {
+    "xsec_token": "ABEfAXElIwZlBChAYh5uXNTSzbGVZrrXctLZS5iGbOFDk=",
+    "nick_name": "Higgs AI研究所",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo326qi2ia8ka6g5on4mvj7jkka69n77m0?imageView2/2/w/80/format/jpg",
+    "user_id": "62e4b7e6000000001e01d28a",
+    "nickname": "Higgs AI研究所"
+   },
+   "interact_info": {
+    "liked": false,
+    "liked_count": "35",
+    "collected": false,
+    "collected_count": "36",
+    "comment_count": "0",
+    "shared_count": "4"
+   }
+  },
+  "xsec_token": "ABvwylVLspYl-WzqrTBmvn4mEPhLEEoVlsvWq7u8zeHAY="
+ },
+ {
+  "id": "6ac9cb2d000000000a022be4",
+  "model_type": "note",
+  "note_card": {
+   "user": {
+    "nick_name": "仔仔细细一下",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo325vm1bf0lg005o7p9kqgbjqis2cfa0g?imageView2/2/w/80/format/jpg",
+    "user_id": "60f94d35000000000101cf52",
+    "nickname": "仔仔细细一下",
+    "xsec_token": "ABOiqiMedXiu5D5a0Y4bdItyGCAI_9ISDmscB8H7rYGeo="
+   },
+   "interact_info": {
+    "liked": true,
+    "liked_count": "405",
+    "collected": true,
+    "collected_count": "620",
+    "comment_count": "6",
+    "shared_count": "94"
+   },
+   "cover": {
+    "width": 1164,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/f6ac79d23b96570685e2872344591f0b/spectrum/1040g34o3264o3b0qka105o7p9kqgbjqihj5rdqo!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/b20d99cbc82523ebd4b629a8def141a8/spectrum/1040g34o3264o3b0qka105o7p9kqgbjqihj5rdqo!nc_n_webp_prv_1",
+    "height": 1360
+   },
+   "image_list": [
+    {
+     "height": 1360,
+     "width": 1164,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/f6ac79d23b96570685e2872344591f0b/spectrum/1040g34o3264o3b0qka105o7p9kqgbjqihj5rdqo!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/b20d99cbc82523ebd4b629a8def141a8/spectrum/1040g34o3264o3b0qka105o7p9kqgbjqihj5rdqo!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "10-10"
+    }
+   ],
+   "type": "video",
+   "display_title": "动效这个事儿，AI 真能一把梭了"
+  },
+  "xsec_token": "ABoa_p4OFDqaDMdC5Q2Yiq4aOUtEQcVe19KdsQJmNoOfM="
+ },
+ {
+  "id": "6ab91431000000001b02ecee",
+  "model_type": "note",
+  "note_card": {
+   "type": "video",
+   "user": {
+    "nick_name": "Ai万有引力",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo320moco8h5e605pmnkm1jckrbnuubf9o?imageView2/2/w/80/format/jpg",
+    "user_id": "66d7a583000000000d02536b",
+    "nickname": "Ai万有引力",
+    "xsec_token": "ABza7wXvIKRlKT6WnmW96hFjYv0F08uhAYl05d_TQQUn4="
+   },
+   "interact_info": {
+    "liked_count": "23",
+    "collected": false,
+    "collected_count": "29",
+    "comment_count": "0",
+    "shared_count": "6",
+    "liked": false
+   },
+   "cover": {
+    "height": 1447,
+    "width": 1086,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/83296f6adb2a4066b92735d1057cb46e/1040g008325kdtubs446g5pmnkm1jckrb3f9o6b0!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/7b582d6dd8ff0cb518a88337444f44ac/1040g008325kdtubs446g5pmnkm1jckrb3f9o6b0!nc_n_webp_prv_1"
+   },
+   "image_list": [
+    {
+     "height": 1447,
+     "width": 1086,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/83296f6adb2a4066b92735d1057cb46e/1040g008325kdtubs446g5pmnkm1jckrb3f9o6b0!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/7b582d6dd8ff0cb518a88337444f44ac/1040g008325kdtubs446g5pmnkm1jckrb3f9o6b0!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "09-27"
+    }
+   ]
+  },
+  "xsec_token": "ABVOFH_d7boj-MtpoULpMqEprZqp3UjOAuOLa3DfOrfvM="
+ },
+ {
+  "model_type": "note",
+  "note_card": {
+   "type": "video",
+   "display_title": "DeepSeek和Claude做3D动画，谁更强？🤯",
+   "user": {
+    "xsec_token": "ABEfAXElIwZlBChAYh5uXNTSzbGVZrrXctLZS5iGbOFDk=",
+    "nick_name": "Higgs AI研究所",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo326qi2ia8ka6g5on4mvj7jkka69n77m0?imageView2/2/w/80/format/jpg",
+    "user_id": "62e4b7e6000000001e01d28a",
+    "nickname": "Higgs AI研究所"
+   },
+   "interact_info": {
+    "shared_count": "10",
+    "liked": false,
+    "liked_count": "85",
+    "collected": false,
+    "collected_count": "45",
+    "comment_count": "6"
+   },
+   "cover": {
+    "width": 1767,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/6bd38b490aeaad5aa9fea27c497870eb/spectrum/1040g34o326g6kakv440g5on4mvj7jkkaa0eoto0!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/590e67bef864bc202914017b825e5903/spectrum/1040g34o326g6kakv440g5on4mvj7jkkaa0eoto0!nc_n_webp_prv_1",
+    "height": 2356
+   },
+   "image_list": [
+    {
+     "height": 2356,
+     "width": 1767,
+     "info_list": [
+      {
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/6bd38b490aeaad5aa9fea27c497870eb/spectrum/1040g34o326g6kakv440g5on4mvj7jkkaa0eoto0!nc_n_webp_mw_1",
+       "image_scene": "WB_DFT"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/590e67bef864bc202914017b825e5903/spectrum/1040g34o326g6kakv440g5on4mvj7jkkaa0eoto0!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "10-19"
+    }
+   ]
+  },
+  "xsec_token": "AB0W4u5_ZwlPHqDtBOFt0I6IpJJA5VmTnroXjjHWvheOk=",
+  "id": "6ad5846200000000290167af"
+ },
+ {
+  "xsec_token": "ABOMB3tYIHthqDBFo5-xB_yzhND21_PQOrb81WblzMBYM=",
+  "id": "6ae207860000000034035d7f",
+  "model_type": "note",
+  "note_card": {
+   "type": "video",
+   "display_title": "Claude Motion + Higgs Field",
+   "user": {
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo322r47m087u605n9v25t4lvamh20mq7g?imageView2/2/w/80/format/jpg",
+    "user_id": "5d3f117a000000001202fd56",
+    "nickname": "马克周先生",
+    "xsec_token": "ABGSf9agxMzbIfnoNT5KRLIREJwcDqEd3TITWH5bGAZtc=",
+    "nick_name": "马克周先生"
+   },
+   "interact_info": {
+    "liked_count": "9",
+    "collected": false,
+    "collected_count": "6",
+    "comment_count": "0",
+    "shared_count": "2",
+    "liked": false
+   },
+   "cover": {
+    "height": 1080,
+    "width": 1920,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/a6cd3d4a5d5d741e9ea237b6acb31ec5/spectrum/1040g34o326sdk81ikc105n9v25t4lvammujrjro!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/b921fb1f21595d45513083d050efb4af/spectrum/1040g34o326sdk81ikc105n9v25t4lvammujrjro!nc_n_webp_prv_1"
+   },
+   "image_list": [
+    {
+     "height": 1080,
+     "width": 1920,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/a6cd3d4a5d5d741e9ea237b6acb31ec5/spectrum/1040g34o326sdk81ikc105n9v25t4lvammujrjro!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/b921fb1f21595d45513083d050efb4af/spectrum/1040g34o326sdk81ikc105n9v25t4lvammujrjro!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "5天前"
+    }
+   ]
+  }
+ },
+ {
+  "note_card": {
+   "cover": {
+    "height": 2356,
+    "width": 1767,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/826c9e51e510dca5f6285df0e9868a6e/spectrum/1040g34o326b9rvk8kc005on4mvj7jkkaai7v3rg!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/46799cfca2b3c4099228b3e44ac5cae5/spectrum/1040g34o326b9rvk8kc005on4mvj7jkkaai7v3rg!nc_n_webp_prv_1"
+   },
+   "image_list": [
+    {
+     "height": 2356,
+     "width": 1767,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/826c9e51e510dca5f6285df0e9868a6e/spectrum/1040g34o326b9rvk8kc005on4mvj7jkkaai7v3rg!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/46799cfca2b3c4099228b3e44ac5cae5/spectrum/1040g34o326b9rvk8kc005on4mvj7jkkaai7v3rg!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "10-18"
+    }
+   ],
+   "type": "video",
+   "display_title": "Claude和Katana正面PK，谁赢了？🔥",
+   "user": {
+    "nick_name": "Higgs AI研究所",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo326qi2ia8ka6g5on4mvj7jkka69n77m0?imageView2/2/w/80/format/jpg",
+    "user_id": "62e4b7e6000000001e01d28a",
+    "nickname": "Higgs AI研究所",
+    "xsec_token": "ABEfAXElIwZlBChAYh5uXNTSzbGVZrrXctLZS5iGbOFDk="
+   },
+   "interact_info": {
+    "collected_count": "13",
+    "comment_count": "2",
+    "shared_count": "3",
+    "liked": false,
+    "liked_count": "9",
+    "collected": false
+   }
+  },
+  "xsec_token": "ABvwylVLspYl-WzqrTBmvn4vFcF379HlmItScvX3vG4I8=",
+  "id": "6ad08010000000001b02d775",
+  "model_type": "note"
+ },
+ {
+  "id": "6aba40920000000018007b4c",
+  "model_type": "note",
+  "note_card": {
+   "interact_info": {
+    "liked": false,
+    "liked_count": "454",
+    "collected": false,
+    "collected_count": "512",
+    "comment_count": "8",
+    "shared_count": "80"
+   },
+   "cover": {
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/736bda105576152f4ff5c34dae2c963b/spectrum/1040g34o325lik000k6ng5on4mvj7jkka08lu4p0!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/9dfdae680109619db8e69745953859f0/spectrum/1040g34o325lik000k6ng5on4mvj7jkka08lu4p0!nc_n_webp_prv_1",
+    "height": 2359,
+    "width": 2359
+   },
+   "image_list": [
+    {
+     "height": 2359,
+     "width": 2359,
+     "info_list": [
+      {
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/736bda105576152f4ff5c34dae2c963b/spectrum/1040g34o325lik000k6ng5on4mvj7jkka08lu4p0!nc_n_webp_mw_1",
+       "image_scene": "WB_DFT"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/9dfdae680109619db8e69745953859f0/spectrum/1040g34o325lik000k6ng5on4mvj7jkka08lu4p0!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "09-28"
+    }
+   ],
+   "type": "video",
+   "display_title": "43分钟搞定！Claude Opus做动效杀疯了",
+   "user": {
+    "nick_name": "Higgs AI研究所",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo326qi2ia8ka6g5on4mvj7jkka69n77m0?imageView2/2/w/80/format/jpg",
+    "user_id": "62e4b7e6000000001e01d28a",
+    "nickname": "Higgs AI研究所",
+    "xsec_token": "ABEfAXElIwZlBChAYh5uXNTSzbGVZrrXctLZS5iGbOFDk="
+   }
+  },
+  "xsec_token": "AB3XFnG7S_FsCY9rceTsgz_I92LFw6pTypKj-XhKk8BCI="
+ },
+ {
+  "id": "6aba3f1d000000000b004673",
+  "model_type": "note",
+  "note_card": {
+   "type": "video",
+   "display_title": "王炸！Claude Opus5.5接管AE动效",
+   "user": {
+    "nickname": "Higgs AI研究所",
+    "xsec_token": "ABEfAXElIwZlBChAYh5uXNTSzbGVZrrXctLZS5iGbOFDk=",
+    "nick_name": "Higgs AI研究所",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo326qi2ia8ka6g5on4mvj7jkka69n77m0?imageView2/2/w/80/format/jpg",
+    "user_id": "62e4b7e6000000001e01d28a"
+   },
+   "interact_info": {
+    "shared_count": "143",
+    "liked": false,
+    "liked_count": "627",
+    "collected": false,
+    "collected_count": "557",
+    "comment_count": "14"
+   },
+   "cover": {
+    "height": 1491,
+    "width": 1988,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/119c4a91c74fa1750ec1fb7f00048be4/spectrum/1040g34o325lie7aak60g5on4mvj7jkkamni9qro!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/a41dcd239f8979464421bc6ac9a0aa52/spectrum/1040g34o325lie7aak60g5on4mvj7jkkamni9qro!nc_n_webp_prv_1"
+   },
+   "image_list": [
+    {
+     "height": 1491,
+     "width": 1988,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/119c4a91c74fa1750ec1fb7f00048be4/spectrum/1040g34o325lie7aak60g5on4mvj7jkkamni9qro!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/a41dcd239f8979464421bc6ac9a0aa52/spectrum/1040g34o325lie7aak60g5on4mvj7jkkamni9qro!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "09-28"
+    }
+   ]
+  },
+  "xsec_token": "AB3XFnG7S_FsCY9rceTsgz_DrYjHqk550b3svCIBOa3iE="
+ },
+ {
+  "note_card": {
+   "cover": {
+    "height": 720,
+    "width": 960,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/a8be3e944d2fd8cbf58653c9ed055778/1040g2sg3270hpnnn6i005qf8d2d08s00ag45rro!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/3df721f9fcafe7c0b1587e1be3c3ce9b/1040g2sg3270hpnnn6i005qf8d2d08s00ag45rro!nc_n_webp_prv_1"
+   },
+   "image_list": [
+    {
+     "height": 720,
+     "width": 960,
+     "info_list": [
+      {
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/a8be3e944d2fd8cbf58653c9ed055778/1040g2sg3270hpnnn6i005qf8d2d08s00ag45rro!nc_n_webp_mw_1",
+       "image_scene": "WB_DFT"
+      },
+      {
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/3df721f9fcafe7c0b1587e1be3c3ce9b/1040g2sg3270hpnnn6i005qf8d2d08s00ag45rro!nc_n_webp_prv_1",
+       "image_scene": "WB_PRV"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "2天前"
+    }
+   ],
+   "type": "video",
+   "display_title": "电影质感AI视频制作",
+   "user": {
+    "nickname": "Higgsfield.AI",
+    "xsec_token": "ABAK5zeqa3L8MRUNKVK2cLaGaGoVeo8BwZtu4v2Ap8vSA=",
+    "nick_name": "Higgsfield.AI",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo3213tucmr6s0g5qf8d2d08s00f7lqga8?imageView2/2/w/80/format/jpg",
+    "user_id": "69e8689a0000000001007000"
+   },
+   "interact_info": {
+    "comment_count": "2",
+    "shared_count": "7",
+    "liked": false,
+    "liked_count": "29",
+    "collected": false,
+    "collected_count": "19"
+   }
+  },
+  "xsec_token": "ABePDC0FEyxVfvdbM8P0OzBKhNNw3iZQNXPe5TTLMbhjU=",
+  "id": "6ae642070000000025002589",
+  "model_type": "note"
+ },
+ {
+  "id": "6ac8627a0000000018019f54",
+  "model_type": "note",
+  "note_card": {
+   "type": "video",
+   "display_title": "全靠代码写出来！汽车广告彻底变天",
+   "user": {
+    "nick_name": "Higgs AI研究所",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo326qi2ia8ka6g5on4mvj7jkka69n77m0?imageView2/2/w/80/format/jpg",
+    "user_id": "62e4b7e6000000001e01d28a",
+    "nickname": "Higgs AI研究所",
+    "xsec_token": "ABEfAXElIwZlBChAYh5uXNTSzbGVZrrXctLZS5iGbOFDk="
+   },
+   "interact_info": {
+    "liked": false,
+    "liked_count": "204",
+    "collected": false,
+    "collected_count": "215",
+    "comment_count": "11",
+    "shared_count": "83"
+   },
+   "cover": {
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/7a12bb718b7e18347bbeab26165e0731/spectrum/1040g34o3263c7tou4c105on4mvj7jkkaqov55pg!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/3a4b3311e3e6df5036d2446de585806d/spectrum/1040g34o3263c7tou4c105on4mvj7jkkaqov55pg!nc_n_webp_prv_1",
+    "height": 2022,
+    "width": 2022
+   },
+   "image_list": [
+    {
+     "height": 2022,
+     "width": 2022,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/7a12bb718b7e18347bbeab26165e0731/spectrum/1040g34o3263c7tou4c105on4mvj7jkkaqov55pg!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/3a4b3311e3e6df5036d2446de585806d/spectrum/1040g34o3263c7tou4c105on4mvj7jkkaqov55pg!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "10-09"
+    }
+   ]
+  },
+  "xsec_token": "AB3vw--7Qx53yyzGnC3BavFez0jqZUiRtJblQPV20edmM="
+ },
+ {
+  "xsec_token": "ABvwylVLspYl-WzqrTBmvn4oXMqLnXB8dsWd5q2At6Svk=",
+  "id": "6ad0797b0000000015016714",
+  "model_type": "note",
+  "note_card": {
+   "cover": {
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/aebf974744697733c4114aade26314af/spectrum/1040g34o326b91do8580g5on4mvj7jkka1kok198!nc_n_webp_prv_1",
+    "height": 1491,
+    "width": 1988,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/ae4dd0bc06ee9371837574ffc6d68dec/spectrum/1040g34o326b91do8580g5on4mvj7jkka1kok198!nc_n_webp_mw_1"
+   },
+   "image_list": [
+    {
+     "height": 1491,
+     "width": 1988,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/ae4dd0bc06ee9371837574ffc6d68dec/spectrum/1040g34o326b91do8580g5on4mvj7jkka1kok198!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/aebf974744697733c4114aade26314af/spectrum/1040g34o326b91do8580g5on4mvj7jkka1kok198!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "10-16"
+    }
+   ],
+   "type": "video",
+   "display_title": "只用几个小时，Claude做出宣传片？🤯",
+   "user": {
+    "user_id": "62e4b7e6000000001e01d28a",
+    "nickname": "Higgs AI研究所",
+    "xsec_token": "ABEfAXElIwZlBChAYh5uXNTSzbGVZrrXctLZS5iGbOFDk=",
+    "nick_name": "Higgs AI研究所",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo326qi2ia8ka6g5on4mvj7jkka69n77m0?imageView2/2/w/80/format/jpg"
+   },
+   "interact_info": {
+    "comment_count": "0",
+    "shared_count": "13",
+    "liked": false,
+    "liked_count": "42",
+    "collected": false,
+    "collected_count": "45"
+   }
+  }
+ },
+ {
+  "id": "6ac8640d000000000a01cf1f",
+  "model_type": "note",
+  "note_card": {
+   "type": "video",
+   "display_title": "颠覆宣发！Claude纯代码手搓发布片",
+   "user": {
+    "nick_name": "Higgs AI研究所",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo326qi2ia8ka6g5on4mvj7jkka69n77m0?imageView2/2/w/80/format/jpg",
+    "user_id": "62e4b7e6000000001e01d28a",
+    "nickname": "Higgs AI研究所",
+    "xsec_token": "ABEfAXElIwZlBChAYh5uXNTSzbGVZrrXctLZS5iGbOFDk="
+   },
+   "interact_info": {
+    "collected_count": "92",
+    "comment_count": "1",
+    "shared_count": "22",
+    "liked": false,
+    "liked_count": "91",
+    "collected": false
+   },
+   "cover": {
+    "height": 1791,
+    "width": 2388,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/94b3f8efd069491b15dd3558478270a5/spectrum/1040g34o3263ceh70k4105on4mvj7jkkaocc6qs8!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/3da911459acabb093e58ae526e619eff/spectrum/1040g34o3263ceh70k4105on4mvj7jkkaocc6qs8!nc_n_webp_prv_1"
+   },
+   "image_list": [
+    {
+     "height": 1791,
+     "width": 2388,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/94b3f8efd069491b15dd3558478270a5/spectrum/1040g34o3263ceh70k4105on4mvj7jkkaocc6qs8!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/3da911459acabb093e58ae526e619eff/spectrum/1040g34o3263ceh70k4105on4mvj7jkkaocc6qs8!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "10-09"
+    }
+   ]
+  },
+  "xsec_token": "AB3vw--7Qx53yyzGnC3BavFfLoH2HDkLC1CIZ3XQsm4i4="
+ },
+ {
+  "id": "6addcf260000000024037c5c",
+  "model_type": "note",
+  "note_card": {
+   "cover": {
+    "width": 1440,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/ea8082ecde7af4245b187f53ccd5f138/1040g2sg326o9oa9blg705o0l49ug9fnp56chfbg!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/c0c811c5a1ef92028a4aa57ffac7f865/1040g2sg326o9oa9blg705o0l49ug9fnp56chfbg!nc_n_webp_prv_1",
+    "height": 1080
+   },
+   "image_list": [
+    {
+     "height": 1080,
+     "width": 1440,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/ea8082ecde7af4245b187f53ccd5f138/1040g2sg326o9oa9blg705o0l49ug9fnp56chfbg!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/c0c811c5a1ef92028a4aa57ffac7f865/1040g2sg326o9oa9blg705o0l49ug9fnp56chfbg!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "10-25"
+    }
+   ],
+   "type": "video",
+   "user": {
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo326f6li72lg005o0l49ug9fnp3rjk0l8?imageView2/2/w/80/format/jpg",
+    "user_id": "6015227d000000000100bef9",
+    "nickname": "LOUIS GOLDEN",
+    "xsec_token": "AB_3BN30jFV1RrFmcoICQfGowk8AIu0V597kKPQkPqJGs=",
+    "nick_name": "LOUIS GOLDEN"
+   },
+   "interact_info": {
+    "collected_count": "55",
+    "comment_count": "3",
+    "shared_count": "11",
+    "liked": false,
+    "liked_count": "31",
+    "collected": false
+   }
+  },
+  "xsec_token": "ABppXmGidaWMkZ1G1lQkel9-c9Ut2U7GOTIEzb6iKDGTs="
+ },
+ {
+  "id": "6ad080a1000000001b02d9b3",
+  "model_type": "note",
+  "note_card": {
+   "image_list": [
+    {
+     "height": 1491,
+     "width": 1988,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/3e07c66c99ea8d89b0a079e369fc31fb/spectrum/1040g34o326b9u07sl8005on4mvj7jkkaspalb18!nc_n_webp_mw_1"
+      },
+      {
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/0f627bf2f0869d06065dc2bfefce875f/spectrum/1040g34o326b9u07sl8005on4mvj7jkkaspalb18!nc_n_webp_prv_1",
+       "image_scene": "WB_PRV"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "text": "10-18",
+     "type": "publish_time"
+    }
+   ],
+   "type": "video",
+   "display_title": "AI动效设计进入开挂模式了？🔥",
+   "user": {
+    "nick_name": "Higgs AI研究所",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo326qi2ia8ka6g5on4mvj7jkka69n77m0?imageView2/2/w/80/format/jpg",
+    "user_id": "62e4b7e6000000001e01d28a",
+    "nickname": "Higgs AI研究所",
+    "xsec_token": "ABEfAXElIwZlBChAYh5uXNTSzbGVZrrXctLZS5iGbOFDk="
+   },
+   "interact_info": {
+    "shared_count": "3",
+    "liked": false,
+    "liked_count": "25",
+    "collected": false,
+    "collected_count": "27",
+    "comment_count": "7"
+   },
+   "cover": {
+    "height": 1491,
+    "width": 1988,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/3e07c66c99ea8d89b0a079e369fc31fb/spectrum/1040g34o326b9u07sl8005on4mvj7jkkaspalb18!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/0f627bf2f0869d06065dc2bfefce875f/spectrum/1040g34o326b9u07sl8005on4mvj7jkkaspalb18!nc_n_webp_prv_1"
+   }
+  },
+  "xsec_token": "ABvwylVLspYl-WzqrTBmvn4lslGjdg2pbYwY9ep88w8ao="
+ },
+ {
+  "id": "6ac9728d000000001b02c9e1",
+  "model_type": "note",
+  "note_card": {
+   "cover": {
+    "height": 1440,
+    "width": 1921,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/84b4dd5f4bc97365f27c3526552df2e3/1040g2sg3264d2d1o4ae049jaubekqbjfj08dsqg!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/78c6f3bbd7e299a3fd9311981107c8d1/1040g2sg3264d2d1o4ae049jaubekqbjfj08dsqg!nc_n_webp_prv_1"
+   },
+   "image_list": [
+    {
+     "height": 1440,
+     "width": 1921,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/84b4dd5f4bc97365f27c3526552df2e3/1040g2sg3264d2d1o4ae049jaubekqbjfj08dsqg!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/78c6f3bbd7e299a3fd9311981107c8d1/1040g2sg3264d2d1o4ae049jaubekqbjfj08dsqg!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "10-10"
+    }
+   ],
+   "type": "video",
+   "display_title": "动效痛点打通了🔥",
+   "user": {
+    "nick_name": "Ninthartux",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ejdr3okgc0049jaubekqbjf4ais0v8?imageView2/2/w/80/format/jpg",
+    "user_id": "5939dd4d5e87e707a3242e6f",
+    "nickname": "Ninthartux",
+    "xsec_token": "AB6MMwo10GehB70fBzd-oVtin9mh3YsFMcy9xd0xIowDg="
+   },
+   "interact_info": {
+    "liked_count": "101",
+    "collected": false,
+    "collected_count": "109",
+    "comment_count": "3",
+    "shared_count": "17",
+    "liked": false
+   }
+  },
+  "xsec_token": "ABoa_p4OFDqaDMdC5Q2Yiq4eFz4DOv63i1SjuegZ9T9lM="
+ },
+ {
+  "note_card": {
+   "type": "video",
+   "display_title": "用 Claude 打造无露脸频道",
+   "user": {
+    "user_id": "5d3f117a000000001202fd56",
+    "nickname": "马克周先生",
+    "xsec_token": "ABGSf9agxMzbIfnoNT5KRLIREJwcDqEd3TITWH5bGAZtc=",
+    "nick_name": "马克周先生",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo322r47m087u605n9v25t4lvamh20mq7g?imageView2/2/w/80/format/jpg"
+   },
+   "interact_info": {
+    "liked_count": "4",
+    "collected": false,
+    "collected_count": "8",
+    "comment_count": "0",
+    "shared_count": "1",
+    "liked": false
+   },
+   "cover": {
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/501c043f3f23472267bf44dabb7381c9/spectrum/1040g34o3272svq8vmc105n9v25t4lvampvdcguo!nc_n_webp_prv_1",
+    "height": 1080,
+    "width": 1920,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/e706e8e3f879e01c5d44c234ff8a6046/spectrum/1040g34o3272svq8vmc105n9v25t4lvampvdcguo!nc_n_webp_mw_1"
+   },
+   "image_list": [
+    {
+     "height": 1080,
+     "width": 1920,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/e706e8e3f879e01c5d44c234ff8a6046/spectrum/1040g34o3272svq8vmc105n9v25t4lvampvdcguo!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/501c043f3f23472267bf44dabb7381c9/spectrum/1040g34o3272svq8vmc105n9v25t4lvampvdcguo!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "9小时前"
+    }
+   ]
+  },
+  "xsec_token": "ABxkjCkNxbDVck4bpTHc_VJPEJkvVEle4SzmOS2eyLjro=",
+  "id": "6ae8aa84000000002d005998",
+  "model_type": "note"
+ },
+ {
+  "note_card": {
+   "image_list": [
+    {
+     "height": 1791,
+     "width": 2388,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/e9e8854dbc24ef79773dd6d5a6e9d5d5/spectrum/1040g34o3263crij34c105on4mvj7jkka7j95h0g!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/c2a58f6c8dece816458ff2c9291080cf/spectrum/1040g34o3263crij34c105on4mvj7jkka7j95h0g!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "10-09"
+    }
+   ],
+   "type": "video",
+   "display_title": "故障风封神！Claude做宣传片太帅了",
+   "user": {
+    "nickname": "Higgs AI研究所",
+    "xsec_token": "ABEfAXElIwZlBChAYh5uXNTSzbGVZrrXctLZS5iGbOFDk=",
+    "nick_name": "Higgs AI研究所",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo326qi2ia8ka6g5on4mvj7jkka69n77m0?imageView2/2/w/80/format/jpg",
+    "user_id": "62e4b7e6000000001e01d28a"
+   },
+   "interact_info": {
+    "liked": false,
+    "liked_count": "157",
+    "collected": false,
+    "collected_count": "137",
+    "comment_count": "9",
+    "shared_count": "22"
+   },
+   "cover": {
+    "height": 1791,
+    "width": 2388,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/e9e8854dbc24ef79773dd6d5a6e9d5d5/spectrum/1040g34o3263crij34c105on4mvj7jkka7j95h0g!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/c2a58f6c8dece816458ff2c9291080cf/spectrum/1040g34o3263crij34c105on4mvj7jkka7j95h0g!nc_n_webp_prv_1"
+   }
+  },
+  "xsec_token": "AB3vw--7Qx53yyzGnC3BavFfwq0Mg_5NAr1k6oSn0O3Ek=",
+  "id": "6ac8675e00000000020128ce",
+  "model_type": "note"
+ },
+ {
+  "id": "6ad1ed71000000001b02220f",
+  "model_type": "note",
+  "note_card": {
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "1天前"
+    }
+   ],
+   "type": "normal",
+   "display_title": "每天拆解一个AI产品-Higgsfield",
+   "user": {
+    "user_id": "59a679765e87e725a6563824",
+    "nickname": "浅潜看",
+    "xsec_token": "AB_mOFJgWJdoq9L0JlEPZk2_YedLkxzuKmxF9WWk131QE=",
+    "nick_name": "浅潜看",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo322koto1t7k0049ovtdsnce143ksi4eg?imageView2/2/w/80/format/jpg"
+   },
+   "interact_info": {
+    "comment_count": "2",
+    "shared_count": "32",
+    "liked": false,
+    "liked_count": "52",
+    "collected": false,
+    "collected_count": "60"
+   },
+   "cover": {
+    "width": 1080,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/73fb6f77227631869c059e969b5b1f47/1040g2sg326cmaj824e7049ovtdsnce14e8rtqg8!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/6af833e7b90e318e54cc71eee260eabf/1040g2sg326cmaj824e7049ovtdsnce14e8rtqg8!nc_n_webp_prv_1",
+    "height": 1440
+   },
+   "image_list": [
+    {
+     "height": 1440,
+     "width": 1080,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/73fb6f77227631869c059e969b5b1f47/1040g2sg326cmaj824e7049ovtdsnce14e8rtqg8!nc_n_webp_mw_1"
+      },
+      {
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/6af833e7b90e318e54cc71eee260eabf/1040g2sg326cmaj824e7049ovtdsnce14e8rtqg8!nc_n_webp_prv_1",
+       "image_scene": "WB_PRV"
+      }
+     ]
+    },
+    {
+     "height": 1440,
+     "width": 1080,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/3091babe55cfa9b92f9667f003da8e94/1040g2sg326cmaj824e7g49ovtdsnce147p99gdo!nc_n_webp_mw_1"
+      },
+      {
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/c8e13516ea697e7206a491cfee4b0e81/1040g2sg326cmaj824e7g49ovtdsnce147p99gdo!nc_n_webp_prv_1",
+       "image_scene": "WB_PRV"
+      }
+     ]
+    },
+    {
+     "height": 1440,
+     "width": 1080,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/867e844c804819d65e20670a2c8b7a72/1040g2sg326cmaj824e8049ovtdsnce14c486jpo!nc_n_webp_mw_1"
+      },
+      {
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/b863860be6903cbc1239106a065a8699/1040g2sg326cmaj824e8049ovtdsnce14c486jpo!nc_n_webp_prv_1",
+       "image_scene": "WB_PRV"
+      }
+     ]
+    },
+    {
+     "height": 1440,
+     "width": 1080,
+     "info_list": [
+      {
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/ca750aa4eb2bbd48b860fe7ed2fd8c2d/1040g2sg326cmaj824e8g49ovtdsnce14kapg248!nc_n_webp_mw_1",
+       "image_scene": "WB_DFT"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/e78f89c666b3c03c22959226f9610960/1040g2sg326cmaj824e8g49ovtdsnce14kapg248!nc_n_webp_prv_1"
+      }
+     ]
+    },
+    {
+     "height": 1440,
+     "width": 1080,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/b505f25ee4916fdd26ec1dbe549d0ea7/1040g2sg326cmaj824e9049ovtdsnce143ii81g0!nc_n_webp_mw_1"
+      },
+      {
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/6a73b90bd1b9fede45738afd189bbdb6/1040g2sg326cmaj824e9049ovtdsnce143ii81g0!nc_n_webp_prv_1",
+       "image_scene": "WB_PRV"
+      }
+     ]
+    },
+    {
+     "width": 1080,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/7b9a1608c122067ef70414b7e930efc9/1040g2sg326cmaj824e9g49ovtdsnce148bin498!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/407019078cb745d5cd4b6f04b6fe8736/1040g2sg326cmaj824e9g49ovtdsnce148bin498!nc_n_webp_prv_1"
+      }
+     ],
+     "height": 1440
+    },
+    {
+     "info_list": [
+      {
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/60e7da13bfae5e09cddb466a04893405/1040g2sg326cmaj824ea049ovtdsnce14hm396gg!nc_n_webp_mw_1",
+       "image_scene": "WB_DFT"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/976cf88ceaabe15777f903d205fe2e96/1040g2sg326cmaj824ea049ovtdsnce14hm396gg!nc_n_webp_prv_1"
+      }
+     ],
+     "height": 1440,
+     "width": 1080
+    },
+    {
+     "height": 1440,
+     "width": 1080,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/5693ebc84e44d809079237ad32bf6d64/1040g2sg326cmaj824eag49ovtdsnce14fibbnn0!nc_n_webp_mw_1"
+      },
+      {
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/532396bb2bb16fe537a7ed5f5aeb0a92/1040g2sg326cmaj824eag49ovtdsnce14fibbnn0!nc_n_webp_prv_1",
+       "image_scene": "WB_PRV"
+      }
+     ]
+    },
+    {
+     "height": 1440,
+     "width": 1080,
+     "info_list": [
+      {
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/2713dbd2600563d73c4ad8457db26cc6/1040g2sg326cmaj824eb049ovtdsnce141bm4or0!nc_n_webp_mw_1",
+       "image_scene": "WB_DFT"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/7c64fb928f7dc162c25c817a76bcb4e2/1040g2sg326cmaj824eb049ovtdsnce141bm4or0!nc_n_webp_prv_1"
+      }
+     ]
+    },
+    {
+     "height": 1440,
+     "width": 1080,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/a08e7ff2d8f94d447b3a956ed2f76052/1040g2sg326cmaj824ebg49ovtdsnce14ol5evt8!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/f893399c77c2bdb4b656f4cc3edb6ee9/1040g2sg326cmaj824ebg49ovtdsnce14ol5evt8!nc_n_webp_prv_1"
+      }
+     ]
+    },
+    {
+     "height": 1440,
+     "width": 1080,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/7c5686799d8a490abed00d29a569cd01/1040g2sg326cmaj824ec049ovtdsnce144q3nd98!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/8a57ceb20bcf7afa975b9326304add3e/1040g2sg326cmaj824ec049ovtdsnce144q3nd98!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ]
+  },
+  "xsec_token": "ABxQV50uIXOoQGyY63JTcmnBg6rsY6F5HPzZQ_8-tS88c="
+ },
+ {
+  "note_card": {
+   "type": "video",
+   "display_title": "AIGC如何制作一个爆火的爱情故事",
+   "user": {
+    "nickname": "脆皮总监",
+    "xsec_token": "ABuBvQR0c33s5oDUfYOFQHQIpzNhIfG6pAqUb3R_AcpB0=",
+    "nick_name": "脆皮总监",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31ril54jm2s0048gpeclghhj9v6mdn48?imageView2/2/w/80/format/jpg",
+    "user_id": "57666b0834609441cbc7c669"
+   },
+   "interact_info": {
+    "collected_count": "1006",
+    "comment_count": "16",
+    "shared_count": "277",
+    "liked": false,
+    "liked_count": "640",
+    "collected": false
+   },
+   "cover": {
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/3cf4f7d1b8c43d0222b72785412ae3f7/spectrum/1040g34o324q3ike8721048gpeclghhj99emtbu0!nc_n_webp_prv_1",
+    "height": 1519,
+    "width": 2025,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/dba0d6070866b8d7492d935132584ec4/spectrum/1040g34o324q3ike8721048gpeclghhj99emtbu0!nc_n_webp_mw_1"
+   },
+   "image_list": [
+    {
+     "height": 1519,
+     "width": 2025,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/dba0d6070866b8d7492d935132584ec4/spectrum/1040g34o324q3ike8721048gpeclghhj99emtbu0!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/3cf4f7d1b8c43d0222b72785412ae3f7/spectrum/1040g34o324q3ike8721048gpeclghhj99emtbu0!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "09-07"
+    }
+   ]
+  },
+  "xsec_token": "ABEdhXFg3IBhxJe7ljn0gUAY1kttVAFaLEKUrxIDQChf0=",
+  "id": "6a9e223a000000002802913c",
+  "model_type": "note"
+ },
+ {
+  "model_type": "note",
+  "note_card": {
+   "corner_tag_info": [
+    {
+     "text": "10-27",
+     "type": "publish_time"
+    }
+   ],
+   "type": "video",
+   "display_title": "GPT-6.1 vs Claude，谁更懂物理？🔥",
+   "user": {
+    "nick_name": "Higgs AI研究所",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo326qi2ia8ka6g5on4mvj7jkka69n77m0?imageView2/2/w/80/format/jpg",
+    "user_id": "62e4b7e6000000001e01d28a",
+    "nickname": "Higgs AI研究所",
+    "xsec_token": "ABEfAXElIwZlBChAYh5uXNTSzbGVZrrXctLZS5iGbOFDk="
+   },
+   "interact_info": {
+    "liked": false,
+    "liked_count": "7",
+    "collected": false,
+    "collected_count": "5",
+    "comment_count": "0",
+    "shared_count": "0"
+   },
+   "cover": {
+    "height": 1348,
+    "width": 1011,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/65451e025121259c8ad1f3800f0cf870/spectrum/1040g34o326qgd5d74a105on4mvj7jkka58gupjo!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/7b16376383593c32d9fe52ff9243e29b/spectrum/1040g34o326qgd5d74a105on4mvj7jkka58gupjo!nc_n_webp_prv_1"
+   },
+   "image_list": [
+    {
+     "height": 1348,
+     "width": 1011,
+     "info_list": [
+      {
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/65451e025121259c8ad1f3800f0cf870/spectrum/1040g34o326qgd5d74a105on4mvj7jkka58gupjo!nc_n_webp_mw_1",
+       "image_scene": "WB_DFT"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/7b16376383593c32d9fe52ff9243e29b/spectrum/1040g34o326qgd5d74a105on4mvj7jkka58gupjo!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ]
+  },
+  "xsec_token": "ABkO331-1_JUvU687Ik2AJP2_SIz7XxL3peelAm8xNi_E=",
+  "id": "6ae011f00000000015016502"
+ },
+ {
+  "model_type": "note",
+  "note_card": {
+   "image_list": [
+    {
+     "height": 1684,
+     "width": 1263,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/77f31008e3ca1ab55ee1e3749d65b79b/spectrum/1040g0k0326mul1abk6005or98ofnrlsfi42anmo!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/7cd9408f9d51485e9ff958cd072ed2e1/spectrum/1040g0k0326mul1abk6005or98ofnrlsfi42anmo!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "10-24"
+    }
+   ],
+   "type": "video",
+   "display_title": "用 Opus 5.5 做出爆款动效视频",
+   "user": {
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo320l09l4gm8005or98ofnrlsfri9pmi0?imageView2/2/w/80/format/jpg",
+    "user_id": "6369461f000000001f01d78f",
+    "nickname": "马丁没有早晨",
+    "xsec_token": "ABuZGOZwopzUfRyme3tulPl-R5FwMTiiKWuQ0c_W31sGE=",
+    "nick_name": "马丁没有早晨"
+   },
+   "interact_info": {
+    "liked_count": "82",
+    "collected": false,
+    "collected_count": "149",
+    "comment_count": "3",
+    "shared_count": "12",
+    "liked": false
+   },
+   "cover": {
+    "height": 1684,
+    "width": 1263,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/77f31008e3ca1ab55ee1e3749d65b79b/spectrum/1040g0k0326mul1abk6005or98ofnrlsfi42anmo!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/7cd9408f9d51485e9ff958cd072ed2e1/spectrum/1040g0k0326mul1abk6005or98ofnrlsfi42anmo!nc_n_webp_prv_1"
+   }
+  },
+  "xsec_token": "ABVPExpA5J5SXfWoVeSe7vQ8uTIeSKP6_Tc-jPkUd86Rk=",
+  "id": "6adc7032000000002c016258"
+ },
+ {
+  "model_type": "note",
+  "note_card": {
+   "type": "normal",
+   "display_title": "Higgsfield 的 AI 电影工作流，记了几点",
+   "user": {
+    "nick_name": "田田有点AI",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo325oftcd3kq005n1gg7q1e0buu2ch9l8?imageView2/2/w/80/format/jpg",
+    "user_id": "5c3081f4000000000503017e",
+    "nickname": "田田有点AI",
+    "xsec_token": "ABphyrBvWqLHduHnHmk498PVNSAZVCcLj-EFFAnTCfcys="
+   },
+   "interact_info": {
+    "shared_count": "66",
+    "liked": false,
+    "liked_count": "194",
+    "collected": false,
+    "collected_count": "306",
+    "comment_count": "8"
+   },
+   "cover": {
+    "height": 2400,
+    "width": 1440,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/4591f2de750d2d76b3c1f29ae21413d0/notes_pre_post/1040g3k0323pth582go005n1gg7q1e0buuaf8sig!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/5f1f565ae030556fd90f6324bcf4cccd/notes_pre_post/1040g3k0323pth582go005n1gg7q1e0buuaf8sig!nc_n_webp_prv_1"
+   },
+   "image_list": [
+    {
+     "height": 2400,
+     "width": 1440,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/4591f2de750d2d76b3c1f29ae21413d0/notes_pre_post/1040g3k0323pth582go005n1gg7q1e0buuaf8sig!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/5f1f565ae030556fd90f6324bcf4cccd/notes_pre_post/1040g3k0323pth582go005n1gg7q1e0buuaf8sig!nc_n_webp_prv_1"
+      }
+     ]
+    },
+    {
+     "info_list": [
+      {
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/61d4aaaf8dc504e0451f4c97f3b51e04/notes_pre_post/1040g3k0323pth582go0g5n1gg7q1e0bu846cigo!nc_n_webp_mw_1",
+       "image_scene": "WB_DFT"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/a82eeb2f5d2e3b23bc026f5431462d64/notes_pre_post/1040g3k0323pth582go0g5n1gg7q1e0bu846cigo!nc_n_webp_prv_1"
+      }
+     ],
+     "height": 2400,
+     "width": 1440
+    },
+    {
+     "height": 2400,
+     "width": 1440,
+     "info_list": [
+      {
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/7d5aa7ad12d4e2bd1347066a22a17b27/notes_pre_post/1040g3k0323pth582go105n1gg7q1e0bu3lhbt0o!nc_n_webp_mw_1",
+       "image_scene": "WB_DFT"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/b1dba44b80021e92a2d2e4f75c1fc5a1/notes_pre_post/1040g3k0323pth582go105n1gg7q1e0bu3lhbt0o!nc_n_webp_prv_1"
+      }
+     ]
+    },
+    {
+     "height": 2400,
+     "width": 1440,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/930d871813a1d841174b163c6b4037b5/notes_pre_post/1040g3k0323pth582go1g5n1gg7q1e0buhk7dke8!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/ac4f89ca026266fc9fde27a7070c1bdb/notes_pre_post/1040g3k0323pth582go1g5n1gg7q1e0buhk7dke8!nc_n_webp_prv_1"
+      }
+     ]
+    },
+    {
+     "height": 2400,
+     "width": 1440,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/4d1ed8887348dc878dd7322efd65f3e5/notes_pre_post/1040g3k0323pth582go205n1gg7q1e0bu03o0o20!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/ab5017666899091753996b7f6b3b4310/notes_pre_post/1040g3k0323pth582go205n1gg7q1e0bu03o0o20!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "08-13"
+    }
+   ]
+  },
+  "xsec_token": "ABjSSweEwieP4LR3sazuOgTPlE79zGVx3rIdUX_sThl50=",
+  "id": "6a7d32af000000003501768b"
+ },
+ {
+  "id": "6ade1abe0000000031027191",
+  "model_type": "note",
+  "note_card": {
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "10-25"
+    }
+   ],
+   "type": "video",
+   "display_title": "设计师用两个月做了一串落地页",
+   "user": {
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo3220i6spl745g5ot4eq8pic5dk8vrc2g?imageView2/2/w/80/format/jpg",
+    "user_id": "63a4769100000000260130ad",
+    "nickname": "Manta",
+    "xsec_token": "ABciD5JZ8pH9kpvaql6zMLNRMyNQVxnPj-yiiQI9N8uFM=",
+    "nick_name": "Manta"
+   },
+   "interact_info": {
+    "comment_count": "0",
+    "shared_count": "1",
+    "liked": false,
+    "liked_count": "13",
+    "collected": false,
+    "collected_count": "12"
+   },
+   "cover": {
+    "height": 1080,
+    "width": 1752,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/a797cf5f276e754dddfca87611cc0d31/spectrum/1040g34o326oivch544105ot4eq8pic5dn84o8so!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/a317e87a7db1ecbb8762c2156b796c64/spectrum/1040g34o326oivch544105ot4eq8pic5dn84o8so!nc_n_webp_prv_1"
+   },
+   "image_list": [
+    {
+     "height": 1080,
+     "width": 1752,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/a797cf5f276e754dddfca87611cc0d31/spectrum/1040g34o326oivch544105ot4eq8pic5dn84o8so!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/a317e87a7db1ecbb8762c2156b796c64/spectrum/1040g34o326oivch544105ot4eq8pic5dn84o8so!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ]
+  },
+  "xsec_token": "ABMeUUSA1-srmtAqU8ozhZmoKtDD6_JNuBfXTN6vW043o="
+ },
+ {
+  "id": "6ac4a0fd000000001500d3bc",
+  "model_type": "note",
+  "note_card": {
+   "user": {
+    "nickname": "好物仔",
+    "xsec_token": "ABGQeAmOiK4Hvh0rDmMEShcMP9WyOTLy3UkwvoIHeYeWk=",
+    "nick_name": "好物仔",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo325r56pag46605pe10biifokaq05db9g?imageView2/2/w/80/format/jpg",
+    "user_id": "65c102e5000000000903e28a"
+   },
+   "interact_info": {
+    "collected_count": "12297",
+    "comment_count": "67",
+    "shared_count": "511",
+    "liked": false,
+    "liked_count": "10400",
+    "collected": false
+   },
+   "cover": {
+    "height": 1920,
+    "width": 1080,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/9d204bb19c42c7408d1e82cdb051b2e7/1040g008325vmlnu3586g5pe10biifokasutm2lg!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/9f6ea9e313639582ae5963d8acd9682a/1040g008325vmlnu3586g5pe10biifokasutm2lg!nc_n_webp_prv_1"
+   },
+   "image_list": [
+    {
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/9d204bb19c42c7408d1e82cdb051b2e7/1040g008325vmlnu3586g5pe10biifokasutm2lg!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/9f6ea9e313639582ae5963d8acd9682a/1040g008325vmlnu3586g5pe10biifokasutm2lg!nc_n_webp_prv_1"
+      }
+     ],
+     "height": 1920,
+     "width": 1080
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "10-06"
+    }
+   ],
+   "type": "video",
+   "display_title": "2026年最佳AI工具排行"
+  },
+  "xsec_token": "ABi2ZFMsFL6arlz_20OCLAz173rf0-0tpv56-vvDd8dDc="
+ },
+ {
+  "note_card": {
+   "cover": {
+    "height": 1791,
+    "width": 2388,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/92b3e160619c03ca2540999b65b243c0/spectrum/1040g34o3263cap3bk41g5on4mvj7jkka0k8nog0!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/39da920a8d0e803e0312bf31c2c4c7ee/spectrum/1040g34o3263cap3bk41g5on4mvj7jkka0k8nog0!nc_n_webp_prv_1"
+   },
+   "image_list": [
+    {
+     "height": 1791,
+     "width": 2388,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/92b3e160619c03ca2540999b65b243c0/spectrum/1040g34o3263cap3bk41g5on4mvj7jkka0k8nog0!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/39da920a8d0e803e0312bf31c2c4c7ee/spectrum/1040g34o3263cap3bk41g5on4mvj7jkka0k8nog0!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "10-09"
+    }
+   ],
+   "type": "video",
+   "display_title": "动效变天：Claude+代码搞定MG",
+   "user": {
+    "nick_name": "Higgs AI研究所",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo326qi2ia8ka6g5on4mvj7jkka69n77m0?imageView2/2/w/80/format/jpg",
+    "user_id": "62e4b7e6000000001e01d28a",
+    "nickname": "Higgs AI研究所",
+    "xsec_token": "ABEfAXElIwZlBChAYh5uXNTSzbGVZrrXctLZS5iGbOFDk="
+   },
+   "interact_info": {
+    "liked": false,
+    "liked_count": "30",
+    "collected": false,
+    "collected_count": "22",
+    "comment_count": "2",
+    "shared_count": "3"
+   }
+  },
+  "xsec_token": "AB3vw--7Qx53yyzGnC3BavFagxiMFom11tZAGhurcpdfk=",
+  "id": "6ac8634d000000000a01ccfb",
+  "model_type": "note"
+ },
+ {
+  "id": "6acd97bc0000000015009bc3",
+  "model_type": "note",
+  "note_card": {
+   "cover": {
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/75dec8a34059dc4f747fc7a88d150e0c/spectrum/1040g34o3268f0ffg4c105on4mvj7jkka53uk9n8!nc_n_webp_prv_1",
+    "height": 1491,
+    "width": 1988,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/4fd26352992b7a34d64cfdd469f7ac13/spectrum/1040g34o3268f0ffg4c105on4mvj7jkka53uk9n8!nc_n_webp_mw_1"
+   },
+   "image_list": [
+    {
+     "height": 1491,
+     "width": 1988,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/4fd26352992b7a34d64cfdd469f7ac13/spectrum/1040g34o3268f0ffg4c105on4mvj7jkka53uk9n8!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/75dec8a34059dc4f747fc7a88d150e0c/spectrum/1040g34o3268f0ffg4c105on4mvj7jkka53uk9n8!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "10-13"
+    }
+   ],
+   "type": "video",
+   "display_title": "一周前不可能，现在AI做到了？🤯",
+   "user": {
+    "nickname": "Higgs AI研究所",
+    "xsec_token": "ABEfAXElIwZlBChAYh5uXNTSzbGVZrrXctLZS5iGbOFDk=",
+    "nick_name": "Higgs AI研究所",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo326qi2ia8ka6g5on4mvj7jkka69n77m0?imageView2/2/w/80/format/jpg",
+    "user_id": "62e4b7e6000000001e01d28a"
+   },
+   "interact_info": {
+    "liked": false,
+    "liked_count": "135",
+    "collected": false,
+    "collected_count": "109",
+    "comment_count": "1",
+    "shared_count": "16"
+   }
+  },
+  "xsec_token": "ABHD0Ewhn9mIaID2UroEU8v1F7kGMpzUQ3FeBPl0_CfIM="
+ },
+ {
+  "id": "6ad6d4fd000000002902f4a4",
+  "model_type": "note",
+  "note_card": {
+   "image_list": [
+    {
+     "height": 1684,
+     "width": 1263,
+     "info_list": [
+      {
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/9beda01358174d88d34463332813a6cc/spectrum/1040g34o326hfm25058005on4mvj7jkka54sg52o!nc_n_webp_mw_1",
+       "image_scene": "WB_DFT"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/ebac022ce32acf91af8c8de5e9f98f48/spectrum/1040g34o326hfm25058005on4mvj7jkka54sg52o!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "10-20"
+    }
+   ],
+   "type": "video",
+   "display_title": "MiniMax新模型对决Claude🔥",
+   "user": {
+    "nick_name": "Higgs AI研究所",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo326qi2ia8ka6g5on4mvj7jkka69n77m0?imageView2/2/w/80/format/jpg",
+    "user_id": "62e4b7e6000000001e01d28a",
+    "nickname": "Higgs AI研究所",
+    "xsec_token": "ABEfAXElIwZlBChAYh5uXNTSzbGVZrrXctLZS5iGbOFDk="
+   },
+   "interact_info": {
+    "collected": false,
+    "collected_count": "56",
+    "comment_count": "22",
+    "shared_count": "23",
+    "liked": false,
+    "liked_count": "125"
+   },
+   "cover": {
+    "height": 1684,
+    "width": 1263,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/9beda01358174d88d34463332813a6cc/spectrum/1040g34o326hfm25058005on4mvj7jkka54sg52o!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/ebac022ce32acf91af8c8de5e9f98f48/spectrum/1040g34o326hfm25058005on4mvj7jkka54sg52o!nc_n_webp_prv_1"
+   }
+  },
+  "xsec_token": "ABMdcVeXBGNL2R_8HNS5ABLpBKAhpHBhydY-LfdS6f__A="
+ },
+ {
+  "model_type": "note",
+  "note_card": {
+   "type": "video",
+   "display_title": "GPT-6.1 vs Claude，谁更懂发动机？🔥",
+   "user": {
+    "nick_name": "Higgs AI研究所",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo326qi2ia8ka6g5on4mvj7jkka69n77m0?imageView2/2/w/80/format/jpg",
+    "user_id": "62e4b7e6000000001e01d28a",
+    "nickname": "Higgs AI研究所",
+    "xsec_token": "ABEfAXElIwZlBChAYh5uXNTSzbGVZrrXctLZS5iGbOFDk="
+   },
+   "interact_info": {
+    "liked": false,
+    "liked_count": "39",
+    "collected": false,
+    "collected_count": "40",
+    "comment_count": "5",
+    "shared_count": "7"
+   },
+   "cover": {
+    "height": 2356,
+    "width": 1767,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/3391d2d5e51da7246f872b3cc8c1a0f4/spectrum/1040g34o326qgb5ehka105on4mvj7jkka0i4pdb0!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/3d4e0a6291540ca4d064c10f7c7ed130/spectrum/1040g34o326qgb5ehka105on4mvj7jkka0i4pdb0!nc_n_webp_prv_1"
+   },
+   "image_list": [
+    {
+     "height": 2356,
+     "width": 1767,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/3391d2d5e51da7246f872b3cc8c1a0f4/spectrum/1040g34o326qgb5ehka105on4mvj7jkka0i4pdb0!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/3d4e0a6291540ca4d064c10f7c7ed130/spectrum/1040g34o326qgb5ehka105on4mvj7jkka0i4pdb0!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "10-27"
+    }
+   ]
+  },
+  "xsec_token": "ABkO331-1_JUvU687Ik2AJP_wuOQ9EvoyL71P0L950tLo=",
+  "id": "6ae011640000000017037de1"
+ },
+ {
+  "xsec_token": "ABkO331-1_JUvU687Ik2AJP72D0Owkxqcx2IwZBhPC8lg=",
+  "id": "6ae0132e00000000180142de",
+  "model_type": "note",
+  "note_card": {
+   "type": "video",
+   "display_title": "GPT-6.1 vs Claude，谁更会教电子学？⚡",
+   "user": {
+    "nick_name": "Higgs AI研究所",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo326qi2ia8ka6g5on4mvj7jkka69n77m0?imageView2/2/w/80/format/jpg",
+    "user_id": "62e4b7e6000000001e01d28a",
+    "nickname": "Higgs AI研究所",
+    "xsec_token": "ABEfAXElIwZlBChAYh5uXNTSzbGVZrrXctLZS5iGbOFDk="
+   },
+   "interact_info": {
+    "collected_count": "389",
+    "comment_count": "23",
+    "shared_count": "92",
+    "liked": false,
+    "liked_count": "450",
+    "collected": false
+   },
+   "cover": {
+    "height": 2356,
+    "width": 1767,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/5dc0707835e3561283b633b9aa78b176/spectrum/1040g34o326qgi17o58105on4mvj7jkkaa7mnu2g!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/6a9be4c3ffb53d76c985962a798a2eb9/spectrum/1040g34o326qgi17o58105on4mvj7jkkaa7mnu2g!nc_n_webp_prv_1"
+   },
+   "image_list": [
+    {
+     "height": 2356,
+     "width": 1767,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/5dc0707835e3561283b633b9aa78b176/spectrum/1040g34o326qgi17o58105on4mvj7jkkaa7mnu2g!nc_n_webp_mw_1"
+      },
+      {
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/6a9be4c3ffb53d76c985962a798a2eb9/spectrum/1040g34o326qgi17o58105on4mvj7jkkaa7mnu2g!nc_n_webp_prv_1",
+       "image_scene": "WB_PRV"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "10-27"
+    }
+   ]
+  }
+ },
+ {
+  "model_type": "note",
+  "note_card": {
+   "interact_info": {
+    "shared_count": "1",
+    "liked": false,
+    "liked_count": "12",
+    "collected": false,
+    "collected_count": "11",
+    "comment_count": "0"
+   },
+   "cover": {
+    "width": 1988,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/e4d91c341b756e94385ca88e11972c35/spectrum/1040g34o326b93qngk4105on4mvj7jkkadd4hebg!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/b5908962de9c62ca511dba3142e03832/spectrum/1040g34o326b93qngk4105on4mvj7jkkadd4hebg!nc_n_webp_prv_1",
+    "height": 1491
+   },
+   "image_list": [
+    {
+     "width": 1988,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/e4d91c341b756e94385ca88e11972c35/spectrum/1040g34o326b93qngk4105on4mvj7jkkadd4hebg!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/b5908962de9c62ca511dba3142e03832/spectrum/1040g34o326b93qngk4105on4mvj7jkkadd4hebg!nc_n_webp_prv_1"
+      }
+     ],
+     "height": 1491
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "10-16"
+    }
+   ],
+   "type": "video",
+   "display_title": "这宣传片质感，竟然是Claude做的？🤯",
+   "user": {
+    "nick_name": "Higgs AI研究所",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo326qi2ia8ka6g5on4mvj7jkka69n77m0?imageView2/2/w/80/format/jpg",
+    "user_id": "62e4b7e6000000001e01d28a",
+    "nickname": "Higgs AI研究所",
+    "xsec_token": "ABEfAXElIwZlBChAYh5uXNTSzbGVZrrXctLZS5iGbOFDk="
+   }
+  },
+  "xsec_token": "ABvwylVLspYl-WzqrTBmvn4mFffpo1PsNtbTeJGGQBjDY=",
+  "id": "6ad07a140000000018038ef4"
+ },
+ {
+  "id": "6ad077ca00000000120385a6",
+  "model_type": "note",
+  "note_card": {
+   "type": "video",
+   "display_title": "Gemini和Claude做赛博朋克游戏，谁赢？🔥",
+   "user": {
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo326qi2ia8ka6g5on4mvj7jkka69n77m0?imageView2/2/w/80/format/jpg",
+    "user_id": "62e4b7e6000000001e01d28a",
+    "nickname": "Higgs AI研究所",
+    "xsec_token": "ABEfAXElIwZlBChAYh5uXNTSzbGVZrrXctLZS5iGbOFDk=",
+    "nick_name": "Higgs AI研究所"
+   },
+   "interact_info": {
+    "shared_count": "4",
+    "liked": false,
+    "liked_count": "16",
+    "collected": false,
+    "collected_count": "14",
+    "comment_count": "0"
+   },
+   "cover": {
+    "height": 2356,
+    "width": 1767,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/73d3c606b1adf371dc77fefb298d291d/spectrum/1040g34o326b8que64a105on4mvj7jkkafo9bh58!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/2f85152a5b124ffa6b8679c00111c3dd/spectrum/1040g34o326b8que64a105on4mvj7jkkafo9bh58!nc_n_webp_prv_1"
+   },
+   "image_list": [
+    {
+     "width": 1767,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/73d3c606b1adf371dc77fefb298d291d/spectrum/1040g34o326b8que64a105on4mvj7jkkafo9bh58!nc_n_webp_mw_1"
+      },
+      {
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/2f85152a5b124ffa6b8679c00111c3dd/spectrum/1040g34o326b8que64a105on4mvj7jkkafo9bh58!nc_n_webp_prv_1",
+       "image_scene": "WB_PRV"
+      }
+     ],
+     "height": 2356
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "10-16"
+    }
+   ]
+  },
+  "xsec_token": "ABvwylVLspYl-WzqrTBmvn4ujOcz-flfZ_1baASxUHPnc="
+ },
+ {
+  "xsec_token": "ABvwylVLspYl-WzqrTBmvn4lEZv3RjM8qyFyEceEQy1UM=",
+  "id": "6ad07898000000001c00d468",
+  "model_type": "note",
+  "note_card": {
+   "type": "video",
+   "display_title": "Gemini和Claude造火箭，谁更强？🚀",
+   "user": {
+    "nick_name": "Higgs AI研究所",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo326qi2ia8ka6g5on4mvj7jkka69n77m0?imageView2/2/w/80/format/jpg",
+    "user_id": "62e4b7e6000000001e01d28a",
+    "nickname": "Higgs AI研究所",
+    "xsec_token": "ABEfAXElIwZlBChAYh5uXNTSzbGVZrrXctLZS5iGbOFDk="
+   },
+   "interact_info": {
+    "comment_count": "1",
+    "shared_count": "0",
+    "liked": false,
+    "liked_count": "14",
+    "collected": false,
+    "collected_count": "7"
+   },
+   "cover": {
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/4c765b04c51b6aa37b9418c42ea18c70/spectrum/1040g34o326b8ul2s4c105on4mvj7jkka8t62t00!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/cbe9e740c2f090a6e990b12a14c0a4ca/spectrum/1040g34o326b8ul2s4c105on4mvj7jkka8t62t00!nc_n_webp_prv_1",
+    "height": 1348,
+    "width": 1348
+   },
+   "image_list": [
+    {
+     "height": 1348,
+     "width": 1348,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/4c765b04c51b6aa37b9418c42ea18c70/spectrum/1040g34o326b8ul2s4c105on4mvj7jkka8t62t00!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/cbe9e740c2f090a6e990b12a14c0a4ca/spectrum/1040g34o326b8ul2s4c105on4mvj7jkka8t62t00!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "10-16"
+    }
+   ]
+  }
+ },
+ {
+  "model_type": "note",
+  "note_card": {
+   "display_title": "好的动效设计，根本不需要翻译！🔥",
+   "user": {
+    "user_id": "62e4b7e6000000001e01d28a",
+    "nickname": "Higgs AI研究所",
+    "xsec_token": "ABEfAXElIwZlBChAYh5uXNTSzbGVZrrXctLZS5iGbOFDk=",
+    "nick_name": "Higgs AI研究所",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo326qi2ia8ka6g5on4mvj7jkka69n77m0?imageView2/2/w/80/format/jpg"
+   },
+   "interact_info": {
+    "comment_count": "0",
+    "shared_count": "0",
+    "liked": false,
+    "liked_count": "14",
+    "collected": false,
+    "collected_count": "12"
+   },
+   "cover": {
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/1ce3cc9177e45ce71abbcc12a0b2e469/spectrum/1040g34o326b9vlpf4a1g5on4mvj7jkkacle35d8!nc_n_webp_prv_1",
+    "height": 1491,
+    "width": 1988,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/b276facab27da44d6bc1252ae6f7e75a/spectrum/1040g34o326b9vlpf4a1g5on4mvj7jkkacle35d8!nc_n_webp_mw_1"
+   },
+   "image_list": [
+    {
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/b276facab27da44d6bc1252ae6f7e75a/spectrum/1040g34o326b9vlpf4a1g5on4mvj7jkkacle35d8!nc_n_webp_mw_1"
+      },
+      {
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/1ce3cc9177e45ce71abbcc12a0b2e469/spectrum/1040g34o326b9vlpf4a1g5on4mvj7jkkacle35d8!nc_n_webp_prv_1",
+       "image_scene": "WB_PRV"
+      }
+     ],
+     "height": 1491,
+     "width": 1988
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "10-18"
+    }
+   ],
+   "type": "video"
+  },
+  "xsec_token": "ABvwylVLspYl-WzqrTBmvn4sZvAseQwge5DoXHYo-Eujc=",
+  "id": "6ad08121000000001a02b590"
+ },
+ {
+  "id": "6ae013dd0000000015016c04",
+  "model_type": "note",
+  "note_card": {
+   "display_title": "GPT-6.1 vs Claude 5.5，鹈鹕测试🔥",
+   "user": {
+    "nick_name": "Higgs AI研究所",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo326qi2ia8ka6g5on4mvj7jkka69n77m0?imageView2/2/w/80/format/jpg",
+    "user_id": "62e4b7e6000000001e01d28a",
+    "nickname": "Higgs AI研究所",
+    "xsec_token": "ABEfAXElIwZlBChAYh5uXNTSzbGVZrrXctLZS5iGbOFDk="
+   },
+   "interact_info": {
+    "liked": false,
+    "liked_count": "0",
+    "collected": false,
+    "collected_count": "1",
+    "comment_count": "0",
+    "shared_count": "0"
+   },
+   "cover": {
+    "width": 1263,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/a03149201a2b6ee31163a7d9ecdd745a/spectrum/1040g34o326qgjunv46105on4mvj7jkkali6sfc0!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/d8c51eea8003b00dd0f0457227dc2ac4/spectrum/1040g34o326qgjunv46105on4mvj7jkkali6sfc0!nc_n_webp_prv_1",
+    "height": 1684
+   },
+   "image_list": [
+    {
+     "height": 1684,
+     "width": 1263,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/a03149201a2b6ee31163a7d9ecdd745a/spectrum/1040g34o326qgjunv46105on4mvj7jkkali6sfc0!nc_n_webp_mw_1"
+      },
+      {
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/d8c51eea8003b00dd0f0457227dc2ac4/spectrum/1040g34o326qgjunv46105on4mvj7jkkali6sfc0!nc_n_webp_prv_1",
+       "image_scene": "WB_PRV"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "10-27"
+    }
+   ],
+   "type": "video"
+  },
+  "xsec_token": "ABkO331-1_JUvU687Ik2AJP_Ij7kMzjiWt9Py23-eT_88="
+ },
+ {
+  "id": "6ad07340000000001c00c19d",
+  "model_type": "note",
+  "note_card": {
+   "user": {
+    "nickname": "Higgs AI研究所",
+    "xsec_token": "ABEfAXElIwZlBChAYh5uXNTSzbGVZrrXctLZS5iGbOFDk=",
+    "nick_name": "Higgs AI研究所",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo326qi2ia8ka6g5on4mvj7jkka69n77m0?imageView2/2/w/80/format/jpg",
+    "user_id": "62e4b7e6000000001e01d28a"
+   },
+   "interact_info": {
+    "liked_count": "11",
+    "collected": false,
+    "collected_count": "8",
+    "comment_count": "0",
+    "shared_count": "1",
+    "liked": false
+   },
+   "cover": {
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/035f173eefa750b6bcabd1e1b8b3bca6/spectrum/1040g0k0326b89af846005on4mvj7jkkankq4l20!nc_n_webp_prv_1",
+    "height": 2356,
+    "width": 1767,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/95dcd45574c026107652c5d07f820170/spectrum/1040g0k0326b89af846005on4mvj7jkkankq4l20!nc_n_webp_mw_1"
+   },
+   "image_list": [
+    {
+     "width": 1767,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/95dcd45574c026107652c5d07f820170/spectrum/1040g0k0326b89af846005on4mvj7jkkankq4l20!nc_n_webp_mw_1"
+      },
+      {
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/035f173eefa750b6bcabd1e1b8b3bca6/spectrum/1040g0k0326b89af846005on4mvj7jkkankq4l20!nc_n_webp_prv_1",
+       "image_scene": "WB_PRV"
+      }
+     ],
+     "height": 2356
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "10-15"
+    }
+   ],
+   "type": "video",
+   "display_title": "Gemini和Claude造F1赛车，谁赢了？🤯"
+  },
+  "xsec_token": "ABvwylVLspYl-WzqrTBmvn4pCTeqP4nTg4C2J-McTnun0="
+ },
+ {
+  "id": "6acc498d000000001b02f81e",
+  "model_type": "note",
+  "note_card": {
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "10-12"
+    }
+   ],
+   "type": "video",
+   "display_title": "AI创作进入自动驾驶时代？🔥",
+   "user": {
+    "xsec_token": "ABEfAXElIwZlBChAYh5uXNTSzbGVZrrXctLZS5iGbOFDk=",
+    "nick_name": "Higgs AI研究所",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo326qi2ia8ka6g5on4mvj7jkka69n77m0?imageView2/2/w/80/format/jpg",
+    "user_id": "62e4b7e6000000001e01d28a",
+    "nickname": "Higgs AI研究所"
+   },
+   "interact_info": {
+    "liked": false,
+    "liked_count": "16",
+    "collected": false,
+    "collected_count": "15",
+    "comment_count": "3",
+    "shared_count": "11"
+   },
+   "cover": {
+    "height": 1491,
+    "width": 1988,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/ea64cbc1a850a1cb854ed2ac85bb2c9a/spectrum/1040g0k0326766rt94c0g5on4mvj7jkka43u5oo0!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/760283bb1c851831ed39c0420b64864f/spectrum/1040g0k0326766rt94c0g5on4mvj7jkka43u5oo0!nc_n_webp_prv_1"
+   },
+   "image_list": [
+    {
+     "height": 1491,
+     "width": 1988,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/ea64cbc1a850a1cb854ed2ac85bb2c9a/spectrum/1040g0k0326766rt94c0g5on4mvj7jkka43u5oo0!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/760283bb1c851831ed39c0420b64864f/spectrum/1040g0k0326766rt94c0g5on4mvj7jkka43u5oo0!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ]
+  },
+  "xsec_token": "ABd7OrLMChB_2SVkYk_R2K5xpPiPWnz8-XrjJgGZ06OyQ="
+ },
+ {
+  "model_type": "note",
+  "note_card": {
+   "display_title": "Gemini和Claude造战斗机，谁更强？🤯",
+   "user": {
+    "nick_name": "Higgs AI研究所",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo326qi2ia8ka6g5on4mvj7jkka69n77m0?imageView2/2/w/80/format/jpg",
+    "user_id": "62e4b7e6000000001e01d28a",
+    "nickname": "Higgs AI研究所",
+    "xsec_token": "ABEfAXElIwZlBChAYh5uXNTSzbGVZrrXctLZS5iGbOFDk="
+   },
+   "interact_info": {
+    "liked": false,
+    "liked_count": "3",
+    "collected": false,
+    "collected_count": "6",
+    "comment_count": "1",
+    "shared_count": "1"
+   },
+   "cover": {
+    "height": 3033,
+    "width": 3033,
+    "url_default": "http://sns-webpic-qc.xhscdn.com/202611032204/18d4426371c494f678403ce5a1300c02/spectrum/1040g34o326b8dsfbka105on4mvj7jkkaq48ee20!nc_n_webp_mw_1",
+    "url_pre": "http://sns-webpic-qc.xhscdn.com/202611032204/567a03407a26fc43b73e0702a014b491/spectrum/1040g34o326b8dsfbka105on4mvj7jkkaq48ee20!nc_n_webp_prv_1"
+   },
+   "image_list": [
+    {
+     "height": 3033,
+     "width": 3033,
+     "info_list": [
+      {
+       "image_scene": "WB_DFT",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/18d4426371c494f678403ce5a1300c02/spectrum/1040g34o326b8dsfbka105on4mvj7jkkaq48ee20!nc_n_webp_mw_1"
+      },
+      {
+       "image_scene": "WB_PRV",
+       "url": "http://sns-webpic-qc.xhscdn.com/202611032204/567a03407a26fc43b73e0702a014b491/spectrum/1040g34o326b8dsfbka105on4mvj7jkkaq48ee20!nc_n_webp_prv_1"
+      }
+     ]
+    }
+   ],
+   "corner_tag_info": [
+    {
+     "type": "publish_time",
+     "text": "10-15"
+    }
+   ],
+   "type": "video"
+  },
+  "xsec_token": "ABvwylVLspYl-WzqrTBmvn4nEHOgwGQmne60xWhyH93b0=",
+  "id": "6ad0744c000000001c00c523"
+ }
+]

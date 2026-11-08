@@ -1,0 +1,467 @@
+{
+ "family": "webdev",
+ "scenes": [
+  {
+   "key": "motion-site",
+   "cn": "动效官网与作品集",
+   "desc": "求职者和品牌要门面：截图给 AI 复刻，钱落在生成与托管平台",
+   "cards": [
+    {
+     "title": "截图复刻网页",
+     "core": [
+      "Kimi K2.5",
+      "截图 + 录屏",
+      "像素级复刻"
+     ],
+     "line": "一张截图加一段录屏，AI 就能像素级复刻整个网页",
+     "by": "赛文乔伊（小红书）",
+     "oss": null,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/xhs-6978e01f000000002103383e.jpg",
+     "links": [
+      {
+       "kind": "xhs",
+       "url": "https://www.xiaohongshu.com/explore/6978e01f000000002103383e?xsec_token=ABf7eBiClH4cU7LJ5zpFK6mkZtZIVzbXd2AXkUFhmw-jQ=&xsec_source=pc_search"
+      },
+      {
+       "kind": "site",
+       "url": "https://www.kimi.com/",
+       "label": "Kimi"
+      },
+      {
+       "kind": "github",
+       "url": "https://github.com/MoonshotAI/Kimi-K2.5"
+      }
+     ],
+     "biz": [],
+     "why": "webdev 全站最高赞（1.9 万赞 / 2.5 万藏），标题就叫「Vibe Coding 进化成 Visual Coding」；K2.5 开源权重，可挂 GitHub"
+    },
+    {
+     "title": "个人作品集上线",
+     "core": [
+      "Codex",
+      "设计师作品集",
+      "Vercel"
+     ],
+     "line": "中文描述搭骨架、截图改细节，GitHub + Vercel 免费上线",
+     "by": "陆78（设计师）",
+     "oss": null,
+     "poster": "http://sns-webpic-qc.xhscdn.com/202611032203/2d6b1dbb382df9a07d88d3a7815ee129/1040g008321offctano005ogj05r8d525dja0qj0!h5_1080jpg",
+     "links": [
+      {
+       "kind": "xhs",
+       "url": "https://www.xiaohongshu.com/explore/6a3a2801000000001c026c59?xsec_token=ABOEvfnvBkNz2aaPz6xlk7qBV6_LBqsBZEOlKSF2rbIO0=&xsec_source=pc_search"
+      },
+      {
+       "kind": "site",
+       "url": "https://developers.openai.com/codex",
+       "label": "Codex"
+      },
+      {
+       "kind": "site",
+       "url": "https://vercel.com/",
+       "label": "Vercel"
+      }
+     ],
+     "biz": [],
+     "why": "作品集是小红书 webdev 量最大的一类；本帖 7.7 千赞 / 8.5 千藏，六步流程可照抄。Kia 泳池（1.1 万赞）是 three.js 3D，归 3D 家族"
+    },
+    {
+     "title": "UI UX Pro Max",
+     "core": [
+      "设计 Skill",
+      "Claude Code",
+      "去 AI 味"
+     ],
+     "line": "给编码 agent 的设计规则库：风格、配色、字体可检索，去 AI 味",
+     "by": "NextLevelBuilder",
+     "oss": true,
+     "poster": "https://uupm.cc/share.png",
+     "links": [
+      {
+       "kind": "github",
+       "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill"
+      },
+      {
+       "kind": "site",
+       "url": "https://www.uupm.cc/"
+      }
+     ],
+     "biz": [
+      {
+       "k": "npm 月下载",
+       "v": "7.8 万次（2026-10）",
+       "src": "https://api.npmjs.org/downloads/point/last-month/ui-ux-pro-max-cli"
+      }
+     ],
+     "why": "GitHub 14.5 万 star，webdev 方向最大的开源项目之一；解决的正是「AI 页面能不能直接商用」的审美那层"
+    },
+    {
+     "title": "v0 by Vercel",
+     "core": [
+      "v0",
+      "React 页面",
+      "一键部署"
+     ],
+     "line": "一句话生成 React 页面，一键部署到 Vercel 上线",
+     "by": "Vercel",
+     "oss": false,
+     "poster": "https://v0.app/chat/api/og",
+     "links": [
+      {
+       "kind": "site",
+       "url": "https://v0.app/"
+      },
+      {
+       "kind": "site",
+       "url": "https://vercel.com/",
+       "label": "Vercel"
+      }
+     ],
+     "biz": [
+      {
+       "k": "Vercel 年化收入",
+       "v": "超 5 亿美元（2026-07，官方）",
+       "src": "https://www.businesswire.com/news/home/20260806738617/en/"
+      },
+      {
+       "k": "agent 触发的部署",
+       "v": "一年涨 28 倍（2026-10，官方）",
+       "src": "https://vercel.com/blog/vercel-ship-2026-recap"
+      },
+      {
+       "k": "v0 用户",
+       "v": "350 万+（2025-09，官方）",
+       "src": "https://www.businesswire.com/news/home/20250930898216/en/"
+      }
+     ],
+     "why": "网站生成 + 托管的标杆；v0 单独收入未披露，Sacra 称其建站份额被 Lovable、Replit 抢走，但 vibe 出来的站大量部署在 Vercel"
+    }
+   ]
+  },
+  {
+   "key": "html-slides",
+   "cn": "HTML 汇报与 PPT",
+   "desc": "打工人和研究生自己付费：HTML 汇报可交互、换数据就能复用",
+   "cards": [
+    {
+     "title": "Claude Design",
+     "core": [
+      "Claude Design",
+      "可编辑 PPT",
+      "HTML"
+     ],
+     "line": "AI 做 PPT 从「图片式」走到可编辑、可交互的 HTML",
+     "by": "大师的AI小灶（小红书）",
+     "oss": null,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/xhs-6a2ac224000000001603e76b.jpg",
+     "links": [
+      {
+       "kind": "xhs",
+       "url": "https://www.xiaohongshu.com/explore/6a2ac224000000001603e76b?xsec_token=AByKmHuT5Uqhc7B4HKw6fADoHyP5cKdJVzaFat1FIpzWU=&xsec_source=pc_search"
+      },
+      {
+       "kind": "site",
+       "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
+       "label": "Claude Design"
+      }
+     ],
+     "biz": [
+      {
+       "k": "发布当天 Figma 股价",
+       "v": "跌约 7%（2026-04-17）",
+       "src": "https://www.fool.com/investing/2026/05/03/why-figma-fell-16-in-april/"
+      }
+     ],
+     "why": "HTML 汇报组收藏最高（1.06 万藏、2614 评论）；Claude Design 2026-04-17 发布，可导出独立 HTML / PPTX"
+    },
+    {
+     "title": "组会文献汇报",
+     "core": [
+      "Codex",
+      "研究生组会",
+      "HTML 转 PPT"
+     ],
+     "line": "论文和模板丢给 Codex，逐页出 HTML，再转 SVG 进 PPT",
+     "by": "山山而川（研究生）",
+     "oss": null,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/xhs-6a675362000000000f013683.jpg",
+     "links": [
+      {
+       "kind": "xhs",
+       "url": "https://www.xiaohongshu.com/explore/6a675362000000000f013683?xsec_token=ABIi79alD0g3dxyIjEUCPSqdOzeFsnj7u5f2MFVCxlK50=&xsec_source=pc_search"
+      },
+      {
+       "kind": "site",
+       "url": "https://developers.openai.com/codex",
+       "label": "Codex"
+      }
+     ],
+     "biz": [],
+     "why": "6.1 千赞 / 8.5 千藏，收藏高于点赞，是「存起来照着做」的刚需；四步话术完整"
+    },
+    {
+     "title": "Frontend Slides",
+     "core": [
+      "Claude Code Skill",
+      "单文件 HTML",
+      "PPT 转网页"
+     ],
+     "line": "编码 agent 的幻灯片 skill：先挑风格，再出单文件 HTML",
+     "by": "Zara Zhang",
+     "oss": true,
+     "poster": "https://i.ytimg.com/vi/372Iksaz8b0/maxresdefault.jpg",
+     "links": [
+      {
+       "kind": "github",
+       "url": "https://github.com/zarazhangrui/frontend-slides"
+      },
+      {
+       "kind": "youtube",
+       "url": "https://www.youtube.com/watch?v=372Iksaz8b0"
+      }
+     ],
+     "biz": [],
+     "why": "海外 HTML 幻灯片最火的开源方案：3.2 万 star，作者教程 8.2 万播放；还能把旧 PPT 转网页"
+    },
+    {
+     "title": "Genspark 幻灯片",
+     "core": [
+      "Genspark",
+      "HTML 幻灯片",
+      "导出 PPTX"
+     ],
+     "line": "以 HTML 为底的幻灯片 agent：自动查资料成稿，可导出 PPTX",
+     "by": "Genspark（MainFunc）",
+     "oss": false,
+     "poster": "https://i.ytimg.com/vi/9cj_KC70yRw/maxresdefault.jpg",
+     "links": [
+      {
+       "kind": "site",
+       "url": "https://www.genspark.ai/"
+      },
+      {
+       "kind": "youtube",
+       "url": "https://www.youtube.com/watch?v=9cj_KC70yRw"
+      }
+     ],
+     "biz": [
+      {
+       "k": "ARR",
+       "v": "2.5 亿美元，12 个月从零做到（2026-06，官方）",
+       "src": "https://www.businesswire.com/news/home/20260617758937/en/"
+      },
+      {
+       "k": "估值",
+       "v": "26 亿美元（2026-06 B 轮扩展，官方）",
+       "src": "https://www.businesswire.com/news/home/20260617758937/en/"
+      }
+     ],
+     "why": "AI Slides 是招牌功能，CEO 称 2025-04 推出「全球首个基于 HTML 的 AI Slides」；ARR 是全公司口径。Gamma 不写代码、Kimi PPT 走模板，未选"
+    }
+   ]
+  },
+  {
+   "key": "app-mvp",
+   "cn": "应用与小程序",
+   "desc": "非程序员按月订阅：一句话出带数据库的应用，平台 ARR 已到数亿美元",
+   "cards": [
+    {
+     "title": "Lovable",
+     "core": [
+      "Lovable",
+      "全栈应用",
+      "一键上线"
+     ],
+     "line": "一句话生成前后端并上线，平台上的应用月访问近 10 亿",
+     "by": "Lovable（瑞典）",
+     "oss": false,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/bp-webdev-00.jpg",
+     "links": [
+      {
+       "kind": "site",
+       "url": "https://lovable.dev/"
+      }
+     ],
+     "biz": [
+      {
+       "k": "ARR",
+       "v": "超 6 亿美元（2026-09，联合创始人披露）",
+       "src": "https://techcrunch.com/2026/09/24/lovables-annualized-revenue-crosses-600m-as-vibe-coding-takes-off/"
+      },
+      {
+       "k": "估值",
+       "v": "133 亿美元（2026-08 融资 4 亿美元）",
+       "src": "https://techcrunch.com/2026/09/24/lovables-annualized-revenue-crosses-600m-as-vibe-coding-takes-off/"
+      },
+      {
+       "k": "平台应用月访问",
+       "v": "近 10 亿次（2026-09）",
+       "src": "https://techcrunch.com/2026/09/24/lovables-annualized-revenue-crosses-600m-as-vibe-coding-takes-off/"
+      }
+     ],
+     "why": "webdev 里收入最大的单一产品，「LLM 写代码 → 可用产品」商业化的最强证据；2026-02 时 4 亿，半年多涨到 6 亿"
+    },
+    {
+     "title": "拼豆接单工作台",
+     "core": [
+      "WorkBuddy",
+      "全栈网页",
+      "云数据库"
+     ],
+     "line": "一句话做出带订单库的拼豆接单站，发布即得访问链接",
+     "by": "李叔聊AI（小红书）",
+     "oss": null,
+     "poster": "http://sns-webpic-qc.xhscdn.com/202611032203/8a1e9d55c4f6faee12be697e5fb9afa6/spectrum/1040g34o325hploe7kc105oabtph0jnh43655ma0!h5_1080jpg",
+     "links": [
+      {
+       "kind": "xhs",
+       "url": "https://www.xiaohongshu.com/explore/6ab662ef000000001203f0f3?xsec_token=AB7uAp6-dMvG430rdhHkmcG00ad0iQJC9M0mctKlC-9cg=&xsec_source=pc_search"
+      },
+      {
+       "kind": "site",
+       "url": "https://www.codebuddy.cn/work/",
+       "label": "WorkBuddy"
+      }
+     ],
+     "biz": [
+      {
+       "k": "WorkBuddy 月访问",
+       "v": "885 万次，同类第一（2026-03，易观）",
+       "src": "https://m.gelonghui.com/live/2540132"
+      }
+     ],
+     "why": "4 千赞 / 4 千藏；国内大厂（腾讯）版 Lovable，2026-09 起还能一句话生成并上线微信小程序；接单场景直接对应小生意"
+    },
+    {
+     "title": "心理测试小程序",
+     "core": [
+      "Codex",
+      "微信小程序",
+      "一周破万"
+     ],
+     "line": "随手用 Codex 搓的心理测试小程序，上线一周多累计 1 万多用户",
+     "by": "莫名其妙（小红书）",
+     "oss": null,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/xhs-6a882a55000000001f01cf81.jpg",
+     "links": [
+      {
+       "kind": "xhs",
+       "url": "https://www.xiaohongshu.com/explore/6a882a55000000001f01cf81?xsec_token=ABn6_eyn8LxS7UDBTmENyDSPA9VLeGu-s1gdd5JG_wOgQ=&xsec_source=pc_search"
+      },
+      {
+       "kind": "site",
+       "url": "https://developers.openai.com/codex",
+       "label": "Codex"
+      }
+     ],
+     "biz": [],
+     "why": "小程序帖里少见带用户数的；赞不高（933）但评论 398，说明大家在问怎么做。更高赞的「疼痛位置小程序」（8 千赞）是 Blender 3D 人体模型且无产品链接，未选"
+    }
+   ]
+  },
+  {
+   "key": "web-games",
+   "cn": "网页小游戏",
+   "desc": "钱来自广告和平台：AI 小游戏已冲上 TapTap 总榜，平台月活千万",
+   "cards": [
+    {
+     "title": "AI 的 4399",
+     "core": [
+      "MCP",
+      "AI 伴侣",
+      "开源小游戏"
+     ],
+     "line": "AI 伴侣的 4399：一个网址收齐开源小游戏，人和 AI 同场玩",
+     "by": "南山君（小红书）",
+     "oss": null,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/xhs-6a4a60170000000008002b65.jpg",
+     "links": [
+      {
+       "kind": "xhs",
+       "url": "https://www.xiaohongshu.com/explore/6a4a60170000000008002b65?xsec_token=ABPY7V8ypccWe-UcIMgzq5hxRW1L1NpYE_IDN6dDUVu98=&xsec_source=pc_search"
+      },
+      {
+       "kind": "site",
+       "url": "https://toy.cedarstar.org/",
+       "label": "CEDAR TOY"
+      }
+     ],
+     "biz": [],
+     "why": "网页小游戏组最高赞（4.2 千赞、670 评论）；合集站在线。注意它是「给 AI 伴侣玩」的人机恋圈子玩法，商业性弱，可换成浙大猫学长「vibe 一款网络游戏」（3.8 千赞，但无产品链接）"
+    },
+    {
+     "title": "TapTap 双榜小游戏",
+     "core": [
+      "AI 小游戏",
+      "TapTap",
+      "广告变现"
+     ],
+     "line": "两款 AI 小游戏同登 TapTap 总榜热榜，一款广告日入千元级",
+     "by": "明月桥investor（小红书）",
+     "oss": null,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/xhs-6ad895d4000000003302977a.jpg",
+     "links": [
+      {
+       "kind": "xhs",
+       "url": "https://www.xiaohongshu.com/explore/6ad895d4000000003302977a?xsec_token=ABBpZEnzBaI6sS_Swpe8pNaXK8uz3b3rxXMqMj3-0m6zQ=&xsec_source=pc_search"
+      },
+      {
+       "kind": "site",
+       "url": "https://www.taptap.cn/",
+       "label": "TapTap"
+      }
+     ],
+     "biz": [
+      {
+       "k": "TapTap 上半年新游",
+       "v": "5002 款，约 80% 由 AI 制作（2026H1）",
+       "src": "https://www.invenglobal.com/articles/24194/80-of-5002-new-games-on-taptap-in-first-half-of-year-created-with-ai"
+      },
+      {
+       "k": "TapTap 制造",
+       "v": "半年近 5000 款，累计玩家 1100 万+（2026-09）",
+       "src": "https://cj.sina.com.cn/articles/view/1850649324/6e4eaaec02002k0ge"
+      }
+     ],
+     "why": "小红书唯一给出真实广告收入的 AI 小游戏帖；赞不高（772）但有钱的证据。biz 是 TapTap 平台口径，帖子没说是否用 TapTap 制造"
+    },
+    {
+     "title": "Astrocade",
+     "core": [
+      "Astrocade",
+      "一句话做游戏",
+      "游戏信息流"
+     ],
+     "line": "一句话生成休闲小游戏，像刷短视频一样一个个刷着玩",
+     "by": "Astrocade（Sadeghian 兄弟、李飞飞）",
+     "oss": false,
+     "poster": "https://www.astrocade.com/og/page/home?v=1",
+     "links": [
+      {
+       "kind": "site",
+       "url": "https://www.astrocade.com/"
+      }
+     ],
+     "biz": [
+      {
+       "k": "MAU",
+       "v": "1000 万，4 个月翻倍（2026-10，CEO 披露）",
+       "src": "https://gamesbeat.com/astrocade-hits-10m-monthly-players-for-its-ai-assisted-ugc-casual-games-platform/"
+      },
+      {
+       "k": "月游戏局数",
+       "v": "2.2 亿局（2026-10）",
+       "src": "https://gamesbeat.com/astrocade-hits-10m-monthly-players-for-its-ai-assisted-ugc-casual-games-platform/"
+      },
+      {
+       "k": "融资",
+       "v": "5600 万美元，红杉、Sea 领投（2026-05）",
+       "src": "https://www.fortune.com/2026/05/05/astrocade-raises-56-million-series-b-sequoia-video-games-platform-ali-amir-sadeghian/"
+      }
+     ],
+     "why": "海外唯一有大流量披露的文生游戏平台；尚未变现，CEO 称明年才抓收入。Fly（levelsio）是 three.js 3D 且收入已归零，未选"
+    }
+   ]
+  }
+ ]
+}

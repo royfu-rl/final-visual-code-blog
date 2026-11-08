@@ -1,0 +1,42 @@
+{
+ "note_id": "6ad9b245000000003103756d",
+ "url": "https://www.xiaohongshu.com/explore/6ad9b245000000003103756d?xsec_token=ABRXR_NYOa-6BpvTR6R8HJptSOoBe8WJmwJ8goEiZ3gOY=&xsec_source=pc_search",
+ "type": "video",
+ "title": "AI视频可控小技巧：通过Blender做分镜图",
+ "desc": "① 让 Agent 通过 MCP 操控 Blender；\n② 打字让它搭简易灰模、定好比例，逐镜头做出整部片的预演；\n③ 关键一步：不把预演视频直接喂给模型，而是让 Agent 截关键帧，做成带编号的分镜图，连同设定图一起交给视频模型，并在提示词末尾加上三句 STORYBOARD 指令。\n\t\n镜头一下从僵硬变灵动，一致性也很强。",
+ "tags": [],
+ "author": "陆三金",
+ "user_id": "5622619644760843e5e665f5",
+ "time": 1792651845000,
+ "ip_location": "北京",
+ "likes": "121",
+ "collects": "190",
+ "comments_count": "3",
+ "keywords": [
+  "Claude Blender 动画"
+ ],
+ "duration": 80,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040129/e835fb8ef9b2ba4a9d9fa2c8fe9f0954/spectrum/1040g34o326k95odu4c0041kv5tgpcpflinogq4o!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "TAKE X创作者平台",
+   "content": "从预演里截关键帧再编号，能让模型更清楚地对应镜头顺序。动作连续的部分保留起止状态，比只截每镜最漂亮的一帧更便于衔接。",
+   "likes": "0"
+  },
+  {
+   "user": "小锅米线",
+   "content": "[赞R]",
+   "likes": "0"
+  },
+  {
+   "user": "小庄今天不加班",
+   "content": "codex太傻了，咋办，运镜很难顶",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

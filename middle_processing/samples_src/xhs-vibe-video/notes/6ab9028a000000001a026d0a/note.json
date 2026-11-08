@@ -1,0 +1,83 @@
+{
+ "note_id": "6ab9028a000000001a026d0a",
+ "url": "https://www.xiaohongshu.com/explore/6ab9028a000000001a026d0a?xsec_token=ABVOFH_d7boj-MtpoULpMqEiG45TplqopJBZzZDPoq_g4=&xsec_source=pc_search",
+ "type": "video",
+ "title": "原子弹爆炸瘫坐",
+ "desc": "这是 opus5.5 出的视频\n\t\n我直接进入到原子弹爆炸瘫坐环节了\n\t\n国庆我将狠狠蹬几个视频#howto解锁创意剪辑[话题]# #howto实现一万种vibecoding[话题]# #vibecoding[话题]# #爆炸就是艺术[话题]# #动效设计[话题]#",
+ "tags": [
+  "howto解锁创意剪辑",
+  "howto实现一万种vibecoding",
+  "vibecoding",
+  "爆炸就是艺术",
+  "动效设计"
+ ],
+ "author": "Kriswillwin",
+ "user_id": "65acfa6c000000000e003c78",
+ "time": 1790509706000,
+ "ip_location": null,
+ "likes": "916",
+ "collects": "588",
+ "comments_count": "54",
+ "keywords": [
+  "Opus5.5 做视频"
+ ],
+ "duration": 156,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040106/97f68ce890c2f83834de943a99859bf6/1040g2sg325kbo3cpl6705pdcv9m3gf3orriod5o!nd_dft_wgth_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "好厉害",
+   "content": "https://github.com/mexicat/pdoom-video  把作者开源的地址发出来是最基本的节操。",
+   "likes": "82"
+  },
+  {
+   "user": "翻雪",
+   "content": "音乐也是opus做的吗？",
+   "likes": "8"
+  },
+  {
+   "user": "不学会WEB不改名",
+   "content": "这是一轮生成的吗？还是说有每个歌词的具体分镜和经过多轮对话才得过来的？还是说一轮就生成一个大概，然后再让它微调一下？这个审美已经很牛逼了，这下是真的看到原子弹爆炸了[微笑R]",
+   "likes": "6"
+  },
+  {
+   "user": "Howard",
+   "content": "花里胡哨，毫无意义，这种东西一下子又是全网到处都是, slop",
+   "likes": "7"
+  },
+  {
+   "user": "丷",
+   "content": "taylor sunoft",
+   "likes": "32"
+  },
+  {
+   "user": "012000O C",
+   "content": "没有椅子，椅子已经核聚变了",
+   "likes": "16"
+  },
+  {
+   "user": "Kriswillwin",
+   "content": "大概是這樣：\n\nTypeScript + three.js + bun/Vite  三个东西来做画面；\n\nPython（Demucs / Whisper / CTC）做分轨和对齐；\n\nffmpeg + headless Chrome 做最后的视频离线导出。\n",
+   "likes": "12"
+  },
+  {
+   "user": "青山七海",
+   "content": "？！强强？！",
+   "likes": "0"
+  },
+  {
+   "user": "Ray_云篆",
+   "content": "无敌了",
+   "likes": "2"
+  },
+  {
+   "user": "((",
+   "content": "好适合做手书啊我去",
+   "likes": "1"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

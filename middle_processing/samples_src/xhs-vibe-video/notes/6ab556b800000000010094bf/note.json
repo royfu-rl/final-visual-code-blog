@@ -1,0 +1,77 @@
+{
+ "note_id": "6ab556b800000000010094bf",
+ "url": "https://www.xiaohongshu.com/explore/6ab556b800000000010094bf?xsec_token=ABmQZOaWZqQvNffAKLQtpjokXCZOsyyPiA2pHEhU1-2UI=&xsec_source=pc_search",
+ "type": "video",
+ "title": "opus5.5恐怖的视频能力！",
+ "desc": "这个有点牛P啊\n\t\nClaude Opus 5.5 自己写代码画出一支手绘 MV：\n\t\n没有使用任何 AI 生视频工具：\n\t\nOpus 5.5 自己通过写 p5.js 代码画出每一帧，然后在后台 Chrome 里逐帧截图，再用 ffmpeg 合成 MP4 并配上歌...\n\t\n模型自己当导演：先写分镜，把歌拆成 9 章，每章一个代码文件， 再写一份简报交给并行的子 Agent，各自只改自己负责的章节...",
+ "tags": [],
+ "author": "C C",
+ "user_id": "64f2d9330000000006033c90",
+ "time": 1790269112000,
+ "ip_location": null,
+ "likes": "319",
+ "collects": "191",
+ "comments_count": "38",
+ "keywords": [
+  "Claude MV"
+ ],
+ "duration": 156,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040116/47984f66ece3eaa92dad3c06c73aba48/1040g008325gp17h2le5g5p7ir4phmf4glui2o08!nd_dft_wgth_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "Rapa Nui",
+   "content": "这个歌有原型吗 太可怕了 这么复杂好听的歌不会是ai生成的吧",
+   "likes": "6"
+  },
+  {
+   "user": "kinei",
+   "content": "纯在claude里生成的吗[石化R]gpt6能做吗，我明天试试",
+   "likes": "1"
+  },
+  {
+   "user": "momo",
+   "content": "我嘞个豆，Claude要乱杀影视行业了嘛[完啦R]",
+   "likes": "1"
+  },
+  {
+   "user": "睡个好觉",
+   "content": "哇超可爱",
+   "likes": "1"
+  },
+  {
+   "user": "tilebytile",
+   "content": "音乐是怎么做到的",
+   "likes": "0"
+  },
+  {
+   "user": "少吃一口不会死",
+   "content": "音乐一股霉味[doge]",
+   "likes": "17"
+  },
+  {
+   "user": "一蓑烟雨",
+   "content": "太爱Claude，哈哈",
+   "likes": "0"
+  },
+  {
+   "user": "稻草",
+   "content": "直接丢一个 mp3？",
+   "likes": "0"
+  },
+  {
+   "user": "哈德逊流域在逃战斧蹄花",
+   "content": "@点点 总结一下歌词",
+   "likes": "1"
+  },
+  {
+   "user": "小红薯veejr2jb",
+   "content": "我也做了一首歌 经常自己听听",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

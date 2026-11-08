@@ -1,0 +1,61 @@
+{
+ "name": "phoenix bird",
+ "uid": "844ba0cf144a413ea92c779f18912042",
+ "viewerUrl": "https://sketchfab.com/3d-models/none-844ba0cf144a413ea92c779f18912042",
+ "license": {
+  "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+  "label": "CC Attribution"
+ },
+ "faceCount": 4064,
+ "vertexCount": 2203,
+ "animationCount": 1,
+ "likeCount": 5101,
+ "viewCount": 306697,
+ "publishedAt": "2018-01-14T03:55:44.716224",
+ "staffpickedAt": "2018-06-04T08:22:14.718170",
+ "archives": {
+  "glb": {
+   "textureCount": 4,
+   "size": 1630364,
+   "type": "glb",
+   "textureMaxResolution": 512,
+   "faceCount": 4064,
+   "vertexCount": 3485
+  },
+  "gltf": {
+   "textureCount": 4,
+   "size": 1026840,
+   "type": "gltf",
+   "textureMaxResolution": 512,
+   "faceCount": 4064,
+   "vertexCount": 3485
+  },
+  "source": {
+   "textureCount": null,
+   "size": 2829646,
+   "type": "source",
+   "textureMaxResolution": null,
+   "faceCount": null,
+   "vertexCount": null
+  },
+  "usdz": {
+   "textureCount": null,
+   "size": 1162886,
+   "type": "usdz",
+   "textureMaxResolution": null,
+   "faceCount": null,
+   "vertexCount": null
+  }
+ },
+ "user": "norberto3d",
+ "tags": [
+  "flying",
+  "bird",
+  "phoenix",
+  "dragon"
+ ],
+ "categories": [
+  "art-abstract",
+  "characters-creatures"
+ ]
+}

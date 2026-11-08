@@ -1,0 +1,70 @@
+{
+ "links": [
+  [
+   "mrdoob/three.js",
+   "https://github.com/mrdoob/three.js/tree/dev/examples"
+  ]
+ ],
+ "cards": [
+  {
+   "img": "webgpu_compute_cloth.jpg",
+   "name": "examples/screenshots/webgpu_compute_cloth.jpg",
+   "code": [
+    [
+     "examples/webgpu_compute_cloth.html",
+     "webgpu_compute_cloth.html"
+    ]
+   ]
+  },
+  {
+   "img": "webgpu_tsl_vfx_linkedparticles.jpg",
+   "name": "examples/screenshots/webgpu_tsl_vfx_linkedparticles.jpg",
+   "code": [
+    [
+     "examples/webgpu_tsl_vfx_linkedparticles.html",
+     "webgpu_tsl_vfx_linkedparticles.html"
+    ]
+   ]
+  },
+  {
+   "img": "webgpu_tsl_procedural_terrain.jpg",
+   "name": "examples/screenshots/webgpu_tsl_procedural_terrain.jpg",
+   "code": [
+    [
+     "examples/webgpu_tsl_procedural_terrain.html",
+     "webgpu_tsl_procedural_terrain.html"
+    ]
+   ]
+  },
+  {
+   "img": "webgpu_tsl_galaxy.jpg",
+   "name": "examples/screenshots/webgpu_tsl_galaxy.jpg",
+   "code": [
+    [
+     "examples/webgpu_tsl_galaxy.html",
+     "webgpu_tsl_galaxy.html"
+    ]
+   ]
+  },
+  {
+   "img": "webgpu_tsl_raging_sea.jpg",
+   "name": "examples/screenshots/webgpu_tsl_raging_sea.jpg",
+   "code": [
+    [
+     "examples/webgpu_tsl_raging_sea.html",
+     "webgpu_tsl_raging_sea.html"
+    ]
+   ]
+  },
+  {
+   "img": "webgl_shaders_ocean.jpg",
+   "name": "examples/screenshots/webgl_shaders_ocean.jpg",
+   "code": [
+    [
+     "examples/webgl_shaders_ocean.html",
+     "webgl_shaders_ocean.html"
+    ]
+   ]
+  }
+ ]
+}

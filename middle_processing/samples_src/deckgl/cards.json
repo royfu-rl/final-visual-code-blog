@@ -1,0 +1,11 @@
+{"link": "https://github.com/visgl/deck.gl/tree/master/test/render/golden-images", "id": "visgl/deck.gl",
+ "cards": [
+  {"img": "h3-hexagon.png", "name": "test/render/golden-images/h3-hexagon.png",
+   "code": [["test/render/test-cases/h3-layers.spec.ts#L13-L32", "h3-hexagon.ts"]]},
+  {"img": "arc-lnglat-3d.png", "name": "test/render/golden-images/arc-lnglat-3d.png",
+   "code": [["test/render/test-cases/arc-layer.spec.ts#L89-L119", "arc-lnglat-3d.ts"]]},
+  {"img": "terrain-layer.png", "name": "test/render/golden-images/terrain-layer.png",
+   "code": [["test/render/test-cases/terrain-layer.spec.ts#L16-L25", "terrain-layer.L16-L25.ts"],
+            ["test/render/test-cases/terrain-layer.spec.ts#L49-L66", "terrain-layer.L49-L66.ts"]]}
+ ]}
+

@@ -1,0 +1,71 @@
+{
+ "note_id": "6ab77457000000001a026046",
+ "url": "https://www.xiaohongshu.com/explore/6ab77457000000001a026046?xsec_token=ABsmtsTZAWHqY1rqthbDSxrnmURejjV8CUNz5IleY1ZLM=&xsec_source=pc_search",
+ "type": "video",
+ "title": "Opus 5.5做动画｜6步全流程",
+ "desc": "我一笔没画、一行代码没写\n就跟 Claude 说了几句话，Opus 5.5 帮我做出了一整支动画 🎬\n画面、配乐、音效，全是它自己写代码做的\n\t\n📌 6 步全流程，建议先收藏\n1️⃣ 开局一句话讲清三件事：用什么做、演什么、先定风格\n2️⃣ 让它先出样图，挑一个风格定死\n3️⃣ 让它给几个剧情方向，你挑一个\n4️⃣ 先写分镜再动手：每个镜头多长、发生什么、卡在第几拍\n5️⃣ 开做：画面和音乐用同一张节拍表，动作才能踩在点上\n6️⃣ 改稿：哪里不对劲直接说，怎么演交给它\n\t\n✍️ 我开局发的原话：\n「使用 javascript 来做……动画。动画的内容是小 clawd 在 mac 桌面中点击打开剪辑软件，自己跳进剪辑软件中自己操作软件去进行剪辑。你先和我定下动画风格」\n\t\n⏱ 从丢需求到出片一个晚上，前后改了 3 版\n\t\n#AI动画[话题]#  #Claude[话题]#  #AI工具[话题]#  #动画制作[话题]#  #AI教程[话题]#  #效率工具[话题]#",
+ "tags": [
+  "AI动画",
+  "Claude",
+  "AI工具",
+  "动画制作",
+  "AI教程",
+  "效率工具"
+ ],
+ "author": "Winhao学AI",
+ "user_id": "5f6dffcc0000000001008a12",
+ "time": 1790407767000,
+ "ip_location": null,
+ "likes": "165",
+ "collects": "222",
+ "comments_count": "12",
+ "keywords": [
+  "AI 写代码做动画",
+  "Claude Code 做视频",
+  "Claude 科普动画"
+ ],
+ "duration": 255,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040125/d753c2566f4411e882a3065386c21af1/spectrum/1040g34o325ir0mulka105nrdvv6092gij0p52ug!nd_dft_wgth_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "Fangyi",
+   "content": "请问你现在这个视频剪辑用什么prompt 好可爱",
+   "likes": "1"
+  },
+  {
+   "user": "小文",
+   "content": "就是说先把claude拼对再发视频吧…",
+   "likes": "0"
+  },
+  {
+   "user": "momo",
+   "content": "@点点 简要说明，并讲一下画风怎么设定",
+   "likes": "0"
+  },
+  {
+   "user": "Serendipity",
+   "content": "感谢分享，整个创作流程值得学习：先定需求、风格和剧情脚本（要给几个选项你来选），再出分镜画面，确认后再执行，这样交付的质量就不会差[赞R]",
+   "likes": "0"
+  },
+  {
+   "user": "小红薯459312BA",
+   "content": "用了多少token?",
+   "likes": "0"
+  },
+  {
+   "user": "真我的风采",
+   "content": "谢谢",
+   "likes": "0"
+  },
+  {
+   "user": "张紫曦",
+   "content": "讲的好宏观啊，这个软件怎么装或者网页版怎么打开，然后去哪里使用都不讲[笑哭R][笑哭R]，",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

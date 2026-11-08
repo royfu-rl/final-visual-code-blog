@@ -1,0 +1,79 @@
+{
+ "note_id": "6aba653b0000000015016a18",
+ "url": "https://www.xiaohongshu.com/explore/6aba653b0000000015016a18?xsec_token=AB3XFnG7S_FsCY9rceTsgz_Ix9Ohp7khwG9kaC9Lb6erU=&xsec_source=pc_search",
+ "type": "video",
+ "title": "已经被opus5.5这个生视频能力吓哭了",
+ "desc": "没有使用任何其他模型，opus5.5纯用svg和html硬搓出来的，真的离谱",
+ "tags": [],
+ "author": "elegant",
+ "user_id": "653fb91d000000000301e433",
+ "time": 1790600507000,
+ "ip_location": null,
+ "likes": "6318",
+ "collects": "2724",
+ "comments_count": "553",
+ "keywords": [
+  "Claude MV",
+  "Claude 做视频",
+  "Claude 口播视频"
+ ],
+ "duration": 168,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611032213/3d169bc93a26ed89a54c22fc86d371b5/1040g008325lmvttkkc6g5p9vn4egrp1jm36e6s8!nd_dft_wgth_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "阿泰",
+   "content": "这个提示词是什么？如果说把同样的提示词发给所有的AI，是不是可以对比一下各家的视频能力呢",
+   "likes": "91"
+  },
+  {
+   "user": "happy",
+   "content": "这个得花多少token？",
+   "likes": "2"
+  },
+  {
+   "user": "momo",
+   "content": "展示效果很震撼，但省略了大量实操细节。你光看笔记根本复现不出来，得自己去评论区翻、去问作者、去查那些工具文档，才能拼出完整流程。\n而且\"纯用 SVG 和 HTML 硬搓\"这句话本身也有点误导性，容易让人以为是 Claude 一个人搞定了所有事情。实际上至少用到了三个不同的工具，还有一步是人工串起来的。",
+   "likes": "158"
+  },
+  {
+   "user": "GracefulYvonne",
+   "content": "感觉…是不是已经有意识了[哭惹R]",
+   "likes": "31"
+  },
+  {
+   "user": "🍎🍌🍐🍇🍊",
+   "content": "这样看来deepseek差的不是一点半点啊\n[视频]30s",
+   "likes": "34"
+  },
+  {
+   "user": "快乐修勾小叮当",
+   "content": "网页版？还是接入AGENT以后？网页版应该生成不了这种效果吧？",
+   "likes": "1"
+  },
+  {
+   "user": "大梦小醒",
+   "content": "我刚做了半集漫剧，力竭了啊啊[石化R]花了很多钱",
+   "likes": "1"
+  },
+  {
+   "user": "龟龟龟龟龟🐢（芋泥秋香柑）",
+   "content": "Claude已经封了我三个账号了[微笑R]",
+   "likes": "15"
+  },
+  {
+   "user": "lookis",
+   "content": "可是 claude 的这个 logo 是菊花呀…他真的想成为菊花吗？",
+   "likes": "26"
+  },
+  {
+   "user": "Chill.",
+   "content": "这用了多久，多少额度或者token呀，没用过问一下",
+   "likes": "1"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

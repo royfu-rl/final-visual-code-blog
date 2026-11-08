@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ember &amp; Oak Coffee Roasters</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Manrope,system-ui,sans-serif;background:#15110e;color:#efe6da;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1184px;margin:0 auto;padding:0 52px}
+  nav{display:flex;align-items:center;height:88px;gap:40px}
+  .logo{font-family:Fraunces,serif;font-size:23px;font-weight:400;letter-spacing:.01em;margin-right:auto}
+  .logo i{font-style:normal;color:#d6a25a}
+  .links{display:flex;gap:34px;font-size:14px;color:#9d9184}
+  .order{font-size:14px;padding:9px 18px;border:1px solid #4a4037;border-radius:999px}
+  .hero{display:grid;grid-template-columns:1.08fr .92fr;gap:64px;align-items:center;padding:56px 0 76px}
+  .eyebrow{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#d6a25a;margin-bottom:24px}
+  h1{font-family:Fraunces,serif;font-weight:300;font-size:80px;line-height:1;letter-spacing:-.025em;margin-bottom:28px}
+  h1 em{font-style:italic;color:#d6a25a}
+  .lead{font-size:18px;line-height:1.65;color:#9d9184;max-width:29em;margin-bottom:40px}
+  .ctas{display:flex;align-items:center;gap:30px}
+  .btn{background:#d6a25a;color:#15110e;font-weight:700;font-size:15px;padding:16px 28px;border-radius:999px}
+  .ghost{font-size:15px;font-weight:500;border-bottom:1px solid #5c5146;padding-bottom:3px}
+  .btn,.ghost,.only-bad{white-space:nowrap}
+  .only-bad{display:none}
+  .art{position:relative;height:470px}
+  .sun{position:absolute;right:10px;top:20px;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#e3b06a,#a8692c 70%)}
+  .bag{position:absolute;left:40px;bottom:0;width:250px;height:380px;border-radius:26px 26px 18px 18px;background:#e9dfd0;
+       box-shadow:0 40px 80px rgba(0,0,0,.45);padding:52px 30px 0}
+  .bag:before{content:"";position:absolute;left:0;right:0;top:22px;height:2px;background:#cdbfa9}
+  .bag .b1{font-family:Fraunces,serif;font-size:30px;color:#15110e;line-height:1.05}
+  .bag .b2{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#7a6b58;margin-top:14px}
+  .bag .b3{position:absolute;left:30px;right:30px;bottom:30px;border-top:1px solid #cdbfa9;padding-top:14px;font-size:12px;color:#5e5244;line-height:1.7}
+  .cup{position:absolute;right:52px;bottom:12px;width:150px;height:118px;border-radius:0 0 70px 70px;background:#f3ece2;box-shadow:0 30px 60px rgba(0,0,0,.4)}
+  .cup:after{content:"";position:absolute;right:-34px;top:22px;width:44px;height:50px;border:10px solid #f3ece2;border-left:0;border-radius:0 30px 30px 0}
+  .feats{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;border-top:1px solid #2c241e;padding:40px 0 56px}
+  .feats h3{font-size:15px;font-weight:600;margin-bottom:8px}
+  .feats p{font-size:14px;line-height:1.65;color:#8b8075}
+
+  /* B：同样的内容，所有元素同样响 —— 没有第一眼 */
+  .bad .links{font-size:18px;font-weight:700;color:#efe6da}
+  .bad .order{background:#e0532f;border-color:#e0532f;font-weight:700;font-size:17px}
+  .bad .eyebrow{font-size:30px;letter-spacing:0;text-transform:none;color:#efe6da;font-weight:700}
+  .bad h1{font-family:Manrope,sans-serif;font-weight:700;font-size:34px;line-height:1.25;letter-spacing:0;margin-bottom:22px}
+  .bad h1 em{font-style:normal;color:inherit}
+  .bad .lead{font-size:28px;font-weight:700;line-height:1.3;color:#efe6da;max-width:none}
+  .bad .ghost{background:#3b7ddd;color:#fff;font-weight:700;border:0;padding:16px 28px;border-radius:999px}
+  .bad .only-bad{display:inline-block;background:#3f9b5c;color:#fff;font-weight:700;font-size:15px;padding:16px 28px;border-radius:999px}
+  .bad .ctas{gap:14px}
+  .bad .feats h3{font-size:28px;font-weight:700}
+  .bad .feats p{font-size:18px;color:#efe6da}
+</style>
+</head>
+<body class="{{V}}">
+<div class="wrap">
+  <nav>
+    <a class="logo" href="#">Ember <i>&amp;</i> Oak</a>
+    <div class="links"><a href="#">Coffee</a><a href="#">Subscriptions</a><a href="#">Wholesale</a><a href="#">Journal</a></div>
+    <a class="order" href="#">Order</a>
+  </nav>
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Small-batch roastery &middot; Portland, since 2014</p>
+      <h1>Coffee roasted <em>the slow way.</em></h1>
+      <p class="lead">We buy from eleven farms we have visited ourselves, roast twice a week in a 1962 Probat, and ship within 48 hours of the roast.</p>
+      <div class="ctas"><a class="btn" href="#">Shop this week&rsquo;s roast</a><a class="ghost" href="#">Visit the roastery</a><a class="only-bad" href="#">Subscribe &amp; save</a></div>
+    </div>
+    <div class="art">
+      <div class="sun"></div>
+      <div class="bag"><div class="b1">Huila<br>No. 7</div><div class="b2">Colombia &middot; Washed</div>
+        <div class="b3">Notes of red apple, panela and cocoa.<br>Roasted 03 Nov &middot; 250 g</div></div>
+      <div class="cup"></div>
+    </div>
+  </section>
+  <section class="feats">
+    <div><h3>Direct trade</h3><p>Every bag names the farm and what we paid for it, usually 2.5 times the commodity price.</p></div>
+    <div><h3>Roasted to order</h3><p>Nothing sits on a shelf. Your coffee is roasted after you order it, not before.</p></div>
+    <div><h3>Free refills, forever</h3><p>Bring the tin back to either caf&eacute; and we refill it at cost, as many times as you like.</p></div>
+  </section>
+</div>
+</body>
+</html>
+

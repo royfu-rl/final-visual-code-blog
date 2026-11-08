@@ -1,0 +1,71 @@
+{
+ "name": "Postwar City - Exterior Scene",
+ "uid": "30b694d1a4074855a1116a15a0f75731",
+ "viewerUrl": "https://sketchfab.com/3d-models/none-30b694d1a4074855a1116a15a0f75731",
+ "license": {
+  "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+  "label": "CC Attribution"
+ },
+ "faceCount": 114469,
+ "vertexCount": 116818,
+ "animationCount": 0,
+ "likeCount": 5068,
+ "viewCount": 388728,
+ "publishedAt": "2016-08-05T16:01:45.872727",
+ "staffpickedAt": "2016-08-05T19:52:11.808044",
+ "archives": {
+  "glb": {
+   "textureCount": 22,
+   "size": 116133560,
+   "type": "glb",
+   "textureMaxResolution": 4096,
+   "faceCount": 166600,
+   "vertexCount": 202496
+  },
+  "gltf": {
+   "textureCount": 22,
+   "size": 109044964,
+   "type": "gltf",
+   "textureMaxResolution": 4096,
+   "faceCount": 166600,
+   "vertexCount": 202496
+  },
+  "source": {
+   "textureCount": null,
+   "size": 121203432,
+   "type": "source",
+   "textureMaxResolution": null,
+   "faceCount": null,
+   "vertexCount": null
+  },
+  "usdz": {
+   "textureCount": null,
+   "size": 10491744,
+   "type": "usdz",
+   "textureMaxResolution": null,
+   "faceCount": null,
+   "vertexCount": null
+  }
+ },
+ "user": "aurelien_martel",
+ "tags": [
+  "scene",
+  "exterior",
+  "post-apocalyptic",
+  "gamedesign",
+  "painting",
+  "baked",
+  "cityscene",
+  "destruction",
+  "uvmap",
+  "postnuclear",
+  "architecture",
+  "blender",
+  "cycles",
+  "war"
+ ],
+ "categories": [
+  "architecture",
+  "places-travel"
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "note_id": "6ac4a875000000001500010f",
+ "url": "https://www.xiaohongshu.com/explore/6ac4a875000000001500010f?xsec_token=ABi2ZFMsFL6arlz_20OCLAz2DCCmBnbiZaywsFv1tHXTI=&xsec_source=pc_search",
+ "type": "normal",
+ "title": "X上爆火！用来做短视频绝了",
+ "desc": "这次把做艺术动画的方法，整理成了一个开源skill：huashu-art-motion。\n前4张是实况图，里面的人物和画面都在动。莫奈的日本桥可以打水漂，埃及壁画里的圣甲虫会推着太阳走，到了8-bit场景，还能顶出一枚金币。\n起点是一次复刻。我把参考动画丢给Claude Code，让它拆解画风和运动，后来又用我的卡通形象，做了一支穿越不同名画的短片。场景、运镜和配乐靠代码，人物则用生图模型生成动作帧，再由代码合成。\n我更想留下的，是下次换题材还能用的方法。所以把风格配方、拆参考视频的做法、角色怎么生帧、配乐怎么卡节奏，都收进了这个skill。\n里面有35种艺术画风和9种解说语法，其中8种可以按口播参数渲染片段。除了做艺术短片，也可以给课程、科普或软件教程配一段白板、拼贴、图表动画。最后一张就是白板和Vox拼贴的实际效果。\n装好后，可以直接对agent说： 「用梵高《星月夜》的风格，给我做一段15秒的动画，画面里的东西要一直在动。」 也可以把自己的口播或参考视频交给它。\nGitHub： alchaincyf/huashu-art-motion\n安装命令： npx skills add alchaincyf/huashu-art-motion\n需要的渲染环境，可以直接让agent帮你装。画面里要出现你自己，就给它角色参考图；没有生图能力，也能先从纯代码画的场景和几何角色开始。\n#AI动画[话题]#  #AI工具[话题]#  #开源项目[话题]#  #视频创作[话题]#  #AI编程[话题]#",
+ "tags": [
+  "AI动画",
+  "AI工具",
+  "开源项目",
+  "视频创作",
+  "AI编程"
+ ],
+ "author": "花叔（只工作不上班版",
+ "user_id": "5abc6f17e8ac2b109179dfdf",
+ "time": 1791273077000,
+ "ip_location": "云南",
+ "likes": "665",
+ "collects": "913",
+ "comments_count": "12",
+ "keywords": [
+  "Claude 科普动画",
+  "Motion Canvas",
+  "视频 skill"
+ ],
+ "duration": null,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040108/9019713e1a883e810ce46d10328331d9/notes_pre_post/1040g3k03260n4pk0ka004a41e0nhfnuv8fl0rmg!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040108/cdf343604375d9078f3a57c534b15cac/spectrum/1040g0k0325vn121ul8904a41e0nhfnuvnkm6na0!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040108/1de638a56e1ff289be7f6321c1e80f6e/spectrum/1040g0k0325vn2d5tk6004a41e0nhfnuvv3jscn8!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040108/cb7abe59729ba12754a4e8e6ad9848fc/1040g2sg325vnq71gka7g4a41e0nhfnuvupvppog!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040108/c380d9eb31fee48728c658990f10b429/1040g2sg325vnq71gka804a41e0nhfnuvuhrpfro!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040108/d4e1229cc78c73d68cc0acfe2418a07f/1040g2sg325vnq71gka8g4a41e0nhfnuvjchib70!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "Q仔晚安",
+   "content": "猫条面试-动画版 交作业了",
+   "likes": "2"
+  },
+  {
+   "user": "HOHOH",
+   "content": "codex 可以吗？",
+   "likes": "1"
+  },
+  {
+   "user": "AI 超个体孵化器（招远程实习）",
+   "content": "这个开源思路很棒，代码和艺术结合得挺妙",
+   "likes": "1"
+  },
+  {
+   "user": "宋律说",
+   "content": "先有AI的帮衬，最近在想，也许后用纯代码的方式，做短视频。做一段时间。",
+   "likes": "0"
+  },
+  {
+   "user": "JW.",
+   "content": "推荐一个很好用的视频skil... 交作业啦",
+   "likes": "2"
+  },
+  {
+   "user": "数学小陀螺",
+   "content": "太行了[点赞R]",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg",
+  "images/1.jpg",
+  "images/2.jpg",
+  "images/3.jpg",
+  "images/4.jpg",
+  "images/5.jpg"
+ ]
+}

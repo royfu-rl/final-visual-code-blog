@@ -1,0 +1,42 @@
+{
+ "note_id": "6a0d9282000000003700eeb5",
+ "url": "https://www.xiaohongshu.com/explore/6a0d9282000000003700eeb5?xsec_token=AB88OTzWTSvxYQUd7ci9KsuQLhYUgC3XpMR0MxNkKk7ps=&xsec_source=pc_search",
+ "type": "normal",
+ "title": "HyperFrames vs Remotion vs FFmpeg",
+ "desc": "说到 AI 做视频，一定绕不开这 3 个东西：HyperFrames、Remotion、FFmpeg\n很多人第一次看： 名字都认识， 但完全不知道它们到底是什么关系。\n\t\n简单来说\n[气球R] HyperFrames 负责： 「AI 怎么理解视频」\n[气球R] Remotion 负责： 「怎么把视频画出来」\n[气球R] FFmpeg 负责： 「怎么把视频真正处理和输出」\n\t\n三者关系其实像：\n🧠 HyperFrames = 导演/编剧 ，关注：镜头、节奏、叙事\n🎬 Remotion = 摄影棚/拍摄系统 ，关注：组件化生成视频画面\n⚙️ FFmpeg = 后期剪辑压缩工厂，关注：编码、转码、压缩、推流\n\t\n它们不是竞争关系， 而是 AI 视频生成链路里的不同层。\n\t\nAI 视频平台，本质都是：LLM + HyperFrames + Remotion + FFmpeg\n\t\n但其实Agent + FFmpeg，就已经可以生成视频了。\n而 HyperFrames + Remotion的出现， 解决的不是“能不能生成”，而是：\n❶ 流程是否更简单\n❷ 视频质量是否更高\n❸ 是否更容易规模化\n\t\n学废了吗 [暗中观察R]\n\t\n@AI  #AICODING[话题]# #AIGC[话题]#  #技术[话题]# #AI视频[话题]#\n#效率神器[话题]#",
+ "tags": [
+  "AICODING",
+  "AIGC",
+  "技术",
+  "AI视频",
+  "效率神器"
+ ],
+ "author": "达尔文",
+ "user_id": "5c2607310000000006037638",
+ "time": 1779274370000,
+ "ip_location": null,
+ "likes": "206",
+ "collects": "363",
+ "comments_count": "",
+ "keywords": [
+  "Remotion"
+ ],
+ "duration": null,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040122/54e620dc44850a64ab34d2bca2f0a945/spectrum/1040g0k0320cu091cle205n160sohmthor6tgvgo!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040122/070ffb26e9ccab88f5de649fa22099cd/spectrum/1040g0k0320cu091cle1g5n160sohmthopr5qeto!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040122/78d4e845354c4f2006c72aa02f56e86a/spectrum/1040g0k0320cu091cle105n160sohmthol5jk7h0!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040122/5de283c901b418f6baac7c5e5fae0f73/spectrum/1040g0k0320cu091cle0g5n160sohmtho2tcl0ro!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040122/6b09abbf9ce7c4943fe347b41ca7b191/spectrum/1040g0k0320cu091cle005n160sohmthonihe5do!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040122/ba0aa15dabfac4d43abe629343e3825e/spectrum/1040g0k0320cu091cle2g5n160sohmtho7vn8vq8!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [],
+ "image_files": [
+  "images/0.jpg",
+  "images/1.jpg",
+  "images/2.jpg",
+  "images/3.jpg",
+  "images/4.jpg",
+  "images/5.jpg"
+ ]
+}

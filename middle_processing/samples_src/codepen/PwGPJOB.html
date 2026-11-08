@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  
+  <meta charset="UTF-8">
+  
+  
+  
+
+  <title>Select your Fruit!</title>
+
+    <link rel="canonical" href="https://codepen.io/t_afif/pen/PwGPJOB">
+  
+  
+  
+  
+<style>
+select,::picker(select) {
+  appearance: base-select;
+  cursor: pointer;
+}
+select {
+  font: 40px system-ui,sans-serif;
+  border-radius: 10px;
+  background: #2a9d8f;
+  color: #fff;
+  transition: .3s;
+}
+select:hover {
+  background: #1e7369;
+}
+select::picker-icon {
+  display: none;
+}
+::picker(select) {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  position-anchor: none;
+  transition: .3s allow-discrete .2s;
+  background: linear-gradient(0deg, #6c757d 50px,#e8e8e4 150px);
+  overflow: hidden;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><foreignObject width="100%" height="100%"><div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;border-radius:50%;background:conic-gradient(from 90deg at 4px 4px,%230000 90deg, %232f2b2f 0) -4px -4px/calc(50% + 2px) calc(50% + 2px),repeating-radial-gradient(%230000 0 22%,%232f2b2f 23% 32%);" ></div></foreignObject></svg>') 24 24, auto;
+  clip-path: circle(0%);
+}
+select:open::picker(select) {
+  transition: .6s allow-discrete;
+  clip-path: circle(72%);
+  @starting-style {
+    clip-path: circle(0%);
+  }
+}
+::picker(select)::after {
+  content:"";
+  position: absolute;
+  inset: auto 0 0;
+  height: 160px;
+  margin: auto;
+  translate: 50% 0;
+  aspect-ratio: 224/159;
+  background: url(https://assets.codepen.io/1480814/gun.png) left/200% no-repeat;
+  pointer-events: none;
+}
+::picker(select):active::after {
+  background-position: right;
+}
+select option {
+  display: grid;
+  position: absolute;
+  translate: 0 0;
+  transform: translate(0px,0px);
+  font-size: 85px;
+  aspect-ratio: 1;
+  background: #bde0fe;
+  border-radius: 50%;
+  gap: 0;
+  padding: 0;
+  place-content: center;
+  place-items: center;
+  border: 2px dashed;
+  transition: 0s 2s, filter .3s;
+  animation: --x 4.1s infinite linear alternate both,--y 6.3s infinite linear alternate both;
+}
+@keyframes --x {to{translate: calc(100vw - 100%) 0}}
+@keyframes --y {to{transform: translate(0px,calc(100vh - 150px - 100%))}}
+select option:after {
+  content: "";
+  position: absolute;
+  inset: -30%;
+  background: url(https://assets.codepen.io/1480814/shoot.png) 50%/contain no-repeat;
+  visibility: hidden;
+  transition: 0s 2s;
+}
+select option:nth-of-type(1){ display: none}
+select option:nth-of-type(2){ animation-delay: -.3s,-1.7s}
+select option:nth-of-type(3){ animation-delay: -1.9s,-3.1s}
+select option:nth-of-type(4){ animation-delay: -2.3s,-11.1s}
+select option:nth-of-type(5){ animation-delay: -5.3s,-2.9s}
+select option:nth-of-type(6){ animation-delay: -7.7s,-7.1s}
+select option:hover {
+  filter: grayscale(.5);
+}
+select option:active {
+  animation-play-state: paused;
+  visibility: hidden;
+  transition: 0s;
+}
+select option:active:after {
+  visibility: visible;
+  transition: 0s;
+}
+select option span {
+  order: 2;
+  display: none;
+}
+option::checkmark {
+  content: none;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background: #f8f9fa;
+}
+
+@supports not (appearance: base-select) {
+  option {
+    font-size: inherit!important;
+  }
+}
+</style>
+
+  
+  
+  
+</head>
+
+<body>
+  <select>
+  <option value="">Select Your Fruit</option>
+  <option value="Lemon"><span>Lemon</span> 🍋</option>
+  <option value="Banana"><span>Banana</span> 🍌</option>
+  <option value="Strawberry"><span>Strawberry</span> 🍓</option>
+  <option value="Watermelon"><span>Watermelon</span> 🍉</option>
+  <option value="Pineapple"><span>Pineapple</span> 🍍</option>
+</select>
+  
+  
+  
+</body>
+
+</html>
+

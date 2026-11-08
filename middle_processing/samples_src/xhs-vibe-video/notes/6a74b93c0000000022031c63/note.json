@@ -1,0 +1,73 @@
+{
+ "note_id": "6a74b93c0000000022031c63",
+ "url": "https://www.xiaohongshu.com/explore/6a74b93c0000000022031c63?xsec_token=ABDm_Vk1EuW5xP0Bb8IrWFh9DzuMLhr6MBj9u9bRZIkS4=&xsec_source=pc_search",
+ "type": "video",
+ "title": "Codex+MH3，本地做出3分钟动画",
+ "desc": "#minimax[话题]##codex[话题]##AI[话题]##一人公司[话题]##opc[话题]#",
+ "tags": [
+  "minimax",
+  "codex",
+  "AI",
+  "一人公司",
+  "opc"
+ ],
+ "author": "太初学社",
+ "user_id": "6807d314000000000a03d2e1",
+ "time": 1786034492000,
+ "ip_location": null,
+ "likes": "110",
+ "collects": "131",
+ "comments_count": "22",
+ "keywords": [
+  "Codex 做视频"
+ ],
+ "duration": 187,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040130/419f973e701b32ed39dea9b06aeae2c7/1040g008323hlj44ina005q07qca2nkn171ptg3g!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "今天出太阳了吗",
+   "content": "有点意思",
+   "likes": "0"
+  },
+  {
+   "user": "德物三生",
+   "content": "用的什么显卡? 跑了多久？",
+   "likes": "0"
+  },
+  {
+   "user": "可乐龙",
+   "content": "请问用的模型大小是多大的呢？是量化版本吗？",
+   "likes": "0"
+  },
+  {
+   "user": "可乐龙",
+   "content": "成片是是怎么拼接剪辑的么？",
+   "likes": "0"
+  },
+  {
+   "user": "添加一个名字",
+   "content": "提示词是?",
+   "likes": "0"
+  },
+  {
+   "user": "梦多多科普",
+   "content": "这也太狠了[捂脸R]",
+   "likes": "0"
+  },
+  {
+   "user": "JerryInMaTRiX",
+   "content": "期待一百天",
+   "likes": "0"
+  },
+  {
+   "user": "vgenv AI视频生成工具",
+   "content": "3 分钟动画全靠本地 + Codex 拼出来，这也太能肝了👀 评论区问显卡的兄弟问到点子上了。我这边是算力不够玩法凑，长片都在 vgenv.com 上分段跑，本地那台只用来试提示词",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

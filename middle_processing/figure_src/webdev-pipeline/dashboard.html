@@ -1,0 +1,79 @@
+<!doctype html>
+<!-- Verifier 页 3.1 的例题：销售看板。只用来给 webdev-pipeline 图截缩略图（三档视口 + 点击前后），
+     去年那组数是演示用的，正文没有规定。 -->
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>销售看板</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#f4f6fb;color:#1f2633;font-family:"Noto Sans SC","PingFang SC",system-ui,sans-serif}
+  .page{max-width:1180px;margin:0 auto;padding:40px 48px}
+  header{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+  h1{font-size:32px;margin:0;font-weight:800;letter-spacing:.01em}
+  #toggle{background:#2563eb;color:#fff;border:0;border-radius:10px;padding:12px 22px;font-size:16px;font-weight:700;cursor:pointer;box-shadow:0 6px 16px rgba(37,99,235,.28)}
+  .grid{display:grid;grid-template-columns:2fr 1fr;gap:20px}
+  .card{background:#fff;border-radius:16px;padding:22px 24px;box-shadow:0 1px 2px rgba(16,24,40,.06),0 8px 24px rgba(16,24,40,.06)}
+  .card h2{font-size:15px;color:#667085;margin:0 0 18px;font-weight:600}
+  .chart{display:flex;align-items:flex-end;gap:7%;height:340px;padding:0 4% ;border-bottom:2px solid #e4e7ec}
+  .bar{flex:1;background:linear-gradient(180deg,#60a5fa,#2563eb);border-radius:8px 8px 0 0;position:relative;transition:height .3s}
+  .bar span{position:absolute;top:-24px;left:0;right:0;text-align:center;font-size:14px;font-weight:700;color:#1f2633}
+  .axis{display:flex;gap:7%;padding:8px 4% 0}
+  .axis div{flex:1;text-align:center;font-size:13px;color:#667085}
+  .kpi{display:flex;flex-direction:column;gap:14px}
+  .kpi .card b{display:block;font-size:30px;margin-top:4px}
+  .kpi .card small{color:#12b76a;font-weight:700}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid #eef0f4}
+  th{color:#667085;font-weight:600;font-size:13px}
+  .detail{margin-top:20px}
+  @media(max-width:900px){.grid{grid-template-columns:1fr}.kpi{flex-direction:row}.kpi .card{flex:1}}
+  @media(max-width:520px){.page{padding:24px 18px}h1{font-size:32px}.kpi{flex-direction:column}.chart{height:200px}}
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>销售看板</h1>
+    <button id="toggle">切换年份</button>
+  </header>
+  <div class="grid">
+    <div class="card">
+      <h2 id="caption">2026 年 1–4 月销售额（万元）</h2>
+      <div class="chart" id="chart"></div>
+      <div class="axis"><div>1 月</div><div>2 月</div><div>3 月</div><div>4 月</div></div>
+    </div>
+    <div class="kpi">
+      <div class="card"><h2>合计</h2><b id="sum"></b><small id="note"></small></div>
+      <div class="card"><h2>最高月份</h2><b id="peak"></b></div>
+    </div>
+  </div>
+  <div class="card detail">
+    <h2>月度明细</h2>
+    <table><thead><tr><th>月份</th><th>销售额（万元）</th><th>环比</th></tr></thead><tbody id="rows"></tbody></table>
+  </div>
+</div>
+<script>
+  var DATA = { 2026: [120, 150, 90, 200], 2025: [100, 130, 110, 160] };
+  var year = 2026;
+  function draw() {
+    var v = DATA[year], max = 220;
+    document.getElementById('chart').innerHTML = v.map(function (x, i) {
+      return '<div class="bar" data-month="' + (i + 1) + '" data-value="' + x + '" style="height:' + (x / max * 100) + '%"><span>' + x + '</span></div>';
+    }).join('');
+    document.getElementById('caption').textContent = year + ' 年 1–4 月销售额（万元）';
+    document.getElementById('sum').textContent = v.reduce(function (a, b) { return a + b; }, 0);
+    document.getElementById('peak').textContent = (v.indexOf(Math.max.apply(null, v)) + 1) + ' 月';
+    document.getElementById('rows').innerHTML = v.map(function (x, i) {
+      var m = i ? Math.round((x - v[i - 1]) / v[i - 1] * 100) : null;
+      return '<tr><td>' + (i + 1) + ' 月</td><td>' + x + '</td><td>' + (m === null ? '—' : (m > 0 ? '+' : '') + m + '%') + '</td></tr>';
+    }).join('');
+    document.getElementById('note').textContent = year === 2026 ? '同比 +12%' : '去年同期';
+  }
+  document.getElementById('toggle').onclick = function () { year = year === 2026 ? 2025 : 2026; draw(); };
+  draw();
+</script>
+</body>
+</html>
+

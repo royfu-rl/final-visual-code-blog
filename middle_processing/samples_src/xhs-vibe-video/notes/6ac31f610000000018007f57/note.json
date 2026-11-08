@@ -1,0 +1,84 @@
+{
+ "note_id": "6ac31f610000000018007f57",
+ "url": "https://www.xiaohongshu.com/explore/6ac31f610000000018007f57?xsec_token=ABbERw26uZlZ6JTW1qceYy8UjQ5EuKz09rjgDxRUVVt3o=&xsec_source=pc_search",
+ "type": "video",
+ "title": "绝了！Opus5.5做的艺术史穿越动画",
+ "desc": "从拉斯科洞穴壁画出发，穿过23种画风，最后回到2026年的书桌。每进一幅画，我就换成那里的画风，再跟画里的东西玩一下：\n\t\n在莫奈的日本桥上打水漂，第四下溅起一朵睡莲\n在梵高的星空里摘一颗星星，再抛回天上\n陪蒙克的呐喊者一起大叫，帽子被叫飞了\n达利的软钟从我手腕上流下去\n走进马格利特的画，一颗青苹果飘到脸前，我咬了一口\n\t\n整支片子是Opus5.5写代码做的，一镜到底。场景是代码画的，我的形象每种画风都用gpt-image重画了一套，配乐也是代码一个音一个音合成的，没用采样。\n\t\n做的过程里我把这套方法做成了一个skill，点赞过1万就开源。\n\t\n你最喜欢哪一段？\n#AI动画[话题]#  #艺术史[话题]#  #名画[话题]#  #Claude[话题]#  #AI编程[话题]#",
+ "tags": [
+  "AI动画",
+  "艺术史",
+  "名画",
+  "Claude",
+  "AI编程"
+ ],
+ "author": "花叔（只工作不上班版",
+ "user_id": "5abc6f17e8ac2b109179dfdf",
+ "time": 1791172449000,
+ "ip_location": "云南",
+ "likes": "362",
+ "collects": "294",
+ "comments_count": "23",
+ "keywords": [
+  "Claude 动效设计",
+  "Claude 科普动画"
+ ],
+ "duration": 127,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040114/ccbe698270200e659e4935459fa16b47/spectrum/1040g0k0325u811r5k4004a41e0nhfnuv0632o20!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "漫兮索",
+   "content": "我用ChatGPT做的。小红书限制，只能上传30秒。\n[视频]30s",
+   "likes": "0"
+  },
+  {
+   "user": "Uncle Jiwa",
+   "content": "提示词能分享吗",
+   "likes": "0"
+  },
+  {
+   "user": "隼太郎的AI笔记",
+   "content": "这画风切换和背景音乐转换也太丝滑了",
+   "likes": "0"
+  },
+  {
+   "user": "头顶一撮小卷毛",
+   "content": "求",
+   "likes": "0"
+  },
+  {
+   "user": "硅胶hydra",
+   "content": "真的好玩！！学着做了个航天科普小动画，过来交作业！",
+   "likes": "1"
+  },
+  {
+   "user": "小红薯6A27795C",
+   "content": "这个怎么做？怎么学习？",
+   "likes": "0"
+  },
+  {
+   "user": "王权挖挖机👑（AI版）",
+   "content": "每个场景都需要自己提供图吗？",
+   "likes": "1"
+  },
+  {
+   "user": "十月妈妈会发光",
+   "content": "好棒",
+   "likes": "0"
+  },
+  {
+   "user": "eguhz",
+   "content": "太强了",
+   "likes": "1"
+  },
+  {
+   "user": "带着喜欢的人去看五月天！🥕",
+   "content": "求一个！",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

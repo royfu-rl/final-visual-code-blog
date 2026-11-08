@@ -1,0 +1,48 @@
+{
+ "link": "https://huggingface.co/datasets/NJU-LINK/WebCompass",
+ "id": "NJU-LINK/WebCompass",
+ "cards": [
+  {
+   "img": "2847874_owaves.com_L12_1-screenshot_index.jpg",
+   "name": "2847874_owaves.com_L12_1",
+   "code": [
+    [
+     "index.html",
+     "2847874_owaves.com_L12_1-index.html"
+    ],
+    [
+     "about.html",
+     "2847874_owaves.com_L12_1-about.html"
+    ]
+   ]
+  },
+  {
+   "img": "2849864_www.tetcos.com_L4_2-screenshot_index.jpg",
+   "name": "2849864_www.tetcos.com_L4_2",
+   "code": [
+    [
+     "index.html",
+     "2849864_www.tetcos.com_L4_2-index.html"
+    ],
+    [
+     "about.html",
+     "2849864_www.tetcos.com_L4_2-about.html"
+    ]
+   ]
+  },
+  {
+   "img": "2872267_www.harteman.com_L4_2-screenshot_index.jpg",
+   "name": "2872267_www.harteman.com_L4_2",
+   "code": [
+    [
+     "index.html",
+     "2872267_www.harteman.com_L4_2-index.html"
+    ],
+    [
+     "about.html",
+     "2872267_www.harteman.com_L4_2-about.html"
+    ]
+   ]
+  }
+ ]
+}

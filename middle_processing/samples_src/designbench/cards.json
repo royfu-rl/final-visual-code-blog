@@ -1,0 +1,48 @@
+{
+ "link": "https://huggingface.co/datasets/whale99/DesignBench",
+ "id": "whale99/DesignBench",
+ "cards": [
+  {
+   "img": "react_45.png",
+   "name": "generation/react/45",
+   "code": [
+    [
+     "45.json",
+     "react_45.json"
+    ],
+    [
+     "45.html",
+     "react_45.html"
+    ]
+   ]
+  },
+  {
+   "img": "vue_45.png",
+   "name": "generation/vue/45",
+   "code": [
+    [
+     "45.json",
+     "vue_45.json"
+    ],
+    [
+     "45.html",
+     "vue_45.html"
+    ]
+   ]
+  },
+  {
+   "img": "angular_45.png",
+   "name": "generation/angular/45",
+   "code": [
+    [
+     "45.json",
+     "angular_45.json"
+    ],
+    [
+     "45.html",
+     "angular_45.html"
+    ]
+   ]
+  }
+ ]
+}

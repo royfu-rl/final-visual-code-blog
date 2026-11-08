@@ -1,0 +1,9 @@
+Div content with brackets `[]` prevents arbitrary class from being generated
+## This works: https://play.tailwindcss.com/0VLICQ8oUW
+
+<img width="810" alt="image" src="https://user-images.githubusercontent.com/111561/209682078-7e43a107-52ff-4006-8c37-ec44414abe12.png">
+
+## This does not work: https://play.tailwindcss.com/5KJf7xDKv6
+<img width="821" alt="image" src="https://user-images.githubusercontent.com/111561/209682172-de1dcaaa-6e69-429b-907f-840691e35ceb.png">
+
+

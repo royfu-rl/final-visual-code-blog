@@ -1,0 +1,48 @@
+{
+ "link": "https://huggingface.co/datasets/SWE-bench/SWE-bench_Multimodal",
+ "id": "SWE-bench/SWE-bench_Multimodal",
+ "cards": [
+  {
+   "img": "146602938-9d5be17b-e050-4a9a-b9ac-5f9f51e08e8b.png",
+   "name": "chartjs__Chart.js-10157",
+   "code": [
+    [
+     "problem_statement",
+     "chartjs__Chart.js-10157.problem_statement.txt"
+    ],
+    [
+     "patch",
+     "chartjs__Chart.js-10157.patch.txt"
+    ]
+   ]
+  },
+  {
+   "img": "37774589-66c5670e-2dbf-11e8-8248-9d61ac3a6358.png",
+   "name": "Automattic__wp-calypso-26286",
+   "code": [
+    [
+     "problem_statement",
+     "Automattic__wp-calypso-26286.problem_statement.txt"
+    ],
+    [
+     "patch",
+     "Automattic__wp-calypso-26286.patch.txt"
+    ]
+   ]
+  },
+  {
+   "img": "200936467-45549a69-cf3a-4910-933e-60daa65fcc2b.png",
+   "name": "grommet__grommet-6494",
+   "code": [
+    [
+     "problem_statement",
+     "grommet__grommet-6494.problem_statement.txt"
+    ],
+    [
+     "patch",
+     "grommet__grommet-6494.patch.txt"
+    ]
+   ]
+  }
+ ]
+}

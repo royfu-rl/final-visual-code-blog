@@ -1,0 +1,272 @@
+{
+ "id": "shadertoy/Md/Md23Rd",
+ "shader_id": "Md23Rd",
+ "name": "Spherical Gyroid",
+ "type": "Shader",
+ "language": "GLSL (Shadertoy / WebGL2, GLSL ES 3.00)",
+ "entry": "code.glsl",
+ "multi_file": false,
+ "environment": "Shadertoy / WebGL2",
+ "renders": [
+  "renders/grid00.png",
+  "renders/grid01.png",
+  "renders/grid02.png",
+  "renders/grid03.png",
+  "renders/grid04.png",
+  "renders/grid05.png",
+  "renders/grid06.png",
+  "renders/grid07.png",
+  "renders/grid08.png",
+  "renders/grid09.png",
+  "renders/grid10.png",
+  "renders/grid11.png",
+  "renders/clip.mp4"
+ ],
+ "source": "Shadertoy",
+ "source_url": "https://www.shadertoy.com/view/Md23Rd",
+ "license": "CC-BY-3.0",
+ "license_source": "declared",
+ "author": "Syntopia",
+ "description": "Periodic minimal surface, see: http://en.wikipedia.org/wiki/Gyroid\n\nVariation at: http://www.shadertoy.com/view/Ms2Gzd  ",
+ "tags": [
+  "gyroid"
+ ],
+ "likes": 27,
+ "views": 2396,
+ "date": "2014-02-16",
+ "date_unix": 1392564390,
+ "published": 1,
+ "parent_id": "",
+ "parent_name": "",
+ "num_passes": 1,
+ "pass_types": [
+  "image"
+ ],
+ "passes": [
+  {
+   "name": "Image",
+   "type": "image",
+   "code_chars": 4903,
+   "inputs": [
+    {
+     "channel": 0,
+     "ctype": "cubemap",
+     "src": "/media/a/0681c014f6c88c356cf9c0394ffe015acc94ec1474924855f45d22c3e70b5785.png",
+     "ref_id": "4sX3zn",
+     "sampler": {
+      "filter": "linear",
+      "wrap": "clamp",
+      "vflip": "false",
+      "srgb": "false",
+      "internal": "byte"
+     }
+    }
+   ],
+   "outputs": []
+  }
+ ],
+ "external_assets": [
+  {
+   "pass": "Image",
+   "channel": 0,
+   "ctype": "cubemap",
+   "src": "/media/a/0681c014f6c88c356cf9c0394ffe015acc94ec1474924855f45d22c3e70b5785.png",
+   "sampler": {
+    "filter": "linear",
+    "wrap": "clamp",
+    "vflip": "false",
+    "srgb": "false",
+    "internal": "byte"
+   },
+   "bundled": "renders/inputs/ch0_0681c014f6c88c356cf9c0394ffe015acc94ec1474924855f45d22c3e70b5785.png"
+  }
+ ],
+ "has_common_pass": false,
+ "render": {
+  "id": "Md23Rd",
+  "status": "ok",
+  "resolution": [
+   640,
+   360
+  ],
+  "wrapper_version": 2,
+  "engine": "native-d3d12",
+  "grid": [
+   {
+    "file": "grid00.png",
+    "iTime": 0.0,
+    "iMouse": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mouse": "idle",
+    "iFrame": 0,
+    "nonblack_frac": 0.3006
+   },
+   {
+    "file": "grid01.png",
+    "iTime": 1.0,
+    "iMouse": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mouse": "idle",
+    "iFrame": 60,
+    "nonblack_frac": 0.2991
+   },
+   {
+    "file": "grid02.png",
+    "iTime": 2.0,
+    "iMouse": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mouse": "idle",
+    "iFrame": 120,
+    "nonblack_frac": 0.3224
+   },
+   {
+    "file": "grid03.png",
+    "iTime": 4.0,
+    "iMouse": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mouse": "idle",
+    "iFrame": 240,
+    "nonblack_frac": 0.4445
+   },
+   {
+    "file": "grid04.png",
+    "iTime": 8.0,
+    "iMouse": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mouse": "idle",
+    "iFrame": 480,
+    "nonblack_frac": 0.3884
+   },
+   {
+    "file": "grid05.png",
+    "iTime": 16.0,
+    "iMouse": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mouse": "idle",
+    "iFrame": 960,
+    "nonblack_frac": 0.5752
+   },
+   {
+    "file": "grid06.png",
+    "iTime": 0.0,
+    "iMouse": [
+     448.0,
+     216.0,
+     448.0,
+     216.0
+    ],
+    "mouse": "drag",
+    "iFrame": 0,
+    "nonblack_frac": 0.3006
+   },
+   {
+    "file": "grid07.png",
+    "iTime": 1.0,
+    "iMouse": [
+     448.0,
+     216.0,
+     448.0,
+     216.0
+    ],
+    "mouse": "drag",
+    "iFrame": 60,
+    "nonblack_frac": 0.2991
+   },
+   {
+    "file": "grid08.png",
+    "iTime": 2.0,
+    "iMouse": [
+     448.0,
+     216.0,
+     448.0,
+     216.0
+    ],
+    "mouse": "drag",
+    "iFrame": 120,
+    "nonblack_frac": 0.3224
+   },
+   {
+    "file": "grid09.png",
+    "iTime": 4.0,
+    "iMouse": [
+     448.0,
+     216.0,
+     448.0,
+     216.0
+    ],
+    "mouse": "drag",
+    "iFrame": 240,
+    "nonblack_frac": 0.4445
+   },
+   {
+    "file": "grid10.png",
+    "iTime": 8.0,
+    "iMouse": [
+     448.0,
+     216.0,
+     448.0,
+     216.0
+    ],
+    "mouse": "drag",
+    "iFrame": 480,
+    "nonblack_frac": 0.3884
+   },
+   {
+    "file": "grid11.png",
+    "iTime": 16.0,
+    "iMouse": [
+     448.0,
+     216.0,
+     448.0,
+     216.0
+    ],
+    "mouse": "drag",
+    "iFrame": 960,
+    "nonblack_frac": 0.5752
+   }
+  ],
+  "clip": {
+   "file": "clip.mp4",
+   "fps": 20,
+   "seconds": 4.0,
+   "frames": 80
+  },
+  "rendered_at": "2026-06-21 20:01:36",
+  "compiled": true,
+  "inputs": [
+   {
+    "channel": 0,
+    "kind": "cubemap",
+    "asset": "0681c014f6c88c356cf9c0394ffe015acc94ec1474924855f45d22c3e70b5785.png"
+   }
+  ],
+  "render_seconds": 2.08,
+  "renderer": "D3D12 (NVIDIA GeForce RTX 4070 Laptop GPU)"
+ },
+ "curator": "wang",
+ "status": "rendered"
+}

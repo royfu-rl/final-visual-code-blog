@@ -1,0 +1,65 @@
+{
+ "note_id": "6ada40da000000002c0109a0",
+ "url": "https://www.xiaohongshu.com/explore/6ada40da000000002c0109a0?xsec_token=ABd73dpE56-tYgUsAKbH2u3E2RUyPf6gohRLu7Ie6Xx7g=&xsec_source=pc_search",
+ "type": "normal",
+ "title": "新一代航空母舰入列JavaScript + Canvas",
+ "desc": "最近用 AI 做了 3 个 pixel art 像素微缩场景：\n\t\n🏏 会自动投球、挥棒、追球的板球场\n⚡ 皮卡丘对战大岩蛇的小擂台\n🛫 带甲板小人、海浪和战机起飞的辽宁舰\n\t\n很喜欢这种感觉：像把一个小世界放在桌面上，凑近看，每个角落都在动。\n\t\n更有意思的是文件体积👇\n板球场的完整单文件网页约 **25.7 KB**，辽宁舰约 **30.4 KB**。\n这里统计的是网页源码，导出的 GIF、视频体积另算。\n\t\n场景由 JavaScript + Canvas 绘制。代码记录物体怎么画、怎么运动，浏览器再实时生成画面，所以不用保存每一帧。\n\t\n分享一下我的制作思路：\n\t\n**① 先把“微缩感”说清楚**\n只写“像素风”太宽泛。我会补上：等距俯视、微缩模型、浅色背景、大面积留白、统一像素颗粒、柔和阴影。\n\t\n**② 先搭场景，再加细节**\n先确定球场、擂台、甲板的形状和比例，再补人物、草地、碎石、海浪。第一轮先把构图做好。\n\t\n**③ 把动画拆成具体动作**\n比如“飞机起飞”，继续拆成：滑跑、加速、抬头、离舰、飞出画面。\n板球则是：助跑、出手、挥棒、追球、捡球、回传。\n\t\n动作越具体，越容易发现哪里需要改。\n\t\n**④ 打开预览，一次改一个问题**\n这几个项目里，花时间最多的就是动作衔接：球有没有碰到球棒、人物会不会突然归位、飞机离舰有没有跳一下。\n这些细节调顺，小世界才有生活感。\n\t\n想试的话，可以从这段提示词开始：\n\t\n「用原生 JavaScript + Canvas 制作一个【主题】像素微缩场景。采用等距俯视构图、浅色背景和大面积留白，统一像素颗粒，用明暗和投影表现体积。先完成静态场景，再加入连贯的循环动画。尽量使用程序绘制素材，做成可离线打开的单个 HTML，目标控制在 100 KB 以内。」\n\t\n这套方法不限定某个模型，**有代码生成能力的模型都可以尝试**。重点是把画面要求讲具体，再对着预览慢慢调整。\n\t\n看着几行动作描述，最后变成一群在小球场里认真跑动的人，还挺治愈的。\n\t\n#像素艺术[话题]# #PixelArt[话题]# #像素风[话题]# #微缩世界[话题]# #AI编程[话题]# #创意编程[话题]# #vibecoding[话题]# #howto用好AI[话题]#  #像素化设计[话题]# #像素世界[话题]#",
+ "tags": [
+  "像素艺术",
+  "PixelArt",
+  "像素风",
+  "微缩世界",
+  "AI编程",
+  "创意编程",
+  "vibecoding",
+  "howto用好AI",
+  "像素化设计",
+  "像素世界"
+ ],
+ "author": "William billbill",
+ "user_id": "5c20e6de000000000502deee",
+ "time": 1792688346000,
+ "ip_location": "广东",
+ "likes": "122",
+ "collects": "114",
+ "comments_count": "3",
+ "keywords": [
+  "Motion Canvas"
+ ],
+ "duration": null,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040129/10dc00958377675de12e76b9a29b1b8c/notes_pre_post/1040g3k8326kqjc59l67g5n10srf1dnnedie66fo!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040129/47b49135b6da9e5c104a1a7fca9fd343/notes_pre_post/1040g3k8326kqjc59l6805n10srf1dnne8prrlvg!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040129/159f33260ade9368911cd55c7f27879a/notes_pre_post/1040g3k8326kqjc59l6705n10srf1dnneii9i6j8!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040129/8f3e01019a1a10b1e46f402b08ddeb39/notes_pre_post/1040g3k8326kqjc59l68g5n10srf1dnnef0n7tko!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040129/4617c27e832a545de329fff492083a5b/notes_pre_post/1040g3k8326kqjc59l6905n10srf1dnne6sp6t1g!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040129/a558b24764de90d7dd8440edc9bd1aa3/notes_pre_post/1040g3k8326kqjc59l6a05n10srf1dnnej00gtog!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040129/4c8fa48aa1fa8d6fa6f01b2b6489baf0/notes_pre_post/1040g3k8326kqjc59l6ag5n10srf1dnne4p0h200!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "谨小叙事者",
+   "content": "这咋能实现像素的[石化R]我头一回看见ai能画这样的像素",
+   "likes": "0"
+  },
+  {
+   "user": "sun",
+   "content": "博主板球场那个动作是用3渲2还是直接生成的四方向精灵表",
+   "likes": "0"
+  },
+  {
+   "user": "UHE",
+   "content": "网页游戏做像素风可不容易，你是做的真2d像素还是3d体素",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg",
+  "images/1.jpg",
+  "images/2.jpg",
+  "images/3.jpg",
+  "images/4.jpg",
+  "images/5.jpg",
+  "images/6.jpg"
+ ]
+}

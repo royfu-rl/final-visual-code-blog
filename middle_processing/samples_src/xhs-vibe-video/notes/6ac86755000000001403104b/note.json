@@ -1,0 +1,77 @@
+{
+ "note_id": "6ac86755000000001403104b",
+ "url": "https://www.xiaohongshu.com/explore/6ac86755000000001403104b?xsec_token=AB3vw--7Qx53yyzGnC3BavFSrhb9feG2N5n2IKPvbld_c=&xsec_source=pc_search",
+ "type": "video",
+ "title": "Claude推出两项新功能：Dashboards和Motion",
+ "desc": "Claude 推出两项新功能：Claude Dashboards 和 Claude Motion，即日起开放 beta。同时，Docs、Slides 和 Design 结束 beta，所有套餐都能用，包括免费版。\n\t\n视频讲了这几件事：\n1. Dashboards：连上 BigQuery、Snowflake、Databricks 等数据平台或 Salesforce 这类 CRM，用日常语言提问，Claude 写查询、搭出随数据更新的看板；每个数字都能点开看背后的查询，每张图标着最后刷新时间\n2. 官方的共享单车例子：一年的骑行数据做成看板，上个季度空车桩 4,200 次，71% 发生在山上，Fernhill 站一个普通工作日 8:15 就被借空\n3. Motion：输入 /motion，把季度报告、董事会图表或产品演示做成动画讲解片，可以在编辑器里调、让 Claude 改，最后导出 MP4\n4. Motion 写的是代码，不用视频生成模型：没有生成的画面，也没有 AI 生成的人物，任何一个字、数字、时间点都能改\n5. Docs、Slides、Design：已经做了超过 4500 万份；支持 CMEK、团队和 Claude 一起编辑、分享到组织外、导出保留排版、手机上也能改\n6. Claude Design 并进 Claude：独立站保留到 12 月 14 日，团队设计系统可以一键迁移\n7. 上线安排：Dashboards 在付费套餐 beta，Motion 在 Team 和 Enterprise beta；企业版需管理员在组织设置里打开\n\t\n官方的一句话：Claude 来做，你来掌舵。\n\t\n整理自 Claude 官网和 Claude 官方 X 账号。",
+ "tags": [],
+ "author": "奥森木",
+ "user_id": "666dce3e000000000d025a37",
+ "time": 1791518549000,
+ "ip_location": "上海",
+ "likes": "1552",
+ "collects": "1698",
+ "comments_count": "29",
+ "keywords": [
+  "Claude 数据可视化动画"
+ ],
+ "duration": 244,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040102/dba8b756711f746242086a310f0e0d3c/spectrum/1040g34o3263cqlag4c105pjdpov3cmhnok48dj0!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "两眼一睁就是练",
+   "content": "gpt 赶紧抄啊，我现在真眼红这个视频能力。有些人总说 gpt 也能弄，实际上做出来效果差很远[捂脸R]",
+   "likes": "26"
+  },
+  {
+   "user": "李嘉图Rick",
+   "content": "token消耗如何？",
+   "likes": "2"
+  },
+  {
+   "user": "🐱",
+   "content": "github copilot这个功能吗@点点",
+   "likes": "0"
+  },
+  {
+   "user": "小红薯6950FF39",
+   "content": "新闻联播主持人大赛",
+   "likes": "0"
+  },
+  {
+   "user": "Jooo",
+   "content": "还是得在终端运行？",
+   "likes": "0"
+  },
+  {
+   "user": "小红薯673B4C0C",
+   "content": "你这个视频做的也太棒了吧",
+   "likes": "5"
+  },
+  {
+   "user": "Markus Dammann 唐茂坤",
+   "content": "Claude copying KIMI now",
+   "likes": "0"
+  },
+  {
+   "user": "AI效率改造-高级工匠",
+   "content": "真不给活路啊",
+   "likes": "0"
+  },
+  {
+   "user": "小红薯biu",
+   "content": "databricks genie做好一点不就不用连claude了",
+   "likes": "0"
+  },
+  {
+   "user": "秋月梨啦",
+   "content": "能让这个tool真正普及的 是如何给它提供足够的domain context",
+   "likes": "1"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

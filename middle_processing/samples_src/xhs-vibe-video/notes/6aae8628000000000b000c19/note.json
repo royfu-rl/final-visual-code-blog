@@ -1,0 +1,96 @@
+{
+ "note_id": "6aae8628000000000b000c19",
+ "url": "https://www.xiaohongshu.com/explore/6aae8628000000000b000c19?xsec_token=AB6_WBKkec9zc6O0CZoLDvozP-Suh5AsDbcRHfmTNUJsg=&xsec_source=pc_search",
+ "type": "normal",
+ "title": "VideoGen 大基本功之 Forcing",
+ "desc": "整理了一篇视频生成技术笔记，串起 Diffusion Forcing、CausVid、Self Forcing、Rolling Forcing 和 Causal Forcing，看看扩散模型如何走向实时流式生成。尝试讲清少步蒸馏、分布对齐、滚动去噪与因果初始化分别解决什么问题，以及为什么“生成更快”不等于“长视频更稳”。\n#视频生成[话题]# #计算机视觉[话题]# #从入门到精通[话题]#",
+ "tags": [
+  "视频生成",
+  "计算机视觉",
+  "从入门到精通"
+ ],
+ "author": "Leo",
+ "user_id": "613e1a33000000001f03e373",
+ "time": 1789822504000,
+ "ip_location": null,
+ "likes": "319",
+ "collects": "504",
+ "comments_count": "22",
+ "keywords": [
+  "vibe video",
+  "视频 skill"
+ ],
+ "duration": null,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040116/0c337b984dad82a659f1b7feedd88c23/1040g2sg325a3v33e50705o9u38pnvorjabqe0t0!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040116/5fbf4b9e1e0544a655087a432cbac72f/1040g2sg325a3v33e507g5o9u38pnvorjv6hq9u8!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040116/6a6a8edaaf4cdaa8814f2908651195a4/1040g2sg325a3v33e50805o9u38pnvorje02pbho!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040116/4a6f9fd3b7e264bac00f6863894648b5/1040g2sg325a3v33e508g5o9u38pnvorjv69o87o!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040116/6829d856f725e71cfadbd5c0ec67ac96/1040g2sg325a3v33e50905o9u38pnvorj0bunrd0!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040116/ff44b72d67d1239111586d2026a3fc8e/1040g2sg325a3v33e509g5o9u38pnvorj7iie0mo!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040116/201583f85634b1e593f9e6952ab5c749/1040g2sg325a3v33e50a05o9u38pnvorjp1k7qpg!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040116/25c0fa97c6523c84eeea93037b06ab64/1040g2sg325a3v33e50ag5o9u38pnvorj7n9gato!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "鸡排教教主",
+   "content": "用什么写的呢",
+   "likes": "0"
+  },
+  {
+   "user": "Stream",
+   "content": "有无pdf 分享谢谢[微笑R]",
+   "likes": "1"
+  },
+  {
+   "user": "Vincent教你学AI",
+   "content": "Rolling diffusion 是第一篇，diffusion forcing 没 cite 他",
+   "likes": "4"
+  },
+  {
+   "user": "门腔",
+   "content": "最近出的CMD怎么样[doge]",
+   "likes": "0"
+  },
+  {
+   "user": "好困",
+   "content": "基本功",
+   "likes": "0"
+  },
+  {
+   "user": "土豆🥔",
+   "content": "大佬，forcing下一步的发展方向是什么？",
+   "likes": "0"
+  },
+  {
+   "user": "PaulLee",
+   "content": "",
+   "likes": "0"
+  },
+  {
+   "user": "Junos.Z",
+   "content": "可以看看我们最近的Self Gradient Forcing Plus:\nDecoupling Gradient Flows for Autoregressive Video Generation，无需额外loss或者数据，无需长rollout训练，5s训练窗口即可产生24h流式视频生成[派对R]",
+   "likes": "3"
+  },
+  {
+   "user": "北辰",
+   "content": "关于将训练时限制注意力窗口，将最后的chunk看不到第一个chunk的方式纳入到训练中。请问这个思想是哪篇文章有提过呀。",
+   "likes": "0"
+  },
+  {
+   "user": "S-66🐰",
+   "content": "nervous[微笑R] good luck to me",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg",
+  "images/1.jpg",
+  "images/2.jpg",
+  "images/3.jpg",
+  "images/4.jpg",
+  "images/5.jpg",
+  "images/6.jpg",
+  "images/7.jpg"
+ ]
+}

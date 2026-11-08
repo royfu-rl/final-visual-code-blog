@@ -1,0 +1,74 @@
+{
+ "note_id": "6ac76ec6000000001b02e576",
+ "url": "https://www.xiaohongshu.com/explore/6ac76ec6000000001b02e576?xsec_token=ABoZ5yD4MgUTgwqBKxVVfUJRUx7Zif9hANq42bSUQKpt8=&xsec_source=pc_search",
+ "type": "video",
+ "title": "Claude Opus 5.5制作APP短片",
+ "desc": "开发者只用一条提示词，让 Claude Code 后台运行约 8 小时，纯代码生成了一支 33 秒的日历 App 宣传片。\n产品命名、Logo、UI、动效、配乐、音效全部由 AI 完成！\n技术栈包括 Remotion、React、Python 和 FFmpeg，连音乐都是代码合成的。\n项目已开源，源码和成片都在仓库里。\n#AI工具[话题]# #howto用好AI[话题]# #AI新手村[话题]# #动效设计[话题]# #大模型[话题]# #个人开发者[话题]# #交互设计[话题]# #软件开发[话题]# #ai工具[话题]#\nGitHub：https://github.com/Leonxlnx/claude-launchvideo",
+ "tags": [
+  "AI工具",
+  "howto用好AI",
+  "AI新手村",
+  "动效设计",
+  "大模型",
+  "个人开发者",
+  "交互设计",
+  "软件开发",
+  "ai工具"
+ ],
+ "author": "NEO的AI实验室",
+ "user_id": "670744eb000000001d0321b9",
+ "time": 1791454918000,
+ "ip_location": "新加坡",
+ "likes": "163",
+ "collects": "206",
+ "comments_count": "6",
+ "keywords": [
+  "Claude Code 做视频",
+  "Claude 产品宣传片",
+  "Claude 做视频",
+  "Claude 动效设计",
+  "Claude 数据可视化动画",
+  "Claude 片头动画",
+  "Motion Canvas",
+  "Opus5.5 做视频"
+ ],
+ "duration": 33,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040126/6e1723fc271273bb5f313892b3933531/spectrum/1040g0k03262ef07pk6005po78jlne8dpog9b30g!nd_dft_wgth_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "噜噜一定可以毕业的",
+   "content": "你这好炫酷[赞R]，看看我的也是Claude生成的 OurDays：两个人的日历...",
+   "likes": "0"
+  },
+  {
+   "user": "111",
+   "content": "这个是用cowork做的还是code？",
+   "likes": "0"
+  },
+  {
+   "user": "StrixSeven",
+   "content": "看起来挺不错的，我去试试",
+   "likes": "0"
+  },
+  {
+   "user": "弗洛伊德彪",
+   "content": "这么厉害",
+   "likes": "0"
+  },
+  {
+   "user": "Archie.",
+   "content": "GitHub找不到这个",
+   "likes": "0"
+  },
+  {
+   "user": "兴成科技-软件开发",
+   "content": "路过，全国可做，软件开发。[点赞R]",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

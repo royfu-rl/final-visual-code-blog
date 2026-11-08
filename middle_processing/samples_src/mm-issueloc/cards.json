@@ -1,0 +1,60 @@
+{
+ "link": "https://huggingface.co/datasets/Jasaxion/MM-IssueLocBench",
+ "id": "Jasaxion/MM-IssueLocBench",
+ "cards": [
+  {
+   "img": "issue_1139055572_0.png",
+   "name": "privatenumber__snap-tweet__1139055572",
+   "code": [
+    [
+     "issue_title",
+     "privatenumber__snap-tweet__1139055572.issue_title.txt"
+    ],
+    [
+     "issue_body",
+     "privatenumber__snap-tweet__1139055572.issue_body.txt"
+    ],
+    [
+     "diff",
+     "privatenumber__snap-tweet__1139055572.diff.txt"
+    ]
+   ]
+  },
+  {
+   "img": "issue_1404291208_2.png",
+   "name": "Anarios__return-youtube-dislike__1404291208",
+   "code": [
+    [
+     "issue_title",
+     "Anarios__return-youtube-dislike__1404291208.issue_title.txt"
+    ],
+    [
+     "issue_body",
+     "Anarios__return-youtube-dislike__1404291208.issue_body.txt"
+    ],
+    [
+     "diff",
+     "Anarios__return-youtube-dislike__1404291208.diff.txt"
+    ]
+   ]
+  },
+  {
+   "img": "issue_2432031126_0.png",
+   "name": "filllabs__dependi__2432031126",
+   "code": [
+    [
+     "issue_title",
+     "filllabs__dependi__2432031126.issue_title.txt"
+    ],
+    [
+     "issue_body",
+     "filllabs__dependi__2432031126.issue_body.txt"
+    ],
+    [
+     "diff",
+     "filllabs__dependi__2432031126.diff.txt"
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "note_id": "6abbde86000000000a026cf8",
+ "url": "https://www.xiaohongshu.com/explore/6abbde86000000000a026cf8?xsec_token=ABV14hYFiIAGypBC1an5YMe_GWshe92lljbYpzGBCwXUA=&xsec_source=pc_search",
+ "type": "video",
+ "title": "技术解读：Opus 5.5是如何制作视频的？",
+ "desc": "相信大家这几天都看了非常多的Claude Opus 5.5生成视频的案例了，其中用到的工具叫做Remotion，核心就是代码驱动。但问题就是，代码如何活生生变成一段视频呢？原理就蕴含在SVG的结构和Three.js的定义当中。\n\t\n本视频耗时14小时完成，我将带着大家深入Remotion背后的底层原理，揭开Opus 5.5制作精美视频背后的真相！\n\t\n你们认为，从代码建立视频，会是未来的主流方向吗？\n\t\n#Claude[话题]# #Remotion[话题]# #技术科普[话题]# #技术解读[话题]# #人工智能[话题]# #大模型[话题]# #AI科技[话题]#",
+ "tags": [
+  "Claude",
+  "Remotion",
+  "技术科普",
+  "技术解读",
+  "人工智能",
+  "大模型",
+  "AI科技"
+ ],
+ "author": "爱学习的乔同学",
+ "user_id": "5d36521b000000001003d1bd",
+ "time": 1790697094000,
+ "ip_location": null,
+ "likes": "60",
+ "collects": "68",
+ "comments_count": "2",
+ "keywords": [
+  "Claude 3D 动画",
+  "Claude Blender 动画",
+  "Claude Code 做视频",
+  "Claude MV",
+  "Claude 产品宣传片",
+  "Claude 做视频",
+  "Claude 口播视频",
+  "Claude 数据可视化动画",
+  "Claude 科普动画",
+  "Remotion",
+  "纯代码视频"
+ ],
+ "duration": 381,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040136/ada2d6f3a180e858088435119269bc1a/spectrum/1040g34o325n4uq4qk6105n9ma8dk7kdtuirdbn8!nd_dft_wgth_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "云畔雾隐花",
+   "content": "@点点",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

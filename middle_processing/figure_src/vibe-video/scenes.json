@@ -1,0 +1,983 @@
+{
+ "_note": "Vibe Video 场景 taxonomy。src / demos 里的笔记 id 写前 8 位即可（make_vibe_video.py 按前缀补全）。demos 的 file 相对 notes/<id>/：images/0.jpg 是封面，frames/0-4.jpg 是视频抽帧。",
+ "families": [
+  {
+   "key": "explain",
+   "cn": "讲清楚",
+   "en": "Explain",
+   "scenes": [
+    "explainer",
+    "edit"
+   ]
+  },
+  {
+   "key": "promote",
+   "cn": "卖出去",
+   "en": "Promote",
+   "scenes": [
+    "launch",
+    "brand",
+    "motion"
+   ]
+  },
+  {
+   "key": "create",
+   "cn": "做作品",
+   "en": "Create",
+   "scenes": [
+    "story",
+    "mv",
+    "art",
+    "scene3d"
+   ]
+  }
+ ],
+ "alias": {
+  "dataviz": "explainer"
+ },
+ "scenes": {
+  "explainer": {
+   "cn": "知识科普",
+   "en": "Explainer",
+   "color": "#0891b2",
+   "def": "把一个概念讲成 1 到 5 分钟的短片：Vibe 知识大赏、3B1B 式数学、手绘白板、机械拆解。",
+   "practices": [
+    {
+     "t": "先定事实再写画面：每个项目落 brief.md、facts.md、storyboard.md 三份文件，facts 里写引文出处和「必须避免」清单，确认 30 秒样片后再出全片",
+     "src": [
+      "6ace3e59"
+     ]
+    },
+    {
+     "t": "钩子写成第二人称的悖论，接 3 到 4 个约 3 秒、跨尺度的画面；高潮在提示词里写死 BGM 重拍的时间点（如 17.0 秒），逐段规定画面",
+     "src": [
+      "6acaff24"
+     ]
+    },
+    {
+     "t": "提示词模板是「时长 + 风格名 + 质感词 + 逐拍动作 + 结尾点题」；讲故事选皮影、绘本，讲原理选白板、3B1B，讲过程选等距 2.5D，讲结构选 3D 爆炸图",
+     "src": [
+      "6ac9ac02",
+      "6ac50089"
+     ]
+    },
+    {
+     "t": "让物体本身成为解释：发明一台机器，它的运转就是概念（队列是弹珠轨道）；画面上的读数和驱动零件的是同一个模型",
+     "src": [
+      "6acc87c0"
+     ]
+    },
+    {
+     "t": "先配音后配画，用 Whisper 逐词对齐，画面跟着说话走；再设几道硬性质检关卡",
+     "src": [
+      "6ad2f7bc"
+     ]
+    },
+    {
+     "t": "数学类从目标概念倒推前置知识，再正向排分镜，先讲故事后上符号；先扩写成带 LaTeX 的分场景提示词，再写 Manim",
+     "src": [
+      "6a0ebb51",
+      "69119bc9"
+     ]
+    },
+    {
+     "t": "拆成制作 Agent 和评审 Agent，评审对照一条爆款参考片给意见，多轮「产出、对照、修改」",
+     "src": [
+      "6ad15c0c"
+     ]
+    },
+    {
+     "t": "长片统一一套视觉语言（如黑底、白色粒子、等距线框），约 90% 动效交给模型，人只打磨内容",
+     "src": [
+      "6ac5dbe2"
+     ]
+    }
+   ],
+   "pitfalls": [
+    "借来的风格能出片，但数据、史实和推导仍要逐项人工核对",
+    "爆款不可复制：同一作者三条片只有一条过 10 万播放，完播率 3.7% 到 5.4%",
+    "同题下 Codex 的画面明显比 Opus 5.5 简陋，要靠风格库 skill 兜底"
+   ],
+   "stack": [
+    "HTML / SVG + GSAP",
+    "Canvas 2D",
+    "WebGL / three.js",
+    "Manim",
+    "Remotion",
+    "HyperFrames",
+    "Whisper",
+    "ElevenLabs"
+   ],
+   "projects": [
+    "wheresryan22/anatomy",
+    "HeyChengC/vibe-knowledge-film",
+    "HarleyCoops/Math-To-Manim",
+    "Vincentwei1021/anything2explainer",
+    "3b1b/manim",
+    "showlab/Code2Video"
+   ],
+   "demos": [
+    {
+     "note": "6ad79a33",
+     "file": "frames/4.jpg"
+    },
+    {
+     "note": "6ab9cbdd",
+     "file": "frames/1.jpg"
+    },
+    {
+     "note": "6ac50089",
+     "file": "frames/1.jpg"
+    },
+    {
+     "note": "6aba653b",
+     "file": "frames/3.jpg"
+    },
+    {
+     "note": "6acaff24",
+     "file": "frames/4.jpg"
+    },
+    {
+     "note": "6ab3d8db",
+     "file": "frames/3.jpg"
+    }
+   ]
+  },
+  "edit": {
+   "cn": "口播包装",
+   "en": "Talking-Head Edit",
+   "color": "#475569",
+   "def": "真人口播是主体，agent 负责 B-roll 动画、字幕、贴纸、音效和剪辑点。",
+   "practices": [
+    {
+     "t": "剪辑点挂在口播的词上：用 ElevenLabs 或 Whisper 的逐字时间戳，说到哪个词就切镜、弹贴纸、放音效；改口播重配音后画面自动跟着走",
+     "src": [
+      "6ad4b5b3"
+     ]
+    },
+    {
+     "t": "口播先转写成带时间戳的脚本，用计划模式出 STORYBOARD.md，一句字幕对应一镜；先看几个分镜再渲全片",
+     "src": [
+      "6a621ecf"
+     ]
+    },
+    {
+     "t": "Remotion、HyperFrames 只做组件（流程图、知识卡、表格），带 Alpha 通道导出，叠进 AE 或 Final Cut；口播主体照常剪",
+     "src": [
+      "6a4b1092",
+      "6a673ecf",
+      "6a681fca"
+     ]
+    },
+    {
+     "t": "B-roll 拆成 5 段交给并行子 agent，哪段不满意只重做哪段，不整条重来",
+     "src": [
+      "6aa13d38"
+     ]
+    },
+    {
+     "t": "动效需求限定到时间段（「第 X 秒到第 X 秒」）；给参考视频时让 agent 先拆出关键动作、确认后再做",
+     "src": [
+      "6aa28af2"
+     ]
+    },
+    {
+     "t": "把全局风格写进 AGENTS.md 或 REMOTION_RULES.md：字体、色值、留白、安全区、导出规格；并要求「构建完先别导出，等我确认」",
+     "src": [
+      "6a681fca"
+     ]
+    },
+    {
+     "t": "要跟踪画面里的物体时，先导出一条可视化校验视频（把检测到的坐标画回原片），核对准了再做动画",
+     "src": [
+      "69647aee"
+     ]
+    }
+   ],
+   "pitfalls": [
+    "强情绪、要挑细节的真人口播不适合交给 Remotion，只适合做卡片类组件",
+    "同样的操作常常只得到素材拼接加字幕，没有像样的动效",
+    "Remotion 成品容易有 PPT 感，运动曲线和镜头要逐个调"
+   ],
+   "stack": [
+    "HyperFrames",
+    "Remotion",
+    "ElevenLabs",
+    "Whisper",
+    "After Effects",
+    "Final Cut Pro",
+    "ffmpeg"
+   ],
+   "projects": [
+    "heygen-com/hyperframes",
+    "remotion-dev/remotion",
+    "nateherkai/herk-edit-kit",
+    "0xsline/OpenChatCut",
+    "Vincentwei1021/video-talkcraft"
+   ],
+   "demos": [
+    {
+     "note": "6a673ecf",
+     "file": "images/0.jpg"
+    },
+    {
+     "note": "69647aee",
+     "file": "frames/0.jpg"
+    },
+    {
+     "note": "6ad0147b",
+     "file": "frames/2.jpg"
+    },
+    {
+     "note": "6aa13d38",
+     "file": "frames/2.jpg"
+    },
+    {
+     "note": "6ae1f11c",
+     "file": "frames/3.jpg"
+    }
+   ]
+  },
+  "launch": {
+   "cn": "产品发布片",
+   "en": "Launch Video",
+   "color": "#2563eb",
+   "def": "App、SaaS、模型的 15 到 90 秒发布片，主角是产品界面。",
+   "practices": [
+    {
+     "t": "提示词只占 10%，90% 是 harness：给参考片、给渲染引擎、让模型看自己渲出来的帧",
+     "src": [
+      "6ac5504e"
+     ]
+    },
+    {
+     "t": "带关卡的流程：先写 style_guide 和 shotlist，每镜先出静帧拼 contact sheet 自评，再做 960×540 占位音频的 animatic，最后全量动画；每镜至少 3 轮、各项 8 分以上",
+     "src": [
+      "6ac5504e"
+     ]
+    },
+    {
+     "t": "结构按音乐写：120 BPM、8 小节、每拍发生一件事；最后一帧接回第一帧，做成可循环的片子",
+     "src": [
+      "6ac5504e",
+      "6add72d2"
+     ]
+    },
+    {
+     "t": "界面不录屏、不贴截图，用代码重绘；一个容器全程变形不切镜，光标点到哪里镜头就推到哪里",
+     "src": [
+      "6ad4b5b3",
+      "6ae323fb"
+     ]
+    },
+    {
+     "t": "想要物理手感就别用淡入卡片：直接写弹簧和软体受力，提示词里写「springs, not fades」",
+     "src": [
+      "6a9e4877"
+     ]
+    },
+    {
+     "t": "复刻法：把参考片丢给 agent 照做一版，再一句话迁移到自己的产品；反馈具体到时间点和元素（「3 秒处卡住」）",
+     "src": [
+      "6aa66348",
+      "6adc8978"
+     ]
+    },
+    {
+     "t": "提示词分段写全：产品、故事、格式、视觉、动效、声音、质检；质检段要求每半秒看一帧，至少改 4 整轮并记录每轮改了什么",
+     "src": [
+      "6adc7032"
+     ]
+    },
+    {
+     "t": "交付工程文件而不是成片，换文案、改配色只需重渲一遍",
+     "src": [
+      "6aa66348"
+     ]
+    }
+   ],
+   "pitfalls": [
+    "不给参考片、只靠文字描述，出来的和参考差距很大",
+    "agent 自己挑 17 个时间点查过，仍漏掉人一眼能看出的两处问题",
+    "模型配的 BGM 基本不搭，要单独让它反复换；不少「AI 宣传片」其实是 AE 做的"
+   ],
+   "stack": [
+    "Remotion",
+    "HyperFrames",
+    "单 HTML + canvas + window.seek(t)",
+    "three.js",
+    "ElevenLabs",
+    "ffmpeg"
+   ],
+   "projects": [
+    "Vincentwei1021/video-shotcraft",
+    "op7418/guizang-product-video-skill",
+    "liyupi/ai-promo-video-maker",
+    "feitangyuan/onetake",
+    "echris6/motion-video-kit"
+   ],
+   "demos": [
+    {
+     "note": "6add72d2",
+     "file": "frames/2.jpg"
+    },
+    {
+     "note": "6adc8978",
+     "file": "images/0.jpg"
+    },
+    {
+     "note": "6ad89c2f",
+     "file": "frames/2.jpg"
+    },
+    {
+     "note": "6ac76ec6",
+     "file": "frames/0.jpg"
+    },
+    {
+     "note": "6a69e33e",
+     "file": "frames/0.jpg"
+    },
+    {
+     "note": "6ac8640d",
+     "file": "frames/1.jpg"
+    }
+   ]
+  },
+  "brand": {
+   "cn": "品牌广告",
+   "en": "Brand Ad",
+   "color": "#7c3aed",
+   "def": "实体产品、汽车、包装、球鞋的 10 到 30 秒广告，常把代码编排和生图、生视频素材混用。",
+   "practices": [
+    {
+     "t": "剪辑写成代码：一行一镜 cut(\"overhead\", f=46, rig=drone(top=True, h=28))；机位封装成 drone、orbit、crane、macro 等函数，只留焦距、高度、半径",
+     "src": [
+      "6ac8627a"
+     ]
+    },
+    {
+     "t": "素材生成也写进代码：统一的 STYLE 变量传给生图、生视频接口，15 个镜头的风格才一致",
+     "src": [
+      "6ac9728d",
+      "6ac9cb2d"
+     ]
+    },
+    {
+     "t": "按帧号链式编排动效（film.at(5).cutout().halftone()），state.py 热重载，改代码就能实时预览当前帧",
+     "src": [
+      "6ac9728d"
+     ]
+    },
+    {
+     "t": "预览用 64 spp，终渲用 Cycles + OptiX 1024 spp；字幕用 track() 锚定到部件的跟踪坐标上",
+     "src": [
+      "6ac8627a"
+     ]
+    },
+    {
+     "t": "用 3D 实物做隐喻讲卖点：快捷键做成实体键帽，效率提升写成「4,812 → 1」大字",
+     "src": [
+      "6ad07b9a"
+     ]
+    },
+    {
+     "t": "一条广告只替换变量（主播、品类、产品）就能改出多版",
+     "src": [
+      "6abb179f"
+     ]
+    }
+   ],
+   "pitfalls": [
+    "这类作品多数来自非官方账号，制作流程没有公开",
+    "代码合成的音效常被吐槽，像「开吸尘器」",
+    "成本有两份：agent 的 token，加上生图、生视频模型的调用费"
+   ],
+   "stack": [
+    "Blender Python + Cycles",
+    "Python 逐帧",
+    "生图 / 生视频接口",
+    "Remotion"
+   ],
+   "projects": [
+    "hypit-ai/hypit",
+    "remotion-dev/skills",
+    "calesthio/OpenMontage"
+   ],
+   "demos": [
+    {
+     "note": "6ac8627a",
+     "file": "frames/3.jpg"
+    },
+    {
+     "note": "6ad07b9a",
+     "file": "frames/0.jpg"
+    },
+    {
+     "note": "6acd97bc",
+     "file": "frames/0.jpg"
+    },
+    {
+     "note": "6ac9728d",
+     "file": "frames/1.jpg"
+    },
+    {
+     "note": "6ad07b9a",
+     "file": "frames/4.jpg"
+    }
+   ]
+  },
+  "motion": {
+   "cn": "动效设计",
+   "en": "Motion Design",
+   "color": "#ea580c",
+   "def": "MG、UI 动效、Logo 片头、角色动效、showreel，看的是节奏和手感。",
+   "practices": [
+    {
+     "t": "按 BPM 组织：15 秒切成 8 小节、32 拍，每小节一个主题，段落切换卡在拍上",
+     "src": [
+      "6ac7a32f",
+      "6aba13b0",
+      "6ac9d7a7"
+     ]
+    },
+    {
+     "t": "先写带时间码的分镜清单，再按场景拆给并行子 agent，每个只写一个文件，主 agent 管主合成",
+     "src": [
+      "6aba4092"
+     ]
+    },
+    {
+     "t": "按帧率核算运动速度：12fps 下网点滚动 900px/s 会每帧正好移半格而闪烁，改成 252px/s",
+     "src": [
+      "6aba4092"
+     ]
+    },
+    {
+     "t": "渲染前先跑 lint 和 type-check，只渲一帧查中文溢出和层次，通过后再出全片",
+     "src": [
+      "6a27ff8b"
+     ]
+    },
+    {
+     "t": "把关键参数暴露成 props 或面板（卡片数、轨道半径、发光色），在 Studio 里拖着调，比来回对话改代码快",
+     "src": [
+      "6a478221",
+      "6abb0418"
+     ]
+    },
+    {
+     "t": "角色动效把制作顺序写进 SKILL.md 并设确认关口：参考图、概念图、确认、矢量化、嘴型、Rive；每次纠正都沉淀成 references/ 下的规则文件",
+     "src": [
+      "6ada4b4b"
+     ]
+    },
+    {
+     "t": "常用动效沉淀成单一职责的 skill（如 K 线图、地球渲染），出片时一句话点名调用",
+     "src": [
+      "6a8e5d33"
+     ]
+    }
+   ],
+   "pitfalls": [
+    "开放式提示词出片漂亮但千篇一律，「都是他们 logo 色」",
+    "去掉音乐就显得普通，配乐占观感很大比重",
+    "接 AE 的 MCP 还做不到完全自动控制 AE"
+   ],
+   "stack": [
+    "Remotion",
+    "HyperFrames",
+    "GSAP",
+    "Rive",
+    "AE ExtendScript",
+    "three.js"
+   ],
+   "projects": [
+    "nexu-io/motion-anything",
+    "Vincentwei1021/video-talkcraft",
+    "remotion-dev/skills",
+    "OpenSenseNova/SenseNova-6.8-Code2Video"
+   ],
+   "demos": [
+    {
+     "note": "6ac7a32f",
+     "file": "frames/3.jpg"
+    },
+    {
+     "note": "6ac9d7a7",
+     "file": "images/0.jpg"
+    },
+    {
+     "note": "6ae30da0",
+     "file": "frames/0.jpg"
+    },
+    {
+     "note": "6a8e5d33",
+     "file": "frames/2.jpg"
+    },
+    {
+     "note": "6aba13b0",
+     "file": "frames/3.jpg"
+    },
+    {
+     "note": "6abc6cb1",
+     "file": "frames/0.jpg"
+    }
+   ]
+  },
+  "story": {
+   "cn": "叙事短片",
+   "en": "Story Short",
+   "color": "#db2777",
+   "def": "有角色、有情绪的 1 到 3 分钟短片：治愈、梦境、电影感、同人。",
+   "practices": [
+    {
+     "t": "第一轮不写代码，先讨论剧情：给参考动画、时长和必须出场的角色，敲定后再生成",
+     "src": [
+      "6ab737b7",
+      "6ab77457"
+     ]
+    },
+    {
+     "t": "提示词开头先给角色和硬参数（动态设计导演兼工程师、20 秒、1920×1080、30fps），分镜按秒写「画面 | 目的」",
+     "src": [
+      "6ad8d786"
+     ]
+    },
+    {
+     "t": "画面和音乐用同一张节拍表；改稿只说哪里不对，怎么演交给模型",
+     "src": [
+      "6ab77457"
+     ]
+    },
+    {
+     "t": "给抽象主题找一个可拟人的小角色承载叙事，再用一个贯穿全片的视觉母题（如手电光圈）串起场景",
+     "src": [
+      "6ab3b4e5",
+      "6aca1618"
+     ]
+    },
+    {
+     "t": "全权委托：声明「脚本、素材、动画都由你来」，.env 里备好 TTS key，要求自主做到完成",
+     "src": [
+      "6ab7840c"
+     ]
+    },
+    {
+     "t": "不用任何素材图，所有元素由代码画，统一手绘线稿和低饱和配色，风格自然一致",
+     "src": [
+      "6ab8e5d1",
+      "6abf5887"
+     ]
+    }
+   ],
+   "pitfalls": [
+    "人物几乎不动，很多片子缺自然的人物动作",
+    "风格高度同质，「看到第三四个就审美疲劳」",
+    "写实画面多半来自视频模型而不是代码；版权角色的原声配音会被拒"
+   ],
+   "stack": [
+    "Canvas / SVG / JS 逐帧",
+    "three.js",
+    "TTS",
+    "VOICEVOX",
+    "生图模型"
+   ],
+   "projects": [
+    "lemomo-ai/lemo-opuscar",
+    "alchaincyf/huashu-art-motion",
+    "yihui-dev/awesome-opus5-5-videos"
+   ],
+   "demos": [
+    {
+     "note": "6ae8548d",
+     "file": "frames/2.jpg"
+    },
+    {
+     "note": "6ab7840c",
+     "file": "frames/2.jpg"
+    },
+    {
+     "note": "6abfc8b0",
+     "file": "frames/0.jpg"
+    },
+    {
+     "note": "6ab8e5d1",
+     "file": "frames/4.jpg"
+    },
+    {
+     "note": "6ac77589",
+     "file": "frames/1.jpg"
+    },
+    {
+     "note": "6aca1618",
+     "file": "frames/2.jpg"
+    }
+   ]
+  },
+  "mv": {
+   "cn": "音乐视频",
+   "en": "Music Video",
+   "color": "#dc2626",
+   "def": "歌词 MV、音乐可视化，画面要卡在节拍和歌词上。",
+   "practices": [
+    {
+     "t": "音频先行：Demucs 分轨，Whisper 识别歌词，CTC 强制对齐到逐词、逐音节，再检测 beat、downbeat、onset，作为动画的驱动数据",
+     "src": [
+      "6acf3a77",
+      "6ab9028a"
+     ]
+    },
+    {
+     "t": "确定性渲染：同一时间参数对应同一画面；无头 Chrome 逐帧渲染，经 WebSocket 把原始帧推给 FFmpeg 编码",
+     "src": [
+      "6acf3a77"
+     ]
+    },
+    {
+     "t": "模型当导演：先写分镜，把歌拆成 9 章、每章一个代码文件，写好简报交给并行子 Agent 各改各的",
+     "src": [
+      "6ab556b8"
+     ]
+    },
+    {
+     "t": "胶片质感在 WebGL 里做：Bloom、Halation、Grain",
+     "src": [
+      "6acf3a77"
+     ]
+    },
+    {
+     "t": "按歌词逐句设计镜头，抽象歌词用分屏表达（「你却没时差」用昼夜两个钟同一时刻）",
+     "src": [
+      "6abbd496"
+     ]
+    },
+    {
+     "t": "统一一层 HUD（曲名、随剧情增长的进度条），把整片串成一个系列",
+     "src": [
+      "6ab8e3c9"
+     ]
+    }
+   ],
+   "pitfalls": [
+    "评论里常见「花里胡哨」「slop」的批评",
+    "插画来源常不透明，评论质疑接了生图模型",
+    "额度消耗快：一支 MV 用掉约一半的 5 小时额度"
+   ],
+   "stack": [
+    "TypeScript + three.js",
+    "p5.js",
+    "Bun / Vite",
+    "Demucs",
+    "Whisper + CTC",
+    "ffmpeg"
+   ],
+   "projects": [
+    "mexicat/pdoom-video",
+    "JohnHeibel/PDoomVideo"
+   ],
+   "demos": [
+    {
+     "note": "6acf3a77",
+     "file": "images/0.jpg"
+    },
+    {
+     "note": "6ab8e3c9",
+     "file": "frames/3.jpg"
+    },
+    {
+     "note": "6ad75f9c",
+     "file": "images/0.jpg"
+    },
+    {
+     "note": "6ab556b8",
+     "file": "frames/3.jpg"
+    },
+    {
+     "note": "6add64d5",
+     "file": "images/0.jpg"
+    },
+    {
+     "note": "6abbd496",
+     "file": "frames/3.jpg"
+    }
+   ]
+  },
+  "art": {
+   "cn": "艺术风格",
+   "en": "Art Styles",
+   "color": "#a16207",
+   "def": "名画穿越、东方美学、像素微缩、风格图鉴：一种风格一套配方。",
+   "practices": [
+    {
+     "t": "风格库 skill：每种风格配风格提示词、导演提示词、技术指南和一支样片，用时只选风格、讲故事",
+     "src": [
+      "6ad6234e"
+     ]
+    },
+    {
+     "t": "每种风格点名 2 到 3 个实现技术，如彩绘玻璃用泰森多边形、透光着色、体积光",
+     "src": [
+      "6ad2a637"
+     ]
+    },
+    {
+     "t": "用物理和算法术语描述效果（xPBD 弹性膜、断裂阈值），不要白描画面",
+     "src": [
+      "6a7ea51b"
+     ]
+    },
+    {
+     "t": "场景、运镜、配乐交给代码；人物按每种画风用生图模型重画动作帧，再合进代码场景",
+     "src": [
+      "6ac4a875",
+      "6ac31f61"
+     ]
+    },
+    {
+     "t": "像素风先在 320×180 小画布上画完再整数放大；先定构图，再补细节，最后加动作，一次只改一个问题",
+     "src": [
+      "6abcc730",
+      "6ada40da"
+     ]
+    },
+    {
+     "t": "用一个固定的构图母题（如屏幕下方的一段弧）串起全片，首尾闭环",
+     "src": [
+      "6ad4e782"
+     ]
+    }
+   ],
+   "pitfalls": [
+    "风格是针对 Opus 5.5 调的，换模型可能复现不出来",
+    "最费时间的是动作衔接（接触点、归位、跳帧），不是画面本身",
+    "物理方向会出错，如多米诺骨牌倒反"
+   ],
+   "stack": [
+    "Canvas / p5.js",
+    "WebGL shader",
+    "three.js",
+    "生图模型",
+    "代码合成配乐"
+   ],
+   "projects": [
+    "lemomo-ai/lemo-opuscar",
+    "alchaincyf/huashu-art-motion",
+    "joeseesun/opus-video-prompts"
+   ],
+   "demos": [
+    {
+     "note": "6ad2a637",
+     "file": "frames/1.jpg"
+    },
+    {
+     "note": "6ac5fba5",
+     "file": "frames/3.jpg"
+    },
+    {
+     "note": "6ac31f61",
+     "file": "frames/2.jpg"
+    },
+    {
+     "note": "6abbad9f",
+     "file": "frames/1.jpg"
+    },
+    {
+     "note": "6abcc730",
+     "file": "frames/4.jpg"
+    },
+    {
+     "note": "6ada40da",
+     "file": "images/0.jpg"
+    }
+   ]
+  },
+  "scene3d": {
+   "cn": "3D 场景",
+   "en": "3D Scene",
+   "color": "#059669",
+   "def": "three.js 交互微缩场景、Blender 漫游与电影镜头、建筑汇报；成片是录屏或逐帧渲染。",
+   "practices": [
+    {
+     "t": "建模和动画分工：Blender（经 MCP 或命令行）做资产，three.js 负责复制、动画、镜头和光",
+     "src": [
+      "6ac4f89b",
+      "6ac736fa"
+     ]
+    },
+    {
+     "t": "卡点写成解析式：第 n 块骨牌倒下的时刻直接写成 t_n = beat(n)，不用物理模拟去凑",
+     "src": [
+      "6ac4f89b"
+     ]
+    },
+    {
+     "t": "白模先行：先定构图、机位和光，每轮只渲几张关键帧让模型看图改代码，7 轮后才渲全片",
+     "src": [
+      "6ae2eb18"
+     ]
+    },
+    {
+     "t": "让 agent 自带一个浏览器播放器自检：逐帧采样整段镜头路径，修穿墙和遮挡",
+     "src": [
+      "6aa7e7d5"
+     ]
+    },
+    {
+     "t": "一套渲染通道（物体 ID、法线、深度、分灯）加 Python 后期，就能出漫画、水彩、像素等多种画风，不用渲多遍",
+     "src": [
+      "6ac717db"
+     ]
+    },
+    {
+     "t": "交互件配 HUD 参数面板（风力、果冻硬度、毛长），录屏时现场调参制造看点",
+     "src": [
+      "6ac9f140",
+      "6ac8d607"
+     ]
+    },
+    {
+     "t": "同一提示词丢给两个模型 A/B，画面上标注各自花费再选",
+     "src": [
+      "6ac916f1"
+     ]
+    },
+    {
+     "t": "长任务保持上下文前缀稳定，吃满缓存（命中率 97.7%）",
+     "src": [
+      "6ac736fa"
+     ]
+    }
+   ],
+   "pitfalls": [
+    "token 消耗巨大，一个场景约 3.2 亿 token",
+    "人体、动物这类复杂曲面，代码建模的几何仍不完整",
+    "本地渲染动画要几个小时；同题 Blender 室内重建 Opus 不如 GPT-6 Astra"
+   ],
+   "stack": [
+    "three.js / R3F",
+    "Blender Python + Cycles",
+    "Blender MCP",
+    "WebGL shader"
+   ],
+   "projects": [
+    "ahujasid/blender-mcp",
+    "gaoypeng/3dcodeverse"
+   ],
+   "demos": [
+    {
+     "note": "6ac736fa",
+     "file": "frames/1.jpg"
+    },
+    {
+     "note": "6ab3abab",
+     "file": "frames/1.jpg"
+    },
+    {
+     "note": "6ad63a2d",
+     "file": "images/0.jpg"
+    },
+    {
+     "note": "6ae2eb18",
+     "file": "frames/0.jpg"
+    },
+    {
+     "note": "6ae91fde",
+     "file": "images/0.jpg"
+    },
+    {
+     "note": "6ae38a09",
+     "file": "frames/4.jpg"
+    }
+   ]
+  }
+ },
+ "shared": [
+  {
+   "p": "逐帧确定性",
+   "d": "画面写成 render(t) 或 window.seek(t)；代码不读当前时间、随机数固定种子、渲染时不联网；不录屏，跳到第 N 帧、冻结、截图，再用 ffmpeg 合成",
+   "src": [
+    "6abf31bc",
+    "6ae88f6d",
+    "6ad4b5b3"
+   ]
+  },
+  {
+   "p": "先关键帧，后全片",
+   "d": "静帧拼 contact sheet，再出 960×540 占位音频的 animatic，最后全量渲染；Remotion 先跑 type-check、只渲一帧查溢出",
+   "src": [
+    "6ac5504e",
+    "6a27ff8b",
+    "6a7487da"
+   ]
+  },
+  {
+   "p": "独立评审",
+   "d": "生成和评审交给不同 Agent，评审按设计质量、原创性、技术完成度、功能性打分，通常 5 到 15 轮；模型自评偏松，自查会漏人一眼能看出的问题",
+   "src": [
+    "6ab7b692",
+    "6aa66348"
+   ]
+  },
+  {
+   "p": "声音定时间轴",
+   "d": "先定口播或音乐，拿到逐字时间戳和节拍网格（Whisper、Demucs、librosa），画面跟着声音走",
+   "src": [
+    "6a49fe6d",
+    "6acf3a77",
+    "6acf7bf0"
+   ]
+  },
+  {
+   "p": "规则写进文件",
+   "d": "AGENTS.md、DESIGN.md、style.md 里写字体、色值、节奏和禁用项；每次纠正都沉淀成一条规则，下次一句「照这个文件来」",
+   "src": [
+    "6a681fca",
+    "6abb0418",
+    "6a621ecf"
+   ]
+  },
+  {
+   "p": "风格库补审美",
+   "d": "把好成片蒸馏成风格 skill（一种风格一份 STYLE.md 加一支样片），让模型照着挑；同题下 Codex 的画面明显弱于 Opus 5.5",
+   "src": [
+    "6ad15c0c",
+    "6abb7af2"
+   ]
+  },
+  {
+   "p": "并行子 Agent",
+   "d": "按章节或镜头拆成独立文件，主 Agent 写简报和主合成；渲染时把时间轴切成 6 段并行",
+   "src": [
+    "6ab556b8",
+    "6ad893c3",
+    "6aba4092"
+   ]
+  },
+  {
+   "p": "思考档位",
+   "d": "同题四档盲测，卡点误差从 medium 的 4.7 ms 到 max 的 1 ms，都不到一帧的 1/7；max 比 xhigh 多花 71%，作者最喜欢的那条也不是最贵的",
+   "src": [
+    "6ac8e0dd"
+   ]
+  },
+  {
+   "p": "代码当预演",
+   "d": "写实镜头先用代码搭骨架（Blender 灰模、three.js 预演）定机位和走位，外观再交给视频模型；VideoCoCo 只加一份代码草稿，PhyGenBench 就从 0.48 升到 0.51",
+   "src": [
+    "6ad9b245",
+    "6acc77b6",
+    "6a6c2227"
+   ]
+  },
+  {
+   "p": "不一定要装 skill",
+   "d": "16 个视频 skill 同题实测全部过检；不装 skill 的 Claude Code 4.4 分钟也过检。skill 的价值在风格、流程或要剪的素材",
+   "u": [
+    {
+     "t": "zhuyansen 实测",
+     "u": "https://agentskillshub.top/best/claude-video-skills/#test-results"
+    }
+   ]
+  }
+ ]
+}

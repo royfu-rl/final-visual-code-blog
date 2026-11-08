@@ -1,0 +1,72 @@
+{
+ "name": "Ship in Clouds",
+ "uid": "c475323dc7f24e26ba2009c08c8e1941",
+ "viewerUrl": "https://sketchfab.com/3d-models/none-c475323dc7f24e26ba2009c08c8e1941",
+ "license": {
+  "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+  "label": "CC Attribution"
+ },
+ "faceCount": 41045,
+ "vertexCount": 81055,
+ "animationCount": 0,
+ "likeCount": 5221,
+ "viewCount": 184871,
+ "publishedAt": "2017-04-26T11:14:33.986020",
+ "staffpickedAt": "2017-04-27T13:41:11.674948",
+ "archives": {
+  "glb": {
+   "textureCount": 8,
+   "size": 23582484,
+   "type": "glb",
+   "textureMaxResolution": 4096,
+   "faceCount": 64822,
+   "vertexCount": 94218
+  },
+  "gltf": {
+   "textureCount": 8,
+   "size": 21204691,
+   "type": "gltf",
+   "textureMaxResolution": 4096,
+   "faceCount": 64822,
+   "vertexCount": 94218
+  },
+  "source": {
+   "textureCount": null,
+   "size": 54192716,
+   "type": "source",
+   "textureMaxResolution": null,
+   "faceCount": null,
+   "vertexCount": null
+  },
+  "usdz": {
+   "textureCount": null,
+   "size": 6727605,
+   "type": "usdz",
+   "textureMaxResolution": null,
+   "faceCount": null,
+   "vertexCount": null
+  }
+ },
+ "user": "bastienBGR",
+ "tags": [
+  "sky",
+  "flying",
+  "gravity",
+  "sail",
+  "painted",
+  "clouds",
+  "cloud",
+  "sunset",
+  "fbx",
+  "floating",
+  "evening",
+  "air",
+  "ship",
+  "cinema4d",
+  "c4d",
+  "boat"
+ ],
+ "categories": [
+  "places-travel"
+ ]
+}

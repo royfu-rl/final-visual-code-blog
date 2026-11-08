@@ -1,0 +1,16 @@
+html, body, .fillParent {
+    height: 100%;
+    width: 100%;
+}
+
+.header, .footer{
+    height:20px;
+}
+
+.middle{
+    height:calc(100% - 40px);
+}
+
+canvas {
+    background-color: rgba(0,0,255,0.5);
+}

@@ -1,0 +1,134 @@
+{
+ "blend": {
+  "1k": {
+   "blend": {
+    "include": {
+     "textures/Camera_01_body_nor_gl_1k.png": {
+      "size": 1523231,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/Camera_01/Camera_01_body_nor_gl_1k.png",
+      "md5": "ca3053325dbbb4b75fd891fb86096b06"
+     },
+     "textures/Camera_01_body_metallic_1k.png": {
+      "size": 169863,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/Camera_01/Camera_01_body_metallic_1k.png",
+      "md5": "d4e8ecf322227fc836ff571a720077d6"
+     },
+     "textures/Camera_01_body_roughness_1k.png": {
+      "size": 599889,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/Camera_01/Camera_01_body_roughness_1k.png",
+      "md5": "ff3acedbdac6f7af68846c1c829365bf"
+     },
+     "textures/Camera_01_strap_diff_1k.png": {
+      "size": 961334,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/Camera_01/Camera_01_strap_diff_1k.png",
+      "md5": "0f5eecbef30a82b5dc95e05e3745e7b7"
+     },
+     "textures/Camera_01_strap_roughness_1k.png": {
+      "size": 560269,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/Camera_01/Camera_01_strap_roughness_1k.png",
+      "md5": "a02e7cbcf34cd111809b8a2065a9b94d"
+     },
+     "textures/Camera_01_strap_nor_gl_1k.png": {
+      "size": 1496358,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/Camera_01/Camera_01_strap_nor_gl_1k.png",
+      "md5": "9587580484a221d20017830efae9a099"
+     },
+     "textures/Camera_01_lens_body_metallic_1k.png": {
+      "size": 51703,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/Camera_01/Camera_01_lens_body_metallic_1k.png",
+      "md5": "70da55f978a04d8976666f307b647053"
+     },
+     "textures/Camera_01_lens_body_roughness_1k.png": {
+      "size": 453181,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/Camera_01/Camera_01_lens_body_roughness_1k.png",
+      "md5": "a768ec226fcd22053858653237b2a3cf"
+     },
+     "textures/Camera_01_lens_body_nor_gl_1k.png": {
+      "size": 932666,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/Camera_01/Camera_01_lens_body_nor_gl_1k.png",
+      "md5": "86156f97f4d3f2e6bfa38e703e27746b"
+     },
+     "textures/Camera_01_body_diff_1k.png": {
+      "size": 962295,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/Camera_01/Camera_01_body_diff_1k.png",
+      "md5": "a127468f944552cab3aef47376047c4d"
+     },
+     "textures/Camera_01_strap_metallic_1k.png": {
+      "size": 15942,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/Camera_01/Camera_01_strap_metallic_1k.png",
+      "md5": "e06f233b925ce9ff7bfb7dc830da6478"
+     },
+     "textures/Camera_01_lens_body_diff_1k.png": {
+      "size": 530880,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/Camera_01/Camera_01_lens_body_diff_1k.png",
+      "md5": "f2bbb88096e089028bf72cdb5040bb66"
+     }
+    },
+    "size": 955158,
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/1k/Camera_01/Camera_01_1k.blend",
+    "md5": "27c054096d609da7f91281eee6b49b56"
+   }
+  }
+ },
+ "gltf": {
+  "1k": {
+   "gltf": {
+    "include": {
+     "textures/Camera_01_lens_body_arm_1k.jpg": {
+      "size": 163109,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/Camera_01/Camera_01_lens_body_arm_1k.jpg",
+      "md5": "41a93d1239e491fc29349ff73d72436c"
+     },
+     "textures/Camera_01_body_diff_1k.jpg": {
+      "size": 175778,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/Camera_01/Camera_01_body_diff_1k.jpg",
+      "md5": "1ceb37036b60b4231c93d0cf383de3da"
+     },
+     "textures/Camera_01_strap_arm_1k.jpg": {
+      "size": 159433,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/Camera_01/Camera_01_strap_arm_1k.jpg",
+      "md5": "c9421b18be3daa84224f8856ddfab5d7"
+     },
+     "textures/Camera_01_lens_body_nor_gl_1k.jpg": {
+      "size": 147816,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/Camera_01/Camera_01_lens_body_nor_gl_1k.jpg",
+      "md5": "1098e1261b17084d081f32a6a05239de"
+     },
+     "Camera_01.bin": {
+      "size": 845028,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/Camera_01/Camera_01.bin",
+      "md5": "055c3af4c5dca45bfa4a3d9348563b88"
+     },
+     "textures/Camera_01_lens_body_diff_1k.jpg": {
+      "size": 106198,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/Camera_01/Camera_01_lens_body_diff_1k.jpg",
+      "md5": "45854840be875f1ea86cf8d830023922"
+     },
+     "textures/Camera_01_body_nor_gl_1k.jpg": {
+      "size": 271892,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/Camera_01/Camera_01_body_nor_gl_1k.jpg",
+      "md5": "51f1e690a469baddcbae1ee941a6acb4"
+     },
+     "textures/Camera_01_body_arm_1k.jpg": {
+      "size": 228449,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/Camera_01/Camera_01_body_arm_1k.jpg",
+      "md5": "1476ee36f1af6b22f2b509963b710f9a"
+     },
+     "textures/Camera_01_strap_diff_1k.jpg": {
+      "size": 132449,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/Camera_01/Camera_01_strap_diff_1k.jpg",
+      "md5": "c8bf1a037fddbc8447ce491059a4e443"
+     },
+     "textures/Camera_01_strap_nor_gl_1k.jpg": {
+      "size": 199844,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/Camera_01/Camera_01_strap_nor_gl_1k.jpg",
+      "md5": "5e35df574e5ec7ef76f34a803c7bd847"
+     }
+    },
+    "size": 9886,
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/Camera_01/Camera_01_1k.gltf",
+    "md5": "c3fa6a2e13db2b6c6802725306089139"
+   }
+  }
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "primer/react": {
+  "star": 3921,
+  "fork": 706,
+  "license": "MIT",
+  "pushed": "2026-10-22",
+  "created": "2018-02-17"
+ },
+ "maplibre/maplibre-gl-js": {
+  "star": 11918,
+  "fork": 1295,
+  "license": "NOASSERTION",
+  "pushed": "2026-10-22",
+  "created": "2020-12-08"
+ },
+ "pixijs/pixijs": {
+  "star": 48435,
+  "fork": 5104,
+  "license": "MIT",
+  "pushed": "2026-10-22",
+  "created": "2013-01-21"
+ },
+ "plotly/plotly.js": {
+  "star": 18366,
+  "fork": 2051,
+  "license": "MIT",
+  "pushed": "2026-10-22",
+  "created": "2015-11-05"
+ },
+ "chartjs/Chart.js": {
+  "star": 67752,
+  "fork": 11950,
+  "license": "MIT",
+  "pushed": "2026-10-21",
+  "created": "2013-03-17"
+ },
+ "processing/p5.js": {
+  "star": 24158,
+  "fork": 3876,
+  "license": "LGPL-2.1",
+  "pushed": "2026-10-21",
+  "created": "2013-02-26"
+ },
+ "visgl/deck.gl": {
+  "star": 14694,
+  "fork": 2286,
+  "license": "MIT",
+  "pushed": "2026-10-22",
+  "created": "2015-12-15"
+ },
+ "openlayers/openlayers": {
+  "star": 12625,
+  "fork": 3200,
+  "license": "BSD-2-Clause",
+  "pushed": "2026-10-22",
+  "created": "2012-06-20"
+ }
+}

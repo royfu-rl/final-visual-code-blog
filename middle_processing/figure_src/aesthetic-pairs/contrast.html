@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tidewater Trust</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Work Sans",system-ui,sans-serif;background:#fff;color:#122524;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1184px;margin:0 auto;padding:0 52px}
+  nav{display:flex;align-items:center;height:76px;gap:32px;font-size:15px;color:#3d5250}
+  .logo{font-family:Lora,serif;font-weight:600;font-size:21px;color:#122524;margin-right:auto}
+  .donate{background:#f3b23f;color:#1a1a12;font-weight:600;padding:10px 18px;border-radius:999px}
+  .hero{background:#0d3b3a;color:#fff}
+  .hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;padding-top:64px;padding-bottom:64px;align-items:end}
+  .kick{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#9fd1c6;margin-bottom:18px;font-weight:500}
+  h1{font-family:Lora,serif;font-weight:500;font-size:60px;line-height:1.05;letter-spacing:-.01em;margin-bottom:20px}
+  .sub{font-size:18px;line-height:1.6;color:#d3e7e2;max-width:30em}
+  .ctas{display:flex;flex-direction:column;gap:12px}
+  .btn{background:#f3b23f;color:#1a1a12;font-weight:600;font-size:16px;padding:16px 22px;border-radius:12px;text-align:center}
+  .out{border:1.5px solid #fff;color:#fff;font-weight:500;font-size:16px;padding:15px 22px;border-radius:12px;text-align:center}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;padding:40px 0 36px;border-bottom:1px solid #dfe7e5}
+  .stats b{display:block;font-family:Lora,serif;font-size:42px;font-weight:600;color:#122524}
+  .stats span{font-size:15px;color:#46605c}
+  .progs{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;padding:36px 0 64px}
+  .prog{background:#f2f6f5;border-radius:16px;padding:24px}
+  .prog h3{font-family:Lora,serif;font-size:21px;font-weight:600;margin-bottom:8px;color:#122524}
+  .prog p{font-size:15px;line-height:1.6;color:#3d5250}
+  .prog a{display:inline-block;margin-top:12px;font-weight:600;font-size:14.5px;color:#0d3b3a;border-bottom:1.5px solid #0d3b3a}
+
+  /* B：同样的内容和版式，浅灰字压在浅色底上 —— 对比度 1.3 到 2.2 */
+  .bad nav{color:#b7c4c1}
+  .bad .donate{background:#ffe2a8;color:#fff}
+  .bad .hero{background:#d4ebe5}
+  .bad .kick{color:#ffffff}
+  .bad h1{font-weight:500;color:#ffffff}
+  .bad .sub{color:#a6c6bf;font-weight:300}
+  .bad .btn{background:#bfe3d9;color:#ffffff}
+  .bad .out{border-color:#eaf6f2;color:#eaf6f2}
+  .bad .stats b{color:#c3d3cf}
+  .bad .stats span{color:#ccd6d3;font-weight:300}
+  .bad .prog h3{color:#b9c6c3}
+  .bad .prog p{color:#bcc5c3;font-weight:300}
+  .bad .prog a{color:#a9d6cb;border-color:#a9d6cb}
+</style>
+</head>
+<body class="{{V}}">
+<div class="wrap"><nav><a class="logo" href="#">Tidewater Trust</a><a href="#">Our work</a><a href="#">Coastline map</a><a href="#">Volunteer</a><a href="#">Reports</a><a class="donate" href="#">Donate</a></nav></div>
+<section class="hero"><div class="wrap">
+  <div>
+    <p class="kick">Since 1998 &middot; Independent charity</p>
+    <h1>Protecting 2,400 km of coastline, one tide at a time.</h1>
+    <p class="sub">We restore salt marsh and seagrass, clear plastic from 300 beaches a year, and train local people to keep doing it after we leave.</p>
+  </div>
+  <div class="ctas"><a class="btn" href="#">Give &pound;10 a month</a><a class="out" href="#">Join a beach clean</a></div>
+</div></section>
+<div class="wrap">
+  <section class="stats"><div><b>2,400 km</b><span>of coastline monitored</span></div><div><b>61 ha</b><span>of salt marsh restored since 2015</span></div><div><b>14,000</b><span>volunteers last year</span></div></section>
+  <section class="progs">
+    <div class="prog"><h3>Seagrass nurseries</h3><p>We grow seagrass from seed in three community nurseries and replant it in sheltered bays.</p><a href="#">How it works</a></div>
+    <div class="prog"><h3>Beach cleans</h3><p>Monthly cleans on 300 beaches, with every item counted and sent to a national database.</p><a href="#">Find a clean near you</a></div>
+    <div class="prog"><h3>Coastal schools</h3><p>Field days for 9,000 pupils a year, run by teachers we train and pay.</p><a href="#">Book a field day</a></div>
+  </section>
+</div>
+</body>
+</html>
+

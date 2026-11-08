@@ -1,0 +1,75 @@
+{
+ "note_id": "6ad4b5b3000000000c00a3fd",
+ "url": "https://www.xiaohongshu.com/explore/6ad4b5b3000000000c00a3fd?xsec_token=ABvwejsjldc9bIaf2J9wNRhuaMxywcFxceXebeRD3J9q8=&xsec_source=pc_search",
+ "type": "normal",
+ "title": "用 Opus 5.5 搭了条短视频产线",
+ "desc": "这两天用 Claude Code 搭了一条短视频产线，模型是 Opus 5.5[哇R]\n\t\n起因是我们的 App 要在 TikTok 每天出片，工作量超级大\n一开始让 Claude 去操作剪映，MCP 和 computer use 支持很有限[暗中观察R]\n很多数据是加密的，opus 5.5 看不到全局，又慢又容易出错，质量也不行\n\t\n后来我们直接绕开了剪辑软件，口播、画面、标题、贴纸、转场、音效都写在一条时间线上自己实现[偷笑R][偷笑R]\n\t\n几个关键点\n\t\n1. 渲染用 HyperFrames，HeyGen 开源的\n画面就是 HTML，动画用 GSAP，无头 Chrome 逐帧截图，FFmpeg 编码\n\t\n2. 剪辑点挂在口播的词上\nElevenLabs 配音的接口会返回每个字的起止时间，说到哪个词，就在那一刻切镜头、弹贴纸、放音效\n改了口播重新配音，画面自己跟着走，不用手动对轨\n\t\n3. 审片也交给 Claude\n渲染完自动出三张拼图，Opus 5.5 自己看图，七项打分，每项 8 分以上才交给我\n\t\n4. 踩过的坑都让它写进 README\nHDR 素材、关键帧太稀、动画不能用随机数，同一个坑不踩第二次\n\t\n我现在只做三件事：提需求、看成片、反馈修改意见，剪辑软件一次都不用开\n\t\n完整教程整理成了 PDF 放在附件里，直接下载就好[害羞R][害羞R]\n#野生极客体验howto[话题]# #野生体验家howto[话题]# #vibecoding[话题]# #AI新手村[话题]# #AI教程[话题]#",
+ "tags": [
+  "野生极客体验howto",
+  "野生体验家howto",
+  "vibecoding",
+  "AI新手村",
+  "AI教程"
+ ],
+ "author": "John Wayne",
+ "user_id": "54e9dff9b4c4d642702faf7a",
+ "time": 1792325043000,
+ "ip_location": "新加坡",
+ "likes": "219",
+ "collects": "248",
+ "comments_count": "7",
+ "keywords": [
+  "Claude Code 做视频",
+  "Claude 口播视频",
+  "HyperFrames"
+ ],
+ "duration": null,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040121/92fdf01a45a74451d637381abf79e450/note_pre_post_uhdr/1040g3r0326fdc0k7kq00401h82fvjbrq01pnpp0!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040121/ce479722be7bd4b625e4a3d7b2218854/note_pre_post_uhdr/1040g3r0326fdc0k7kq0g401h82fvjbrqhoj3c80!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040121/cb0952cfa29721aa1939d68e36f02ab7/note_pre_post_uhdr/1040g3r0326fdc0k7kq10401h82fvjbrqb3rfg7o!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040121/6cfb72c82e34c15868e913732c89ef67/note_pre_post_uhdr/1040g3r0326fdc0k7kq1g401h82fvjbrq4jf3m6o!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040121/5b9fd71697f592ab72a3b4285160390a/note_pre_post_uhdr/1040g3r0326fdc0k7kq20401h82fvjbrqambopf0!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040121/5b53a6b2bc2a0d058724f0b459e2b2be/note_pre_post_uhdr/1040g3r0326fdc0k7kq2g401h82fvjbrq77senu0!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "monkey",
+   "content": "严肃学习",
+   "likes": "0"
+  },
+  {
+   "user": "湖新路程序员",
+   "content": "让 Opus 给自己做的片打分，分数容易偏松，隔几条人眼抽查一下更稳",
+   "likes": "1"
+  },
+  {
+   "user": "一只瑗瑗",
+   "content": "大好人！！",
+   "likes": "0"
+  },
+  {
+   "user": "Exciting",
+   "content": "产线搭起来好看，收尾的人呢",
+   "likes": "0"
+  },
+  {
+   "user": "momo",
+   "content": "剪映官宣和codex合作集成了[doge]",
+   "likes": "0"
+  },
+  {
+   "user": "CoCo-PPT版本",
+   "content": "👍",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg",
+  "images/1.jpg",
+  "images/2.jpg",
+  "images/3.jpg",
+  "images/4.jpg",
+  "images/5.jpg"
+ ]
+}

@@ -1,0 +1,70 @@
+{
+ "links": [
+  [
+   "pmndrs/examples",
+   "https://github.com/pmndrs/examples"
+  ]
+ ],
+ "cards": [
+  {
+   "img": "caustics.webp",
+   "name": "examples/caustics/thumbnail.webp",
+   "code": [
+    [
+     "examples/caustics/src/App.tsx",
+     "caustics.App.tsx"
+    ]
+   ]
+  },
+  {
+   "img": "aquarium.webp",
+   "name": "examples/aquarium/thumbnail.webp",
+   "code": [
+    [
+     "examples/aquarium/src/App.tsx",
+     "aquarium.App.tsx"
+    ]
+   ]
+  },
+  {
+   "img": "instanced-vertex-colors.webp",
+   "name": "examples/instanced-vertex-colors/thumbnail.webp",
+   "code": [
+    [
+     "examples/instanced-vertex-colors/src/App.tsx",
+     "instanced-vertex-colors.App.tsx"
+    ]
+   ]
+  },
+  {
+   "img": "diamond-refraction.webp",
+   "name": "examples/diamond-refraction/thumbnail.webp",
+   "code": [
+    [
+     "examples/diamond-refraction/src/App.tsx",
+     "diamond-refraction.App.tsx"
+    ]
+   ]
+  },
+  {
+   "img": "portal-shapes.webp",
+   "name": "examples/portal-shapes/thumbnail.webp",
+   "code": [
+    [
+     "examples/portal-shapes/src/App.tsx",
+     "portal-shapes.App.tsx"
+    ]
+   ]
+  },
+  {
+   "img": "the-three-graces.webp",
+   "name": "examples/the-three-graces/thumbnail.webp",
+   "code": [
+    [
+     "examples/the-three-graces/src/App.tsx",
+     "the-three-graces.App.tsx"
+    ]
+   ]
+  }
+ ]
+}

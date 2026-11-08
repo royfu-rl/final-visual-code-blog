@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A6 配色克制</title>
+<style>
+  :root{--ink:#111418;--soft:#5b636e;--line:#e4e7ec;--band:#f6f7f9;--ok:#0b7a4b;--ok-bg:#e6f5ed;--bad:#b42318;--bad-bg:#fdecea;
+        --mono:"SF Mono",ui-monospace,"JetBrains Mono",Menlo,Consolas,monospace}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:transparent;color:var(--ink);
+            font:13px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .top{display:flex;align-items:center;gap:12px;padding:10px 14px;background:var(--band);border-bottom:1px solid var(--line)}
+  .tag{font:600 10.5px/1 var(--mono);letter-spacing:.08em;color:var(--soft);text-transform:uppercase}
+  .query{flex:1;min-width:0;font-size:13.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .rule{font-size:12px;color:var(--soft);white-space:nowrap}
+  button{font:inherit;font-size:12px;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 11px;cursor:pointer}
+  button:hover{border-color:#c5cad3}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:14px}
+  .head{display:flex;align-items:center;gap:8px;margin-bottom:8px;min-height:24px}
+  .side{font:700 12px/1 var(--mono);width:22px;height:22px;border-radius:6px;display:grid;place-items:center;background:var(--ink);color:#fff;flex:none}
+  .pill{font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:999px;flex:none}
+  .ok .pill{color:var(--ok);background:var(--ok-bg)} .bad .pill{color:var(--bad);background:var(--bad-bg)}
+  .say{flex:1;min-width:0;color:var(--soft);font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .open{border:0;background:none;color:#2f6bff;padding:0 2px}
+  .stage{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:10px;background:#eef0f3}
+  .stage iframe{position:absolute;top:0;left:0;width:1280px;height:800px;border:0;transform-origin:0 0;background:#fff}
+  @media (max-width:720px){.grid{grid-template-columns:1fr}.say,.query{white-space:normal}.rule{display:none}}
+  /* 放大态：父页把本 iframe 铺满视口，这里画成居中的大卡片，点卡片外收起 */
+  body.full{height:100vh;display:flex;align-items:center;justify-content:center;padding:28px}
+  body.full .card{width:min(100%,2400px);box-shadow:0 24px 80px rgba(0,0,0,.35)}
+  /* 放大态只放一张、尽量大，A / B 原地切换（空格或方向键），差别最容易看出来 */
+  .flip{display:none;gap:2px;background:#e9ecf1;border-radius:999px;padding:3px}
+  .flip button{border:0;background:none;padding:4px 12px}
+  .flip button.on{background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.12)}
+  body.full .flip{display:inline-flex}
+  body.full .grid{grid-template-columns:1fr}
+  body.full .grid > div{display:none}
+  body.full .grid > div.sel{display:block}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top"><span class="tag">Query</span><span class="query">为理财 App Ledger 做落地页</span><span class="rule">A6 · 配色克制</span><span class="flip" title="空格或方向键切换"><button class="on">A 符合</button><button>B 违反</button></span><button id="zoom">放大对比</button></div>
+  <div class="grid">
+    <div class="ok sel"><div class="head"><span class="side">A</span><span class="pill">符合</span><span class="say">中性色撑起全页，墨绿只出现在主按钮和一个关键数字上</span><button class="open" data-v="good">新标签打开</button></div><div class="stage"><iframe title="A" data-v="good"></iframe></div></div>
+    <div class="bad"><div class="head"><span class="side">B</span><span class="pill">违反</span><span class="say">每块一种饱和色，五根分类条五种颜色，强调色失去意义</span><button class="open" data-v="bad">新标签打开</button></div><div class="stage"><iframe title="B" data-v="bad"></iframe></div></div>
+  </div>
+</div>
+<script>
+(function(){
+  var PAGE = "<!doctype html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>Ledger &middot; Personal finance<\/title>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link href=\"https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap\" rel=\"stylesheet\">\n<style>\n  /* 中性色撑起全页，强调色（墨绿）只出现在主按钮和一个关键数字上 */\n  *{box-sizing:border-box;margin:0;padding:0}\n  body{font-family:Manrope,system-ui,sans-serif;background:#f7f7f5;color:#14171a;-webkit-font-smoothing:antialiased}\n  a{color:inherit;text-decoration:none}\n  .wrap{max-width:1184px;margin:0 auto;padding:0 52px}\n  nav{display:flex;align-items:center;height:76px;gap:32px;font-size:14.5px;color:#5f666d}\n  .logo{font-weight:800;font-size:20px;color:#14171a;margin-right:auto;letter-spacing:-.02em}\n  .get{background:#14171a;color:#fff;padding:9px 16px;border-radius:10px;font-weight:600}\n  .hero{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding:44px 0 52px}\n  h1{font-size:62px;line-height:1.02;letter-spacing:-.035em;font-weight:800;margin-bottom:20px}\n  .sub{font-size:18px;line-height:1.6;color:#5f666d;max-width:28em;margin-bottom:32px}\n  .ctas{display:flex;gap:24px;align-items:center}\n  .btn{background:#0f6b5c;color:#fff;font-weight:700;padding:15px 24px;border-radius:12px;font-size:15px}\n  .lnk{font-weight:600;font-size:15px;color:#14171a}\n  .trust{margin-top:26px;font-size:13.5px;color:#8a9097}\n  .panel{background:#fff;border:1px solid #e6e6e1;border-radius:20px;padding:26px 28px;box-shadow:0 30px 60px rgba(20,23,26,.07)}\n  .ph{display:flex;justify-content:space-between;font-size:13px;color:#8a9097}\n  .big{font-size:40px;font-weight:800;letter-spacing:-.03em;margin:6px 0 2px}\n  .saved{font-size:14px;color:#5f666d}\n  .saved b{color:#0f6b5c}\n  .rows{margin-top:22px}\n  .row{display:grid;grid-template-columns:110px 1fr 64px;gap:14px;align-items:center;font-size:13.5px;margin-top:12px}\n  .track{height:8px;background:#efefeb;border-radius:8px;overflow:hidden}\n  .fill{height:100%;background:#3a4047;border-radius:8px}\n  .row .v{text-align:right;color:#5f666d}\n  .feats{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;border-top:1px solid #e6e6e1;padding:36px 0 64px}\n  .ic{width:40px;height:40px;border-radius:11px;border:1.5px solid #c9cbc6;margin-bottom:16px;position:relative}\n  .ic:after{content:\"\";position:absolute;inset:11px;border-radius:4px;background:#3a4047}\n  .feats h3{font-size:17px;font-weight:700;margin-bottom:8px}\n  .feats p{font-size:14.5px;line-height:1.6;color:#5f666d}\n\n  /* B：同样的内容，每块各用一种饱和色，强调色失去意义 */\n  .bad{background:#fff7d6}\n  .bad nav a:nth-child(2){color:#e11d48}.bad nav a:nth-child(3){color:#2563eb}.bad nav a:nth-child(4){color:#16a34a}.bad nav a:nth-child(5){color:#ea580c}\n  .bad .logo{color:#7c3aed}\n  .bad .get{background:linear-gradient(90deg,#ec4899,#f59e0b)}\n  .bad .hero{background:linear-gradient(135deg,#6d28d9,#db2777);margin:0 -52px;padding:44px 52px 52px;color:#fff}\n  .bad h1{background:linear-gradient(90deg,#fde047,#fb923c);-webkit-background-clip:text;background-clip:text;color:transparent}\n  .bad .sub{color:#67e8f9}\n  .bad .btn{background:#a3e635;color:#581c87}\n  .bad .lnk{background:#ef4444;color:#fff;padding:15px 22px;border-radius:999px}\n  .bad .trust{color:#fde68a}\n  .bad .panel{background:#ecfeff;border:3px solid #f97316;color:#14171a}\n  .bad .big{color:#db2777}\n  .bad .saved b{color:#16a34a}\n  .bad .row:nth-child(1) .fill{background:#ef4444}.bad .row:nth-child(2) .fill{background:#f59e0b}.bad .row:nth-child(3) .fill{background:#22c55e}.bad .row:nth-child(4) .fill{background:#3b82f6}.bad .row:nth-child(5) .fill{background:#a855f7}\n  .bad .row:nth-child(odd) .v{color:#2563eb}.bad .row:nth-child(even) .v{color:#e11d48}\n  .bad .feats > div{padding:22px;border-radius:16px}\n  .bad .feats > div:nth-child(1){background:#fde68a}.bad .feats > div:nth-child(2){background:#a5f3fc}.bad .feats > div:nth-child(3){background:#fbcfe8}\n  .bad .feats > div:nth-child(1) .ic:after{background:#dc2626}.bad .feats > div:nth-child(2) .ic:after{background:#7c3aed}.bad .feats > div:nth-child(3) .ic:after{background:#059669}\n  .bad .feats > div:nth-child(1) h3{color:#b91c1c}.bad .feats > div:nth-child(2) h3{color:#1d4ed8}.bad .feats > div:nth-child(3) h3{color:#be185d}\n<\/style>\n<\/head>\n<body class=\"{{V}}\">\n<div class=\"wrap\">\n  <nav><a class=\"logo\" href=\"#\">Ledger<\/a><a href=\"#\">Features<\/a><a href=\"#\">Pricing<\/a><a href=\"#\">Security<\/a><a href=\"#\">Log in<\/a><a class=\"get\" href=\"#\">Get the app<\/a><\/nav>\n  <section class=\"hero\">\n    <div>\n      <h1>Know where every dollar goes.<\/h1>\n      <p class=\"sub\">Ledger reads your accounts, sorts every purchase and tells you, in plain words, what changed this month.<\/p>\n      <div class=\"ctas\"><a class=\"btn\" href=\"#\">Get Ledger free<\/a><a class=\"lnk\" href=\"#\">See how it works<\/a><\/div>\n      <p class=\"trust\">Rated 4.8 by 31,000 people &middot; Bank-level encryption<\/p>\n    <\/div>\n    <div class=\"panel\">\n      <div class=\"ph\"><span>October spending<\/span><span>1&ndash;31 Oct<\/span><\/div>\n      <div class=\"big\">&#36;2,184<\/div>\n      <div class=\"saved\">You saved <b>&#36;412<\/b> more than September<\/div>\n      <div class=\"rows\">\n        <div class=\"row\"><span>Rent<\/span><div class=\"track\"><div class=\"fill\" style=\"width:92%\"><\/div><\/div><span class=\"v\">&#36;1,150<\/span><\/div>\n        <div class=\"row\"><span>Groceries<\/span><div class=\"track\"><div class=\"fill\" style=\"width:38%\"><\/div><\/div><span class=\"v\">&#36;412<\/span><\/div>\n        <div class=\"row\"><span>Transport<\/span><div class=\"track\"><div class=\"fill\" style=\"width:22%\"><\/div><\/div><span class=\"v\">&#36;236<\/span><\/div>\n        <div class=\"row\"><span>Eating out<\/span><div class=\"track\"><div class=\"fill\" style=\"width:18%\"><\/div><\/div><span class=\"v\">&#36;198<\/span><\/div>\n        <div class=\"row\"><span>Subscriptions<\/span><div class=\"track\"><div class=\"fill\" style=\"width:12%\"><\/div><\/div><span class=\"v\">&#36;188<\/span><\/div>\n      <\/div>\n    <\/div>\n  <\/section>\n  <section class=\"feats\">\n    <div><div class=\"ic\"><\/div><h3>Every account in one place<\/h3><p>Connect checking, credit cards and savings from 12,000 banks in under two minutes.<\/p><\/div>\n    <div><div class=\"ic\"><\/div><h3>Budgets that adjust<\/h3><p>Ledger learns what a normal month looks like for you and flags only the real changes.<\/p><\/div>\n    <div><div class=\"ic\"><\/div><h3>Bills, never missed<\/h3><p>See every upcoming payment a week ahead, with a reminder the day before it is due.<\/p><\/div>\n  <\/section>\n<\/div>\n<\/body>\n<\/html>\n";
+  var W = 1280, H = 800;
+  var full = false, embedded = window.parent !== window;
+  function doc(v){ return PAGE.replace('{{V}}', v); }
+  var frames = [].slice.call(document.querySelectorAll('.stage iframe'));
+  // 一页正文里有十来个对比组件：滚到附近才把两张网页放进去，免得一开页就渲染二十张
+  function load(){ frames.forEach(function(f){ if (!f.srcdoc) f.srcdoc = doc(f.dataset.v); }); }
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){
+      if (es.some(function(e){ return e.isIntersecting; })) { load(); io.disconnect(); }
+    }, {rootMargin: '800px 0px'});
+    io.observe(document.querySelector('.card'));
+  } else load();
+
+  function layout(){
+    var room = full ? window.innerHeight - 56 - 120 : Infinity;   // 放大态按视口高度封顶
+    frames.forEach(function(f){
+      var st = f.parentNode, w = st.clientWidth;
+      var s = Math.min(w / W, room / H);
+      st.style.height = Math.round(H * s) + 'px';
+      f.style.transform = 'translate(' + Math.max(0, (w - W * s) / 2) + 'px,0) scale(' + s + ')';
+    });
+    if (embedded && !full) window.parent.postMessage({type: 'kc-height', h: document.querySelector('.card').offsetHeight + 2}, '*');
+  }
+  window.addEventListener('resize', layout);
+  layout();
+
+  [].slice.call(document.querySelectorAll('.open')).forEach(function(b){
+    b.onclick = function(){
+      var url = URL.createObjectURL(new Blob([doc(b.dataset.v)], {type: 'text/html'}));
+      window.open(url, '_blank');
+      setTimeout(function(){ URL.revokeObjectURL(url); }, 60000);
+    };
+  });
+
+  var panels = [].slice.call(document.querySelectorAll('.grid > div'));
+  var flips = [].slice.call(document.querySelectorAll('.flip button'));
+  var sel = 0;
+  function pick(i){
+    sel = i;
+    panels.forEach(function(p, k){ p.classList.toggle('sel', k === i); });
+    flips.forEach(function(b, k){ b.classList.toggle('on', k === i); });
+    layout();
+  }
+  flips.forEach(function(b, k){ b.onclick = function(){ pick(k); }; });
+
+  var zoom = document.getElementById('zoom');
+  function setFull(on){
+    full = on;
+    document.body.classList.toggle('full', on);
+    zoom.textContent = on ? '收起' : '放大对比';
+    layout();
+  }
+  zoom.onclick = function(){
+    if (!embedded) { setFull(!full); return; }
+    window.parent.postMessage({type: full ? 'kc-collapse' : 'kc-expand'}, '*');
+  };
+  document.body.addEventListener('click', function(e){
+    if (full && e.target === document.body) window.parent.postMessage({type: 'kc-collapse'}, '*');
+  });
+  window.addEventListener('keydown', function(e){
+    if (!full) return;
+    if (e.key === 'Escape') window.parent.postMessage({type: 'kc-collapse'}, '*');
+    if (e.key === ' ' || e.key === 'ArrowLeft' || e.key === 'ArrowRight') { e.preventDefault(); pick(1 - sel); }
+  });
+  // 父页放大 / 还原好 iframe 后回 ack，这边排好版再回话，父页才显影
+  window.addEventListener('message', function(e){
+    if (e.source !== window.parent || !e.data || typeof e.data !== 'object') return;
+    if (e.data.type === 'kc-expand-ack')   { setFull(true);  window.parent.postMessage({type: 'kc-modal-ready'}, '*'); }
+    if (e.data.type === 'kc-collapse-ack') { setFull(false); window.parent.postMessage({type: 'kc-revealed'}, '*'); }
+  });
+})();
+</script>
+</body>
+</html>
+

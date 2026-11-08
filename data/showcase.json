@@ -1,0 +1,1961 @@
+{
+ "families": [
+  {
+   "key": "webdev",
+   "no": "01",
+   "en": "Webdev",
+   "color": "#2f6bff",
+   "desc": "写代码出产品的方向里唯一跑出规模的一条：钱来自卖给创作者的订阅，小红书上量最大的是网页复刻和作品集。",
+   "scenes": [
+    {
+     "key": "motion-site",
+     "cn": "动效官网与作品集",
+     "desc": "求职者和品牌要门面：截图给 AI 复刻，钱落在生成与托管平台",
+     "cards": [
+      {
+       "title": "作品集泳池",
+       "line": "作品集做成泳池：项目是漂在水上的黏土图标，留言变成云的影子",
+       "by": "Kia（纽约 ITP）",
+       "oss": null,
+       "biz": [],
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6ad4f792000000001400c800?xsec_token=ABvwejsjldc9bIaf2J9wNRhpzdm4F_gCy-OpPEWpupEeU=&xsec_source=pc_search"
+        },
+        {
+         "kind": "site",
+         "url": "https://kiabai.me/",
+         "label": "在线看"
+        }
+       ],
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/showcase/posters/kia-pool.jpg",
+       "why": "小红书作品集里赞数最高；站点在线可逛，封面是站点首屏截图",
+       "core": [
+        "作品集",
+        "Claude Code",
+        "three.js"
+       ]
+      },
+      {
+       "title": "个人作品集上线",
+       "core": [
+        "作品集",
+        "Codex",
+        "Vercel"
+       ],
+       "line": "设计师用 Codex 搭作品集，GitHub + Vercel 免费上线",
+       "by": "陆78（设计师）",
+       "oss": null,
+       "poster": "http://sns-webpic-qc.xhscdn.com/202611032203/2d6b1dbb382df9a07d88d3a7815ee129/1040g008321offctano005ogj05r8d525dja0qj0!h5_1080jpg",
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6a3a2801000000001c026c59?xsec_token=ABOEvfnvBkNz2aaPz6xlk7qBV6_LBqsBZEOlKSF2rbIO0=&xsec_source=pc_search"
+        },
+        {
+         "kind": "site",
+         "url": "https://developers.openai.com/codex",
+         "label": "Codex"
+        },
+        {
+         "kind": "site",
+         "url": "https://vercel.com/",
+         "label": "Vercel"
+        }
+       ],
+       "biz": [],
+       "why": "作品集是小红书 webdev 量最大的一类；本帖 7.7 千赞 / 8.5 千藏，六步流程可照抄"
+      },
+      {
+       "title": "Shopify 文艺复兴站",
+       "line": "一段短 skill 提取原站素材，复刻 Shopify 2026 冬季版的文艺复兴动效页",
+       "by": "Monet.AI",
+       "oss": null,
+       "biz": [],
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6a9d696500000000260339b5?xsec_token=ABMCHDxzMf9pi4Jc1S8w8Cesb0nR00O1YuPQqFvJJ9n10=&xsec_source=pc_search"
+        },
+        {
+         "kind": "site",
+         "url": "https://www.shopify.com/editions/winter2026",
+         "label": "Shopify 原站"
+        }
+       ],
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/xhs-6a9d696500000000260339b5.jpg",
+       "why": "网页复刻的高审美样例：以前要写复杂 skill 还常丢动效，这里一段短 skill 就还原了",
+       "core": [
+        "网页复刻",
+        "GPT-6 Astra",
+        "Skill"
+       ]
+      },
+      {
+       "title": "3D 房间个人网页",
+       "line": "个人网页做成可交互的 3D 房间，文科生第一次上手，已部署上线",
+       "by": "Big喷菇🍄（AI版）",
+       "oss": null,
+       "biz": [],
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6a604b38000000001b01f92d?xsec_token=ABBAYWhe1fXH9pHXTArOAAJklX6ZmzsAAc-ddflqoY9OE=&xsec_source=pc_search"
+        }
+       ],
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/xhs-6a604b38000000001b01f92d.jpg",
+       "why": "非程序员做作品集的代表：绝大部分物件可交互；帖子没贴网址，只挂帖子链接",
+       "core": [
+        "作品集",
+        "Codex",
+        "three.js"
+       ]
+      },
+      {
+       "title": "UI UX Pro Max",
+       "core": [
+        "设计规范",
+        "Claude Code",
+        "Skill"
+       ],
+       "line": "给编码 agent 的设计规则库，专治页面的「AI 味」",
+       "by": "NextLevelBuilder",
+       "oss": true,
+       "poster": "https://uupm.cc/share.png",
+       "links": [
+        {
+         "kind": "github",
+         "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill"
+        },
+        {
+         "kind": "site",
+         "url": "https://www.uupm.cc/"
+        }
+       ],
+       "biz": [
+        {
+         "k": "npm 月下载",
+         "v": "7.8 万次（2026-10）",
+         "src": "https://api.npmjs.org/downloads/point/last-month/ui-ux-pro-max-cli",
+         "s": "7.8 万",
+         "plain": true
+        }
+       ],
+       "why": "GitHub 14.5 万 star，webdev 方向最大的开源项目之一；解决的正是「AI 页面能不能直接商用」的审美那层"
+      },
+      {
+       "title": "v0 by Vercel",
+       "core": [
+        "网页生成",
+        "v0",
+        "React"
+       ],
+       "line": "一句话生成 React 页面，一键部署上线",
+       "by": "Vercel",
+       "oss": false,
+       "poster": "https://i.ytimg.com/vi/By9wCB9IZp0/maxresdefault.jpg",
+       "links": [
+        {
+         "kind": "site",
+         "url": "https://v0.app/"
+        },
+        {
+         "kind": "youtube",
+         "label": "发布视频",
+         "url": "https://www.youtube.com/watch?v=By9wCB9IZp0"
+        },
+        {
+         "kind": "site",
+         "url": "https://vercel.com/",
+         "label": "Vercel"
+        }
+       ],
+       "biz": [
+        {
+         "k": "Vercel 年收入",
+         "v": "超 5 亿美元（2026-07，官方）",
+         "src": "https://www.businesswire.com/news/home/20260806738617/en/",
+         "s": "5 亿美元+"
+        },
+        {
+         "k": "agent 部署",
+         "v": "一年涨 28 倍（2026-10，官方）",
+         "src": "https://vercel.com/blog/vercel-ship-2026-recap",
+         "s": "28 倍"
+        },
+        {
+         "k": "v0 用户",
+         "v": "350 万+（2025-09，官方）",
+         "src": "https://www.businesswire.com/news/home/20250930898216/en/",
+         "s": "350 万+"
+        }
+       ],
+       "why": "网站生成 + 托管的标杆；v0 单独收入未披露，Sacra 称其建站份额被 Lovable、Replit 抢走，但 vibe 出来的站大量部署在 Vercel",
+       "rev": {
+        "usd": 500000000.0,
+        "v": "5 亿美元+",
+        "k": "全公司年收入",
+        "name": "Vercel"
+       }
+      }
+     ],
+     "payer": "求职者、设计师、品牌",
+     "revenue": "订阅（生成 + 托管平台）",
+     "proof": "作品集泳池 1.1 万赞；UI UX Pro Max 14.5 万 Star；Vercel 年收入超 5 亿美元（全公司）",
+     "picks": [
+      [
+       "作品集泳池",
+       null
+      ],
+      [
+       "UI UX Pro Max",
+       null
+      ]
+     ]
+    },
+    {
+     "key": "html-slides",
+     "cn": "HTML 汇报与 PPT",
+     "desc": "打工人和研究生自己付费：HTML 汇报可交互、换数据就能复用",
+     "cards": [
+      {
+       "title": "Claude Design",
+       "core": [
+        "HTML 汇报",
+        "Claude Design",
+        "HTML"
+       ],
+       "line": "AI 做 PPT 从「图片」走到可编辑、可交互的 HTML",
+       "by": "大师的AI小灶",
+       "oss": null,
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/xhs-6a2ac224000000001603e76b.jpg",
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6a2ac224000000001603e76b?xsec_token=AByKmHuT5Uqhc7B4HKw6fADoHyP5cKdJVzaFat1FIpzWU=&xsec_source=pc_search"
+        },
+        {
+         "kind": "site",
+         "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
+         "label": "Claude Design"
+        }
+       ],
+       "biz": [
+        {
+         "k": "发布当天 Figma 股价",
+         "v": "跌约 7%（2026-04-17）",
+         "src": "https://www.fool.com/investing/2026/05/03/why-figma-fell-16-in-april/"
+        }
+       ],
+       "why": "HTML 汇报组收藏最高（1.06 万藏、2614 评论）；Claude Design 2026-04-17 发布，可导出独立 HTML / PPTX"
+      },
+      {
+       "title": "Frontend Slides",
+       "core": [
+        "幻灯片",
+        "Claude Code",
+        "Skill"
+       ],
+       "line": "编码 agent 的幻灯片 skill：先挑风格，再出单文件 HTML",
+       "by": "Zara Zhang",
+       "oss": true,
+       "poster": "https://i.ytimg.com/vi/372Iksaz8b0/maxresdefault.jpg",
+       "links": [
+        {
+         "kind": "github",
+         "url": "https://github.com/zarazhangrui/frontend-slides"
+        },
+        {
+         "kind": "youtube",
+         "url": "https://www.youtube.com/watch?v=372Iksaz8b0"
+        }
+       ],
+       "biz": [],
+       "why": "海外 HTML 幻灯片最火的开源方案：3.2 万 star，作者教程 8.2 万播放；还能把旧 PPT 转网页"
+      },
+      {
+       "title": "Genspark 幻灯片",
+       "core": [
+        "幻灯片",
+        "Genspark",
+        "HTML"
+       ],
+       "line": "HTML 底的幻灯片 agent：自动查资料成稿，可导出 PPTX",
+       "by": "Genspark（MainFunc）",
+       "oss": false,
+       "poster": "https://i.ytimg.com/vi/9cj_KC70yRw/maxresdefault.jpg",
+       "links": [
+        {
+         "kind": "site",
+         "url": "https://www.genspark.ai/"
+        },
+        {
+         "kind": "youtube",
+         "url": "https://www.youtube.com/watch?v=9cj_KC70yRw"
+        }
+       ],
+       "biz": [
+        {
+         "k": "全公司 ARR",
+         "v": "2.5 亿美元，12 个月从零做到（2026-06，官方）",
+         "src": "https://www.businesswire.com/news/home/20260617758937/en/",
+         "s": "2.5 亿美元"
+        },
+        {
+         "k": "估值",
+         "v": "26 亿美元（2026-06 B 轮扩展，官方）",
+         "src": "https://www.businesswire.com/news/home/20260617758937/en/",
+         "s": "26 亿美元"
+        }
+       ],
+       "why": "AI Slides 是招牌功能，CEO 称 2025-04 推出「全球首个基于 HTML 的 AI Slides」；ARR 是全公司口径",
+       "rev": {
+        "usd": 250000000.0,
+        "v": "2.5 亿美元",
+        "k": "全公司 ARR",
+        "name": "Genspark"
+       }
+      }
+     ],
+     "payer": "打工人、研究生",
+     "revenue": "自付费工具 / 订阅",
+     "proof": "单帖 6,417 赞；Claude Design 发布当天 Figma 跌约 7%；Genspark ARR 2.5 亿美元（全公司）",
+     "picks": [
+      [
+       "Claude Design",
+       null
+      ],
+      [
+       "Genspark 幻灯片",
+       null
+      ]
+     ]
+    },
+    {
+     "key": "app-mvp",
+     "cn": "应用与小程序",
+     "desc": "非程序员按月订阅：一句话出带数据库的应用，平台 ARR 已到数亿美元",
+     "cards": [
+      {
+       "title": "Lovable",
+       "core": [
+        "全栈应用",
+        "Lovable"
+       ],
+       "line": "一句话生成带数据库的全栈应用并上线",
+       "by": "Lovable（瑞典）",
+       "oss": false,
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/bp-webdev-00.jpg",
+       "links": [
+        {
+         "kind": "site",
+         "url": "https://lovable.dev/"
+        },
+        {
+         "kind": "youtube",
+         "label": "2.0 发布片",
+         "url": "https://www.youtube.com/watch?v=xDwR1_vrIg8"
+        }
+       ],
+       "biz": [
+        {
+         "k": "ARR",
+         "v": "超 6 亿美元（2026-09，联合创始人披露）",
+         "src": "https://techcrunch.com/2026/09/24/lovables-annualized-revenue-crosses-600m-as-vibe-coding-takes-off/",
+         "s": "6 亿美元+"
+        },
+        {
+         "k": "估值",
+         "v": "133 亿美元（2026-08 融资 4 亿美元）",
+         "src": "https://techcrunch.com/2026/09/24/lovables-annualized-revenue-crosses-600m-as-vibe-coding-takes-off/",
+         "s": "133 亿美元"
+        },
+        {
+         "k": "应用月访问",
+         "v": "近 10 亿次（2026-09）",
+         "src": "https://techcrunch.com/2026/09/24/lovables-annualized-revenue-crosses-600m-as-vibe-coding-takes-off/",
+         "s": "近 10 亿"
+        }
+       ],
+       "why": "webdev 里收入最大的单一产品，「LLM 写代码 → 可用产品」商业化的最强证据；2026-02 时 4 亿，半年多涨到 6 亿",
+       "rev": {
+        "usd": 600000000.0,
+        "v": "6 亿美元+",
+        "k": "ARR",
+        "name": "Lovable"
+       }
+      },
+      {
+       "title": "Base44",
+       "line": "用大白话做应用和网站：副业起步，被 Wix 收购后 ARR 涨到 2 亿美元",
+       "by": "Wix（创始人 Maor Shlomo）",
+       "oss": false,
+       "links": [
+        {
+         "kind": "site",
+         "url": "https://base44.com/"
+        }
+       ],
+       "biz": [
+        {
+         "k": "ARR",
+         "s": "2 亿美元+",
+         "v": "超 2 亿美元（2026-08，创始人披露；Wix 财报披露到 5 月的 1.5 亿）",
+         "src": "https://www.calcalistech.com/ctechnews/article/syw900pvdzg"
+        },
+        {
+         "k": "用户",
+         "s": "1000 万+",
+         "v": "超 1000 万（2026-08，Wix CEO）",
+         "src": "https://x.com/Avishai_ab/status/2090434505731428571",
+         "plain": true
+        },
+        {
+         "k": "收购价",
+         "s": "8000 万美元",
+         "v": "约 8000 万美元现金，另含业绩对赌（2025-06）",
+         "src": "https://en.globes.co.il/en/article-wix-acquires-israeli-vibe-coding-co-base44-1001513267"
+        }
+       ],
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/showcase/posters/base44-site.jpg",
+       "why": "Lovable 之外另一个有公开 ARR 的应用生成平台；营收榜是公司口径，Base44 只是 Wix 的一部分，不进榜",
+       "core": [
+        "全栈应用",
+        "Base44"
+       ]
+      },
+      {
+       "title": "拼豆接单工作台",
+       "core": [
+        "全栈应用",
+        "WorkBuddy",
+        "云数据库"
+       ],
+       "line": "一句话做出带订单库的接单站，发布即得链接",
+       "by": "李叔聊AI",
+       "oss": null,
+       "poster": "http://sns-webpic-qc.xhscdn.com/202611032203/8a1e9d55c4f6faee12be697e5fb9afa6/spectrum/1040g34o325hploe7kc105oabtph0jnh43655ma0!h5_1080jpg",
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6ab662ef000000001203f0f3?xsec_token=AB7uAp6-dMvG430rdhHkmcG00ad0iQJC9M0mctKlC-9cg=&xsec_source=pc_search"
+        },
+        {
+         "kind": "site",
+         "url": "https://www.codebuddy.cn/work/",
+         "label": "WorkBuddy"
+        }
+       ],
+       "biz": [
+        {
+         "k": "平台月访问",
+         "v": "885 万次，同类第一（2026-03，易观）",
+         "src": "https://m.gelonghui.com/live/2540132",
+         "s": "885 万",
+         "plain": true
+        }
+       ],
+       "why": "4 千赞 / 4 千藏；国内大厂（腾讯）版 Lovable，2026-09 起还能一句话生成并上线微信小程序；接单场景直接对应小生意"
+      }
+     ],
+     "payer": "非程序员",
+     "revenue": "按月订阅",
+     "proof": "Lovable ARR 超 6 亿美元；Base44 ARR 超 2 亿美元",
+     "picks": [
+      [
+       "Lovable",
+       null
+      ],
+      [
+       "Base44",
+       null
+      ]
+     ]
+    },
+    {
+     "key": "web-games",
+     "cn": "网页小游戏",
+     "desc": "钱来自广告和平台：AI 小游戏已冲上 TapTap 总榜，平台月活千万",
+     "cards": [
+      {
+       "title": "Astrocade",
+       "core": [
+        "小游戏",
+        "Astrocade"
+       ],
+       "line": "一句话生成小游戏，像刷短视频一样刷着玩",
+       "by": "Astrocade（Sadeghian 兄弟、李飞飞）",
+       "oss": false,
+       "poster": "https://www.astrocade.com/og/page/home?v=1",
+       "links": [
+        {
+         "kind": "site",
+         "url": "https://www.astrocade.com/"
+        }
+       ],
+       "biz": [
+        {
+         "k": "MAU",
+         "v": "1000 万，4 个月翻倍（2026-10，CEO 披露）",
+         "src": "https://gamesbeat.com/astrocade-hits-10m-monthly-players-for-its-ai-assisted-ugc-casual-games-platform/",
+         "s": "1000 万"
+        },
+        {
+         "k": "月局数",
+         "v": "2.2 亿局（2026-10）",
+         "src": "https://gamesbeat.com/astrocade-hits-10m-monthly-players-for-its-ai-assisted-ugc-casual-games-platform/",
+         "s": "2.2 亿局"
+        },
+        {
+         "k": "融资",
+         "v": "5600 万美元，红杉、Sea 领投（2026-05）",
+         "src": "https://www.fortune.com/2026/05/05/astrocade-raises-56-million-series-b-sequoia-video-games-platform-ali-amir-sadeghian/",
+         "s": "5600 万美元"
+        }
+       ],
+       "why": "海外唯一有大流量披露的文生游戏平台；尚未变现，CEO 称明年才抓收入"
+      },
+      {
+       "title": "蛋岛 3D 小游戏",
+       "line": "3 天做出单依纯「蛋岛」主题 3D 小游戏：化身小单，找每一站的彩蛋",
+       "by": "DAiKONAUT",
+       "oss": null,
+       "biz": [],
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6ae957410000000003009114?xsec_token=ABUIkL4O4zdknKGujQbqDweqnQZ49xRasgPd9s1no4iN8=&xsec_source=pc_search"
+        }
+       ],
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/xhs-6ae957410000000003009114.jpg",
+       "why": "画面完成度最高的网页小游戏；Tripo 出资产、Codex 写交互、接 Blender 渲染。发帖时写的是即将上线",
+       "core": [
+        "3D 网页游戏",
+        "Codex",
+        "Blender",
+        "Tripo"
+       ]
+      },
+      {
+       "title": "TapTap 双榜小游戏",
+       "core": [
+        "小游戏",
+        "TapTap"
+       ],
+       "line": "两款 AI 小游戏同登 TapTap 总榜，一款广告日入千元",
+       "by": "明月桥investor",
+       "oss": null,
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/xhs-6ad895d4000000003302977a.jpg",
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6ad895d4000000003302977a?xsec_token=ABBpZEnzBaI6sS_Swpe8pNaXK8uz3b3rxXMqMj3-0m6zQ=&xsec_source=pc_search"
+        },
+        {
+         "kind": "site",
+         "url": "https://www.taptap.cn/",
+         "label": "TapTap"
+        }
+       ],
+       "biz": [
+        {
+         "k": "新游 AI 占比",
+         "v": "5002 款，约 80% 由 AI 制作（2026H1）",
+         "src": "https://www.invenglobal.com/articles/24194/80-of-5002-new-games-on-taptap-in-first-half-of-year-created-with-ai",
+         "s": "80%",
+         "plain": true
+        },
+        {
+         "k": "TapTap 制造",
+         "v": "半年近 5000 款，累计玩家 1100 万+（2026-09）",
+         "src": "https://cj.sina.com.cn/articles/view/1850649324/6e4eaaec02002k0ge"
+        }
+       ],
+       "why": "小红书唯一给出真实广告收入的 AI 小游戏帖；赞不高（772）但有钱的证据。商业数是 TapTap 平台口径，帖子没说是否用 TapTap 制造"
+      }
+     ],
+     "payer": "平台、广告主",
+     "revenue": "广告 + 平台分成",
+     "proof": "Astrocade 月活 1000 万；TapTap 上半年新游约 80% 由 AI 制作",
+     "picks": [
+      [
+       "Astrocade",
+       null
+      ],
+      [
+       "TapTap 双榜小游戏",
+       "新游 AI 占比"
+      ]
+     ]
+    }
+   ],
+   "cover": "Astrocade"
+  },
+  {
+   "key": "3d",
+   "no": "02",
+   "en": "3D",
+   "color": "#7c3aed",
+   "desc": "代码本身就是交付物：白模给视频模型定机位，three.js / Blender 场景直接上线，CAD 脚本直接出打印件。",
+   "scenes": [
+    {
+     "key": "greybox-previs",
+     "cn": "白模参考视频生成",
+     "desc": "AI 剧集与广告方买单：白模先定机位比例，再让视频模型出片，少返工",
+     "cards": [
+      {
+       "title": "Nexus 灰模分镜",
+       "core": [
+        "白模分镜",
+        "Claude",
+        "Seedance"
+       ],
+       "line": "Claude 搭灰模截成分镜喂 Seedance，镜头与比例不再跑偏",
+       "by": "PJ Ace（Genre.ai）× Dreamina",
+       "oss": null,
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/showcase/posters/nexus-pair.jpg",
+       "links": [
+        {
+         "kind": "x",
+         "url": "https://x.com/PJaccetturo/status/2112899203701547153"
+        },
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6ad9b245000000003103756d?xsec_token=ABRXR_NYOa-6BpvTR6R8HJptSOoBe8WJmwJ8goEiZ3gOY=&xsec_source=pc_search"
+        },
+        {
+         "kind": "doc",
+         "url": "https://docs.google.com/document/d/1MXARcTpDhzahT_r2LV974MfeOGaJFEZsaZujMqpTQSU/edit?usp=sharing",
+         "label": "工作流文档"
+        },
+        {
+         "kind": "site",
+         "url": "https://www.genre.ai/",
+         "label": "Genre.ai"
+        }
+       ],
+       "biz": [
+        {
+         "k": "原日均生成费",
+         "v": "日均 2000+ 美元，连续数周（作者自述，2026-10）",
+         "src": "https://x.com/PJaccetturo/status/2112899203701547153",
+         "s": "2000 美元/天",
+         "plain": true
+        }
+       ],
+       "why": "Dreamina 出品周更剧集的真实生产线，X 28 万浏览，小红书陆三金搬运"
+      },
+      {
+       "title": "Higgsfield 白模插件",
+       "core": [
+        "白模分镜",
+        "Higgsfield",
+        "Blender",
+        "Seedance"
+       ],
+       "line": "Agent 在 Blender 搭白模定运镜，视口直出 Seedance 成片",
+       "by": "Higgsfield",
+       "oss": false,
+       "poster": "https://pbs.twimg.com/amplify_video_thumb/2092255568828522496/img/wi3TgSqR714QK8gG.jpg",
+       "links": [
+        {
+         "kind": "x",
+         "url": "https://x.com/higgsfield/status/2092255768770920506"
+        },
+        {
+         "kind": "site",
+         "url": "https://higgsfield.ai/plugins/blender",
+         "label": "插件主页"
+        },
+        {
+         "kind": "doc",
+         "url": "https://higgsfield.ai/blog/higgsfield-blender-plugin",
+         "label": "功能说明"
+        }
+       ],
+       "biz": [
+        {
+         "k": "全站年化",
+         "v": "10 亿美元（近 4 周×13，自报，2026-09）",
+         "src": "https://higgsfield.ai/blog/higgsfield-1b-annualized-revenue-run-rate",
+         "s": "10 亿美元"
+        },
+        {
+         "k": "用户",
+         "v": "3200 万+，付费订阅近 100 万（自报，2026-09）",
+         "src": "https://higgsfield.ai/blog/higgsfield-1b-annualized-revenue-run-rate"
+        },
+        {
+         "k": "融资",
+         "v": "B 轮 4 亿美元，估值 54 亿美元（2026-08）",
+         "src": "https://techcrunch.com/2026/08/17/higgsfield-raises-400m-series-b-quadrupling-its-valuation-in-8-months-to-5-4b/"
+        }
+       ],
+       "why": "把「Agent 经 MCP 搭白模→视频模型」做成商用插件的唯一大厂；收入是全站口径，非插件单列",
+       "rev": {
+        "usd": 1000000000.0,
+        "v": "10 亿美元",
+        "k": "全站年化",
+        "name": "Higgsfield"
+       }
+      },
+      {
+       "title": "何同学一镜到底片头",
+       "line": "现场物体拍照生成 3D 模型搭出拍摄空间，先排多米诺和机位，4 天内发片",
+       "by": "Hyper3D.AI（官方账号）",
+       "oss": null,
+       "biz": [],
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6abcbf3a0000000001009dc0?xsec_token=AB2SVSU9PoqkSbtEvrXeThirm4ua443FfnOPtQrzFlUhk=&xsec_source=pc_search"
+        },
+        {
+         "kind": "site",
+         "url": "https://hyper3d.ai/",
+         "label": "Hyper3D"
+        }
+       ],
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/xhs-6abcbf3a0000000001009dc0.jpg",
+       "why": "头部创作者的真实生产案例，帖子是 Hyper3D 官方发的；走实拍不走视频模型，但白模定机位的思路相同",
+       "core": [
+        "拍摄预演",
+        "Hyper3D Rodin"
+       ]
+      },
+      {
+       "title": "Codex 白模预演",
+       "core": [
+        "白模分镜",
+        "Codex",
+        "Blender MCP"
+       ],
+       "line": "Codex 经 MCP 搭白模，先锁构图机位，再交给视频模型",
+       "by": "小林Kara",
+       "oss": null,
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/xhs-6aa7d98c0000000026014c15.jpg",
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6aa7d98c0000000026014c15?xsec_token=ABW2FE_lWlWdyYKOX8ePHrzkyNhkTD_8khy6JbgIZyGU8=&xsec_source=pc_search"
+        },
+        {
+         "kind": "site",
+         "url": "https://developers.openai.com/codex",
+         "label": "Codex"
+        },
+        {
+         "kind": "site",
+         "url": "https://www.blender.org/",
+         "label": "Blender"
+        }
+       ],
+       "biz": [],
+       "why": "小红书该场景赞藏最高（1.7k 赞 / 2.4k 藏），封面白模→成片对照直观"
+      },
+      {
+       "title": "16 机位动作片实验",
+       "line": "Blender 只放参考方块和 16 台摄像机，73% 的计划切点落在 ±0.6 秒内",
+       "by": "天梦君",
+       "oss": null,
+       "biz": [],
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6a59768b000000001303d671?xsec_token=AB2JahK56MhqvZ1aoZQnowWGc109UqC_N3x_wm-u1n2IM=&xsec_source=pc_search"
+        }
+       ],
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/xhs-6a59768b000000001303d671.jpg",
+       "why": "少数带量化结果的实验：只传镜头位置反而让动作更自然，白模是给视频模型的构图和剪辑蓝图",
+       "core": [
+        "动作分镜",
+        "Sol",
+        "Blender MCP"
+       ]
+      },
+      {
+       "title": "户型图直出白模片",
+       "core": [
+        "户型动画",
+        "Codex",
+        "Seedance"
+       ],
+       "line": "户型图标好走位，零建模出 30 秒白模，再渲成动画",
+       "by": "shine",
+       "oss": null,
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/showcase/posters/huxing-pair.jpg",
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6aa7e7d5000000002b01dcdf?xsec_token=ABW2FE_lWlWdyYKOX8ePHrzuh3x54NTlmqd6gDpr3q7UY=&xsec_source=pc_search"
+        },
+        {
+         "kind": "site",
+         "url": "https://developers.openai.com/codex",
+         "label": "Codex"
+        },
+        {
+         "kind": "site",
+         "url": "https://seed.bytedance.com/zh/seedance",
+         "label": "Seedance"
+        }
+       ],
+       "biz": [],
+       "why": "国内教程号，评论区有人「高质量白模视频现货大量收」，是需求信号；封面上下对照好看"
+      }
+     ],
+     "tag": "Blender",
+     "src": {
+      "label": "小红书：最近看到很多承接 Blender 白模的单子",
+      "url": "https://www.xiaohongshu.com/explore/6ad89594000000003301fd48?xsec_token=ABBpZEnzBaI6sS_Swpe8pNaWZ6MV_n0qUf8_iL-1CmV-U=&xsec_source=pc_search"
+     },
+     "payer": "AI 剧集、广告制作方",
+     "revenue": "工具订阅、按项目接单",
+     "proof": "Higgsfield 全站年化 10 亿美元（自报，全公司）；付费订阅近 100 万",
+     "picks": [
+      [
+       "Higgsfield 白模插件",
+       null
+      ],
+      [
+       "Nexus 灰模分镜",
+       null
+      ]
+     ]
+    },
+    {
+     "key": "code-3d-worlds",
+     "cn": "3D 资产",
+     "desc": "流量最大的场景：网页 3D 世界靠爆款拉流量，变现靠广告、卖资产包",
+     "cards": [
+      {
+       "title": "《小王子》3D 游戏",
+       "core": [
+        "3D 网页游戏",
+        "Opus 5.5",
+        "Blender",
+        "Tripo"
+       ],
+       "line": "一人 16 天把整本书做成可漫游的网页 3D 游戏",
+       "by": "Sac（@Saccc_c）",
+       "oss": null,
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/samples_src/xhs-vibe-video/notes/6ad0eb070000000018019b2a/images/0.jpg",
+       "links": [
+        {
+         "kind": "x",
+         "url": "https://x.com/Saccc_c/status/2109962425512734739"
+        },
+        {
+         "kind": "site",
+         "url": "https://littleprince.dev/",
+         "label": "在线玩"
+        },
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6ad0eb070000000018019b2a?xsec_token=ABvwylVLspYl-WzqrTBmvn4iQXlc6vNb02t8bGgRLcxYk=&xsec_source=pc_search"
+        },
+        {
+         "kind": "x",
+         "url": "https://x.com/Saccc_c/status/2110694725640474759",
+         "label": "制作教程"
+        }
+       ],
+       "biz": [],
+       "why": "3D 线最出圈的个人作品：X 388 万浏览，小红书拆解 4.7k 赞 / 7.1k 藏"
+      },
+      {
+       "title": "果冻海岛",
+       "core": [
+        "3D 微缩世界",
+        "three.js"
+       ],
+       "line": "海岛装进果冻：灯塔、鲸鱼、海浪，昼夜与天气可切",
+       "by": "Ray",
+       "oss": null,
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/xhs-6acd9d34000000001803a6da.jpg",
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6acd9d34000000001803a6da?xsec_token=ABHD0Ewhn9mIaID2UroEU8vw8z_8cMzQUtysvJCtthugY=&xsec_source=pc_search"
+        },
+        {
+         "kind": "site",
+         "url": "https://threejs.org/",
+         "label": "three.js"
+        }
+       ],
+       "biz": [],
+       "why": "小红书代码 3D 作品赞数第一（1.1 万），代表普通用户审美"
+      },
+      {
+       "title": "梵高小岛网页游戏",
+       "line": "照《小王子》同款思路，Opus 5.5 + Tripo 四步做出可玩的 3D 小岛",
+       "by": "Lala罐头",
+       "oss": null,
+       "biz": [],
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6ad1f47000000000140396c9?xsec_token=ABxQV50uIXOoQGyY63JTcmnL0kySH9dNJsOY4TZIDsMZE=&xsec_source=pc_search"
+        },
+        {
+         "kind": "site",
+         "label": "Tripo",
+         "url": "https://www.tripo3d.ai/"
+        }
+       ],
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/xhs-6ad1f47000000000140396c9.jpg",
+       "why": "小红书「AI 游戏建模」搜索下的高赞帖（6823 赞 / 7368 藏）；第一名荷塘是手工建模，不算写代码",
+       "core": [
+        "3D 网页游戏",
+        "Opus 5.5",
+        "Tripo"
+       ]
+      },
+      {
+       "title": "Blender 程序化植物",
+       "line": "Astra 搭几何节点做程序化植物和动画，以前要在 Houdini 里写一两周代码",
+       "by": "星川同学",
+       "oss": null,
+       "biz": [],
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6aa6779f000000002902e885?xsec_token=ABf0NpDf4M1mXNOpdPx7b2wM8pmTMSbk5JSZRekJ0z30U=&xsec_source=pc_search"
+        },
+        {
+         "kind": "site",
+         "label": "Blender",
+         "url": "https://www.blender.org/"
+        }
+       ],
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/xhs-6aa6779f000000002902e885.jpg",
+       "why": "2303 赞；专业建模师（原用 Houdini）的一手对比，说明代码路线已进入专业流程",
+       "core": [
+        "程序化建模",
+        "GPT-6 Astra",
+        "Blender"
+       ]
+      },
+      {
+       "title": "中学投标建筑动画",
+       "line": "Opus 5.5 直出 3 分 42 秒投标汇报片：鸟瞰、白模生长、通风分析",
+       "by": "吟游诗人阿克曼",
+       "oss": null,
+       "biz": [],
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6ad19a6a00000000180068b8?xsec_token=ABxQV50uIXOoQGyY63JTcmnO-3QtGQaZBblJ3y3cMziww=&xsec_source=pc_search"
+        }
+       ],
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/samples_src/xhs-vibe-video/notes/6ad19a6a00000000180068b8/images/0.jpg",
+       "why": "947 赞 / 966 藏；用在真实的学校投标方案里，是建筑可视化外包的直接替代",
+       "core": [
+        "建筑动画",
+        "Opus 5.5"
+       ]
+      },
+      {
+       "title": "Cozy Creek 溪流",
+       "core": [
+        "3D 微缩世界",
+        "GPT-6 Astra",
+        "three.js",
+        "Blender"
+       ],
+       "line": "Blender 出资产、three.js 渲染，再打包成套件售卖",
+       "by": "Chetan Ankola（@chetanankola）",
+       "oss": null,
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/xhs-6ac736fa000000001c01cda1.jpg",
+       "links": [
+        {
+         "kind": "x",
+         "url": "https://x.com/chetanankola/status/2107996576228753545"
+        },
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6ac736fa000000001c01cda1?xsec_token=ABoZ5yD4MgUTgwqBKxVVfUJWeidw52UfZ9UtnnIZWvOBE=&xsec_source=pc_search"
+        },
+        {
+         "kind": "site",
+         "url": "https://3ditions.drop3.app/watch/hiroshis-island/",
+         "label": "资产包"
+        }
+       ],
+       "biz": [
+        {
+         "k": "套件售价",
+         "v": "19.99 美元 / 套（3ditions，2026-11 查）",
+         "src": "https://3ditions.drop3.app/watch/hiroshis-island/",
+         "s": "19.99 美元",
+         "plain": true
+        }
+       ],
+       "why": "作品→可售资产包的闭环，X 36 万播放，小红书 2.1k 赞"
+      },
+      {
+       "title": "Fly 飞行模拟",
+       "core": [
+        "3D 网页游戏",
+        "Cursor",
+        "three.js"
+       ],
+       "line": "AI 写的多人飞行游戏，卖广告位和飞机，17 天 ARR 破百万",
+       "by": "Pieter Levels（@levelsio）",
+       "oss": false,
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/game-13.jpg",
+       "links": [
+        {
+         "kind": "x",
+         "url": "https://x.com/levelsio/status/1893350391158292550"
+        },
+        {
+         "kind": "site",
+         "url": "https://fly.pieter.com/",
+         "label": "在线玩"
+        },
+        {
+         "kind": "x",
+         "url": "https://x.com/levelsio/status/1899596115210891751",
+         "label": "ARR 帖"
+        }
+       ],
+       "biz": [
+        {
+         "k": "峰值 ARR",
+         "v": "100 万美元（MRR 8.7 万，自述，2025-03）",
+         "src": "https://x.com/levelsio/status/1899596115210891751",
+         "s": "100 万美元"
+        },
+        {
+         "k": "玩家",
+         "v": "32 万人飞过（自述，2025-03）",
+         "src": "https://x.com/levelsio/status/1899596115210891751"
+        },
+        {
+         "k": "现状",
+         "v": "作者简介显示 0 美元/月（2026 年中）",
+         "src": "https://dev.to/promptway/he-built-a-flight-simulator-in-three-hours-and-hit-1m-a-year-in-17-days-then-it-went-to-zero-1b1l"
+        }
+       ],
+       "why": "唯一有收入披露的 three.js 代码作品"
+      },
+      {
+       "title": "BlenderMCP",
+       "core": [
+        "Blender 自动化",
+        "Blender MCP"
+       ],
+       "line": "任意大模型经 MCP 写 bpy 驱动 Blender，截图回看再改",
+       "by": "ahujasid（开源社区）",
+       "oss": true,
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/bp-3dcode-01.jpg",
+       "links": [
+        {
+         "kind": "github",
+         "url": "https://github.com/ahujasid/blender-mcp"
+        },
+        {
+         "kind": "site",
+         "url": "https://www.mcp-for-blender.com/",
+         "label": "官网"
+        }
+       ],
+       "biz": [
+        {
+         "k": "PyPI 下载",
+         "v": "月 54 万（pypistats，2026-11-04）",
+         "src": "https://pypistats.org/packages/blender-mcp",
+         "s": "54 万/月",
+         "plain": true
+        },
+        {
+         "k": "用户",
+         "v": "450 万+（官网自报，2026-11）",
+         "src": "https://www.mcp-for-blender.com/",
+         "s": "450 万+"
+        },
+        {
+         "k": "付费版",
+         "v": "Premium 10–60 美元/月，含 Tripo、Meshy 生成额度",
+         "src": "https://www.mcp-for-blender.com/premium"
+        }
+       ],
+       "why": "上面多数 Blender 案例的底座；开源后长出订阅版，是 code 路线少见的变现"
+      },
+      {
+       "title": "teardown",
+       "line": "一句话把任意机器做成能拆开看的 3D 模拟器，单文件 HTML 离线可跑",
+       "by": "elvarofficial",
+       "oss": true,
+       "biz": [],
+       "links": [
+        {
+         "kind": "github",
+         "url": "https://github.com/elvarofficial/teardown"
+        }
+       ],
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/showcase/posters/teardown-cover.jpg",
+       "why": "用户点名补的；2026-10-30 才建仓。代码即 3D 资产：一个 skill 出可交互页面，还能录成 60fps 成片",
+       "core": [
+        "交互模拟器",
+        "Claude Code",
+        "three.js",
+        "Skill"
+       ]
+      }
+     ],
+     "tag": "three.js · Blender",
+     "payer": "流量方、买资产的开发者",
+     "revenue": "广告、卖资产包、工具付费版",
+     "proof": "《小王子》388 万浏览；资产包 19.99 美元；BlenderMCP 3.3 万 Star",
+     "picks": [
+      [
+       "《小王子》3D 游戏",
+       null
+      ],
+      [
+       "BlenderMCP",
+       null
+      ]
+     ]
+    },
+    {
+     "key": "cad-as-code",
+     "cn": "参数化 CAD",
+     "desc": "工程师和创客买单：代码天生参数化、可改，直接出 STEP 和打印件",
+     "cards": [
+      {
+       "title": "Adam AI CAD",
+       "core": [
+        "参数化零件",
+        "Adam",
+        "Fusion / Onshape"
+       ],
+       "line": "一句话出可编辑参数化零件，嵌进 Fusion、Onshape",
+       "by": "Adam（YC W25）",
+       "oss": false,
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/industry-15.jpg",
+       "links": [
+        {
+         "kind": "x",
+         "url": "https://x.com/zachdive/status/1882858765613228287"
+        },
+        {
+         "kind": "youtube",
+         "url": "https://www.youtube.com/watch?v=EHu6Vrqo69A",
+         "label": "产品演示"
+        },
+        {
+         "kind": "site",
+         "url": "https://adam.new/",
+         "label": "官网"
+        },
+        {
+         "kind": "github",
+         "url": "https://github.com/Adam-CAD/CADAM",
+         "label": "开源 CADAM"
+        }
+       ],
+       "biz": [
+        {
+         "k": "ARR",
+         "v": "900 万美元+（Caplight 第三方信号，2026-05）",
+         "src": "https://www.caplight.com/company/adam"
+        },
+        {
+         "k": "融资",
+         "v": "种子轮 410 万美元，TQ Ventures 领投（2025-10）",
+         "src": "https://adam.new/seed",
+         "s": "410 万美元"
+        },
+        {
+         "k": "用量",
+         "v": "用户已生成 100 万+ 模型（自报，2025-10）",
+         "src": "https://adam.new/seed"
+        }
+       ],
+       "why": "X 首发 281 万播放 + YouTube + 官网 + 开源 CADAM + 收入融资"
+      },
+      {
+       "title": "text-to-cad",
+       "core": [
+        "参数化零件",
+        "Claude Code",
+        "build123d"
+       ],
+       "line": "Agent 写 build123d 脚本出 STEP，直连打印与钣金下单",
+       "by": "Jake Fitzgerald（@earthtojake）",
+       "oss": true,
+       "poster": "https://pbs.twimg.com/amplify_video_thumb/2047071671966679040/img/kqxAnJP3sypTfpVi.jpg",
+       "links": [
+        {
+         "kind": "github",
+         "url": "https://github.com/earthtojake/text-to-cad"
+        },
+        {
+         "kind": "x",
+         "url": "https://x.com/earthtojake/status/2047072107612303692"
+        },
+        {
+         "kind": "site",
+         "url": "https://www.texttocad.dev",
+         "label": "官网"
+        }
+       ],
+       "biz": [],
+       "why": "半年 2.5 万 star，CAD 代码路线增长最快的开源件；作为 Adam 的开源对照"
+      },
+      {
+       "title": "AI 电路板外壳",
+       "core": [
+        "3D 打印件",
+        "Codex",
+        "FreeCAD"
+       ],
+       "line": "Codex 驱动 FreeCAD 画外壳，打印出来真装上了",
+       "by": "天桥底下一书童",
+       "oss": null,
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/xhs-6aaaa52f0000000026016572.jpg",
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6aaaa52f0000000026016572?xsec_token=ABv4CvemqLeuFMynnuZLrWGNmZxLFrCWQlegcYml5Ntso=&xsec_source=pc_search"
+        },
+        {
+         "kind": "site",
+         "url": "https://www.freecad.org/",
+         "label": "FreeCAD"
+        },
+        {
+         "kind": "site",
+         "url": "https://developers.openai.com/codex",
+         "label": "Codex"
+        }
+       ],
+       "biz": [],
+       "why": "小红书 CAD/产品件最热（1.9k 赞 / 2.1k 藏），代码→实物闭环，国内唯一强案例"
+      }
+     ],
+     "payer": "工程师、创客",
+     "revenue": "订阅 + 打印 / 钣金下单",
+     "proof": "Adam ARR 900 万美元+（第三方信号）；text-to-cad 2.5 万 Star",
+     "picks": [
+      [
+       "Adam AI CAD",
+       null
+      ],
+      [
+       "text-to-cad",
+       "GitHub Star"
+      ]
+     ]
+    }
+   ],
+   "cover": "中学投标建筑动画"
+  },
+  {
+   "key": "video",
+   "no": "03",
+   "en": "Vibe Video",
+   "color": "#ea580c",
+   "desc": "每一帧由代码算出：教学视频最先出爆款，发布片和品牌营销已经有人付钱。",
+   "scenes": [
+    {
+     "key": "explainer",
+     "cn": "教学案例生成",
+     "desc": "知识博主、自媒体与企业培训买单：一个概念讲成短片，成本从几周降到几分钟",
+     "cards": [
+      {
+       "title": "Vibe知识大赏·熵增",
+       "core": [
+        "概念科普",
+        "Skill"
+       ],
+       "line": "170 秒讲熵增，黑底金字粒子；原帖没写栈，同款画风已被拆成开源代码 skill",
+       "by": "比特新语",
+       "oss": null,
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/samples_src/xhs-vibe-video/notes/6abf0a4e000000001301af3f/frames/0.jpg",
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6abf0a4e000000001301af3f?xsec_token=ABkErRgXsGlWkArzUeQ5bcW4meMIcW-7ZNtJH67NzF6SY=&xsec_source=pc_search"
+        },
+        {
+         "kind": "github",
+         "url": "https://github.com/HeyChengC/vibe-knowledge-film"
+        },
+        {
+         "kind": "github",
+         "url": "https://github.com/xiazhuo123456789/vibe-knowledge-video"
+        }
+       ],
+       "biz": [],
+       "why": "小红书 Vibe Video 赞数第一（4.1 万赞、1.7 万藏），代表国内普通用户口味；风格已被逆向成两个开源 skill。原帖没写模型和栈"
+      },
+      {
+       "title": "论文转 3B1B 讲解",
+       "line": "任意论文自动生成 8 分钟 3Blue1Brown 风讲解片",
+       "by": "Deedy Das",
+       "oss": null,
+       "links": [
+        {
+         "kind": "x",
+         "url": "https://x.com/deedydas/status/2103141339651350646"
+        }
+       ],
+       "biz": [],
+       "poster": "frame:150",
+       "why": "X 33.6 万浏览、5385 收藏；「教育类 YouTuber 被自动化」的直接证据",
+       "core": [
+        "论文讲解",
+        "Opus 5.5"
+       ]
+      },
+      {
+       "title": "anatomy 原理拆解",
+       "core": [
+        "原理拆解",
+        "Claude Code",
+        "Skill"
+       ],
+       "line": "让 Claude 造台机器讲概念：机械表、布隆过滤器可拆开看",
+       "by": "wheresryan22 · 小红书 @小师妹Kiki",
+       "oss": true,
+       "poster": "https://skills.wheresryan.sh/anatomy/thumbs/watch.webp",
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6acc87c0000000001b023304?xsec_token=ABd7OrLMChB_2SVkYk_R2K57SNI95xQ1vS6KvPY1UwLMM=&xsec_source=pc_search"
+        },
+        {
+         "kind": "github",
+         "url": "https://github.com/wheresryan22/anatomy"
+        },
+        {
+         "kind": "site",
+         "url": "https://skills.wheresryan.sh/anatomy"
+        }
+       ],
+       "biz": [],
+       "why": "讲解类 skill 里 star 第二高（2.4 万）；小红书介绍帖收藏是点赞的 2.5 倍，说明是「存下来要用」"
+      },
+      {
+       "title": "AI 简史 3 分钟",
+       "line": "7400 行 React、1 小时出片：零素材零生图，每帧代码渲染",
+       "by": "Chubby（@kimmonismus）",
+       "oss": null,
+       "links": [
+        {
+         "kind": "x",
+         "url": "https://x.com/kimmonismus/status/2102844654169575547"
+        },
+        {
+         "kind": "github",
+         "url": "https://github.com/remotion-dev/remotion"
+        },
+        {
+         "kind": "site",
+         "url": "https://www.remotion.dev/"
+        }
+       ],
+       "biz": [],
+       "poster": "frame:60",
+       "why": "原帖写明 Claude Code + Remotion，SVG / Canvas 手绘、开源 TTS、Python 合成配乐，全链路代码",
+       "core": [
+        "历史脉络",
+        "Opus 5.5",
+        "Remotion"
+       ]
+      },
+      {
+       "title": "Claude Motion",
+       "core": [
+        "数据讲解",
+        "Claude"
+       ],
+       "line": "Anthropic 官方：把季报、图表做成动画片，导出 MP4",
+       "by": "Anthropic",
+       "oss": false,
+       "poster": "https://pbs.twimg.com/amplify_video_thumb/2108518869212008449/img/I2pgk4XsBBTYIFTI.jpg",
+       "links": [
+        {
+         "kind": "site",
+         "url": "https://claude.com/blog/dashboards-and-motion"
+        },
+        {
+         "kind": "x",
+         "url": "https://x.com/N01ennn/status/2108520767092597182",
+         "label": "三模型实测",
+         "third": true
+        },
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6ac86755000000001403104b?xsec_token=AB3vw--7Qx53yyzGnC3BavFSrhb9feG2N5n2IKPvbld_c=&xsec_source=pc_search",
+         "label": "中文解读",
+         "third": true
+        },
+        {
+         "kind": "site",
+         "url": "https://runway.com/news/company-news/runway-claude-motion",
+         "label": "Runway 联动"
+        }
+       ],
+       "biz": [
+        {
+         "k": "上线",
+         "v": "2026-10-08 beta，Team / Enterprise 可用",
+         "src": "https://claude.com/blog/dashboards-and-motion"
+        },
+        {
+         "k": "导出生态",
+         "v": "Adobe、HeyGen、Runway 等 7 家可接着剪",
+         "src": "https://claude.com/blog/dashboards-and-motion"
+        },
+        {
+         "k": "用量",
+         "s": "未披露",
+         "v": "Anthropic 没有公开 /motion 的使用量或收入（2026-11-04 查）",
+         "src": "https://claude.com/blog/dashboards-and-motion",
+         "plain": true
+        }
+       ],
+       "why": "模型厂商把「代码出片」做成付费套餐功能，面向季报、董事会、客户 onboarding；小红书解读 1552 赞、X 实测 12 万浏览。没有单独营收数据"
+      },
+      {
+       "title": "Codex 口播包装",
+       "core": [
+        "口播讲解",
+        "Codex",
+        "HyperFrames"
+       ],
+       "line": "口播 → 时间戳脚本 → 分镜 → HyperFrames 渲染，教程即成品",
+       "by": "Lulu的AI野路子",
+       "oss": null,
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/samples_src/xhs-vibe-video/notes/6a621ecf000000001002a05e/frames/0.jpg",
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6a621ecf000000001002a05e?xsec_token=ABkwKrWh0Lh_J7Dwm_VSG9KZEy0xYKIATdzVUOPYgr5AY=&xsec_source=pc_search"
+        },
+        {
+         "kind": "github",
+         "url": "https://github.com/heygen-com/hyperframes"
+        },
+        {
+         "kind": "github",
+         "url": "https://github.com/browser-use/video-use"
+        }
+       ],
+       "biz": [],
+       "why": "小红书上明确用 HyperFrames 出片的口播作品里赞数最高（1584 赞、2540 藏），面向文科生 / 小白，代表国内普通创作者的用法"
+      }
+     ],
+     "payer": "知识博主、自媒体、企业培训",
+     "revenue": "工具订阅、开源 skill 引流",
+     "proof": "熵增 4.1 万赞；论文转 3B1B 讲解 33.6 万浏览；AI 简史 20.7 万浏览",
+     "picks": [
+      [
+       "Vibe知识大赏·熵增",
+       null
+      ],
+      [
+       "论文转 3B1B 讲解",
+       null
+      ]
+     ]
+    },
+    {
+     "key": "launch",
+     "cn": "产品广告与品牌营销",
+     "desc": "SaaS、App 团队与品牌方买单：发布片和品牌动效不再外包，几十分钟出片，改文案只需重渲",
+     "cards": [
+      {
+       "title": "HyperFrames",
+       "core": [
+        "发布片",
+        "HeyGen",
+        "HyperFrames"
+       ],
+       "line": "写 HTML 即出片，OpenAI、tldraw 已用于生产",
+       "by": "HeyGen",
+       "oss": true,
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/figure_src/vibe-video/repo_demos/heygen-com__hyperframes.png",
+       "links": [
+        {
+         "kind": "github",
+         "url": "https://github.com/heygen-com/hyperframes"
+        },
+        {
+         "kind": "site",
+         "url": "https://hyperframes.heygen.com"
+        },
+        {
+         "kind": "doc",
+         "url": "https://github.com/heygen-com/hyperframes/blob/main/ADOPTERS.md",
+         "label": "采用方"
+        }
+       ],
+       "biz": [
+        {
+         "k": "HeyGen ARR",
+         "v": "超 2 亿美元，8 个月翻倍（2026-06-25）",
+         "src": "https://www.heygen.com/blog/heygen-surpasses-200m-arr",
+         "s": "2 亿美元+"
+        },
+        {
+         "k": "采用方",
+         "v": "12 家，含 OpenAI、tldraw、THU-MAIC（2026-11-04）",
+         "src": "https://github.com/heygen-com/hyperframes/blob/main/ADOPTERS.md",
+         "s": "12 家",
+         "plain": true
+        },
+        {
+         "k": "首月 Star",
+         "v": "2.16 万（HeyGen 官方）",
+         "src": "https://www.heygen.com/blog/heygen-surpasses-200m-arr"
+        }
+       ],
+       "why": "代码→视频框架里 star 最多（7.8 万），背后是 ARR 2 亿美元的 HeyGen；ADOPTERS 有 OpenAI 开发者视频、tldraw PR 讲解视频两条生产用例",
+       "rev": {
+        "usd": 200000000.0,
+        "v": "2 亿美元+",
+        "k": "全公司 ARR",
+        "name": "HeyGen"
+       }
+      },
+      {
+       "title": "Shotbase 发布片",
+       "core": [
+        "发布片",
+        "Opus 5.5",
+        "HyperFrames"
+       ],
+       "line": "20 分钟用 HyperFrames 写出 Mac App 发布片",
+       "by": "Miguel07Code",
+       "oss": null,
+       "poster": "frame:20.4",
+       "links": [
+        {
+         "kind": "x",
+         "url": "https://x.com/Miguel07Code/status/2102441708395041170"
+        },
+        {
+         "kind": "site",
+         "url": "https://shotbase.com",
+         "label": "Shotbase"
+        },
+        {
+         "kind": "github",
+         "url": "https://github.com/heygen-com/hyperframes"
+        }
+       ],
+       "biz": [],
+       "why": "原帖明写 HyperFrames 的作品里 X 浏览最高（15.6 万）；真实在售产品的发布片"
+      },
+      {
+       "title": "Clawd 一镜到底",
+       "core": [
+        "发布片",
+        "Claude Code",
+        "three.js",
+        "Skill"
+       ],
+       "line": "three.js 单文件做出一镜到底发布片，成本约 20 元",
+       "by": "泡椒肥汤圆（onetake 作者）",
+       "oss": true,
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/samples_src/xhs-vibe-video/notes/6ad89c2f0000000033008836/images/0.jpg",
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6ad89c2f0000000033008836?xsec_token=ABBpZEnzBaI6sS_Swpe8pNaantdB7V9tFz4QYx-jzjH7Y=&xsec_source=pc_search"
+        },
+        {
+         "kind": "github",
+         "url": "https://github.com/feitangyuan/onetake"
+        },
+        {
+         "kind": "site",
+         "url": "https://onetakemotion.com",
+         "label": "onetake Pro"
+        }
+       ],
+       "biz": [
+        {
+         "k": "onetake Pro",
+         "v": "79 美元买断，含商用授权（2026-11-04 官网）",
+         "src": "https://onetakemotion.com",
+         "s": "79 美元",
+         "plain": true
+        }
+       ],
+       "why": "小红书发布片类赞数第一（2275 赞）；作者把方法开源成 onetake（3.7k star），又做了付费商用版，是「作品→skill→收费」的完整链条"
+      },
+      {
+       "title": "Morfeo 品牌动效",
+       "core": [
+        "品牌动效",
+        "Opus 5.5",
+        "HyperFrames"
+       ],
+       "line": "品牌规范写进 MOTION.md，卡点出整条动效",
+       "by": "Morfeo | IA & Marketing",
+       "oss": null,
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/showcase/posters/tiktok-morfeoacademy-7693332207347289351.jpg",
+       "links": [
+        {
+         "kind": "tiktok",
+         "url": "https://www.tiktok.com/@morfeoacademy/video/7693332207347289351"
+        },
+        {
+         "kind": "github",
+         "url": "https://github.com/heygen-com/hyperframes"
+        },
+        {
+         "kind": "site",
+         "url": "https://hyperframes.heygen.com"
+        }
+       ],
+       "biz": [],
+       "why": "TikTok 上找到的框架作品里数据最好；西语营销号，说明 HyperFrames 已进海外营销内容工厂"
+      },
+      {
+       "title": "15 种商用动效",
+       "line": "磨了三天，15 种商用级动效全由代码实时渲染，1080p 30fps",
+       "by": "Y_",
+       "oss": null,
+       "biz": [],
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6ad2a63700000000140010db?xsec_token=ABI2LFQw__JFuxRUSTvpfExxPcT9PHecgRk0Mu6T21Qus=&xsec_source=pc_search"
+        }
+       ],
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/samples_src/xhs-vibe-video/notes/6ad2a63700000000140010db/images/0.jpg",
+       "why": "907 赞；作者明确按「商用级」交付标准打磨，是动效外包的替代信号",
+       "core": [
+        "品牌动效",
+        "Opus 5.5"
+       ]
+      },
+      {
+       "title": "Claude 自我宣传片",
+       "line": "64 秒一镜到底：Clawd 踢飞鼠标，在终端里让 Claude 给自己做片",
+       "by": "墨白说",
+       "oss": null,
+       "biz": [],
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6add72d2000000003300b7ed?xsec_token=ABppXmGidaWMkZ1G1lQkel94Di62DWV82_wB4SLrnBmGI=&xsec_source=pc_search"
+        }
+       ],
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/samples_src/xhs-vibe-video/notes/6add72d2000000003300b7ed/images/0.jpg",
+       "why": "817 赞；品牌自我宣传片的完整样例，国内发布片场景的普通用户版本",
+       "core": [
+        "宣传片",
+        "Claude Code"
+       ]
+      }
+     ],
+     "payer": "SaaS / App 团队、品牌方",
+     "revenue": "替代外包、买断授权",
+     "proof": "HyperFrames 7.8 万 Star；Shotbase 20 分钟出片；onetake Pro 79 美元买断",
+     "picks": [
+      [
+       "HyperFrames",
+       null
+      ],
+      [
+       "Shotbase 发布片",
+       null
+      ]
+     ]
+    },
+    {
+     "key": "mv-motion",
+     "cn": "艺术创作",
+     "desc": "歌词 MV、叙事短片：片子本身就是作品，画面逐帧可改",
+     "cards": [
+      {
+       "title": "P(doom) MV",
+       "core": [
+        "MV",
+        "Opus 5.5",
+        "p5.js"
+       ],
+       "line": "模型自定分镜、逐句配画的手绘风 MV，源码开源",
+       "by": "John Heibel（@other__reality）",
+       "oss": null,
+       "poster": "https://i.ytimg.com/vi/8j-hR4fJywU/hqdefault.jpg",
+       "links": [
+        {
+         "kind": "x",
+         "url": "https://x.com/other__reality/status/2102514581684052169"
+        },
+        {
+         "kind": "youtube",
+         "url": "https://www.youtube.com/watch?v=8j-hR4fJywU"
+        },
+        {
+         "kind": "github",
+         "url": "https://github.com/JohnHeibel/PDoomVideo"
+        },
+        {
+         "kind": "github",
+         "url": "https://github.com/mexicat/pdoom-video"
+        }
+       ],
+       "biz": [],
+       "why": "纯代码 MV 里 X 浏览最高（295 万），两个版本都开源（2.8k / 3.8k star），国内有搬运（小红书 916 赞）"
+      },
+      {
+       "title": "Claude Pop",
+       "core": [
+        "MV",
+        "Opus 5.5",
+        "Midjourney"
+       ],
+       "line": "同一首歌，Opus 独自跑 12 小时重做纸感 MV：JS 动画 + Midjourney 素材",
+       "by": "anabology",
+       "oss": null,
+       "poster": "https://pbs.twimg.com/amplify_video_thumb/2103533196721704960/img/ILpk1iqxJsJGiDcK.jpg",
+       "links": [
+        {
+         "kind": "x",
+         "url": "https://x.com/anabology/status/2103534482930491441"
+        },
+        {
+         "kind": "x",
+         "url": "https://x.com/donaldjewkes/status/2102801274173587569",
+         "label": "前作"
+        },
+        {
+         "kind": "doc",
+         "url": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/main/prompts/anabology-491441.md",
+         "label": "提示词"
+        }
+       ],
+       "biz": [],
+       "why": "四个合集 800+ 条原帖里浏览第一（2019 万）；画面是 JS 动画 + Midjourney 素材，不是纯代码，用来证明受众规模"
+      },
+      {
+       "title": "代码梦境短片",
+       "line": "69 秒梦境短片：太阳月亮、拱门花园、游鱼入心，每一帧都是代码",
+       "by": "盏Sienna",
+       "oss": null,
+       "biz": [],
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6ab8e5d1000000001a024e09?xsec_token=AB2dJD-XKGEt-eneJ8rUDZ98wFMDzCm_c-FriZTdqljyQ=&xsec_source=pc_search"
+        }
+       ],
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/samples_src/xhs-vibe-video/notes/6ab8e5d1000000001a024e09/images/0.jpg",
+       "why": "1410 赞；纯代码叙事短片，说明代码出片不止于信息图",
+       "core": [
+        "叙事短片",
+        "Opus 5.5"
+       ]
+      }
+     ],
+     "payer": "音乐人、创作者",
+     "revenue": "未查到公开收入",
+     "proof": "Claude Pop 2019 万浏览；P(doom) MV 294 万浏览",
+     "picks": [
+      [
+       "Claude Pop",
+       null
+      ],
+      [
+       "P(doom) MV",
+       null
+      ]
+     ]
+    },
+    {
+     "key": "animation",
+     "cn": "动画制作",
+     "desc": "动画本身就是代码：角色、动效、画风都能写出来，好的写法沉淀成可复用的 skill",
+     "cards": [
+      {
+       "title": "多邻国动画复刻",
+       "core": [
+        "角色动画",
+        "Codex",
+        "Rive"
+       ],
+       "line": "逆推多邻国 Rive 动画做成 skill，Codex 出新角色并对口型",
+       "by": "子天",
+       "oss": null,
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/samples_src/xhs-vibe-video/notes/6ada4b4b000000003101f018/frames/0.jpg",
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6ada4b4b000000003101f018?xsec_token=ABd73dpE56-tYgUsAKbH2u3LFcFXMZ87irzyoF0gYfNj8=&xsec_source=pc_search"
+        },
+        {
+         "kind": "site",
+         "url": "https://rive.app/blog/duolingo-s-ai-powered-video-call-brings-lily-to-life",
+         "label": "Rive × 多邻国"
+        }
+       ],
+       "biz": [],
+       "why": "小红书动效类赞数第一（5381 赞、5548 藏）；品牌 IP 角色动画是动效外包的大头"
+      },
+      {
+       "title": "Claude 动效 Reel",
+       "line": "15 秒 60fps，按 120 BPM 卡 32 拍，8 段演示挤压拉伸与形变",
+       "by": "新旧",
+       "oss": null,
+       "biz": [],
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6ac7a32f000000001a02693d?xsec_token=ABoZ5yD4MgUTgwqBKxVVfUJcz1wZZQR104MJGQJF9LiwI=&xsec_source=pc_search"
+        }
+       ],
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/samples_src/xhs-vibe-video/notes/6ac7a32f000000001a02693d/images/0.jpg",
+       "why": "2079 赞；动效设计师视角的「Claude 最懂动态设计」，同款提示词原帖 X 231 万浏览",
+       "core": [
+        "动效作品集",
+        "Opus 5.5"
+       ]
+      },
+      {
+       "title": "花叔穿越名画",
+       "core": [
+        "艺术动画",
+        "Claude Code",
+        "Skill"
+       ],
+       "line": "复刻艺术史动画后沉淀成 skill：35 种画风、9 种解说语法",
+       "by": "花叔（alchaincyf）",
+       "oss": true,
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/samples_src/xhs-vibe-video/notes/6ac4a875000000001500010f/images/5.jpg",
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6ac4a875000000001500010f?xsec_token=ABi2ZFMsFL6arlz_20OCLAz2DCCmBnbiZaywsFv1tHXTI=&xsec_source=pc_search"
+        },
+        {
+         "kind": "github",
+         "url": "https://github.com/alchaincyf/huashu-art-motion"
+        },
+        {
+         "kind": "x",
+         "url": "https://x.com/cherry_mx_reds/status/2106095190285144331",
+         "label": "原片"
+        }
+       ],
+       "biz": [
+        {
+         "k": "被收录",
+         "v": "Open Design 的 motion-design skill 收了适配版",
+         "src": "https://github.com/nexu-io/open-design/tree/main/skills/huashu-art-motion"
+        }
+       ],
+       "why": "国内头部 AI 博主的开源 skill（6.1k star），小红书收藏多于点赞；「看到爆款→复刻→沉淀成 skill」的典型路径"
+      },
+      {
+       "title": "代码动画完全指南",
+       "line": "15 分钟讲透代码出片，片子本身就是代码动画；配套 skill 开源",
+       "by": "code秘密花园（ConardLi）",
+       "oss": true,
+       "biz": [],
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6ae88f6d000000002c01958c?xsec_token=ABxkjCkNxbDVck4bpTHc_VJIRIXzeYuXpVKs4tTmFTY9Q=&xsec_source=pc_search"
+        },
+        {
+         "kind": "github",
+         "url": "https://github.com/ConardLi/garden-skills"
+        }
+       ],
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/samples_src/xhs-vibe-video/notes/6ae88f6d000000002c01958c/images/0.jpg",
+       "why": "3991 赞 / 5385 藏，国内头部开发者博主；garden-skills 1.4 万 star",
+       "core": [
+        "制作教程",
+        "Skill"
+       ]
+      },
+      {
+       "title": "15 种科普风格",
+       "line": "皮影、地图、3D 拆解、3B1B 数学……15 种科普画风，每种附提示词",
+       "by": "AI产品自由",
+       "oss": null,
+       "biz": [],
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6ac50089000000001a0273a8?xsec_token=ABHQ1YUAvfry1LnqjvD77tF8WiEPSnf7yPJREdIAUyBg0=&xsec_source=pc_search"
+        }
+       ],
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/samples_src/xhs-vibe-video/notes/6ac50089000000001a0273a8/images/0.jpg",
+       "why": "2579 赞 / 2590 藏；把「一种风格 = 一段提示词」讲明白了，是教学场景的方法库",
+       "core": [
+        "风格库",
+        "Opus 5.5"
+       ]
+      },
+      {
+       "title": "测评片动效包装",
+       "core": [
+        "动效包装",
+        "Fable 5",
+        "Remotion"
+       ],
+       "line": "测评片 80% 分镜动效由 Agent 写 Remotion，再进 AE",
+       "by": "Nenly同学",
+       "oss": null,
+       "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/samples_src/xhs-vibe-video/notes/6a673ecf0000000009034aa0/images/1.jpg",
+       "links": [
+        {
+         "kind": "xhs",
+         "url": "https://www.xiaohongshu.com/explore/6a673ecf0000000009034aa0?xsec_token=ABIi79alD0g3dxyIjEUCPSqTf_mwOKvhcM0TlAzSIFtT0=&xsec_source=pc_search"
+        },
+        {
+         "kind": "github",
+         "url": "https://github.com/remotion-dev/remotion"
+        },
+        {
+         "kind": "bilibili",
+         "url": "https://space.bilibili.com/1814756990",
+         "label": "B 站主页"
+        }
+       ],
+       "biz": [
+        {
+         "k": "作者 B 站粉丝",
+         "v": "71.8 万（2026-11-04）",
+         "src": "https://space.bilibili.com/1814756990",
+         "s": "71.8 万",
+         "plain": true
+        }
+       ],
+       "why": "职业 UP 主把 Remotion 用进正片生产，不是 demo；评论区也有「Remotion 只适合简单包装」的反方意见，可信"
+      }
+     ],
+     "payer": "暂无明确付费方",
+     "revenue": "skill 沉淀与开源引流",
+     "proof": "多邻国动画复刻 5,381 赞；代码动画完全指南 3,991 赞；花叔 skill 6,110 Star",
+     "picks": [
+      [
+       "多邻国动画复刻",
+       null
+      ],
+      [
+       "代码动画完全指南",
+       null
+      ]
+     ]
+    }
+   ],
+   "frameworks": true,
+   "cover": "Vibe知识大赏·熵增"
+  }
+ ]
+}

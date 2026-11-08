@@ -1,0 +1,11 @@
+{"link": "https://github.com/plotly/plotly.js/tree/main/test/image/baselines",
+ "id": "plotly/plotly.js",
+ "cards": [
+  {"img": "polar_wind-rose.png", "name": "test/image/baselines/polar_wind-rose.png",
+   "code": [["test/image/mocks/polar_wind-rose.json", "polar_wind-rose.json"]]},
+  {"img": "geo_orthographic.png", "name": "test/image/baselines/geo_orthographic.png",
+   "code": [["test/image/mocks/geo_orthographic.json", "geo_orthographic.json"]]},
+  {"img": "quiver_wind.png", "name": "test/image/baselines/quiver_wind.png",
+   "code": [["test/image/mocks/quiver_wind.json", "quiver_wind.json"]]}
+ ]}
+

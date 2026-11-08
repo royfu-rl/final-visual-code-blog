@@ -1,0 +1,84 @@
+{
+ "note_id": "6a9fee77000000002802895d",
+ "url": "https://www.xiaohongshu.com/explore/6a9fee77000000002802895d?xsec_token=ABBHpD2CR0uKFt0V4AkEw3W4XEmfxWJNfV1y2Ih6da-Y4=&xsec_source=pc_search",
+ "type": "video",
+ "title": "使用GPT6-Astra生成3D场景并渲染漫游视频",
+ "desc": "我在家里拍了一段漫游的视频（上），然后扔给GPT6-Astra和claude opus 5，利用blender生成3d模型，并按照我给的视频移动相机，渲染出漫游视频。\n肉眼可见GPT-6-Astra确实强大，整体布局和细节十分到位，漫游视频里晃晃悠悠的镜头感十分有趣，相比之下opus被秒成渣渣。\n物理世界果然被数字化了[汗颜R]\n#gpt6[话题]# #gpt6建模效果[话题]# #3d建模[话题]# #openai[话题]# #claude[话题]# #LLM[话题]#",
+ "tags": [
+  "gpt6",
+  "gpt6建模效果",
+  "3d建模",
+  "openai",
+  "claude",
+  "LLM"
+ ],
+ "author": "码农祺的经世致用",
+ "user_id": "60edb5190000000001006e9f",
+ "time": 1788866167000,
+ "ip_location": null,
+ "likes": "192",
+ "collects": "107",
+ "comments_count": "38",
+ "keywords": [
+  "Claude Blender 动画"
+ ],
+ "duration": 46,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040123/ed7fd11637844d2667e57b772eccaaa0/spectrum/1040g34o324rru9o11k0g5o7dmkcg8rkveqf8sdo!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "码农祺的经世致用",
+   "content": "我甚至用我家模型再让 GPT 6 做了个射击游戏，哈哈哈终于实现了小时候打 cs 梦想是不是可以把环境变成自己家里\n[视频]30s",
+   "likes": "14"
+  },
+  {
+   "user": "JerryLiu",
+   "content": "留给3d的时间不多了",
+   "likes": "3"
+  },
+  {
+   "user": "zyMeteoroid",
+   "content": "求一下prompt[萌萌哒R][萌萌哒R][萌萌哒R]",
+   "likes": "0"
+  },
+  {
+   "user": "XIVAR",
+   "content": "吓死我了我还以为第一个是，我都纳闷那怎么把mesh和光线高的那么真的",
+   "likes": "2"
+  },
+  {
+   "user": "昏暗骑士",
+   "content": "着什么引擎啊 好真啊 别告诉我是three.js",
+   "likes": "0"
+  },
+  {
+   "user": "设计师-阿鑫",
+   "content": "你给他发的家里视频还是拍的家里照片 他给你建的模型",
+   "likes": "0"
+  },
+  {
+   "user": "闪电狮",
+   "content": "这光影做的可以啊，还以为是视频模型渲染出的视频",
+   "likes": "0"
+  },
+  {
+   "user": "世明",
+   "content": "claude 看起来不行啊[笑哭R]",
+   "likes": "0"
+  },
+  {
+   "user": "小红薯yv1hyuht",
+   "content": "以后连接3d打印是不是能造飞机",
+   "likes": "1"
+  },
+  {
+   "user": "码农祺的经世致用",
+   "content": "虽然前几天一直各种看别人的测试 demo，自己试了试确实很震撼",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

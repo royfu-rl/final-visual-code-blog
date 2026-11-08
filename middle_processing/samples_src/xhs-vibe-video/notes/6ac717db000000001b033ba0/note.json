@@ -1,0 +1,61 @@
+{
+ "note_id": "6ac717db000000001b033ba0",
+ "url": "https://www.xiaohongshu.com/explore/6ac717db000000001b033ba0?xsec_token=ABoZ5yD4MgUTgwqBKxVVfUJZZIz3-62xWDsalQRenszy8=&xsec_source=pc_search",
+ "type": "video",
+ "title": "Claude+Blender做个人网站，效果太炸裂了",
+ "desc": "刷到用 Blender + AI 做的个人网站，当场被帅到。于是照着这个思路，用 Claude + Blender 给自己也做了一个，打磨了很久，代码已经全部开源。\n\t\n如果自己设计，可以换其他的古风，欧式等等等等，随便扩展风格\n\t\n🖥 怎么做的\n1️⃣ 把参考截图和我自己书桌的照片一起发给 Claude\n2️⃣ 我的桌子实在不好看，就让它改：「高级一点，落地窗、高楼，或者 loft 那种」\n3️⃣ 后来又补了一张工位的图，想加什么就直接跟他说：摄影、新闻、唱片机、友链都搬上了桌。还有我桌上那盘薯条也让它都建进去了🍟\n4️⃣ 建模不用手捏：Claude 写 Python 脚本，Blender 在后台自己把场景搭出来\n\t\n十种画风怎么来的 不是渲十遍成品。同一个机位只出一组「通道」：底色、物体 ID、法线、深度、5 组灯光，再用 Python 做后期： · 墨线 = ID / 法线 / 深度发生突变的地方 · 阴影 = 光照分几档，暗部铺网点和排线 · 最后换配色和纸纹 一套通道出漫画、黑白默片、波普、水彩、朋克拼贴、霓虹、像素、手稿……\n\t\n网页上的特效 · 换宇宙：WebGL 着色器把画面切成方块一块块翻过去，带横向错位和 RGB 分离，还会蹦一个漫画拟声词 · 悬停描边：ID 图顺手当热点图，鼠标指到哪个物件就描哪个 · 点物件镜头会推过去，推近自动换 4K 贴图 · 黑白宇宙会下雨，霓虹宇宙有扫描线 · 唱片是真能放歌的黑胶唱片机，杯子点开是友链蛛网，显示器里能跟我的 AI 分身聊天 整个站纯静态，没有框架，没有构建步骤。\n\t\n📦 开源 GitHub 搜 EdwinjJ1/personal-website，MIT 协议。README 里写了怎么换成你自己的：改文案不用重新渲染，换桌上的东西只改一个 Python 文件。\n\t\n思路图在视频最后，直接截图就行。\n\t\n灵感参考：抖音 @硕哥，梦想哭了\n\t\n#Claude[话题]# #Blender[话题]# #个人网站[话题]# #AI编程[话题]# #ClaudeCode[话题]# #WebGL[话题]# #独立开发[话题]# #开源项目[话题]#",
+ "tags": [
+  "Claude",
+  "Blender",
+  "个人网站",
+  "AI编程",
+  "ClaudeCode",
+  "WebGL",
+  "独立开发",
+  "开源项目"
+ ],
+ "author": "Evan🥑",
+ "user_id": "6147eee3000000000201bfe4",
+ "time": 1791432667000,
+ "ip_location": "上海",
+ "likes": "217",
+ "collects": "226",
+ "comments_count": "5",
+ "keywords": [
+  "Claude Blender 动画"
+ ],
+ "duration": 34,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040121/13d7bda60a3c765f113ce77947b50de5/1040g2sg32623nik356005oa7trhgjfv4egbhmc0!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "momo",
+   "content": "太牛了 这个效果太好了(¯▽¯)👍",
+   "likes": "1"
+  },
+  {
+   "user": "萌萌萌月萌（设计和攻防箭在这里",
+   "content": "这个风格和coding我是真的喜欢",
+   "likes": "1"
+  },
+  {
+   "user": "爱鸟人士",
+   "content": "哇 好厉害啊",
+   "likes": "1"
+  },
+  {
+   "user": "饿霸猪",
+   "content": "这个想法很棒！",
+   "likes": "0"
+  },
+  {
+   "user": "Gentle",
+   "content": "[赞R][赞R][赞R]",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

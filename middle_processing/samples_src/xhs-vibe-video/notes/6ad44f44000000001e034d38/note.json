@@ -1,0 +1,90 @@
+{
+ "note_id": "6ad44f44000000001e034d38",
+ "url": "https://www.xiaohongshu.com/explore/6ad44f44000000001e034d38?xsec_token=ABvwejsjldc9bIaf2J9wNRhsPimUJUXkzshpustYumct8=&xsec_source=pc_search",
+ "type": "video",
+ "title": "如何用Opus 5.5做效果惊艳的视频？",
+ "desc": "#Claude[话题]# #Opus5[话题]#.5 #AI视频[话题]# #AI做视频[话题]# #AI剪辑[话题]# #提示词[话题]# #视频制作[话题]# #自媒体[话题]# #AI工具[话题]# #AI[话题]#",
+ "tags": [
+  "Claude",
+  "Opus5",
+  "AI视频",
+  "AI做视频",
+  "AI剪辑",
+  "提示词",
+  "视频制作",
+  "自媒体",
+  "AI工具",
+  "AI"
+ ],
+ "author": "AI产品Stephen",
+ "user_id": "6203bc57000000001000a704",
+ "time": 1792298821000,
+ "ip_location": "浙江",
+ "likes": "554",
+ "collects": "773",
+ "comments_count": "20",
+ "keywords": [
+  "Claude Code 做视频",
+  "Claude 做视频",
+  "Opus5.5 做视频"
+ ],
+ "duration": 503,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040111/cd6a7dcb61fca1316b63d0af5e6a9770/1040g2sg326f0s3s34c705og3nhbk19o4qjiflv0!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "Kit Design Lab",
+   "content": "请问不了买opus55的会员，还需要另外买其他视频生成模型的会员，导入api吗？",
+   "likes": "0"
+  },
+  {
+   "user": "momo",
+   "content": "用remotion做的吗？",
+   "likes": "0"
+  },
+  {
+   "user": "SaraDesigns",
+   "content": "不是说一开就会被封么",
+   "likes": "1"
+  },
+  {
+   "user": "飞光",
+   "content": "这篇视频讲的是如何用 Claude Opus 5.5 制作高质量 AI 视频，核心内容分为\"原理—案例—实操\"三部分。\n【Opus 5.5 做视频的三种方式】\n操作专业软件：通过浏览器控制或写脚本，指挥 Blender、达芬奇、剪映等软件完成 3D 建模、渲染、调色等，类似 GPT-6-Astro 的能力，但速度偏慢、效果有限\n写网页再录屏：把每个分镜写成会动的网页，用代码控制文案出现时机、特效、配乐和音效（按音节逐字生成），适合做特效动画类视频\n剪辑真实素材：给一段真人出镜的口播视频，可剪辑",
+   "likes": "0"
+  },
+  {
+   "user": "因吹斯汀",
+   "content": "按照传统 AE 加特效，一分钟得五六千，AI 正在颠覆传统[捂脸R][捂脸R]",
+   "likes": "0"
+  },
+  {
+   "user": "樊泰西AI工坊",
+   "content": "已点赞，博主能不能讲一期AI操作blender做3D建模的？",
+   "likes": "0"
+  },
+  {
+   "user": "momo",
+   "content": "做的太棒了 学到很多东西 干货满满 加油[赞R]",
+   "likes": "1"
+  },
+  {
+   "user": "Girasol🍓",
+   "content": "讲这么细致没人点赞！ 点赞收藏 [哇R]",
+   "likes": "1"
+  },
+  {
+   "user": "柠檬100％",
+   "content": "我想问一下这种方法视频生成后有办法进行细节修改吗？还是说要通过ai操作软件制作的方法才能进行后期修改？[拔草R]",
+   "likes": "0"
+  },
+  {
+   "user": "YinviaLiu",
+   "content": "这是不是都得本地部署啊[笑哭R]不给力的电脑怎么办啊",
+   "likes": "1"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

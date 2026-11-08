@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Синхронный и ПЕРВЫМ до стилей: успевает отработать до отрисовки, поэтому
+       ни редирект, ни подмена подписи на кнопках не мигают.
+       Кука swash_in ставится приложением при входе (см. app/src/state/auth.ts),
+       секретов в ней нет — она только маршрутизирует. -->
+  <script>
+    (function () {
+      if (!document.cookie.includes('swash_in=1')) return;
+      // Атрибут, а не класс: Lenis при инициализации переписывает className
+      // у <html> целиком, и класс отсюда терялся.
+      document.documentElement.dataset.signedIn = '1';
+      // Уводим ТОЛЬКО с голого корня: ссылка на раздел (/#pricing), возврат из
+      // приложения (/?site=1) и любые utm-метки должны открывать лендинг.
+      if (location.pathname === '/' && !location.search && !location.hash) {
+        location.replace('/app/');
+      }
+    })();
+  </script>
+  <!-- Взвод появления блоков (.reveal) ДО первой отрисовки: атрибут читает
+       CSS в styles.css, снимает предохранитель reveal.ts. Подробности там же. -->
+  <script data-fx-arm>
+    (function () {
+      if (!matchMedia('(prefers-reduced-motion: no-preference)').matches) return;
+      var h = document.documentElement;
+      h.dataset.fx = '1';
+      setTimeout(function () { if (!h.dataset.fxArmed) delete h.dataset.fx; }, 3000);
+    })();
+  </script>
+  <title>Swash — motion graphics and animated text in your browser</title>
+  <meta name="description" content="Make motion graphics in minutes in your browser: animated text, 41 shaders, moving backgrounds, galleries, widgets and sound. Export MP4. Free to start.">
+  <!-- Лендинг доступен и как /?site=1 (возврат из приложения) — canonical
+       склеивает дубли в индексе в один адрес. -->
+  <link rel="canonical" href="https://swashmotion.com/">
+  <link rel="alternate" type="application/rss+xml" title="Swash changelog" href="/changelog.xml">
+  <meta name="theme-color" content="#000000">
+  <!-- Карточка для шеров. og:image кладётся файлом /og.png (1200×630) — тег
+       уже ждёт его; пока файла нет, соцсети просто покажут текст без картинки. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Swash">
+  <meta property="og:url" content="https://swashmotion.com/">
+  <meta property="og:title" content="Swash — motion graphics and animated text in your browser">
+  <meta property="og:description" content="Motion graphics in minutes, in the browser: text, shaders, backgrounds, galleries, widgets and sound. Free to start.">
+  <meta property="og:image" content="https://swashmotion.com/og.png?v=3">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <!-- шрифты свои и предзагружены: заголовок не ждёт ни чужого хоста, ни
+       разбора CSS, чтобы начать качать начертание -->
+  <!-- плеер движка тянет шрифты проекта из бакета Supabase — греем заранее -->
+  <link rel="preconnect" href="https://subusetumhbpigdygdjq.supabase.co" crossorigin>
+  <link rel="preload" href="/fonts/StackSansHeadline-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/InstrumentSerif-Italic-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- СТРУКТУРИРОВАННЫЕ ДАННЫЕ для поисковиков и ИИ-ассистентов: что это за
+       продукт, сколько стоит, кто делает, и FAQ. FAQPage — дословно блок #faq
+       ниже; расхождение ловит scripts/site-seo.test.mjs. -->
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "@id": "https://swashmotion.com/#app", "name": "Swash", "url": "https://swashmotion.com/", "applicationCategory": "DesignApplication", "applicationSubCategory": "Motion design", "operatingSystem": "Web browser", "description": "Make motion graphics in minutes in your browser: animated text, 41 shaders, moving backgrounds, galleries, widgets and sound. Export MP4. Free to start.", "image": "https://swashmotion.com/og.png?v=3", "publisher": {"@id": "https://swashmotion.com/#org"}, "featureList": ["Animated text presets", "41 shader effects", "24 animated backgrounds", "Image and video galleries in 21 layouts", "Widgets: counter, terminal, chat, globe, map, cursor, ransom note", "Sound for every animation, 270+ sounds", "3D text and text on a path", "Variable font animation", "Export MP4, GIF, transparent WebM", "Figma plugin"], "offers": [{"@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "USD"}, {"@type": "Offer", "name": "Pro", "price": "12", "priceCurrency": "USD", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "12", "priceCurrency": "USD", "billingDuration": "P1M"}}]}, {"@type": "Organization", "@id": "https://swashmotion.com/#org", "name": "Swash", "url": "https://swashmotion.com/", "logo": "https://swashmotion.com/logo.svg", "email": "support@swashmotion.com", "sameAs": ["https://x.com/swashmotion", "https://instagram.com/swashmotion", "https://www.figma.com/community/plugin/1672356268757480283"]}, {"@type": "WebSite", "@id": "https://swashmotion.com/#site", "name": "Swash", "url": "https://swashmotion.com/", "publisher": {"@id": "https://swashmotion.com/#org"}}, {"@type": "FAQPage", "@id": "https://swashmotion.com/#faq", "mainEntity": [{"@type": "Question", "name": "What is Swash?", "acceptedAnswer": {"@type": "Answer", "text": "Swash is a motion design editor that runs in your browser. Type your text, pick a preset and you have a finished animation in minutes, then add shaders, animated backgrounds, galleries of your work, widgets and sound. Everything stays editable, and you export a video. There is nothing to install, and new features ship most weeks: see what’s new."}}, {"@type": "Question", "name": "How fast can I make something?", "acceptedAnswer": {"@type": "Answer", "text": "Most posts take a few minutes. Every preset is a complete animation, the templates open ready to remix, and changing the words, the font or the colours keeps the motion intact."}}, {"@type": "Question", "name": "What can I make besides animated text?", "acceptedAnswer": {"@type": "Answer", "text": "Galleries that turn a folder of images or videos into a moving sequence in 21 layouts, 24 animated backgrounds, ready-made widgets such as a counter, terminal, chat, globe, map, cursor and ransom note, and 41 shader effects from grain and halftone to glitch, pixel sort and CRT. Animations can make sound too, from a library of over 270 sounds."}}, {"@type": "Question", "name": "Is Swash free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, you can start for free. The free plan includes the full editor, up to 3 projects and export up to 720p at 30 fps with a Swash watermark, plus a few watermark-free exports each month. Pro costs $12 a month and adds unlimited projects, export up to 4K at 60 fps without a watermark and the premium presets, templates and fonts, with a 7-day free trial."}}, {"@type": "Question", "name": "Do I need to sign up?", "acceptedAnswer": {"@type": "Answer", "text": "No. The editor opens without an account and keeps your work in the browser. Sign in to save projects to your account and to open templates from the community."}}, {"@type": "Question", "name": "What formats can I export?", "acceptedAnswer": {"@type": "Answer", "text": "MP4 video, GIF up to 540 px, WebM with a transparent background for overlays in browsers that support it, and a single PNG frame."}}, {"@type": "Question", "name": "Can I use my own fonts?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Upload any .ttf or .otf file, or pick from about 200 open-licensed Google fonts. Variable fonts work too, and their axes, such as weight and width, can be animated."}}, {"@type": "Question", "name": "Is Swash an alternative to After Effects?", "acceptedAnswer": {"@type": "Answer", "text": "For text animation, social clips, motion posters and product videos, yes: you get the result in the browser in minutes, without keyframing every letter. For character animation or compositing live footage, After Effects is still the right tool."}}, {"@type": "Question", "name": "Does Swash work with Figma?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The free Swash plugin for Figma brings your text and layout over to Swash as editable layers."}}]}]}</script>
+  <script type="module" crossorigin src="/assets/index-C-Yy0lDV.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/styles-hKUON8CI.js">
+  <link rel="modulepreload" crossorigin href="/assets/reveal-Dy0ZZXPo.js">
+  <link rel="modulepreload" crossorigin href="/assets/video-cards-DUcsGIIB.js">
+  <link rel="modulepreload" crossorigin href="/assets/spiral-Drf9F0dG.js">
+  <link rel="modulepreload" crossorigin href="/assets/gallery-DoCzLx7r.js">
+  <link rel="modulepreload" crossorigin href="/assets/ascii-warps-tKE7jtLq.js">
+  <link rel="modulepreload" crossorigin href="/assets/ascii-DAQ33ehQ.js">
+  <link rel="stylesheet" crossorigin href="/assets/styles-CpP_smGo.css">
+  <link rel="stylesheet" crossorigin href="/assets/index-DEhPiYwA.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__inner">
+    <!-- ?site=1 — «остаться на лендинге»: голый корень уводит вошедшего в приложение -->
+    <a href="/?site=1" class="nav__brand" aria-label="Swash">
+      <svg class="nav__logo" viewBox="0 0 80 25" aria-hidden="true"><use href="#swash-wordmark"/></svg>
+    </a>
+    <nav class="nav__links">
+      <a href="/templates" class="nav__link">Templates</a>
+      <a href="#sound" class="nav__link">Sound</a>
+      <a href="/typefaces" class="nav__link">Typefaces</a>
+      <a href="#pricing" class="nav__link">Pricing</a>
+      <a href="/whats-new" class="nav__link">Changelog</a>
+    </nav>
+    <div class="nav__actions">
+      <!-- Две кнопки, а не одна: «попробовать» и «войти» — разные намерения.
+           Одна «Start animating» уводила и того, кто хочет в свой аккаунт, в
+           гостевой редактор. Вошедшему ссылка на вход не нужна — прячется
+           через html[data-signed-in]. -->
+      <a href="/app/#/signin?from=landing" class="nav__signin cta-signin" data-cta="nav" data-cta-target="signin">Sign in</a>
+      <a href="/app/" class="btn btn--primary js-app-link" data-cta="nav" data-cta-target="try"><span class="cta-out">Try it free</span><span class="cta-in">Open app</span></a>
+    </div>
+    <!-- Кнопка шторки: на телефоне ссылки и кнопка уезжают внутрь неё -->
+    <button class="nav__burger js-nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
+      <span class="nav__burger-line"></span>
+      <span class="nav__burger-line"></span>
+    </button>
+  </div>
+
+</header>
+
+  <!-- Шторка справа. Разметка отдельная от .nav__inner: она перекрывает весь
+       экран, а не живёт внутри полосы шапки. -->
+  <div class="drawer js-drawer" id="nav-drawer" inert>
+    <div class="drawer__scrim js-drawer-close" aria-hidden="true"></div>
+    <aside class="drawer__panel" aria-label="Menu">
+      <nav class="drawer__links">
+        <a href="/templates" class="drawer__link js-drawer-close" style="--i:0">Templates</a>
+        <a href="#sound" class="drawer__link js-drawer-close" style="--i:1">Sound</a>
+        <a href="/typefaces" class="drawer__link js-drawer-close" style="--i:2">Typefaces</a>
+        <a href="#pricing" class="drawer__link js-drawer-close" style="--i:3">Pricing</a>
+        <a href="/whats-new" class="drawer__link js-drawer-close" style="--i:4">Changelog</a>
+      </nav>
+      <a href="/app/" class="btn btn--primary drawer__cta js-app-link" style="--i:5" data-cta="drawer" data-cta-target="try"><span class="cta-out">Try it free</span><span class="cta-in">Open app</span></a>
+      <a href="/app/#/signin?from=landing" class="btn btn--ghost drawer__cta cta-signin" style="--i:6" data-cta="drawer" data-cta-target="signin">Sign in</a>
+      <p class="drawer__legal" style="--i:7">
+        <a href="/app/privacy">Privacy</a> · <a href="/app/terms">Terms</a>
+      </p>
+    </aside>
+  </div>
+
+
+<main>
+  <!-- HERO per Figma 27:1317: a 4×2 wall of template cards under a gradient,
+       the morphing word in its selection frame, one large CTA -->
+  <section class="hero" data-track-section="hero">
+    <div class="hero__scroller js-helix-scroller">
+      <div class="hero__viewport js-helix-viewport">
+        <div class="hero__fallback js-helix-fallback" aria-hidden="true">
+          <!-- Настоящие шаблоны из Community: квадратный кроп постеров
+               (public.gallery → <id>/poster.png). Спираль настроена на
+               квадратную карточку — ширина карточки в шейдере идёт от
+               пропорции текстуры, и портрет с пейзажем в одном кольце
+               дали бы рваный шаг.
+
+               У каждой карточки есть петля (data-spiral-video): спираль
+               поднимает плеер и заливает кадр в текстуру, см. spiral.ts.
+               Постер при этом остаётся первым кадром петли и работает, пока
+               видео не пришло — и навсегда там, где движение выключено. -->
+          <img src="/templates/text-tunnel.webp" data-spiral-video="/templates/vid/text-tunnel.mp4" alt="" width="512" height="512" decoding="async" fetchpriority="high" draggable="false">
+          <img src="/templates/colourful-copies.webp" data-spiral-video="/templates/vid/colourful-copies.mp4" alt="" width="512" height="512" decoding="async" fetchpriority="high" draggable="false">
+          <img src="/templates/halftone-cylinder.webp" data-spiral-video="/templates/vid/halftone-cylinder.mp4" alt="" width="512" height="512" decoding="async" fetchpriority="high" draggable="false">
+          <img src="/templates/best-race.webp" data-spiral-video="/templates/vid/best-race.mp4" alt="" width="512" height="512" decoding="async" fetchpriority="high" draggable="false">
+          <img src="/templates/flower-poster.webp" data-spiral-video="/templates/vid/flower-poster.mp4" alt="" width="512" height="512" decoding="async" draggable="false">
+          <img src="/templates/kinetic-blocks-photo.webp" data-spiral-video="/templates/vid/kinetic-blocks-photo.mp4" alt="" width="512" height="512" decoding="async" draggable="false">
+          <img src="/templates/keep-moving.webp" data-spiral-video="/templates/vid/keep-moving.mp4" alt="" width="512" height="512" decoding="async" draggable="false">
+          <img src="/templates/typography-helix.webp" data-spiral-video="/templates/vid/typography-helix.mp4" alt="" width="512" height="512" decoding="async" draggable="false">
+          <img src="/templates/drinks-menu.webp" data-spiral-video="/templates/vid/drinks-menu.mp4" alt="" width="512" height="512" decoding="async" fetchpriority="low" draggable="false">
+          <img src="/templates/concert-tour.webp" data-spiral-video="/templates/vid/concert-tour.mp4" alt="" width="512" height="512" decoding="async" fetchpriority="low" draggable="false">
+          <img src="/templates/gallery-wheel.webp" data-spiral-video="/templates/vid/gallery-wheel.mp4" alt="" width="512" height="512" decoding="async" fetchpriority="low" draggable="false">
+          <img src="/templates/heart-beats.webp" data-spiral-video="/templates/vid/heart-beats.mp4" alt="" width="512" height="512" decoding="async" fetchpriority="low" draggable="false">
+          <img src="/templates/gradient-map.webp" data-spiral-video="/templates/vid/gradient-map.mp4" alt="" width="512" height="512" decoding="async" fetchpriority="low" draggable="false">
+          <img src="/templates/flower-text.webp" data-spiral-video="/templates/vid/flower-text.mp4" alt="" width="512" height="512" decoding="async" fetchpriority="low" draggable="false">
+          <img src="/templates/terminal-pills.webp" data-spiral-video="/templates/vid/terminal-pills.mp4" alt="" width="512" height="512" decoding="async" fetchpriority="low" draggable="false">
+          <img src="/templates/weight-wave.webp" data-spiral-video="/templates/vid/weight-wave.mp4" alt="" width="512" height="512" decoding="async" fetchpriority="low" draggable="false">
+        </div>
+        <canvas class="hero__canvas js-helix-canvas" aria-hidden="true"></canvas>
+        <div class="hero__scrim" aria-hidden="true"></div>
+        <div class="hero__fade" aria-hidden="true"></div>
+        <div class="hero__center">
+          <h1 class="u-sr-only">Type that moves — motion graphics and animated text in your browser</h1>
+          <div class="hero__title" aria-hidden="true">
+            <div class="hero__title-line">Type that</div>
+            <div class="hero__frame js-frame">
+              <span class="hero__handle hero__handle--tl"></span>
+              <span class="hero__handle hero__handle--tr"></span>
+              <span class="hero__handle hero__handle--bl"></span>
+              <span class="hero__handle hero__handle--br"></span>
+              <span class="hero__embed js-hero-embed"><img class="hero__embed-poster" src="/hero-poster.webp" width="930" height="267" alt="" decoding="async" fetchpriority="high"><span class="hero__embed-fallback">moves</span></span>
+            </div>
+          </div>
+          <!-- TODO(copy): Figma says «Made kinetic typography…» — reading it as a typo for «Make» -->
+          <p class="hero__sub">Make kinetic typography in minutes, not hours</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg js-app-link" href="/app/" data-cta="hero" data-cta-target="try"><span class="cta-out">Try it free</span><span class="cta-in">Open app</span></a>
+            <a class="btn btn--ghost btn--lg cta-signin" href="/app/#/signin?from=landing" data-cta="hero" data-cta-target="signin">Sign in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESETS: один абзац-высказывание. Список пресетов ушёл — примеры и так
+       есть выше (спираль) и ниже (галерея шаблонов), здесь работает текст.
+       Символы разгораются по мере прокрутки (см. scrub.ts). -->
+  <section class="stmt-section" id="presets" data-track-section="presets">
+    <div class="container">
+      <p class="stmt js-scrub">Swash ships motion, not machinery. Font morph, axes wave, color flicker, repeater, marquee — every preset is <em class="slip">already tuned</em>. Pick one, set a couple of parameters, and the animation is done.</p>
+    </div>
+  </section>
+
+  <!-- FEATURES per Figma 27:1377 -->
+  <section class="features" id="features" data-track-section="features">
+    <div class="container">
+      <h2 class="features__heading reveal" data-lines>Made of <em class="slip">type,</em><br>not pixels</h2>
+      <div class="features__grid" data-stagger data-stagger-rise>
+        <article class="card">
+          <h3 class="card__title"><span class="card__lead">Your layout is already done.</span> Don’t rebuild it</h3>
+          <p class="card__body">Bring the Figma frame over: text arrives live, same fonts, same kerning, ready to move.</p>
+          <a class="card__link" href="https://www.figma.com/community/plugin/1672356268757480283" target="_blank" rel="noreferrer">Get the Figma plugin</a>
+          <!-- Окно плагина «Copy for Swash» — снимок настоящей панели (Figma
+               27:1382), а не иконки со стрелкой. Панель уходит за нижний край
+               карточки: обрезает .card { overflow: clip }. -->
+          <div class="card__viz card__viz--plugin" aria-hidden="true">
+            <img src="/media/figma-plugin.webp" width="670" height="1026" alt="" loading="lazy" decoding="async">
+          </div>
+        </article>
+        <article class="card">
+          <h3 class="card__title"><span class="card__lead">Type stays type.</span> Not layers, not pixels</h3>
+          <p class="card__body">Vector glyphs all the way down: real outline morphing, kerning intact, every letter and word on its own span.</p>
+          <!-- Live engine demo (the «aaa» project), bleeding past the card edge per Figma -->
+          <div class="card__viz card__viz--engine" data-embed="aaa" data-embed-q="0.5" data-embed-title="Live Swash demo: variable weight wave morphing into a serif" aria-hidden="true">
+            <img class="card__viz-poster" src="/media/poster-aaa.webp" width="1080" height="1080" alt="" loading="lazy" decoding="async">
+          </div>
+        </article>
+        <article class="card">
+          <h3 class="card__title"><span class="card__lead">Type in three dimensions.</span> Wrap it, bend it, ride a path</h3>
+          <p class="card__body">Wrap a word on a sphere or send it down a path — it stays live text you can edit, restyle and retime.</p>
+          <div class="card__viz card__viz--engine card__viz--crop" data-embed="sphere" data-embed-q="0.5" data-embed-title="Live Swash demo: the words Swash type wrapped on a rotating sphere" aria-hidden="true">
+            <img class="card__viz-poster" src="/media/poster-sphere.webp" width="1080" height="1080" alt="" loading="lazy" decoding="async">
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOUND: «редактор в миниатюре» — куски настоящего Swash (sound-mini.ts,
+       модуль приезжает, когда секция подходит к экрану). Сцены — куски
+       шаблона автора «Update showreel» (app/public/demos/sound-reel-*.json):
+       эмбед движка, звук по кнопке страницы. Справа — звуковая строка
+       карточки аниматора (у терминала — звуки его действий), под сценой —
+       дорожка по плану звука, который вернул плеер. -->
+  <section class="sound mini" id="sound" data-track-section="sound">
+    <div class="container">
+      <div class="sound__head sound__head--stack">
+        <h2 class="sound__heading reveal" data-lines>Every move<br>makes a <em class="slip">sound</em></h2>
+        <p class="sound__copy reveal" data-delay="1">Letters arrive, leave, type themselves out — and every move can make its own sound, right on its frame. Each animation comes with sounds that fit; change the voice, where it lands and how it rises letter by letter.</p>
+      </div>
+      <div class="mini__panel js-mini reveal" data-delay="1">
+        <div class="mini__center">
+          <div class="mini__field">
+            <div class="mini__tabs js-mini-tabs"></div>
+            <div class="mini__stage js-mini-stage">
+              <button class="mini__sound js-mini-sound" type="button" aria-pressed="false" disabled><svg class="stage__icon stage__icon--off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5h3.2L12 5.6v12.8l-4.8-3.9H4z"/><path class="stage__x" d="M16 9.5l5 5m0-5l-5 5"/></svg><svg class="stage__icon stage__icon--on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5h3.2L12 5.6v12.8l-4.8-3.9H4z"/><path class="stage__wave" d="M15.5 9a4.2 4.2 0 0 1 0 6M18.2 6.6a7.6 7.6 0 0 1 0 10.8"/></svg><span class="mini__sound-off">Sound off</span><span class="mini__sound-on">Sound on</span></button>
+            </div>
+          </div>
+          <div class="mini__tl" aria-hidden="true">
+            <div class="mini__lane"><span class="mini__lname js-mini-layer">Move</span><div class="mini__track js-mini-moves"></div></div>
+            <div class="mini__lane"><span class="mini__lname mini__lname--snd">Sound</span><div class="mini__track js-mini-snd"></div></div>
+            <span class="mini__head js-mini-head"></span>
+          </div>
+        </div>
+        <div class="mini__insp js-mini-insp"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOCKS: «Три колонки» — галереи, виджеты, фоны (blocks-cols.ts). Ролики
+       галереи и виджетов — слоты video-cards.ts, фоны — восемь узоров по
+       кругу. Ролики и ручки фонов — docs/demos/blocks-media. -->
+  <section class="blocks cols" id="blocks" data-track-section="blocks">
+    <div class="container">
+      <div class="blocks__head blocks__head--stack">
+        <h2 class="blocks__heading reveal" data-lines>Build the whole<br><em class="slip">frame</em></h2>
+        <p class="blocks__copy reveal" data-delay="1">Galleries, widgets and moving backgrounds live on the same timeline as your type — and leave in the same file.</p>
+      </div>
+      <div class="cols__grid" data-stagger data-stagger-rise>
+        <article class="colc">
+          <div class="cv" data-video="/media/blocks/gallery-sm.mp4" data-video-lg="/media/blocks/gallery.mp4"><img src="/media/blocks/gallery.webp" width="864" height="1080" alt="A folder of photos playing as a moving gallery" loading="lazy" decoding="async"></div>
+          <p class="colc__t"><span class="lead">Galleries.</span> Turn a folder of your work into a sequence that moves. 21 layouts and enough controls on each that no two portfolios end up looking alike.</p>
+        </article>
+        <article class="colc">
+          <div class="cv" data-video="/media/blocks/widgets-sm.mp4" data-video-lg="/media/blocks/widgets.mp4"><img src="/media/blocks/widgets.webp" width="864" height="1080" alt="A terminal typing commands while word pills fall around it" loading="lazy" decoding="async"><span class="cv__label">Terminal + Pills</span></div>
+          <p class="colc__t"><span class="lead">Widgets.</span> A countdown for a launch, a terminal for a dev post, a chat for a story? Drop it next to your words and it animates on the same timeline.</p>
+        </article>
+        <article class="colc">
+          <div class="cv cv--bg js-cols-bg" data-bg="aurora,city,paint,lava,layers,glyphs,blocks,stepped"><img src="/media/blocks/bg-aurora.webp" width="864" height="1080" alt="Animated backgrounds made in Swash: Northern Lights, City Grid, Paint Flow, Lava lamp and more" loading="lazy" decoding="async"><span class="cv__label">Northern Lights</span></div>
+          <p class="colc__t"><span class="lead">Backgrounds.</span> Set the mood before the first word lands — a calm aurora, loud pixels or slow paint, each tuned to your colours and pace.</p>
+          <p class="tipline"><span class="tipline__b">Tip</span> Run it through a shader — Dither, Halftone or Gradient map make it your own.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEMPLATES per Figma 27:1424: filter line + two-row wall, no CTA button -->
+  <section class="templates" id="templates" data-track-section="templates">
+    <div class="container">
+      <div class="templates__head">
+        <h2 class="templates__heading reveal" data-lines>Learn it by taking one<br><em class="slip">apart</em></h2>
+        <p class="templates__copy reveal" data-delay="1">Every template opens in the editor with its animators intact. Change the words, swap the preset, keep what works. <a class="templates__all" href="/templates">Browse all templates</a></p>
+      </div>
+      <div class="tgal js-tgal reveal" data-delay="1" role="region" aria-label="Template gallery, draggable">
+        <!-- Вся витрина Community, кроме скрытых работ. Карточка — постер
+             плюс петля движка: видео монтируется, когда карточка подходит к
+             экрану, и встаёт на паузу, когда уходит (см. video-cards.ts).
+             Постер — ПЕРВЫЙ КАДР той же петли, поэтому подмена не заметна.
+             Пропорция у каждой своя, кроп срезал бы набор.
+             Ссылка в углу открывает шаблон в редакторе: /app/?template=<id
+             строки gallery> — гостю он ложится в гостевую строку, вошедшему
+             копируется в аккаунт (см. app/src/state/templateIntent.ts).
+             Ленту таскают мышью, поэтому клик после перетаскивания гасит
+             gallery.ts. -->
+        <div class="tgal__item" data-video="/media/tpl/lookbook.mp4"><img src="/media/tpl/lookbook.webp" width="346" height="432" alt="Template “Lookbook” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=20aa0126-a5a1-4207-b821-10b3c56b92a4" data-cta="template" data-cta-target="try" aria-label="Open “Lookbook” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/twist.mp4"><img src="/media/tpl/twist.webp" width="432" height="432" alt="Template “Twist” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=58df6c76-c93c-460e-bd41-f584d3581d84" data-cta="template" data-cta-target="try" aria-label="Open “Twist” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/reel.mp4"><img src="/media/tpl/reel.webp" width="346" height="432" alt="Template “Reel” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=e2593a6f-0651-43f6-a29d-6be1fe75c2fc" data-cta="template" data-cta-target="try" aria-label="Open “Reel” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/mobius.mp4"><img src="/media/tpl/mobius.webp" width="432" height="432" alt="Template “Mobius” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=126d8850-ed62-438c-899c-63c05a829c4d" data-cta="template" data-cta-target="try" aria-label="Open “Mobius” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/update-showreel.mp4"><img src="/media/tpl/update-showreel.webp" width="244" height="432" alt="Template “Update showreel” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=58825d97-af6e-46e9-ba31-93089a3da622" data-cta="template" data-cta-target="try" aria-label="Open “Update showreel” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/animated-icons.mp4"><img src="/media/tpl/animated-icons.webp" width="432" height="432" alt="Template “Animated icons” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=219eb2ef-039a-4a3b-be86-bfc6c9c6b0cb" data-cta="template" data-cta-target="try" aria-label="Open “Animated icons” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/pixel-sort-glitch.mp4"><img src="/media/tpl/pixel-sort-glitch.webp" width="432" height="432" alt="Template “Pixel sort glitch” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=c7b67083-c5e6-45b3-bb4e-6b27b5b1f748" data-cta="template" data-cta-target="try" aria-label="Open “Pixel sort glitch” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/concert-tour.mp4"><img src="/media/tpl/concert-tour.webp" width="346" height="432" alt="Template “Concert tour” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=781dc0cc-6964-4d70-a224-3cecf41113d8" data-cta="template" data-cta-target="try" aria-label="Open “Concert tour” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/gallery-wheel.mp4"><img src="/media/tpl/gallery-wheel.webp" width="346" height="432" alt="Template “Gallery wheel — New Drop” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=8a15d40a-a664-457e-aa1a-8d2aa0a678a3" data-cta="template" data-cta-target="try" aria-label="Open “Gallery wheel — New Drop” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/terminal-pills.mp4"><img src="/media/tpl/terminal-pills.webp" width="346" height="432" alt="Template “Terminal and falling pills” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=8e89f239-9e57-4bb7-938a-b3068c407a68" data-cta="template" data-cta-target="try" aria-label="Open “Terminal and falling pills” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/kinetic-blocks-photo.mp4"><img src="/media/tpl/kinetic-blocks-photo.webp" width="346" height="432" alt="Template “Kinetic blocks on photo” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=b101b475-51ba-41d8-91ce-7a35bcb443ef" data-cta="template" data-cta-target="try" aria-label="Open “Kinetic blocks on photo” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/flower-poster.mp4"><img src="/media/tpl/flower-poster.webp" width="346" height="432" alt="Template “Flower poster” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=f4924a7f-8c3b-4e31-bdb8-52e7ad8390ef" data-cta="template" data-cta-target="try" aria-label="Open “Flower poster” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/ascii-field.mp4"><img src="/media/tpl/ascii-field.webp" width="346" height="432" alt="Template “ASCII field” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=d0c0d98f-3af9-40f2-a593-5f9b0c229aad" data-cta="template" data-cta-target="try" aria-label="Open “ASCII field” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/halftone-copies.mp4"><img src="/media/tpl/halftone-copies.webp" width="244" height="432" alt="Template “Halftone copies” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=ffd78ef0-2072-4550-b968-d3cb329b987a" data-cta="template" data-cta-target="try" aria-label="Open “Halftone copies” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/circles-grid.mp4"><img src="/media/tpl/circles-grid.webp" width="346" height="432" alt="Template “Circles grid background” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=da109d5b-cf7c-4511-a4d3-864ae96dc920" data-cta="template" data-cta-target="try" aria-label="Open “Circles grid background” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/swash.mp4"><img src="/media/tpl/swash.webp" width="768" height="432" alt="Template “Swash” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=c3a6d92b-07f8-4e42-bcf6-e1927c1293ba" data-cta="template" data-cta-target="try" aria-label="Open “Swash” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/typography-helix.mp4"><img src="/media/tpl/typography-helix.webp" width="346" height="432" alt="Template “Typography Helix” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=cd853e2c-8a85-4166-b7d4-91349b1e375c" data-cta="template" data-cta-target="try" aria-label="Open “Typography Helix” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/lines-move.mp4"><img src="/media/tpl/lines-move.webp" width="432" height="432" alt="Template “Lines move” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=aa407517-e45e-47b3-9b71-9afad0cd7651" data-cta="template" data-cta-target="try" aria-label="Open “Lines move” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/best-race.mp4"><img src="/media/tpl/best-race.webp" width="346" height="432" alt="Template “Best Race” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=feb70368-de04-45d9-9baf-d1e650e32ac8" data-cta="template" data-cta-target="try" aria-label="Open “Best Race” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/text-tunnel.mp4"><img src="/media/tpl/text-tunnel.webp" width="768" height="432" alt="Template “Text Tunnel” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=98980b76-a186-43c4-a8db-f3ec6ee4b107" data-cta="template" data-cta-target="try" aria-label="Open “Text Tunnel” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/single-glyph.mp4"><img src="/media/tpl/single-glyph.webp" width="346" height="432" alt="Template “Single glyph” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=e55df69a-941c-4c83-bcbf-62a9f4693cf1" data-cta="template" data-cta-target="try" aria-label="Open “Single glyph” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/halftone-cylinder.mp4"><img src="/media/tpl/halftone-cylinder.webp" width="432" height="432" alt="Template “Halftone cylinder” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=4c2bf8d8-922c-4acb-8980-204305f2093d" data-cta="template" data-cta-target="try" aria-label="Open “Halftone cylinder” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/testimonial.mp4"><img src="/media/tpl/testimonial.webp" width="346" height="432" alt="Template “Testimonial” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=802d46b4-0b05-49b1-bb99-44f69baace1a" data-cta="template" data-cta-target="try" aria-label="Open “Testimonial” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/flower-text.mp4"><img src="/media/tpl/flower-text.webp" width="346" height="432" alt="Template “Flower text” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=401d81c7-bd3f-43d5-b8f3-3b1f2ef355f5" data-cta="template" data-cta-target="try" aria-label="Open “Flower text” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/drinks-menu.mp4"><img src="/media/tpl/drinks-menu.webp" width="346" height="432" alt="Template “Drinks Menu” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=575b6389-fc7d-4244-87f9-81b5019b8ce4" data-cta="template" data-cta-target="try" aria-label="Open “Drinks Menu” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/marquee-font-morph.mp4"><img src="/media/tpl/marquee-font-morph.webp" width="768" height="432" alt="Template “Marquee font morph” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=3d6a9370-b67f-4a59-97f5-229a0640642a" data-cta="template" data-cta-target="try" aria-label="Open “Marquee font morph” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/heart-beats.mp4"><img src="/media/tpl/heart-beats.webp" width="346" height="432" alt="Template “The heart beats” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=3827c427-3871-46e7-aa8b-309063a64474" data-cta="template" data-cta-target="try" aria-label="Open “The heart beats” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/wave-ticker.mp4"><img src="/media/tpl/wave-ticker.webp" width="346" height="432" alt="Template “Wave Ticker Repeat” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=e8fd923c-43fa-44f5-abfe-fb6beddea195" data-cta="template" data-cta-target="try" aria-label="Open “Wave Ticker Repeat” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/wave.mp4"><img src="/media/tpl/wave.webp" width="432" height="432" alt="Template “Wave” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=b5908e44-12cc-4a79-baa8-4a03fadf6df1" data-cta="template" data-cta-target="try" aria-label="Open “Wave” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/festival-lineup.mp4"><img src="/media/tpl/festival-lineup.webp" width="346" height="432" alt="Template “Festival Lineup” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=d90556cb-78f9-45c1-bab1-163503eba2cd" data-cta="template" data-cta-target="try" aria-label="Open “Festival Lineup” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/gradient-map.mp4"><img src="/media/tpl/gradient-map.webp" width="768" height="432" alt="Template “Gradient Map” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=cfc6edec-21dc-4ccb-8b9a-e4c111a84f10" data-cta="template" data-cta-target="try" aria-label="Open “Gradient Map” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/text-circle.mp4"><img src="/media/tpl/text-circle.webp" width="346" height="432" alt="Template “Text circle” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=d09fc9cb-1a68-4925-82dc-2dcb818c62fd" data-cta="template" data-cta-target="try" aria-label="Open “Text circle” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/glyph-trails.mp4"><img src="/media/tpl/glyph-trails.webp" width="432" height="432" alt="Template “Glyph trails” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=3f701d1b-354d-4ab8-a1eb-3d4f4282d71c" data-cta="template" data-cta-target="try" aria-label="Open “Glyph trails” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/perspective-text.mp4"><img src="/media/tpl/perspective-text.webp" width="346" height="432" alt="Template “Perspective text” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=bf3e7308-bb4f-4445-a235-e7aa4f4d5bc0" data-cta="template" data-cta-target="try" aria-label="Open “Perspective text” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/photo-outlines.mp4"><img src="/media/tpl/photo-outlines.webp" width="244" height="432" alt="Template “Photo Outlines” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=60d10212-b6bc-40d2-9b9e-1c704221f664" data-cta="template" data-cta-target="try" aria-label="Open “Photo Outlines” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/colourful-copies.mp4"><img src="/media/tpl/colourful-copies.webp" width="346" height="432" alt="Template “Colourful Copies” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=222412b2-c3ba-44a9-90db-30c0256431aa" data-cta="template" data-cta-target="try" aria-label="Open “Colourful Copies” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/marquee-in.mp4"><img src="/media/tpl/marquee-in.webp" width="432" height="432" alt="Template “Marquee in” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=bfbb2d29-fd8a-4862-9dd9-59760dceaac4" data-cta="template" data-cta-target="try" aria-label="Open “Marquee in” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/gradient-background.mp4"><img src="/media/tpl/gradient-background.webp" width="346" height="432" alt="Template “Gradient Background” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=6080f9d7-773f-4a5b-9295-04c33541577c" data-cta="template" data-cta-target="try" aria-label="Open “Gradient Background” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/flower-wave.mp4"><img src="/media/tpl/flower-wave.webp" width="346" height="432" alt="Template “Flower wave” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=04da8bac-854c-4a8c-b9c3-067c4cf1b4cf" data-cta="template" data-cta-target="try" aria-label="Open “Flower wave” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/can-you-not.mp4"><img src="/media/tpl/can-you-not.webp" width="768" height="432" alt="Template “Can you not” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=5c5d7158-226e-4328-906f-a94c3de049a4" data-cta="template" data-cta-target="try" aria-label="Open “Can you not” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/weight-wave.mp4"><img src="/media/tpl/weight-wave.webp" width="346" height="432" alt="Template “Weight wave” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=7ad32f3d-56e8-4805-b204-c050f071a485" data-cta="template" data-cta-target="try" aria-label="Open “Weight wave” in the editor" draggable="false">Open in editor</a></div>
+        <div class="tgal__item" data-video="/media/tpl/keep-moving.mp4"><img src="/media/tpl/keep-moving.webp" width="346" height="432" alt="Template “Keep moving” from the Swash community" loading="lazy" decoding="async" draggable="false"><a class="tgal__open js-app-link" href="/app/?template=2c647c16-8d28-4e13-acdf-7a4c64de4653" data-cta="template" data-cta-target="try" aria-label="Open “Keep moving” in the editor" draggable="false">Open in editor</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING per Figma 27:1461 -->
+  <section class="pricing" id="pricing" data-track-section="pricing">
+    <div class="container">
+      <div class="pricing__head">
+        <h2 class="pricing__heading reveal" data-lines>Free to <em class="slip">start</em></h2>
+        <p class="pricing__sub reveal" data-delay="1">No card, no trial clock. Pro adds the premium shelf and 4K export when a project asks for it.</p>
+      </div>
+      <div class="pricing__grid" data-stagger data-stagger-rise>
+        <div class="card pcard">
+          <h3 class="pcard__plan">Free</h3>
+          <p class="pcard__price">$0</p>
+          <p class="card__body">Everything you need to make real work, not a demo.</p>
+          <ul class="pcard__list">
+            <li>The full editor</li>
+            <li>Core presets and fonts</li>
+            <li>Video export</li>
+          </ul>
+          <a class="btn btn--dark pcard__cta js-app-link" href="/app/" data-cta="pricing_free" data-cta-target="try"><span class="cta-out">Try it free</span><span class="cta-in">Open app</span></a>
+        </div>
+        <div class="card pcard pcard--pro">
+          <h3 class="pcard__plan">Pro</h3>
+          <p class="pcard__price">$12<span class="pcard__per"> / month</span></p>
+          <p class="card__body">For the weeks when type is the whole job.</p>
+          <ul class="pcard__list">
+            <li>Everything in Free</li>
+            <li>The premium template and font shelf</li>
+            <li>Export up to 4k 60fps</li>
+          </ul>
+          <a class="btn btn--primary pcard__cta js-app-link" href="/app/?plan=pro" data-cta="pricing_pro" data-cta-target="try">Go Pro</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ: прямые ответы на вопросы, которые задают поисковику и ИИ-ассистенту
+       («бесплатно ли», «нужен ли After Effects»). Текст в разметке целиком
+       (details/summary), без скриптов, и дословно повторён в JSON-LD в head. -->
+  <section class="faq" id="faq" data-track-section="faq">
+    <div class="container faq__inner">
+      <h2 class="faq__heading reveal" data-lines>Before you <em class="slip">ask</em></h2>
+      <div class="faq__list reveal" data-delay="1">
+        <details class="faq__item">
+          <summary class="faq__q"><span class="faq__qt">What is Swash?</span><span class="faq__icon" aria-hidden="true"></span></summary>
+          <div class="faq__a"><div class="faq__a-in"><p>Swash is a motion design editor that runs in your browser. Type your text, pick a <a href="#presets">preset</a> and you have a finished animation in minutes, then add shaders, <a href="#blocks">animated backgrounds, galleries of your work, widgets</a> and sound. Everything stays editable, and you export a video. There is nothing to install, and new features ship most weeks: see <a href="/whats-new">what’s new</a>.</p></div></div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q"><span class="faq__qt">How fast can I make something?</span><span class="faq__icon" aria-hidden="true"></span></summary>
+          <div class="faq__a"><div class="faq__a-in"><p>Most posts take a few minutes. Every preset is a complete animation, the <a href="/templates">templates</a> open ready to remix, and changing the words, the font or the colours keeps the motion intact.</p></div></div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q"><span class="faq__qt">What can I make besides animated text?</span><span class="faq__icon" aria-hidden="true"></span></summary>
+          <div class="faq__a"><div class="faq__a-in"><p>Galleries that turn a folder of images or videos into a moving sequence in 21 layouts, 24 animated backgrounds, ready-made widgets such as a counter, terminal, chat, globe, map, cursor and ransom note, and 41 shader effects from grain and halftone to glitch, pixel sort and CRT. Animations can make sound too, from a library of over 270 sounds.</p></div></div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q"><span class="faq__qt">Is Swash free?</span><span class="faq__icon" aria-hidden="true"></span></summary>
+          <div class="faq__a"><div class="faq__a-in"><p>Yes, you can start for free. The free plan includes the full editor, up to 3 projects and export up to 720p at 30 fps with a Swash watermark, plus a few watermark-free exports each month. <a href="#pricing">Pro</a> costs $12 a month and adds unlimited projects, export up to 4K at 60 fps without a watermark and the premium presets, templates and fonts, with a 7-day free trial.</p></div></div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q"><span class="faq__qt">Do I need to sign up?</span><span class="faq__icon" aria-hidden="true"></span></summary>
+          <div class="faq__a"><div class="faq__a-in"><p>No. The <a class="js-app-link" href="/app/" data-cta="faq" data-cta-target="try">editor</a> opens without an account and keeps your work in the browser. Sign in to save projects to your account and to open templates from the community.</p></div></div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q"><span class="faq__qt">What formats can I export?</span><span class="faq__icon" aria-hidden="true"></span></summary>
+          <div class="faq__a"><div class="faq__a-in"><p>MP4 video, GIF up to 540 px, WebM with a transparent background for overlays in browsers that support it, and a single PNG frame.</p></div></div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q"><span class="faq__qt">Can I use my own fonts?</span><span class="faq__icon" aria-hidden="true"></span></summary>
+          <div class="faq__a"><div class="faq__a-in"><p>Yes. Upload any .ttf or .otf file, or pick from about 200 open-licensed <a href="/typefaces">Google fonts</a>. Variable fonts work too, and their axes, such as weight and width, can be animated.</p></div></div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q"><span class="faq__qt">Is Swash an alternative to After Effects?</span><span class="faq__icon" aria-hidden="true"></span></summary>
+          <div class="faq__a"><div class="faq__a-in"><p>For text animation, social clips, motion posters and product videos, yes: you get the result in the browser in minutes, without keyframing every letter. For character animation or compositing live footage, After Effects is still the right tool.</p></div></div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q"><span class="faq__qt">Does Swash work with Figma?</span><span class="faq__icon" aria-hidden="true"></span></summary>
+          <div class="faq__a"><div class="faq__a-in"><p>Yes. The free <a href="https://www.figma.com/community/plugin/1672356268757480283" target="_blank" rel="noreferrer">Swash plugin for Figma</a> brings your text and layout over to Swash as editable layers.</p></div></div>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER per Figma 27:1487: nav row, poster wordmark, bottom line -->
+<footer class="footer" data-track-section="footer">
+  <div class="container footer__inner">
+    <div class="footer__top">
+      <div class="footer__intro">
+        <p class="footer__pitch">Swash is kinetic typography that stays type: vector glyphs, real presets, video out.</p>
+        <div class="footer__social">
+          <a class="footer__social-link" href="https://x.com/swashmotion" target="_blank" rel="noreferrer" aria-label="Swash on X">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.53 3h3.02l-6.6 7.54L21.75 21h-5.9l-4.62-6.04L5.94 21H2.92l7.06-8.07L2.5 3h6.05l4.18 5.52L17.53 3Zm-1.06 16.2h1.67L7.62 4.71H5.83L16.47 19.2Z" fill="currentColor"/></svg>
+          </a>
+          <a class="footer__social-link" href="https://instagram.com/swashmotion" target="_blank" rel="noreferrer" aria-label="Swash on Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.9c2.96 0 3.31.01 4.48.06 1.08.05 1.67.23 2.06.38.52.2.89.44 1.28.83.39.39.63.76.83 1.28.15.39.33.98.38 2.06.05 1.17.06 1.52.06 4.49s-.01 3.32-.06 4.49c-.05 1.08-.23 1.67-.38 2.06-.2.52-.44.89-.83 1.28-.39.39-.76.63-1.28.83-.39.15-.98.33-2.06.38-1.17.05-1.52.06-4.48.06s-3.31-.01-4.48-.06c-1.08-.05-1.67-.23-2.06-.38-.52-.2-.89-.44-1.28-.83a3.44 3.44 0 0 1-.83-1.28c-.15-.39-.33-.98-.38-2.06C2.91 15.32 2.9 14.97 2.9 12s.01-3.32.06-4.49c.05-1.08.23-1.67.38-2.06.2-.52.44-.89.83-1.28.39-.39.76-.63 1.28-.83.39-.15.98-.33 2.06-.38C8.69 2.91 9.04 2.9 12 2.9Zm0 5.2a3.9 3.9 0 1 0 0 7.8 3.9 3.9 0 0 0 0-7.8Zm0 6.43a2.53 2.53 0 1 1 0-5.06 2.53 2.53 0 0 1 0 5.06Zm4.97-6.6a.91.91 0 1 1-1.82 0 .91.91 0 0 1 1.82 0Z" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+      <nav class="footer__col" aria-label="Product">
+        <span class="footer__col-title">Product</span>
+        <a href="/templates" class="footer__link">Templates</a>
+        <a href="#sound" class="footer__link">Sound</a>
+        <a href="/typefaces" class="footer__link">Typefaces</a>
+        <a href="#pricing" class="footer__link">Pricing</a>
+        <a href="#faq" class="footer__link">FAQ</a>
+        <a href="/whats-new" class="footer__link">What’s new</a>
+        <a href="https://www.figma.com/community/plugin/1672356268757480283" class="footer__link" target="_blank" rel="noreferrer">Figma plugin</a>
+      </nav>
+      <nav class="footer__col" aria-label="Legal">
+        <span class="footer__col-title">Legal</span>
+        <a href="/app/privacy" class="footer__link">Privacy policy</a>
+        <a href="/app/terms" class="footer__link">Terms of service</a>
+        <a href="mailto:support@swashmotion.com" class="footer__link">Support</a>
+      </nav>
+    </div>
+
+
+    <div class="footer__bottom">
+      <span>© 2026 Swash</span>
+      <span>Kinetic typography in the browser</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Согласие на аналитику. Не украшение: PostHog поднят в режиме
+     cookieless_mode:'on_reject', и до ответа не уходит ни одного события
+     (см. src/consent.ts). Ответ общий с приложением — один origin. -->
+<div class="consent js-consent" role="dialog" aria-live="polite" aria-label="Analytics consent" hidden>
+  <p class="consent__title">Help make Swash better?</p>
+  <p class="consent__text">We collect anonymous usage statistics — which pages get read and what gets clicked. Never the contents of your projects or your text.</p>
+  <div class="consent__actions">
+    <button class="btn btn--ghost consent__btn js-consent-deny" type="button">Decline</button>
+    <button class="btn btn--primary consent__btn js-consent-allow" type="button">Allow</button>
+  </div>
+</div>
+
+<!-- Полотно, которое открывается из-под страницы в самом конце скролла -->
+<div class="ascii-stage js-ascii" aria-hidden="true">
+  <pre class="ascii ascii--field"></pre>
+  <pre class="ascii ascii--mark"></pre>
+</div>
+
+<!-- Shared vector defs: the real Swash wordmark + the Figma mark -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- «Только чернила»: альфа берётся из яркости кадра, поэтому тёмная
+         подложка шейдера уходит в прозрачность, а точки и линии остаются.
+         Работает только на ОДНОДОМЕННОМ iframe (см. embed-origin.ts):
+         кросс-доменные фреймы Chrome рисует мимо фильтров. -->
+    <filter id="ink-only" color-interpolation-filters="sRGB">
+      <feColorMatrix type="matrix" values="1 0 0 0 0
+                                           0 1 0 0 0
+                                           0 0 1 0 0
+                                           0.34 0.6 0.06 0 0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="1.7" intercept="-0.12"/></feComponentTransfer>
+    </filter>
+  <g id="swash-wordmark"><path d="M68.4658 10.1328C69.0662 9.36225 69.8057 8.71467 70.6846 8.19043C71.9498 7.41353 73.2712 7.02539 74.6475 7.02539C76.5562 7.02546 77.9439 7.64668 78.8096 8.88965C79.6974 10.1327 79.9075 11.7754 79.4414 13.8174L77.0107 24.3389H72.0166L74.3145 14.25C74.5585 13.1404 74.4916 12.3188 74.1143 11.7861C73.759 11.2314 73.0927 10.9541 72.1162 10.9541C70.9401 10.9542 69.9192 11.3315 69.0537 12.0859C68.2804 12.7778 67.7125 13.7407 67.3496 14.9736L65.1914 24.3389H61.4824C62.1925 23.8969 62.8001 23.3581 63.291 22.7148L63.2988 22.7051C64.0773 21.6581 64.4619 20.4469 64.4619 19.1113C64.4618 17.7592 64.0419 16.5618 63.1768 15.585C62.943 15.3077 62.6798 15.0534 62.3906 14.8193L62.7832 13.1201H65.7715L65.793 12.1416C65.8203 10.9091 65.4434 9.79747 64.666 8.85352C64.4469 8.58098 64.2041 8.33 63.9404 8.09863L65.7236 0.366211H70.7178L68.4658 10.1328Z" fill="#24FF84"/><path d="M57.4681 7.02539C58.9332 7.02539 60.2096 7.24746 61.2972 7.69141C62.407 8.11311 63.2724 8.71246 63.8939 9.48926C64.5154 10.244 64.8155 11.1212 64.7933 12.1201H60.3314C60.3536 11.7428 60.2426 11.4207 59.9984 11.1543C59.7542 10.8879 59.3991 10.6879 58.933 10.5547C58.4669 10.4216 57.9005 10.3545 57.2347 10.3545C56.3249 10.3545 55.6483 10.4776 55.2045 10.7217C54.7605 10.9658 54.5385 11.332 54.5385 11.8203C54.5385 12.1753 54.6826 12.4637 54.9711 12.6855C55.2818 12.9075 55.826 13.1516 56.6029 13.418L59.433 14.3838C60.7645 14.8277 61.7632 15.4491 62.4291 16.248C63.1171 17.0249 63.4612 17.9795 63.4613 19.1113C63.4613 20.2434 63.1392 21.2427 62.4955 22.1084C61.8518 22.9518 60.9533 23.6071 59.7992 24.0732C58.6671 24.5394 57.3347 24.7725 55.8031 24.7725C54.3065 24.7724 52.9864 24.5641 51.8402 24.1553C51.8182 23.9344 51.8221 23.5658 51.8812 23.0137V23.0107C51.9444 22.4001 52.0165 21.8979 52.0951 21.499L52.4691 19.8633C52.5378 20.0223 52.6279 20.1718 52.7406 20.3105C53.0291 20.6655 53.4506 20.9429 54.0052 21.1426C54.5602 21.3202 55.2264 21.4092 56.0033 21.4092C56.9798 21.4092 57.7122 21.265 58.2006 20.9766C58.7111 20.688 58.9662 20.2659 58.9662 19.7109C58.9662 19.3336 58.8331 19.0225 58.5668 18.7783C58.3226 18.5343 57.9231 18.3129 57.3685 18.1133L54.8051 17.2471C54.2145 17.0502 53.6827 16.8432 53.2084 16.6309L53.724 14.3799L53.725 14.3809C54.1302 12.6645 54.108 11.1017 53.5013 9.78809C53.2491 9.21145 52.9139 8.70338 52.5023 8.26367C52.8298 8.06039 53.1858 7.87935 53.5726 7.72461C54.6825 7.25848 55.981 7.0254 57.4681 7.02539Z" fill="#24FF84"/><path fill-rule="evenodd" clip-rule="evenodd" d="M46.0254 7.02539C47.6457 7.02539 49.0223 7.29155 50.1543 7.82422C51.3085 8.33475 52.1188 9.12303 52.585 10.1885C53.0733 11.2317 53.1292 12.5524 52.752 14.1504L51.1201 21.2764C51.0314 21.7202 50.9533 22.2638 50.8867 22.9072C50.8201 23.5286 50.8092 24.0059 50.8535 24.3389H45.9258C45.9036 23.9616 45.9146 23.5062 45.959 22.9736C46.0033 22.6188 46.0676 22.2198 46.1514 21.7764C45.5987 22.4982 44.9584 23.1199 44.2275 23.6396C43.2509 24.3277 42.0083 24.6718 40.499 24.6719C38.9896 24.6719 37.7792 24.2837 36.8691 23.5068C36.6041 23.2749 36.3793 23.0225 36.1934 22.751L40.4307 14.8633C41.4733 14.5462 42.6389 14.3193 43.9277 14.1836L47.8691 13.7666L48.0234 13.085C48.1566 12.5301 48.1236 12.0748 47.9238 11.7197C47.7462 11.3425 47.4571 11.0652 47.0576 10.8877C46.6581 10.7102 46.1808 10.6211 45.626 10.6211C44.7382 10.6211 44.0168 10.7992 43.4619 11.1543C42.9293 11.4872 42.5961 11.8754 42.4629 12.3193H41.7988L44.5986 7.10645C45.056 7.05286 45.5315 7.0254 46.0254 7.02539ZM43.7949 17.1143C42.8405 17.2252 42.0632 17.4913 41.4639 17.9131C40.8647 18.3126 40.5654 18.8789 40.5654 19.6113C40.5655 20.0773 40.7537 20.4326 41.1309 20.6768C41.5082 20.8987 42.0194 21.0098 42.6631 21.0098C43.7729 21.0097 44.7163 20.7096 45.4932 20.1104C46.1729 19.5665 46.6145 18.9887 46.8184 18.377L46.8906 18.1162L47.2139 16.6787L43.7949 17.1143Z" fill="#24FF84"/><path d="M10.3564 24.6388C8.84695 24.6388 7.44853 24.4391 6.1611 24.0395C4.89586 23.64 3.7971 23.085 2.86482 22.3747C1.95474 21.6644 1.24443 20.832 0.733893 19.8775C0.223359 18.9009 -0.0208098 17.8354 0.00138732 16.6812H4.92915C4.92915 17.2805 5.06234 17.8354 5.3287 18.3459C5.59507 18.8565 5.98352 19.3004 6.49405 19.6778C7.00459 20.0551 7.61501 20.3437 8.32532 20.5435C9.03563 20.7432 9.81253 20.8431 10.656 20.8431C12.0322 20.8431 13.0866 20.5879 13.8191 20.0773C14.5738 19.5668 14.9512 18.8454 14.9512 17.9131C14.9512 17.2694 14.7514 16.7256 14.3518 16.2816C13.9523 15.8377 13.3197 15.4492 12.454 15.1163L8.32532 13.5181C6.57174 12.83 5.28431 12.0087 4.46301 11.0542C3.64172 10.0775 3.23107 8.87886 3.23107 7.45824C3.23107 5.94883 3.61952 4.6392 4.39642 3.52935C5.17332 2.39729 6.26098 1.5316 7.6594 0.93228C9.05782 0.31076 10.6893 0 12.5539 0C13.9079 0 15.1398 0.177577 16.2497 0.532731C17.3596 0.865688 18.314 1.35403 19.1131 1.99774C19.9122 2.64146 20.4154 3.27705 20.9444 4.29515C21.5014 5.36702 21.8069 6.20651 21.7847 7.27197H16.8569C16.8791 6.58386 16.4939 5.93774 16.1165 5.4272C15.7392 4.91667 15.2064 4.51712 14.5183 4.22856C13.8302 3.93999 13.02 3.79571 12.0877 3.79571C11.2886 3.79571 10.5894 3.8956 9.9901 4.09537C9.41298 4.29515 8.95794 4.59481 8.62498 4.99436C8.31422 5.37171 8.15884 5.84895 8.15884 6.42607C8.15884 6.981 8.34752 7.46934 8.72487 7.89109C9.12442 8.31283 9.75703 8.69018 10.6227 9.02314L14.4184 10.5214C16.394 11.2983 17.8035 12.1751 18.647 13.1518C19.4905 14.1063 19.9122 15.3382 19.9122 16.8476C19.9122 18.4458 19.5127 19.8332 18.7136 21.0096C17.9367 22.1639 16.8379 23.0628 15.4173 23.7066C13.9967 24.3281 12.3097 24.6388 10.3564 24.6388Z" fill="#24FF84"/><path d="M32.8169 18.7393L37.9019 7.3584H43.3286L34.2056 24.3389H29.3774L28.8022 12.9902L22.9849 24.3389H18.0903L18.0093 23.2637C18.6001 22.7697 19.1142 22.2061 19.5435 21.5684L19.5425 21.5674C20.4661 20.2059 20.9126 18.6189 20.9126 16.8477C20.9126 15.142 20.4299 13.6593 19.396 12.4893C18.8121 11.8159 18.0281 11.2128 17.0708 10.667L16.9302 8.77246H21.9702L21.8579 18.7393L27.6128 7.3584H32.2739L32.8169 18.7393Z" fill="#24FF84"/></g>
+  </defs>
+</svg>
+
+</body>
+</html>
+

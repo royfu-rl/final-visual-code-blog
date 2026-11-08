@@ -1,0 +1,70 @@
+{
+ "links": [
+  [
+   "Made in Webflow",
+   "https://webflow.com/made-in-webflow"
+  ]
+ ],
+ "cards": [
+  {
+   "img": "gsap-flip-layout.png",
+   "name": "gsap-flip-layout.webflow.io",
+   "code": [
+    [
+     "index.html",
+     "gsap-flip-layout.html"
+    ]
+   ]
+  },
+  {
+   "img": "horizontal-scrolling-gsap.png",
+   "name": "horizontal-scrolling-gsap.webflow.io",
+   "code": [
+    [
+     "index.html",
+     "horizontal-scrolling-gsap.html"
+    ]
+   ]
+  },
+  {
+   "img": "video-scrub-on-scroll.jpg",
+   "name": "video-scrub-on-scroll.webflow.io",
+   "code": [
+    [
+     "index.html",
+     "video-scrub-on-scroll.html"
+    ]
+   ]
+  },
+  {
+   "img": "gsap-text-scroll-reveal.png",
+   "name": "gsap-text-scroll-reveal.webflow.io",
+   "code": [
+    [
+     "index.html",
+     "gsap-text-scroll-reveal.html"
+    ]
+   ]
+  },
+  {
+   "img": "sticky-sections-gsap.PNG",
+   "name": "sticky-sections-gsap.webflow.io",
+   "code": [
+    [
+     "index.html",
+     "sticky-sections-gsap.html"
+    ]
+   ]
+  },
+  {
+   "img": "oma-gsap-hero.png",
+   "name": "oma-gsap-hero.webflow.io",
+   "code": [
+    [
+     "index.html",
+     "oma-gsap-hero.html"
+    ]
+   ]
+  }
+ ]
+}

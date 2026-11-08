@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A8 一致性</title>
+<style>
+  :root{--ink:#111418;--soft:#5b636e;--line:#e4e7ec;--band:#f6f7f9;--ok:#0b7a4b;--ok-bg:#e6f5ed;--bad:#b42318;--bad-bg:#fdecea;
+        --mono:"SF Mono",ui-monospace,"JetBrains Mono",Menlo,Consolas,monospace}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:transparent;color:var(--ink);
+            font:13px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .top{display:flex;align-items:center;gap:12px;padding:10px 14px;background:var(--band);border-bottom:1px solid var(--line)}
+  .tag{font:600 10.5px/1 var(--mono);letter-spacing:.08em;color:var(--soft);text-transform:uppercase}
+  .query{flex:1;min-width:0;font-size:13.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .rule{font-size:12px;color:var(--soft);white-space:nowrap}
+  button{font:inherit;font-size:12px;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 11px;cursor:pointer}
+  button:hover{border-color:#c5cad3}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:14px}
+  .head{display:flex;align-items:center;gap:8px;margin-bottom:8px;min-height:24px}
+  .side{font:700 12px/1 var(--mono);width:22px;height:22px;border-radius:6px;display:grid;place-items:center;background:var(--ink);color:#fff;flex:none}
+  .pill{font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:999px;flex:none}
+  .ok .pill{color:var(--ok);background:var(--ok-bg)} .bad .pill{color:var(--bad);background:var(--bad-bg)}
+  .say{flex:1;min-width:0;color:var(--soft);font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .open{border:0;background:none;color:#2f6bff;padding:0 2px}
+  .stage{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:10px;background:#eef0f3}
+  .stage iframe{position:absolute;top:0;left:0;width:1280px;height:800px;border:0;transform-origin:0 0;background:#fff}
+  @media (max-width:720px){.grid{grid-template-columns:1fr}.say,.query{white-space:normal}.rule{display:none}}
+  /* 放大态：父页把本 iframe 铺满视口，这里画成居中的大卡片，点卡片外收起 */
+  body.full{height:100vh;display:flex;align-items:center;justify-content:center;padding:28px}
+  body.full .card{width:min(100%,2400px);box-shadow:0 24px 80px rgba(0,0,0,.35)}
+  /* 放大态只放一张、尽量大，A / B 原地切换（空格或方向键），差别最容易看出来 */
+  .flip{display:none;gap:2px;background:#e9ecf1;border-radius:999px;padding:3px}
+  .flip button{border:0;background:none;padding:4px 12px}
+  .flip button.on{background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.12)}
+  body.full .flip{display:inline-flex}
+  body.full .grid{grid-template-columns:1fr}
+  body.full .grid > div{display:none}
+  body.full .grid > div.sel{display:block}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top"><span class="tag">Query</span><span class="query">为陶艺课程平台 Kiln Academy 做课程列表页</span><span class="rule">A8 · 一致性</span><span class="flip" title="空格或方向键切换"><button class="on">A 符合</button><button>B 违反</button></span><button id="zoom">放大对比</button></div>
+  <div class="grid">
+    <div class="ok sel"><div class="head"><span class="side">A</span><span class="pill">符合</span><span class="say">六张卡片同一套圆角、阴影、标签和按钮</span><button class="open" data-v="good">新标签打开</button></div><div class="stage"><iframe title="A" data-v="good"></iframe></div></div>
+    <div class="bad"><div class="head"><span class="side">B</span><span class="pill">违反</span><span class="say">六张卡片六种圆角、边框、按钮和标题样式</span><button class="open" data-v="bad">新标签打开</button></div><div class="stage"><iframe title="B" data-v="bad"></iframe></div></div>
+  </div>
+</div>
+<script>
+(function(){
+  var PAGE = "<!doctype html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>Kiln Academy &middot; Courses<\/title>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link href=\"https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Spectral:wght@600&display=swap\" rel=\"stylesheet\">\n<style>\n  *{box-sizing:border-box;margin:0;padding:0}\n  body{font-family:Figtree,system-ui,sans-serif;background:#f6f5f2;color:#1b1d21;-webkit-font-smoothing:antialiased}\n  a{color:inherit;text-decoration:none}\n  .wrap{max-width:1184px;margin:0 auto;padding:0 52px}\n  nav{display:flex;align-items:center;height:72px;gap:30px;font-size:14.5px;color:#5d6168}\n  .logo{font-weight:700;font-size:19px;color:#1b1d21;margin-right:auto}\n  .head{display:flex;align-items:end;justify-content:space-between;padding:28px 0 20px}\n  h1{font-size:40px;font-weight:700;letter-spacing:-.02em}\n  .count{font-size:14.5px;color:#5d6168}\n  .chips{display:flex;gap:8px;margin-bottom:24px}\n  .chip{font-size:13.5px;padding:7px 14px;border-radius:999px;background:#fff;border:1px solid #e3e1db}\n  .chip.on{background:#1b1d21;color:#fff;border-color:#1b1d21}\n  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding-bottom:64px}\n  .c{background:#fff;border:1px solid #e7e5df;border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.04)}\n  .img{aspect-ratio:16/8;position:relative;overflow:hidden}\n  .img i{position:absolute;border-radius:50%}\n  .k1{background:#e9e1d3}.k1 i{width:120px;height:120px;background:#c96f4a;right:40px;top:30px}\n  .k2{background:#dfe6e0}.k2 i{width:180px;height:180px;background:#5f7f6b;left:-30px;bottom:-90px}\n  .k3{background:#e4e2ea}.k3 i{width:90px;height:90px;background:#3f3d56;left:44%;top:40px}\n  .k4{background:#efe6d6}.k4 i{width:150px;height:60px;border-radius:60px;background:#b98b3e;left:30px;top:56px}\n  .k5{background:#dde3e8}.k5 i{width:110px;height:110px;background:#4e6a85;right:-20px;top:-20px}\n  .k6{background:#ebe0db}.k6 i{width:70px;height:70px;background:#8c4a3c;left:60px;bottom:24px}\n  .body{padding:18px 20px 20px}\n  .tag{display:inline-block;font-size:12px;font-weight:600;color:#5d6168;background:#f1efea;padding:4px 9px;border-radius:6px}\n  .c h3{font-size:18px;font-weight:600;line-height:1.3;margin:12px 0 6px}\n  .meta{font-size:13.5px;color:#5d6168}\n  .foot{display:flex;justify-content:space-between;align-items:center;margin-top:18px}\n  .price{font-weight:700;font-size:16px}\n  .go{font-size:14px;font-weight:600;padding:8px 16px;border-radius:9px;background:#1b1d21;color:#fff}\n\n  /* B：同样的六门课，每张卡片自成一派 —— 圆角、阴影、按钮、标签、标题各不相同 */\n  .bad .c:nth-child(1){border-radius:0;box-shadow:8px 8px 0 #1b1d21;border:2px solid #1b1d21}\n  .bad .c:nth-child(2){border-radius:28px;border:2px dashed #b6b1a6;box-shadow:none}\n  .bad .c:nth-child(3){border-radius:6px;box-shadow:0 18px 40px rgba(0,0,0,.18);border:0}\n  .bad .c:nth-child(4){border-radius:20px 0 20px 0;background:#fffbea}\n  .bad .c:nth-child(5){border-radius:40px;border:0;box-shadow:inset 0 0 0 3px #4e6a85}\n  .bad .c:nth-child(6){border-radius:2px;border:1px solid #1b1d21}\n  .bad .c:nth-child(3) .img{aspect-ratio:16/11}.bad .c:nth-child(5) .img{aspect-ratio:16/6}\n  .bad .c:nth-child(2) h3{font-family:Spectral,serif;font-size:21px}\n  .bad .c:nth-child(4) h3{font-size:15px;text-transform:uppercase;letter-spacing:.06em}\n  .bad .c:nth-child(6) h3{font-size:20px;font-weight:700}\n  .bad .c:nth-child(1) .tag{border-radius:999px;background:#ffe3d6;color:#c2410c}\n  .bad .c:nth-child(3) .tag{background:none;border:1px solid #3f3d56;color:#3f3d56;border-radius:0}\n  .bad .c:nth-child(5) .tag{background:#4e6a85;color:#fff}\n  .bad .c:nth-child(1) .go{border-radius:0;background:#c96f4a}\n  .bad .c:nth-child(2) .go{border-radius:999px;background:none;border:1.5px solid #1b1d21;color:#1b1d21}\n  .bad .c:nth-child(3) .go{background:none;color:#2f6bff;padding:0;text-decoration:underline}\n  .bad .c:nth-child(4) .go{border-radius:999px;background:linear-gradient(90deg,#b98b3e,#c96f4a)}\n  .bad .c:nth-child(5) .go{border-radius:4px;background:#4e6a85;font-size:12px;text-transform:uppercase;letter-spacing:.08em}\n  .bad .c:nth-child(6) .foot{flex-direction:row-reverse}\n  .bad .c:nth-child(2) .body{padding:24px 26px}.bad .c:nth-child(4) .body{padding:12px 14px 14px}\n<\/style>\n<\/head>\n<body class=\"{{V}}\">\n<div class=\"wrap\">\n  <nav><a class=\"logo\" href=\"#\">Kiln Academy<\/a><a href=\"#\">Courses<\/a><a href=\"#\">Teachers<\/a><a href=\"#\">Studio hire<\/a><a href=\"#\">Sign in<\/a><\/nav>\n  <div class=\"head\"><h1>Courses<\/h1><span class=\"count\">6 courses starting in November<\/span><\/div>\n  <div class=\"chips\"><span class=\"chip on\">All<\/span><span class=\"chip\">Wheel throwing<\/span><span class=\"chip\">Hand building<\/span><span class=\"chip\">Glazing<\/span><span class=\"chip\">Evening<\/span><\/div>\n  <section class=\"grid\">\n    <div class=\"c\"><div class=\"img k1\"><i><\/i><\/div><div class=\"body\"><span class=\"tag\">Beginner<\/span><h3>Wheel throwing: first cylinders<\/h3><p class=\"meta\">6 weeks &middot; Tuesdays 18:30<\/p><div class=\"foot\"><span class=\"price\">&pound;240<\/span><a class=\"go\" href=\"#\">Book a place<\/a><\/div><\/div><\/div>\n    <div class=\"c\"><div class=\"img k2\"><i><\/i><\/div><div class=\"body\"><span class=\"tag\">All levels<\/span><h3>Coil and slab building<\/h3><p class=\"meta\">4 weeks &middot; Saturdays 10:00<\/p><div class=\"foot\"><span class=\"price\">&pound;180<\/span><a class=\"go\" href=\"#\">Book a place<\/a><\/div><\/div><\/div>\n    <div class=\"c\"><div class=\"img k3\"><i><\/i><\/div><div class=\"body\"><span class=\"tag\">Intermediate<\/span><h3>Glaze chemistry for potters<\/h3><p class=\"meta\">5 weeks &middot; Wednesdays 19:00<\/p><div class=\"foot\"><span class=\"price\">&pound;220<\/span><a class=\"go\" href=\"#\">Book a place<\/a><\/div><\/div><\/div>\n    <div class=\"c\"><div class=\"img k4\"><i><\/i><\/div><div class=\"body\"><span class=\"tag\">Beginner<\/span><h3>Make a set of four mugs<\/h3><p class=\"meta\">One weekend &middot; 22&ndash;23 Nov<\/p><div class=\"foot\"><span class=\"price\">&pound;150<\/span><a class=\"go\" href=\"#\">Book a place<\/a><\/div><\/div><\/div>\n    <div class=\"c\"><div class=\"img k5\"><i><\/i><\/div><div class=\"body\"><span class=\"tag\">Advanced<\/span><h3>Large forms and lidded jars<\/h3><p class=\"meta\">8 weeks &middot; Thursdays 18:30<\/p><div class=\"foot\"><span class=\"price\">&pound;320<\/span><a class=\"go\" href=\"#\">Book a place<\/a><\/div><\/div><\/div>\n    <div class=\"c\"><div class=\"img k6\"><i><\/i><\/div><div class=\"body\"><span class=\"tag\">All levels<\/span><h3>Raku firing day<\/h3><p class=\"meta\">One day &middot; 29 Nov<\/p><div class=\"foot\"><span class=\"price\">&pound;95<\/span><a class=\"go\" href=\"#\">Book a place<\/a><\/div><\/div><\/div>\n  <\/section>\n<\/div>\n<\/body>\n<\/html>\n";
+  var W = 1280, H = 800;
+  var full = false, embedded = window.parent !== window;
+  function doc(v){ return PAGE.replace('{{V}}', v); }
+  var frames = [].slice.call(document.querySelectorAll('.stage iframe'));
+  // 一页正文里有十来个对比组件：滚到附近才把两张网页放进去，免得一开页就渲染二十张
+  function load(){ frames.forEach(function(f){ if (!f.srcdoc) f.srcdoc = doc(f.dataset.v); }); }
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){
+      if (es.some(function(e){ return e.isIntersecting; })) { load(); io.disconnect(); }
+    }, {rootMargin: '800px 0px'});
+    io.observe(document.querySelector('.card'));
+  } else load();
+
+  function layout(){
+    var room = full ? window.innerHeight - 56 - 120 : Infinity;   // 放大态按视口高度封顶
+    frames.forEach(function(f){
+      var st = f.parentNode, w = st.clientWidth;
+      var s = Math.min(w / W, room / H);
+      st.style.height = Math.round(H * s) + 'px';
+      f.style.transform = 'translate(' + Math.max(0, (w - W * s) / 2) + 'px,0) scale(' + s + ')';
+    });
+    if (embedded && !full) window.parent.postMessage({type: 'kc-height', h: document.querySelector('.card').offsetHeight + 2}, '*');
+  }
+  window.addEventListener('resize', layout);
+  layout();
+
+  [].slice.call(document.querySelectorAll('.open')).forEach(function(b){
+    b.onclick = function(){
+      var url = URL.createObjectURL(new Blob([doc(b.dataset.v)], {type: 'text/html'}));
+      window.open(url, '_blank');
+      setTimeout(function(){ URL.revokeObjectURL(url); }, 60000);
+    };
+  });
+
+  var panels = [].slice.call(document.querySelectorAll('.grid > div'));
+  var flips = [].slice.call(document.querySelectorAll('.flip button'));
+  var sel = 0;
+  function pick(i){
+    sel = i;
+    panels.forEach(function(p, k){ p.classList.toggle('sel', k === i); });
+    flips.forEach(function(b, k){ b.classList.toggle('on', k === i); });
+    layout();
+  }
+  flips.forEach(function(b, k){ b.onclick = function(){ pick(k); }; });
+
+  var zoom = document.getElementById('zoom');
+  function setFull(on){
+    full = on;
+    document.body.classList.toggle('full', on);
+    zoom.textContent = on ? '收起' : '放大对比';
+    layout();
+  }
+  zoom.onclick = function(){
+    if (!embedded) { setFull(!full); return; }
+    window.parent.postMessage({type: full ? 'kc-collapse' : 'kc-expand'}, '*');
+  };
+  document.body.addEventListener('click', function(e){
+    if (full && e.target === document.body) window.parent.postMessage({type: 'kc-collapse'}, '*');
+  });
+  window.addEventListener('keydown', function(e){
+    if (!full) return;
+    if (e.key === 'Escape') window.parent.postMessage({type: 'kc-collapse'}, '*');
+    if (e.key === ' ' || e.key === 'ArrowLeft' || e.key === 'ArrowRight') { e.preventDefault(); pick(1 - sel); }
+  });
+  // 父页放大 / 还原好 iframe 后回 ack，这边排好版再回话，父页才显影
+  window.addEventListener('message', function(e){
+    if (e.source !== window.parent || !e.data || typeof e.data !== 'object') return;
+    if (e.data.type === 'kc-expand-ack')   { setFull(true);  window.parent.postMessage({type: 'kc-modal-ready'}, '*'); }
+    if (e.data.type === 'kc-collapse-ack') { setFull(false); window.parent.postMessage({type: 'kc-revealed'}, '*'); }
+  });
+})();
+</script>
+</body>
+</html>
+

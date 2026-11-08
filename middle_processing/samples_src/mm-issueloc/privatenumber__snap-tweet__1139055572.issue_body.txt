@@ -1,0 +1,52 @@
+## Bug description
+<!--
+  What did you do? (Provide code in next section)
+
+  What did you expect to happen?
+
+  What happened instead?
+
+  Do you have an error stack-trace?
+-->
+  What did you do? (Provide code in next section)
+Took a snap of a tweet of one of the built-in examples. @jack's tweet #20.
+
+  What did you expect to happen?
+For the snap to appear as in the READ.ME on the git page.
+
+  What happened instead?
+The program executes correctly on the CLI.
+But, in the produced snap, instead of there showing an <hr> separator and then the replies, rt's and likes.. there's a button that says Read XX replies.
+
+  Do you have an error stack-trace?
+Don't know what this is, but I'll get it if it can be explained to me :)
+
+## Reproduction
+<!--
+  Provide one of the following:
+  1. A code-snippet that reproduces the issue
+  2. A reproduction repo that reproduces the issue
+  3. A PR with a failing test-case
+
+  Remove irrelevant code to make it easier for others to read and debug.
+
+  -- Why?
+  The goal is to maximize communication efficiency.
+
+  When an issue is immediately reproducible, others can start debugging instead of following-up with questions.
+-->
+  Provide one of the following:
+  1. snap-tweet https://twitter.com/jack/status/20
+  2. ??
+  3. Sharing snap instead:
+
+<image>
+FYI I am not logged in to twitter on the browser, but I doubt that has any effect.
+
+## Environment
+
+- snap-tweet version: snap-tweet/1.2.1 win32-x64 node-v16.14.0
+- Operating System: Microsoft Windows 10 Home 10.0.19044 N/A Build 19044
+- Node version: v16.14.0
+- Package manager (npm/yarn/pnpm) and version: npm 8.5.0 
+

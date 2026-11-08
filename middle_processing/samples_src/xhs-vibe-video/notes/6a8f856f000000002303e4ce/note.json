@@ -1,0 +1,88 @@
+{
+ "note_id": "6a8f856f000000002303e4ce",
+ "url": "https://www.xiaohongshu.com/explore/6a8f856f000000002303e4ce?xsec_token=AB5yE1q7D9BLH98diPW2g3l6lg_KLnTribSAAxkv30w1U=&xsec_source=pc_search",
+ "type": "normal",
+ "title": "MiniMax H3被 fal 重新训练，效果反超原版",
+ "desc": "MiniMax H3 又被二次训练了一版，而且成绩还不错。\nfal 基于开源的 MiniMax H3 做了后训练，推出了 MiniMax H3 Max。\n\t\n📊 Artificial Analysis 最新成绩\n• 图生视频 + 音频：第 1 名\n• 文生视频 + 音频：第 3 名\n• 两项都超过了原版 MiniMax H3\n• 图生视频这一项，还小幅领先 SD 2.0 720p\n\t\n这次 fal 主要做了几件事：\n🔹 加入新的后训练数据，重点提升 Prompt 遵循和画面美感\n🔹 花了不少算力做 verifiable RL\n🔹 针对 fal 自家的推理引擎做了联合优化\n\t\n⚡️ 速度也提升得比较明显\nfal 表示，H3 Max 生成一个 5 秒 720p 视频不到 3 秒，吞吐量大约是官方 H3 接口的 35 倍。目前支持：\n• 5～15 秒视频\n• 原生音频\n• 最高 768p\n\t\n💰 价格反而更低\n• H3 Max：0.04 美元/秒\n• 原版 H3：0.06 美元/秒\n\t\n也就是一分钟 768p 视频大约 2.4 美元。\n另外，fal 已经表示后续计划开放 H3 Max 权重。\n\t\n#大模型[话题]# #视频生成[话题]#",
+ "tags": [
+  "大模型",
+  "视频生成"
+ ],
+ "author": "SI小小将",
+ "user_id": "64052d830000000029010b61",
+ "time": 1787790703000,
+ "ip_location": null,
+ "likes": "271",
+ "collects": "287",
+ "comments_count": "44",
+ "keywords": [
+  "Hypit 视频"
+ ],
+ "duration": null,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040119/d90252126b648b884605aea8681fa7cc/spectrum/1040g34o324br6i3772105p055m1qa2r1n07j9p0!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040119/06a76686a4296c9aba77049f51f73f17/spectrum/1040g34o324br8tu274105p055m1qa2r18b3obg8!nd_dft_wgth_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040119/f1b59bd3e3c7df314bf998236671745b/spectrum/1040g0k0324br90hpgs005p055m1qa2r1q93qnr8!nd_dft_wgth_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040119/2dbeedf37d6ea5fd367525ddce8e78c2/spectrum/1040g0k0324br90hpgs0g5p055m1qa2r1725664g!nd_dft_wgth_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040119/6fea55446d824b73adc008db2f64f458/spectrum/1040g0k0324br90hpgs105p055m1qa2r1ch6mnf0!nd_dft_wgth_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "有什么好C的",
+   "content": "fal 是谁，这么厉害的吗？",
+   "likes": "0"
+  },
+  {
+   "user": "大饼",
+   "content": "大佬都说，噱头，别理",
+   "likes": "3"
+  },
+  {
+   "user": "Sorry",
+   "content": "有blog 链接吗",
+   "likes": "0"
+  },
+  {
+   "user": "12345",
+   "content": "[捂脸R][捂脸R]没有基础知识就做自媒体好恐怖。加了后训练不比原版厉害，那训练个毛线啊。[捂脸R][捂脸R][捂脸R]",
+   "likes": "6"
+  },
+  {
+   "user": "hw",
+   "content": "有量化版了吗 电脑只有16g显存[doge]",
+   "likes": "0"
+  },
+  {
+   "user": "雪哲7",
+   "content": "NSFW训练了？",
+   "likes": "1"
+  },
+  {
+   "user": "Sato碎碎念发言机（QJJ）",
+   "content": "可以试试看，自己搭建了本地fal workbench[派对R]随便用了",
+   "likes": "0"
+  },
+  {
+   "user": "天莲宗的陈世贤",
+   "content": "支持原版，就冲着minimax大气",
+   "likes": "9"
+  },
+  {
+   "user": "白鸟",
+   "content": "拿开源模型来敛财了属于[doge]",
+   "likes": "3"
+  },
+  {
+   "user": "KX壁纸",
+   "content": "厉害了",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg",
+  "images/1.jpg",
+  "images/2.jpg",
+  "images/3.jpg",
+  "images/4.jpg"
+ ]
+}

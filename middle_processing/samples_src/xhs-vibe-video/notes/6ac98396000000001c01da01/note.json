@@ -1,0 +1,39 @@
+{
+ "note_id": "6ac98396000000001c01da01",
+ "url": "https://www.xiaohongshu.com/explore/6ac98396000000001c01da01?xsec_token=ABoa_p4OFDqaDMdC5Q2Yiq4aa0dFqYO01Zq511Ex9Uixw=&xsec_source=pc_search",
+ "type": "normal",
+ "title": "Opus 5.5 做视频  项目建议收藏",
+ "desc": "最近发现，已经有不少开发者开始用 Opus 5.5 做视频、动画和特效了。\n不需要从零摸索，我整理了 5 个值得关注的 GitHub 开源项目，涵盖视频案例、提示词、纯代码动画和 Agent Skills。\n01｜awesome-opus5-5-videos\n提示词和视频案例整理得比较清晰，适合新手直接参考、复用。\n02｜lemo-opuscar\n内置 43 种纯代码影片风格，适合研究视频创意、镜头设计和不同的视觉效果。\n03｜awesome-claude-video\n偏技术实现，重点关注动画生成、渲染管线和制作流程。\n04｜awesome-opus-5.5-video\n视频案例合集，涵盖 Opus 5.5 和 Sonnet 5.5，适合寻找灵感和参考项目。\n05｜awesome-opus-video-skills\n收集可安装的视频类 Agent Skills，适合想直接上手视频制作工具的开发者。\n使用方法也很简单：\n① 打开 GitHub，搜索对应项目名称。\n② 复制项目仓库链接。\n③ 把链接丢给 Codex 或 Cursor。\n④ 让 AI 阅读 README，帮你分析项目、整理使用方法，或者按需安装和改造成自己的 Skill。\n建议先收藏这张图，需要做 AI 视频的时候直接拿出来参考。\n#Claude[话题]#  #Opus55[话题]#  #AgentSkills[话题]#  #GitHub[话题]#  #Codex[话题]#  #Cursor[话题]#  #AI视频[话题]#  #独立开发[话题]#",
+ "tags": [
+  "Claude",
+  "Opus55",
+  "AgentSkills",
+  "GitHub",
+  "Codex",
+  "Cursor",
+  "AI视频",
+  "独立开发"
+ ],
+ "author": "程序员晓刘",
+ "user_id": "60eee40c00000000010052e9",
+ "time": 1791591318000,
+ "ip_location": "广东",
+ "likes": "25",
+ "collects": "56",
+ "comments_count": "",
+ "keywords": [
+  "opuscar"
+ ],
+ "duration": null,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040137/4130408968b4989a8d6d2bfc9f387907/spectrum/1040g34o3264fgtos4a205o7esg608kn96loknuo!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040137/ec0e6aa27319486454a7c20c25b34009/spectrum/1040g34o3264fh00c44105o7esg608kn9jj8rs00!nd_dft_wgth_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040137/698169963f2e8065ef3962b31c2026c7/spectrum/1040g34o3264fgtos4a2g5o7esg608kn9mfoojs8!nd_dft_wgth_webp_3"
+ ],
+ "comments": [],
+ "image_files": [
+  "images/0.jpg",
+  "images/1.jpg",
+  "images/2.jpg"
+ ]
+}

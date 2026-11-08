@@ -1,0 +1,78 @@
+{
+ "note_id": "6ad0eb070000000018019b2a",
+ "url": "https://www.xiaohongshu.com/explore/6ad0eb070000000018019b2a?xsec_token=ABvwylVLspYl-WzqrTBmvn4iQXlc6vNb02t8bGgRLcxYk=&xsec_source=pc_search",
+ "type": "video",
+ "title": "《小王子》3D 游戏作者公开了制作流程",
+ "desc": "简单总结\n\t\n场景：image2.5生图，然后让ai找出需要单独搓的资产，tripo生成资产，然后拿着场景图让opus5.5组装资产（分配子agent做对抗审查）；\n\t\n人物：image2.5生图，tripo做人物模型，Auto-Rig pro插件绑骨骼和蒙皮，人物动作来自mixamo（没有合适的动作就找近似，然后让 Claude调整）",
+ "tags": [],
+ "author": "陆三金",
+ "user_id": "5622619644760843e5e665f5",
+ "time": 1792076551000,
+ "ip_location": "北京",
+ "likes": "4681",
+ "collects": "7116",
+ "comments_count": "71",
+ "keywords": [
+  "Claude Blender 动画",
+  "manim AI 动画"
+ ],
+ "duration": 88,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611032213/ea54588b202344e48b703d56791dcaaf/spectrum/1040g0k0326bmrm2ekc0g41kv5tgpcpfl9job8kg!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "Lanita_",
+   "content": "甚至这个拆解视频都是gpt跑的 哈哈哈",
+   "likes": "4"
+  },
+  {
+   "user": "lllIIIllllIIIIIllll",
+   "content": "这token不得爆炸啊[哭惹R]",
+   "likes": "8"
+  },
+  {
+   "user": "躲清闲",
+   "content": "可是 tripo 好贵啊[捂脸R]",
+   "likes": "9"
+  },
+  {
+   "user": "嘿，猜我今天做了什么超人的壮举？嘿，我，天选之子",
+   "content": "[doge]",
+   "likes": "0"
+  },
+  {
+   "user": "Tripo AI",
+   "content": "嘿嘿有用到我们哦[doge][doge][doge][doge]",
+   "likes": "17"
+  },
+  {
+   "user": "Leo",
+   "content": "@点点 花了多少钱",
+   "likes": "0"
+  },
+  {
+   "user": "keke",
+   "content": "@点点 帮我总结一下",
+   "likes": "0"
+  },
+  {
+   "user": "Stella_1v📷",
+   "content": "那这个角色的面部表情什么的 可以3D生成自然的吗，还是说最后生成出的视频再优化呀",
+   "likes": "0"
+  },
+  {
+   "user": "TofuSoup",
+   "content": "这叫可交互动画",
+   "likes": "3"
+  },
+  {
+   "user": "睡不醒Alvin",
+   "content": "可以做是可以做 成本太高了[捂脸R] 没有人付费玩收不回成本啊",
+   "likes": "2"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

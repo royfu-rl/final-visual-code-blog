@@ -1,0 +1,14 @@
+Activity Log: app banner related to Stats is shown
+Visit https://wordpress.com/stats/activity/YOURSITESLUG in a mobile device. I was actually able to find this in Chrome's mobile emulator in dev tools:
+
+<img width="336" alt="captura de pantalla 2018-03-22 a la s 10 34 26" src="https://user-images.githubusercontent.com/1041600/37774589-66c5670e-2dbf-11e8-8248-9d61ac3a6358.png">
+
+Right now we have nothing in the Redux state that allows us to discriminate this based on `/activity`.
+
+<img width="280" alt="captura de pantalla 2018-03-22 a la s 10 50 05" src="https://user-images.githubusercontent.com/1041600/37774590-6705676e-2dbf-11e8-9123-82ac9a0c4682.png">
+
+As can be seen in https://github.com/Automattic/wp-calypso/blob/master/client/blocks/app-banner/index.jsx#L149 it only looks at `/stats` and this is why this banner is showing.
+
+We should have more information about the path being visited so we can exclude it in AL.
+
+

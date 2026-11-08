@@ -1,0 +1,11 @@
+{"link": "https://github.com/pixijs/pixijs/tree/dev/tests/visual/snapshots",
+ "id": "pixijs/pixijs",
+ "cards": [
+  {"img": "graphics-gradient-radial-donut-scene-ts-webgl2.png", "name": "tests/visual/snapshots/graphics-gradient-radial-donut-scene-ts-webgl2.png",
+   "code": [["tests/visual/scenes/graphics/graphics-gradient-radial-donut.scene.ts", "graphics-gradient-radial-donut.scene.ts"]]},
+  {"img": "text-fill-gradient-scene-ts-webgl2.png", "name": "tests/visual/snapshots/text-fill-gradient-scene-ts-webgl2.png",
+   "code": [["tests/visual/scenes/text/text-fill-gradient.scene.ts", "text-fill-gradient.scene.ts"]]},
+  {"img": "meshrope-scene-ts-webgl2.png", "name": "tests/visual/snapshots/meshrope-scene-ts-webgl2.png",
+   "code": [["tests/visual/scenes/mesh/meshrope.scene.ts", "meshrope.scene.ts"]]}
+ ]}
+

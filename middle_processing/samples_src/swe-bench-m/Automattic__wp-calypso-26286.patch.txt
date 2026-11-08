@@ -1,0 +1,42 @@
+diff --git a/client/blocks/app-banner/index.jsx b/client/blocks/app-banner/index.jsx
+index e27aa2c12fdba..f166bc7a011e8 100644
+--- a/client/blocks/app-banner/index.jsx
++++ b/client/blocks/app-banner/index.jsx
+@@ -228,11 +228,12 @@ export function buildDeepLinkFragment( currentRoute, currentSection ) {
+ const mapStateToProps = state => {
+ 	const sectionName = getSectionName( state );
+ 	const isNotesOpen = isNotificationsOpen( state );
++	const currentRoute = getCurrentRoute( state );
+ 
+ 	return {
+ 		dismissedUntil: getPreference( state, APP_BANNER_DISMISS_TIMES_PREFERENCE ),
+-		currentSection: getCurrentSection( sectionName, isNotesOpen ),
+-		currentRoute: getCurrentRoute( state ),
++		currentSection: getCurrentSection( sectionName, isNotesOpen, currentRoute ),
++		currentRoute,
+ 		fetchingPreferences: isFetchingPreferences( state ),
+ 		siteId: getSelectedSiteId( state ),
+ 	};
+diff --git a/client/blocks/app-banner/utils.js b/client/blocks/app-banner/utils.js
+index 1c47c6388fa92..172ebf9d12100 100644
+--- a/client/blocks/app-banner/utils.js
++++ b/client/blocks/app-banner/utils.js
+@@ -49,11 +49,16 @@ export function getAppBannerData( translate, sectionName ) {
+ 	}
+ }
+ 
+-export function getCurrentSection( currentSection, isNotesOpen ) {
++export function getCurrentSection( currentSection, isNotesOpen, currentRoute ) {
+ 	if ( isNotesOpen ) {
+ 		return NOTES;
+ 	}
+ 
++	if ( currentRoute && currentRoute.indexOf( '/stats/activity/' ) !== -1 ) {
++		//don't show app banner in activity log
++		return null;
++	}
++
+ 	if ( includes( ALLOWED_SECTIONS, currentSection ) ) {
+ 		return currentSection;
+ 	}
+

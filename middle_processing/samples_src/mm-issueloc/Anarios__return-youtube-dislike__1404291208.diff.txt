@@ -1,0 +1,61 @@
+diff --git a/Extensions/combined/content-style.css b/Extensions/combined/content-style.css
+index d8da7db1e..4e53f87fe 100644
+--- a/Extensions/combined/content-style.css
++++ b/Extensions/combined/content-style.css
+@@ -30,12 +30,21 @@
+ }
+ 
+ .ryd-tooltip {
+-  position: relative;
+   display: block;
+   height: 2px;
++}
++
++.ryd-tooltip-old-design {
++  position: relative;
+   top: 9px;
+ }
+ 
++.ryd-tooltip-new-design {
++  position: absolute;
++  bottom: -10px;
++  left: -4px;
++}
++
+ .ryd-tooltip-bar-container {
+   width: 100%;
+   height: 2px;
+@@ -44,3 +53,12 @@
+   padding-bottom: 12px;
+   top: -6px;
+ }
++
++/* required to make the ratio bar visible in the new design */
++ytd-menu-renderer.ytd-watch-metadata {
++  overflow-y: visible !important;
++}
++
++#top-level-buttons-computed {
++  position: relative !important;
++}
+diff --git a/Extensions/combined/src/bar.js b/Extensions/combined/src/bar.js
+index 930f0f525..ebf9ad8fe 100644
+--- a/Extensions/combined/src/bar.js
++++ b/Extensions/combined/src/bar.js
+@@ -57,14 +57,12 @@ function createRateBar(likes, dislikes) {
+ 
+         (
+           document.getElementById(
+-            isNewDesign() ? "actions-inner" : "menu-container"
++            isNewDesign() ? "top-level-buttons-computed" : "menu-container"
+           ) || document.querySelector("ytm-slim-video-action-bar-renderer")
+         ).insertAdjacentHTML(
+           "beforeend",
+           `
+-              <div class="ryd-tooltip" style="width: ${widthPx}px${
+-            isNewDesign() ? "; margin-bottom: -2px" : ""
+-          }">
++              <div class="ryd-tooltip ryd-tooltip-${isNewDesign() ? "new" : "old"}-design" style="width: ${widthPx}px">
+               <div class="ryd-tooltip-bar-container">
+                 <div
+                     id="ryd-bar-container"

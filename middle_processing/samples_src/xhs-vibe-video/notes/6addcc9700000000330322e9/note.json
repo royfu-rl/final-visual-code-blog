@@ -1,0 +1,67 @@
+{
+ "note_id": "6addcc9700000000330322e9",
+ "url": "https://www.xiaohongshu.com/explore/6addcc9700000000330322e9?xsec_token=ABppXmGidaWMkZ1G1lQkel96xxpwF5eiZsiupnXdJXZ9s=&xsec_source=pc_search",
+ "type": "normal",
+ "title": "Opus5.5做视频先装这6个Skill",
+ "desc": "最近很多人用 Opus 5.5 写代码做动画视频，画面、字幕、导出全靠代码，不用剪辑软件。\n真正上手会发现，让 Agent 先装好对应的 Skill，写出来的代码会规范很多。我把常用的几个按做视频的步骤整理了一下：\n1. 定风格：frontend-design，Anthropic 官方 Skill 库里的\n2. 写动画代码：remotion-best-practices（Remotion 官方），或者用 HyperFrames 的 hyperframes，直接写 HTML\n3. 配素材和声音：media-use，HyperFrames 仓库里的\n4. 加字幕：Remotion 的 remotion-captions\n5. 导出 MP4：Remotion 的 remotion-render\n\t\n新手的话，直接让 Agent 帮你装 Remotion 官方那套就够了，先做 10 秒，跑通再做长。\n每个 Skill 是干什么的、来源是哪里，都写在图里了。\n部分内容由 AI 辅助整理，已人工核对。\n\t\n#vibecoding[话题]# #howto解锁创意剪辑[话题]#  #ClaudeCode #AI做视频[话题]#  #Remotion[话题]#  #AI工具 #程序员",
+ "tags": [
+  "vibecoding",
+  "howto解锁创意剪辑",
+  "AI做视频",
+  "Remotion"
+ ],
+ "author": "学术小白",
+ "user_id": "660a518f000000000b00f694",
+ "time": 1792920727000,
+ "ip_location": "中国台湾",
+ "likes": "81",
+ "collects": "114",
+ "comments_count": "2",
+ "keywords": [
+  "AI 写代码做动画",
+  "Claude Blender 动画",
+  "Claude Code 做视频",
+  "Claude 做视频",
+  "Claude 口播视频",
+  "Claude 数据可视化动画",
+  "Claude 片头动画",
+  "Claude 科普动画",
+  "HyperFrames",
+  "Hypit 视频",
+  "Motion Canvas",
+  "Opus5.5 做视频",
+  "Remotion",
+  "manim AI 动画",
+  "vibe video",
+  "代码生成视频",
+  "视频 skill"
+ ],
+ "duration": null,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040134/8c25b5cea19b3daf71188c725d7fcbb9/spectrum/1040g0k0326o9dti5580g5pgaa67iptkkk60461g!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040134/9304a9271a982a173124c2c18f66d43e/spectrum/1040g0k0326o9dti558105pgaa67iptkkbn2hua8!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040134/cb506c5a979f88050b26584591d80b3b/spectrum/1040g0k0326o9dti5581g5pgaa67iptkkadbo1v0!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040134/61254699d4466379481bf00a776cccea/spectrum/1040g0k0326o9dti558205pgaa67iptkk8unt0ao!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040134/b93a423cc3759a85a7004f13ffa5b488/spectrum/1040g0k0326o9dti5582g5pgaa67iptkk939edko!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040134/09106bd84cb0862e144e810c32629481/spectrum/1040g0k0326o9dti558305pgaa67iptkk628dm70!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040134/bca56095b545f8082913c49078959db5/spectrum/1040g0k0326o9dti5583g5pgaa67iptkkjpcqia8!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040134/ea9033589cd506b7143ca79ad6075eb1/spectrum/1040g0k0326o9dti558405pgaa67iptkki3vkfc8!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "疯狂世界",
+   "content": "增智小曲的科普视频一般是用哪个工具？",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg",
+  "images/1.jpg",
+  "images/2.jpg",
+  "images/3.jpg",
+  "images/4.jpg",
+  "images/5.jpg",
+  "images/6.jpg",
+  "images/7.jpg"
+ ]
+}

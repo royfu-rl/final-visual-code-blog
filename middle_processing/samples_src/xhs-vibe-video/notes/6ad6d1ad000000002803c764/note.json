@@ -1,0 +1,89 @@
+{
+ "note_id": "6ad6d1ad000000002803c764",
+ "url": "https://www.xiaohongshu.com/explore/6ad6d1ad000000002803c764?xsec_token=ABMdcVeXBGNL2R_8HNS5ABLs_qiIUEDWkdAyfvUaHvFrY=&xsec_source=pc_search",
+ "type": "video",
+ "title": "Gemini 4和Opus 5.5 一起哆嗦毛",
+ "desc": "尝试了一下用3DCodeVerse以纯coding的形式来做参数化视频重建，能看出当前模型3D coding上限比较明显。\n\t\nClaude建模的复杂性还有动作的准确度更高，但是Gemini 4前面的artifacts更少，兔子建模视觉看着更加协调，多模态能力还是更强。\n\t\nCodebase参考 github.com/gaoypeng/3dcodeverse\n\t\n#3D动画[话题]# #科技与很活[话题]# #3D[话题]# #科技的力量[话题]# #Blender[话题]# #3D建模[话题]# #codex[话题]# #gemini[话题]# #claude[话题]# #3D造物[话题]#",
+ "tags": [
+  "3D动画",
+  "科技与很活",
+  "3D",
+  "科技的力量",
+  "Blender",
+  "3D建模",
+  "codex",
+  "gemini",
+  "claude",
+  "3D造物"
+ ],
+ "author": "Hlingsssss",
+ "user_id": "69255fe700000000370020bb",
+ "time": 1792463277000,
+ "ip_location": "美国",
+ "likes": "264",
+ "collects": "111",
+ "comments_count": "35",
+ "keywords": [
+  "Claude 3D 动画",
+  "Claude Blender 动画"
+ ],
+ "duration": 15,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040119/4c12a1e54c8d337f71a09e2c7ecb2485/1040g008326hebu4lkelg5q95bvjto85r6b2lo70!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "爱上娜娜的蓝色炽人",
+   "content": "这是ai代码",
+   "likes": "1"
+  },
+  {
+   "user": "russe",
+   "content": "为什么会有个reference",
+   "likes": "1"
+  },
+  {
+   "user": "去雪山整点鼠条",
+   "content": "opus咋突然不行了",
+   "likes": "0"
+  },
+  {
+   "user": "养猪科学家",
+   "content": "好奇其他view看起来咋样",
+   "likes": "0"
+  },
+  {
+   "user": "VermilionJ",
+   "content": "能请问下这两个视频制作的token预算呀～有没有大概的数可以供我参考一下吗[皱眉R][皱眉R]",
+   "likes": "0"
+  },
+  {
+   "user": "DTTTTT",
+   "content": "gemini还挺好的ha ha[笑哭R]",
+   "likes": "1"
+  },
+  {
+   "user": "Jan North",
+   "content": "Opus 5.5做出了近视加散光的效果",
+   "likes": "0"
+  },
+  {
+   "user": "丿风舞",
+   "content": "为啥不用狗熊，用兔子",
+   "likes": "1"
+  },
+  {
+   "user": "古古怪怪的葡萄朋友",
+   "content": "不愧是北美大豆包",
+   "likes": "0"
+  },
+  {
+   "user": "Momo",
+   "content": "Claude多模态确实不怎么样",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

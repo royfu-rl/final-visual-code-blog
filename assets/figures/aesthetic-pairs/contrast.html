@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A7 对比度</title>
+<style>
+  :root{--ink:#111418;--soft:#5b636e;--line:#e4e7ec;--band:#f6f7f9;--ok:#0b7a4b;--ok-bg:#e6f5ed;--bad:#b42318;--bad-bg:#fdecea;
+        --mono:"SF Mono",ui-monospace,"JetBrains Mono",Menlo,Consolas,monospace}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:transparent;color:var(--ink);
+            font:13px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .top{display:flex;align-items:center;gap:12px;padding:10px 14px;background:var(--band);border-bottom:1px solid var(--line)}
+  .tag{font:600 10.5px/1 var(--mono);letter-spacing:.08em;color:var(--soft);text-transform:uppercase}
+  .query{flex:1;min-width:0;font-size:13.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .rule{font-size:12px;color:var(--soft);white-space:nowrap}
+  button{font:inherit;font-size:12px;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 11px;cursor:pointer}
+  button:hover{border-color:#c5cad3}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:14px}
+  .head{display:flex;align-items:center;gap:8px;margin-bottom:8px;min-height:24px}
+  .side{font:700 12px/1 var(--mono);width:22px;height:22px;border-radius:6px;display:grid;place-items:center;background:var(--ink);color:#fff;flex:none}
+  .pill{font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:999px;flex:none}
+  .ok .pill{color:var(--ok);background:var(--ok-bg)} .bad .pill{color:var(--bad);background:var(--bad-bg)}
+  .say{flex:1;min-width:0;color:var(--soft);font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .open{border:0;background:none;color:#2f6bff;padding:0 2px}
+  .stage{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:10px;background:#eef0f3}
+  .stage iframe{position:absolute;top:0;left:0;width:1280px;height:800px;border:0;transform-origin:0 0;background:#fff}
+  @media (max-width:720px){.grid{grid-template-columns:1fr}.say,.query{white-space:normal}.rule{display:none}}
+  /* 放大态：父页把本 iframe 铺满视口，这里画成居中的大卡片，点卡片外收起 */
+  body.full{height:100vh;display:flex;align-items:center;justify-content:center;padding:28px}
+  body.full .card{width:min(100%,2400px);box-shadow:0 24px 80px rgba(0,0,0,.35)}
+  /* 放大态只放一张、尽量大，A / B 原地切换（空格或方向键），差别最容易看出来 */
+  .flip{display:none;gap:2px;background:#e9ecf1;border-radius:999px;padding:3px}
+  .flip button{border:0;background:none;padding:4px 12px}
+  .flip button.on{background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.12)}
+  body.full .flip{display:inline-flex}
+  body.full .grid{grid-template-columns:1fr}
+  body.full .grid > div{display:none}
+  body.full .grid > div.sel{display:block}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top"><span class="tag">Query</span><span class="query">为海岸保护公益组织 Tidewater Trust 做首页</span><span class="rule">A7 · 对比度</span><span class="flip" title="空格或方向键切换"><button class="on">A 符合</button><button>B 违反</button></span><button id="zoom">放大对比</button></div>
+  <div class="grid">
+    <div class="ok sel"><div class="head"><span class="side">A</span><span class="pill">符合</span><span class="say">文字对比度 6.8:1 到 12.3:1</span><button class="open" data-v="good">新标签打开</button></div><div class="stage"><iframe title="A" data-v="good"></iframe></div></div>
+    <div class="bad"><div class="head"><span class="side">B</span><span class="pill">违反</span><span class="say">浅灰字压浅色底，对比度 1.25:1 到 1.8:1（正文要求 4.5:1）</span><button class="open" data-v="bad">新标签打开</button></div><div class="stage"><iframe title="B" data-v="bad"></iframe></div></div>
+  </div>
+</div>
+<script>
+(function(){
+  var PAGE = "<!doctype html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>Tidewater Trust<\/title>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link href=\"https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Work+Sans:wght@300;400;500;600&display=swap\" rel=\"stylesheet\">\n<style>\n  *{box-sizing:border-box;margin:0;padding:0}\n  body{font-family:\"Work Sans\",system-ui,sans-serif;background:#fff;color:#122524;-webkit-font-smoothing:antialiased}\n  a{color:inherit;text-decoration:none}\n  .wrap{max-width:1184px;margin:0 auto;padding:0 52px}\n  nav{display:flex;align-items:center;height:76px;gap:32px;font-size:15px;color:#3d5250}\n  .logo{font-family:Lora,serif;font-weight:600;font-size:21px;color:#122524;margin-right:auto}\n  .donate{background:#f3b23f;color:#1a1a12;font-weight:600;padding:10px 18px;border-radius:999px}\n  .hero{background:#0d3b3a;color:#fff}\n  .hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;padding-top:64px;padding-bottom:64px;align-items:end}\n  .kick{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#9fd1c6;margin-bottom:18px;font-weight:500}\n  h1{font-family:Lora,serif;font-weight:500;font-size:60px;line-height:1.05;letter-spacing:-.01em;margin-bottom:20px}\n  .sub{font-size:18px;line-height:1.6;color:#d3e7e2;max-width:30em}\n  .ctas{display:flex;flex-direction:column;gap:12px}\n  .btn{background:#f3b23f;color:#1a1a12;font-weight:600;font-size:16px;padding:16px 22px;border-radius:12px;text-align:center}\n  .out{border:1.5px solid #fff;color:#fff;font-weight:500;font-size:16px;padding:15px 22px;border-radius:12px;text-align:center}\n  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;padding:40px 0 36px;border-bottom:1px solid #dfe7e5}\n  .stats b{display:block;font-family:Lora,serif;font-size:42px;font-weight:600;color:#122524}\n  .stats span{font-size:15px;color:#46605c}\n  .progs{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;padding:36px 0 64px}\n  .prog{background:#f2f6f5;border-radius:16px;padding:24px}\n  .prog h3{font-family:Lora,serif;font-size:21px;font-weight:600;margin-bottom:8px;color:#122524}\n  .prog p{font-size:15px;line-height:1.6;color:#3d5250}\n  .prog a{display:inline-block;margin-top:12px;font-weight:600;font-size:14.5px;color:#0d3b3a;border-bottom:1.5px solid #0d3b3a}\n\n  /* B：同样的内容和版式，浅灰字压在浅色底上 —— 对比度 1.3 到 2.2 */\n  .bad nav{color:#b7c4c1}\n  .bad .donate{background:#ffe2a8;color:#fff}\n  .bad .hero{background:#d4ebe5}\n  .bad .kick{color:#ffffff}\n  .bad h1{font-weight:500;color:#ffffff}\n  .bad .sub{color:#a6c6bf;font-weight:300}\n  .bad .btn{background:#bfe3d9;color:#ffffff}\n  .bad .out{border-color:#eaf6f2;color:#eaf6f2}\n  .bad .stats b{color:#c3d3cf}\n  .bad .stats span{color:#ccd6d3;font-weight:300}\n  .bad .prog h3{color:#b9c6c3}\n  .bad .prog p{color:#bcc5c3;font-weight:300}\n  .bad .prog a{color:#a9d6cb;border-color:#a9d6cb}\n<\/style>\n<\/head>\n<body class=\"{{V}}\">\n<div class=\"wrap\"><nav><a class=\"logo\" href=\"#\">Tidewater Trust<\/a><a href=\"#\">Our work<\/a><a href=\"#\">Coastline map<\/a><a href=\"#\">Volunteer<\/a><a href=\"#\">Reports<\/a><a class=\"donate\" href=\"#\">Donate<\/a><\/nav><\/div>\n<section class=\"hero\"><div class=\"wrap\">\n  <div>\n    <p class=\"kick\">Since 1998 &middot; Independent charity<\/p>\n    <h1>Protecting 2,400 km of coastline, one tide at a time.<\/h1>\n    <p class=\"sub\">We restore salt marsh and seagrass, clear plastic from 300 beaches a year, and train local people to keep doing it after we leave.<\/p>\n  <\/div>\n  <div class=\"ctas\"><a class=\"btn\" href=\"#\">Give &pound;10 a month<\/a><a class=\"out\" href=\"#\">Join a beach clean<\/a><\/div>\n<\/div><\/section>\n<div class=\"wrap\">\n  <section class=\"stats\"><div><b>2,400 km<\/b><span>of coastline monitored<\/span><\/div><div><b>61 ha<\/b><span>of salt marsh restored since 2015<\/span><\/div><div><b>14,000<\/b><span>volunteers last year<\/span><\/div><\/section>\n  <section class=\"progs\">\n    <div class=\"prog\"><h3>Seagrass nurseries<\/h3><p>We grow seagrass from seed in three community nurseries and replant it in sheltered bays.<\/p><a href=\"#\">How it works<\/a><\/div>\n    <div class=\"prog\"><h3>Beach cleans<\/h3><p>Monthly cleans on 300 beaches, with every item counted and sent to a national database.<\/p><a href=\"#\">Find a clean near you<\/a><\/div>\n    <div class=\"prog\"><h3>Coastal schools<\/h3><p>Field days for 9,000 pupils a year, run by teachers we train and pay.<\/p><a href=\"#\">Book a field day<\/a><\/div>\n  <\/section>\n<\/div>\n<\/body>\n<\/html>\n";
+  var W = 1280, H = 800;
+  var full = false, embedded = window.parent !== window;
+  function doc(v){ return PAGE.replace('{{V}}', v); }
+  var frames = [].slice.call(document.querySelectorAll('.stage iframe'));
+  // 一页正文里有十来个对比组件：滚到附近才把两张网页放进去，免得一开页就渲染二十张
+  function load(){ frames.forEach(function(f){ if (!f.srcdoc) f.srcdoc = doc(f.dataset.v); }); }
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){
+      if (es.some(function(e){ return e.isIntersecting; })) { load(); io.disconnect(); }
+    }, {rootMargin: '800px 0px'});
+    io.observe(document.querySelector('.card'));
+  } else load();
+
+  function layout(){
+    var room = full ? window.innerHeight - 56 - 120 : Infinity;   // 放大态按视口高度封顶
+    frames.forEach(function(f){
+      var st = f.parentNode, w = st.clientWidth;
+      var s = Math.min(w / W, room / H);
+      st.style.height = Math.round(H * s) + 'px';
+      f.style.transform = 'translate(' + Math.max(0, (w - W * s) / 2) + 'px,0) scale(' + s + ')';
+    });
+    if (embedded && !full) window.parent.postMessage({type: 'kc-height', h: document.querySelector('.card').offsetHeight + 2}, '*');
+  }
+  window.addEventListener('resize', layout);
+  layout();
+
+  [].slice.call(document.querySelectorAll('.open')).forEach(function(b){
+    b.onclick = function(){
+      var url = URL.createObjectURL(new Blob([doc(b.dataset.v)], {type: 'text/html'}));
+      window.open(url, '_blank');
+      setTimeout(function(){ URL.revokeObjectURL(url); }, 60000);
+    };
+  });
+
+  var panels = [].slice.call(document.querySelectorAll('.grid > div'));
+  var flips = [].slice.call(document.querySelectorAll('.flip button'));
+  var sel = 0;
+  function pick(i){
+    sel = i;
+    panels.forEach(function(p, k){ p.classList.toggle('sel', k === i); });
+    flips.forEach(function(b, k){ b.classList.toggle('on', k === i); });
+    layout();
+  }
+  flips.forEach(function(b, k){ b.onclick = function(){ pick(k); }; });
+
+  var zoom = document.getElementById('zoom');
+  function setFull(on){
+    full = on;
+    document.body.classList.toggle('full', on);
+    zoom.textContent = on ? '收起' : '放大对比';
+    layout();
+  }
+  zoom.onclick = function(){
+    if (!embedded) { setFull(!full); return; }
+    window.parent.postMessage({type: full ? 'kc-collapse' : 'kc-expand'}, '*');
+  };
+  document.body.addEventListener('click', function(e){
+    if (full && e.target === document.body) window.parent.postMessage({type: 'kc-collapse'}, '*');
+  });
+  window.addEventListener('keydown', function(e){
+    if (!full) return;
+    if (e.key === 'Escape') window.parent.postMessage({type: 'kc-collapse'}, '*');
+    if (e.key === ' ' || e.key === 'ArrowLeft' || e.key === 'ArrowRight') { e.preventDefault(); pick(1 - sel); }
+  });
+  // 父页放大 / 还原好 iframe 后回 ack，这边排好版再回话，父页才显影
+  window.addEventListener('message', function(e){
+    if (e.source !== window.parent || !e.data || typeof e.data !== 'object') return;
+    if (e.data.type === 'kc-expand-ack')   { setFull(true);  window.parent.postMessage({type: 'kc-modal-ready'}, '*'); }
+    if (e.data.type === 'kc-collapse-ack') { setFull(false); window.parent.postMessage({type: 'kc-revealed'}, '*'); }
+  });
+})();
+</script>
+</body>
+</html>
+

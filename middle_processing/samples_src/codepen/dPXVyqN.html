@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  
+  <meta charset="UTF-8">
+  
+  
+  
+
+  <title>Pure CSS 3D animated carousel - minimal code, heavily commented</title>
+
+    <link rel="canonical" href="https://codepen.io/thebabydino/pen/dPXVyqN">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  
+<style>
+/* ====== Relevant CSS ====== */
+.scene, .a3d {
+  display: grid;
+}
+
+.scene {
+  /* prevent scrollbars */
+  overflow: hidden;
+  /* for 3D look; smaller = more extreme effect */
+  perspective: 35em;
+  mask: linear-gradient(90deg, #0000, red 20% 80%, #0000);
+}
+
+.a3d {
+  place-self: center;
+  /* don't flatten 3D transformed children 
+   * of this parent having its own 3D transform */
+  transform-style: preserve-3d;
+  animation: ry 32s linear infinite;
+}
+
+/* simplest y axis rotation */
+@keyframes ry {
+  to {
+    rotate: y 1turn;
+  }
+}
+.card {
+  /* base card width, you may change this */
+  --w: 17.5em;
+  /* compute base angle corresponding to a card */
+  --ba: 1turn/var(--n);
+  /* in the future: sibling-count() */
+  grid-area: 1/1;
+  width: var(--w);
+  aspect-ratio: 7/10;
+  object-fit: cover;
+  border-radius: 1.5em;
+  /* don't want to see back of cards in front of screen plane */
+  backface-visibility: hidden;
+  /* need to use a transform chain here, cannot use separate 
+   * rotate & translate properties because they'd be applied 
+   * in wrong order (translate, then rotate) for what we need */
+  transform: rotatey(calc(var(--i)*var(--ba))) translatez(calc(-1*(.5*var(--w) + .5em)/tan(.5*var(--ba))));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .a3d {
+    animation-duration: 128s;
+  }
+}
+/* ====== General page prettifying and layout ====== */
+html, body {
+  display: grid;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #fff3ed;
+}
+</style>
+
+  
+  
+  
+</head>
+
+<body>
+  <div class="scene">
+  <div class="a3d" style="--n: 12"><img class="card" src="https://images.unsplash.com/photo-1540968221243-29f5d70540bf?w=280" style="--i: 0" alt="jellyfish"/><img class="card" src="https://images.unsplash.com/photo-1596135187959-562c650d98bc?w=280" style="--i: 1" alt="jellyfish"/><img class="card" src="https://images.unsplash.com/photo-1628944682084-831f35256163?w=280" style="--i: 2" alt="jellyfish"/><img class="card" src="https://images.unsplash.com/photo-1590013330451-3946e83e0392?w=280" style="--i: 3" alt="jellyfish"/><img class="card" src="https://images.unsplash.com/photo-1590421959604-741d0eec0a2e?w=280" style="--i: 4" alt="jellyfish"/><img class="card" src="https://images.unsplash.com/photo-1572613000712-eadc57acbecd?w=280" style="--i: 5" alt="jellyfish"/><img class="card" src="https://images.unsplash.com/photo-1570097192570-4b49a6736f9f?w=280" style="--i: 6" alt="jellyfish"/><img class="card" src="https://images.unsplash.com/photo-1620789550663-2b10e0080354?w=280" style="--i: 7" alt="jellyfish"/><img class="card" src="https://images.unsplash.com/photo-1617775623669-20bff4ffaa5c?w=280" style="--i: 8" alt="jellyfish"/><img class="card" src="https://images.unsplash.com/photo-1548600916-dc8492f8e845?w=280" style="--i: 9" alt="jellyfish"/><img class="card" src="https://images.unsplash.com/photo-1573824969595-a76d4365a2e6?w=280" style="--i: 10" alt="jellyfish"/><img class="card" src="https://images.unsplash.com/photo-1633936929709-59991b5fdd72?w=280" style="--i: 11" alt="jellyfish"/>
+  </div>
+</div>
+  
+  
+  
+</body>
+
+</html>
+

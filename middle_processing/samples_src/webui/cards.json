@@ -1,0 +1,72 @@
+{
+ "link": "https://huggingface.co/datasets/biglab/webui-7k",
+ "id": "biglab/webui-7k",
+ "cards": [
+  {
+   "img": "1655992632312-default_1920-1080-screenshot-full.webp",
+   "name": "1655992632312",
+   "code": [
+    [
+     "default_1920-1080-url.txt",
+     "1655992632312-default_1920-1080-url.txt"
+    ],
+    [
+     "default_1920-1080-html.html",
+     "1655992632312-default_1920-1080-html.html"
+    ],
+    [
+     "default_1920-1080-axtree.json.gz",
+     "1655992632312-default_1920-1080-axtree.json"
+    ],
+    [
+     "default_1920-1080-bb.json.gz",
+     "1655992632312-default_1920-1080-bb.json"
+    ]
+   ]
+  },
+  {
+   "img": "1656275678059-default_1920-1080-screenshot-full.webp",
+   "name": "1656275678059",
+   "code": [
+    [
+     "default_1920-1080-url.txt",
+     "1656275678059-default_1920-1080-url.txt"
+    ],
+    [
+     "default_1920-1080-html.html",
+     "1656275678059-default_1920-1080-html.html"
+    ],
+    [
+     "default_1920-1080-axtree.json.gz",
+     "1656275678059-default_1920-1080-axtree.json"
+    ],
+    [
+     "default_1920-1080-bb.json.gz",
+     "1656275678059-default_1920-1080-bb.json"
+    ]
+   ]
+  },
+  {
+   "img": "1656261111781-default_1920-1080-screenshot-full.webp",
+   "name": "1656261111781",
+   "code": [
+    [
+     "default_1920-1080-url.txt",
+     "1656261111781-default_1920-1080-url.txt"
+    ],
+    [
+     "default_1920-1080-html.html",
+     "1656261111781-default_1920-1080-html.html"
+    ],
+    [
+     "default_1920-1080-axtree.json.gz",
+     "1656261111781-default_1920-1080-axtree.json"
+    ],
+    [
+     "default_1920-1080-bb.json.gz",
+     "1656261111781-default_1920-1080-bb.json"
+    ]
+   ]
+  }
+ ]
+}

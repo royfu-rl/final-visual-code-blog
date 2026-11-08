@@ -1,0 +1,17 @@
+[
+ {
+  "repo": "OnScrollTypographyAnimations",
+  "image": "OnScrollTypographyAnimations.jpg",
+  "html": "src/index.html"
+ },
+ {
+  "repo": "TypeShuffleAnimation",
+  "image": "TypeShuffleAnimation.jpg",
+  "html": "src/index.html"
+ },
+ {
+  "repo": "ScrollBasedLayoutAnimations",
+  "image": "ScrollBasedLayoutAnimations.jpg",
+  "html": "index.html"
+ }
+]

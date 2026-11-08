@@ -1,0 +1,54 @@
+{
+ "note_id": "6abbb4e1000000000b00557e",
+ "url": "https://www.xiaohongshu.com/explore/6abbb4e1000000000b00557e?xsec_token=ABV14hYFiIAGypBC1an5YMe_qXzDT_h0s0oXqNIOpaj44=&xsec_source=pc_search",
+ "type": "video",
+ "title": "",
+ "desc": "这条3D风动效，Opus5.5怎么做？\n这次用 Opus 5.5 跑了一遍完整的动效制作流程。更强的不止是代码，而是opus5.5的多模态调用和组合运用能力\n\t\n先调用生图能力，生成同一风格的素材；再用视频模型做转动和手势，接着用代码抠掉绿幕，最后把素材排布、运动轨迹和出场节奏组合起来。\n\t\n中间也试了两种转动方式：单张图片用代码做左右摆动，以及用视频模型生成完整转身。这次想要后者的效果，所以选了视频方案，再交给代码做整体编排。\n\t\n最后完成全片的剪辑和一些其他的动效，以及配乐。\n\t\n重点是选择用什么样的工具，知道什么是适合的，什么是不适合的\n\t\n把这次的步骤和方案对比放进视频里了，希望能给做类似动效的朋友一个参考。\n\t\n#Claude[话题]#  #AI动效[话题]#  #AI视频[话题]# #审美积累[话题]# #动态设计[话题]# #motion[话题]# #动效[话题]#",
+ "tags": [
+  "Claude",
+  "AI动效",
+  "AI视频",
+  "审美积累",
+  "动态设计",
+  "motion",
+  "动效"
+ ],
+ "author": "饿霸猪",
+ "user_id": "5960c197db2e604013340208",
+ "time": 1790686433000,
+ "ip_location": null,
+ "likes": "203",
+ "collects": "179",
+ "comments_count": "6",
+ "keywords": [
+  "Claude 3D 动画",
+  "Claude Blender 动画",
+  "Claude 做视频",
+  "Claude 动效设计",
+  "Motion Canvas"
+ ],
+ "duration": 27,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040122/6cd5077332ce768f01b77fc5ae738dd7/spectrum/1040g34o325n027li460g49lk9l0pe0g8s3c3e7g!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "龍龍",
+   "content": "调用的可灵是自己的会员账号吗",
+   "likes": "0"
+  },
+  {
+   "user": "未来设计师KiK",
+   "content": "效果真不错！！",
+   "likes": "0"
+  },
+  {
+   "user": "吴neinei",
+   "content": "竟然如此精致的视频[doge]",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

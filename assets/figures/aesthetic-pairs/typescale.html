@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A5 字号尺度与字体数</title>
+<style>
+  :root{--ink:#111418;--soft:#5b636e;--line:#e4e7ec;--band:#f6f7f9;--ok:#0b7a4b;--ok-bg:#e6f5ed;--bad:#b42318;--bad-bg:#fdecea;
+        --mono:"SF Mono",ui-monospace,"JetBrains Mono",Menlo,Consolas,monospace}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:transparent;color:var(--ink);
+            font:13px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .top{display:flex;align-items:center;gap:12px;padding:10px 14px;background:var(--band);border-bottom:1px solid var(--line)}
+  .tag{font:600 10.5px/1 var(--mono);letter-spacing:.08em;color:var(--soft);text-transform:uppercase}
+  .query{flex:1;min-width:0;font-size:13.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .rule{font-size:12px;color:var(--soft);white-space:nowrap}
+  button{font:inherit;font-size:12px;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 11px;cursor:pointer}
+  button:hover{border-color:#c5cad3}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:14px}
+  .head{display:flex;align-items:center;gap:8px;margin-bottom:8px;min-height:24px}
+  .side{font:700 12px/1 var(--mono);width:22px;height:22px;border-radius:6px;display:grid;place-items:center;background:var(--ink);color:#fff;flex:none}
+  .pill{font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:999px;flex:none}
+  .ok .pill{color:var(--ok);background:var(--ok-bg)} .bad .pill{color:var(--bad);background:var(--bad-bg)}
+  .say{flex:1;min-width:0;color:var(--soft);font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .open{border:0;background:none;color:#2f6bff;padding:0 2px}
+  .stage{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:10px;background:#eef0f3}
+  .stage iframe{position:absolute;top:0;left:0;width:1280px;height:800px;border:0;transform-origin:0 0;background:#fff}
+  @media (max-width:720px){.grid{grid-template-columns:1fr}.say,.query{white-space:normal}.rule{display:none}}
+  /* 放大态：父页把本 iframe 铺满视口，这里画成居中的大卡片，点卡片外收起 */
+  body.full{height:100vh;display:flex;align-items:center;justify-content:center;padding:28px}
+  body.full .card{width:min(100%,2400px);box-shadow:0 24px 80px rgba(0,0,0,.35)}
+  /* 放大态只放一张、尽量大，A / B 原地切换（空格或方向键），差别最容易看出来 */
+  .flip{display:none;gap:2px;background:#e9ecf1;border-radius:999px;padding:3px}
+  .flip button{border:0;background:none;padding:4px 12px}
+  .flip button.on{background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.12)}
+  body.full .flip{display:inline-flex}
+  body.full .grid{grid-template-columns:1fr}
+  body.full .grid > div{display:none}
+  body.full .grid > div.sel{display:block}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top"><span class="tag">Query</span><span class="query">为建筑事务所 Studio Halde 做作品集首页</span><span class="rule">A5 · 字号尺度与字体数</span><span class="flip" title="空格或方向键切换"><button class="on">A 符合</button><button>B 违反</button></span><button id="zoom">放大对比</button></div>
+  <div class="grid">
+    <div class="ok sel"><div class="head"><span class="side">A</span><span class="pill">符合</span><span class="say">两种字体；5 个字号全部取自一套 1.333 倍的尺度</span><button class="open" data-v="good">新标签打开</button></div><div class="stage"><iframe title="A" data-v="good"></iframe></div></div>
+    <div class="bad"><div class="head"><span class="side">B</span><span class="pill">违反</span><span class="say">八种字体、十四种字号，三个同级标题三种字体</span><button class="open" data-v="bad">新标签打开</button></div><div class="stage"><iframe title="B" data-v="bad"></iframe></div></div>
+  </div>
+</div>
+<script>
+(function(){
+  var PAGE = "<!doctype html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>Studio Halde &middot; Architecture and landscape<\/title>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link href=\"https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Lobster&family=Oswald:wght@500&family=Courier+Prime&family=Comic+Neue:wght@700&family=Playfair+Display:ital,wght@1,700&family=Bebas+Neue&family=Merriweather:wght@300&display=swap\" rel=\"stylesheet\">\n<style>\n  /* 尺度 1.333：13 / 16 / 21 / 28 / 37 / 50 / 66；两种字体：DM Serif Display 管标题，DM Sans 管其余 */\n  *{box-sizing:border-box;margin:0;padding:0}\n  body{font-family:\"DM Sans\",system-ui,sans-serif;font-size:16px;background:#eceeec;color:#161a1d;-webkit-font-smoothing:antialiased}\n  a{color:inherit;text-decoration:none}\n  .wrap{max-width:1184px;margin:0 auto;padding:0 52px}\n  nav{display:flex;align-items:center;height:80px;gap:36px;font-size:16px}\n  .logo{font-family:\"DM Serif Display\",serif;font-size:28px;margin-right:auto}\n  .hero{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:end;padding:36px 0 44px;border-bottom:1px solid #c9ceca}\n  .label{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#4d5b3c;margin-bottom:20px}\n  h1{font-family:\"DM Serif Display\",serif;font-weight:400;font-size:66px;line-height:1.02;letter-spacing:-.01em;margin-bottom:22px}\n  .intro{font-size:16px;line-height:1.6;color:#4a5157;max-width:30em}\n  .bldg{height:300px;position:relative}\n  .bldg i{position:absolute;bottom:0;background:#c8cfc6;display:block}\n  .bldg .a{left:0;width:38%;height:62%;background:#b9c2b5}\n  .bldg .b{left:30%;width:36%;height:100%;background:#4d5b3c}\n  .bldg .c{left:58%;width:42%;height:48%;background:#d9ddd6}\n  .bldg .d{left:36%;width:6%;height:22%;bottom:18%;background:#eceeec}\n  .bldg .e{left:48%;width:6%;height:22%;bottom:18%;background:#eceeec}\n  .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;padding:36px 0 28px}\n  .img{height:150px;margin-bottom:16px}\n  .i1{background:linear-gradient(#b9c2b5 55%,#4d5b3c 55%)}\n  .i2{background:linear-gradient(90deg,#d9ddd6 40%,#161a1d 40% 46%,#c8cfc6 46%)}\n  .i3{background:radial-gradient(circle at 70% 30%,#4d5b3c 0 22%,#b9c2b5 22%)}\n  .p h3{font-family:\"DM Serif Display\",serif;font-weight:400;font-size:28px;line-height:1.1}\n  .p .m{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#6a7470;margin:8px 0 8px}\n  .p .d{font-size:16px;line-height:1.55;color:#4a5157}\n  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;border-top:1px solid #c9ceca;padding:28px 0 60px}\n  .stats b{display:block;font-family:\"DM Serif Display\",serif;font-weight:400;font-size:50px;line-height:1}\n  .stats span{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#6a7470}\n\n  /* B：同样的内容，七种字体、十几种字号，没有尺度 */\n  .bad .logo{font-family:Lobster,cursive;font-size:31px}\n  .bad nav{font-family:\"Courier Prime\",monospace;font-size:15px}\n  .bad .label{font-family:\"Comic Neue\",cursive;font-size:17px;letter-spacing:0;text-transform:none;font-weight:700}\n  .bad h1{font-family:Oswald,sans-serif;font-weight:500;font-size:59px;line-height:1.1;text-transform:uppercase;letter-spacing:.01em}\n  .bad .intro{font-family:Merriweather,serif;font-weight:300;font-size:15px}\n  .bad .p:nth-child(1) h3{font-family:\"Playfair Display\",serif;font-style:italic;font-weight:700;font-size:25px}\n  .bad .p:nth-child(2) h3{font-family:Oswald,sans-serif;font-size:19px;text-transform:uppercase}\n  .bad .p:nth-child(3) h3{font-family:\"Bebas Neue\",sans-serif;font-size:34px}\n  .bad .p:nth-child(1) .m{font-size:11px}.bad .p:nth-child(2) .m{font-family:\"Courier Prime\",monospace;font-size:14.5px;letter-spacing:0}.bad .p:nth-child(3) .m{font-size:12px;text-transform:none;letter-spacing:0}\n  .bad .p:nth-child(1) .d{font-size:15px}.bad .p:nth-child(2) .d{font-family:Merriweather,serif;font-weight:300;font-size:14px}.bad .p:nth-child(3) .d{font-size:17.5px}\n  .bad .stats b{font-family:\"Bebas Neue\",sans-serif;font-size:58px}\n  .bad .stats div:nth-child(2) b{font-family:\"Playfair Display\",serif;font-style:italic;font-size:41px}\n  .bad .stats span{font-family:\"Comic Neue\",cursive;font-weight:700;font-size:14px;text-transform:none;letter-spacing:0}\n<\/style>\n<\/head>\n<body class=\"{{V}}\">\n<div class=\"wrap\">\n  <nav><a class=\"logo\" href=\"#\">Studio Halde<\/a><a href=\"#\">Projects<\/a><a href=\"#\">Practice<\/a><a href=\"#\">Writing<\/a><a href=\"#\">Contact<\/a><\/nav>\n  <section class=\"hero\">\n    <div>\n      <p class=\"label\">Architecture &amp; landscape &middot; Bergen<\/p>\n      <h1>Buildings that age well.<\/h1>\n      <p class=\"intro\">We design schools, housing and small civic buildings in timber and stone, for places where it rains two days out of three.<\/p>\n    <\/div>\n    <div class=\"bldg\"><i class=\"a\"><\/i><i class=\"b\"><\/i><i class=\"c\"><\/i><i class=\"d\"><\/i><i class=\"e\"><\/i><\/div>\n  <\/section>\n  <section class=\"projects\">\n    <div class=\"p\"><div class=\"img i1\"><\/div><h3>Nordnes School<\/h3><p class=\"m\">Bergen &middot; 2024<\/p><p class=\"d\">A primary school for 420 pupils, built around a covered yard that works in any weather.<\/p><\/div>\n    <div class=\"p\"><div class=\"img i2\"><\/div><h3>Fjell Housing<\/h3><p class=\"m\">Sotra &middot; 2022<\/p><p class=\"d\">Thirty-six timber flats arranged on a slope so every home gets evening sun.<\/p><\/div>\n    <div class=\"p\"><div class=\"img i3\"><\/div><h3>Harbour Library<\/h3><p class=\"m\">Florø &middot; 2021<\/p><p class=\"d\">A reading room in an old net loft, with one window framed on the outer islands.<\/p><\/div>\n  <\/section>\n  <section class=\"stats\"><div><b>27<\/b><span>years in practice<\/span><\/div><div><b>140<\/b><span>buildings completed<\/span><\/div><div><b>9<\/b><span>national awards<\/span><\/div><\/section>\n<\/div>\n<\/body>\n<\/html>\n";
+  var W = 1280, H = 800;
+  var full = false, embedded = window.parent !== window;
+  function doc(v){ return PAGE.replace('{{V}}', v); }
+  var frames = [].slice.call(document.querySelectorAll('.stage iframe'));
+  // 一页正文里有十来个对比组件：滚到附近才把两张网页放进去，免得一开页就渲染二十张
+  function load(){ frames.forEach(function(f){ if (!f.srcdoc) f.srcdoc = doc(f.dataset.v); }); }
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){
+      if (es.some(function(e){ return e.isIntersecting; })) { load(); io.disconnect(); }
+    }, {rootMargin: '800px 0px'});
+    io.observe(document.querySelector('.card'));
+  } else load();
+
+  function layout(){
+    var room = full ? window.innerHeight - 56 - 120 : Infinity;   // 放大态按视口高度封顶
+    frames.forEach(function(f){
+      var st = f.parentNode, w = st.clientWidth;
+      var s = Math.min(w / W, room / H);
+      st.style.height = Math.round(H * s) + 'px';
+      f.style.transform = 'translate(' + Math.max(0, (w - W * s) / 2) + 'px,0) scale(' + s + ')';
+    });
+    if (embedded && !full) window.parent.postMessage({type: 'kc-height', h: document.querySelector('.card').offsetHeight + 2}, '*');
+  }
+  window.addEventListener('resize', layout);
+  layout();
+
+  [].slice.call(document.querySelectorAll('.open')).forEach(function(b){
+    b.onclick = function(){
+      var url = URL.createObjectURL(new Blob([doc(b.dataset.v)], {type: 'text/html'}));
+      window.open(url, '_blank');
+      setTimeout(function(){ URL.revokeObjectURL(url); }, 60000);
+    };
+  });
+
+  var panels = [].slice.call(document.querySelectorAll('.grid > div'));
+  var flips = [].slice.call(document.querySelectorAll('.flip button'));
+  var sel = 0;
+  function pick(i){
+    sel = i;
+    panels.forEach(function(p, k){ p.classList.toggle('sel', k === i); });
+    flips.forEach(function(b, k){ b.classList.toggle('on', k === i); });
+    layout();
+  }
+  flips.forEach(function(b, k){ b.onclick = function(){ pick(k); }; });
+
+  var zoom = document.getElementById('zoom');
+  function setFull(on){
+    full = on;
+    document.body.classList.toggle('full', on);
+    zoom.textContent = on ? '收起' : '放大对比';
+    layout();
+  }
+  zoom.onclick = function(){
+    if (!embedded) { setFull(!full); return; }
+    window.parent.postMessage({type: full ? 'kc-collapse' : 'kc-expand'}, '*');
+  };
+  document.body.addEventListener('click', function(e){
+    if (full && e.target === document.body) window.parent.postMessage({type: 'kc-collapse'}, '*');
+  });
+  window.addEventListener('keydown', function(e){
+    if (!full) return;
+    if (e.key === 'Escape') window.parent.postMessage({type: 'kc-collapse'}, '*');
+    if (e.key === ' ' || e.key === 'ArrowLeft' || e.key === 'ArrowRight') { e.preventDefault(); pick(1 - sel); }
+  });
+  // 父页放大 / 还原好 iframe 后回 ack，这边排好版再回话，父页才显影
+  window.addEventListener('message', function(e){
+    if (e.source !== window.parent || !e.data || typeof e.data !== 'object') return;
+    if (e.data.type === 'kc-expand-ack')   { setFull(true);  window.parent.postMessage({type: 'kc-modal-ready'}, '*'); }
+    if (e.data.type === 'kc-collapse-ack') { setFull(false); window.parent.postMessage({type: 'kc-revealed'}, '*'); }
+  });
+})();
+</script>
+</body>
+</html>
+

@@ -1,0 +1,64 @@
+{
+ "blend": {
+  "1k": {
+   "blend": {
+    "include": {
+     "textures/marble_bust_01_mask_1k.png": {
+      "size": 1638698,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/marble_bust_01/marble_bust_01_mask_1k.png",
+      "md5": "cdfce61904f914e970d89c7e16f48dc6"
+     },
+     "textures/marble_bust_01_nor_gl_1k.exr": {
+      "size": 1158881,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/marble_bust_01/marble_bust_01_nor_gl_1k.exr",
+      "md5": "ad032f190e0da1ce4d2605629e6006b8"
+     },
+     "textures/marble_bust_01_diff_1k.jpg": {
+      "size": 160337,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/marble_bust_01/marble_bust_01_diff_1k.jpg",
+      "md5": "aede40cc2b092d91a5f72598c911da4f"
+     },
+     "textures/marble_bust_01_rough_1k.jpg": {
+      "size": 193918,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/marble_bust_01/marble_bust_01_rough_1k.jpg",
+      "md5": "9fdff7b2b17d12fcc478de3021f561dd"
+     }
+    },
+    "size": 11812596,
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/1k/marble_bust_01/marble_bust_01_1k.blend",
+    "md5": "2ac583de4b5bf2fc12757e565f04d7a9"
+   }
+  }
+ },
+ "gltf": {
+  "1k": {
+   "gltf": {
+    "include": {
+     "marble_bust_01.bin": {
+      "size": 416608,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/marble_bust_01/marble_bust_01.bin",
+      "md5": "1c62c1189a0e8985618c1662e1bd25a3"
+     },
+     "textures/marble_bust_01_nor_gl_1k.jpg": {
+      "size": 124627,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/marble_bust_01/marble_bust_01_nor_gl_1k.jpg",
+      "md5": "134149a7e8f142fcb605f0bde52b3ff6"
+     },
+     "textures/marble_bust_01_diff_1k.jpg": {
+      "size": 160337,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/marble_bust_01/marble_bust_01_diff_1k.jpg",
+      "md5": "aede40cc2b092d91a5f72598c911da4f"
+     },
+     "textures/marble_bust_01_rough_1k.jpg": {
+      "size": 193918,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/marble_bust_01/marble_bust_01_rough_1k.jpg",
+      "md5": "9fdff7b2b17d12fcc478de3021f561dd"
+     }
+    },
+    "size": 2793,
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/marble_bust_01/marble_bust_01_1k.gltf",
+    "md5": "599d6dd71c2dcdffa064b1c1d85882f4"
+   }
+  }
+ }
+}

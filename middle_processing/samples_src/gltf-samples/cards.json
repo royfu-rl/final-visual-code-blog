@@ -1,0 +1,70 @@
+{
+ "links": [
+  [
+   "KhronosGroup/glTF-Sample-Assets",
+   "https://github.com/KhronosGroup/glTF-Sample-Assets"
+  ]
+ ],
+ "cards": [
+  {
+   "img": "ABeautifulGame.jpg",
+   "name": "Models/ABeautifulGame/screenshot/screenshot.jpg",
+   "code": [
+    [
+     "glTF/ABeautifulGame.gltf",
+     "ABeautifulGame.gltf"
+    ]
+   ]
+  },
+  {
+   "img": "AnisotropyBarnLamp.jpg",
+   "name": "Models/AnisotropyBarnLamp/screenshot/screenshot.jpg",
+   "code": [
+    [
+     "glTF/AnisotropyBarnLamp.gltf",
+     "AnisotropyBarnLamp.gltf"
+    ]
+   ]
+  },
+  {
+   "img": "CarConcept.jpg",
+   "name": "Models/CarConcept/screenshot/screenshot.jpg",
+   "code": [
+    [
+     "glTF/CarConcept.gltf",
+     "CarConcept.gltf"
+    ]
+   ]
+  },
+  {
+   "img": "ChronographWatch.jpg",
+   "name": "Models/ChronographWatch/screenshot/screenshot.jpg",
+   "code": [
+    [
+     "glTF/ChronographWatch.gltf",
+     "ChronographWatch.gltf"
+    ]
+   ]
+  },
+  {
+   "img": "CommercialRefrigerator.jpg",
+   "name": "Models/CommercialRefrigerator/screenshot/screenshot.jpg",
+   "code": [
+    [
+     "glTF/CommercialRefrigerator.gltf",
+     "CommercialRefrigerator.gltf"
+    ]
+   ]
+  },
+  {
+   "img": "DamagedHelmet.png",
+   "name": "Models/DamagedHelmet/screenshot/screenshot.png",
+   "code": [
+    [
+     "glTF/DamagedHelmet.gltf",
+     "DamagedHelmet.gltf"
+    ]
+   ]
+  }
+ ]
+}

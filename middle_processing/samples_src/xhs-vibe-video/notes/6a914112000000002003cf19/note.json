@@ -1,0 +1,83 @@
+{
+ "note_id": "6a914112000000002003cf19",
+ "url": "https://www.xiaohongshu.com/explore/6a914112000000002003cf19?xsec_token=ABRDFdkUaW6BKKbGXwCgBF444cggUps2b-b8Q0U3GLgD8=&xsec_source=pc_search",
+ "type": "normal",
+ "title": "Code-as-World：从一段视频逆推物理世界",
+ "desc": "用 Code-as-World 探索 Physical RSI 的世界表征\n\t\n视频生成模型越来越强。\n但像素只是物理世界在某个时刻、某个视角下的投影。它告诉模型“看起来是什么样”，却没有直接说明：\n世界里有什么、它们如何变化，以及变化为什么发生。\n画面看起来合理，不等于背后的世界真的合理。\n一个视频可以足够逼真，同时丢失物体身份、改变几何关系，甚至违背因果。\n所以我们开始思考：\n如果 Agent 要真正理解并推演物理世界，它需要的究竟是更多像素，还是一个能够执行、检验和修正的内部世界？\n\t\nMirroS 的第一步，是 Code-as-World。\n我们让 Agent 用代码描述三个问题：世界由什么构成、世界如何演化、这个世界如何被观测\n代码写下的不是一段视觉描述，而是一个可以运行的世界。\nAgent 先根据图像或视频提出假设，把假设写成程序；再执行模拟、渲染结果，与真实观测比较，并根据误差不断修改。\n表征不是一次预测出来的，而是在 discovery loop 中被反复发现和验证的。\n\t\n建立在这套表征之上，物理智能的 scaling 才刚刚开始：\n物理推理，是对世界状态的构建与推演；\n视频生成，是状态演化之后的视觉渲染；\n具身交互，是在内部世界中模拟未来并选择行动。\n真正需要积累的，或许不是更多彼此割裂的像素，而是能够被理解、执行和复用的结构化物理经验。\n丰富描述世界的概念，修正推演世界的规律；\n让已经理解的世界，成为探索下一个未知世界的起点。\n\t\n#CodingAgent[话题]# #PhysicalAI[话题]# #WorldModel[话题]# #AGI[话题]# #RSI[话题]# #大模型[话题]# #世界模型[话题]# #物理AI[话题]#",
+ "tags": [
+  "CodingAgent",
+  "PhysicalAI",
+  "WorldModel",
+  "AGI",
+  "RSI",
+  "大模型",
+  "世界模型",
+  "物理AI"
+ ],
+ "author": "MirroS",
+ "user_id": "6909605c0000000037008e5d",
+ "time": 1787904274000,
+ "ip_location": null,
+ "likes": "887",
+ "collects": "635",
+ "comments_count": "7",
+ "keywords": [
+  "Motion Canvas"
+ ],
+ "duration": null,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040107/55fbccd903c847f087dae0ae0d2744e0/notes_pre_post/1040g3k8324dh4gvc7k405q89c1edp3itnscsmu8!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040107/471b87e46df18873840834cdc34d8f19/notes_pre_post/1040g3k8324dh4gvc7k0g5q89c1edp3itmbf7gco!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040107/4a76f2d298ff8f620828e09f36d4fa77/notes_pre_post/1040g3k8324dh4gvc7k105q89c1edp3ita5649ro!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040107/9f158eabf13422a9a9d9c23a4fe72867/notes_pre_post/1040g3k8324dh4gvc7k1g5q89c1edp3it9rgfd7o!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040107/21232cfd9924554ad527fdf566366fe8/notes_pre_post/1040g3k8324dh4gvc7k205q89c1edp3itd6duci0!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040107/2fdd5ba66917885bcd3c40f160912077/notes_pre_post/1040g3k8324dh4gvc7k2g5q89c1edp3itgq2icl0!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040107/d1be844d4a864c4f9caea8a40d653df6/notes_pre_post/1040g3k8324dh4gvc7k305q89c1edp3itdls959o!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "MirroS",
+   "content": "项目主页：mirros-lab.github.io/code-as-world\n论文：mirros.ai/report/code-as-world.pdf\n代码：github.com/mirros-lab/code-as-world\n全文 Blog : mirros.ai/blog/representing-physical-world",
+   "likes": "4"
+  },
+  {
+   "user": "莫下河",
+   "content": "composition：3D建模\nEvolution：物理引擎\nAppearance：rendering\n本质还是渲染管线…",
+   "likes": "12"
+  },
+  {
+   "user": "小红薯736890631",
+   "content": "模拟器场景代码构建流程有计划开源吗？目前好像只有一个例子",
+   "likes": "1"
+  },
+  {
+   "user": "hooolly",
+   "content": "猫猫那块，做个手机壳会很美",
+   "likes": "0"
+  },
+  {
+   "user": "你找哪只unicorn",
+   "content": "封面好美",
+   "likes": "0"
+  },
+  {
+   "user": "小天狼星",
+   "content": "[心心眼R][心心眼R][心心眼R]",
+   "likes": "1"
+  },
+  {
+   "user": "皇上",
+   "content": "）",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg",
+  "images/1.jpg",
+  "images/2.jpg",
+  "images/3.jpg",
+  "images/4.jpg",
+  "images/5.jpg",
+  "images/6.jpg"
+ ]
+}

@@ -1,0 +1,10 @@
+{"link": "https://github.com/maplibre/maplibre-gl-js/tree/main/test/integration/render/tests", "id": "maplibre/maplibre-gl-js",
+ "cards": [
+  {"img": "sanfrancisco.png", "name": "test/integration/render/tests/real-world/sanfrancisco/expected.png",
+   "code": [["test/integration/render/tests/real-world/sanfrancisco/style.json", "sanfrancisco.style.json"]]},
+  {"img": "raster-planet.png", "name": "test/integration/render/tests/projection/globe/raster-planet/expected.png",
+   "code": [["test/integration/render/tests/projection/globe/raster-planet/style.json", "raster-planet.style.json"]]},
+  {"img": "multidirectional.png", "name": "test/integration/render/tests/hillshade-method/multidirectional/expected.png",
+   "code": [["test/integration/render/tests/hillshade-method/multidirectional/style.json", "multidirectional.style.json"]]}
+ ]}
+

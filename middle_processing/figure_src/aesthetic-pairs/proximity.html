@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Northwind pricing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Instrument Sans",system-ui,sans-serif;background:#fff;color:#101828;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1184px;margin:0 auto;padding:0 52px}
+  nav{display:flex;align-items:center;height:72px;gap:32px;font-size:14.5px}
+  .logo{font-weight:700;font-size:18px;margin-right:auto;display:flex;align-items:center;gap:9px}
+  .logo i{width:22px;height:22px;border-radius:6px;background:#1f5eff;display:block}
+  .muted{color:#667085}
+  .start{background:#101828;color:#fff;padding:9px 16px;border-radius:9px;font-weight:600}
+  header{text-align:center;padding:40px 0 0}
+  .eyebrow{font-size:13px;font-weight:600;color:#1f5eff;margin-bottom:12px}
+  h1{font-family:"Instrument Serif",serif;font-weight:400;font-size:54px;line-height:1.05;letter-spacing:-.01em;margin-bottom:14px}
+  .sub{font-size:17px;color:#667085;margin-bottom:24px}
+  .toggle{display:inline-flex;background:#f2f4f7;border-radius:999px;padding:4px;font-size:14px;font-weight:500}
+  .toggle span{padding:7px 16px;border-radius:999px}
+  .toggle .on{background:#fff;box-shadow:0 1px 3px rgba(16,24,40,.12)}
+  .toggle em{font-style:normal;color:#039855;margin-left:6px}
+  .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+  .card{border:1px solid #eaecf0;border-radius:16px;padding:28px}
+  .card.pop{border:2px solid #1f5eff;box-shadow:0 12px 32px rgba(31,94,255,.12)}
+  .name{font-size:15px;font-weight:600;display:flex;justify-content:space-between;align-items:center}
+  .badge{font-size:12px;color:#1f5eff;background:#eef3ff;padding:3px 9px;border-radius:999px}
+  .price{margin-top:10px;font-size:44px;font-weight:600;letter-spacing:-.02em}
+  .price small{font-size:14px;font-weight:500;color:#667085;letter-spacing:0;margin-left:4px}
+  .desc{margin-top:6px;font-size:14.5px;color:#667085;line-height:1.5;min-height:44px}
+  .cta{display:block;text-align:center;margin-top:22px;padding:11px;border-radius:10px;font-weight:600;font-size:15px;border:1px solid #d0d5dd}
+  .pop .cta{background:#1f5eff;border-color:#1f5eff;color:#fff}
+  .incl{margin-top:28px;font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:#667085}
+  ul{list-style:none;margin-top:12px}
+  li{font-size:14.5px;padding-left:26px;position:relative;margin-top:10px}
+  li:first-child{margin-top:0}
+  li:before{content:"";position:absolute;left:3px;top:4px;width:10px;height:6px;border-left:2px solid #1f5eff;border-bottom:2px solid #1f5eff;transform:rotate(-45deg)}
+  .faq{display:grid;grid-template-columns:1fr 1fr;column-gap:56px;margin:72px 0 64px}
+  .faq h2{grid-column:1/3;font-family:"Instrument Serif",serif;font-weight:400;font-size:34px;margin-bottom:28px}
+  .q{font-weight:600;font-size:16px}
+  .a{font-size:15px;color:#667085;line-height:1.55;margin-top:6px;margin-bottom:28px}
+
+  /* B：同样的内容，所有间距一样大（或者反着来）—— 看不出谁和谁是一组 */
+  .bad header > *{margin-bottom:30px}
+  .bad .plans{margin-top:16px}
+  .bad .price{margin-top:26px}
+  .bad .desc{margin-top:26px}
+  .bad .cta{margin-top:26px}
+  .bad .incl{margin-top:10px}
+  .bad ul{margin-top:30px}
+  .bad li{margin-top:22px}
+  .bad .a{margin-top:22px;margin-bottom:10px}
+</style>
+</head>
+<body class="{{V}}">
+<div class="wrap">
+  <nav><a class="logo" href="#"><i></i>Northwind</a><a class="muted" href="#">Product</a><a class="muted" href="#">Customers</a><a class="muted" href="#">Pricing</a><a class="muted" href="#">Sign in</a><a class="start" href="#">Start free</a></nav>
+  <header>
+    <p class="eyebrow">Pricing</p>
+    <h1>Simple plans for teams of any size</h1>
+    <p class="sub">Every plan includes unlimited projects and guests. You pay per editor, never per viewer.</p>
+    <div class="toggle"><span>Monthly</span><span class="on">Yearly<em>save 20%</em></span></div>
+  </header>
+  <section class="plans">
+    <div class="card"><div class="name">Starter</div><div class="price">$0<small>forever</small></div><p class="desc">For individuals and small side projects getting organised.</p><a class="cta" href="#">Start for free</a>
+      <p class="incl">Includes</p><ul><li>Up to 3 editors</li><li>Unlimited boards and docs</li><li>7-day version history</li><li>Basic integrations</li></ul></div>
+    <div class="card pop"><div class="name">Team <span class="badge">Most popular</span></div><div class="price">$12<small>per editor / month</small></div><p class="desc">For growing teams that plan, write and ship together every day.</p><a class="cta" href="#">Try Team free for 14 days</a>
+      <p class="incl">Everything in Starter, plus</p><ul><li>Unlimited editors</li><li>Unlimited version history</li><li>Private projects and guests</li><li>Priority support</li></ul></div>
+    <div class="card"><div class="name">Business</div><div class="price">$24<small>per editor / month</small></div><p class="desc">For companies that need security reviews, SSO and audit logs.</p><a class="cta" href="#">Talk to sales</a>
+      <p class="incl">Everything in Team, plus</p><ul><li>SAML single sign-on</li><li>Audit log and data export</li><li>Custom data residency</li><li>Dedicated success manager</li></ul></div>
+  </section>
+  <section class="faq">
+    <h2>Questions, answered</h2>
+    <div><p class="q">Who counts as an editor?</p><p class="a">Anyone who creates or changes content. People who only view or comment are free on every plan.</p>
+      <p class="q">Can I switch plans later?</p><p class="a">Yes. Upgrades apply immediately; downgrades take effect at the end of your billing period.</p></div>
+    <div><p class="q">Do you offer discounts for nonprofits?</p><p class="a">Registered nonprofits and schools get Team at 50% off. Write to us with your registration number.</p>
+      <p class="q">What happens to my data if I cancel?</p><p class="a">You keep read-only access for 90 days and can export everything as Markdown or PDF.</p></div>
+  </section>
+</div>
+</body>
+</html>
+

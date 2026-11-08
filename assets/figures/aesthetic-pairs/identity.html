@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A10 风格辨识度</title>
+<style>
+  :root{--ink:#111418;--soft:#5b636e;--line:#e4e7ec;--band:#f6f7f9;--ok:#0b7a4b;--ok-bg:#e6f5ed;--bad:#b42318;--bad-bg:#fdecea;
+        --mono:"SF Mono",ui-monospace,"JetBrains Mono",Menlo,Consolas,monospace}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:transparent;color:var(--ink);
+            font:13px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .top{display:flex;align-items:center;gap:12px;padding:10px 14px;background:var(--band);border-bottom:1px solid var(--line)}
+  .tag{font:600 10.5px/1 var(--mono);letter-spacing:.08em;color:var(--soft);text-transform:uppercase}
+  .query{flex:1;min-width:0;font-size:13.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .rule{font-size:12px;color:var(--soft);white-space:nowrap}
+  button{font:inherit;font-size:12px;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 11px;cursor:pointer}
+  button:hover{border-color:#c5cad3}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:14px}
+  .head{display:flex;align-items:center;gap:8px;margin-bottom:8px;min-height:24px}
+  .side{font:700 12px/1 var(--mono);width:22px;height:22px;border-radius:6px;display:grid;place-items:center;background:var(--ink);color:#fff;flex:none}
+  .pill{font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:999px;flex:none}
+  .ok .pill{color:var(--ok);background:var(--ok-bg)} .bad .pill{color:var(--bad);background:var(--bad-bg)}
+  .say{flex:1;min-width:0;color:var(--soft);font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .open{border:0;background:none;color:#2f6bff;padding:0 2px}
+  .stage{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:10px;background:#eef0f3}
+  .stage iframe{position:absolute;top:0;left:0;width:1280px;height:800px;border:0;transform-origin:0 0;background:#fff}
+  @media (max-width:720px){.grid{grid-template-columns:1fr}.say,.query{white-space:normal}.rule{display:none}}
+  /* 放大态：父页把本 iframe 铺满视口，这里画成居中的大卡片，点卡片外收起 */
+  body.full{height:100vh;display:flex;align-items:center;justify-content:center;padding:28px}
+  body.full .card{width:min(100%,2400px);box-shadow:0 24px 80px rgba(0,0,0,.35)}
+  /* 放大态只放一张、尽量大，A / B 原地切换（空格或方向键），差别最容易看出来 */
+  .flip{display:none;gap:2px;background:#e9ecf1;border-radius:999px;padding:3px}
+  .flip button{border:0;background:none;padding:4px 12px}
+  .flip button.on{background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.12)}
+  body.full .flip{display:inline-flex}
+  body.full .grid{grid-template-columns:1fr}
+  body.full .grid > div{display:none}
+  body.full .grid > div.sel{display:block}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top"><span class="tag">Query</span><span class="query">为二手书店 Second Shelf Books 做首页</span><span class="rule">A10 · 风格辨识度</span><span class="flip" title="空格或方向键切换"><button class="on">A 符合</button><button>B 违反</button></span><button id="zoom">放大对比</button></div>
+  <div class="grid">
+    <div class="ok sel"><div class="head"><span class="side">A</span><span class="pill">符合</span><span class="say">深绿底、书脊插画、旧书店衬线，只属于这家店</span><button class="open" data-v="good">新标签打开</button></div><div class="stage"><iframe title="A" data-v="good"></iframe></div></div>
+    <div class="bad"><div class="head"><span class="side">B</span><span class="pill">违反</span><span class="say">同样的文字套进通用模板：紫蓝渐变、居中、Inter、渐变图标卡片</span><button class="open" data-v="bad">新标签打开</button></div><div class="stage"><iframe title="B" data-v="bad"></iframe></div></div>
+  </div>
+</div>
+<script>
+(function(){
+  var PAGE = "<!doctype html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>Second Shelf Books<\/title>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link href=\"https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Karla:wght@400;500;700&family=Inter:wght@400;500;600;800&display=swap\" rel=\"stylesheet\">\n<style>\n  /* A：为这家店做的版式 —— 深绿底、书脊、旧书店的衬线；B：同样的文字套进通用模板 */\n  *{box-sizing:border-box;margin:0;padding:0}\n  body{font-family:Karla,system-ui,sans-serif;background:#1c3a2f;color:#f2ede3;-webkit-font-smoothing:antialiased;min-height:800px}\n  a{color:inherit;text-decoration:none}\n  .wrap{max-width:1184px;margin:0 auto;padding:0 52px}\n  nav{display:flex;align-items:baseline;height:84px;padding-top:30px;gap:30px;font-size:14px;color:#b9c4bc;border-bottom:1px solid #3d5a4e}\n  .logo{font-family:\"Cormorant Garamond\",serif;font-size:27px;font-weight:600;color:#f2ede3;margin-right:auto}\n  .open{color:#d8b24a}\n  .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;padding:46px 0 0;align-items:end}\n  .badge{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:#d8b24a;margin-bottom:18px}\n  h1{font-family:\"Cormorant Garamond\",serif;font-weight:500;font-size:78px;line-height:.98;letter-spacing:-.01em;margin-bottom:24px}\n  h1 em{font-style:italic;color:#d8b24a}\n  .sub{font-size:17px;line-height:1.65;color:#c3cdc5;max-width:31em;margin-bottom:30px}\n  .ctas{display:flex;gap:26px;align-items:center}\n  .btn{background:#f2ede3;color:#1c3a2f;font-weight:700;font-size:15px;padding:14px 22px}\n  .lnk{font-size:15px;border-bottom:1px solid #d8b24a;padding-bottom:2px}\n  .shelf{display:flex;align-items:flex-end;gap:5px;height:330px;border-bottom:10px solid #6d4f32;padding:0 10px}\n  .shelf i{display:block;width:34px;border-radius:2px 2px 0 0;position:relative}\n  .shelf i:after{content:\"\";position:absolute;left:8px;right:8px;top:14px;height:2px;background:rgba(255,255,255,.35)}\n  .feats{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;padding:34px 0 60px}\n  .feats > div{border-top:1px solid #3d5a4e;padding-top:18px}\n  .ic{display:none}\n  .feats h3{font-family:\"Cormorant Garamond\",serif;font-size:24px;font-weight:600;margin-bottom:6px}\n  .feats p{font-size:14.5px;line-height:1.6;color:#b9c4bc}\n\n  /* B：通用 AI 模板 —— 白底紫蓝渐变、居中、Inter、渐变字、玻璃卡片、渐变图标块 */\n  .bad{font-family:Inter,sans-serif;color:#0f172a;background:radial-gradient(60% 50% at 20% 10%,#c7d2fe 0,transparent 70%),radial-gradient(50% 40% at 85% 20%,#f5d0fe 0,transparent 70%),#fff}\n  .bad nav{border:0;color:#475569;padding-top:0;align-items:center;height:72px}\n  .bad .logo{font-family:Inter,sans-serif;font-size:20px;font-weight:800;background:linear-gradient(90deg,#6366f1,#a855f7);-webkit-background-clip:text;background-clip:text;color:transparent}\n  .bad .open{color:#6366f1}\n  .bad .hero{grid-template-columns:1fr;text-align:center;padding-top:56px}\n  .bad .badge{display:inline-block;letter-spacing:0;text-transform:none;color:#6366f1;background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.25);padding:6px 14px;border-radius:999px;font-weight:500}\n  .bad h1{font-family:Inter,sans-serif;font-weight:800;font-size:60px;line-height:1.08;letter-spacing:-.03em;max-width:15em;margin:0 auto 22px}\n  .bad h1 em{font-style:normal;background:linear-gradient(90deg,#6366f1,#a855f7,#ec4899);-webkit-background-clip:text;background-clip:text;color:transparent}\n  .bad .sub{color:#475569;margin:0 auto 30px;font-size:18px}\n  .bad .ctas{justify-content:center;gap:14px}\n  .bad .btn{background:linear-gradient(90deg,#6366f1,#a855f7);color:#fff;border-radius:999px;padding:14px 26px;box-shadow:0 10px 30px rgba(99,102,241,.35)}\n  .bad .lnk{border:1px solid #e2e8f0;background:rgba(255,255,255,.7);padding:13px 24px;border-radius:999px;font-weight:600}\n  .bad .shelf{display:none}\n  .bad .feats{padding-top:56px;gap:24px}\n  .bad .feats > div{border:1px solid rgba(226,232,240,.9);background:rgba(255,255,255,.6);backdrop-filter:blur(12px);border-radius:20px;padding:26px;text-align:left;box-shadow:0 8px 30px rgba(15,23,42,.06)}\n  .bad .ic{display:block;width:44px;height:44px;border-radius:12px;margin-bottom:16px;background:linear-gradient(135deg,#6366f1,#a855f7)}\n  .bad .feats > div:nth-child(2) .ic{background:linear-gradient(135deg,#a855f7,#ec4899)}\n  .bad .feats > div:nth-child(3) .ic{background:linear-gradient(135deg,#06b6d4,#6366f1)}\n  .bad .feats h3{font-family:Inter,sans-serif;font-size:18px;font-weight:600}\n  .bad .feats p{color:#475569}\n<\/style>\n<\/head>\n<body class=\"{{V}}\">\n<div class=\"wrap\">\n  <nav><a class=\"logo\" href=\"#\">Second Shelf Books<\/a><a href=\"#\">This week<\/a><a href=\"#\">Sell your books<\/a><a href=\"#\">Events<\/a><span class=\"open\">Open today 10:00&ndash;21:00<\/span><\/nav>\n  <section class=\"hero\">\n    <div>\n      <p class=\"badge\">Calle Larga 14 &middot; since 1987<\/p>\n      <h1>Used books, chosen by <em>people who read them.<\/em><\/h1>\n      <p class=\"sub\">Two floors of second-hand fiction, poetry and history. We buy books every Saturday morning and shelve nothing we have not read ourselves.<\/p>\n      <div class=\"ctas\"><a class=\"btn\" href=\"#\">See this week&rsquo;s arrivals<\/a><a class=\"lnk\" href=\"#\">Sell us your books<\/a><\/div>\n    <\/div>\n    <div class=\"shelf\">\n      <i style=\"height:62%;background:#b5533c\"><\/i><i style=\"height:78%;background:#d8b24a;width:28px\"><\/i><i style=\"height:70%;background:#e8e1d2;width:40px\"><\/i><i style=\"height:88%;background:#2f5d8a\"><\/i><i style=\"height:66%;background:#8a6d4b;width:26px\"><\/i><i style=\"height:94%;background:#c9c2b2;width:42px\"><\/i><i style=\"height:74%;background:#6b2f2a\"><\/i><i style=\"height:58%;background:#d8b24a;width:24px;transform:rotate(-12deg);transform-origin:bottom right;margin-left:12px\"><\/i><i style=\"height:82%;background:#40705f;width:38px\"><\/i><i style=\"height:69%;background:#e8e1d2;width:30px\"><\/i>\n    <\/div>\n  <\/section>\n  <section class=\"feats\">\n    <div><span class=\"ic\"><\/span><h3>Read before shelved<\/h3><p>Every book in the shop has been read by one of the five of us. Ask, and we will tell you what we thought.<\/p><\/div>\n    <div><span class=\"ic\"><\/span><h3>Saturday arrivals<\/h3><p>New stock goes out at ten every Saturday. The list is online the night before, so you can reserve.<\/p><\/div>\n    <div><span class=\"ic\"><\/span><h3>Reading room until 21:00<\/h3><p>Upstairs has six armchairs and a kettle. Stay as long as you like; buying is optional.<\/p><\/div>\n  <\/section>\n<\/div>\n<\/body>\n<\/html>\n";
+  var W = 1280, H = 800;
+  var full = false, embedded = window.parent !== window;
+  function doc(v){ return PAGE.replace('{{V}}', v); }
+  var frames = [].slice.call(document.querySelectorAll('.stage iframe'));
+  // 一页正文里有十来个对比组件：滚到附近才把两张网页放进去，免得一开页就渲染二十张
+  function load(){ frames.forEach(function(f){ if (!f.srcdoc) f.srcdoc = doc(f.dataset.v); }); }
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){
+      if (es.some(function(e){ return e.isIntersecting; })) { load(); io.disconnect(); }
+    }, {rootMargin: '800px 0px'});
+    io.observe(document.querySelector('.card'));
+  } else load();
+
+  function layout(){
+    var room = full ? window.innerHeight - 56 - 120 : Infinity;   // 放大态按视口高度封顶
+    frames.forEach(function(f){
+      var st = f.parentNode, w = st.clientWidth;
+      var s = Math.min(w / W, room / H);
+      st.style.height = Math.round(H * s) + 'px';
+      f.style.transform = 'translate(' + Math.max(0, (w - W * s) / 2) + 'px,0) scale(' + s + ')';
+    });
+    if (embedded && !full) window.parent.postMessage({type: 'kc-height', h: document.querySelector('.card').offsetHeight + 2}, '*');
+  }
+  window.addEventListener('resize', layout);
+  layout();
+
+  [].slice.call(document.querySelectorAll('.open')).forEach(function(b){
+    b.onclick = function(){
+      var url = URL.createObjectURL(new Blob([doc(b.dataset.v)], {type: 'text/html'}));
+      window.open(url, '_blank');
+      setTimeout(function(){ URL.revokeObjectURL(url); }, 60000);
+    };
+  });
+
+  var panels = [].slice.call(document.querySelectorAll('.grid > div'));
+  var flips = [].slice.call(document.querySelectorAll('.flip button'));
+  var sel = 0;
+  function pick(i){
+    sel = i;
+    panels.forEach(function(p, k){ p.classList.toggle('sel', k === i); });
+    flips.forEach(function(b, k){ b.classList.toggle('on', k === i); });
+    layout();
+  }
+  flips.forEach(function(b, k){ b.onclick = function(){ pick(k); }; });
+
+  var zoom = document.getElementById('zoom');
+  function setFull(on){
+    full = on;
+    document.body.classList.toggle('full', on);
+    zoom.textContent = on ? '收起' : '放大对比';
+    layout();
+  }
+  zoom.onclick = function(){
+    if (!embedded) { setFull(!full); return; }
+    window.parent.postMessage({type: full ? 'kc-collapse' : 'kc-expand'}, '*');
+  };
+  document.body.addEventListener('click', function(e){
+    if (full && e.target === document.body) window.parent.postMessage({type: 'kc-collapse'}, '*');
+  });
+  window.addEventListener('keydown', function(e){
+    if (!full) return;
+    if (e.key === 'Escape') window.parent.postMessage({type: 'kc-collapse'}, '*');
+    if (e.key === ' ' || e.key === 'ArrowLeft' || e.key === 'ArrowRight') { e.preventDefault(); pick(1 - sel); }
+  });
+  // 父页放大 / 还原好 iframe 后回 ack，这边排好版再回话，父页才显影
+  window.addEventListener('message', function(e){
+    if (e.source !== window.parent || !e.data || typeof e.data !== 'object') return;
+    if (e.data.type === 'kc-expand-ack')   { setFull(true);  window.parent.postMessage({type: 'kc-modal-ready'}, '*'); }
+    if (e.data.type === 'kc-collapse-ack') { setFull(false); window.parent.postMessage({type: 'kc-revealed'}, '*'); }
+  });
+})();
+</script>
+</body>
+</html>
+

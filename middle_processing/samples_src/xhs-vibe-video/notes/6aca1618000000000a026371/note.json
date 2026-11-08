@@ -1,0 +1,65 @@
+{
+ "note_id": "6aca1618000000000a026371",
+ "url": "https://www.xiaohongshu.com/explore/6aca1618000000000a026371?xsec_token=ABIjxpLJeqS3QjjOpGf_WvMjxcrY3l2crejTSleXKCkUs=&xsec_source=pc_search",
+ "type": "video",
+ "title": "Opus5.5做视频的审美秒杀GPT-6以及一切了",
+ "desc": "Clawd的博物馆奇妙夜。\n用Opus5.5做了几十个动画短片后，这个绝对是我最满意的一个了。很难想象，一个语言模型能做出这样流畅、精细的动画，甚至音效和配乐也全是它完成的。\n这支短片用Claude Code＋我们的开源skill huashu-art-motion制作，目前已经收获3000多GitHub stars。\n想试试的话，在GitHub搜索huashu-art-motion。\n#AI动画[话题]#",
+ "tags": [
+  "AI动画"
+ ],
+ "author": "花叔（只工作不上班版",
+ "user_id": "5abc6f17e8ac2b109179dfdf",
+ "time": 1791628824000,
+ "ip_location": "云南",
+ "likes": "116",
+ "collects": "62",
+ "comments_count": "10",
+ "keywords": [
+  "Claude 3D 动画",
+  "Claude Code 做视频",
+  "Claude 做视频",
+  "Claude 数据可视化动画",
+  "Claude 片头动画",
+  "Claude 科普动画",
+  "Opus5.5 做视频"
+ ],
+ "duration": 98,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040130/837777acd664936702558e62ee829705/spectrum/1040g0k0326519c1b4a004a41e0nhfnuv2gh3e2g!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "Even",
+   "content": "codex能配合这个skill用么[笑哭R]……",
+   "likes": "0"
+  },
+  {
+   "user": "躺不平",
+   "content": "怎么用 claude code 不封号[笑哭R]",
+   "likes": "0"
+  },
+  {
+   "user": "敲爆AI的天灵盖",
+   "content": "油画那几张是额外给的吗",
+   "likes": "0"
+  },
+  {
+   "user": "Coooocola🥕",
+   "content": "这个费token吗请问",
+   "likes": "0"
+  },
+  {
+   "user": "有点唐～～～",
+   "content": "这个大概多少token",
+   "likes": "0"
+  },
+  {
+   "user": "小红薯5C6FC18E",
+   "content": "怎么做动画？有提示词么",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

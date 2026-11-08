@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  
+  <meta charset="UTF-8">
+  
+  
+  
+
+  <title>shape() in shape-outside</title>
+
+    <link rel="canonical" href="https://codepen.io/una/pen/ogzRBWV">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=refresh" />
+  
+  
+  
+<style>
+:root {
+  --shape: shape(
+      from 0px 0px,
+      line to 100px 0px,
+      curve to 150px 100px with 100px 40px / 150px 60px,
+      curve to 100px 200px with 150px 140px / 100px 160px,
+      curve to 50px 300px with 100px 240px / 50px 260px,
+      curve to 100px 400px with 50px 340px / 100px 360px,
+      line to 0px 400px,
+      close
+    );
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  background-color: #f9fafb;
+  color: #1f2937;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 600px;
+  height: 450px;
+  position: relative;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.squiggle-float {
+  float: left;
+  width: 150px;
+  height: 380px;
+  shape-margin: 1rem;
+  background: linear-gradient(to bottom, #3b82f6, #06b6d4);
+
+  shape-outside: var(--shape);
+  clip-path: var(--shape);
+
+  transition: shape-outside 0.5s ease-in-out, clip-path 0.5s ease-in-out;
+}
+
+#regenerate-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #dee;
+  border: none;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  transition: scale 0.2s ease;
+  
+  &:hover {
+    scale: 0.9;
+  }
+}
+
+h1 {
+  margin-top: 0;
+  color: #111827;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+</style>
+
+  
+  
+  
+</head>
+
+<body>
+  <div class="container">
+  <h1>Chrome 149+: <code>shape()</code> in <code>shape-outside</code></h1>
+
+  <div class="squiggle-float"></div>
+
+  <p>
+    This paragraph demonstrates how the new CSS <code>shape()</code> function 
+    can be combined with the <code>shape-outside</code> property to wrap text 
+    along a non-rectangular boundary.
+  </p>
+  <p>
+    The squiggly line is created by chaining a series of <code>curve to</code> commands. Each curve takes a destination coordinate and a control point using the <code>with</code> keyword to create smooth quadratic Bézier curves. By alternating the X coordinates of the destination points and their control points, we generate a wave pattern that runs down the right edge of the floated element.
+  </p>
+  <p>
+    The same exact <code>shape()</code> function is applied to the <code>clip-path</code> property. This trims the background gradient of the floated container to perfectly match the invisible barrier pushing against the text.
+  </p>
+
+    <button id="regenerate-btn" class="material-symbols-outlined">
+  refresh
+  </button>
+</div>
+  
+    <script id="rendered-js" >
+function generateSmoothWavyShape() {
+  const segments = 4;
+  const totalHeight = 400; 
+  const segmentHeight = totalHeight / segments;
+
+  // Boundaries
+  const minX = 20;
+  const maxX = 150;
+
+  let shapeStr = 'shape(\n  from 0px 0px,\n  line to 100px 0px,\n';
+
+  let currentX = 100;
+  let currentY = 0;
+
+  for (let i = 1; i <= segments; i++) {
+    const targetX = Math.floor(Math.random() * (maxX - minX + 1)) + minX;
+    const targetY = currentY + segmentHeight;
+
+    const cp1X = currentX;
+    const cp1Y = currentY + (segmentHeight * 0.4);
+
+    const cp2X = targetX;
+    const cp2Y = currentY + (segmentHeight * 0.6);
+
+    shapeStr += `  curve to ${targetX}px ${targetY}px with ${cp1X}px ${cp1Y}px / ${cp2X}px ${cp2Y}px,\n`;
+
+    currentX = targetX;
+    currentY = targetY;
+  }
+
+  shapeStr += `  line to 0px ${totalHeight}px,\n  close\n)`;
+
+  document.documentElement.style.setProperty('--shape', shapeStr);
+}
+
+const button = document.getElementById('regenerate-btn');
+if (button) {
+  button.addEventListener('click', generateSmoothWavyShape);
+}
+  </script>
+
+  
+</body>
+
+</html>
+

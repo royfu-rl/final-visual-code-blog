@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  
+  <meta charset="UTF-8">
+  
+  
+  
+
+  <title>Border-shape demo</title>
+
+    <link rel="canonical" href="https://codepen.io/una/pen/bNeLmoZ">
+  
+  
+  
+  
+<style>
+:root {
+  --bg-color: #f8fafc;
+  --panel-bg: #ffffff;
+  --text-color: #334155;
+  --accent-color: #6366f1;
+  --border-color: #e2e8f0;
+}
+
+body {
+  font-family: system-ui;
+  background: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+h1 { margin: 0; font-size: 1.5rem; }
+
+/* --- The Preview Area --- */
+.preview-stage {
+  position: relative;
+  background: var(--panel-bg);
+  border-radius: 16px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  width: 340px;
+  height: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  /* Checkerboard for transparency */
+  background-image: linear-gradient(45deg, #f1f5f9 25%, transparent 25%), 
+    linear-gradient(-45deg, #f1f5f9 25%, transparent 25%), 
+    linear-gradient(45deg, transparent 75%, #f1f5f9 75%), 
+    linear-gradient(-45deg, transparent 75%, #f1f5f9 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+.tooltip {
+  /* Base Dimensions */
+  width: 160px;
+  height: 120px;
+  box-sizing: border-box;
+
+  /* Configurable Visuals */
+  background: #3b82f6;
+  border-color: #1e3a8a;
+  border-style: solid;
+
+  /* These will be set by JS */
+  --r: 10px;        /* Corner Radius */
+  --ap: 50%;        /* Arrow Position */
+  --ah: 10px;       /* Arrow Height */
+  --aw: 10px;       /* Arrow Width (Half) */
+
+  /* We use clip-path to visualize the shape since border-shape 
+     is experimental. */
+  clip-path: var(--shape-path);
+  border-shape: var(--shape-path);
+
+  /* Flex alignment for text inside */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+
+  /* Transition for smooth padding updates */
+  transition: padding 0.2s ease;
+
+}
+
+/* --- Controls --- */
+.controls-panel {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  background: var(--panel-bg);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 500px;
+}
+
+.control-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+.control-section:last-child { border-bottom: none; }
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+label { font-size: 0.85rem; font-weight: 600; color: #64748b; }
+.val-display { font-family: monospace; font-size: 0.85rem; color: var(--accent-color); }
+
+input[type="range"] { flex: 1; accent-color: var(--accent-color); cursor: pointer; }
+
+select, input[type="number"] {
+  padding: 6px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  background: #fff;
+}
+
+/* --- Button --- */
+.action-btn {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-align: center;
+  margin-top: 1rem;
+}
+.action-btn:hover { background: #4f46e5; }
+.action-btn:active { transform: translateY(1px); }
+
+@media screen and (max-height: 600px) {
+  body {
+    display: grid;
+    grid-template-columns: 300px auto;
+    padding: 0;
+    gap: 1rem;
+  }
+  
+  .preview-stage {
+    width: 300px;
+  }
+}
+</style>
+
+  
+  
+  
+</head>
+
+<body>
+  <div class="preview-stage">
+  <div class="tooltip" id="tooltip"><p>Tooltip generator with <code>border-shape</code></p>
+</div>
+</div>
+
+<div class="controls-panel">
+
+  <div class="control-section">
+    <div class="row">
+      <label>Arrow Side</label>
+      <select id="input-side">
+        <option value="bottom">Bottom</option>
+        <option value="top">Top</option>
+        <option value="left">Left</option>
+        <option value="right">Right</option>
+      </select>
+    </div>
+
+    <div class="row">
+      <label>Arrow Position <span id="val-ap" class="val-display">50%</span></label>
+      <input type="range" id="input-ap" min="15" max="85" value="50">
+    </div>
+
+    <div class="row">
+      <label>Arrow Size (Height) <span id="val-ah" class="val-display">10px</span></label>
+      <input type="range" id="input-ah" min="0" max="30" value="10">
+    </div>
+
+    <div class="row">
+      <label>Arrow Width (Half) <span id="val-aw" class="val-display">10px</span></label>
+      <input type="range" id="input-aw" min="2" max="30" value="10">
+    </div>
+  </div>
+
+  <div class="control-section">
+    <div class="row">
+      <label>Corner Radius <span id="val-r" class="val-display">10px</span></label>
+      <input type="range" id="input-r" min="0" max="40" value="10">
+    </div>
+  </div>
+
+  <div class="control-section">
+    <div class="row">
+      <label>Border Width</label>
+      <div style="display:flex; align-items:center; gap:5px;">
+        <input type="number" id="input-bw" value="2" min="0" max="20" style="width: 50px;">
+        <span style="font-size:0.8rem">px</span>
+      </div>
+    </div>
+  </div>
+
+  <button class="action-btn" id="copy-btn">Copy CSS to Clipboard</button>
+
+</div>
+  
+    <script id="rendered-js" >
+const tooltip = document.getElementById('tooltip');
+  const copyBtn = document.getElementById('copy-btn');
+  
+  const inputs = {
+    side: document.getElementById('input-side'),
+    ap: document.getElementById('input-ap'),
+    ah: document.getElementById('input-ah'),
+    aw: document.getElementById('input-aw'),
+    r: document.getElementById('input-r'),
+    bw: document.getElementById('input-bw')
+  };
+
+  const displays = {
+    ap: document.getElementById('val-ap'),
+    ah: document.getElementById('val-ah'),
+    aw: document.getElementById('val-aw'),
+    r: document.getElementById('val-r')
+  };
+
+  let generatedCSS = '';
+
+  function getShapePath(side) {
+    if (side === 'bottom') {
+      return `shape(from var(--r) 0,
+        hline to calc(100% - var(--r)),
+        curve to right var(--r) with right top,
+        vline to calc(100% - (var(--r) + var(--ah))),
+        curve to calc(100% - var(--r)) calc(100% - var(--ah)) with right calc(100% - var(--ah)),
+        hline to calc(var(--ap) + var(--aw)),
+        line by calc(var(--aw) * -1) var(--ah),
+        line by calc(var(--aw) * -1) calc(var(--ah) * -1),
+        hline to var(--r),
+        curve to left calc(100% - (var(--r) + var(--ah))) with left calc(100% - var(--ah)),
+        vline to var(--r),
+        curve to var(--r) top with left top)`;
+    } 
+    
+    else if (side === 'top') {
+      return `shape(from var(--r) var(--ah),
+        hline to calc(var(--ap) - var(--aw)),
+        line by var(--aw) calc(var(--ah) * -1),
+        line by var(--aw) var(--ah),
+        hline to calc(100% - var(--r)),
+        curve to right calc(var(--ah) + var(--r)) with right calc(var(--ah)),
+        vline to calc(100% - var(--r)),
+        curve to calc(100% - var(--r)) bottom with right bottom,
+        hline to var(--r),
+        curve to left calc(100% - var(--r)) with left bottom,
+        vline to calc(var(--ah) + var(--r)),
+        curve to var(--r) var(--ah) with left var(--ah))`;
+    }
+
+    else if (side === 'right') {
+      return `shape(from var(--r) 0,
+        hline to calc(100% - (var(--r) + var(--ah))),
+        curve to calc(100% - var(--ah)) var(--r) with calc(100% - var(--ah)) top,
+        vline to calc(var(--ap) - var(--aw)),
+        line by var(--ah) var(--aw),
+        line by calc(var(--ah) * -1) var(--aw),
+        vline to calc(100% - var(--r)),
+        curve to calc(100% - (var(--r) + var(--ah))) bottom with calc(100% - var(--ah)) bottom,
+        hline to var(--r),
+        curve to left calc(100% - var(--r)) with left bottom,
+        vline to var(--r),
+        curve to var(--r) top with left top)`;
+    }
+
+    else if (side === 'left') {
+      return `shape(from calc(var(--r) + var(--ah)) 0,
+        hline to calc(100% - var(--r)),
+        curve to right var(--r) with right top,
+        vline to calc(100% - var(--r)),
+        curve to calc(100% - var(--r)) bottom with right bottom,
+        hline to calc(var(--r) + var(--ah)),
+        curve to var(--ah) calc(100% - var(--r)) with calc(var(--ah)) bottom,
+        vline to calc(var(--ap) + var(--aw)),
+        line by calc(var(--ah) * -1) calc(var(--aw) * -1),
+        line by var(--ah) calc(var(--aw) * -1),
+        vline to var(--r),
+        curve to calc(var(--r) + var(--ah)) top with var(--ah) top)`;
+    }
+  }
+
+  function update() {
+    const side = inputs.side.value;
+    const r = inputs.r.value + 'px';
+    const ap = inputs.ap.value + '%';
+    const ah = inputs.ah.value + 'px';
+    const aw = inputs.aw.value + 'px';
+    const bw = inputs.bw.value + 'px';
+
+    // Update displays
+    displays.r.textContent = r;
+    displays.ap.textContent = ap;
+    displays.ah.textContent = ah;
+    displays.aw.textContent = aw;
+
+    // Apply variables to Preview
+    tooltip.style.setProperty('--r', r);
+    tooltip.style.setProperty('--ap', ap);
+    tooltip.style.setProperty('--ah', ah);
+    tooltip.style.setProperty('--aw', aw);
+    
+    // Apply Border settings
+    tooltip.style.borderWidth = bw;
+
+    // Reset and Apply Padding based on side to center text
+    tooltip.style.padding = '0'; // Reset all
+    if (side === 'top') tooltip.style.paddingTop = ah;
+    if (side === 'bottom') tooltip.style.paddingBottom = ah;
+    if (side === 'left') tooltip.style.paddingLeft = ah;
+    if (side === 'right') tooltip.style.paddingRight = ah;
+
+    // Get the Shape String
+    const shapePath = getShapePath(side);
+    tooltip.style.setProperty('--shape-path', shapePath);
+
+    // Generate Copy String
+    generatedCSS = `.tooltip {
+  /* Dimensions */
+  width: 200px;
+  height: 150px;
+  box-sizing: border-box; /* Important for padding logic */
+  
+  /* Variables for Shape */
+  --r: ${r};
+  --ap: ${ap};
+  --ah: ${ah};
+  --aw: ${aw};
+
+  /* Visuals */
+  background: green;
+  border-width: ${bw};
+  border-style: solid;
+  border-color: blue;
+  
+  /* Padding added to compensate for Arrow Height */
+  padding-${side}: ${ah}; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* The Shape */
+  border-shape: ${shapePath};
+  
+  /* Fallback */
+  clip-path: ${shapePath};
+}`;
+  }
+
+  copyBtn.addEventListener('click', () => {
+    navigator.clipboard.writeText(generatedCSS).then(() => {
+      const originalText = copyBtn.textContent;
+      copyBtn.textContent = "Copied!";
+      setTimeout(() => copyBtn.textContent = originalText, 2000);
+    });
+  });
+
+  // Event Listeners
+  Object.values(inputs).forEach(input => {
+    input.addEventListener('input', update);
+  });
+
+  // Init
+  update();
+  </script>
+
+  
+</body>
+
+</html>
+

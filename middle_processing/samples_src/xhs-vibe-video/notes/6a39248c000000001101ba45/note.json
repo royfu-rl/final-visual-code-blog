@@ -1,0 +1,77 @@
+{
+ "note_id": "6a39248c000000001101ba45",
+ "url": "https://www.xiaohongshu.com/explore/6a39248c000000001101ba45?xsec_token=ABsL56hpR6Zs_kzcXj3G0oHQMvL3Z84e_ZRZMZsqL5JBA=&xsec_source=pc_search",
+ "type": "normal",
+ "title": "Codex视频插件怎么选？🧩",
+ "desc": "最近在研究Codex做视频这件事，发现之前很多说法其实要更严谨一点。\n准确来说，Codex本身不是视频生成模型。\n它更像一个编码代理：帮你搭项目、写代码、改动画、跑渲染命令、反复调整视频效果。\n真正负责视频生产路线的，是后面的框架。\n\t\n目前比较值得关注的两条路线是：\n✅ HyperFrames\n✅ Remotion\n它们不是可灵、Runway那种“直接生成镜头”的工具，而是更偏代码驱动的视频合成和自动化生产框架。\n\t\n简单说：\n✅HyperFrames更偏 HTML / CSS / JS + agent-native工作流。 对Codex这类coding agent 比较友好，适合把素材、字幕、旁白、图表、动效快速组织成视频。\n✅Remotion更偏 React / frame-based工作流。 用React组件和帧来控制视频，更适合固定栏目、数据可视化、排行榜、品牌模板、批量生成这类场景。\n\t\n所以我现在会这样理解：\n如果你是普通内容创作者，手里已经有素材，想先快速做出一条教程视频、产品介绍、信息短片， 可以先试HyperFrames。\n如果你有固定栏目，想把视频做成可复用模板，后续只换标题、截图、数据、文案， 可以重点看Remotion。\n\t\n选之前还要注意几个点：\n1️⃣ 两者都不只是“剪辑工具” 它们更像代码化的视频合成、动画和渲染工作流。\n2️⃣ 商业使用要看许可证HyperFrames目前是Apache 2.0；Remotion商业团队使用需要注意license规则。\n\t\n我的感受是：\n这两个不是谁替代谁，更多是看你的工作流。\n偏内容生产、想快速跑通，先看HyperFrames。 偏工程化、长期复用、批量模板，再看Remotion。\n做视频这件事，正在越来越像搭一条自动化生产线。\n\t\n#codex[话题]#  #hyperframes[话题]#  #remotion[话题]#  #AI视频[话题]#  #AI工具[话题]#  #ai剪辑[话题]#   #自媒体工具[话题]# #ai[话题]# #插件[话题]# #agent[话题]#",
+ "tags": [
+  "codex",
+  "hyperframes",
+  "remotion",
+  "AI视频",
+  "AI工具",
+  "ai剪辑",
+  "自媒体工具",
+  "ai",
+  "插件",
+  "agent"
+ ],
+ "author": "AI",
+ "user_id": "6674e457000000000700751f",
+ "time": 1782129804000,
+ "ip_location": null,
+ "likes": "325",
+ "collects": "503",
+ "comments_count": "8",
+ "keywords": [
+  "Remotion"
+ ],
+ "duration": null,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040115/f7bdca061a2edbdc1244fb57fda4d9a5/spectrum/1040g34o321nfkh7rmsb05pjkshbhot8vgeg5md0!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040115/67ca47b9d83dd0182facc22a08800914/spectrum/1040g34o321nfkh7rmsd05pjkshbhot8vv9dfi38!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040115/ce4b03c5d787b121ef5d03485f88815f/spectrum/1040g34o321nfkh7rmsc05pjkshbhot8vk45cv4o!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040115/c56932d8ed715a2ed47b6d95d89eb0c7/spectrum/1040g34o321nfkh7rmscg5pjkshbhot8vuv359do!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040115/2caac2b399eca94fee1b78850e0437fd/spectrum/1040g34o321nfkh7rmsfg5pjkshbhot8vpmhlv1o!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040115/6d9b2b9e8b48ff71496350ec415f8aad/spectrum/1040g34o321nfkh7rmsg05pjkshbhot8vuu2fl90!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040115/cb7f0845220d23d343335efd362f5016/spectrum/1040g34o321nfkh7rmsbg5pjkshbhot8vc45q1go!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040115/3cf43e5e490c7a39c278d762bb9fa5d4/spectrum/1040g34o321nfkh7rmsdg5pjkshbhot8vqht606g!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "站起来蹬",
+   "content": "这篇文章的图片也是AI生成的吗？",
+   "likes": "3"
+  },
+  {
+   "user": "Lk.",
+   "content": "请问下p5是用的哪个ai生成的[吃瓜R]",
+   "likes": "1"
+  },
+  {
+   "user": "spades2019",
+   "content": "[点赞R][点赞R][点赞R]",
+   "likes": "2"
+  },
+  {
+   "user": "北冥有渔",
+   "content": "插件选择确实头疼！直播切片这个场景我推荐自己开源的 Yht20927/douyin-living，录制+切片一条龙，不用拼插件了",
+   "likes": "0"
+  },
+  {
+   "user": "Jason南半球的养老日常",
+   "content": "Codex直接不用这些插件，也是直出这样的视频的： 56 【用不好Claude，其实不是你的问题 - 爱钓鱼的IT宅 | 小红书 - 你的生活兴趣社区】 😆 Ujoo065pOvrzvM3 😆 https://www.xiaohongshu.com/discovery/item/6a3e80c30000000015024e2b?source=webshare&xhsshare=pc_web&xsec_token=ABNJly6bvn-wL4xcEC1fPoMhGf4hEgiY6RlJmbRVX8edk=&xsec_source=pc_share",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg",
+  "images/1.jpg",
+  "images/2.jpg",
+  "images/3.jpg",
+  "images/4.jpg",
+  "images/5.jpg",
+  "images/6.jpg",
+  "images/7.jpg"
+ ]
+}

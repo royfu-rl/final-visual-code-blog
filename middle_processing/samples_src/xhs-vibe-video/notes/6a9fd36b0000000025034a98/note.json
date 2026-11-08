@@ -1,0 +1,61 @@
+{
+ "note_id": "6a9fd36b0000000025034a98",
+ "url": "https://www.xiaohongshu.com/explore/6a9fd36b0000000025034a98?xsec_token=ABBHpD2CR0uKFt0V4AkEw3WwGH6PqYVlhmwL_NLY2eEbY=&xsec_source=pc_search",
+ "type": "normal",
+ "title": "一个混乱、但很值得关注的早期赛道",
+ "desc": "最近 AI 交互视频突然变成一个热门方向。Loopit 做互动内容社区、Vivix 做底层实时交互模型、Reverie AI 在做 AI 内容娱乐平台、SigmaZ 推出实时交互式视频平台 Tap8。\n\t\n四家都把「实时交互」放在了核心位置，但选择了不同的技术路线和产品切口。\n\t\n我们在和其中几家创始人聊完后，最大的感受是：混乱。\n\t\n这是一个刚刚形成的赛道，产品名称、模型定义和技术边界还没有统一，各家对于「交互模型」和「世界模型」的关系也有不同看法。\n\t\n我们整理了他们对于「AI 交互模型」这个赛道的一些观点、分歧，和判断。详见图上内容[飞吻R]。#AI搞事业howto[话题]# #AI创业[话题]# #交互式视频[话题]# #世界模型[话题]# #Loopit[话题]# #AI新赛道[话题]#",
+ "tags": [
+  "AI搞事业howto",
+  "AI创业",
+  "交互式视频",
+  "世界模型",
+  "Loopit",
+  "AI新赛道"
+ ],
+ "author": "Founder Park",
+ "user_id": "6110a2e10000000001009c71",
+ "time": 1788859243000,
+ "ip_location": null,
+ "likes": "106",
+ "collects": "114",
+ "comments_count": "3",
+ "keywords": [
+  "Hypit 视频"
+ ],
+ "duration": null,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040131/b2fe1b754750bbba24bceba427361a19/spectrum/1040g0k0324roiknf1k005o8gkbgg973hht450ug!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040131/92b84c8316a6f0aaf5c34b731e4ba8ad/spectrum/1040g0k0324rohlpvhq0g5o8gkbgg973hn1hb3u8!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040131/fd0ce72e0025846b85c74362d1a67fe6/spectrum/1040g0k0324rohlpvhq105o8gkbgg973h9ftl0qo!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040131/e41b8e31317b9c4328d6168b44345ef3/spectrum/1040g0k0324rohlpvhq1g5o8gkbgg973h1aed3p8!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040131/656f5c90256e870e494f522e24794107/spectrum/1040g0k0324rohlpvhq205o8gkbgg973htum63bg!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040131/3c7a1cf64bcc0268ff93222cfc183626/spectrum/1040g0k0324rohlpvhq2g5o8gkbgg973hqgfp2lg!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040131/e3c1d6a0c91a4614f031597400338f4d/spectrum/1040g0k0324rohlpvhq305o8gkbgg973hm07423g!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "太古汇吉米仔",
+   "content": "这四家公司的技术能力都一般",
+   "likes": "1"
+  },
+  {
+   "user": "ReelFork",
+   "content": "这四家的分歧其实是同一个问题：交互发生在生成之前还是之后。模型在播放中响应，是每个观众每次选择都在烧算力；先做好内容再在素材之间交互，是一次生产多次播放。前者适合单人短时长，后者才撑得住一部能反复看的剧。（做可玩剧集平台的 ReelFork）",
+   "likes": "7"
+  },
+  {
+   "user": "Mi的剧场",
+   "content": "Vidu 是不是也有类似的功能",
+   "likes": "1"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg",
+  "images/1.jpg",
+  "images/2.jpg",
+  "images/3.jpg",
+  "images/4.jpg",
+  "images/5.jpg",
+  "images/6.jpg"
+ ]
+}

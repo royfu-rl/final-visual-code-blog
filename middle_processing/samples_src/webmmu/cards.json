@@ -1,0 +1,48 @@
+{
+ "link": "https://huggingface.co/datasets/McGill-NLP/WebMMU",
+ "id": "McGill-NLP/WebMMU",
+ "cards": [
+  {
+   "img": "113-screenshot_before.png",
+   "name": "https_cpj.org_2023_06_guatemalan-journalist-jose-ruben-zamora-convicted-of-money-laundering-sentence.json",
+   "code": [
+    [
+     "original_code",
+     "113-original_code.txt"
+    ],
+    [
+     "edit_prompt",
+     "113-edit_prompt.txt"
+    ]
+   ]
+  },
+  {
+   "img": "124-screenshot_before.png",
+   "name": "https_gear-xusa.com_product_sqs-racing-k-series-six-speed-dog-gear-sets__add-to-cart=422.json",
+   "code": [
+    [
+     "original_code",
+     "124-original_code.txt"
+    ],
+    [
+     "edit_prompt",
+     "124-edit_prompt.txt"
+    ]
+   ]
+  },
+  {
+   "img": "104-screenshot_before.png",
+   "name": "https_en.ryte.com_product-insights_category_technical-seo_.json",
+   "code": [
+    [
+     "original_code",
+     "104-original_code.txt"
+    ],
+    [
+     "edit_prompt",
+     "104-edit_prompt.txt"
+    ]
+   ]
+  }
+ ]
+}

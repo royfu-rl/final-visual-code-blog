@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pulse One</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Sora,system-ui,sans-serif;background:#f1f1ee;color:#111;-webkit-font-smoothing:antialiased;position:relative}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1184px;margin:0 auto;padding:0 52px}
+  nav{display:flex;align-items:center;height:72px;gap:30px;font-size:14px;color:#55575a}
+  .logo{font-weight:700;font-size:18px;color:#111;margin-right:auto;letter-spacing:-.01em}
+  .hero{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:30px 0 40px}
+  .new{font-size:13px;color:#d4561c;font-weight:600;margin-bottom:16px}
+  h1{font-size:68px;line-height:1;letter-spacing:-.04em;font-weight:700;margin-bottom:22px}
+  h1 span{color:#8a8c90;font-weight:400}
+  .sub{font-size:18px;line-height:1.6;color:#55575a;max-width:26em;margin-bottom:34px}
+  .buy{display:flex;align-items:center;gap:26px}
+  .price{font-size:15px;color:#55575a}
+  .price b{display:block;font-size:24px;color:#111;font-weight:600}
+  .btn{background:#111;color:#fff;font-weight:600;font-size:15px;padding:15px 26px;border-radius:999px}
+  .lnk{font-size:15px;font-weight:600;color:#111}
+  .art{height:440px;position:relative;display:grid;place-items:center}
+  .band{position:absolute;width:150px;height:440px;border-radius:40px;background:linear-gradient(#2a2c30,#3a3d42)}
+  .case{position:relative;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#d9dadc,#9a9ca1 70%);display:grid;place-items:center;box-shadow:0 40px 80px rgba(0,0,0,.25)}
+  .face{width:216px;height:216px;border-radius:50%;background:#0d0e10;display:grid;place-items:center;color:#f1f1ee;position:relative}
+  .face b{font-size:44px;font-weight:300;letter-spacing:-.02em}
+  .face span{position:absolute;bottom:52px;font-size:12px;color:#d4561c}
+  .ring{position:absolute;inset:14px;border-radius:50%;border:3px solid #d4561c;border-right-color:transparent;border-bottom-color:transparent;transform:rotate(-20deg)}
+  .specs{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;border-top:1px solid #d9d9d4;padding:30px 0 60px}
+  .specs b{display:block;font-size:20px;font-weight:600;margin-bottom:6px}
+  .specs p{font-size:14.5px;line-height:1.55;color:#55575a}
+  mark{background:none;color:inherit}
+  .only-bad{display:none}
+
+  /* B：同样的产品信息，外面堆满不传达信息的装饰 —— 横幅、角标、发光边、闪光、倒计时 */
+  .bad .only-bad{display:revert}
+  .bad .promo{display:block;background:linear-gradient(90deg,#ff1f5a,#ff8a00,#ff1f5a);color:#fff;text-align:center;font-weight:800;font-size:14px;letter-spacing:.06em;padding:9px;text-transform:uppercase}
+  .bad .new{display:flex;gap:8px}
+  .bad .new em{font-style:normal;color:#fff;font-size:11px;font-weight:800;padding:5px 9px;border-radius:6px;transform:rotate(-3deg)}
+  .bad .new em:nth-child(1){background:#ff1f5a}.bad .new em:nth-child(2){background:#ff8a00}.bad .new em:nth-child(3){background:#7c3aed}
+  .bad h1{text-transform:uppercase;font-weight:800;font-size:58px;background:linear-gradient(90deg,#7c3aed,#ec4899,#f59e0b);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 4px 12px rgba(236,72,153,.45))}
+  .bad h1 span{color:transparent}
+  .bad .sub mark{background:#fde047;padding:0 3px}
+  .bad .stars{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;margin:-18px 0 22px}
+  .bad .stars svg{width:96px;height:18px}
+  .bad .buy{flex-wrap:wrap;gap:12px}
+  .bad .btn{background:linear-gradient(90deg,#7c3aed,#ec4899);box-shadow:0 0 0 3px #fff,0 0 0 5px #ec4899,0 0 24px rgba(236,72,153,.7);text-transform:uppercase;letter-spacing:.04em}
+  .bad .lnk{border:2px dashed #7c3aed;padding:12px 18px;border-radius:12px}
+  .bad .cart{display:inline-block;background:#ff8a00;color:#fff;font-weight:800;font-size:13px;padding:13px 18px;border-radius:12px;box-shadow:0 0 18px rgba(255,138,0,.6);text-transform:uppercase}
+  .bad .price{background:#fff;border:2px solid #ff1f5a;border-radius:12px;padding:6px 12px}
+  .bad .art{background:radial-gradient(circle,#fbcfe8 0,#ede9fe 45%,transparent 70%)}
+  .bad .case{box-shadow:0 0 0 8px #fde047,0 0 0 16px #f472b6,0 0 60px 20px rgba(124,58,237,.5)}
+  .bad .spark{position:absolute;width:34px;height:34px}
+  .bad .s1{left:70px;top:40px}.bad .s2{right:60px;top:110px;width:24px;height:24px}.bad .s3{left:120px;bottom:50px;width:22px;height:22px}.bad .s4{right:110px;bottom:30px}
+  .bad .sticker{position:absolute;right:30px;top:20px;width:110px;height:110px;border-radius:50%;background:#ff1f5a;color:#fff;display:grid;place-items:center;text-align:center;font-weight:800;font-size:15px;line-height:1.1;transform:rotate(12deg);box-shadow:0 0 0 4px #fff,0 8px 20px rgba(0,0,0,.2)}
+  .bad .specs > div{border:2px solid;border-radius:14px;padding:16px}
+  .bad .specs > div:nth-child(1){border-color:#7c3aed}.bad .specs > div:nth-child(2){border-color:#ec4899}.bad .specs > div:nth-child(3){border-color:#f59e0b}
+  .bad .specs b:after{content:" PRO";font-size:10px;vertical-align:top;color:#fff;background:#111;padding:2px 5px;border-radius:4px;margin-left:6px}
+  .bad .chat{position:fixed;right:24px;bottom:24px;background:#7c3aed;color:#fff;font-weight:700;font-size:14px;padding:14px 20px;border-radius:999px;box-shadow:0 10px 30px rgba(124,58,237,.5)}
+</style>
+</head>
+<body class="{{V}}">
+<div class="only-bad promo">Flash sale: 30% off &middot; ends in 02:14:33 &middot; free shipping &middot; free extra strap</div>
+<div class="wrap">
+  <nav><a class="logo" href="#">Pulse</a><a href="#">Watches</a><a href="#">Bands</a><a href="#">Health</a><a href="#">Support</a></nav>
+  <section class="hero">
+    <div>
+      <p class="new">New<em class="only-bad">NEW!</em><em class="only-bad">HOT</em><em class="only-bad">BEST SELLER</em></p>
+      <h1>Pulse One. <span>Quietly brilliant.</span></h1>
+      <p class="sub">A titanium watch that tracks your sleep, heart rhythm and training, and lasts <mark>a full week</mark> on one charge.</p>
+      <div class="only-bad stars"><svg viewBox="0 0 100 18"><g fill="#f59e0b"><path d="M9 0l2.6 6 6.4.5-4.9 4.2 1.5 6.3L9 13.6 3.4 17l1.5-6.3L0 6.5 6.4 6z"/><path transform="translate(20)" d="M9 0l2.6 6 6.4.5-4.9 4.2 1.5 6.3L9 13.6 3.4 17l1.5-6.3L0 6.5 6.4 6z"/><path transform="translate(40)" d="M9 0l2.6 6 6.4.5-4.9 4.2 1.5 6.3L9 13.6 3.4 17l1.5-6.3L0 6.5 6.4 6z"/><path transform="translate(60)" d="M9 0l2.6 6 6.4.5-4.9 4.2 1.5 6.3L9 13.6 3.4 17l1.5-6.3L0 6.5 6.4 6z"/><path transform="translate(80)" d="M9 0l2.6 6 6.4.5-4.9 4.2 1.5 6.3L9 13.6 3.4 17l1.5-6.3L0 6.5 6.4 6z"/></g></svg>4.9 (12,384 reviews) &middot; Trusted by 2M+</div>
+      <div class="buy"><div class="price">From<b>$249</b></div><a class="btn" href="#">Pre-order</a><a class="only-bad cart" href="#">Add to cart</a><a class="lnk" href="#">Compare models</a></div>
+    </div>
+    <div class="art">
+      <div class="band"></div>
+      <div class="case"><div class="face"><div class="ring"></div><b>10:09</b><span>7 days left</span></div></div>
+      <svg class="only-bad spark s1" viewBox="0 0 24 24"><path fill="#f59e0b" d="M12 0l2.5 9.5L24 12l-9.5 2.5L12 24l-2.5-9.5L0 12l9.5-2.5z"/></svg>
+      <svg class="only-bad spark s2" viewBox="0 0 24 24"><path fill="#ec4899" d="M12 0l2.5 9.5L24 12l-9.5 2.5L12 24l-2.5-9.5L0 12l9.5-2.5z"/></svg>
+      <svg class="only-bad spark s3" viewBox="0 0 24 24"><path fill="#7c3aed" d="M12 0l2.5 9.5L24 12l-9.5 2.5L12 24l-2.5-9.5L0 12l9.5-2.5z"/></svg>
+      <svg class="only-bad spark s4" viewBox="0 0 24 24"><path fill="#f59e0b" d="M12 0l2.5 9.5L24 12l-9.5 2.5L12 24l-2.5-9.5L0 12l9.5-2.5z"/></svg>
+      <div class="only-bad sticker">Only<br>7 left!</div>
+    </div>
+  </section>
+  <section class="specs">
+    <div><b>7-day battery</b><p>A full week of tracking, with the always-on display, from a 45-minute charge.</p></div>
+    <div><b>Heart rhythm alerts</b><p>Continuous ECG-grade readings, with a notification if anything looks irregular.</p></div>
+    <div><b>Titanium, 38 g</b><p>Light enough to sleep in, tough enough for the pool and the trail.</p></div>
+  </section>
+</div>
+<a class="only-bad chat" href="#">Chat with us!</a>
+</body>
+</html>
+

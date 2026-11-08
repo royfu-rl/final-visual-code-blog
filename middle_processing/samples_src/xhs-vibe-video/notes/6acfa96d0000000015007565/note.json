@@ -1,0 +1,90 @@
+{
+ "note_id": "6acfa96d0000000015007565",
+ "url": "https://www.xiaohongshu.com/explore/6acfa96d0000000015007565?xsec_token=ABb7nMgHbRReQMf0cXrTtf5_jubwqkbebnld_bQQrShjY=&xsec_source=pc_search",
+ "type": "video",
+ "title": "审美像开了挂的7个视频制作Skill",
+ "desc": "让 Claude 直接写代码，一帧一帧画出视频：\n没有一帧是视频模型生成的，每一帧都能改。\n下面 7 个 Skill，按各家官方样片整理了效果、美学感觉和工作里怎么用：\n\t\n① xilo-opus-video｜最通用\n先给 3 个方案和预览，选定再成片。说不清要什么风格时用它。\n\t\n② lemo-opuscar｜一本风格图册\n43 种影片风格，每种一支完整短片：水墨、浮世绘、蓝图、像素游戏。报风格名 + 说你的故事。\n\t\n③ mg-styles-15｜动效词典\n15 种 MG 风格 × 10 秒，附提示词和源码。不知道怎么描述「想要的感觉」，翻一页拿去改。\n\t\n④ dashi-animationstyle｜给口播配画面\n15–60 秒中文口播 → 带字幕的讲解动画，自带 7 套画风。做培训、科普最对口。\n\t\n⑤ huashu-art-motion｜把美术史搬进来\n梵高笔触、莫奈水面、埃及壁画，另有 9 种解说画法。要「艺术感」时上限最高。\n\t\n⑥ wtt-code-animation-studio｜从编剧开始\n想法 → 剧本 → 分镜 → 源码 → 成片，沙画、粉笔都能做。仓库没放样片，视频里三段是按它的流程自己跑的。许可是 CC BY-NC-SA，禁止商用。\n\t\n⑦ video-shotcraft｜专拍产品\n网页 / 前端项目 → 带运镜的宣传片，152 张镜头配方卡。官网演示、发布会开场用。\n\t\n对号入座：\n· 不知道要什么风格 → xilo\n· 想翻图册挑风格 → lemo / mg-styles-15\n· 给口播配画面 → dashi\n· 要艺术感 → huashu\n· 要讲故事 → wtt（注意许可）\n· 要拍产品 → video-shotcraft\n\t\n#AI进化生活howto[话题]# #HOWTO[话题]# #AI工具[话题]# #视频制作[话题]# #AI视频[话题]# #AI新手村[话题]# #AI替我说[话题]# #用AI讲知识[话题]#",
+ "tags": [
+  "AI进化生活howto",
+  "HOWTO",
+  "AI工具",
+  "视频制作",
+  "AI视频",
+  "AI新手村",
+  "AI替我说",
+  "用AI讲知识"
+ ],
+ "author": "小Q的AI落地窗",
+ "user_id": "610f9e0a000000000100539b",
+ "time": 1792023241000,
+ "ip_location": "广东",
+ "likes": "600",
+ "collects": "1639",
+ "comments_count": "38",
+ "keywords": [
+  "Claude Code 做视频",
+  "Claude 产品宣传片",
+  "Claude 口播视频",
+  "Claude 科普动画",
+  "视频 skill"
+ ],
+ "duration": 213,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040110/78f875035ad5accad904d8e64fed3eca/spectrum/1040g0k0326afh417kc005o8fjo508ksr0sce10o!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "小Q的AI落地窗",
+   "content": "想要 skill 可以加群哦AI的榻榻米",
+   "likes": "1"
+  },
+  {
+   "user": "Troll",
+   "content": "Codex能用吗？Claude被封号了[笑哭R]",
+   "likes": "0"
+  },
+  {
+   "user": "小红薯6687B417",
+   "content": "哇，谢谢博主，马上让我的 Claude code 扫描了一遍然后提取出来融进了我自己的 skill[皱眉R]",
+   "likes": "1"
+  },
+  {
+   "user": "VibeDollar",
+   "content": "@点点 提取视频文案",
+   "likes": "0"
+  },
+  {
+   "user": "好好用AI",
+   "content": "@点点 几个 skil 名字给下",
+   "likes": "0"
+  },
+  {
+   "user": "Fiona_薇薇安",
+   "content": "谢谢分享，我先存下来[派对R]用用看",
+   "likes": "0"
+  },
+  {
+   "user": "哈啤憨憨的妈咪",
+   "content": "Ai做视频",
+   "likes": "0"
+  },
+  {
+   "user": "水木爸的规划本",
+   "content": "大神们， 这些skill能转到workbuddy么？",
+   "likes": "0"
+  },
+  {
+   "user": "祖师傅的AI工坊",
+   "content": "但是我发现claude生成的视频，完播率太低了",
+   "likes": "0"
+  },
+  {
+   "user": "Julian的小角落",
+   "content": "昨天刚看完莫奈睡莲，今天就刷到有人准备把莫奈水面搬进代码动画。先说好：可以学光，别把睡莲做成会发光的塑料片，我替甲方盯着[偷笑R]",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

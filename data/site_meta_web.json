@@ -1,0 +1,864 @@
+[
+ {
+  "name": "js13kGames",
+  "org": "js13kGames",
+  "org_domain": "js13kgames.com",
+  "download_label": "站点",
+  "download_url": "https://js13kgames.com/",
+  "artifacts": [
+   "img:截图",
+   "txt:标题",
+   "run:单文件 .html"
+  ],
+  "size": "2,799 件",
+  "permitted": "✓ 逐件核许可",
+  "feature": "**体积上限当质量闸**：提交包压缩后不超过 13 KB，作品天然自包含、可单文件渲染。但抽的 8 件里有 4 件首帧是开始屏、加载屏或空画布 —— 要渲染后比对，先得解决「怎么进到有画面的那一帧」",
+  "chapter": "web",
+  "group": "社区站"
+ },
+ {
+  "name": "Hugging Face 静态空间",
+  "org": "HuggingFace",
+  "org_domain": "huggingface.co",
+  "download_label": "站点",
+  "download_url": "https://huggingface.co/spaces",
+  "artifacts": [
+   "txt:标题",
+   "txt:描述",
+   "run:多文件工程"
+  ],
+  "size": "331,654 个",
+  "permitted": "✓ 按许可字段筛",
+  "feature": "**唯一可批量筛许可的来源**：许可是结构化字段，不用逐件人工核",
+  "chapter": "web",
+  "group": "社区站"
+ },
+ {
+  "name": "CodePen",
+  "org": "CodePen",
+  "org_domain": "codepen.io",
+  "download_label": "站点",
+  "download_url": "https://codepen.io/",
+  "artifacts": [
+   "img:截图",
+   "txt:标题",
+   "code:html / css / js 三段"
+  ],
+  "size": "10M → 25k",
+  "permitted": "△ MIT 须署名；拿不到量",
+  "feature": "**名义与可用差两个数量级**：自报千万级，按许可过滤后约 2.5 万",
+  "chapter": "web",
+  "group": "社区站"
+ },
+ {
+  "name": "OpenProcessing",
+  "org": "OpenProcessing",
+  "org_domain": "openprocessing.org",
+  "download_label": "站点",
+  "download_url": "https://openprocessing.org/",
+  "artifacts": [
+   "img:截图",
+   "txt:标题",
+   "txt:描述",
+   "code:.js（p5 草图）"
+  ],
+  "size": "1M+",
+  "permitted": "△ 逐件核；限速 6 s",
+  "feature": "**抓取成本高**：要按 6 秒间隔慢爬，且每件作品的许可要单独核",
+  "chapter": "web",
+  "group": "社区站"
+ },
+ {
+  "name": "Frontend Mentor",
+  "org": "Frontend Mentor",
+  "org_domain": "frontendmentor.io",
+  "download_label": "站点",
+  "download_url": "https://www.frontendmentor.io/",
+  "artifacts": [
+   "img:设计稿",
+   "txt:描述",
+   "run:多文件工程"
+  ],
+  "size": "7,155 个",
+  "permitted": "△ 设计稿不可再分发",
+  "feature": "**唯一自带设计稿的来源**，但设计稿不可再分发，只能用提交的代码",
+  "chapter": "web",
+  "group": "社区站"
+ },
+ {
+  "name": "Shadertoy",
+  "org": "Shadertoy",
+  "org_domain": "shadertoy.com",
+  "download_label": "站点",
+  "download_url": "https://www.shadertoy.com/",
+  "artifacts": [
+   "img:截图",
+   "txt:标题",
+   "code:GLSL"
+  ],
+  "size": "52k 个",
+  "permitted": "△ 默认 CC BY-NC-SA 3.0：科研可用、不可商用",
+  "feature": "**不是页面**：着色器源码要补一层固定渲染外壳才能进 harness；非商用条款",
+  "chapter": "web",
+  "group": "社区站"
+ },
+ {
+  "name": "Observable",
+  "org": "Observable",
+  "org_domain": "observablehq.com",
+  "download_label": "站点",
+  "download_url": "https://observablehq.com/",
+  "artifacts": [
+   "txt:标题",
+   "txt:描述",
+   "code:笔记本"
+  ],
+  "size": "未取到",
+  "permitted": "✗ 无默认许可",
+  "feature": "**离开自己的运行环境不可渲染**：单元格依赖运行时求值顺序；无许可等于保留一切权利",
+  "chapter": "web",
+  "group": "社区站"
+ },
+ {
+  "name": "JSFiddle",
+  "org": "JSFiddle",
+  "org_domain": "jsfiddle.net",
+  "download_label": "站点",
+  "download_url": "https://jsfiddle.net/",
+  "artifacts": [
+   "txt:标题",
+   "code:html / css / js 三段"
+  ],
+  "size": "未取到",
+  "permitted": "✗ 无默认许可",
+  "feature": "**取不到总量**，且无默认许可",
+  "chapter": "web",
+  "group": "社区站"
+ },
+ {
+  "name": "Webflow 可克隆站",
+  "org": "Webflow",
+  "org_domain": "webflow.com",
+  "site_url": "https://webflow.com/made-in-webflow",
+  "download_label": "sitemap",
+  "download_url": "https://webflow.com/sitemap.xml",
+  "artifacts": [
+   "run:.html",
+   "code:.css",
+   "meta:点赞 / 克隆数"
+  ],
+  "size": "95,246 个条目",
+  "feature": "**规模最大，高质量的少**：可克隆原创约 5.7 万，点赞 ≥ 10 的约 4,700（抽 300 外推）；高赞的多是单页交互效果演示；HTML 由工具生成",
+  "permitted": "✓ 可克隆站 CC0；robots 写 ai-train=yes",
+  "chapter": "web",
+  "group": "可克隆站与教程 demo"
+ },
+ {
+  "name": "Codrops",
+  "org": "Codrops",
+  "org_domain": "tympanus.net",
+  "site_url": "https://tympanus.net/codrops/",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/codrops",
+  "artifacts": [
+   "code:源码",
+   "run:demo 页",
+   "txt:教程文章"
+  ],
+  "size": "349 个仓库",
+  "feature": "**动效最密**：MIT 的 129 个里 91% 用 GSAP、WebGL 只占 10%；手写代码中位 1,059 行",
+  "permitted": "✓ demo 默认 MIT；2012–2019 老仓禁止原样再分发；文章不得整篇转载",
+  "chapter": "web",
+  "group": "可克隆站与教程 demo"
+ },
+ {
+  "name": "主题目录：Astro / Hugo / Jamstack",
+  "org": "Hugo",
+  "org_domain": "gohugo.io",
+  "site_url": "https://themes.gohugo.io/",
+  "download_label": "Astro",
+  "download_url": "https://astro.build/themes/",
+  "artifacts": [
+   "code:多文件工程",
+   "img:截图",
+   "run:demo 站"
+  ],
+  "size": "3,186 个",
+  "feature": "**唯一成规模的多页整站**：Astro 1,348（免费 567）、Hugo 638、Jamstack 1,200；响应式、暗色模式",
+  "permitted": "✓ Hugo 只收 OSI 许可；Astro、Jamstack 逐仓核",
+  "chapter": "web",
+  "group": "主题、模板与组件库"
+ },
+ {
+  "name": "shadcn/ui 与 registry",
+  "org": "shadcn",
+  "org_domain": "ui.shadcn.com",
+  "site_url": "https://ui.shadcn.com/blocks",
+  "download_label": "registries.json",
+  "download_url": "https://ui.shadcn.com/r/registries.json",
+  "artifacts": [
+   "code:.tsx",
+   "meta:JSON 元数据"
+  ],
+  "size": "471 项 + 第三方 508 家",
+  "feature": "**设计系统一致**：token 与亮暗主题统一；要套固定外壳才能渲染",
+  "permitted": "✓ shadcn/ui、Magic UI 为 MIT；第三方逐家核",
+  "chapter": "web",
+  "group": "主题、模板与组件库"
+ },
+ {
+  "name": "Uiverse · HyperUI",
+  "org": "Uiverse",
+  "org_domain": "uiverse.io",
+  "site_url": "https://uiverse.io/",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/uiverse-io/galaxy",
+  "artifacts": [
+   "run:单文件 .html",
+   "code:.css"
+  ],
+  "size": "4,362 个",
+  "feature": "**免构建的小元素**：Uiverse 3,802、HyperUI 560；微交互与 CSS 动画，难度低到中",
+  "permitted": "✓ MIT",
+  "chapter": "web",
+  "group": "主题、模板与组件库"
+ },
+ {
+  "name": "HTML5 UP · Start Bootstrap",
+  "org": "HTML5 UP",
+  "org_domain": "html5up.net",
+  "site_url": "https://html5up.net/",
+  "download_label": "Start Bootstrap",
+  "download_url": "https://startbootstrap.com/themes",
+  "artifacts": [
+   "run:.html",
+   "img:截图"
+  ],
+  "size": "94 个",
+  "feature": "**成熟模板**：响应式单页，风格偏老",
+  "permitted": "✓ HTML5 UP CC BY 3.0（须署名）；Start Bootstrap 43 个 MIT",
+  "chapter": "web",
+  "group": "主题、模板与组件库"
+ },
+ {
+  "name": "supabase.com",
+  "org": "Supabase",
+  "org_domain": "supabase.com",
+  "site_url": "https://supabase.com",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/supabase/supabase/tree/master/apps/www",
+  "artifacts": [
+   "code:Next.js 工程",
+   "run:多页"
+  ],
+  "size": "100 个路由",
+  "feature": "**大型营销站**：GSAP、ogl、着色器组件、3D 地球；另有 567 篇 md/mdx",
+  "permitted": "✓ Apache-2.0（apps/www 为 MIT）",
+  "chapter": "web",
+  "group": "开源生产级官网"
+ },
+ {
+  "name": "payloadcms.com",
+  "org": "Payload",
+  "org_domain": "payloadcms.com",
+  "site_url": "https://payloadcms.com",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/payloadcms/website",
+  "artifacts": [
+   "code:Next.js 工程",
+   "run:多页"
+  ],
+  "size": "98 个路由",
+  "feature": "**获奖官网**：Awwwards Honorable Mention 2022-11-25，获奖版本在仓库历史里",
+  "permitted": "✓ MIT",
+  "chapter": "web",
+  "group": "开源生产级官网"
+ },
+ {
+  "name": "ray.so",
+  "org": "Raycast",
+  "org_domain": "raycast.com",
+  "site_url": "https://ray.so",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/raycast/ray-so",
+  "artifacts": [
+   "code:Next.js 工程",
+   "run:多页"
+  ],
+  "size": "16 个路由",
+  "feature": "**交互工具站**：代码截图、icon、主题等多个工具页",
+  "permitted": "✓ MIT",
+  "chapter": "web",
+  "group": "开源生产级官网"
+ },
+ {
+  "name": "react.email",
+  "org": "Resend",
+  "org_domain": "resend.com",
+  "site_url": "https://react.email",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/resend/react-email/tree/main/apps/web",
+  "artifacts": [
+   "code:Next.js 工程",
+   "run:多页"
+  ],
+  "size": "28 个路由",
+  "feature": "three.js、react-three-fiber、framer-motion",
+  "permitted": "✓ MIT",
+  "chapter": "web",
+  "group": "开源生产级官网"
+ },
+ {
+  "name": "openai.fm",
+  "org": "OpenAI",
+  "org_domain": "openai.com",
+  "site_url": "https://www.openai.fm",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/openai/openai-fm",
+  "artifacts": [
+   "code:Next.js 工程",
+   "run:单页"
+  ],
+  "size": "1 页",
+  "feature": "小而精的单页交互演示；Next 15 + Tailwind 4",
+  "permitted": "✓ MIT",
+  "chapter": "web",
+  "group": "开源生产级官网"
+ },
+ {
+  "name": "开发者工具官网：ghostty / nuxt / radix / pixelpoint",
+  "org": "Ghostty",
+  "org_domain": "ghostty.org",
+  "site_url": "https://ghostty.org",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/ghostty-org/website",
+  "artifacts": [
+   "code:工程",
+   "run:多页"
+  ],
+  "size": "3–36 个路由",
+  "feature": "设计系统官网；pixelpoint.io 是设计工作室自站（Rive 动效）",
+  "permitted": "✓ MIT",
+  "chapter": "web",
+  "group": "开源生产级官网"
+ },
+ {
+  "name": "开源的获奖个人站",
+  "org": "GitHub",
+  "org_domain": "github.com",
+  "site_url": "https://github.com/brunosimon/folio-2019",
+  "download_label": null,
+  "download_url": null,
+  "artifacts": [
+   "code:工程",
+   "run:整站"
+  ],
+  "size": "几十个",
+  "feature": "**难度最高**：WebGL 场景、物理、自定义着色器；README 自述 SOTD ≥ 20★ 的 18 个、FWA 的 28 个",
+  "permitted": "△ 逐仓核：folio-2019 MIT，部分无许可",
+  "chapter": "web",
+  "group": "开源生产级官网"
+ },
+ {
+  "name": "One Page Love",
+  "org": "One Page Love",
+  "org_domain": "onepagelove.com",
+  "site_url": "https://onepagelove.com/",
+  "download_label": null,
+  "download_url": null,
+  "artifacts": [
+   "img:全长截图",
+   "txt:评语",
+   "txt:标签"
+  ],
+  "size": "9,402 个",
+  "feature": "技术标签可当难度分层（GSAP 142、Three.js 51）",
+  "permitted": "△ 截图与评语归站方；API 未公开条款，页面自称可用于训练数据集",
+  "chapter": "web",
+  "group": "获奖画廊"
+ },
+ {
+  "name": "Awwwards",
+  "org": "Awwwards",
+  "org_domain": "awwwards.com",
+  "site_url": "https://www.awwwards.com/websites/sites_of_the_day/",
+  "download_label": null,
+  "download_url": null,
+  "artifacts": [
+   "img:截图",
+   "txt:评分",
+   "txt:标签"
+  ],
+  "size": "约 6,100 个",
+  "feature": "评审分（Dev Award 含分项）可校准审美 reward；只有外链，没有源码",
+  "permitted": "✗ 站内素材禁止复制；外链只渲进评测集",
+  "chapter": "web",
+  "group": "获奖画廊"
+ },
+ {
+  "name": "Land-book",
+  "org": "Land-book",
+  "org_domain": "land-book.com",
+  "site_url": "https://land-book.com/",
+  "download_label": null,
+  "download_url": null,
+  "artifacts": [
+   "img:截图",
+   "txt:标签"
+  ],
+  "size": "20,000+ 个",
+  "feature": "robots 欢迎 AI 爬虫；引用须链回条目并署名设计方",
+  "permitted": "△ 只有截图",
+  "chapter": "web",
+  "group": "获奖画廊"
+ },
+ {
+  "name": "Httpster · SiteInspire",
+  "org": "Httpster",
+  "org_domain": "httpster.net",
+  "site_url": "https://httpster.net/",
+  "download_label": null,
+  "download_url": null,
+  "artifacts": [
+   "img:截图"
+  ],
+  "size": "3,116 个",
+  "feature": "人工策展；SiteInspire 总数口径待补",
+  "permitted": "△ 只作发现入口",
+  "chapter": "web",
+  "group": "获奖画廊"
+ },
+ {
+  "name": "Poly Haven",
+  "org": "Poly Haven",
+  "org_domain": "polyhaven.com",
+  "site_url": "https://polyhaven.com/",
+  "download_label": "API",
+  "download_url": "https://api.polyhaven.com/assets",
+  "artifacts": [
+   "img:截图",
+   "asset:网格",
+   "asset:HDRI",
+   "asset:贴图",
+   "run:.blend"
+  ],
+  "size": "2,387 个",
+  "feature": "**CC0 资产库**：模型 521、HDRI 997、贴图 869；抽 25 个模型全部同时有 .blend 与 glTF",
+  "permitted": "✓ CC0",
+  "chapter": "3d",
+  "group": "资产站与问答站"
+ },
+ {
+  "name": "Sketchfab",
+  "org": "Sketchfab",
+  "org_domain": "sketchfab.com",
+  "site_url": "https://sketchfab.com/",
+  "download_label": "API",
+  "download_url": "https://api.sketchfab.com/v3/search",
+  "artifacts": [
+   "img:截图",
+   "txt:标题",
+   "asset:网格"
+  ],
+  "size": "500k 可下载",
+  "feature": "Staff Pick 可下载 2,514 个，其中 CC-BY / CC0 1,926 个；下载需 OAuth 登录",
+  "permitted": "△ 逐模型许可；带 NoAI 标签的禁用于生成式 AI（Staff Pick 里 323 个）",
+  "chapter": "3d",
+  "group": "资产站与问答站"
+ },
+ {
+  "name": "Blender StackExchange",
+  "org": "Stack Exchange",
+  "org_domain": "stackexchange.com",
+  "site_url": "https://blender.stackexchange.com/",
+  "download_label": null,
+  "download_url": null,
+  "artifacts": [
+   "txt:标题",
+   "txt:描述",
+   "code:代码片段"
+  ],
+  "size": "123,167 问",
+  "feature": "脚本相关 13,632 问 + 6,738 答，几何节点 5,967；只给片段，跑不起来",
+  "permitted": "✗ 2024 年起转储禁训",
+  "chapter": "3d",
+  "group": "资产站与问答站"
+ },
+ {
+  "name": "Stack Overflow（three.js）",
+  "org": "Stack Overflow",
+  "org_domain": "stackoverflow.com",
+  "site_url": "https://stackoverflow.com/questions/tagged/three.js",
+  "download_label": null,
+  "download_url": null,
+  "artifacts": [
+   "txt:标题",
+   "txt:描述",
+   "code:代码片段"
+  ],
+  "size": "20.9k 问",
+  "feature": "只给片段，跑不起来",
+  "permitted": "✗ 转储禁训",
+  "chapter": "3d",
+  "group": "资产站与问答站"
+ },
+ {
+  "name": "BlenderArtists",
+  "org": "BlenderArtists",
+  "org_domain": "blenderartists.org",
+  "site_url": "https://blenderartists.org/",
+  "download_label": null,
+  "download_url": null,
+  "artifacts": [
+   "img:截图",
+   "txt:标题",
+   "txt:描述",
+   "run:.blend（少量）"
+  ],
+  "size": "602,128 帖",
+  "feature": "抓取代理被全量封禁，可用量为零",
+  "permitted": "✗ robots 全禁",
+  "chapter": "3d",
+  "group": "资产站与问答站"
+ },
+ {
+  "name": "three.js 论坛",
+  "org": "three.js",
+  "org_domain": "threejs.org",
+  "site_url": "https://discourse.threejs.org/",
+  "download_label": null,
+  "download_url": null,
+  "artifacts": [
+   "txt:标题",
+   "txt:描述",
+   "code:代码片段"
+  ],
+  "size": "26,457 帖",
+  "feature": "showcase 分类 2,948 帖；本机 403",
+  "permitted": "△ 用户内容 CC BY-NC-SA 3.0：科研可用、不可商用",
+  "chapter": "3d",
+  "group": "资产站与问答站"
+ },
+ {
+  "name": "pmndrs/examples",
+  "org": "Poimandres",
+  "org_domain": "pmnd.rs",
+  "site_url": "https://github.com/pmndrs/examples",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/pmndrs/examples",
+  "artifacts": [
+   "code:R3F 工程",
+   "img:缩略图",
+   "meta:元数据"
+  ],
+  "size": "211 个",
+  "feature": "**一例一图一工程**：后处理 36%、实例化 14%、物理 11%、自写着色器 9%；源码中位 173 行",
+  "permitted": "✓ MIT；外部资产逐条记许可",
+  "chapter": "3d",
+  "group": "three.js 作品"
+ },
+ {
+  "name": "three.js 官方 examples",
+  "org": "three.js",
+  "org_domain": "threejs.org",
+  "site_url": "https://threejs.org/examples/",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/mrdoob/three.js/tree/dev/examples",
+  "artifacts": [
+   "run:单文件 .html",
+   "img:截图"
+  ],
+  "size": "616 页",
+  "feature": "**着色器题首选**：自写着色器 32%、程序化几何 17%、GPU 计算 5%；51% 不加载外部资产",
+  "permitted": "✓ MIT",
+  "chapter": "3d",
+  "group": "three.js 作品"
+ },
+ {
+  "name": "threejs.org 首页精选",
+  "org": "three.js",
+  "org_domain": "threejs.org",
+  "site_url": "https://threejs.org/",
+  "download_label": null,
+  "download_url": null,
+  "artifacts": [
+   "run:作品链接",
+   "code:作者仓库"
+  ],
+  "size": "421 个",
+  "feature": "three.js 作者亲选；WebGPU 流体、软体、程序化树（holtsetio、dgreenheck）",
+  "permitted": "△ 逐仓核：holtsetio 4/4 MIT，dgreenheck 26/45 MIT",
+  "chapter": "3d",
+  "group": "three.js 作品"
+ },
+ {
+  "name": "Bruno Simon folio",
+  "org": "Bruno Simon",
+  "org_domain": "bruno-simon.com",
+  "site_url": "https://bruno-simon.com/",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/brunosimon/folio-2025",
+  "artifacts": [
+   "code:整站源码",
+   "run:整站"
+  ],
+  "size": "2 个仓库",
+  "feature": "车辆物理、整站交互、多物体组合",
+  "permitted": "✓ MIT",
+  "chapter": "3d",
+  "group": "three.js 作品"
+ },
+ {
+  "name": "ThreeUI Community",
+  "org": "Design+Code",
+  "org_domain": "designcode.io",
+  "site_url": "https://github.com/MengTo/threeui",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/MengTo/threeui",
+  "artifacts": [
+   "code:React 组件",
+   "run:在线预览"
+  ],
+  "size": "50 个组件",
+  "feature": "着色器、粒子、滚动联动的 3D 视觉组件",
+  "permitted": "✓ MIT",
+  "chapter": "3d",
+  "group": "three.js 作品"
+ },
+ {
+  "name": "Codrops（three.js）",
+  "org": "Codrops",
+  "org_domain": "tympanus.net",
+  "site_url": "https://github.com/codrops",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/codrops",
+  "artifacts": [
+   "code:源码",
+   "run:demo 页"
+  ],
+  "size": "10 个仓库",
+  "feature": "MIT 仓库里只有 8% 用 three.js，主力是 GSAP 动效（见 Web 页 2.4）",
+  "permitted": "✓ demo 默认 MIT，另有说明的除外",
+  "chapter": "3d",
+  "group": "three.js 作品"
+ },
+ {
+  "name": "Khronos glTF-Sample-Assets",
+  "org": "Khronos",
+  "org_domain": "khronos.org",
+  "site_url": "https://github.com/KhronosGroup/glTF-Sample-Assets",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/KhronosGroup/glTF-Sample-Assets",
+  "artifacts": [
+   "asset:glTF",
+   "img:截图"
+  ],
+  "size": "150 个",
+  "feature": "glTF 资产，不是代码；PBR 扩展、动画",
+  "permitted": "△ 逐资产：CC0 系 81、CC-BY 系 61、限制性 7",
+  "chapter": "3d",
+  "group": "three.js 作品"
+ },
+ {
+  "name": "Experiments with Google",
+  "org": "Google",
+  "org_domain": "google.com",
+  "site_url": "https://experiments.withgoogle.com/",
+  "download_label": null,
+  "download_url": null,
+  "artifacts": [
+   "run:实验页",
+   "code:作者仓库"
+  ],
+  "size": "1,654 个",
+  "feature": "WebGL 标签 664 个；带 GitHub 源码 85 个仓库；多为 2011–2015 年的 WebGL1 作品",
+  "permitted": "△ 逐仓核：宽松许可 30 个",
+  "chapter": "3d",
+  "group": "WebGL 实验"
+ },
+ {
+  "name": "Santa Tracker",
+  "org": "Google",
+  "org_domain": "google.com",
+  "site_url": "https://santatracker.google.com/",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/google/santa-tracker-web",
+  "artifacts": [
+   "code:整站源码",
+   "img:图片",
+   "asset:音频"
+  ],
+  "size": "56 个场景",
+  "feature": "生产级、多场景、强美术",
+  "permitted": "✓ 代码 Apache-2.0，图片与音频 CC-BY",
+  "chapter": "3d",
+  "group": "WebGL 实验"
+ },
+ {
+  "name": "WebGL / WebGPU Samples · ogl",
+  "org": "Khronos",
+  "org_domain": "khronos.org",
+  "site_url": "https://github.com/WebGLSamples/WebGLSamples.github.io",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/webgpu/webgpu-samples",
+  "artifacts": [
+   "run:单文件 .html",
+   "code:.js"
+  ],
+  "size": "197 个",
+  "feature": "WebGL 96 个 html、WebGPU 52 个示例、ogl 49 个 html；计算着色器、粒子、阴影",
+  "permitted": "✓ BSD-3、BSD-3、Unlicense",
+  "chapter": "3d",
+  "group": "WebGL 实验"
+ },
+ {
+  "name": "Blender 官方 demo 文件",
+  "org": "Blender",
+  "org_domain": "blender.org",
+  "site_url": "https://www.blender.org/download/demo-files/",
+  "download_label": null,
+  "download_url": null,
+  "artifacts": [
+   "run:.blend"
+  ],
+  "size": "87 个",
+  "feature": "官方挑选，多出自 Blender Studio；几何节点 22、仿真 6",
+  "permitted": "△ CC-BY 30、CC0 20、CC-BY-SA 10、未标 27",
+  "chapter": "3d",
+  "group": "Blender 作品与资产"
+ },
+ {
+  "name": "3DCode",
+  "org": "3DCodeBench",
+  "org_domain": "huggingface.co",
+  "site_url": "https://huggingface.co/datasets/YipengGao/3DCode",
+  "download_label": "HF",
+  "download_url": "https://huggingface.co/datasets/YipengGao/3DCode",
+  "artifacts": [
+   "code:bpy .py",
+   "txt:描述",
+   "img:多视角图",
+   "asset:网格（GLB）"
+  ],
+  "size": "12,720 个",
+  "feature": "**唯一现成的代码配对**：Infinigen 转写，Blender 5.0 可跑；几何节点 48%、修改器 88%，脚本中位 919 行",
+  "permitted": "✓ MIT",
+  "chapter": "3d",
+  "group": "Blender 作品与资产"
+ },
+ {
+  "name": "Blender 内置资产",
+  "org": "Blender",
+  "org_domain": "blender.org",
+  "site_url": "https://projects.blender.org/blender/blender-assets",
+  "download_label": null,
+  "download_url": null,
+  "artifacts": [
+   "run:.blend"
+  ],
+  "size": "177 个",
+  "feature": "几何节点 essentials、程序化毛发节点、材质",
+  "permitted": "✓ CC0",
+  "chapter": "3d",
+  "group": "Blender 作品与资产"
+ },
+ {
+  "name": "Blender Open Data 场景",
+  "org": "Blender",
+  "org_domain": "blender.org",
+  "site_url": "https://download.blender.org/release/BlenderBenchmark2.0/scenes/",
+  "download_label": null,
+  "download_url": null,
+  "artifacts": [
+   "run:.blend"
+  ],
+  "size": "9 个",
+  "feature": "生产级场景，开放电影镜头级复杂度",
+  "permitted": "△ 4 个标 CC0 / CC-BY；其余 5 个未标许可",
+  "chapter": "3d",
+  "group": "Blender 作品与资产"
+ },
+ {
+  "name": "Big Buck Bunny 生产文件",
+  "org": "Blender",
+  "org_domain": "blender.org",
+  "site_url": "https://archive.org/details/bigbuckbunny_production",
+  "download_label": null,
+  "download_url": null,
+  "artifacts": [
+   "run:.blend",
+   "asset:贴图"
+  ],
+  "size": "794 个",
+  "feature": "官方 zip 591 个场景 .blend，archive.org 镜像另有 203 个（含角色、道具、布景）；Blender 2.4x 时代文件",
+  "permitted": "△ 影片 CC-BY 3.0；包内无许可文件",
+  "chapter": "3d",
+  "group": "Blender 作品与资产"
+ },
+ {
+  "name": "BlendSwap",
+  "org": "BlendSwap",
+  "org_domain": "blendswap.com",
+  "site_url": "https://www.blendswap.com/",
+  "download_label": null,
+  "download_url": null,
+  "artifacts": [
+   "run:.blend",
+   "img:截图"
+  ],
+  "size": "25,869 个",
+  "feature": "Staff Pick；写实室内、FLIP 流体；免费账号每日限 5–7 个",
+  "permitted": "△ 上传者自选，含 NC / ND（NC 科研可用）",
+  "chapter": "3d",
+  "group": "Blender 作品与资产"
+ },
+ {
+  "name": "Blendkit",
+  "org": "Blendkit",
+  "org_domain": "blendkit.com",
+  "site_url": "https://www.blendkit.com/",
+  "download_label": null,
+  "download_url": null,
+  "artifacts": [
+   "run:.blend",
+   "asset:glTF"
+  ],
+  "size": "4,067 个（CC0 模型）",
+  "feature": "带质量评分与作者自报工时",
+  "permitted": "△ CC0 资产也禁止脱离项目单独再分发，只能内部用",
+  "chapter": "3d",
+  "group": "Blender 作品与资产"
+ },
+ {
+  "name": "几何节点作品：IRCSS · node_assets",
+  "org": "GitHub",
+  "org_domain": "github.com",
+  "site_url": "https://github.com/IRCSS/Blender-Geometry-Node-French-Houses",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/johnnygizmo/node_assets",
+  "artifacts": [
+   "run:.blend"
+  ],
+  "size": "26 个 .blend",
+  "feature": "程序化建筑、树、山水画风格",
+  "permitted": "✓ MIT；✓ CC0",
+  "chapter": "3d",
+  "group": "Blender 作品与资产"
+ },
+ {
+  "name": "CGArtPython",
+  "org": "CG Art Python",
+  "org_domain": "github.com",
+  "site_url": "https://github.com/CGArtPython/blender_plus_python",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/CGArtPython/blender_plus_python",
+  "artifacts": [
+   "code:bpy .py"
+  ],
+  "size": "76 个 .py",
+  "feature": "人写教程；30 组起始 / 完成成对，适合补全题",
+  "permitted": "✓ MIT",
+  "chapter": "3d",
+  "group": "Blender 作品与资产"
+ }
+]

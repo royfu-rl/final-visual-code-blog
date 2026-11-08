@@ -1,0 +1,70 @@
+{
+ "name": "Abandoned Warehouse - Interior Scene",
+ "uid": "1d5285f2e0fd4211a27c8042496d5959",
+ "viewerUrl": "https://sketchfab.com/3d-models/none-1d5285f2e0fd4211a27c8042496d5959",
+ "license": {
+  "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+  "label": "CC Attribution"
+ },
+ "faceCount": 617814,
+ "vertexCount": 243631,
+ "animationCount": 0,
+ "likeCount": 6613,
+ "viewCount": 400091,
+ "publishedAt": "2016-07-21T12:49:21.833998",
+ "staffpickedAt": "2016-07-23T12:52:04.235181",
+ "archives": {
+  "glb": {
+   "textureCount": 31,
+   "size": 114801500,
+   "type": "glb",
+   "textureMaxResolution": 4096,
+   "faceCount": 993366,
+   "vertexCount": 1111494
+  },
+  "gltf": {
+   "textureCount": 31,
+   "size": 81771023,
+   "type": "gltf",
+   "textureMaxResolution": 4096,
+   "faceCount": 993366,
+   "vertexCount": 1111494
+  },
+  "source": {
+   "textureCount": null,
+   "size": 113200044,
+   "type": "source",
+   "textureMaxResolution": null,
+   "faceCount": null,
+   "vertexCount": null
+  },
+  "usdz": {
+   "textureCount": null,
+   "size": 28163813,
+   "type": "usdz",
+   "textureMaxResolution": null,
+   "faceCount": null,
+   "vertexCount": null
+  }
+ },
+ "user": "aurelien_martel",
+ "tags": [
+  "steampunk",
+  "post-apocalyptic",
+  "indoor",
+  "baked",
+  "gameenvironment",
+  "interior-design",
+  "particlesystem",
+  "painted-texture",
+  "oldplace",
+  "modeling",
+  "architecture",
+  "blender",
+  "industrial"
+ ],
+ "categories": [
+  "architecture",
+  "places-travel"
+ ]
+}

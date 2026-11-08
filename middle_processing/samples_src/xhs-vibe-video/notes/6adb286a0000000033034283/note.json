@@ -1,0 +1,63 @@
+{
+ "note_id": "6adb286a0000000033034283",
+ "url": "https://www.xiaohongshu.com/explore/6adb286a0000000033034283?xsec_token=AB_onB7cJpG_inIs02VmbrCYSDPtFkaUnW4RYAJaLFSQY=&xsec_source=pc_search",
+ "type": "video",
+ "title": "用代码做视频，大模型表现怎么样？🎬",
+ "desc": "这条视频介绍复旦大学 FDUVIS 的新工作 Code2Video-Compass 🧭\n\t\n从动态字体、数据动画、界面演示，到插画叙事和三维动效，大模型已经能把创作要求写成代码，再渲染成完整视频。\n\t\n🧩 FDUVIS 关注的是：它能否稳定运行？能否把文字要求落实到画面？给一张图或一段片段，能否通过代码重建，并融入完整的内容推进？\n\t\n📚 为此，FDUVIS 构建了 2,104 个任务，覆盖 10 类、24 个子类，以及 T2V、I2V、V2V 三种输入设置。\n\t\n🔎 通过 12 项客观指标和 5 项主观指标，评价执行、效率、画质、语义对齐、参考保真、指令遵循与整体创作质量。\n\t\n📊 我们评测了 15 个主流开闭源模型，除了 Overall 总表，视频里还展示了同一指令、同一参考下的生成差异。运行可靠性、复杂度和生成开销，都会影响最终的创作表现。\n\t\n两分钟的研究介绍和实际案例都在视频里，欢迎交流讨论，也欢迎给项目点个 Star！👇\n\t\n📄 论文：https://arxiv.org/pdf/2610.28416\n🌐 项目主页：https://code2video-compass.github.io\n\t\n#复旦大学[话题]# #人工智能[话题]# #多模态模型[话题]# #多模态研究[话题]# #计算机图形学[话题]# #FDUVIS[话题]# #视频生成[话题]# #大模型[话题]# #计算机视觉[话题]#",
+ "tags": [
+  "复旦大学",
+  "人工智能",
+  "多模态模型",
+  "多模态研究",
+  "计算机图形学",
+  "FDUVIS",
+  "视频生成",
+  "大模型",
+  "计算机视觉"
+ ],
+ "author": "复旦FDUVIS",
+ "user_id": "5ff7b9c8000000000100aaa4",
+ "time": 1792839651000,
+ "ip_location": "上海",
+ "likes": "99",
+ "collects": "96",
+ "comments_count": "10",
+ "keywords": [
+  "代码生成视频",
+  "纯代码视频"
+ ],
+ "duration": 129,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040133/c07556bff40db1f18772f6abf217168e/spectrum/1040g34o326lmtcpb46105nvnn7409al486gkik8!nd_dft_wgth_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "沏白",
+   "content": "大佬您好，我看示例里的prompt似乎还是正常的文本prompt呀，这个实际上是怎么做到code2video的呢",
+   "likes": "1"
+  },
+  {
+   "user": "Jayceon",
+   "content": "没有什么现实风格的例子么，目前videogen都是尽可能拟真吧，这些demo看上去都是网页",
+   "likes": "2"
+  },
+  {
+   "user": "小红薯6A557DEE",
+   "content": "感觉好高级呀~[哇R][哇R]考研动力upup！！",
+   "likes": "2"
+  },
+  {
+   "user": "momo",
+   "content": "刚看完DVBench，又看到陈老师团队的新论文了[派对R]",
+   "likes": "2"
+  },
+  {
+   "user": "小红薯6A557DEE",
+   "content": "哇塞[派对R][派对R]",
+   "likes": "2"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

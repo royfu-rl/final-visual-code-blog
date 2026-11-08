@@ -1,0 +1,48 @@
+{
+ "link": "https://huggingface.co/datasets/Deep-Software-Analytics/OmniGIRL",
+ "id": "Deep-Software-Analytics/OmniGIRL",
+ "cards": [
+  {
+   "img": "209682172-de1dcaaa-6e69-429b-907f-840691e35ceb.png",
+   "name": "tailwindlabs__tailwindcss-10212",
+   "code": [
+    [
+     "problem_statement",
+     "tailwindlabs__tailwindcss-10212.problem_statement.txt"
+    ],
+    [
+     "patch",
+     "tailwindlabs__tailwindcss-10212.patch.txt"
+    ]
+   ]
+  },
+  {
+   "img": "103511385-cddf9e80-4e1b-11eb-99ee-a2f80bf7c26b.png",
+   "name": "iamkun__dayjs-1307",
+   "code": [
+    [
+     "problem_statement",
+     "iamkun__dayjs-1307.problem_statement.txt"
+    ],
+    [
+     "patch",
+     "iamkun__dayjs-1307.patch.txt"
+    ]
+   ]
+  },
+  {
+   "img": "200038280-5710d26b-d188-433c-b675-e83a27e5ef13.png",
+   "name": "babel__babel-15134",
+   "code": [
+    [
+     "problem_statement",
+     "babel__babel-15134.problem_statement.txt"
+    ],
+    [
+     "patch",
+     "babel__babel-15134.patch.txt"
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screenshot Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Ensure html and body take full height */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #1a202c; /* Dark background */
+        }
+        /* Ensure the grid container takes full height */
+        #screenshot-grid {
+
+        }
+        /* Style for individual grid items */
+        .grid-item {
+            border-radius:12px;
+        }
+
+        .grid-item:hover {
+            filter: brightness(1.2);
+        }
+        /* Style for images within grid items */
+        .grid-item img {
+
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <header class="p-4 flex justify-between items-center border-b border-gray-700">
+        <h1 class="text-2xl font-bold"><span class="font-normal">Made with</span> DeepSite</h1>
+        <p class="max-sm:text-xs max-sm:w-40">⚠️ Do not share personal information. User-submitted apps may contain malicious code.</p>
+        <a href="https://huggingface.co/spaces/enzostvs/deepsite" target="_blank" rel="noopener noreferrer" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Open DeepSite
+        </a>
+    </header>
+    <div id="screenshot-grid" class="grid grid-cols-2 sm:grid-cols-3 2xl:grid-cols-4 gap-2 p-4">
+        <!-- Screenshots will be loaded here -->
+    </div>
+
+    <script>
+        async function loadScreenshots() {
+            try {
+                const response = await fetch('screenshots.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                // Read the JSON body ONCE
+                const screenshotsData = await response.json();
+                // screenshotsData is now an array of objects: [{filename: "...", rating: N}, ...]
+
+                const grid = document.getElementById('screenshot-grid');
+                grid.innerHTML = ''; // Clear existing content
+                const fragment = document.createDocumentFragment(); // Create a fragment
+
+                // No need to filter/sort here, assuming screenshots.json is already sorted and correct
+                if (!Array.isArray(screenshotsData)) {
+                     throw new Error("screenshots.json is not a valid array.");
+                }
+
+                // Build elements in the fragment
+                screenshotsData.forEach(item => {
+                    if (!item || typeof item.filename !== 'string' || !item.filename.endsWith('.png')) {
+                        console.warn("Skipping invalid item in screenshots.json:", item);
+                        return;
+                    }
+                    // --- Filter by rating ---
+                    if (typeof item.rating !== 'number' || item.rating < 50) {
+                        // console.log(`Skipping ${item.filename} due to rating: ${item.rating}`);
+                        return; // Skip items with rating below 50 or invalid rating
+                    }
+                    // --- End filter ---
+
+                    const filename = item.filename;
+                    // const rating = item.rating; // Rating is available if needed for display
+
+                    const gridItem = document.createElement('div');
+                    gridItem.className = 'grid-item relative'; // Added relative for potential badge positioning
+
+                    const img = document.createElement('img');
+                    img.src = `screenshots/${filename}`;
+                    img.alt = `Screenshot of ${filename.replace(/^space-|-/g, ' ').replace('.png', '')}`; // Improved alt text
+                    img.loading = 'lazy'; // Lazy load images
+                    img.decoding = 'async'; // Hint for async decoding
+                    img.className = 'w-full h-auto object-cover rounded-lg shadow-md'; // Added some styling
+
+                    // Create the link element
+                    const link = document.createElement('a');
+
+                    // Parse filename to create the URL (remove 'space-' prefix and '.png' suffix)
+                    try {
+                        const namePart = filename.replace(/^space-/, '').replace(/\.png$/, '');
+                        // Replace the *first* hyphen only to separate owner/repo
+                        const parts = namePart.split(/-(.+)/); // Split on the first hyphen
+                        if (parts.length >= 2 && parts[0] && parts[1]) {
+                            const username = parts[0];
+                            const spacename = parts[1];
+                            link.href = `https://huggingface.co/spaces/${username}/${spacename}`;
+                            link.target = '_blank'; // Open in new tab
+                            link.rel = 'noopener noreferrer'; // Security best practice
+                        } else {
+                            // Handle cases where the format might be unexpected
+                            console.warn(`Could not parse username/spacename from: ${filename}`);
+                            // Make it non-clickable by just appending the image
+                            gridItem.appendChild(img);
+                            fragment.appendChild(gridItem); // Add directly to fragment
+                            return; // Skip appending link for this item
+                        }
+                    } catch (e) {
+                         console.error(`Error parsing filename: ${filename}`, e);
+                         // Append image directly if parsing fails
+                         gridItem.appendChild(img);
+                         fragment.appendChild(gridItem); // Add directly to fragment
+                         return; // Skip appending link for this item
+                    }
+
+                    link.appendChild(img); // Place the image inside the link
+                    gridItem.appendChild(link); // Place the link (with image) inside the grid item
+
+                    // Optional: Display rating badge (Example)
+                    // if (typeof rating === 'number') {
+                    //     const badge = document.createElement('span');
+                    //     badge.className = 'absolute top-2 right-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-full';
+                    //     badge.textContent = rating;
+                    //     gridItem.appendChild(badge);
+                    // }
+
+                    fragment.appendChild(gridItem); // Add the item to the fragment
+                });
+
+                // Append the fragment to the grid once
+                grid.appendChild(fragment);
+
+            } catch (error) {
+                console.error('Failed to load screenshots:', error);
+                const grid = document.getElementById('screenshot-grid');
+                grid.innerHTML = '<p class="text-red-500 text-center col-span-3">Failed to load screenshots. Check console for details.</p>';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', loadScreenshots);
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,582 @@
+{
+ "family": "video",
+ "scenes": [
+  {
+   "key": "explainer",
+   "cn": "教学视频",
+   "desc": "知识博主、教育与企业培训买单：一个概念讲成短片，成本从几周降到几分钟",
+   "cards": [
+    {
+     "title": "Vibe知识大赏·熵增",
+     "core": [
+      "Vibe知识大赏",
+      "治愈科普",
+      "代码动画"
+     ],
+     "line": "170 秒用熵增讲生活，黑底金字粒子；同款画风已拆成开源 skill",
+     "by": "比特新语",
+     "oss": null,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/samples_src/xhs-vibe-video/notes/6abf0a4e000000001301af3f/frames/0.jpg",
+     "links": [
+      {
+       "kind": "xhs",
+       "url": "https://www.xiaohongshu.com/explore/6abf0a4e000000001301af3f?xsec_token=ABkErRgXsGlWkArzUeQ5bcW4meMIcW-7ZNtJH67NzF6SY=&xsec_source=pc_search"
+      },
+      {
+       "kind": "github",
+       "url": "https://github.com/HeyChengC/vibe-knowledge-film"
+      },
+      {
+       "kind": "github",
+       "url": "https://github.com/xiazhuo123456789/vibe-knowledge-video"
+      }
+     ],
+     "biz": [],
+     "why": "小红书 Vibe Video 赞数第一（4.1 万赞、1.7 万藏），代表国内普通用户口味；风格已被逆向成两个开源 skill。原帖没写模型和栈"
+    },
+    {
+     "title": "Deedy 教学视频",
+     "core": [
+      "Opus 5.5",
+      "教学视频",
+      "HyperFrames"
+     ],
+     "line": "一句提示、1 分钟、约 2 美元出教学片；框架版即 HyperFrames",
+     "by": "Deedy Das",
+     "oss": null,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/bp-vcode-00.jpg",
+     "links": [
+      {
+       "kind": "x",
+       "url": "https://x.com/deedydas/status/2102787937482252537"
+      },
+      {
+       "kind": "github",
+       "url": "https://github.com/heygen-com/hyperframes"
+      },
+      {
+       "kind": "site",
+       "url": "https://hyperframes.heygen.com"
+      }
+     ],
+     "biz": [
+      {
+       "k": "成本",
+       "v": "约 1 分钟、约 2 美元（作者自述，2026-09-23）",
+       "src": "https://x.com/deedydas/status/2102787937482252537"
+      }
+     ],
+     "why": "用户点名；原帖首句即 \"instructional video generation\"，X 35 万浏览。原帖没提 HyperFrames，按用户口径挂为框架化版本"
+    },
+    {
+     "title": "3Blue1Brown",
+     "core": [
+      "Manim",
+      "数学动画",
+      "3Blue1Brown"
+     ],
+     "line": "动画全用自研开源库 Manim 写成；LLM 写 Manim 见 Code2Video",
+     "by": "Grant Sanderson",
+     "oss": null,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/bp-vcode-02.jpg",
+     "links": [
+      {
+       "kind": "youtube",
+       "url": "https://www.youtube.com/watch?v=aircAruvnKk"
+      },
+      {
+       "kind": "github",
+       "url": "https://github.com/3b1b/manim"
+      },
+      {
+       "kind": "paper",
+       "url": "https://arxiv.org/abs/2510.01174",
+       "label": "Code2Video"
+      },
+      {
+       "kind": "github",
+       "url": "https://github.com/showlab/Code2Video"
+      }
+     ],
+     "biz": [
+      {
+       "k": "YouTube 订阅",
+       "v": "870 万（2026-10-03）",
+       "src": "https://creatordb.app/creatorstats/3blue1brown/"
+      }
+     ],
+     "why": "代码渲染视频的受众天花板（单条 2500 万播放，Manim 9.6 万 star）；顺带挂 LLM 写 Manim 的研究线 Code2Video（ICML 2026）"
+    },
+    {
+     "title": "anatomy 原理拆解",
+     "core": [
+      "anatomy",
+      "原理讲解",
+      "Claude Code"
+     ],
+     "line": "一句话让 Claude 造台机器讲概念：机械表、布隆过滤器可拆开看",
+     "by": "wheresryan22 · 小红书 @小师妹Kiki",
+     "oss": true,
+     "poster": "https://skills.wheresryan.sh/anatomy/thumbs/watch.webp",
+     "links": [
+      {
+       "kind": "xhs",
+       "url": "https://www.xiaohongshu.com/explore/6acc87c0000000001b023304?xsec_token=ABd7OrLMChB_2SVkYk_R2K57SNI95xQ1vS6KvPY1UwLMM=&xsec_source=pc_search"
+      },
+      {
+       "kind": "github",
+       "url": "https://github.com/wheresryan22/anatomy"
+      },
+      {
+       "kind": "site",
+       "url": "https://skills.wheresryan.sh/anatomy"
+      }
+     ],
+     "biz": [],
+     "why": "本组 star 第二高的讲解类 skill（2.4 万）；小红书介绍帖收藏是点赞的 2.5 倍，说明是「存下来要用」"
+    }
+   ]
+  },
+  {
+   "key": "launch",
+   "cn": "产品发布片",
+   "desc": "SaaS 与 App 团队买单：发布片不再外包，几十分钟出片，改文案只需重渲",
+   "cards": [
+    {
+     "title": "HyperFrames",
+     "core": [
+      "HyperFrames",
+      "HTML→MP4",
+      "HeyGen"
+     ],
+     "line": "写 HTML 即出片，Agent 原生；OpenAI、tldraw 已用于生产",
+     "by": "HeyGen",
+     "oss": true,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/figure_src/vibe-video/repo_demos/heygen-com__hyperframes.png",
+     "links": [
+      {
+       "kind": "github",
+       "url": "https://github.com/heygen-com/hyperframes"
+      },
+      {
+       "kind": "site",
+       "url": "https://hyperframes.heygen.com"
+      },
+      {
+       "kind": "doc",
+       "url": "https://github.com/heygen-com/hyperframes/blob/main/ADOPTERS.md",
+       "label": "采用方"
+      }
+     ],
+     "biz": [
+      {
+       "k": "HeyGen ARR",
+       "v": "超 2 亿美元，8 个月翻倍（2026-06-25）",
+       "src": "https://www.heygen.com/blog/heygen-surpasses-200m-arr"
+      },
+      {
+       "k": "登记采用方",
+       "v": "12 家，含 OpenAI、tldraw、THU-MAIC（2026-11-04）",
+       "src": "https://github.com/heygen-com/hyperframes/blob/main/ADOPTERS.md"
+      },
+      {
+       "k": "首月 Star",
+       "v": "2.16 万（HeyGen 官方）",
+       "src": "https://www.heygen.com/blog/heygen-surpasses-200m-arr"
+      }
+     ],
+     "why": "代码→视频框架里 star 最多（7.8 万），背后是 ARR 2 亿美元的 HeyGen；ADOPTERS 有 OpenAI 开发者视频、tldraw PR 讲解视频两条生产用例"
+    },
+    {
+     "title": "Shotbase 发布片",
+     "core": [
+      "Opus 5.5",
+      "发布片",
+      "HyperFrames"
+     ],
+     "line": "20 分钟内用 HyperFrames 一次写出 Mac App 发布片",
+     "by": "Miguel07Code",
+     "oss": null,
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2102441459496697856/img/GOBQpkKB-RAUZ7ml.jpg",
+     "links": [
+      {
+       "kind": "x",
+       "url": "https://x.com/Miguel07Code/status/2102441708395041170"
+      },
+      {
+       "kind": "site",
+       "url": "https://shotbase.com",
+       "label": "Shotbase"
+      },
+      {
+       "kind": "github",
+       "url": "https://github.com/heygen-com/hyperframes"
+      }
+     ],
+     "biz": [],
+     "why": "原帖明写 HyperFrames 的作品里 X 浏览最高（15.6 万）；真实在售产品的发布片"
+    },
+    {
+     "title": "Clawd 一镜到底",
+     "core": [
+      "Claude Code",
+      "一镜到底",
+      "onetake"
+     ],
+     "line": "Clawd 当鼠标指针的 3D 发布片，three.js 单文件，约 20 元",
+     "by": "泡椒肥汤圆（onetake 作者）",
+     "oss": null,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/samples_src/xhs-vibe-video/notes/6ad89c2f0000000033008836/images/0.jpg",
+     "links": [
+      {
+       "kind": "xhs",
+       "url": "https://www.xiaohongshu.com/explore/6ad89c2f0000000033008836?xsec_token=ABBpZEnzBaI6sS_Swpe8pNaantdB7V9tFz4QYx-jzjH7Y=&xsec_source=pc_search"
+      },
+      {
+       "kind": "github",
+       "url": "https://github.com/feitangyuan/onetake"
+      },
+      {
+       "kind": "site",
+       "url": "https://onetakemotion.com",
+       "label": "onetake Pro"
+      }
+     ],
+     "biz": [
+      {
+       "k": "onetake Pro",
+       "v": "79 美元买断，含商用授权（2026-11-04 官网）",
+       "src": "https://onetakemotion.com"
+      }
+     ],
+     "why": "小红书发布片类赞数第一（2275 赞）；作者把方法开源成 onetake（3.7k star），又做了付费商用版，是「作品→skill→收费」的完整链条"
+    },
+    {
+     "title": "Morfeo 品牌动效",
+     "core": [
+      "Opus 5.5",
+      "HyperFrames",
+      "品牌动效"
+     ],
+     "line": "品牌规范写进 MOTION.md，HyperFrames 卡点出整条动效",
+     "by": "Morfeo | IA & Marketing",
+     "oss": null,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/showcase/posters/tiktok-morfeoacademy-7693332207347289351.jpg",
+     "links": [
+      {
+       "kind": "tiktok",
+       "url": "https://www.tiktok.com/@morfeoacademy/video/7693332207347289351"
+      },
+      {
+       "kind": "github",
+       "url": "https://github.com/heygen-com/hyperframes"
+      },
+      {
+       "kind": "site",
+       "url": "https://hyperframes.heygen.com"
+      }
+     ],
+     "biz": [
+      {
+       "k": "TikTok 数据",
+       "v": "播放 18.3 万、赞 1.37 万、收藏 1.3 万（2026-11-04 抓取）",
+       "src": "https://www.tiktok.com/@morfeoacademy/video/7693332207347289351"
+      }
+     ],
+     "why": "TikTok 上找到的框架作品里数据最好；西语营销号，说明 HyperFrames 已进海外营销内容工厂"
+    }
+   ]
+  },
+  {
+   "key": "mv-motion",
+   "cn": "MV 与动效",
+   "desc": "音乐人、创作者与品牌：歌词 MV、艺术动画、角色动效，画面逐帧可改",
+   "cards": [
+    {
+     "title": "P(doom) MV",
+     "core": [
+      "Opus 5.5",
+      "MV",
+      "p5.js"
+     ],
+     "line": "模型自定分镜、逐句配画，p5.js 手绘风；源码开源，另有 three.js 版",
+     "by": "John Heibel（@other__reality）",
+     "oss": null,
+     "poster": "https://i.ytimg.com/vi/8j-hR4fJywU/hqdefault.jpg",
+     "links": [
+      {
+       "kind": "x",
+       "url": "https://x.com/other__reality/status/2102514581684052169"
+      },
+      {
+       "kind": "youtube",
+       "url": "https://www.youtube.com/watch?v=8j-hR4fJywU"
+      },
+      {
+       "kind": "github",
+       "url": "https://github.com/JohnHeibel/PDoomVideo"
+      },
+      {
+       "kind": "github",
+       "url": "https://github.com/mexicat/pdoom-video"
+      }
+     ],
+     "biz": [],
+     "why": "用户点名；纯代码 MV 里 X 浏览最高（295 万），两个版本都开源（2.8k / 3.8k star），国内有搬运（小红书 916 赞）"
+    },
+    {
+     "title": "Claude Pop",
+     "core": [
+      "Opus 5.5",
+      "MV 重制",
+      "Midjourney"
+     ],
+     "line": "同一首歌 + 前作提示词，Opus 独自跑 12 小时重做纸感 MV",
+     "by": "anabology",
+     "oss": null,
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2103533196721704960/img/ILpk1iqxJsJGiDcK.jpg",
+     "links": [
+      {
+       "kind": "x",
+       "url": "https://x.com/anabology/status/2103534482930491441"
+      },
+      {
+       "kind": "x",
+       "url": "https://x.com/donaldjewkes/status/2102801274173587569",
+       "label": "前作"
+      },
+      {
+       "kind": "doc",
+       "url": "https://github.com/yihui-dev/awesome-opus5-5-videos/blob/main/prompts/anabology-491441.md",
+       "label": "提示词"
+      }
+     ],
+     "biz": [],
+     "why": "四个合集 800+ 条原帖里浏览第一（2019 万）；画面是 JS 动画 + Midjourney 素材，不是纯代码，用来证明受众规模"
+    },
+    {
+     "title": "花叔穿越名画",
+     "core": [
+      "Claude Code",
+      "艺术动画",
+      "huashu-art-motion"
+     ],
+     "line": "复刻 15 秒艺术史动画后沉淀成 skill：35 种画风、9 种解说语法",
+     "by": "花叔（alchaincyf）",
+     "oss": true,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/samples_src/xhs-vibe-video/notes/6ac4a875000000001500010f/images/5.jpg",
+     "links": [
+      {
+       "kind": "xhs",
+       "url": "https://www.xiaohongshu.com/explore/6ac4a875000000001500010f?xsec_token=ABi2ZFMsFL6arlz_20OCLAz2DCCmBnbiZaywsFv1tHXTI=&xsec_source=pc_search"
+      },
+      {
+       "kind": "github",
+       "url": "https://github.com/alchaincyf/huashu-art-motion"
+      },
+      {
+       "kind": "x",
+       "url": "https://x.com/cherry_mx_reds/status/2106095190285144331",
+       "label": "原片"
+      }
+     ],
+     "biz": [
+      {
+       "k": "被收录",
+       "v": "Open Design 的 motion-design skill 收了适配版",
+       "src": "https://github.com/nexu-io/open-design/tree/main/skills/huashu-art-motion"
+      }
+     ],
+     "why": "国内头部 AI 博主的开源 skill（6.1k star），小红书收藏多于点赞；「看到爆款→复刻→沉淀成 skill」的典型路径"
+    },
+    {
+     "title": "多邻国动画复刻",
+     "core": [
+      "Codex",
+      "角色动效",
+      "Rive"
+     ],
+     "line": "从多邻国 Rive 动画逆推角色 skill，Codex 出新角色并接口型",
+     "by": "子天",
+     "oss": null,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/samples_src/xhs-vibe-video/notes/6ada4b4b000000003101f018/frames/0.jpg",
+     "links": [
+      {
+       "kind": "xhs",
+       "url": "https://www.xiaohongshu.com/explore/6ada4b4b000000003101f018?xsec_token=ABd73dpE56-tYgUsAKbH2u3LFcFXMZ87irzyoF0gYfNj8=&xsec_source=pc_search"
+      },
+      {
+       "kind": "site",
+       "url": "https://rive.app/blog/duolingo-s-ai-powered-video-call-brings-lily-to-life",
+       "label": "Rive × 多邻国"
+      }
+     ],
+     "biz": [],
+     "why": "小红书动效类赞数第一（5381 赞、5548 藏）；品牌 IP 角色动画是动效外包的大头。skill 未公开，只能挂 Rive 官方的多邻国案例"
+    }
+   ]
+  },
+  {
+   "key": "edit-marketing",
+   "cn": "口播包装与营销",
+   "desc": "自媒体与企业市场部买单：口播配动效、数据讲成短片，一套模板批量出",
+   "cards": [
+    {
+     "title": "Claude Motion",
+     "core": [
+      "Claude",
+      "企业讲解片",
+      "代码动画"
+     ],
+     "line": "Anthropic 官方：/motion 把季报、图表做成动画片，导出 MP4",
+     "by": "Anthropic",
+     "oss": false,
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2108518869212008449/img/I2pgk4XsBBTYIFTI.jpg",
+     "links": [
+      {
+       "kind": "site",
+       "url": "https://claude.com/blog/dashboards-and-motion"
+      },
+      {
+       "kind": "x",
+       "url": "https://x.com/N01ennn/status/2108520767092597182",
+       "label": "三模型实测"
+      },
+      {
+       "kind": "xhs",
+       "url": "https://www.xiaohongshu.com/explore/6ac86755000000001403104b?xsec_token=AB3vw--7Qx53yyzGnC3BavFSrhb9feG2N5n2IKPvbld_c=&xsec_source=pc_search",
+       "label": "中文解读"
+      },
+      {
+       "kind": "site",
+       "url": "https://runway.com/news/company-news/runway-claude-motion",
+       "label": "Runway 联动"
+      }
+     ],
+     "biz": [
+      {
+       "k": "上线",
+       "v": "2026-10-08 beta，Team / Enterprise 可用",
+       "src": "https://claude.com/blog/dashboards-and-motion"
+      },
+      {
+       "k": "导出生态",
+       "v": "Adobe、HeyGen、Runway 等 7 家可接着剪",
+       "src": "https://claude.com/blog/dashboards-and-motion"
+      }
+     ],
+     "why": "模型厂商把「代码出片」做成付费套餐功能，面向季报、董事会、客户 onboarding；小红书解读 1552 赞、X 实测 12 万浏览。没有单独营收数据"
+    },
+    {
+     "title": "Remotion 商用生态",
+     "core": [
+      "Remotion",
+      "批量渲染",
+      "SaaS"
+     ],
+     "line": "React 写模板、按数据批量渲染；多家 AI 视频 SaaS 跑在上面",
+     "by": "Remotion（Jonny Burger）",
+     "oss": false,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/figure_src/vibe-video/repo_demos/remotion-dev__remotion.webp",
+     "links": [
+      {
+       "kind": "site",
+       "url": "https://www.remotion.dev/success-stories/a-million-dollars",
+       "label": "成功案例"
+      },
+      {
+       "kind": "github",
+       "url": "https://github.com/remotion-dev/remotion"
+      },
+      {
+       "kind": "site",
+       "url": "https://www.submagic.co/",
+       "label": "Submagic"
+      }
+     ],
+     "biz": [
+      {
+       "k": "付费客户",
+       "v": "800+（2026-11-04 官网）",
+       "src": "https://www.remotion.dev/automate"
+      },
+      {
+       "k": "Submagic",
+       "v": "上线 3 个月 ARR 100 万美元，用户 300 万+（自报）",
+       "src": "https://www.remotion.dev/success-stories/a-million-dollars"
+      },
+      {
+       "k": "Crayo",
+       "v": "约 600 万美元/年（自报）",
+       "src": "https://www.remotion.dev/success-stories/a-million-dollars"
+      }
+     ],
+     "why": "唯一查到「卖代码渲染视频」的营收证据：Remotion 自己盈利、800+ 付费客户，上面跑出多家百万美元 ARR 的 AI 视频 SaaS（数字为各公司自报，Remotion 声明未核实）"
+    },
+    {
+     "title": "Codex 口播包装",
+     "core": [
+      "Codex",
+      "HyperFrames",
+      "口播包装"
+     ],
+     "line": "口播→时间戳脚本→分镜→HyperFrames 渲染，教程本身即成品",
+     "by": "Lulu的AI野路子",
+     "oss": null,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/samples_src/xhs-vibe-video/notes/6a621ecf000000001002a05e/frames/0.jpg",
+     "links": [
+      {
+       "kind": "xhs",
+       "url": "https://www.xiaohongshu.com/explore/6a621ecf000000001002a05e?xsec_token=ABkwKrWh0Lh_J7Dwm_VSG9KZEy0xYKIATdzVUOPYgr5AY=&xsec_source=pc_search"
+      },
+      {
+       "kind": "github",
+       "url": "https://github.com/heygen-com/hyperframes"
+      },
+      {
+       "kind": "github",
+       "url": "https://github.com/browser-use/video-use"
+      }
+     ],
+     "biz": [],
+     "why": "小红书上明确用 HyperFrames 出片的口播作品里赞数最高（1584 赞、2540 藏），面向文科生 / 小白，代表国内普通创作者的用法"
+    },
+    {
+     "title": "测评片动效包装",
+     "core": [
+      "Fable 5",
+      "Remotion",
+      "口播包装"
+     ],
+     "line": "测评片 80% 分镜动效由 Agent 写 Remotion，再进 AE 合成",
+     "by": "Nenly同学",
+     "oss": null,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/samples_src/xhs-vibe-video/notes/6a673ecf0000000009034aa0/images/1.jpg",
+     "links": [
+      {
+       "kind": "xhs",
+       "url": "https://www.xiaohongshu.com/explore/6a673ecf0000000009034aa0?xsec_token=ABIi79alD0g3dxyIjEUCPSqTf_mwOKvhcM0TlAzSIFtT0=&xsec_source=pc_search"
+      },
+      {
+       "kind": "github",
+       "url": "https://github.com/remotion-dev/remotion"
+      },
+      {
+       "kind": "bilibili",
+       "url": "https://space.bilibili.com/1814756990",
+       "label": "B 站主页"
+      }
+     ],
+     "biz": [
+      {
+       "k": "作者 B 站粉丝",
+       "v": "71.8 万（2026-11-04）",
+       "src": "https://space.bilibili.com/1814756990"
+      }
+     ],
+     "why": "职业 UP 主把 Remotion 用进正片生产，不是 demo；评论区也有「Remotion 只适合简单包装」的反方意见，可信"
+    }
+   ]
+  }
+ ]
+}

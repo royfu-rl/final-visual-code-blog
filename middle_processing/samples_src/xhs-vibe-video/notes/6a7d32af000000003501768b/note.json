@@ -1,0 +1,59 @@
+{
+ "note_id": "6a7d32af000000003501768b",
+ "url": "https://www.xiaohongshu.com/explore/6a7d32af000000003501768b?xsec_token=ABjSSweEwieP4LR3sazuOgTPlE79zGVx3rIdUX_sThl50=&xsec_source=pc_search",
+ "type": "normal",
+ "title": "Higgsfield 的 AI 电影工作流，记了几点",
+ "desc": "一部110分钟的动作喜剧《The Cully Hill Boys》首映，总预算200万美元。\nHiggsfield把整部电影的prompt、资产、画布全部开源了：https://higgsfield.ai/@higgsfield.studio/projects/cully-hill-boys\n\t\n看了下制作笔记，这 4 点还挺有意思的：\n[一R]优化角色素材：删除全身图中脸的多余部分，确保五官清晰；\n[二R]在每段视频prompt中都要加入声音描述，保持一致性；\n[三R]避免使用场景参考图的正面视角；\n[四R]添加年代排除清单，提升筛选效率。\n#AI视频[话题]# #howto用好AI[话题]# #AIGC [话题]#",
+ "tags": [
+  "AI视频",
+  "howto用好AI",
+  "AIGC "
+ ],
+ "author": "田田有点AI",
+ "user_id": "5c3081f4000000000503017e",
+ "time": 1786589871000,
+ "ip_location": null,
+ "likes": "194",
+ "collects": "307",
+ "comments_count": "8",
+ "keywords": [
+  "Higgsfield Claude"
+ ],
+ "duration": null,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040123/1292f23cfdd69920f3d81ea5eb31d80f/notes_pre_post/1040g3k0323pth582go005n1gg7q1e0buuaf8sig!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040123/eafb33f387b3d7683d55ae45009be21d/notes_pre_post/1040g3k0323pth582go0g5n1gg7q1e0bu846cigo!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040123/8275d19dfe4818ad1f9178491b35ef3b/notes_pre_post/1040g3k0323pth582go105n1gg7q1e0bu3lhbt0o!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040123/d8815b99c107917a5eca483e193bf8cc/notes_pre_post/1040g3k0323pth582go1g5n1gg7q1e0buhk7dke8!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040123/42cbf3307214d56d6587006f0b581f16/notes_pre_post/1040g3k0323pth582go205n1gg7q1e0bu03o0o20!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "郝智Aigc",
+   "content": "cool",
+   "likes": "0"
+  },
+  {
+   "user": "无心快语",
+   "content": "有点悲观绝望  电影以后就是这样的产物了",
+   "likes": "0"
+  },
+  {
+   "user": "科技部博哥",
+   "content": "有没有提示词分享",
+   "likes": "0"
+  },
+  {
+   "user": "pluto",
+   "content": "没有头的三视图是第一次见到，有点吓人",
+   "likes": "1"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg",
+  "images/1.jpg",
+  "images/2.jpg",
+  "images/3.jpg",
+  "images/4.jpg"
+ ]
+}

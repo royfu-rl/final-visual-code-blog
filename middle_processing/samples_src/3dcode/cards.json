@@ -1,0 +1,94 @@
+{
+ "links": [
+  [
+   "YipengGao/3DCode",
+   "https://huggingface.co/datasets/YipengGao/3DCode"
+  ]
+ ],
+ "cards": [
+  {
+   "img": "ArmChair_000.webp",
+   "name": "3DCodeData/ArmChair_000/renders/Image_005.webp",
+   "code": [
+    [
+     "ArmChair_000.py",
+     "ArmChair_000.py"
+    ],
+    [
+     "captions/caption_object.txt",
+     "ArmChair_000.caption_object.txt"
+    ]
+   ]
+  },
+  {
+   "img": "Bathtub_000.webp",
+   "name": "3DCodeData/Bathtub_000/renders/Image_005.webp",
+   "code": [
+    [
+     "Bathtub_000.py",
+     "Bathtub_000.py"
+    ],
+    [
+     "captions/caption_object.txt",
+     "Bathtub_000.caption_object.txt"
+    ]
+   ]
+  },
+  {
+   "img": "Beetle_000.webp",
+   "name": "3DCodeData/Beetle_000/renders/Image_005.webp",
+   "code": [
+    [
+     "Beetle_000.py",
+     "Beetle_000.py"
+    ],
+    [
+     "captions/caption_object.txt",
+     "Beetle_000.caption_object.txt"
+    ]
+   ]
+  },
+  {
+   "img": "FallenTree_000.webp",
+   "name": "3DCodeData/FallenTree_000/renders/Image_005.webp",
+   "code": [
+    [
+     "FallenTree_000.py",
+     "FallenTree_000.py"
+    ],
+    [
+     "captions/caption_object.txt",
+     "FallenTree_000.caption_object.txt"
+    ]
+   ]
+  },
+  {
+   "img": "KitchenIsland_000.webp",
+   "name": "3DCodeData/KitchenIsland_000/renders/Image_005.webp",
+   "code": [
+    [
+     "KitchenIsland_000.py",
+     "KitchenIsland_000.py"
+    ],
+    [
+     "captions/caption_object.txt",
+     "KitchenIsland_000.caption_object.txt"
+    ]
+   ]
+  },
+  {
+   "img": "CantileverStaircase_000.webp",
+   "name": "3DCodeData/CantileverStaircase_000/renders/Image_005.webp",
+   "code": [
+    [
+     "CantileverStaircase_000.py",
+     "CantileverStaircase_000.py"
+    ],
+    [
+     "captions/caption_object.txt",
+     "CantileverStaircase_000.caption_object.txt"
+    ]
+   ]
+  }
+ ]
+}

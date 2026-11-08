@@ -1,0 +1,60 @@
+{
+ "link": "https://huggingface.co/datasets/ronantakizawa/webui",
+ "id": "ronantakizawa/webui",
+ "cards": [
+  {
+   "img": "17c6122f293d-desktop.png",
+   "name": "17c6122f293d",
+   "code": [
+    [
+     "source_url",
+     "17c6122f293d-source_url.txt"
+    ],
+    [
+     "html",
+     "17c6122f293d-html.txt"
+    ],
+    [
+     "css",
+     "17c6122f293d-css.txt"
+    ],
+    [
+     "js",
+     "17c6122f293d-js.txt"
+    ]
+   ]
+  },
+  {
+   "img": "141967c9d54b-desktop.png",
+   "name": "141967c9d54b",
+   "code": [
+    [
+     "source_url",
+     "141967c9d54b-source_url.txt"
+    ],
+    [
+     "html",
+     "141967c9d54b-html.txt"
+    ]
+   ]
+  },
+  {
+   "img": "1041d5e497c0-desktop.png",
+   "name": "1041d5e497c0",
+   "code": [
+    [
+     "source_url",
+     "1041d5e497c0-source_url.txt"
+    ],
+    [
+     "html",
+     "1041d5e497c0-html.txt"
+    ],
+    [
+     "css",
+     "1041d5e497c0-css.txt"
+    ]
+   ]
+  }
+ ]
+}

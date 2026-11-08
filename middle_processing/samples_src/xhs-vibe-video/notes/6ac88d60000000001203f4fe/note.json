@@ -1,0 +1,43 @@
+{
+ "note_id": "6ac88d60000000001203f4fe",
+ "url": "https://www.xiaohongshu.com/explore/6ac88d60000000001203f4fe?xsec_token=AB3vw--7Qx53yyzGnC3BavFVkkLlP65wycPvfhVt1NyWQ=&xsec_source=pc_search",
+ "type": "video",
+ "title": "Coding Worlds for Evolving Agents",
+ "desc": "持续进化的智能体需要一个能够持续交互的环境：采取行动、观察结果，再决定下一步。转过转角，视野随之改变；推开物体，后续可能发生的交互也随之变化。这一连串行动与反馈，构成了智能体的经验。\n\t\n基于代码的环境让我们能够完全掌控物理交互：物体、规则以及状态的每一步变化，都可以在代码中明确定义并被精确追踪。但其画面质量受制于三维资产与渲染管线：程序搭建的场景往往只有简化的几何体、重复的贴图和生硬的光照，让成百上千个环境都足够逼真的成本极高。\n\t\n以视频生成为核心的世界模型提供了另一条路径：通过相机视角与动作指令驱动画面生成，输出极为逼真的视觉画面。然而在这类系统中，物理世界的信息大多隐式包含在生成历史与模型记忆中。视频能维持视觉上的连续性，却无法提供一个可供直接查询与干预的显式世界状态。\n\t\n因此，我们将代码环境与实时神经渲染器结合：代码决定世界如何变化，神经渲染器呈现这些变化看起来是什么样。与一次性生成整段视频的方法不同，我们的渲染器按短块接收环境导出的流式条件，逐步合成视觉画面。智能体可以采取一次短暂行动，观察结果，并据此决定下一步策略。@MirroS\n#coding[话题]# #创业[话题]# #科技[话题]# #世界模型[话题]#",
+ "tags": [
+  "coding",
+  "创业",
+  "科技",
+  "世界模型"
+ ],
+ "author": "MirroSer",
+ "user_id": "6396c5890000000027028966",
+ "time": 1791528289000,
+ "ip_location": "北京",
+ "likes": "72",
+ "collects": "72",
+ "comments_count": "2",
+ "keywords": [
+  "vibe video",
+  "代码生成视频"
+ ],
+ "duration": 14,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040135/3316950c29a12bce12011c046cd27bc1/spectrum/1040g34o3263hd4fk4a105osmom4pt2b6heono0o!nd_dft_wgth_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "momo",
+   "content": "好棒的工作 请问这个技术路线未来可能做到实时吗",
+   "likes": "0"
+  },
+  {
+   "user": "重案组之虎",
+   "content": "输入是text吗？神经渲染器是用什么模型微调的呀？[笑哭R]",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

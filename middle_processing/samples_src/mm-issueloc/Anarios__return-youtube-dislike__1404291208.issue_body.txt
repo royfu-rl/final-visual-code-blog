@@ -1,0 +1,35 @@
+### Browser
+
+Google Chrome
+
+### Browser Version
+
+Version 106.0.5249.103 (Official Build) (64-bit)
+
+### Extension or Userscript?
+
+Extension
+
+### Extension/Userscript Version
+
+3.0.0.6
+
+### Video link where you see the problem
+
+https://www.youtube.com/watch?v=AmekhRy8f7E
+
+### What happened?
+
+YouTube Changed their UI, and it now causes a few graphical interferences with most of the customisations in the plugin.
+
+### How to reproduce/recreate?
+
+1. Click on a video.
+2. Scroll down.
+
+![SharedScreenshot](https://user-images.githubusercontent.com/101042481/195048714-49badb2f-9dfb-41f3-949e-689c7f7f5491.jpg)
+
+
+### Will you be available for follow-up questions to help developers diagnose & fix the issue?
+
+Yes

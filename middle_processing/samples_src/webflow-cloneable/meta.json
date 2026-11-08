@@ -1,0 +1,17 @@
+[
+ {
+  "slug": "gsap-flip-layout",
+  "image": "gsap-flip-layout.png",
+  "live": "https://gsap-flip-layout.webflow.io"
+ },
+ {
+  "slug": "horizontal-scrolling-gsap",
+  "image": "horizontal-scrolling-gsap.png",
+  "live": "https://horizontal-scrolling-gsap.webflow.io"
+ },
+ {
+  "slug": "video-scrub-on-scroll",
+  "image": "video-scrub-on-scroll.jpg",
+  "live": "https://video-scrub-on-scroll.webflow.io"
+ }
+]

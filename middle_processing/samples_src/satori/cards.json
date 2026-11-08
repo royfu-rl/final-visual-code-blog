@@ -1,0 +1,14 @@
+{"link": "https://github.com/vercel/satori/tree/main/test/__image_snapshots__", "id": "vercel/satori",
+ "cards": [
+  {"img": "backdrop-filter-test-tsx-test-backdrop-filter-test-tsx-backdrop-filter-compares-all-backdrop-filter-functions-1-snap.png",
+   "name": "test/__image_snapshots__/backdrop-filter-test-tsx-test-backdrop-filter-test-tsx-backdrop-filter-compares-all-backdrop-filter-functions-1-snap.png",
+   "code": [["test/backdrop-filter.test.tsx#L86-L249", "backdrop-filter.test.L86-L249.tsx"]]},
+  {"img": "grid-test-tsx-test-grid-test-tsx-grid-should-place-items-in-named-areas-1-snap.png",
+   "name": "test/__image_snapshots__/grid-test-tsx-test-grid-test-tsx-grid-should-place-items-in-named-areas-1-snap.png",
+   "code": [["test/grid.test.tsx#L14-L47", "grid.test.L14-L47.tsx"],
+            ["test/grid.test.tsx#L197-L227", "grid.test.L197-L227.tsx"]]},
+  {"img": "gradient-test-tsx-test-gradient-test-tsx-gradient-should-support-conic-gradients-1-snap.png",
+   "name": "test/__image_snapshots__/gradient-test-tsx-test-gradient-test-tsx-gradient-should-support-conic-gradients-1-snap.png",
+   "code": [["test/gradient.test.tsx#L701-L739", "gradient.test.L701-L739.tsx"]]}
+ ]}
+

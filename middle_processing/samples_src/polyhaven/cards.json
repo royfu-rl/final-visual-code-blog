@@ -1,0 +1,70 @@
+{
+ "links": [
+  [
+   "Poly Haven",
+   "https://polyhaven.com/models"
+  ]
+ ],
+ "cards": [
+  {
+   "img": "grass_medium_01.png",
+   "name": "asset_img/thumbs/grass_medium_01.png",
+   "code": [
+    [
+     "api.polyhaven.com/files/grass_medium_01",
+     "grass_medium_01.files.json"
+    ]
+   ]
+  },
+  {
+   "img": "tree_small_02.png",
+   "name": "asset_img/thumbs/tree_small_02.png",
+   "code": [
+    [
+     "api.polyhaven.com/files/tree_small_02",
+     "tree_small_02.files.json"
+    ]
+   ]
+  },
+  {
+   "img": "jacaranda_tree.png",
+   "name": "asset_img/thumbs/jacaranda_tree.png",
+   "code": [
+    [
+     "api.polyhaven.com/files/jacaranda_tree",
+     "jacaranda_tree.files.json"
+    ]
+   ]
+  },
+  {
+   "img": "Camera_01.png",
+   "name": "asset_img/thumbs/Camera_01.png",
+   "code": [
+    [
+     "api.polyhaven.com/files/Camera_01",
+     "Camera_01.files.json"
+    ]
+   ]
+  },
+  {
+   "img": "potted_plant_02.png",
+   "name": "asset_img/thumbs/potted_plant_02.png",
+   "code": [
+    [
+     "api.polyhaven.com/files/potted_plant_02",
+     "potted_plant_02.files.json"
+    ]
+   ]
+  },
+  {
+   "img": "grass_bermuda_01.png",
+   "name": "asset_img/thumbs/grass_bermuda_01.png",
+   "code": [
+    [
+     "api.polyhaven.com/files/grass_bermuda_01",
+     "grass_bermuda_01.files.json"
+    ]
+   ]
+  }
+ ]
+}

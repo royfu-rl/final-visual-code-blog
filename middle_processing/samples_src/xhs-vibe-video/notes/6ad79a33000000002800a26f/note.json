@@ -1,0 +1,82 @@
+{
+ "note_id": "6ad79a33000000002800a26f",
+ "url": "https://www.xiaohongshu.com/explore/6ad79a33000000002800a26f?xsec_token=ABRZ2VykcWE-0NegURQAmfYH5C0VhVlXRTexdKw8e4wzI=&xsec_source=pc_search",
+ "type": "video",
+ "title": "Claude做3D竟然已经这种水平了？",
+ "desc": "注意：以上画面全部都是实时计算的。\n最近用Claude试着做了一些实时3D交互的尝试，这个细胞是最满意的作品之一。画面效果非常精细，从显微镜推进，到3D细胞模型，到科普片级别的分子模型，全部实时渲染。\n显微镜使用Astra打底，其他都是Claude Opus 5.5独自迭代完成。#数字艺术[话题]# #Claude[话题]# #vibecoding大赏[话题]# #3D造物[话题]#",
+ "tags": [
+  "数字艺术",
+  "Claude",
+  "vibecoding大赏",
+  "3D造物"
+ ],
+ "author": "烧炖",
+ "user_id": "55e5a01b62a60c027a5abb51",
+ "time": 1792514611000,
+ "ip_location": "北京",
+ "likes": "456",
+ "collects": "258",
+ "comments_count": "89",
+ "keywords": [
+  "Claude 3D 动画"
+ ],
+ "duration": 24,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040112/9329682b97099c145b5ecb7f2fbdffe3/1040g2sg326i77ihcl8eg414vejg1neqhdaljih8!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "小小云飞",
+   "content": "我可以本地部署，无需花钱的",
+   "likes": "1"
+  },
+  {
+   "user": "小彦说",
+   "content": "需要啥，光claude做不出来",
+   "likes": "0"
+  },
+  {
+   "user": "像你呢",
+   "content": "博主每个月付多少钱哦？他做LOGO强吗？",
+   "likes": "0"
+  },
+  {
+   "user": "小红薯6083BD1D",
+   "content": "不如 astra",
+   "likes": "0"
+  },
+  {
+   "user": "小老頭 Little old guy",
+   "content": "這串留言才讓我知道 很多還留在一句生成的層面 不過樓主分享好屌，我用cluade都做不出 ，哥用vm開Claude嗎 我被封幾個號後轉陣營了",
+   "likes": "0"
+  },
+  {
+   "user": "熊猫哥聊装修",
+   "content": "老板，你视频能配一下声音吗[捂脸R]",
+   "likes": "0"
+  },
+  {
+   "user": "mono",
+   "content": "以前人工搞不得上千[笑哭R]",
+   "likes": "2"
+  },
+  {
+   "user": "🔍 AI情报局",
+   "content": "实时渲染到这个精度有点吓人，显微镜推进那一段最惊艳。",
+   "likes": "0"
+  },
+  {
+   "user": "爱上娜娜的蓝色炽人",
+   "content": "这是什么提示词",
+   "likes": "0"
+  },
+  {
+   "user": "你许愿啦",
+   "content": "都有教科书级别的资料…应该很合适ai吧…",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

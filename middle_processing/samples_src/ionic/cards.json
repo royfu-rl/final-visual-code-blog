@@ -1,0 +1,15 @@
+{"link": "https://github.com/ionic-team/ionic-framework/tree/main/core/src/components", "id": "ionic-team/ionic-framework",
+ "cards": [
+  {"img": "toolbar-colors-md-ltr-Mobile-Chrome-linux.png",
+   "name": "core/src/components/toolbar/test/colors/toolbar.e2e.ts-snapshots/toolbar-colors-md-ltr-Mobile-Chrome-linux.png",
+   "code": [["core/src/components/toolbar/test/colors/toolbar.e2e.ts#L7-L17", "toolbar-colors.e2e.L7-L17.ts"],
+            ["core/src/components/toolbar/test/colors/index.html", "toolbar-colors.index.html"]]},
+  {"img": "datetime-highlightedDates-callback-ios-ltr-Mobile-Chrome-linux.png",
+   "name": "core/src/components/datetime/test/highlighted-dates/datetime.e2e.ts-snapshots/datetime-highlightedDates-callback-ios-ltr-Mobile-Chrome-linux.png",
+   "code": [["core/src/components/datetime/test/highlighted-dates/datetime.e2e.ts#L4-L13", "datetime-highlighted-dates.e2e.L4-L13.ts"],
+            ["core/src/components/datetime/test/highlighted-dates/datetime.e2e.ts#L45-L84", "datetime-highlighted-dates.e2e.L45-L84.ts"]]},
+  {"img": "list-inset-full-lines-ios-ltr-Mobile-Chrome-linux.png",
+   "name": "core/src/components/list/test/inset/list.e2e.ts-snapshots/list-inset-full-lines-ios-ltr-Mobile-Chrome-linux.png",
+   "code": [["core/src/components/list/test/inset/list.e2e.ts#L4-L30", "list-inset.e2e.L4-L30.ts"]]}
+ ]}
+

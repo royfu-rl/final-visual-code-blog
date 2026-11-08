@@ -1,0 +1,1 @@
+[Rust] Alert not displayed when minor version is outdated

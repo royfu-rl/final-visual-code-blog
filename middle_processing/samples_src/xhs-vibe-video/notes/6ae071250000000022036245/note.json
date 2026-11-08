@@ -1,0 +1,84 @@
+{
+ "note_id": "6ae071250000000022036245",
+ "url": "https://www.xiaohongshu.com/explore/6ae071250000000022036245?xsec_token=ABkO331-1_JUvU687Ik2AJP7KA92AVtelvZTtxF5ChT4s=&xsec_source=pc_search",
+ "type": "video",
+ "title": "假如opus5.5遇上中式美学",
+ "desc": "全片由codex制作，参考Anthropic opus5.5的宣传片。以微观和宏观的形态为核心，将画面中有限的弧形区域设定为万象发生的空间，从地平线的日出到墨液的涌动，细胞的生长，再到青瓷的釉光 ，不同尺度，不同时代的中国器物，工艺和建筑在相似的轮廓中彼此映照。影片最后回到开篇的地球象征着生命，日常的造物与宏远的天地重新合为一圆，咫尺是目光所及的边界，万象是边界之内尚未穷尽的世界\n#aigc[话题]# #codex[话题]# #claude[话题]# #vibecoding大赏[话题]# #ai视频剪辑[话题]#",
+ "tags": [
+  "aigc",
+  "codex",
+  "claude",
+  "vibecoding大赏",
+  "ai视频剪辑"
+ ],
+ "author": "Tristan",
+ "user_id": "6ad1a9b1000000000c02e400",
+ "time": 1793093925000,
+ "ip_location": "北京",
+ "likes": "1281",
+ "collects": "1066",
+ "comments_count": "37",
+ "keywords": [
+  "Claude 产品宣传片",
+  "Codex 做视频"
+ ],
+ "duration": 20,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040104/a4637416ba858d8563177a367e8725c5/1040g008326qrrf6c56005qmhl6oj5p00rpn66lo!nd_dft_wgth_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "超Z-AI工作室",
+   "content": "请教一下，这个用 codex 是怎么做的？是先用 codex 生成图片，然后再交给 Seedance API，最后再通过 Astral 来剪辑吗？",
+   "likes": "7"
+  },
+  {
+   "user": "Max Edgar",
+   "content": "codex 怎么和opus5.5混搭的",
+   "likes": "0"
+  },
+  {
+   "user": "minoscao",
+   "content": "你这完全不叫用codex做只是codex帮你写了提示词。。",
+   "likes": "1"
+  },
+  {
+   "user": "Justin",
+   "content": "是不是用remontin做的",
+   "likes": "0"
+  },
+  {
+   "user": "Khalil Wang",
+   "content": "有开源的代码吗",
+   "likes": "2"
+  },
+  {
+   "user": "曼秀雷敦大哥哥",
+   "content": "请问音乐怎么做的",
+   "likes": "0"
+  },
+  {
+   "user": "啾咪饲养员",
+   "content": "很 pro",
+   "likes": "1"
+  },
+  {
+   "user": "李造吗",
+   "content": "创意也是codex出的吗",
+   "likes": "0"
+  },
+  {
+   "user": "一万",
+   "content": "求制作方法",
+   "likes": "0"
+  },
+  {
+   "user": "尾流 Gray",
+   "content": "舒适",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

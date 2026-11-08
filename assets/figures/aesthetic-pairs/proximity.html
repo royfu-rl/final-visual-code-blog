@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A3 亲密性</title>
+<style>
+  :root{--ink:#111418;--soft:#5b636e;--line:#e4e7ec;--band:#f6f7f9;--ok:#0b7a4b;--ok-bg:#e6f5ed;--bad:#b42318;--bad-bg:#fdecea;
+        --mono:"SF Mono",ui-monospace,"JetBrains Mono",Menlo,Consolas,monospace}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:transparent;color:var(--ink);
+            font:13px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .top{display:flex;align-items:center;gap:12px;padding:10px 14px;background:var(--band);border-bottom:1px solid var(--line)}
+  .tag{font:600 10.5px/1 var(--mono);letter-spacing:.08em;color:var(--soft);text-transform:uppercase}
+  .query{flex:1;min-width:0;font-size:13.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .rule{font-size:12px;color:var(--soft);white-space:nowrap}
+  button{font:inherit;font-size:12px;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 11px;cursor:pointer}
+  button:hover{border-color:#c5cad3}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:14px}
+  .head{display:flex;align-items:center;gap:8px;margin-bottom:8px;min-height:24px}
+  .side{font:700 12px/1 var(--mono);width:22px;height:22px;border-radius:6px;display:grid;place-items:center;background:var(--ink);color:#fff;flex:none}
+  .pill{font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:999px;flex:none}
+  .ok .pill{color:var(--ok);background:var(--ok-bg)} .bad .pill{color:var(--bad);background:var(--bad-bg)}
+  .say{flex:1;min-width:0;color:var(--soft);font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .open{border:0;background:none;color:#2f6bff;padding:0 2px}
+  .stage{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:10px;background:#eef0f3}
+  .stage iframe{position:absolute;top:0;left:0;width:1280px;height:800px;border:0;transform-origin:0 0;background:#fff}
+  @media (max-width:720px){.grid{grid-template-columns:1fr}.say,.query{white-space:normal}.rule{display:none}}
+  /* 放大态：父页把本 iframe 铺满视口，这里画成居中的大卡片，点卡片外收起 */
+  body.full{height:100vh;display:flex;align-items:center;justify-content:center;padding:28px}
+  body.full .card{width:min(100%,2400px);box-shadow:0 24px 80px rgba(0,0,0,.35)}
+  /* 放大态只放一张、尽量大，A / B 原地切换（空格或方向键），差别最容易看出来 */
+  .flip{display:none;gap:2px;background:#e9ecf1;border-radius:999px;padding:3px}
+  .flip button{border:0;background:none;padding:4px 12px}
+  .flip button.on{background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.12)}
+  body.full .flip{display:inline-flex}
+  body.full .grid{grid-template-columns:1fr}
+  body.full .grid > div{display:none}
+  body.full .grid > div.sel{display:block}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top"><span class="tag">Query</span><span class="query">为团队协作工具 Northwind 做定价页</span><span class="rule">A3 · 亲密性</span><span class="flip" title="空格或方向键切换"><button class="on">A 符合</button><button>B 违反</button></span><button id="zoom">放大对比</button></div>
+  <div class="grid">
+    <div class="ok sel"><div class="head"><span class="side">A</span><span class="pill">符合</span><span class="say">组内间距小、组间间距大，Includes 紧贴自己的列表</span><button class="open" data-v="good">新标签打开</button></div><div class="stage"><iframe title="A" data-v="good"></iframe></div></div>
+    <div class="bad"><div class="head"><span class="side">B</span><span class="pill">违反</span><span class="say">间距一样大或反着来，Includes 贴着按钮、离自己的列表反而远</span><button class="open" data-v="bad">新标签打开</button></div><div class="stage"><iframe title="B" data-v="bad"></iframe></div></div>
+  </div>
+</div>
+<script>
+(function(){
+  var PAGE = "<!doctype html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>Northwind pricing<\/title>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link href=\"https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif&display=swap\" rel=\"stylesheet\">\n<style>\n  *{box-sizing:border-box;margin:0;padding:0}\n  body{font-family:\"Instrument Sans\",system-ui,sans-serif;background:#fff;color:#101828;-webkit-font-smoothing:antialiased}\n  a{color:inherit;text-decoration:none}\n  .wrap{max-width:1184px;margin:0 auto;padding:0 52px}\n  nav{display:flex;align-items:center;height:72px;gap:32px;font-size:14.5px}\n  .logo{font-weight:700;font-size:18px;margin-right:auto;display:flex;align-items:center;gap:9px}\n  .logo i{width:22px;height:22px;border-radius:6px;background:#1f5eff;display:block}\n  .muted{color:#667085}\n  .start{background:#101828;color:#fff;padding:9px 16px;border-radius:9px;font-weight:600}\n  header{text-align:center;padding:40px 0 0}\n  .eyebrow{font-size:13px;font-weight:600;color:#1f5eff;margin-bottom:12px}\n  h1{font-family:\"Instrument Serif\",serif;font-weight:400;font-size:54px;line-height:1.05;letter-spacing:-.01em;margin-bottom:14px}\n  .sub{font-size:17px;color:#667085;margin-bottom:24px}\n  .toggle{display:inline-flex;background:#f2f4f7;border-radius:999px;padding:4px;font-size:14px;font-weight:500}\n  .toggle span{padding:7px 16px;border-radius:999px}\n  .toggle .on{background:#fff;box-shadow:0 1px 3px rgba(16,24,40,.12)}\n  .toggle em{font-style:normal;color:#039855;margin-left:6px}\n  .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}\n  .card{border:1px solid #eaecf0;border-radius:16px;padding:28px}\n  .card.pop{border:2px solid #1f5eff;box-shadow:0 12px 32px rgba(31,94,255,.12)}\n  .name{font-size:15px;font-weight:600;display:flex;justify-content:space-between;align-items:center}\n  .badge{font-size:12px;color:#1f5eff;background:#eef3ff;padding:3px 9px;border-radius:999px}\n  .price{margin-top:10px;font-size:44px;font-weight:600;letter-spacing:-.02em}\n  .price small{font-size:14px;font-weight:500;color:#667085;letter-spacing:0;margin-left:4px}\n  .desc{margin-top:6px;font-size:14.5px;color:#667085;line-height:1.5;min-height:44px}\n  .cta{display:block;text-align:center;margin-top:22px;padding:11px;border-radius:10px;font-weight:600;font-size:15px;border:1px solid #d0d5dd}\n  .pop .cta{background:#1f5eff;border-color:#1f5eff;color:#fff}\n  .incl{margin-top:28px;font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:#667085}\n  ul{list-style:none;margin-top:12px}\n  li{font-size:14.5px;padding-left:26px;position:relative;margin-top:10px}\n  li:first-child{margin-top:0}\n  li:before{content:\"\";position:absolute;left:3px;top:4px;width:10px;height:6px;border-left:2px solid #1f5eff;border-bottom:2px solid #1f5eff;transform:rotate(-45deg)}\n  .faq{display:grid;grid-template-columns:1fr 1fr;column-gap:56px;margin:72px 0 64px}\n  .faq h2{grid-column:1/3;font-family:\"Instrument Serif\",serif;font-weight:400;font-size:34px;margin-bottom:28px}\n  .q{font-weight:600;font-size:16px}\n  .a{font-size:15px;color:#667085;line-height:1.55;margin-top:6px;margin-bottom:28px}\n\n  /* B：同样的内容，所有间距一样大（或者反着来）—— 看不出谁和谁是一组 */\n  .bad header > *{margin-bottom:30px}\n  .bad .plans{margin-top:16px}\n  .bad .price{margin-top:26px}\n  .bad .desc{margin-top:26px}\n  .bad .cta{margin-top:26px}\n  .bad .incl{margin-top:10px}\n  .bad ul{margin-top:30px}\n  .bad li{margin-top:22px}\n  .bad .a{margin-top:22px;margin-bottom:10px}\n<\/style>\n<\/head>\n<body class=\"{{V}}\">\n<div class=\"wrap\">\n  <nav><a class=\"logo\" href=\"#\"><i><\/i>Northwind<\/a><a class=\"muted\" href=\"#\">Product<\/a><a class=\"muted\" href=\"#\">Customers<\/a><a class=\"muted\" href=\"#\">Pricing<\/a><a class=\"muted\" href=\"#\">Sign in<\/a><a class=\"start\" href=\"#\">Start free<\/a><\/nav>\n  <header>\n    <p class=\"eyebrow\">Pricing<\/p>\n    <h1>Simple plans for teams of any size<\/h1>\n    <p class=\"sub\">Every plan includes unlimited projects and guests. You pay per editor, never per viewer.<\/p>\n    <div class=\"toggle\"><span>Monthly<\/span><span class=\"on\">Yearly<em>save 20%<\/em><\/span><\/div>\n  <\/header>\n  <section class=\"plans\">\n    <div class=\"card\"><div class=\"name\">Starter<\/div><div class=\"price\">&#36;0<small>forever<\/small><\/div><p class=\"desc\">For individuals and small side projects getting organised.<\/p><a class=\"cta\" href=\"#\">Start for free<\/a>\n      <p class=\"incl\">Includes<\/p><ul><li>Up to 3 editors<\/li><li>Unlimited boards and docs<\/li><li>7-day version history<\/li><li>Basic integrations<\/li><\/ul><\/div>\n    <div class=\"card pop\"><div class=\"name\">Team <span class=\"badge\">Most popular<\/span><\/div><div class=\"price\">&#36;12<small>per editor / month<\/small><\/div><p class=\"desc\">For growing teams that plan, write and ship together every day.<\/p><a class=\"cta\" href=\"#\">Try Team free for 14 days<\/a>\n      <p class=\"incl\">Everything in Starter, plus<\/p><ul><li>Unlimited editors<\/li><li>Unlimited version history<\/li><li>Private projects and guests<\/li><li>Priority support<\/li><\/ul><\/div>\n    <div class=\"card\"><div class=\"name\">Business<\/div><div class=\"price\">&#36;24<small>per editor / month<\/small><\/div><p class=\"desc\">For companies that need security reviews, SSO and audit logs.<\/p><a class=\"cta\" href=\"#\">Talk to sales<\/a>\n      <p class=\"incl\">Everything in Team, plus<\/p><ul><li>SAML single sign-on<\/li><li>Audit log and data export<\/li><li>Custom data residency<\/li><li>Dedicated success manager<\/li><\/ul><\/div>\n  <\/section>\n  <section class=\"faq\">\n    <h2>Questions, answered<\/h2>\n    <div><p class=\"q\">Who counts as an editor?<\/p><p class=\"a\">Anyone who creates or changes content. People who only view or comment are free on every plan.<\/p>\n      <p class=\"q\">Can I switch plans later?<\/p><p class=\"a\">Yes. Upgrades apply immediately; downgrades take effect at the end of your billing period.<\/p><\/div>\n    <div><p class=\"q\">Do you offer discounts for nonprofits?<\/p><p class=\"a\">Registered nonprofits and schools get Team at 50% off. Write to us with your registration number.<\/p>\n      <p class=\"q\">What happens to my data if I cancel?<\/p><p class=\"a\">You keep read-only access for 90 days and can export everything as Markdown or PDF.<\/p><\/div>\n  <\/section>\n<\/div>\n<\/body>\n<\/html>\n";
+  var W = 1280, H = 800;
+  var full = false, embedded = window.parent !== window;
+  function doc(v){ return PAGE.replace('{{V}}', v); }
+  var frames = [].slice.call(document.querySelectorAll('.stage iframe'));
+  // 一页正文里有十来个对比组件：滚到附近才把两张网页放进去，免得一开页就渲染二十张
+  function load(){ frames.forEach(function(f){ if (!f.srcdoc) f.srcdoc = doc(f.dataset.v); }); }
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){
+      if (es.some(function(e){ return e.isIntersecting; })) { load(); io.disconnect(); }
+    }, {rootMargin: '800px 0px'});
+    io.observe(document.querySelector('.card'));
+  } else load();
+
+  function layout(){
+    var room = full ? window.innerHeight - 56 - 120 : Infinity;   // 放大态按视口高度封顶
+    frames.forEach(function(f){
+      var st = f.parentNode, w = st.clientWidth;
+      var s = Math.min(w / W, room / H);
+      st.style.height = Math.round(H * s) + 'px';
+      f.style.transform = 'translate(' + Math.max(0, (w - W * s) / 2) + 'px,0) scale(' + s + ')';
+    });
+    if (embedded && !full) window.parent.postMessage({type: 'kc-height', h: document.querySelector('.card').offsetHeight + 2}, '*');
+  }
+  window.addEventListener('resize', layout);
+  layout();
+
+  [].slice.call(document.querySelectorAll('.open')).forEach(function(b){
+    b.onclick = function(){
+      var url = URL.createObjectURL(new Blob([doc(b.dataset.v)], {type: 'text/html'}));
+      window.open(url, '_blank');
+      setTimeout(function(){ URL.revokeObjectURL(url); }, 60000);
+    };
+  });
+
+  var panels = [].slice.call(document.querySelectorAll('.grid > div'));
+  var flips = [].slice.call(document.querySelectorAll('.flip button'));
+  var sel = 0;
+  function pick(i){
+    sel = i;
+    panels.forEach(function(p, k){ p.classList.toggle('sel', k === i); });
+    flips.forEach(function(b, k){ b.classList.toggle('on', k === i); });
+    layout();
+  }
+  flips.forEach(function(b, k){ b.onclick = function(){ pick(k); }; });
+
+  var zoom = document.getElementById('zoom');
+  function setFull(on){
+    full = on;
+    document.body.classList.toggle('full', on);
+    zoom.textContent = on ? '收起' : '放大对比';
+    layout();
+  }
+  zoom.onclick = function(){
+    if (!embedded) { setFull(!full); return; }
+    window.parent.postMessage({type: full ? 'kc-collapse' : 'kc-expand'}, '*');
+  };
+  document.body.addEventListener('click', function(e){
+    if (full && e.target === document.body) window.parent.postMessage({type: 'kc-collapse'}, '*');
+  });
+  window.addEventListener('keydown', function(e){
+    if (!full) return;
+    if (e.key === 'Escape') window.parent.postMessage({type: 'kc-collapse'}, '*');
+    if (e.key === ' ' || e.key === 'ArrowLeft' || e.key === 'ArrowRight') { e.preventDefault(); pick(1 - sel); }
+  });
+  // 父页放大 / 还原好 iframe 后回 ack，这边排好版再回话，父页才显影
+  window.addEventListener('message', function(e){
+    if (e.source !== window.parent || !e.data || typeof e.data !== 'object') return;
+    if (e.data.type === 'kc-expand-ack')   { setFull(true);  window.parent.postMessage({type: 'kc-modal-ready'}, '*'); }
+    if (e.data.type === 'kc-collapse-ack') { setFull(false); window.parent.postMessage({type: 'kc-revealed'}, '*'); }
+  });
+})();
+</script>
+</body>
+</html>
+

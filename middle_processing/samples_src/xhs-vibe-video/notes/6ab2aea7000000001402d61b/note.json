@@ -1,0 +1,84 @@
+{
+ "note_id": "6ab2aea7000000001402d61b",
+ "url": "https://www.xiaohongshu.com/explore/6ab2aea7000000001402d61b?xsec_token=AB0RCbAlT6e4Pnw6RLByXzFwsflUUldnYvIWG_LqRQIPs=&xsec_source=pc_search",
+ "type": "video",
+ "title": "🚨Claude Opus 5.5正式发布",
+ "desc": "Anthropic 正式推出 Claude Opus 5.5：性能比肩 Fable 5.1，成本直降 40%\n\t\nAnthropic 官方宣布推出新一代大模型 Claude Opus 5.5，这是全新 Claude 5.5 家族的首款模型。\n\t\n作为 Opus 5 的重大升级版本，新模型在代理式编程（Agentic Coding）、计算机操控（Computer Use）及复杂知识工作等核心能力上展现出领先优势，在多数任务上的综合表现已达 Claude Fable 5.1 水准。\n\t\n在效率与性价比方面，Opus 5.5 实现了显著突破。得益于计算资源占用的优化，在默认配置的常规工作负载下，其运行成本较 Opus 5 降低了 40%，生成速度则提升了 30% 以上。\n\t\n基准测试显示，Opus 5.5 能够以极具竞争力的单任务成本提供前沿性能，其默认表现甚至超越了部分竞品在最高算力设置下的输出水平。\n\t\n在安全性与对齐层面，这是 Anthropic 自呼吁审慎推进前沿 AI 研发以来的首个发布成果。\n\t\n该模型在上线前交由 METR 与 Frontier Design 等第三方机构进行了独立安全评估，并在最全面的对齐测试中斩获了迄今为止的最高分数。\n\t\n交互体验方面，Opus 5.5 改善了交流风格，倾向于将核心信息置前并严格遵循指令，大幅提升了长会话的连贯性。\n\t\n同时，Anthropic 提升了 Pro、Max 与 Team 订阅计划的 5 小时使用额度，并新增了可随时存储与激活的额度重置机制。\n\t\n#ai[话题]# #大模型[话题]# #人工智能[话题]# #anthropic[话题]# #claude[话题]# #opus[话题]#",
+ "tags": [
+  "ai",
+  "大模型",
+  "人工智能",
+  "anthropic",
+  "claude",
+  "opus"
+ ],
+ "author": "Michael-001",
+ "user_id": "616494f90000000002027546",
+ "time": 1790095015000,
+ "ip_location": null,
+ "likes": "679",
+ "collects": "170",
+ "comments_count": "92",
+ "keywords": [
+  "Claude 产品宣传片"
+ ],
+ "duration": 20,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040108/818de3e0aa587dc1c22e795c1cb8c366/1040g2sg325e5vqq9kqe05ob4ijsgkta6685jva8!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "Michael-001",
+   "content": "Opus 5.5 相较于 Opus 5 是一次重大升级，在代理式编码、计算机使用以及知识工作方面处于领先地位。",
+   "likes": "17"
+  },
+  {
+   "user": "股市慈善家",
+   "content": "这个做的很好啊为什么有人喷。拿了Opus的O配合上各个学科里圆形的东西（天体设计生物物理人文）",
+   "likes": "49"
+  },
+  {
+   "user": "閃光✨美樹本HaRu🔰",
+   "content": "反耳呢我们gemini宝宝还在装死[哭惹R]",
+   "likes": "29"
+  },
+  {
+   "user": "Yang.",
+   "content": "白莲花度假村片头即视感[笑哭R]",
+   "likes": "11"
+  },
+  {
+   "user": "奥克兰男忧",
+   "content": "为什么更新不重置额度啊，a/学学gpt啊",
+   "likes": "1"
+  },
+  {
+   "user": "小狗要喝牛奶",
+   "content": "这就意味着gpt6sol要来了[偷笑R]",
+   "likes": "17"
+  },
+  {
+   "user": "匹撒",
+   "content": "不觉得这个很像那个缆车上坐着的一家子外星人的发音嘛 “啊”",
+   "likes": "2"
+  },
+  {
+   "user": "tayn",
+   "content": "没招呀，国内用不上[笑哭R]",
+   "likes": "0"
+  },
+  {
+   "user": "momo",
+   "content": "宣发审美比openai差好多",
+   "likes": "21"
+  },
+  {
+   "user": "momo",
+   "content": "又用不了[doge]",
+   "likes": "2"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

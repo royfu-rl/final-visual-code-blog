@@ -1,0 +1,1756 @@
+```html
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="https://gmpg.org/xfn/11" rel="profile" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <meta
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      name="robots"
+    />
+    <style>
+      img:is([sizes="auto" i], [sizes^="auto," i]) {
+        contain-intrinsic-size: 3000px 1500px;
+      }
+    </style>
+    <link
+      href="https://cpj.org/2023/06/guatemalan-journalist-jose-ruben-zamora-convicted-of-money-laundering-sentenced-to-6-years-in-prison/"
+      hreflang="en"
+      rel="alternate"
+    />
+    <link
+      href="https://cpj.org/es/2023/06/periodista-guatemalteco-jose-ruben-zamora-condenado-por-lavado-de-dinero-sentenciado-a-6-anos-de-prision/"
+      hreflang="es"
+      rel="alternate"
+    />
+    <!-- This site is optimized with the Yoast SEO plugin v22.9 - https://yoast.com/wordpress/plugins/seo/ -->
+    <title>
+      Guatemalan journalist José Rubén Zamora convicted of money laundering,
+      sentenced to 6 years in prison - Committee to Protect Journalists
+    </title>
+    <link
+      href="https://cpj.org/2023/06/guatemalan-journalist-jose-ruben-zamora-convicted-of-money-laundering-sentenced-to-6-years-in-prison/"
+      rel="canonical"
+    />
+    <meta content="en_US" property="og:locale" />
+    <meta content="es_ES" property="og:locale:alternate" />
+    <meta content="article" property="og:type" />
+    <meta
+      content="Guatemalan journalist José Rubén Zamora convicted of money laundering, sentenced to 6 years in prison - Committee to Protect Journalists"
+      property="og:title"
+    />
+    <meta
+      content="Guatemala City, June 14, 2023–In response to the Wednesday, June 14, conviction of Guatemalan journalist José Rubén Zamora on money laundering charges, the Committee to Protect Journalists issued the following statement of condemnation: “The shameful conviction and imprisonment of Guatemalan journalist José Rubén Zamora serve as a stark testament to the erosion of freedom of..."
+      property="og:description"
+    />
+    <meta
+      content="https://cpj.org/2023/06/guatemalan-journalist-jose-ruben-zamora-convicted-of-money-laundering-sentenced-to-6-years-in-prison/"
+      property="og:url"
+    />
+    <meta content="Committee to Protect Journalists" property="og:site_name" />
+    <meta
+      content="https://www.facebook.com/committeetoprotectjournalists/"
+      property="article:publisher"
+    />
+    <meta
+      content="2023-06-14T18:39:31+00:00"
+      property="article:published_time"
+    />
+    <meta
+      content="2023-06-19T17:50:54+00:00"
+      property="article:modified_time"
+    />
+    <meta
+      content="https://cpj.org/wp-content/uploads/2023/06/afp_guatemala_06-14-2023-1.jpg?fit=4096,4096&amp;strip=all&amp;quality=80"
+      property="og:image"
+    />
+    <meta content="6192" property="og:image:width" />
+    <meta content="4128" property="og:image:height" />
+    <meta content="image/jpeg" property="og:image:type" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta
+      content="https://cpj.org/wp-content/uploads/2023/06/afp_guatemala_06-14-2023-1.jpg?fit=4096,4096&amp;strip=all&amp;quality=80"
+      name="twitter:image"
+    />
+    <meta content="@pressfreedom" name="twitter:creator" />
+    <meta content="@CPJAmericas" name="twitter:site" />
+    <meta content="Est. reading time" name="twitter:label1" />
+    <meta content="2 minutes" name="twitter:data1" />
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtm.js?id=GTM-PJPQPQR"
+    ></script>
+    <script class="yoast-schema-graph" type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Article",
+            "@id": "https://cpj.org/2023/06/guatemalan-journalist-jose-ruben-zamora-convicted-of-money-laundering-sentenced-to-6-years-in-prison/#article",
+            "isPartOf": {
+              "@id": "https://cpj.org/2023/06/guatemalan-journalist-jose-ruben-zamora-convicted-of-money-laundering-sentenced-to-6-years-in-prison/"
+            },
+            "headline": "Guatemalan journalist José Rubén Zamora convicted of money laundering, sentenced to 6 years in prison",
+            "datePublished": "2023-06-14T18:39:31+00:00",
+            "dateModified": "2023-06-19T17:50:54+00:00",
+            "mainEntityOfPage": {
+              "@id": "https://cpj.org/2023/06/guatemalan-journalist-jose-ruben-zamora-convicted-of-money-laundering-sentenced-to-6-years-in-prison/"
+            },
+            "wordCount": 264,
+            "publisher": { "@id": "https://cpj.org/#organization" },
+            "image": {
+              "@id": "https://cpj.org/2023/06/guatemalan-journalist-jose-ruben-zamora-convicted-of-money-laundering-sentenced-to-6-years-in-prison/#primaryimage"
+            },
+            "thumbnailUrl": "https://cpj.org/wp-content/uploads/2023/06/afp_guatemala_06-14-2023-1.jpg",
+            "keywords": [
+              "Convicted",
+              "elPeriódico",
+              "José Rubén Zamora Marroquín",
+              "Money Laundering",
+              "Retaliatory"
+            ],
+            "inLanguage": "en-US",
+            "author": [{ "@id": "https://cpj.org/author/ecrouch/" }]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://cpj.org/2023/06/guatemalan-journalist-jose-ruben-zamora-convicted-of-money-laundering-sentenced-to-6-years-in-prison/",
+            "url": "https://cpj.org/2023/06/guatemalan-journalist-jose-ruben-zamora-convicted-of-money-laundering-sentenced-to-6-years-in-prison/",
+            "name": "Guatemalan journalist José Rubén Zamora convicted of money laundering, sentenced to 6 years in prison - Committee to Protect Journalists",
+            "isPartOf": { "@id": "https://cpj.org/#website" },
+            "primaryImageOfPage": {
+              "@id": "https://cpj.org/2023/06/guatemalan-journalist-jose-ruben-zamora-convicted-of-money-laundering-sentenced-to-6-years-in-prison/#primaryimage"
+            },
+            "image": {
+              "@id": "https://cpj.org/2023/06/guatemalan-journalist-jose-ruben-zamora-convicted-of-money-laundering-sentenced-to-6-years-in-prison/#primaryimage"
+            },
+            "thumbnailUrl": "https://cpj.org/wp-content/uploads/2023/06/afp_guatemala_06-14-2023-1.jpg",
+            "datePublished": "2023-06-14T18:39:31+00:00",
+            "dateModified": "2023-06-19T17:50:54+00:00",
+            "inLanguage": "en-US",
+            "potentialAction": [
+              {
+                "@type": "ReadAction",
+                "target": [
+                  "https://cpj.org/2023/06/guatemalan-journalist-jose-ruben-zamora-convicted-of-money-laundering-sentenced-to-6-years-in-prison/"
+                ]
+              }
+            ]
+          },
+          {
+            "@type": "ImageObject",
+            "inLanguage": "en-US",
+            "@id": "https://cpj.org/2023/06/guatemalan-journalist-jose-ruben-zamora-convicted-of-money-laundering-sentenced-to-6-years-in-prison/#primaryimage",
+            "url": "https://cpj.org/wp-content/uploads/2023/06/afp_guatemala_06-14-2023-1.jpg",
+            "contentUrl": "https://cpj.org/wp-content/uploads/2023/06/afp_guatemala_06-14-2023-1.jpg",
+            "width": 6192,
+            "height": 4128,
+            "caption": "Guatemalan journalist Jose Ruben Zamora, president of the newspaper El Periodico, arrives handcuffed and under police escort to listen to the Guatemalan court's ruling in a case against him, at the Palace of Justice in Guatemala City, on June 14, 2023. A Guatemalan court rules on Wednesday in a controversial trial for alleged money laundering, blackmail and influence peddling against Zamora, the founder of a newspaper critical of the government, crimes for which the prosecution calls for 40 years in prison. (Photo by Johan ORDONEZ / AFP)"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://cpj.org/#website",
+            "url": "https://cpj.org/",
+            "name": "Committee to Protect Journalists",
+            "description": "Defending Journalists Worldwide.",
+            "publisher": { "@id": "https://cpj.org/#organization" },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://cpj.org/?s={search_term_string}"
+                },
+                "query-input": "required name=search_term_string"
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://cpj.org/#organization",
+            "name": "Committee to Protect Journalists",
+            "url": "https://cpj.org/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://cpj.org/#/schema/logo/image/",
+              "url": "https://cpj.org/wp-content/uploads/2020/05/cpj-logo-1.png",
+              "contentUrl": "https://cpj.org/wp-content/uploads/2020/05/cpj-logo-1.png",
+              "width": 500,
+              "height": 375,
+              "caption": "Committee to Protect Journalists"
+            },
+            "image": { "@id": "https://cpj.org/#/schema/logo/image/" },
+            "sameAs": [
+              "https://www.facebook.com/committeetoprotectjournalists/",
+              "https://x.com/pressfreedom",
+              "https://www.instagram.com/committeetoprotectjournalists/?hl=en",
+              "https://www.linkedin.com/company/cpj/",
+              "https://www.youtube.com/channel/UCJ6Fa7MQH9-3yBFwYUZRJMQ",
+              "https://en.wikipedia.org/wiki/Committee_to_Protect_Journalists"
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://cpj.org/author/ecrouch/",
+            "name": "Erik Crouch",
+            "url": "https://cpj.org/author/ecrouch/"
+          }
+        ]
+      }
+    </script>
+    <!-- / Yoast SEO plugin. -->
+    <link href="//www.google.com" rel="dns-prefetch" />
+    <link href="//stats.wp.com" rel="dns-prefetch" />
+    <link href="//fonts.googleapis.com" rel="dns-prefetch" />
+    <link href="//use.typekit.net" rel="dns-prefetch" />
+    <link
+      href="https://cpj.org/feed/"
+      rel="alternate"
+      title="Committee to Protect Journalists » Feed"
+      type="application/rss+xml"
+    />
+    <link
+      href="https://cpj.org/comments/feed/"
+      rel="alternate"
+      title="Committee to Protect Journalists » Comments Feed"
+      type="application/rss+xml"
+    />
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      window._wpemojiSettings = {
+        baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
+        ext: ".png",
+        svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/",
+        svgExt: ".svg",
+        source: {
+          concatemoji:
+            "https:\/\/cpj.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.1",
+        },
+      };
+      /*! This file is auto-generated */
+      !(function (i, n) {
+        var o, s, e;
+        function c(e) {
+          try {
+            var t = { supportTests: e, timestamp: new Date().valueOf() };
+            sessionStorage.setItem(o, JSON.stringify(t));
+          } catch (e) {}
+        }
+        function p(e, t, n) {
+          e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+            e.fillText(t, 0, 0);
+          var t = new Uint32Array(
+              e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+            ),
+            r =
+              (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+              e.fillText(n, 0, 0),
+              new Uint32Array(
+                e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+              ));
+          return t.every(function (e, t) {
+            return e === r[t];
+          });
+        }
+        function u(e, t, n) {
+          switch (t) {
+            case "flag":
+              return n(
+                e,
+                "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
+                "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f"
+              )
+                ? !1
+                : !n(
+                    e,
+                    "\ud83c\uddfa\ud83c\uddf3",
+                    "\ud83c\uddfa\u200b\ud83c\uddf3"
+                  ) &&
+                    !n(
+                      e,
+                      "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
+                      "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
+                    );
+            case "emoji":
+              return !n(
+                e,
+                "\ud83d\udc26\u200d\u2b1b",
+                "\ud83d\udc26\u200b\u2b1b"
+              );
+          }
+          return !1;
+        }
+        function f(e, t, n) {
+          var r =
+              "undefined" != typeof WorkerGlobalScope &&
+              self instanceof WorkerGlobalScope
+                ? new OffscreenCanvas(300, 150)
+                : i.createElement("canvas"),
+            a = r.getContext("2d", { willReadFrequently: !0 }),
+            o = ((a.textBaseline = "top"), (a.font = "600 32px Arial"), {});
+          return (
+            e.forEach(function (e) {
+              o[e] = t(a, e, n);
+            }),
+            o
+          );
+        }
+        function t(e) {
+          var t = i.createElement("script");
+          (t.src = e), (t.defer = !0), i.head.appendChild(t);
+        }
+        "undefined" != typeof Promise &&
+          ((o = "wpEmojiSettingsSupports"),
+          (s = ["flag", "emoji"]),
+          (n.supports = { everything: !0, everythingExceptFlag: !0 }),
+          (e = new Promise(function (e) {
+            i.addEventListener("DOMContentLoaded", e, { once: !0 });
+          })),
+          new Promise(function (t) {
+            var n = (function () {
+              try {
+                var e = JSON.parse(sessionStorage.getItem(o));
+                if (
+                  "object" == typeof e &&
+                  "number" == typeof e.timestamp &&
+                  new Date().valueOf() < e.timestamp + 604800 &&
+                  "object" == typeof e.supportTests
+                )
+                  return e.supportTests;
+              } catch (e) {}
+              return null;
+            })();
+            if (!n) {
+              if (
+                "undefined" != typeof Worker &&
+                "undefined" != typeof OffscreenCanvas &&
+                "undefined" != typeof URL &&
+                URL.createObjectURL &&
+                "undefined" != typeof Blob
+              )
+                try {
+                  var e =
+                      "postMessage(" +
+                      f.toString() +
+                      "(" +
+                      [JSON.stringify(s), u.toString(), p.toString()].join(
+                        ","
+                      ) +
+                      "));",
+                    r = new Blob([e], { type: "text/javascript" }),
+                    a = new Worker(URL.createObjectURL(r), {
+                      name: "wpTestEmojiSupports",
+                    });
+                  return void (a.onmessage = function (e) {
+                    c((n = e.data)), a.terminate(), t(n);
+                  });
+                } catch (e) {}
+              c((n = f(s, u, p)));
+            }
+            t(n);
+          })
+            .then(function (e) {
+              for (var t in e)
+                (n.supports[t] = e[t]),
+                  (n.supports.everything =
+                    n.supports.everything && n.supports[t]),
+                  "flag" !== t &&
+                    (n.supports.everythingExceptFlag =
+                      n.supports.everythingExceptFlag && n.supports[t]);
+              (n.supports.everythingExceptFlag =
+                n.supports.everythingExceptFlag && !n.supports.flag),
+                (n.DOMReady = !1),
+                (n.readyCallback = function () {
+                  n.DOMReady = !0;
+                });
+            })
+            .then(function () {
+              return e;
+            })
+            .then(function () {
+              var e;
+              n.supports.everything ||
+                (n.readyCallback(),
+                (e = n.source || {}).concatemoji
+                  ? t(e.concatemoji)
+                  : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)));
+            }));
+      })((window, document), window._wpemojiSettings);
+      /* ]]> */
+    </script>
+    <style id="wp-emoji-styles-inline-css">
+      img.wp-smiley,
+      img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+      }
+    </style>
+    <link
+      href="css/style.min_ver_6.7..css"
+      id="wp-block-library-css"
+      media="all"
+      rel="stylesheet"
+    />
+    <style id="cpj-mu-curated-post-list-style-inline-css">
+      @font-face {
+        font-family: swiper-icons;
+        font-style: normal;
+        font-weight: 400;
+        src: url("data:application/font-woff;charset=utf-8;base64, d09GRgABAAAAAAZgABAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAGRAAAABoAAAAci6qHkUdERUYAAAWgAAAAIwAAACQAYABXR1BPUwAABhQAAAAuAAAANuAY7+xHU1VCAAAFxAAAAFAAAABm2fPczU9TLzIAAAHcAAAASgAAAGBP9V5RY21hcAAAAkQAAACIAAABYt6F0cBjdnQgAAACzAAAAAQAAAAEABEBRGdhc3AAAAWYAAAACAAAAAj//wADZ2x5ZgAAAywAAADMAAAD2MHtryVoZWFkAAABbAAAADAAAAA2E2+eoWhoZWEAAAGcAAAAHwAAACQC9gDzaG10eAAAAigAAAAZAAAArgJkABFsb2NhAAAC0AAAAFoAAABaFQAUGG1heHAAAAG8AAAAHwAAACAAcABAbmFtZQAAA/gAAAE5AAACXvFdBwlwb3N0AAAFNAAAAGIAAACE5s74hXjaY2BkYGAAYpf5Hu/j+W2+MnAzMYDAzaX6QjD6/4//Bxj5GA8AuRwMYGkAPywL13jaY2BkYGA88P8Agx4j+/8fQDYfA1AEBWgDAIB2BOoAeNpjYGRgYNBh4GdgYgABEMnIABJzYNADCQAACWgAsQB42mNgYfzCOIGBlYGB0YcxjYGBwR1Kf2WQZGhhYGBiYGVmgAFGBiQQkOaawtDAoMBQxXjg/wEGPcYDDA4wNUA2CCgwsAAAO4EL6gAAeNpj2M0gyAACqxgGNWBkZ2D4/wMA+xkDdgAAAHjaY2BgYGaAYBkGRgYQiAHyGMF8FgYHIM3DwMHABGQrMOgyWDLEM1T9/w8UBfEMgLzE////P/5//f/V/xv+r4eaAAeMbAxwIUYmIMHEgKYAYjUcsDAwsLKxc3BycfPw8jEQA/gZBASFhEVExcQlJKWkZWTl5BUUlZRVVNXUNTQZBgMAAMR+E+gAEQFEAAAAKgAqACoANAA+AEgAUgBcAGYAcAB6AIQAjgCYAKIArAC2AMAAygDUAN4A6ADyAPwBBgEQARoBJAEuATgBQgFMAVYBYAFqAXQBfgGIAZIBnAGmAbIBzgHsAAB42u2NMQ6CUAyGW568x9AneYYgm4MJbhKFaExIOAVX8ApewSt4Bic4AfeAid3VOBixDxfPYEza5O+Xfi04YADggiUIULCuEJK8VhO4bSvpdnktHI5QCYtdi2sl8ZnXaHlqUrNKzdKcT8cjlq+rwZSvIVczNiezsfnP/uznmfPFBNODM2K7MTQ45YEAZqGP81AmGGcF3iPqOop0r1SPTaTbVkfUe4HXj97wYE+yNwWYxwWu4v1ugWHgo3S1XdZEVqWM7ET0cfnLGxWfkgR42o2PvWrDMBSFj/IHLaF0zKjRgdiVMwScNRAoWUoH78Y2icB/yIY09An6AH2Bdu/UB+yxopYshQiEvnvu0dURgDt8QeC8PDw7Fpji3fEA4z/PEJ6YOB5hKh4dj3EvXhxPqH/SKUY3rJ7srZ4FZnh1PMAtPhwP6fl2PMJMPDgeQ4rY8YT6Gzao0eAEA409DuggmTnFnOcSCiEiLMgxCiTI6Cq5DZUd3Qmp10vO0LaLTd2cjN4fOumlc7lUYbSQcZFkutRG7g6JKZKy0RmdLY680CDnEJ+UMkpFFe1RN7nxdVpXrC4aTtnaurOnYercZg2YVmLN/d/gczfEimrE/fs/bOuq29Zmn8tloORaXgZgGa78yO9/cnXm2BpaGvq25Dv9S4E9+5SIc9PqupJKhYFSSl47+Qcr1mYNAAAAeNptw0cKwkAAAMDZJA8Q7OUJvkLsPfZ6zFVERPy8qHh2YER+3i/BP83vIBLLySsoKimrqKqpa2hp6+jq6RsYGhmbmJqZSy0sraxtbO3sHRydnEMU4uR6yx7JJXveP7WrDycAAAAAAAH//wACeNpjYGRgYOABYhkgZgJCZgZNBkYGLQZtIJsFLMYAAAw3ALgAeNolizEKgDAQBCchRbC2sFER0YD6qVQiBCv/H9ezGI6Z5XBAw8CBK/m5iQQVauVbXLnOrMZv2oLdKFa8Pjuru2hJzGabmOSLzNMzvutpB3N42mNgZGBg4GKQYzBhYMxJLMlj4GBgAYow/P/PAJJhLM6sSoWKfWCAAwDAjgbRAAB42mNgYGBkAIIbCZo5IPrmUn0hGA0AO8EFTQAA");
+      }
+      :root {
+        --swiper-theme-color: #007aff;
+      }
+      :host {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        z-index: 1;
+      }
+      .swiper {
+        display: block;
+        list-style: none;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        z-index: 1;
+      }
+      .swiper-vertical > .swiper-wrapper {
+        flex-direction: column;
+      }
+      .swiper-wrapper {
+        box-sizing: content-box;
+        display: flex;
+        height: 100%;
+        position: relative;
+        transition-property: transform;
+        transition-timing-function: var(
+          --swiper-wrapper-transition-timing-function,
+          initial
+        );
+        width: 100%;
+        z-index: 1;
+      }
+      .swiper-android .swiper-slide,
+      .swiper-ios .swiper-slide,
+      .swiper-wrapper {
+        transform: translateZ(0);
+      }
+      .swiper-horizontal {
+        touch-action: pan-y;
+      }
+      .swiper-vertical {
+        touch-action: pan-x;
+      }
+      .swiper-slide {
+        display: block;
+        flex-shrink: 0;
+        height: 100%;
+        position: relative;
+        transition-property: transform;
+        width: 100%;
+      }
+      .swiper-slide-invisible-blank {
+        visibility: hidden;
+      }
+      .swiper-autoheight,
+      .swiper-autoheight .swiper-slide {
+        height: auto;
+      }
+      .swiper-autoheight .swiper-wrapper {
+        align-items: flex-start;
+        transition-property: transform, height;
+      }
+      .swiper-backface-hidden .swiper-slide {
+        backface-visibility: hidden;
+        transform: translateZ(0);
+      }
+      .swiper-3d.swiper-css-mode .swiper-wrapper {
+        perspective: 1200px;
+      }
+      .swiper-3d .swiper-wrapper {
+        transform-style: preserve-3d;
+      }
+      .swiper-3d {
+        perspective: 1200px;
+      }
+      .swiper-3d .swiper-cube-shadow,
+      .swiper-3d .swiper-slide {
+        transform-style: preserve-3d;
+      }
+      .swiper-css-mode > .swiper-wrapper {
+        overflow: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+      .swiper-css-mode > .swiper-wrapper::-webkit-scrollbar {
+        display: none;
+      }
+      .swiper-css-mode > .swiper-wrapper > .swiper-slide {
+        scroll-snap-align: start start;
+      }
+      .swiper-css-mode.swiper-horizontal > .swiper-wrapper {
+        scroll-snap-type: x mandatory;
+      }
+      .swiper-css-mode.swiper-vertical > .swiper-wrapper {
+        scroll-snap-type: y mandatory;
+      }
+      .swiper-css-mode.swiper-free-mode > .swiper-wrapper {
+        scroll-snap-type: none;
+      }
+      .swiper-css-mode.swiper-free-mode > .swiper-wrapper > .swiper-slide {
+        scroll-snap-align: none;
+      }
+      .swiper-css-mode.swiper-centered > .swiper-wrapper:before {
+        content: "";
+        flex-shrink: 0;
+        order: 9999;
+      }
+      .swiper-css-mode.swiper-centered > .swiper-wrapper > .swiper-slide {
+        scroll-snap-align: center center;
+        scroll-snap-stop: always;
+      }
+      .swiper-css-mode.swiper-centered.swiper-horizontal
+        > .swiper-wrapper
+        > .swiper-slide:first-child {
+        margin-inline-start: var(--swiper-centered-offset-before);
+      }
+      .swiper-css-mode.swiper-centered.swiper-horizontal
+        > .swiper-wrapper:before {
+        height: 100%;
+        min-height: 1px;
+        width: var(--swiper-centered-offset-after);
+      }
+      .swiper-css-mode.swiper-centered.swiper-vertical
+        > .swiper-wrapper
+        > .swiper-slide:first-child {
+        margin-block-start: var(--swiper-centered-offset-before);
+      }
+      .swiper-css-mode.swiper-centered.swiper-vertical
+        > .swiper-wrapper:before {
+        height: var(--swiper-centered-offset-after);
+        min-width: 1px;
+        width: 100%;
+      }
+      .swiper-3d .swiper-slide-shadow,
+      .swiper-3d .swiper-slide-shadow-bottom,
+      .swiper-3d .swiper-slide-shadow-left,
+      .swiper-3d .swiper-slide-shadow-right,
+      .swiper-3d .swiper-slide-shadow-top {
+        height: 100%;
+        left: 0;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+      }
+      .swiper-3d .swiper-slide-shadow {
+        background: rgba(0, 0, 0, 0.15);
+      }
+      .swiper-3d .swiper-slide-shadow-left {
+        background-image: linear-gradient(
+          270deg,
+          rgba(0, 0, 0, 0.5),
+          transparent
+        );
+      }
+      .swiper-3d .swiper-slide-shadow-right {
+        background-image: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.5),
+          transparent
+        );
+      }
+      .swiper-3d .swiper-slide-shadow-top {
+        background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5),
+          transparent
+        );
+      }
+      .swiper-3d .swiper-slide-shadow-bottom {
+        background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.5),
+          transparent
+        );
+      }
+      .swiper-lazy-preloader {
+        border: 4px solid
+          var(--swiper-preloader-color, var(--swiper-theme-color));
+        border-radius: 50%;
+        border-top: 4px solid transparent;
+        box-sizing: border-box;
+        height: 42px;
+        left: 50%;
+        margin-left: -21px;
+        margin-top: -21px;
+        position: absolute;
+        top: 50%;
+        transform-origin: 50%;
+        width: 42px;
+        z-index: 10;
+      }
+      .swiper-watch-progress .swiper-slide-visible .swiper-lazy-preloader,
+      .swiper:not(.swiper-watch-progress) .swiper-lazy-preloader {
+        animation: swiper-preloader-spin 1s linear infinite;
+      }
+      .swiper-lazy-preloader-white {
+        --swiper-preloader-color: #fff;
+      }
+      .swiper-lazy-preloader-black {
+        --swiper-preloader-color: #000;
+      }
+      @keyframes swiper-preloader-spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(1turn);
+        }
+      }
+      .wp-block-cpj-mu-curated-post-list {
+        margin: 0 9px;
+      }
+      .wp-block-cpj-mu-curated-post-list__wrapper {
+        display: flex;
+        margin-bottom: 27px;
+      }
+      .wp-block-cpj-mu-curated-post-list__title {
+        font-family: warnock-pro;
+        font-size: 39px;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-bottom: 22px;
+        margin-left: 62px;
+      }
+      .wp-block-cpj-mu-curated-post-list__control {
+        background: transparent;
+        border: 0;
+        margin-right: 14px;
+        margin-top: 44px;
+        width: 48px;
+      }
+      .wp-block-cpj-mu-curated-post-list__control.is-mirrored {
+        margin-left: 14px;
+        margin-right: 0;
+        transform: rotate(180deg);
+      }
+      .wp-block-cpj-mu-curated-post-list__control.is-disabled {
+        cursor: default;
+        opacity: 0.25;
+      }
+      .wp-block-cpj-mu-curated-post-list__button-wrapper {
+        text-align: center;
+      }
+      .wp-block-cpj-mu-curated-post-list__button {
+        background-color: #d33227;
+        border-radius: 33px;
+        color: #fff;
+        display: inline-block;
+        font-family: myriad-pro;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.2;
+        margin: 0 auto;
+        padding: 12px 38px;
+      }
+      .wp-block-cpj-mu-curated-post-list__button:hover {
+        color: #fff;
+      }
+    </style>
+    <style id="cpj-mu-curated-post-style-inline-css">
+      .wp-block-cpj-mu-curated-post__eyebrow {
+        background-color: #d33227;
+        color: #fff;
+        display: inline-block;
+        font-family: myriad-pro, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 2.2222222222;
+        margin: 0;
+        padding: 2px 28px;
+      }
+      .wp-block-cpj-mu-curated-post .wp-post-image {
+        aspect-ratio: 328/213;
+        height: auto;
+        margin-bottom: 23px;
+        max-width: 100%;
+      }
+      .wp-block-cpj-mu-curated-post__title {
+        color: #000;
+        font-family: warnock-pro, serif;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 1.5454545455;
+        margin: 0;
+      }
+      .wp-block-cpj-mu-curated-post__title:hover {
+        color: #d33227;
+      }
+    </style>
+    <style id="cpj-mu-two-up-stacked-post-list-style-inline-css">
+      .wp-block-cpj-mu-two-up-stacked-post-list {
+        display: flex;
+        flex-direction: column;
+        gap: 66px;
+      }
+      .wp-block-cpj-mu-two-up-stacked-post-list__eyebrow {
+        font-family: myriad-pro, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 2;
+        margin: 0 0 13px;
+        text-transform: capitalize;
+      }
+      .wp-block-cpj-mu-two-up-stacked-post-list__title {
+        font-family: warnock-pro, serif;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1.5;
+        margin: 0 0 36px;
+      }
+      .wp-block-cpj-mu-two-up-stacked-post-list
+        article
+        .wp-block-cpj-mu-two-up-stacked-post-list__excerpt {
+        font-family: warnock-pro, serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin: 0 0 36px;
+      }
+      .wp-block-cpj-mu-two-up-stacked-post-list__button {
+        background-color: #fff;
+        border: 2px solid #d33227;
+        border-radius: 33px;
+        color: #d33227;
+        font-family: myriad-pro, sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.2;
+        padding: 13px 32px;
+      }
+    </style>
+    <link
+      href="css/mediaelementplayer-legacy.min_ver_4.2..css"
+      id="mediaelement-css"
+      media="all"
+      rel="stylesheet"
+    />
+    <link
+      href="css/wp-mediaelement.min_ver_6.7..css"
+      id="wp-mediaelement-css"
+      media="all"
+      rel="stylesheet"
+    />
+    <style id="jetpack-sharing-buttons-style-inline-css">
+      .jetpack-sharing-buttons__services-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+        list-style-type: none;
+        margin: 5px;
+        padding: 0;
+      }
+      .jetpack-sharing-buttons__services-list.has-small-icon-size {
+        font-size: 12px;
+      }
+      .jetpack-sharing-buttons__services-list.has-normal-icon-size {
+        font-size: 16px;
+      }
+      .jetpack-sharing-buttons__services-list.has-large-icon-size {
+        font-size: 24px;
+      }
+      .jetpack-sharing-buttons__services-list.has-huge-icon-size {
+        font-size: 36px;
+      }
+      @media print {
+        .jetpack-sharing-buttons__services-list {
+          display: none !important;
+        }
+      }
+      .editor-styles-wrapper .wp-block-jetpack-sharing-buttons {
+        gap: 0;
+        padding-inline-start: 0;
+      }
+      ul.jetpack-sharing-buttons__services-list.has-background {
+        padding: 1.25em 2.375em;
+      }
+    </style>
+    <style id="classic-theme-styles-inline-css">
+      /*! This file is auto-generated */
+      .wp-block-button__link {
+        color: #fff;
+        background-color: #32373c;
+        border-radius: 9999px;
+        box-shadow: none;
+        text-decoration: none;
+        padding: calc(0.667em + 2px) calc(1.333em + 2px);
+        font-size: 1.125em;
+      }
+      .wp-block-file__button {
+        background: #32373c;
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+    <style id="global-styles-inline-css">
+      :root {
+        --wp--preset--aspect-ratio--square: 1;
+        --wp--preset--aspect-ratio--4-3: 4/3;
+        --wp--preset--aspect-ratio--3-4: 3/4;
+        --wp--preset--aspect-ratio--3-2: 3/2;
+        --wp--preset--aspect-ratio--2-3: 2/3;
+        --wp--preset--aspect-ratio--16-9: 16/9;
+        --wp--preset--aspect-ratio--9-16: 9/16;
+        --wp--preset--color--black: #000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #fff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--color--red: #da2e2c;
+        --wp--preset--color--red-bold: #d33227;
+        --wp--preset--color--red-darker: #9e1d1c;
+        --wp--preset--color--red-muted: #ffd7d7;
+        --wp--preset--color--cpj-green: #f4f8ee;
+        --wp--preset--color--gray-darkest: #282828;
+        --wp--preset--color--muted: #acacac;
+        --wp--preset--color--gray-lightest: #efefef;
+        --wp--preset--color--green-muted: #f4f8ee;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(
+          135deg,
+          rgba(6, 147, 227, 1) 0%,
+          rgb(155, 81, 224) 100%
+        );
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(
+          135deg,
+          rgb(122, 220, 180) 0%,
+          rgb(0, 208, 130) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(
+          135deg,
+          rgba(252, 185, 0, 1) 0%,
+          rgba(255, 105, 0, 1) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(
+          135deg,
+          rgba(255, 105, 0, 1) 0%,
+          rgb(207, 46, 46) 100%
+        );
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(
+          135deg,
+          rgb(238, 238, 238) 0%,
+          rgb(169, 184, 195) 100%
+        );
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(
+          135deg,
+          rgb(74, 234, 220) 0%,
+          rgb(151, 120, 209) 20%,
+          rgb(207, 42, 186) 40%,
+          rgb(238, 44, 130) 60%,
+          rgb(251, 105, 98) 80%,
+          rgb(254, 248, 76) 100%
+        );
+        --wp--preset--gradient--blush-light-purple: linear-gradient(
+          135deg,
+          rgb(255, 206, 236) 0%,
+          rgb(152, 150, 240) 100%
+        );
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(
+          135deg,
+          rgb(254, 205, 165) 0%,
+          rgb(254, 45, 45) 50%,
+          rgb(107, 0, 62) 100%
+        );
+        --wp--preset--gradient--luminous-dusk: linear-gradient(
+          135deg,
+          rgb(255, 203, 112) 0%,
+          rgb(199, 81, 192) 50%,
+          rgb(65, 88, 208) 100%
+        );
+        --wp--preset--gradient--pale-ocean: linear-gradient(
+          135deg,
+          rgb(255, 245, 203) 0%,
+          rgb(182, 227, 212) 50%,
+          rgb(51, 167, 181) 100%
+        );
+        --wp--preset--gradient--electric-grass: linear-gradient(
+          135deg,
+          rgb(202, 248, 128) 0%,
+          rgb(113, 206, 126) 100%
+        );
+        --wp--preset--gradient--midnight: linear-gradient(
+          135deg,
+          rgb(2, 3, 129) 0%,
+          rgb(40, 116, 252) 100%
+        );
+        --wp--preset--font-size--small: 13px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+        --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+        --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1),
+          6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+      }
+      :where(.is-layout-flex) {
+        gap: 0.5em;
+      }
+      :where(.is-layout-grid) {
+        gap: 0.5em;
+      }
+      body .is-layout-flex {
+        display: flex;
+      }
+      .is-layout-flex {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .is-layout-flex > :is(*, div) {
+        margin: 0;
+      }
+      body .is-layout-grid {
+        display: grid;
+      }
+      .is-layout-grid > :is(*, div) {
+        margin: 0;
+      }
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+      .has-black-color {
+        color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-color {
+        color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-color {
+        color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-color {
+        color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-color {
+        color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-color {
+        color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+      .has-luminous-vivid-amber-color {
+        color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-color {
+        color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-color {
+        color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-color {
+        color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-color {
+        color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-color {
+        color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-background-color {
+        background-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-background-color {
+        background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-background-color {
+        background-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-background-color {
+        background-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-background-color {
+        background-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-amber
+        ) !important;
+      }
+      .has-light-green-cyan-background-color {
+        background-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-background-color {
+        background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-background-color {
+        background-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-border-color {
+        border-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-border-color {
+        border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-border-color {
+        border-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-border-color {
+        border-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-border-color {
+        border-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-border-color {
+        border-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-border-color {
+        border-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-border-color {
+        border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-border-color {
+        border-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+        background: var(
+          --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple
+        ) !important;
+      }
+      .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+        background: var(
+          --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan
+        ) !important;
+      }
+      .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-orange-to-vivid-red
+        ) !important;
+      }
+      .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+        background: var(
+          --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray
+        ) !important;
+      }
+      .has-cool-to-warm-spectrum-gradient-background {
+        background: var(
+          --wp--preset--gradient--cool-to-warm-spectrum
+        ) !important;
+      }
+      .has-blush-light-purple-gradient-background {
+        background: var(--wp--preset--gradient--blush-light-purple) !important;
+      }
+      .has-blush-bordeaux-gradient-background {
+        background: var(--wp--preset--gradient--blush-bordeaux) !important;
+      }
+      .has-luminous-dusk-gradient-background {
+        background: var(--wp--preset--gradient--luminous-dusk) !important;
+      }
+      .has-pale-ocean-gradient-background {
+        background: var(--wp--preset--gradient--pale-ocean) !important;
+      }
+      .has-electric-grass-gradient-background {
+        background: var(--wp--preset--gradient--electric-grass) !important;
+      }
+      .has-midnight-gradient-background {
+        background: var(--wp--preset--gradient--midnight) !important;
+      }
+      .has-small-font-size {
+        font-size: var(--wp--preset--font-size--small) !important;
+      }
+      .has-medium-font-size {
+        font-size: var(--wp--preset--font-size--medium) !important;
+      }
+      .has-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important;
+      }
+      .has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--x-large) !important;
+      }
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+      :root :where(.wp-block-pullquote) {
+        font-size: 1.5em;
+        line-height: 1.6;
+      }
+    </style>
+    <link
+      crossorigin="anonymous"
+      href="https://fonts.googleapis.com/css?family=Libre+Caslon+Text%3A400%2C600%7CLibre+Caslon+Display%3A400%7CRoboto%3A400%2C500&amp;display=swap&amp;ver=1.0"
+      id="cpj-google-fonts-css"
+      media="all"
+      rel="stylesheet"
+    />
+    <link
+      href="https://use.typekit.net/wkw7vqy.css?ver=1.0"
+      id="cpj-adobe-fonts-css"
+      media="all"
+      rel="stylesheet"
+    />
+    <link
+      href="css/style_ver_1.0..css"
+      id="cpj-style-mt-assets-style-css"
+      media="all"
+      rel="stylesheet"
+    />
+    <link
+      href="css/print_ver_1.0..css"
+      id="cpj-style-mt-assets-print-css"
+      media="print"
+      rel="stylesheet"
+    />
+    <link
+      href="css/global.33d764207be91bab6131.min_ver_1.0.css"
+      id="cpj-global-css-css"
+      media="all"
+      rel="stylesheet"
+    />
+    <link
+      href="css/article.2d5828f6132c40f047f7.min_ver_1.0.css"
+      id="cpj-article-css-css"
+      media="all"
+      rel="stylesheet"
+    />
+    <link
+      href="css/sharing_ver_14.0.css"
+      id="sharedaddy-css"
+      media="all"
+      rel="stylesheet"
+    />
+    <link
+      href="css/social-logos.min_ver_14.0.css"
+      id="social-logos-css"
+      media="all"
+      rel="stylesheet"
+    />
+    <script
+      id="jquery-core-js"
+      src="https://code.jquery.com/jquery-3.1.1.min.js?ver=3.1.1"
+      type="text/javascript"
+    ></script>
+    <link href="https://cpj.org/wp-json/" rel="https://api.w.org/" />
+    <link
+      href="https://cpj.org/wp-json/wp/v2/posts/292997"
+      rel="alternate"
+      title="JSON"
+      type="application/json"
+    />
+    <link
+      href="https://cpj.org/xmlrpc.php?rsd"
+      rel="EditURI"
+      title="RSD"
+      type="application/rsd+xml"
+    />
+    <meta content="WordPress 6.7.1" name="generator" />
+    <link href="https://cpj.org/?p=292997" rel="shortlink" />
+    <link
+      href="https://cpj.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcpj.org%2F2023%2F06%2Fguatemalan-journalist-jose-ruben-zamora-convicted-of-money-laundering-sentenced-to-6-years-in-prison%2F"
+      rel="alternate"
+      title="oEmbed (JSON)"
+      type="application/json+oembed"
+    />
+    <link
+      href="https://cpj.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcpj.org%2F2023%2F06%2Fguatemalan-journalist-jose-ruben-zamora-convicted-of-money-laundering-sentenced-to-6-years-in-prison%2F&amp;format=xml"
+      rel="alternate"
+      title="oEmbed (XML)"
+      type="text/xml+oembed"
+    />
+    <script
+      src="https://cdn.cookielaw.org/consent/3f31b656-8f17-4e1b-9ec0-df17db47a151/OtAutoBlock.js"
+      type="text/javascript"
+    ></script>
+    <script
+      charset="UTF-8"
+      data-domain-script="3f31b656-8f17-4e1b-9ec0-df17db47a151"
+      src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      function OptanonWrapper() {}
+    </script>
+    <style>
+      img#wpstats {
+        display: none;
+      }
+    </style>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("consent", "default", {
+        // Deny consent for ad_storage
+        ad_storage: "denied",
+        // Deny consent for analytics_storage
+        analytics_storage: "denied",
+        functionality_storage: "denied",
+        personalization_storage: "denied",
+        security_storage: "denied",
+      });
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PJPQPQR");
+    </script>
+    <!-- End Google Tag Manager -->
+    <link href="assets/icons/favicon.ico" rel="shortcut icon" />
+    <link
+      href="assets/icons/favicon-16x16.png"
+      rel="icon"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link
+      href="assets/icons/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      href="assets/icons/apple-touch-icon-114x114.png"
+      rel="apple-touch-icon"
+      sizes="114x114"
+      type="image/png"
+    />
+    <link
+      href="assets/icons/apple-touch-icon-120x120.png"
+      rel="apple-touch-icon"
+      sizes="120x120"
+      type="image/png"
+    />
+    <link
+      href="assets/icons/apple-touch-icon.png"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      type="image/png"
+    />
+    <link href="assets/icons/site.webmanifest" rel="manifest" />
+    <link
+      color="#5bbad5"
+      href="assets/icons/safari-pinned-tab.svg"
+      rel="mask-icon"
+    />
+    <meta
+      content="https://cpj.org/wp-content/themes/cpj/icons/browserconfig.xml"
+      name="msapplication-config"
+    />
+    <meta content="#da532c" name="msapplication-TileColor" />
+    <meta
+      content="https://cpj.org/wp-content/themes/cpj/icons/mstile-150x150.png"
+      name="msapplication-TileImage"
+    />
+    <meta content="#ffffff" name="theme-color" />
+    <link
+      href="https://cpj.org/2023/06/guatemalan-journalist-jose-ruben-zamora-convicted-of-money-laundering-sentenced-to-6-years-in-prison/amp/"
+      rel="amphtml"
+    />
+    <style id="wp-custom-css" type="text/css">
+      ul.cpj--subdued {
+        padding: 2em;
+      }
+
+      .press-signup {
+        background: #f0f0f0;
+        margin: 0 auto;
+        padding: 0 3rem;
+      }
+
+      @media (min-width: 900px) {
+        .press-signup .wp-block-group__inner-container {
+          float: left;
+          margin-left: 16.66667%;
+          min-height: 1px;
+          padding-left: 15px;
+          padding-right: 15px;
+          position: relative;
+          width: 66.66667%;
+        }
+      }
+    </style>
+    <script defer="" src="js/wp-emoji-release.min.js"></script>
+  </head>
+  <body
+    class="post-template-default single single-post postid-292997 single-format-standard wp-embed-responsive mt-archive-listing mt-entry-archive"
+  >
+    <header
+      class="site-header"
+      data-component="siteHeader"
+      data-offset-top="190"
+      data-spy="affix"
+      id="masthead"
+      role="banner"
+    >
+      <div class="site-header__container">
+        <a class="current site-header__branding" href="https://cpj.org"> </a>
+        <div class="site-header__utility-bar">
+          <div class="site-header__search">
+            <form
+              action="https://cpj.org/search"
+              class="search"
+              id="cse-search-box"
+            >
+              <div class="input-group">
+                <input
+                  class="form-control input-lg"
+                  name="q"
+                  placeholder="Search"
+                  style=""
+                  type="search"
+                  value=""
+                />
+                <span class="input-group-btn">
+                  <button class="btn btn-on-dark input-lg" type="submit">
+                    <svg
+                      class="cpj-icon-search"
+                      height="32"
+                      viewbox="0 0 32 32"
+                      width="32"
+                    >
+                      <path
+                        d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10a9.959 9.959 0 0 0 6.32-2.25l5.252 5.352 1.428-1.4-5.264-5.365A9.959 9.959 0 0 0 20 10c0-5.523-4.477-10-10-10zM2 10a8 8 0 1 1 16 0 8 8 0 0 1-16 0z"
+                        fill-rule="evenodd"
+                        transform="translate(4 4)"
+                      ></path>
+                    </svg>
+                  </button>
+                </span>
+              </div>
+            </form>
+          </div>
+          <ol class="site-header__social-list">
+            <li class="site-header__social-list-item">
+              <a
+                class="site-header__social-link--youtube"
+                href="https://www.youtube.com/channel/UCJ6Fa7MQH9-3yBFwYUZRJMQ"
+                target="_blank"
+              >
+                <span class="fab fa-youtube"></span>
+              </a>
+            </li>
+            <li class="site-header__social-list-item">
+              <a
+                class="site-header__social-link--rss"
+                href="https://cpj.org/about/feeds/"
+                target="_blank"
+              >
+                <span class="fa fa-rss"></span>
+              </a>
+            </li>
+            <li class="site-header__social-list-item">
+              <a
+                class="site-header__social-link--facebook"
+                href="https://www.facebook.com/committeetoprotectjournalists/"
+                target="_blank"
+              >
+                <span class="fab fa-facebook-f"></span>
+              </a>
+            </li>
+            <li class="site-header__social-list-item">
+              <a
+                class="site-header__social-link--twitter"
+                href="https://twitter.com/pressfreedom"
+                target="_blank"
+              >
+                <span class="fab fa-twitter"></span>
+              </a>
+            </li>
+            <li class="site-header__social-list-item">
+              <a
+                class="site-header__social-link--instagram"
+                href="https://www.instagram.com/committeetoprotectjournalists/?hl=en"
+                target="_blank"
+              >
+                <span class="fab fa-instagram"></span>
+              </a>
+            </li>
+          </ol>
+          <div class="site-header__language-switcher">
+            <div class="language-switcher">
+              <span class="language-switcher__choice">English</span>
+              <button
+                aria-expanded="false"
+                aria-haspopup="true"
+                class="language-switcher__toggle"
+                data-toggle="dropdown"
+                id="language-switcher-button"
+                role="button"
+              ></button>
+            </div>
+          </div>
+        </div>
+        <div class="site-header__navigation">
+          <ol class="site-header__menu--main" id="menu-header-menu">
+            <li
+              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-98863"
+              id="menu-item-98863"
+            >
+              <a
+                aria-expanded="false"
+                aria-haspopup="true"
+                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"
+                id="menu-link-1"
+                role="button"
+                >News</a
+              >
+            </li>
+            <li
+              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-98869"
+              id="menu-item-98869"
+            >
+              <a
+                aria-expanded="false"
+                aria-haspopup="true"
+                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"
+                id="menu-link-199"
+                role="button"
+                >Data</a
+              >
+            </li>
+            <li
+              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-98877"
+              id="menu-item-98877"
+            >
+              <a
+                aria-expanded="false"
+                aria-haspopup="true"
+                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"
+                id="menu-link-209"
+                role="button"
+                >Safety Resources</a
+              >
+            </li>
+            <li
+              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-98886"
+              id="menu-item-98886"
+            >
+              <a
+                aria-expanded="false"
+                aria-haspopup="true"
+                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"
+                id="menu-link-213"
+                role="button"
+                >Get Involved</a
+              >
+            </li>
+            <li
+              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-98890"
+              id="menu-item-98890"
+            >
+              <a
+                aria-expanded="false"
+                aria-haspopup="true"
+                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"
+                id="menu-link-217"
+                role="button"
+                >About Us</a
+              >
+            </li>
+          </ol>
+          <a class="button--donate" href="/donate"> Donate</a>
+          <a
+            class="button--help"
+            href="https://cpj.org/emergency-response/how-to-get-help/"
+          >
+            Get Help</a
+          >
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <header class="cpj--page-header cpj--page-header--article">
+        <figure class="cpj--page-header--article--figure">
+          <img
+            alt=""
+            class="attachment-cpj-featured size-cpj-featured wp-post-image"
+            decoding="async"
+            fetchpriority="high"
+            height="507"
+            sizes="(max-width: 760px) 100vw, 760px"
+            src="assets/images/afp_guatemala_06-14-2023-1.jpg"
+            srcset="
+              https://cpj.org/wp-content/uploads/2023/06/afp_guatemala_06-14-2023-1.jpg             6192w,
+              https://cpj.org/wp-content/uploads/2023/06/afp_guatemala_06-14-2023-1.jpg?resize=300,
+              200                                                                                    300w,
+              https://cpj.org/wp-content/uploads/2023/06/afp_guatemala_06-14-2023-1.jpg?resize=768,
+              512                                                                                    768w,
+              https://cpj.org/wp-content/uploads/2023/06/afp_guatemala_06-14-2023-1.jpg?resize=1024,
+              683                                                                                   1024w,
+              https://cpj.org/wp-content/uploads/2023/06/afp_guatemala_06-14-2023-1.jpg?resize=1536,
+              1024                                                                                  1536w,
+              https://cpj.org/wp-content/uploads/2023/06/afp_guatemala_06-14-2023-1.jpg?resize=2048,
+              1365                                                                                  2048w,
+              https://cpj.org/wp-content/uploads/2023/06/afp_guatemala_06-14-2023-1.jpg?resize=570,
+              380                                                                                    570w,
+              https://cpj.org/wp-content/uploads/2023/06/afp_guatemala_06-14-2023-1.jpg?resize=652,
+              435                                                                                    652w,
+              https://cpj.org/wp-content/uploads/2023/06/afp_guatemala_06-14-2023-1.jpg?resize=760,
+              507                                                                                    760w,
+              https://cpj.org/wp-content/uploads/2023/06/afp_guatemala_06-14-2023-1.jpg?resize=1140,
+              760                                                                                   1140w,
+              https://cpj.org/wp-content/uploads/2023/06/afp_guatemala_06-14-2023-1.jpg?resize=2000,
+              1333                                                                                  2000w
+            "
+            width="760"
+          />
+          <figcaption class="text-muted">
+            Journalist José Rubén Zamora arrives handcuffed at the Palace of
+            Justice in Guatemala City, on June 14, 2023. A court convicted him
+            on money laundering charges and sentenced him to six years in
+            prison. (Johan Ordonez/AFP)
+          </figcaption>
+        </figure>
+        <div class="cpj--module--header">
+          <a
+            class="btn btn-primary cpj--module--category btn-lg"
+            href="https://cpj.org/statements/"
+            id="cpj--module--category--entryid292997"
+            >Statements</a
+          >
+        </div>
+        <div class="cpj--module--content">
+          <h1>
+            Guatemalan journalist José Rubén Zamora convicted of money
+            laundering, sentenced to 6 years in prison
+          </h1>
+          <p class="cpj--module--content--timestamp">
+            <time
+              class="entry-date published"
+              datetime="2023-06-14T14:39:31-04:00"
+              >June 14, 2023 2:39 PM EDT</time
+            >
+          </p>
+        </div>
+      </header>
+      <div class="row">
+        <div class="col-sm-1 hidden-sm hidden-xs">
+          <div class="social-share left-social">
+            <div class="sharedaddy sd-sharing-enabled">
+              <div
+                class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"
+              >
+                <div class="sd-content">
+                  <ul data-sharing-events-added="true">
+                    <li class="share-twitter">
+                      <a
+                        class="share-twitter sd-button share-icon"
+                        data-shared="sharing-twitter-292997"
+                        href="https://cpj.org/2023/06/guatemalan-journalist-jose-ruben-zamora-convicted-of-money-laundering-sentenced-to-6-years-in-prison/?share=twitter&amp;nb=1"
+                        rel="nofollow noopener noreferrer"
+                        target="_blank"
+                        title="Click to share on Twitter"
+                      ></a>
+                    </li>
+                    <li class="share-facebook">
+                      <a
+                        class="share-facebook sd-button share-icon"
+                        data-shared="sharing-facebook-292997"
+                        href="https://cpj.org/2023/06/guatemalan-journalist-jose-ruben-zamora-convicted-of-money-laundering-sentenced-to-6-years-in-prison/?share=facebook&amp;nb=1"
+                        rel="nofollow noopener noreferrer"
+                        target="_blank"
+                        title="Click to share on Facebook"
+                      ></a>
+                    </li>
+                    <li class="share-jetpack-whatsapp">
+                      <a
+                        class="share-jetpack-whatsapp sd-button share-icon"
+                        data-shared=""
+                        href="https://cpj.org/2023/06/guatemalan-journalist-jose-ruben-zamora-convicted-of-money-laundering-sentenced-to-6-years-in-prison/?share=jetpack-whatsapp&amp;nb=1"
+                        rel="nofollow noopener noreferrer"
+                        target="_blank"
+                        title="Click to share on WhatsApp"
+                      ></a>
+                    </li>
+                    <li class="share-linkedin">
+                      <a
+                        class="share-linkedin sd-button share-icon"
+                        data-shared="sharing-linkedin-292997"
+                        href="https://cpj.org/2023/06/guatemalan-journalist-jose-ruben-zamora-convicted-of-money-laundering-sentenced-to-6-years-in-prison/?share=linkedin&amp;nb=1"
+                        rel="nofollow noopener noreferrer"
+                        target="_blank"
+                        title="Click to share on LinkedIn"
+                      ></a>
+                    </li>
+                    <li class="share-email share-service-visible">
+                      <a
+                        class="share-email sd-button share-icon"
+                        data-email-share-error-text="If you're having problems sharing via email, you might not have email set up for your browser. You may need to create a new email yourself."
+                        data-email-share-error-title="Do you have email set up?"
+                        data-email-share-nonce="6c7085fdd5"
+                        data-email-share-track-url="https://cpj.org/2023/06/guatemalan-journalist-jose-ruben-zamora-convicted-of-money-laundering-sentenced-to-6-years-in-prison/?share=email"
+                        data-shared=""
+                        href="mailto:?subject=%5BShared%20Post%5D%20Guatemalan%20journalist%20Jos%C3%A9%20Rub%C3%A9n%20Zamora%20convicted%20of%20money%20laundering%2C%20sentenced%20to%206%20years%20in%20prison&amp;body=https%3A%2F%2Fcpj.org%2F%3Fp%3D292997&amp;share=email&amp;nb=1"
+                        jetpack-share-click-count="0"
+                        rel="nofollow noopener noreferrer"
+                        target="_blank"
+                        title="Click to email a link to a friend"
+                      ></a>
+                    </li>
+                    <li class="share-telegram">
+                      <a
+                        class="share-telegram sd-button share-icon"
+                        data-shared=""
+                        href="https://cpj.org/2023/06/guatemalan-journalist-jose-ruben-zamora-convicted-of-money-laundering-sentenced-to-6-years-in-prison/?share=telegram&amp;nb=1"
+                        rel="nofollow noopener noreferrer"
+                        target="_blank"
+                        title="Click to share on Telegram"
+                      ></a>
+                    </li>
+                    <li class="share-end"></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-7">
+          <article
+            class="post-292997 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized-en tag-convicted tag-elperiodico tag-jose-ruben-zamora-marroquin tag-moneylaundering tag-retaliatory location-americas location-guatemala publication-statements"
+            id="post-292997"
+          >
+            <p>
+              Guatemala City, June 14, 2023–In response to the Wednesday, June
+              14, conviction of Guatemalan journalist José Rubén Zamora on money
+              laundering charges, the Committee to Protect Journalists issued
+              the following statement of condemnation:
+            </p>
+            <p>
+              “The shameful conviction and imprisonment of Guatemalan journalist
+              José Rubén Zamora serve as a stark testament to the erosion of
+              freedom of speech in the country and the desperate attempts of
+              President Alejandro Giammattei’s government to criminalize
+              journalism,” said Carlos Martinez de la Serna, CPJ’s program
+              director, in New York. “Guatemalan officials must end the absurd
+              charade of criminal proceedings against him. It is time for José
+              Rubén Zamora to be released, for his only ‘crime’ has been the
+              fearless exercise of his profession.”
+            </p>
+          </article>
+        </div>
+        <div class="col-sm-3 col-sm-offset-1 article--aside">
+          <div class="article--tools" data-component="articleTools">
+            <ul>
+              <li class="lang">
+                <label>Available in:</label
+                ><a
+                  href="https://cpj.org/es/2023/06/periodista-guatemalteco-jose-ruben-zamora-condenado-por-lavado-de-dinero-sentenciado-a-6-anos-de-prision/"
+                  >Español</a
+                >
+              </li>
+              <li class="print">
+                <a class="link-print" href="#">
+                  <span class="glyphicon glyphicon-print"></span>
+                  Print
+                </a>
+              </li>
+              <li class="text-size">
+                <a class="link-enlarge" href="#">
+                  <span class="glyphicon glyphicon-text-size"></span>
+                  Text Size
+                </a>
+              </li>
+              <li class="shortlink">
+                <a class="link-copy" href="https://cpj.org/?p=292997">
+                  <span class="copy-text">
+                    <span class="glyphicon glyphicon-copy"></span>
+                    Copy Short Link
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+```

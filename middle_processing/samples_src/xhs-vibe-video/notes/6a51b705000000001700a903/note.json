@@ -1,0 +1,78 @@
+{
+ "note_id": "6a51b705000000001700a903",
+ "url": "https://www.xiaohongshu.com/explore/6a51b705000000001700a903?xsec_token=ABKPXtncT6uACkrSTL2KqyRW8muL4O5hM3SZPHkx4enMk=&xsec_source=pc_search",
+ "type": "video",
+ "title": "Codex+Remotion产出动画保姆级全流程！",
+ "desc": "#codex[话题]# #remotion[话题]# #代码动画[话题]# #数据可视化[话题]# #干货[话题]#",
+ "tags": [
+  "codex",
+  "remotion",
+  "代码动画",
+  "数据可视化",
+  "干货"
+ ],
+ "author": "太阳鸽鸽",
+ "user_id": "5be6ddf765e4a60001903976",
+ "time": 1783767656000,
+ "ip_location": null,
+ "likes": "1171",
+ "collects": "1638",
+ "comments_count": "13",
+ "keywords": [
+  "Remotion"
+ ],
+ "duration": 450,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040105/f9dd7349f1c2ffb9154bec28ab0cbbb9/spectrum/1040g0k0322ffo67o6u004bpkg2eveebmgagqk5o!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "爱鸟人士",
+   "content": "最近试了 codex ➕ hyperframes 很好用 不光你可以在渲染前进行修改 而且 还会有 背景音乐 调试很方便",
+   "likes": "14"
+  },
+  {
+   "user": "巫斯PPT",
+   "content": "老师，remotion只能做数据可视化类的动画吗？",
+   "likes": "0"
+  },
+  {
+   "user": "树波AI 🎫",
+   "content": "这个remotion需要安装的吗，是什么东西来的，是个软件吗",
+   "likes": "0"
+  },
+  {
+   "user": "懒妈妈",
+   "content": "讲的太细致了!我试了下，不过生成时间要等特别久，差不多15分钟左右",
+   "likes": "0"
+  },
+  {
+   "user": "MovoLv_v",
+   "content": "学习！",
+   "likes": "0"
+  },
+  {
+   "user": "小水tt",
+   "content": "大佬来了！！！逐帧学习",
+   "likes": "0"
+  },
+  {
+   "user": "童小侠",
+   "content": "这个视频是怎么做的",
+   "likes": "1"
+  },
+  {
+   "user": "小我探索屋",
+   "content": "一坨翔，用你的教程只能做出翔",
+   "likes": "1"
+  },
+  {
+   "user": "Leo66",
+   "content": "做的真好[派对R] 我写了个skill加速remotion和hyperframes，通过硬件加速可以节省大量生成视频的等待时间。感兴趣可以看看我的视频哦",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

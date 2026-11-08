@@ -1,0 +1,26 @@
+**Describe the bug**
+```
+[dependencies]
+uuid = "1.4" 
+```
+Last version is 1.10.0, but no alert is displayed (green mark is shown).
+
+**To Reproduce**
+See above.
+
+**Expected behavior**
+Expected behavior: alert shown (red icon) for minor version (X.Y) number mismatch.
+
+**Screenshots**
+Minor version mismatch isn't detected as shown on screenshot below:
+<image>
+
+
+
+**Desktop (please complete the following information):**
+Windows 10
+
+**Additional context**
+Visual Studio Code v1.91.1 (current)
+Dependi v0.7.5 (current)
+

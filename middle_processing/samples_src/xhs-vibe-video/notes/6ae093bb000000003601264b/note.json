@@ -1,0 +1,80 @@
+{
+ "note_id": "6ae093bb000000003601264b",
+ "url": "https://www.xiaohongshu.com/explore/6ae093bb000000003601264b?xsec_token=ABkO331-1_JUvU687Ik2AJPyT981iP-rf4E4Q2LfjcNB8=&xsec_source=pc_search",
+ "type": "video",
+ "title": "用 Opus 5.5 做了一个上海武康路动画短片",
+ "desc": "灵感来自大佬 Edian，全部用代码实现，Canvas写一个frame（i）函数逐帧画出每帧画面，用ffmpeg合成，配音也用代码生成。\n\t\n#逐帧动画[话题]# #AI视频[话题]# #AI替我说[话题]# #用AI讲知识[话题]# #MG动画[话题]# #claudecode[话题]# #claude[话题]# #AI进化生活howto[话题]# #howto用好AI[话题]# #动画短片[话题]#",
+ "tags": [
+  "逐帧动画",
+  "AI视频",
+  "AI替我说",
+  "用AI讲知识",
+  "MG动画",
+  "claudecode",
+  "claude",
+  "AI进化生活howto",
+  "howto用好AI",
+  "动画短片"
+ ],
+ "author": "Serena 木瓜",
+ "user_id": "666d98be0000000003033a78",
+ "time": 1793160093000,
+ "ip_location": "美国",
+ "likes": "52",
+ "collects": "38",
+ "comments_count": "15",
+ "keywords": [
+  "AI 写代码做动画",
+  "Claude Code 做视频",
+  "Claude 产品宣传片",
+  "Claude 做视频",
+  "Claude 口播视频",
+  "Claude 数据可视化动画",
+  "Claude 科普动画",
+  "纯代码视频"
+ ],
+ "duration": 39,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040136/c5f8193469c86d36898006f62a42992b/spectrum/1040g34o326qvr8uv580g5pjdj2v0uejoakkbrv0!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "Serena 木瓜",
+   "content": "需要提示词分宝子可以跟我说[暗中观察R]",
+   "likes": "0"
+  },
+  {
+   "user": "Unstable",
+   "content": "这是什么风格呀",
+   "likes": "0"
+  },
+  {
+   "user": "Luca",
+   "content": "求稳定用claude的方法[哭惹R]",
+   "likes": "0"
+  },
+  {
+   "user": "小红薯63554CB1",
+   "content": "三連求提示詞[害羞R][害羞R][害羞R]",
+   "likes": "1"
+  },
+  {
+   "user": "Sawyer阿仁",
+   "content": "逐帧加 ffmpeg 这个路子我也用过！给 3D 小镇拍宣传片时，我把页面时间冻住，一帧一帧往前拨再截图，画面再复杂成片也不掉帧。想问下配音用的是哪家 TTS？",
+   "likes": "0"
+  },
+  {
+   "user": "撞南墙",
+   "content": "想要一个提示词，谢谢[飞吻R]",
+   "likes": "1"
+  },
+  {
+   "user": "杨哇塞的人生",
+   "content": "已三连了，求提示词",
+   "likes": "1"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

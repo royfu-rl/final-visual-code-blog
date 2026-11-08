@@ -1,0 +1,64 @@
+{
+ "blend": {
+  "1k": {
+   "blend": {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/1k/grass_bermuda_01/grass_bermuda_01_1k.blend",
+    "md5": "61d700a2259ec67ba8ed6846ebc680cc",
+    "size": 185844,
+    "include": {
+     "textures/grass_bermuda_01_alpha_1k.png": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/grass_bermuda_01/grass_bermuda_01_alpha_1k.png",
+      "md5": "274285abb11b3b7a0fd277b9923d1074",
+      "size": 59564
+     },
+     "textures/grass_bermuda_01_diff_1k.jpg": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/grass_bermuda_01/grass_bermuda_01_diff_1k.jpg",
+      "md5": "234be9f52cfcd3380c7f782baaa841c3",
+      "size": 175425
+     },
+     "textures/grass_bermuda_01_nor_gl_1k.exr": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/grass_bermuda_01/grass_bermuda_01_nor_gl_1k.exr",
+      "md5": "4b81e770a8d6a27af63f28bc27c58b68",
+      "size": 1558026
+     },
+     "textures/grass_bermuda_01_rough_1k.exr": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/exr/1k/grass_bermuda_01/grass_bermuda_01_rough_1k.exr",
+      "md5": "52c9560c10329520735fa6ed242d4ed3",
+      "size": 704249
+     }
+    }
+   }
+  }
+ },
+ "gltf": {
+  "1k": {
+   "gltf": {
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/grass_bermuda_01/grass_bermuda_01_1k.gltf",
+    "md5": "a1bdd74118d2387a42dba4f605226f87",
+    "size": 32912,
+    "include": {
+     "textures/grass_bermuda_01_nor_gl_1k.jpg": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/grass_bermuda_01/grass_bermuda_01_nor_gl_1k.jpg",
+      "md5": "73a585e0963ff6bf3cefa845cbee0645",
+      "size": 709845
+     },
+     "textures/grass_bermuda_01_diff_1k.jpg": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/grass_bermuda_01/grass_bermuda_01_diff_1k.jpg",
+      "md5": "234be9f52cfcd3380c7f782baaa841c3",
+      "size": 175425
+     },
+     "textures/grass_bermuda_01_arm_1k.jpg": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/grass_bermuda_01/grass_bermuda_01_arm_1k.jpg",
+      "md5": "87c58d5d3345d579eab570f7eb446313",
+      "size": 500088
+     },
+     "grass_bermuda_01.bin": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/grass_bermuda_01/grass_bermuda_01.bin",
+      "md5": "2940aa3405004b62983fd70bede8e47f",
+      "size": 32260
+     }
+    }
+   }
+  }
+ }
+}

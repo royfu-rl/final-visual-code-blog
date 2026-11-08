@@ -1,0 +1,14 @@
+{"link": "https://github.com/processing/p5.js/tree/main/test/unit/visual/screenshots",
+ "id": "processing/p5.js",
+ "cards": [
+  {"img": "textStyle_all-text-styles_000.png",
+   "name": "test/unit/visual/screenshots/Typography/textStyle/all text styles/000.png",
+   "code": [["test/unit/visual/cases/typography.js#L565-L584", "typography_L565-L584.js"]]},
+  {"img": "Image-Based-Lighting_high-shininess_000.png",
+   "name": "test/unit/visual/screenshots/WebGL/Image Based Lighting/high shininess/000.png",
+   "code": [["test/unit/visual/cases/webgl.js#L1424-L1461", "webgl_L1424-L1461.js"]]},
+  {"img": "p5.strands_Strands-tutorial_000.png",
+   "name": "test/unit/visual/screenshots/WebGL/p5.strands/Strands tutorial/000.png",
+   "code": [["test/unit/visual/cases/webgl.js#L2061-L2191", "webgl_L2061-L2191.js"]]}
+ ]}
+

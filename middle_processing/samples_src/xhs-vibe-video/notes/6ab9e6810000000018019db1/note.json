@@ -1,0 +1,83 @@
+{
+ "note_id": "6ab9e6810000000018019db1",
+ "url": "https://www.xiaohongshu.com/explore/6ab9e6810000000018019db1?xsec_token=ABVOFH_d7boj-MtpoULpMqEtiZghHLi2gLD1Cd8VwfpjI=&xsec_source=pc_search",
+ "type": "video",
+ "title": "Opus 5.5 做动画已经到这个程度了",
+ "desc": "继续测试 Opus 5.5 做动画短视频。\n这次重点看了人物动作、镜头衔接和整体画面稳定性，成片完成度比预期高，尤其是角色运动时的连续性挺有意思。\n随手剪了一段看看实际效果，后面再继续测复杂运镜和多人场景。\n\t\n#AI动画[话题]# #AI漫剧[话题]# #动画短片[话题]# #3D动画[话题]# #AIGC[话题]#",
+ "tags": [
+  "AI动画",
+  "AI漫剧",
+  "动画短片",
+  "3D动画",
+  "AIGC"
+ ],
+ "author": "小石同学",
+ "user_id": "63c41e980000000026007e77",
+ "time": 1790568065000,
+ "ip_location": null,
+ "likes": "309",
+ "collects": "242",
+ "comments_count": "73",
+ "keywords": [
+  "manim AI 动画"
+ ],
+ "duration": 72,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040117/75b23d4e2c95cdb3df9d86dff0ac0730/1040g2sg325l7gch95g005ou43qc9gvjn33slgjo!nd_dft_wgth_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "五月望秋",
+   "content": "这个算力耗费大吗",
+   "likes": "2"
+  },
+  {
+   "user": "MOMOM",
+   "content": "怎么防封啊",
+   "likes": "0"
+  },
+  {
+   "user": "不奢望不失望",
+   "content": "素材也是 opus 生成的吗？",
+   "likes": "0"
+  },
+  {
+   "user": "JeeezSh",
+   "content": "我还在期待这个人物可以动起来🥲我看好多用opus5.5做的视频其实都没有自然的人物的动作貌似",
+   "likes": "3"
+  },
+  {
+   "user": "CoolFish",
+   "content": "这是用哪个包生成的？",
+   "likes": "1"
+  },
+  {
+   "user": "Hyman",
+   "content": "这得要多少用量啊，看着是真高级啊",
+   "likes": "1"
+  },
+  {
+   "user": "明远",
+   "content": "现在Opus还没有攻克的是3d的人物和动物的灵活高精度生成吧",
+   "likes": "0"
+  },
+  {
+   "user": "天涯叔叔的育儿经",
+   "content": "这是skills，与opus5.5没什么关系，普通模型也可以。",
+   "likes": "0"
+  },
+  {
+   "user": "baba",
+   "content": "全是代码生成的，不是生图生视频？",
+   "likes": "0"
+  },
+  {
+   "user": "飞不走的魔毯",
+   "content": "这是接入了别的生图api吧，光claude代码没法生成这些画面吧",
+   "likes": "1"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

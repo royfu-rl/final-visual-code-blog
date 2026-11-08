@@ -1,0 +1,94 @@
+{
+ "blend": {
+  "1k": {
+   "blend": {
+    "include": {
+     "textures/potted_plant_02_pot_rough_1k.png": {
+      "size": 1220537,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/potted_plant_02/potted_plant_02_pot_rough_1k.png",
+      "md5": "2713c7b90a4f901d887482a708167858"
+     },
+     "textures/potted_plant_02_pot_diff_1k.png": {
+      "size": 4980098,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/potted_plant_02/potted_plant_02_pot_diff_1k.png",
+      "md5": "550416d1c00b0ce2c8eba7de8aa5975d"
+     },
+     "textures/potted_plant_02_leaves_rough_1k.png": {
+      "size": 1348122,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/potted_plant_02/potted_plant_02_leaves_rough_1k.png",
+      "md5": "e88115c549f8d1ed38448311c5564d6f"
+     },
+     "textures/potted_plant_02_leaves_nor_gl_1k.png": {
+      "size": 4442426,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/potted_plant_02/potted_plant_02_leaves_nor_gl_1k.png",
+      "md5": "5cb84d09b303078b74e161db2fa4009b"
+     },
+     "textures/potted_plant_02_leaves_alpha_1k.png": {
+      "size": 100823,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/potted_plant_02/potted_plant_02_leaves_alpha_1k.png",
+      "md5": "257cbcf74e428dc583a1d66511f2b3c0"
+     },
+     "textures/potted_plant_02_pot_nor_gl_1k.png": {
+      "size": 3580734,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/potted_plant_02/potted_plant_02_pot_nor_gl_1k.png",
+      "md5": "8dfc5af0b07401346b2a02c705c14558"
+     },
+     "textures/potted_plant_02_leaves_diff_1k.png": {
+      "size": 4282900,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/potted_plant_02/potted_plant_02_leaves_diff_1k.png",
+      "md5": "e40343a5d93db54caba5469b59cff76a"
+     }
+    },
+    "size": 8110012,
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/blend/1k/potted_plant_02/potted_plant_02_1k.blend",
+    "md5": "163df1645574fbc0f35e72ee6d212552"
+   }
+  }
+ },
+ "gltf": {
+  "1k": {
+   "gltf": {
+    "include": {
+     "textures/potted_plant_02_leaves_diff_1k.jpg": {
+      "size": 167700,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/potted_plant_02/potted_plant_02_leaves_diff_1k.jpg",
+      "md5": "e8a026bd7bfa6497729d855c59da03ce"
+     },
+     "potted_plant_02.bin": {
+      "size": 1852244,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/potted_plant_02/potted_plant_02.bin",
+      "md5": "cdbd4619b2596c9c469ad34676085fa8"
+     },
+     "textures/potted_plant_02_pot_rough_1k.jpg": {
+      "size": 114886,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/potted_plant_02/potted_plant_02_pot_rough_1k.jpg",
+      "md5": "68ed80fa32791fb0e81df61a75de40b4"
+     },
+     "textures/potted_plant_02_leaves_rough_1k.jpg": {
+      "size": 102396,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/potted_plant_02/potted_plant_02_leaves_rough_1k.jpg",
+      "md5": "ba934a78cc6496d934c014eb8a33af37"
+     },
+     "textures/potted_plant_02_pot_diff_1k.jpg": {
+      "size": 155244,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/potted_plant_02/potted_plant_02_pot_diff_1k.jpg",
+      "md5": "97e149c93eb0d962e491d4c82d3ce477"
+     },
+     "textures/potted_plant_02_leaves_nor_gl_1k.jpg": {
+      "size": 127232,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/potted_plant_02/potted_plant_02_leaves_nor_gl_1k.jpg",
+      "md5": "2420d5c0ab87426f5318a5e91d1ea3bb"
+     },
+     "textures/potted_plant_02_pot_nor_gl_1k.jpg": {
+      "size": 108343,
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/potted_plant_02/potted_plant_02_pot_nor_gl_1k.jpg",
+      "md5": "fbb44ccc1c6564b2837b79a11ed45d58"
+     }
+    },
+    "size": 6653,
+    "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/potted_plant_02/potted_plant_02_1k.gltf",
+    "md5": "9999d7e6c51018a85551840e1bdae656"
+   }
+  }
+ }
+}

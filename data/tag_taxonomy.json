@@ -1,0 +1,115 @@
+{
+ "_note": "Overview 卡片标签词表，颜色即类别（total_template.html 的 .tg-*）。卡片打标在 curate.py 的 TAGS",
+ "kinds": [
+  {
+   "key": "type",
+   "label": "场景类型",
+   "desc": "这是什么案例。每张卡有且只有一个，放第一位并高亮",
+   "tags": [
+    "作品集",
+    "网页复刻",
+    "设计规范",
+    "网页生成",
+    "HTML 汇报",
+    "幻灯片",
+    "全栈应用",
+    "小游戏",
+    "3D 网页游戏",
+    "白模分镜",
+    "动作分镜",
+    "拍摄预演",
+    "户型动画",
+    "3D 微缩世界",
+    "程序化建模",
+    "建筑动画",
+    "Blender 自动化",
+    "交互模拟器",
+    "参数化零件",
+    "3D 打印件",
+    "概念科普",
+    "论文讲解",
+    "原理拆解",
+    "历史脉络",
+    "数据讲解",
+    "口播讲解",
+    "发布片",
+    "品牌动效",
+    "宣传片",
+    "MV",
+    "叙事短片",
+    "角色动画",
+    "动效作品集",
+    "艺术动画",
+    "制作教程",
+    "风格库",
+    "动效包装"
+   ]
+  },
+  {
+   "key": "agent",
+   "label": "Agent / 模型",
+   "desc": "谁写的代码：编码 agent 或底层模型。原帖写明才标",
+   "tags": [
+    "Claude Code",
+    "Codex",
+    "Cursor",
+    "Claude",
+    "Opus 5.5",
+    "GPT-6 Astra",
+    "Fable 5",
+    "Sol"
+   ]
+  },
+  {
+   "key": "tech",
+   "label": "技术方案",
+   "desc": "代码跑在什么框架、工具或工作流上",
+   "tags": [
+    "three.js",
+    "React",
+    "HTML",
+    "p5.js",
+    "Remotion",
+    "HyperFrames",
+    "Rive",
+    "Blender",
+    "Blender MCP",
+    "build123d",
+    "FreeCAD",
+    "Fusion / Onshape",
+    "Skill",
+    "云数据库"
+   ]
+  },
+  {
+   "key": "gen",
+   "label": "素材生成",
+   "desc": "代码之外，用来出 3D 模型、图片、视频的生成模型",
+   "tags": [
+    "Tripo",
+    "Hyper3D Rodin",
+    "Seedance",
+    "Midjourney"
+   ]
+  },
+  {
+   "key": "product",
+   "label": "产品平台",
+   "desc": "案例背后的商用产品或分发平台",
+   "tags": [
+    "v0",
+    "Vercel",
+    "Claude Design",
+    "Genspark",
+    "Lovable",
+    "Base44",
+    "WorkBuddy",
+    "Astrocade",
+    "TapTap",
+    "Higgsfield",
+    "Adam",
+    "HeyGen"
+   ]
+  }
+ ]
+}

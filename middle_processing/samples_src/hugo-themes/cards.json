@@ -1,0 +1,90 @@
+{
+ "links": [
+  [
+   "adityatelange/hugo-PaperMod",
+   "https://github.com/adityatelange/hugo-PaperMod"
+  ],
+  [
+   "nunocoracao/blowfish",
+   "https://github.com/nunocoracao/blowfish"
+  ],
+  [
+   "jpanther/congo",
+   "https://github.com/jpanther/congo"
+  ],
+  [
+   "luizdepra/hugo-coder",
+   "https://github.com/luizdepra/hugo-coder"
+  ],
+  [
+   "hugo-sid/hugo-blog-awesome",
+   "https://github.com/hugo-sid/hugo-blog-awesome"
+  ],
+  [
+   "zhaohuabing/hugo-theme-cleanwhite",
+   "https://github.com/zhaohuabing/hugo-theme-cleanwhite"
+  ]
+ ],
+ "cards": [
+  {
+   "img": "adityatelange__hugo-PaperMod.png",
+   "name": "adityatelange/hugo-PaperMod · images/screenshot.png",
+   "code": [
+    [
+     "layouts/baseof.html",
+     "adityatelange__hugo-PaperMod.html"
+    ]
+   ]
+  },
+  {
+   "img": "nunocoracao__blowfish.png",
+   "name": "nunocoracao/blowfish · images/screenshot.png",
+   "code": [
+    [
+     "layouts/index.html",
+     "nunocoracao__blowfish.html"
+    ]
+   ]
+  },
+  {
+   "img": "jpanther__congo.png",
+   "name": "jpanther/congo · images/screenshot.png",
+   "code": [
+    [
+     "layouts/index.html",
+     "jpanther__congo.html"
+    ]
+   ]
+  },
+  {
+   "img": "luizdepra__hugo-coder.png",
+   "name": "luizdepra/hugo-coder · images/screenshot.png",
+   "code": [
+    [
+     "layouts/baseof.html",
+     "luizdepra__hugo-coder.html"
+    ]
+   ]
+  },
+  {
+   "img": "hugo-sid__hugo-blog-awesome.png",
+   "name": "hugo-sid/hugo-blog-awesome · images/screenshot.png",
+   "code": [
+    [
+     "layouts/baseof.html",
+     "hugo-sid__hugo-blog-awesome.html"
+    ]
+   ]
+  },
+  {
+   "img": "zhaohuabing__hugo-theme-cleanwhite.png",
+   "name": "zhaohuabing/hugo-theme-cleanwhite · images/screenshot.png",
+   "code": [
+    [
+     "layouts/baseof.html",
+     "zhaohuabing__hugo-theme-cleanwhite.html"
+    ]
+   ]
+  }
+ ]
+}

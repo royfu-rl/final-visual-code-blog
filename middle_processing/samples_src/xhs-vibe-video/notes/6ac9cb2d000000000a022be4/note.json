@@ -1,0 +1,54 @@
+{
+ "note_id": "6ac9cb2d000000000a022be4",
+ "url": "https://www.xiaohongshu.com/explore/6ac9cb2d000000000a022be4?xsec_token=ABoa_p4OFDqaDMdC5Q2Yiq4aOUtEQcVe19KdsQJmNoOfM=&xsec_source=pc_search",
+ "type": "video",
+ "title": "动效这个事儿，AI 真能一把梭了",
+ "desc": "使用Claude Motion 与 Higgsfield 串成一条完整工作流。\n\t\nClaude Motion 是 Anthropic 的代码驱动动画能力：用自然语言把文字、图表、图形做成可编辑短动画，改细节时其余部分不易乱掉。Higgsfield Katana 则接到 Claude 里，可上传参考片和素材，重建节奏、转场与风格，并输出多个版本。\n\t\n两者配合后，从想法、动效制作、反复修改到最终渲染，基本可以在同一链路完成。更适合把精力放在方向与审美上，把执行交给工具链。\n\t\n#AI视频创作[话题]# #AI工具[话题]#   #动效设计[话题]#  #效率工具[话题]#",
+ "tags": [
+  "AI视频创作",
+  "AI工具",
+  "动效设计",
+  "效率工具"
+ ],
+ "author": "仔仔细细一下",
+ "user_id": "60f94d35000000000101cf52",
+ "time": 1791609645000,
+ "ip_location": "北京",
+ "likes": "405",
+ "collects": "620",
+ "comments_count": "6",
+ "keywords": [
+  "Claude Code 做视频",
+  "Claude 动效设计",
+  "Higgsfield Claude"
+ ],
+ "duration": 15,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040113/15a9499d327dd7b1cf74b0d66a8726d2/spectrum/1040g34o3264o3b0qka105o7p9kqgbjqihj5rdqo!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "掌管ai和含糖饮料的远古魔神",
+   "content": "有具体教程吗",
+   "likes": "0"
+  },
+  {
+   "user": "夜未央",
+   "content": "求提示词[害羞R]",
+   "likes": "0"
+  },
+  {
+   "user": "仔仔细细一下",
+   "content": "晚点，我私信发你",
+   "likes": "0"
+  },
+  {
+   "user": "一万",
+   "content": "求提示词",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

@@ -1,0 +1,83 @@
+{
+ "note_id": "6acc77b6000000001a021e28",
+ "url": "https://www.xiaohongshu.com/explore/6acc77b6000000001a021e28?xsec_token=ABd7OrLMChB_2SVkYk_R2K50yfnq_7kNvwZLeMPckLRIM=&xsec_source=pc_search",
+ "type": "video",
+ "title": "用代码当导演，精准控制AI视频",
+ "desc": "🎬 介绍我们的 Code Video Model！把编程智能体变成可控视频生成的引擎。\n\t\n视频模型越来越逼真，但物理规律和精确控制仍是难点：抛出的球可能悬浮，摆动周期可能漂移，碰撞看似合理却不符合物理。角色姿态、物体位置、运动轨迹、镜头时序，也很难只靠提示词逐一控制。\n\t\n💻 我们借鉴电影预演：让编程智能体把提示词写成可执行的代码场景。布局、运动、镜头轨迹和事件时间，都放进可编辑的代码里。先渲染一段简化的预演视频，确定时空结构；再用参考图设定外观，由视频模型补上几何细节、材质与光照。\n\t\n整个流程是：写代码 → 预演 → 检查 → 修改 → 生成视频。比如调整机器人的路径点，就能改变行进路线，同时保留场景其他部分。程序准备好后，预演渲染不到一分钟，方便快速验证和迭代镜头设计。\n\t\n🔍 难点在于：预演视频通常很粗糙，直接作为条件输入，模型容易连低多边形外观也一起照搬。\n\t\n🔍 观察：我们在冻结 MiniMax-H3 的实验中观察到：\n• Qwen-VL 通路对外观影响更强，VAE 通路更多影响运动和结构，两者互补。\n• 预演条件在去噪前约 25% 的阶段尤其关键；移除后，早期结构引导仍会留下影响。\n• 移除太早，结构容易偏离；保留太久，粗糙外观又会残留。\n\t\n⚙️ 方法：因此我们提出免训练的分阶段条件控制：早期保留完整预演和两条原生条件通路，建立结构与运动；之后移除预演，让文本、参考图和模型先验继续细化外观。视频模型保持冻结，无需额外训练控制模块。\n\t\n🚀 从动漫、子弹时间、游戏和场景编辑，到机器人轨迹、建筑与产品运镜、物理运动及 3D/4D 重建，都可以从一段可执行代码开始。\n\t\n项目主页（含论文、代码和数据）：\ncode-video-model.github.io\n\t\n#AI视频生成[话题]# #视频生成[话题]#  #人工智能[话题]#  #计算机视觉[话题]#  #智能体[话题]#",
+ "tags": [
+  "AI视频生成",
+  "视频生成",
+  "人工智能",
+  "计算机视觉",
+  "智能体"
+ ],
+ "author": "Gordon湾区大模型研究员",
+ "user_id": "58894a2982ec39681b4a7842",
+ "time": 1791784886000,
+ "ip_location": "美国",
+ "likes": "194",
+ "collects": "191",
+ "comments_count": "31",
+ "keywords": [
+  "纯代码视频"
+ ],
+ "duration": 137,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040123/2576913ae3fcbff024e3dd5f0d046b49/spectrum/1040g34o3267d0j7v5800492rac52iu22uhn7o60!nd_dft_wgth_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "Owen",
+   "content": "[暗中观察R]几乎一样的思路，我们做了2step realtime streaming",
+   "likes": "10"
+  },
+  {
+   "user": "LeoLin",
+   "content": "有些场景code建这么细是不是有些没必要，特别对于肢体动作建模这么细，会导致渲染的视频肢体动作很僵硬，我体感code用于大体的粗糙建模就可以做运镜的控制，细节直接交给生成渲染器通过提示词描述就好了",
+   "likes": "4"
+  },
+  {
+   "user": "瓜田李下",
+   "content": "[笑哭R]好奇这个和 seedance 白膜参考视频+风格prompt 的差别有多大？ like 几何一致性。seedance geometry alignment 似乎没做什么early step conditioning感觉已经很好了， 请问这个算 H3独有的scheduling trick or 可能其他video generation model 也适用？",
+   "likes": "0"
+  },
+  {
+   "user": "看我苍蝇搓手",
+   "content": "很强",
+   "likes": "1"
+  },
+  {
+   "user": "...Z...",
+   "content": "请问大佬，和code world model这篇论文的区别在哪呢",
+   "likes": "0"
+  },
+  {
+   "user": "冲冲冲",
+   "content": "大佬入职seedance了啊[哇R]",
+   "likes": "2"
+  },
+  {
+   "user": "西北冷面哥",
+   "content": "大佬求合作[萌萌哒R]",
+   "likes": "0"
+  },
+  {
+   "user": "阿白",
+   "content": "这个和让gpt6做白膜+h3生成的区别在哪里呀，主要是harness上面的吗",
+   "likes": "0"
+  },
+  {
+   "user": "JT",
+   "content": "诶不是字节的吗",
+   "likes": "0"
+  },
+  {
+   "user": "SupreKong",
+   "content": "机器人和机器狗行走那个是可以做成3d场景用来训练机器人吗？",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

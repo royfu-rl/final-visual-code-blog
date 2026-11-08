@@ -1,0 +1,82 @@
+{
+ "note_id": "6a7ea51b0000000024025b74",
+ "url": "https://www.xiaohongshu.com/explore/6a7ea51b0000000024025b74?xsec_token=ABs14fAKrnK9Fe07RzvnhljKe93ZXE0puUWQKkDzzwiGg=&xsec_source=pc_search",
+ "type": "video",
+ "title": "思花的「数字艺术」howto构建？",
+ "desc": "#AI进化生活howto[话题]# #AI不焦虑howto[话题]# #AI做艺术howto[话题]# #vibemotion[话题]# @HOWTO薯",
+ "tags": [
+  "AI进化生活howto",
+  "AI不焦虑howto",
+  "AI做艺术howto",
+  "vibemotion"
+ ],
+ "author": "浙大猫学长",
+ "user_id": "5f1256d40000000001000ee8",
+ "time": 1786763702000,
+ "ip_location": null,
+ "likes": "1521",
+ "collects": "1757",
+ "comments_count": "31",
+ "keywords": [
+  "manim AI 动画"
+ ],
+ "duration": 185,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040103/16fa4f58a5fddb2bd39b4f2b6d6c6cc5/spectrum/1040g34o323rbpd4in4105noiara083n8m5j0qmo!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "微木",
+   "content": "我的问题是我没有这个创意，灵感[哭惹R]",
+   "likes": "3"
+  },
+  {
+   "user": "一页枝鸥",
+   "content": "猫学长分析得太专业了！虽然看得似懂非懂，但是好像又明白了些什么。\n\n我自己也尝试复刻思花的这种 p5.js 数字交互艺术，我觉得我遇到的最大问题，就是不懂得如何去进行这些物理效果的描述。单纯的白描，和通过物理效果描述产生的结果，真的是千差万别。猫学长有效解决了我这个困惑，但是我觉得作为从 vibe Coding 角度来讲，可能还是需要了解一些专业的知识词汇吧，我目前尝试剑走偏锋，想试试看能不能搭建出一个这种物理效果的素材库。这样以后通过素材的积累来进行重新排列组合，不知道能不能对创作有所帮助。",
+   "likes": "9"
+  },
+  {
+   "user": "黄米蘇",
+   "content": "学长请问下你这样的视频效果怎么剪辑出来的呀[回招呼]",
+   "likes": "0"
+  },
+  {
+   "user": "Dan",
+   "content": "太棒啦",
+   "likes": "0"
+  },
+  {
+   "user": "MittyTT",
+   "content": "对的，艺术需要抛弃一些理性，需要情绪，故事人文的注入。虽然现在刷到好多vibecoding视频，但其实很少作品是真的在传达什么，但思花的作品就是和别人不一样，技术和故事有很强的一致性，双方都为彼此服务，也有很强烈的表达，这就是思花老师的稀缺性吧",
+   "likes": "5"
+  },
+  {
+   "user": "半自动设计叽",
+   "content": "但是不太了解这些算法专精于什么效果，或者哪个算法更先进，怎么学习呢",
+   "likes": "0"
+  },
+  {
+   "user": "Jojo",
+   "content": "@点点 总结视频内容中的知识点，总结核心知识",
+   "likes": "0"
+  },
+  {
+   "user": "西曳",
+   "content": "我为人人，人人为我！",
+   "likes": "1"
+  },
+  {
+   "user": "可樂爆pt2",
+   "content": "知识在你视频里非常浅显易懂地流动出来了。",
+   "likes": "2"
+  },
+  {
+   "user": "M墨清弦",
+   "content": "谢谢分析！由于一直看不懂学不会编程，对思花的设计是望而却步，有想法实现不了[哭惹R]",
+   "likes": "1"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

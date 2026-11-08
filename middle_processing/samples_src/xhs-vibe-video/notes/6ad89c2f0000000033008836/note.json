@@ -1,0 +1,87 @@
+{
+ "note_id": "6ad89c2f0000000033008836",
+ "url": "https://www.xiaohongshu.com/explore/6ad89c2f0000000033008836?xsec_token=ABBpZEnzBaI6sS_Swpe8pNaantdB7V9tFz4QYx-jzjH7Y=&xsec_source=pc_search",
+ "type": "video",
+ "title": "代码做视频已经出神入化！【附提示词】",
+ "desc": "用自己开源的 skill「onetake」做了这条视频。\n思路是让 Claude Code 的 Clawd bot 当鼠标指针，桌面上的每一次点击、打字、拖拽，都由它自己跳出来。\n流程很简单：Blender 把 Clawd bot建出来；剩下的镜头、景深、动效以及每一下踩在鼓点上的动画，全部交给 three.js，在一个 html 文件里完成。\n按 API 价格算，成本仅20块左右。\n#blender[话题]# #动效设计[话题]# #创意视频[话题]# #3D动效[话题]# #3D视频[话题]# #代码视频[话题]# #vibecoding大赏[话题]#",
+ "tags": [
+  "blender",
+  "动效设计",
+  "创意视频",
+  "3D动效",
+  "3D视频",
+  "代码视频",
+  "vibecoding大赏"
+ ],
+ "author": "泡椒肥汤圆",
+ "user_id": "5de6288900000000010082ad",
+ "time": 1792580655000,
+ "ip_location": "美国",
+ "likes": "2275",
+ "collects": "2400",
+ "comments_count": "67",
+ "keywords": [
+  "Claude Blender 动画",
+  "Claude 片头动画",
+  "代码生成视频"
+ ],
+ "duration": 19,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040101/c98aef7a3d2a10463190801634710c39/spectrum/1040g0k0326j62h3446005nf6524g90ldesju0b0!nd_dft_wgth_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "泡椒肥汤圆",
+   "content": "",
+   "likes": "78"
+  },
+  {
+   "user": "風起涅槃云飞扬",
+   "content": "这种关键是 skill～而不是模型～",
+   "likes": "7"
+  },
+  {
+   "user": "眠骨",
+   "content": "还得是opus 5.5 codex根本不行",
+   "likes": "1"
+  },
+  {
+   "user": "Minnie",
+   "content": "可以发教程嘛[害羞R]",
+   "likes": "0"
+  },
+  {
+   "user": "Yvette",
+   "content": "软创视频展示",
+   "likes": "0"
+  },
+  {
+   "user": "delay",
+   "content": "效果太酷了，已经安装了onetake做了几个视频，但都没有声音还差点意思～请问下音效是如何配上的？也是用claude做进去的吗？",
+   "likes": "0"
+  },
+  {
+   "user": "Hilaoao",
+   "content": "我的咋这样了[哭惹R]",
+   "likes": "0"
+  },
+  {
+   "user": "陈困困",
+   "content": "太强了！",
+   "likes": "1"
+  },
+  {
+   "user": "航行中的男孩～",
+   "content": "在哪里找skill",
+   "likes": "0"
+  },
+  {
+   "user": "街道办编外主任",
+   "content": "牛逼",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

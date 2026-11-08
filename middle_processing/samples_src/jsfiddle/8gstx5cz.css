@@ -1,0 +1,26 @@
+/* The whole logic behind pure CSS tabs */
+
+#tabs-container .content {
+  display: none;
+}
+
+#tabs-container:has(li:nth-child(1) input:checked) .content:nth-child(1),
+#tabs-container:has(li:nth-child(2) input:checked) .content:nth-child(2),
+#tabs-container:has(li:nth-child(3) input:checked) .content:nth-child(3){
+  display: block;
+}
+
+/* Below is just styling */
+
+input[type="radio"]{
+  position: absolute;
+  left: -900em;
+}
+
+label {
+  cursor: pointer;
+}
+
+#tabs li:has(input:checked){
+  background: coral;
+}

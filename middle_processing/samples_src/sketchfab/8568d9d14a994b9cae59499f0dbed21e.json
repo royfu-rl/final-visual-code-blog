@@ -1,0 +1,84 @@
+{
+ "name": "FREE 1975 Porsche 911 (930) Turbo",
+ "uid": "8568d9d14a994b9cae59499f0dbed21e",
+ "viewerUrl": "https://sketchfab.com/3d-models/none-8568d9d14a994b9cae59499f0dbed21e",
+ "license": {
+  "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+  "label": "CC Attribution"
+ },
+ "faceCount": 241265,
+ "vertexCount": 133458,
+ "animationCount": 0,
+ "likeCount": 7263,
+ "viewCount": 863007,
+ "publishedAt": "2017-12-05T17:23:18.788514",
+ "staffpickedAt": "2020-12-06T20:12:37.194792",
+ "archives": {
+  "glb": {
+   "textureCount": 27,
+   "size": 74151648,
+   "type": "glb",
+   "textureMaxResolution": 4096,
+   "faceCount": 241260,
+   "vertexCount": 156299
+  },
+  "gltf": {
+   "textureCount": 27,
+   "size": 70243066,
+   "type": "gltf",
+   "textureMaxResolution": 4096,
+   "faceCount": 241260,
+   "vertexCount": 156299
+  },
+  "gltf-ar": {
+   "textureCount": null,
+   "size": 152000,
+   "type": "gltf-ar",
+   "textureMaxResolution": null,
+   "faceCount": null,
+   "vertexCount": null
+  },
+  "source": {
+   "textureCount": null,
+   "size": 116726357,
+   "type": "source",
+   "textureMaxResolution": null,
+   "faceCount": null,
+   "vertexCount": null
+  },
+  "usdz": {
+   "textureCount": null,
+   "size": 12351092,
+   "type": "usdz",
+   "textureMaxResolution": null,
+   "faceCount": null,
+   "vertexCount": null
+  }
+ },
+ "user": "lionsharp",
+ "tags": [
+  "porsche",
+  "911",
+  "vintage",
+  "german",
+  "sports",
+  "aaa",
+  "midpoly",
+  "old",
+  "yellow",
+  "metallic",
+  "930",
+  "freedownload",
+  "freemodel",
+  "free-model",
+  "substance",
+  "painter",
+  "blender",
+  "lowpoly",
+  "car",
+  "free"
+ ],
+ "categories": [
+  "cars-vehicles"
+ ]
+}

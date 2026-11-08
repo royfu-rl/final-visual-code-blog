@@ -1,0 +1,239 @@
+[
+ {
+  "name": "primer/react",
+  "date": "2018/2/17",
+  "org": "GitHub",
+  "org_domain": "github.com",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/primer/react",
+  "impact": "3.9k star",
+  "impact_url": "https://github.com/primer/react",
+  "artifacts": [
+   "img:截图",
+   "txt:标题",
+   "code:.tsx"
+  ],
+  "size": "7,768 图 / 753 码（10.3 : 1）",
+  "permitted": "✓ MIT",
+  "feature": "**图 : 码 10.3 : 1**：一份测试代码覆盖多个主题，同一组件出多张基线",
+  "chapter": "web"
+ },
+ {
+  "name": "MapLibre GL JS",
+  "date": "2020/12/8",
+  "org": "MapLibre",
+  "org_domain": "maplibre.org",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/maplibre/maplibre-gl-js",
+  "impact": "11.9k star",
+  "impact_url": "https://github.com/maplibre/maplibre-gl-js",
+  "artifacts": [
+   "img:截图",
+   "txt:描述（9%）",
+   "code:.json"
+  ],
+  "size": "1,960 图 / 1,734 码（1.1 : 1）",
+  "permitted": "✓ BSD-3",
+  "feature": "**接近一图一码**：9% 的基线带整句描述，其余只有文件名",
+  "chapter": "web"
+ },
+ {
+  "name": "PixiJS",
+  "date": "2013/1/21",
+  "org": "PixiJS",
+  "org_domain": "pixijs.com",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/pixijs/pixijs",
+  "impact": "48.4k star",
+  "impact_url": "https://github.com/pixijs/pixijs",
+  "artifacts": [
+   "img:截图",
+   "txt:描述",
+   "code:.ts"
+  ],
+  "size": "1,711 图 / 460 码（3.7 : 1）",
+  "permitted": "✓ MIT",
+  "feature": "**多渲染后端**：同一份用例在不同后端各出一张基线",
+  "chapter": "web"
+ },
+ {
+  "name": "plotly.js",
+  "date": "2015/11/5",
+  "org": "Plotly",
+  "org_domain": "plotly.com",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/plotly/plotly.js",
+  "impact": "18.4k star",
+  "impact_url": "https://github.com/plotly/plotly.js",
+  "artifacts": [
+   "img:截图",
+   "code:.json"
+  ],
+  "size": "1,324 图 / 1,309 码（1 : 1）",
+  "permitted": "✓ MIT",
+  "feature": "**声明式用例**：基线由 JSON 图表定义渲染出来，不是写渲染代码",
+  "chapter": "web"
+ },
+ {
+  "name": "Chart.js",
+  "date": "2013/3/17",
+  "org": "Chart.js",
+  "org_domain": "chartjs.org",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/chartjs/Chart.js",
+  "impact": "67.8k star",
+  "impact_url": "https://github.com/chartjs/Chart.js",
+  "artifacts": [
+   "img:截图",
+   "code:.js"
+  ],
+  "size": "667 图 / 667 码（1 : 1）",
+  "permitted": "✓ MIT",
+  "feature": "**严格一图一码**：全库两家之一，配对无歧义",
+  "chapter": "web"
+ },
+ {
+  "name": "p5.js",
+  "date": "2013/2/26",
+  "org": "Processing",
+  "org_domain": "processing.org",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/processing/p5.js",
+  "impact": "24.2k star",
+  "impact_url": "https://github.com/processing/p5.js",
+  "artifacts": [
+   "img:截图",
+   "txt:描述",
+   "code:.js"
+  ],
+  "size": "605 图 / 442 码（1.4 : 1）",
+  "permitted": "△ LGPL-2.1",
+  "feature": "**多帧**：动画用例一份代码出多帧基线；许可有传染性",
+  "chapter": "web"
+ },
+ {
+  "name": "deck.gl",
+  "date": "2015/12/15",
+  "org": "vis.gl",
+  "org_domain": "vis.gl",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/visgl/deck.gl",
+  "impact": "14.7k star",
+  "impact_url": "https://github.com/visgl/deck.gl",
+  "artifacts": [
+   "img:截图",
+   "code:.ts"
+  ],
+  "size": "252 图 / ≈199 码（≈1.3 : 1）",
+  "permitted": "✓ MIT",
+  "feature": "**码数是估算**：用例按目录组织，无法逐文件一一对上",
+  "chapter": "web"
+ },
+ {
+  "name": "OpenLayers",
+  "date": "2012/6/20",
+  "org": "OpenLayers",
+  "org_domain": "openlayers.org",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/openlayers/openlayers",
+  "impact": "12.6k star",
+  "impact_url": "https://github.com/openlayers/openlayers",
+  "artifacts": [
+   "img:截图",
+   "code:.js"
+  ],
+  "size": "235 图 / 235 码（1 : 1）",
+  "permitted": "✓ BSD-2",
+  "feature": "**严格一图一码**：全库两家之一，配对无歧义",
+  "chapter": "web"
+ },
+ {
+  "name": "Ionic Framework",
+  "date": "2013/8/20",
+  "org": "Ionic",
+  "org_domain": "ionicframework.com",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/ionic-team/ionic-framework",
+  "impact": "52.7k star",
+  "impact_url": "https://github.com/ionic-team/ionic-framework",
+  "artifacts": [
+   "img:截图",
+   "code:.e2e.ts",
+   "run:index.html"
+  ],
+  "size": "7,402 图 / 331 码（22.4 : 1）",
+  "permitted": "✓ MIT",
+  "feature": "**一码多基线**：同一用例按 iOS / Material、LTR / RTL、三种浏览器各出一张基线",
+  "chapter": "web-vrt"
+ },
+ {
+  "name": "vercel/satori",
+  "date": "2022/1/27",
+  "org": "Vercel",
+  "org_domain": "vercel.com",
+  "download_label": "GitHub",
+  "download_url": "https://github.com/vercel/satori",
+  "impact": "14.2k star",
+  "impact_url": "https://github.com/vercel/satori",
+  "artifacts": [
+   "img:截图",
+   "code:.tsx"
+  ],
+  "size": "780 图 / 89 码（8.8 : 1）",
+  "permitted": "△ MPL-2.0",
+  "feature": "**用例即 JSX**：测试里的 JSX 片段渲染成 SVG 再比对，一份测试文件配一组基线",
+  "chapter": "web-vrt"
+ },
+ {
+  "name": "SWE-bench Multimodal",
+  "date": "2024/10/4",
+  "download_label": "HF",
+  "download_url": "https://huggingface.co/datasets/SWE-bench/SWE-bench_Multimodal",
+  "impact": "10.2k 下载 · 14 likes",
+  "impact_url": "https://huggingface.co/datasets/SWE-bench/SWE-bench_Multimodal",
+  "artifacts": [
+   "txt:问题描述",
+   "img:bug 截图",
+   "code:补丁"
+  ],
+  "size": "580 题 / 557 含图",
+  "permitted": "？数据卡未声明许可",
+  "feature": "**必须看图**：含图的 557 道里人工确认 83.5% 不看图做不出；HF 现行版 580 题 / 16 库，论文 619 题 / 17 库",
+  "chapter": "web-issue"
+ },
+ {
+  "name": "OmniGIRL",
+  "date": "2025/5/7",
+  "download_label": "HF",
+  "download_url": "https://huggingface.co/datasets/Deep-Software-Analytics/OmniGIRL",
+  "impact": "206 下载 · 1 likes",
+  "impact_url": "https://huggingface.co/datasets/Deep-Software-Analytics/OmniGIRL",
+  "artifacts": [
+   "txt:问题描述",
+   "img:bug 截图",
+   "code:补丁"
+  ],
+  "size": "959 题 / 19 含图",
+  "permitted": "△ CC-BY-NC-SA-4.0",
+  "feature": "**最难的一档**：Claude-3.5-Sonnet 直接看图只解 3.5%，agent 方法 0%；最好 10.5% 要先把图改写成文字",
+  "chapter": "web-issue"
+ },
+ {
+  "name": "MM-IssueLoc",
+  "date": "2026/7/16",
+  "download_label": "HF",
+  "download_url": "https://huggingface.co/datasets/Jasaxion/MM-IssueLocBench",
+  "impact": "156 下载",
+  "impact_url": "https://huggingface.co/datasets/Jasaxion/MM-IssueLocBench",
+  "artifacts": [
+   "txt:问题描述",
+   "img:bug 截图",
+   "meta:要改的文件 / 函数"
+  ],
+  "size": "652 题 / 1,050 图",
+  "permitted": "△ CC-BY-NC-4.0",
+  "feature": "**只定位不改码**：给 issue 正文加截图，让模型指出要改哪些文件；652 题含 450 人标 + 202 AI 扩充，另 343 题标到函数级",
+  "chapter": "web-issue"
+ }
+]
+

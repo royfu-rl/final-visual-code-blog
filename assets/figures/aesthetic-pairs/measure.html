@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A4 行长与行距</title>
+<style>
+  :root{--ink:#111418;--soft:#5b636e;--line:#e4e7ec;--band:#f6f7f9;--ok:#0b7a4b;--ok-bg:#e6f5ed;--bad:#b42318;--bad-bg:#fdecea;
+        --mono:"SF Mono",ui-monospace,"JetBrains Mono",Menlo,Consolas,monospace}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:transparent;color:var(--ink);
+            font:13px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .top{display:flex;align-items:center;gap:12px;padding:10px 14px;background:var(--band);border-bottom:1px solid var(--line)}
+  .tag{font:600 10.5px/1 var(--mono);letter-spacing:.08em;color:var(--soft);text-transform:uppercase}
+  .query{flex:1;min-width:0;font-size:13.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .rule{font-size:12px;color:var(--soft);white-space:nowrap}
+  button{font:inherit;font-size:12px;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 11px;cursor:pointer}
+  button:hover{border-color:#c5cad3}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:14px}
+  .head{display:flex;align-items:center;gap:8px;margin-bottom:8px;min-height:24px}
+  .side{font:700 12px/1 var(--mono);width:22px;height:22px;border-radius:6px;display:grid;place-items:center;background:var(--ink);color:#fff;flex:none}
+  .pill{font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:999px;flex:none}
+  .ok .pill{color:var(--ok);background:var(--ok-bg)} .bad .pill{color:var(--bad);background:var(--bad-bg)}
+  .say{flex:1;min-width:0;color:var(--soft);font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .open{border:0;background:none;color:#2f6bff;padding:0 2px}
+  .stage{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:10px;background:#eef0f3}
+  .stage iframe{position:absolute;top:0;left:0;width:1280px;height:800px;border:0;transform-origin:0 0;background:#fff}
+  @media (max-width:720px){.grid{grid-template-columns:1fr}.say,.query{white-space:normal}.rule{display:none}}
+  /* 放大态：父页把本 iframe 铺满视口，这里画成居中的大卡片，点卡片外收起 */
+  body.full{height:100vh;display:flex;align-items:center;justify-content:center;padding:28px}
+  body.full .card{width:min(100%,2400px);box-shadow:0 24px 80px rgba(0,0,0,.35)}
+  /* 放大态只放一张、尽量大，A / B 原地切换（空格或方向键），差别最容易看出来 */
+  .flip{display:none;gap:2px;background:#e9ecf1;border-radius:999px;padding:3px}
+  .flip button{border:0;background:none;padding:4px 12px}
+  .flip button.on{background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.12)}
+  body.full .flip{display:inline-flex}
+  body.full .grid{grid-template-columns:1fr}
+  body.full .grid > div{display:none}
+  body.full .grid > div.sel{display:block}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top"><span class="tag">Query</span><span class="query">为长文 Why cities need more trees 做文章页</span><span class="rule">A4 · 行长与行距</span><span class="flip" title="空格或方向键切换"><button class="on">A 符合</button><button>B 违反</button></span><button id="zoom">放大对比</button></div>
+  <div class="grid">
+    <div class="ok sel"><div class="head"><span class="side">A</span><span class="pill">符合</span><span class="say">正文每行 59–75 字符（中位 69），行高 1.55</span><button class="open" data-v="good">新标签打开</button></div><div class="stage"><iframe title="A" data-v="good"></iframe></div></div>
+    <div class="bad"><div class="head"><span class="side">B</span><span class="pill">违反</span><span class="say">正文铺满 1080px，每行约 147 字符，行高 1.15，两端对齐</span><button class="open" data-v="bad">新标签打开</button></div><div class="stage"><iframe title="B" data-v="bad"></iframe></div></div>
+  </div>
+</div>
+<script>
+(function(){
+  var PAGE = "<!doctype html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>Why cities need more trees &middot; The Commons Review<\/title>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link href=\"https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Public+Sans:wght@400;500;600&display=swap\" rel=\"stylesheet\">\n<style>\n  *{box-sizing:border-box;margin:0;padding:0}\n  body{font-family:Newsreader,Georgia,serif;background:#fdfcf9;color:#1c1b19;-webkit-font-smoothing:antialiased}\n  a{color:inherit;text-decoration:none}\n  .bar{font-family:\"Public Sans\",sans-serif;display:flex;align-items:center;gap:28px;height:64px;padding:0 52px;border-bottom:1px solid #e8e4dc;font-size:14px;color:#6d675d}\n  .bar b{font-family:Newsreader,serif;font-size:21px;font-weight:500;color:#1c1b19;margin-right:auto}\n  article{margin:0 auto;padding:52px 52px 80px}\n  .col{max-width:560px;margin:0 auto}\n  .kicker{font-family:\"Public Sans\",sans-serif;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#2f6b4f}\n  h1{font-weight:500;font-size:52px;line-height:1.08;letter-spacing:-.015em;margin:14px 0 16px}\n  .dek{font-size:22px;line-height:1.45;color:#57524a;font-style:italic}\n  .by{font-family:\"Public Sans\",sans-serif;font-size:13.5px;color:#6d675d;margin:22px 0 34px;padding-bottom:22px;border-bottom:1px solid #e8e4dc}\n  .body p{font-size:20px;line-height:1.55;margin-bottom:1.1em}\n  .body p:first-child:first-letter{float:left;font-size:64px;line-height:.9;padding:6px 10px 0 0;color:#2f6b4f}\n\n  /* B：同样的文字，正文铺满整行、行距压紧 —— 一行一百五十多个字符 */\n  .bad .col.body{max-width:1080px}\n  .bad .body p{font-size:17px;line-height:1.15;margin-bottom:0;text-indent:2em;text-align:justify}\n  .bad .body p:first-child:first-letter{float:none;font-size:inherit;padding:0;color:inherit}\n<\/style>\n<\/head>\n<body class=\"{{V}}\">\n<div class=\"bar\"><b>The Commons Review<\/b><a href=\"#\">Cities<\/a><a href=\"#\">Climate<\/a><a href=\"#\">Housing<\/a><a href=\"#\">Subscribe<\/a><\/div>\n<article>\n  <div class=\"col\">\n    <p class=\"kicker\">Cities &middot; Long read<\/p>\n    <h1>Why cities need more trees, and why they keep losing them<\/h1>\n    <p class=\"dek\">Street trees are the cheapest air conditioning a city can buy. Most cities are still cutting down more than they plant.<\/p>\n    <p class=\"by\">By Maren Holt &middot; 3 November 2026 &middot; 14 min read<\/p>\n  <\/div>\n  <div class=\"col body\">\n    <p>On a hot afternoon in July, the difference between a shaded block and an unshaded one is not subtle. You feel it through the soles of your shoes before you see it on a thermometer. Asphalt that has been in the sun since morning radiates heat back up long after dusk, and the people who live on those streets sleep worse, breathe worse and, in the worst heat waves, die in greater numbers than their neighbours a few blocks away.<\/p>\n    <p>None of this is news to the people who manage urban forests. What has changed is the size of the gap. As summers have grown longer, the blocks with the fewest trees have become measurably hotter, and they are rarely the blocks where city budgets for planting are spent. Planting follows complaints, and complaints follow the people with the most time to write them.<\/p>\n    <p>A tree takes a decade or more to become useful shade. In that time it needs water through its first dry summers, a pit large enough for its roots, and protection from the trucks, utility crews and renovations that kill young street trees long before they mature. Cities count trees planted. Very few count the ones still standing ten years later.<\/p>\n    <p>The fix is not mysterious. It is a maintenance budget that lasts as long as the trees do, planting targets set street by street rather than city-wide, and a simple public map of where the canopy is thinnest. The cities that have done all three have reversed their losses within a single mayoral term.<\/p>\n  <\/div>\n<\/article>\n<\/body>\n<\/html>\n";
+  var W = 1280, H = 800;
+  var full = false, embedded = window.parent !== window;
+  function doc(v){ return PAGE.replace('{{V}}', v); }
+  var frames = [].slice.call(document.querySelectorAll('.stage iframe'));
+  // 一页正文里有十来个对比组件：滚到附近才把两张网页放进去，免得一开页就渲染二十张
+  function load(){ frames.forEach(function(f){ if (!f.srcdoc) f.srcdoc = doc(f.dataset.v); }); }
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){
+      if (es.some(function(e){ return e.isIntersecting; })) { load(); io.disconnect(); }
+    }, {rootMargin: '800px 0px'});
+    io.observe(document.querySelector('.card'));
+  } else load();
+
+  function layout(){
+    var room = full ? window.innerHeight - 56 - 120 : Infinity;   // 放大态按视口高度封顶
+    frames.forEach(function(f){
+      var st = f.parentNode, w = st.clientWidth;
+      var s = Math.min(w / W, room / H);
+      st.style.height = Math.round(H * s) + 'px';
+      f.style.transform = 'translate(' + Math.max(0, (w - W * s) / 2) + 'px,0) scale(' + s + ')';
+    });
+    if (embedded && !full) window.parent.postMessage({type: 'kc-height', h: document.querySelector('.card').offsetHeight + 2}, '*');
+  }
+  window.addEventListener('resize', layout);
+  layout();
+
+  [].slice.call(document.querySelectorAll('.open')).forEach(function(b){
+    b.onclick = function(){
+      var url = URL.createObjectURL(new Blob([doc(b.dataset.v)], {type: 'text/html'}));
+      window.open(url, '_blank');
+      setTimeout(function(){ URL.revokeObjectURL(url); }, 60000);
+    };
+  });
+
+  var panels = [].slice.call(document.querySelectorAll('.grid > div'));
+  var flips = [].slice.call(document.querySelectorAll('.flip button'));
+  var sel = 0;
+  function pick(i){
+    sel = i;
+    panels.forEach(function(p, k){ p.classList.toggle('sel', k === i); });
+    flips.forEach(function(b, k){ b.classList.toggle('on', k === i); });
+    layout();
+  }
+  flips.forEach(function(b, k){ b.onclick = function(){ pick(k); }; });
+
+  var zoom = document.getElementById('zoom');
+  function setFull(on){
+    full = on;
+    document.body.classList.toggle('full', on);
+    zoom.textContent = on ? '收起' : '放大对比';
+    layout();
+  }
+  zoom.onclick = function(){
+    if (!embedded) { setFull(!full); return; }
+    window.parent.postMessage({type: full ? 'kc-collapse' : 'kc-expand'}, '*');
+  };
+  document.body.addEventListener('click', function(e){
+    if (full && e.target === document.body) window.parent.postMessage({type: 'kc-collapse'}, '*');
+  });
+  window.addEventListener('keydown', function(e){
+    if (!full) return;
+    if (e.key === 'Escape') window.parent.postMessage({type: 'kc-collapse'}, '*');
+    if (e.key === ' ' || e.key === 'ArrowLeft' || e.key === 'ArrowRight') { e.preventDefault(); pick(1 - sel); }
+  });
+  // 父页放大 / 还原好 iframe 后回 ack，这边排好版再回话，父页才显影
+  window.addEventListener('message', function(e){
+    if (e.source !== window.parent || !e.data || typeof e.data !== 'object') return;
+    if (e.data.type === 'kc-expand-ack')   { setFull(true);  window.parent.postMessage({type: 'kc-modal-ready'}, '*'); }
+    if (e.data.type === 'kc-collapse-ack') { setFull(false); window.parent.postMessage({type: 'kc-revealed'}, '*'); }
+  });
+})();
+</script>
+</body>
+</html>
+

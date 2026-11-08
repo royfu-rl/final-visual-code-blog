@@ -1,0 +1,70 @@
+{
+ "links": [
+  [
+   "codrops",
+   "https://github.com/codrops"
+  ]
+ ],
+ "cards": [
+  {
+   "img": "OnScrollTypographyAnimations.jpg",
+   "name": "codrops/OnScrollTypographyAnimations",
+   "code": [
+    [
+     "src/index.html",
+     "OnScrollTypographyAnimations.html"
+    ]
+   ]
+  },
+  {
+   "img": "TypeShuffleAnimation.jpg",
+   "name": "codrops/TypeShuffleAnimation",
+   "code": [
+    [
+     "src/index.html",
+     "TypeShuffleAnimation.html"
+    ]
+   ]
+  },
+  {
+   "img": "ScrollBasedLayoutAnimations.jpg",
+   "name": "codrops/ScrollBasedLayoutAnimations",
+   "code": [
+    [
+     "index.html",
+     "ScrollBasedLayoutAnimations.html"
+    ]
+   ]
+  },
+  {
+   "img": "MagneticButtons.png",
+   "name": "codrops/MagneticButtons",
+   "code": [
+    [
+     "src/index.html",
+     "MagneticButtons.html"
+    ]
+   ]
+  },
+  {
+   "img": "ImageGridMotionEffect.jpg",
+   "name": "codrops/ImageGridMotionEffect",
+   "code": [
+    [
+     "src/index.html",
+     "ImageGridMotionEffect.html"
+    ]
+   ]
+  },
+  {
+   "img": "SlideshowAnimations.jpg",
+   "name": "codrops/SlideshowAnimations",
+   "code": [
+    [
+     "index.html",
+     "SlideshowAnimations.html"
+    ]
+   ]
+  }
+ ]
+}

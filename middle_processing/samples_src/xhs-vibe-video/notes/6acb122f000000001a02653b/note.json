@@ -1,0 +1,105 @@
+{
+ "note_id": "6acb122f000000001a02653b",
+ "url": "https://www.xiaohongshu.com/explore/6acb122f000000001a02653b?xsec_token=ABy8oDcatVbkkl_B3KWyHR9KN-Ut7zVW90zLZA-A6RQVo=&xsec_source=pc_search",
+ "type": "normal",
+ "title": "各领域GitHub上skill大全 (完整版 30/30)",
+ "desc": "自用收藏，按热门程度整理，星标10k到50k+。\nAI 短剧制作篇\n1. Shuohao Skills  ⭐ 4.0k\n用于小说改编短剧：拆角色、排分集大纲、做场景和道具设定、写剧本、切分镜，并输出视频生成素材。\nhttps://github.com/eternityspring/shuohao-skills\n2. Drama Skills  ⭐ 2.4k\n覆盖 AI 短剧 / 漫剧完整流程：原著分析 → 分集剧本 → 视觉设定 → 分镜 → 图片/视频提示词 → 生成 → 剪辑 → 审查。\nhttps://github.com/zenstory-ai/drama-skills\n3. AI Short Drama — Hao0321  ⭐\n用于连续短剧的故事架构、角色 Bible、爽点和 cliffhanger 设计，并管理跨集状态、角色一致性、模型能力和 production pack。\n4. Dramake\n把一句话、小说或剧本串成完整 AI 短剧生产线，覆盖故事诊断、剧本、角色母版、分镜、模型路线、配音、剪辑和质检。\n5. AI Short Drama — hestudy\nClaude Code 短剧插件，用于剧本创作、角色和场景双锚点、一致性控制、分镜和视频提示词生成。\n6. Short Drama Pipeline · Codex Skill\n把创意拆成完整生产包：受众 → 剧本 → 角色 → 场景道具 → 分镜 → 提示词 → 生成记录 → QC → 发布包。\n7. Short Drama Production  ⭐\n用于专业短剧生产总控，把大纲、角色、美术、剧本、导演、技术分镜、声音、粗剪和 QC 串成可追踪、可返工的生产链。\n8. Video Agent Skills  ⭐\n把小说、剧本或剧情片段转成短剧资产，包括角色/场景/道具拆解、分镜表和视频组提示词。\n9. Puhua Short Drama Skill  ⭐\n用于微短剧编剧，从选题、分集结构、剧本、自检、合规到出海版本输出，也可接生图、生视频流程。\n10. AI Skills — Short Drama Suite\n短剧 / 漫剧全链路 Skill，覆盖剧本、角色资产、分镜、图片/视频提示词和独立审查。\n#skill分享[话题]# #github工具[话题]# #ai短剧[话题]# #ai漫剧[话题]# #PPT神器[话题]#",
+ "tags": [
+  "skill分享",
+  "github工具",
+  "ai短剧",
+  "ai漫剧",
+  "PPT神器"
+ ],
+ "author": "锡孟",
+ "user_id": "5f194e3f0000000001006747",
+ "time": 1791693359000,
+ "ip_location": "湖北",
+ "likes": "1233",
+ "collects": "1635",
+ "comments_count": "25",
+ "keywords": [
+  "视频 skill"
+ ],
+ "duration": null,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040104/d574a10356e2a31bca68fa995476a3d3/notes_pre_post/1040g3k83265tn81c4q705nop9ovg8pq754pfqj8!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040104/9dde4038e872104003bed86abf232dc2/notes_pre_post/1040g3k83265tn81c4q7g5nop9ovg8pq7r5igq3o!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040104/85127f96820e5c854d40b04827bfc89a/notes_pre_post/1040g3k83265tn81c4q805nop9ovg8pq7a2mghrg!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040104/63f7769ed2e5aeba79d7458aa4ae295c/notes_pre_post/1040g3k83265tn81c4q8g5nop9ovg8pq7e0bleug!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040104/861f21795dcefb032c6dba130b031ff8/notes_pre_post/1040g3k83265tn81c4q905nop9ovg8pq7aeph428!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040104/8ccd8feba858e2242897c6d25966209e/notes_pre_post/1040g3k83265tn81c4q9g5nop9ovg8pq7hggl0vo!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040104/2562884d416da0f794e0dfb1a1098c7f/notes_pre_post/1040g3k83265tn81c4qa05nop9ovg8pq79jehag0!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040104/114cc87178f4712a16b419d5b98250d5/notes_pre_post/1040g3k83265tn81c4qag5nop9ovg8pq7m7pee10!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040104/5c6fa0577bc116ec355d506211764ead/notes_pre_post/1040g3k83265tn81c4qb05nop9ovg8pq7b9br4p0!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040104/54d733f82af328ce593abf8125b43c33/notes_pre_post/1040g3k83265tn81c4qbg5nop9ovg8pq74n6jar8!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040104/54f50acc7dd22d7fc76753950fea3627/notes_pre_post/1040g3k83265tn81c4qc05nop9ovg8pq7mrls870!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040104/c997f3bace66a8075af9b6794ece4116/notes_pre_post/1040g3k83265tn81c4qcg5nop9ovg8pq7h98l45g!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "Luminary.",
+   "content": "主包，我登不进github里面，可以给我发一下嘛[害羞R]",
+   "likes": "0"
+  },
+  {
+   "user": "鹏程说",
+   "content": "感谢分享，码住了",
+   "likes": "0"
+  },
+  {
+   "user": "墨缇如愿",
+   "content": "@点点 帮我把AI短剧制作的skill提取出来",
+   "likes": "0"
+  },
+  {
+   "user": "柚钱🌼",
+   "content": "有没有直接写短剧剧本，然后拆分成分镜的skill",
+   "likes": "0"
+  },
+  {
+   "user": "迷茫momo",
+   "content": "@点点 给我找博主发的编剧篇",
+   "likes": "0"
+  },
+  {
+   "user": "AI 超个体孵化器（招远程实习）",
+   "content": "这个整理太全了，正好在研究AI短剧方向",
+   "likes": "1"
+  },
+  {
+   "user": "神一样的洋仔",
+   "content": "收藏一下",
+   "likes": "0"
+  },
+  {
+   "user": "墨缇如愿",
+   "content": "零点帮我把这个ai短句制作篇的skill提取出来",
+   "likes": "0"
+  },
+  {
+   "user": "锡孟",
+   "content": "@🌊 已更新",
+   "likes": "0"
+  },
+  {
+   "user": "6011y",
+   "content": "@点点 每个打分是什么意思",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg",
+  "images/1.jpg",
+  "images/2.jpg",
+  "images/3.jpg",
+  "images/4.jpg",
+  "images/5.jpg",
+  "images/6.jpg",
+  "images/7.jpg",
+  "images/8.jpg",
+  "images/9.jpg",
+  "images/10.jpg",
+  "images/11.jpg"
+ ]
+}

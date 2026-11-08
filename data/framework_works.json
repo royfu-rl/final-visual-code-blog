@@ -1,0 +1,137 @@
+{
+ "_note": "框架 → 卡片之外的代表作品（来自 notes_video.md 第 2 节排行，只收原帖写明框架的）。match 是卡片 GitHub 链接的仓库名，用来认出卡片里的作品。",
+ "frameworks": [
+  {
+   "name": "HyperFrames",
+   "repo": "https://github.com/heygen-com/hyperframes",
+   "match": [
+    "hyperframes"
+   ],
+   "works": [
+    {
+     "title": "《Small Print》短片",
+     "by": "Voxyz_ai",
+     "url": "https://x.com/Voxyz_ai/status/2102531681450119426"
+    },
+    {
+     "title": "App 宣传 PV",
+     "by": "Majin_AppSheet",
+     "url": "https://x.com/Majin_AppSheet/status/2103497319899693327"
+    },
+    {
+     "title": "6 个 Skill 做视频全流程",
+     "by": "陈乔维Justin",
+     "url": "https://www.xiaohongshu.com/explore/6a6d6bc30000000028032f93?xsec_token=AB7R-slPqnM8Co0yz1RjyHXl-aRXMxr94eW2ruWnSCDSo=&xsec_source=pc_search"
+    },
+    {
+     "title": "Codex + HyperFrames 出片教程",
+     "by": "嘿啊柴.ChayAI",
+     "url": "https://www.xiaohongshu.com/explore/6a7487da0000000022030bab?xsec_token=ABDm_Vk1EuW5xP0Bb8IrWFh8MUgNY2_Uux0-fAuZ6BzhU=&xsec_source=pc_search"
+    }
+   ]
+  },
+  {
+   "name": "Remotion",
+   "repo": "https://github.com/remotion-dev/remotion",
+   "match": [
+    "remotion"
+   ],
+   "works": [
+    {
+     "title": "Notion 权限功能发布片",
+     "by": "wustep（Notion）",
+     "url": "https://x.com/wustep/status/2104610435571884086"
+    },
+    {
+     "title": "周边产品发布片",
+     "by": "bridgemindai",
+     "url": "https://x.com/bridgemindai/status/2102462889160286423"
+    },
+    {
+     "title": "Gofy 产品介绍片",
+     "by": "heymrzak",
+     "url": "https://x.com/heymrzak/status/2103768331782349060"
+    },
+    {
+     "title": "iOS App 发布片",
+     "by": "seri_nonnon",
+     "url": "https://x.com/seri_nonnon/status/2106192761632231813"
+    },
+    {
+     "title": "复刻百万播放动画特效",
+     "by": "程序员老张",
+     "url": "https://www.xiaohongshu.com/explore/6a4782210000000011005d23?xsec_token=ABM1WlxRizc9-AquPtC1bbq79zGob7OQRO8Q8GNRNsf2M=&xsec_source=pc_search"
+    },
+    {
+     "title": "Remotion + AI 自动做视频",
+     "by": "Boujoy",
+     "url": "https://www.xiaohongshu.com/explore/6a649bda0000000001033281?xsec_token=ABRJi1pcpJf_-ELnjxYKWaM3mgrD_xfVrgdXJuionYCgE=&xsec_source=pc_search"
+    },
+    {
+     "title": "专属风格动画",
+     "by": "一枚卓子",
+     "url": "https://www.xiaohongshu.com/explore/6a681fca000000001302fa79?xsec_token=AB7vlyDwyYvwEUCY-O_LauCvweIeAc5ViQdCLVsMGVokM=&xsec_source=pc_search"
+    },
+    {
+     "title": "动画产出全流程",
+     "by": "太阳鸽鸽",
+     "url": "https://www.xiaohongshu.com/explore/6a51b705000000001700a903?xsec_token=ABKPXtncT6uACkrSTL2KqyRW8muL4O5hM3SZPHkx4enMk=&xsec_source=pc_search"
+    }
+   ],
+   "biz": [
+    {
+     "s": "800+",
+     "k": "付费客户",
+     "src": "https://www.remotion.dev/automate"
+    },
+    {
+     "s": "100 万美元",
+     "k": "Submagic ARR（自报）",
+     "src": "https://www.remotion.dev/success-stories/a-million-dollars"
+    },
+    {
+     "s": "约 600 万美元/年",
+     "k": "Crayo（自报）",
+     "src": "https://www.remotion.dev/success-stories/a-million-dollars"
+    }
+   ]
+  },
+  {
+   "name": "Manim",
+   "repo": "https://github.com/3b1b/manim",
+   "match": [
+    "manim",
+    "code2video"
+   ],
+   "works": [
+    {
+     "title": "导数讲解",
+     "by": "LinearUncle",
+     "url": "https://x.com/LinearUncle/status/2103128559174971663"
+    },
+    {
+     "title": "一键生成 3B1B 风数学动画",
+     "by": "机器之心",
+     "url": "https://www.xiaohongshu.com/explore/6a0ebb5100000000070125ce?xsec_token=ABz4PA5yexiAvldmFUZ1AurqBIf4Bkhpw8iaVfzt95hew=&xsec_source=pc_search"
+    },
+    {
+     "title": "AI 数学动画全教程",
+     "by": "Next蔡蔡",
+     "url": "https://www.xiaohongshu.com/explore/69119bc90000000007016600?xsec_token=ABtAVpdWV6SSsQKC2UDzxobUZEyD0uXQwwSaUaNRC4_zk=&xsec_source=pc_search"
+    }
+   ],
+   "biz": [
+    {
+     "s": "870 万",
+     "k": "3Blue1Brown 订阅（人写，作对照）",
+     "src": "https://creatordb.app/creatorstats/3blue1brown/"
+    },
+    {
+     "s": "Code2Video",
+     "k": "模型写 Manim 的研究线",
+     "src": "https://arxiv.org/abs/2510.01174"
+    }
+   ]
+  }
+ ]
+}

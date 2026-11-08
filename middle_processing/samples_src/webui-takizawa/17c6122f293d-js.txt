@@ -1,0 +1,115 @@
+{
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://bricohen.com/#person",
+            "name": "Brian Cohen",
+            "jobTitle": "Senior Business Systems Process Engineer",
+            "url": "https://bricohen.com/",
+            "sameAs": [
+              "https://www.linkedin.com/in/sqlbrian/",
+              "https://www.youtube.com/@SurrealSQL"
+            ],
+            "description": "Expert in T-SQL performance tuning, database architecture, and data storytelling.",
+            "image": "https://bricohen.com/assets/profile.png"
+          },
+          {
+            "@type": "Book",
+            "@id": "https://bricohen.com/#book",
+            "name": "Real SQL Queries: 50 Challenges",
+            "author": { "@id": "https://bricohen.com/#person" },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Belmont River Press, LLC"
+            },
+            "description": "A hands-on, problem-solving approach to mastering T-SQL skills.",
+            "url": "https://geni.us/zuumY"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "T-SQL Utility Suite",
+            "applicationCategory": "DeveloperApplication",
+            "operatingSystem": "Web",
+            "author": { "@id": "https://bricohen.com/#person" },
+            "description": "Free T-SQL tools for experts: Pivot Builder, Recursive CTE Generator, and CSV to SQL Converter."
+          },
+          {
+            "@type": "CreativeWork",
+            "name": "Surreal SQL",
+            "author": { "@id": "https://bricohen.com/#person" },
+            "url": "https://www.youtube.com/@SurrealSQL",
+            "description": "YouTube channel showcasing creative and unusual uses of SQL to deepen analytical thinking."
+          }
+        ]
+      }
+tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'], 
+          },
+          extend: {
+            colors: {
+              background: 'var(--bg-background)',
+              surface: 'var(--bg-surface)',
+              primary: 'var(--text-primary)',
+              secondary: 'var(--text-secondary)',
+              'accent-amber': 'var(--accent-amber)',
+              'accent-blue': 'var(--accent-blue)',
+              'accent-purple': 'var(--accent-purple)',
+              'accent-green': 'var(--accent-green)',
+              'accent-red': 'var(--accent-red)',
+              'border-subtle': 'var(--border-subtle)',
+              'status-bar': '#001a2e',
+            },
+            borderRadius: { '4xl': '2rem' },
+            backgroundImage: {
+              'noise-texture': "url('/assets/carbon-fibre.png')",
+              'paper-fibers': "url('/assets/cream-paper.png')",
+              'scratch-pad': "url('/assets/stardust.png')",
+            },
+            animation: {
+              'grid-flow': 'gridFlow 40s linear infinite',
+              'blob': 'blob 10s infinite',
+              'equalizer': 'equalizer 1s ease-in-out infinite',
+              'confetti': 'confetti 3s linear forwards',
+              'shimmer': 'shimmer 2s infinite',
+              'weather-float': 'weatherFloat 3s ease-in-out infinite',
+              'pulse-soft': 'pulseSoft 4s ease-in-out infinite',
+            },
+            keyframes: {
+              gridFlow: {
+                '0%': { transform: 'perspective(500px) rotateX(60deg) translateY(0)' },
+                '100%': { transform: 'perspective(500px) rotateX(60deg) translateY(60px)' },
+              },
+              blob: {
+                '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                '100%': { transform: 'translate(0px, 0px) scale(1)' },
+              },
+              equalizer: {
+                '0%, 100%': { transform: 'scaleY(1)' },
+                '50%': { transform: 'scaleY(0.4)' }
+              },
+              shimmer: { '100%': { transform: 'translateX(100%)' } },
+              weatherFloat: { '0%, 100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-4px)' } },
+              pulseSoft: { '0%, 100%': { transform: 'scale(1) translateY(0)' }, '50%': { transform: 'scale(1.05) translateY(-8px)' } }
+            }
+          }
+        }
+      }
+{
+      "imports": {
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "react": "https://esm.sh/react@^19.2.3",
+        "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+        "react-dom": "https://esm.sh/react-dom@^19.2.3",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "vite": "https://esm.sh/vite@^7.3.0",
+        "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+        "react-ga4": "https://esm.sh/react-ga4@^2.1.0"
+      }
+    }

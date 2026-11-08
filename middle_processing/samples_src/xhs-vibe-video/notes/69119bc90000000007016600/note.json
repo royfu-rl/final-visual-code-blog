@@ -1,0 +1,50 @@
+{
+ "note_id": "69119bc90000000007016600",
+ "url": "https://www.xiaohongshu.com/explore/69119bc90000000007016600?xsec_token=ABtAVpdWV6SSsQKC2UDzxobUZEyD0uXQwwSaUaNRC4_zk=&xsec_source=pc_search",
+ "type": "video",
+ "title": "ai数学动画全教程（附提示词&开源项目）",
+ "desc": "在Kimi K2 thinking模型出来后，我就全方位实测了一波，综合能力确实能打。但思考模型真正的天花板，还得看逻辑。所以我直接给了它道硬菜——复杂数学公式可视化（Manim数学动画），没想到还挺不错。\n.\n视频分享了制作高质量Manim数学动画的两种方法。开源项目是 Math-To-Manim，提示词晚点补充上来。#manim[话题]# #Manim教程[话题]# #manim动画[话题]# #数学动画[话题]# #动画制作[话题]# #AI动画[话题]# #AI编程[话题]#",
+ "tags": [
+  "manim",
+  "Manim教程",
+  "manim动画",
+  "数学动画",
+  "动画制作",
+  "AI动画",
+  "AI编程"
+ ],
+ "author": "Next蔡蔡",
+ "user_id": "62a08c3f0000000021029c8c",
+ "time": 1762761673000,
+ "ip_location": null,
+ "likes": "326",
+ "collects": "498",
+ "comments_count": "4",
+ "keywords": [
+  "manim AI 动画"
+ ],
+ "duration": 278,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040115/8e67fcc80b168035a6df3316239c1f25/spectrum/1040g0k031oms31j2ku005ol0hgvod74cob5k648!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "Next蔡蔡",
+   "content": "你是LaTeX提示词和Manim动画的专家，擅长Manim动画设计。 你的任务分两步： 第一、将用户的简单描述转化为全面、富含LaTeX的提示词，要求： 1. 指定每个视觉元素（颜色、位置、大小） 2. 对所有方程使用正确的LaTeX格式化 3. 提供顺序说明（\"首先...\", \"接下来...\", \"然后...\"） 4. 保持场景之间的视觉连续性 5. 包含时间信息",
+   "likes": "6"
+  },
+  {
+   "user": "多动少年leo妈",
+   "content": "太酷了",
+   "likes": "0"
+  },
+  {
+   "user": "双倍可爱小生活",
+   "content": "这不是中国版本的kimi吧[笑哭R]",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

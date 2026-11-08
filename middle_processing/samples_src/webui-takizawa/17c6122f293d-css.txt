@@ -1,0 +1,56 @@
+:root {
+        --bg-background: #000000;
+        --bg-surface: #040404;
+        --text-primary: #ffffff;
+        --text-secondary: #888888;
+        --border-subtle: #111111;
+        --grid-color: rgba(255,255,255,0.02);
+        --accent-amber: #FF9900;
+        --accent-green: #00FF41;
+        --accent-blue: #00BFFF;
+        --accent-purple: #8B5CF6;
+        --accent-red: #FF003C;
+        --paper-grid-line-dark: #1a1a1a;
+      }
+      
+      html { 
+        scrollbar-gutter: stable; 
+        -webkit-font-smoothing: antialiased; 
+        -moz-osx-font-smoothing: grayscale; 
+      }
+      
+      body { 
+        background-color: #000; 
+        color: #fff; 
+        margin: 0; 
+        overflow-x: hidden; 
+        font-family: 'Inter', sans-serif;
+      }
+
+      .body-lock { 
+        overflow: hidden !important; 
+        touch-action: none; 
+      }
+      
+      .glass-panel { 
+        background: rgba(5, 5, 5, 0.85); 
+        backdrop-filter: blur(20px); 
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.05); 
+      }
+      
+      .text-glow-cyan { text-shadow: 0 0 15px rgba(34, 211, 238, 0.4); }
+      
+      .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+      .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+      .custom-scrollbar::-webkit-scrollbar-thumb { background: #222; border-radius: 10px; }
+      
+      .backface-hidden { 
+        backface-visibility: hidden; 
+        -webkit-backface-visibility: hidden; 
+      }
+      
+      .transform-style-3d { 
+        transform-style: preserve-3d; 
+        -webkit-transform-style: preserve-3d;
+      }

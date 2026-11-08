@@ -1,0 +1,57 @@
+{
+ "note_id": "6acb43430000000018004576",
+ "url": "https://www.xiaohongshu.com/explore/6acb43430000000018004576?xsec_token=ABy8oDcatVbkkl_B3KWyHR9Ik3GqBfM7OUAMXPI_4fSSc=&xsec_source=pc_search",
+ "type": "normal",
+ "title": "Code2Video: 10 个高质量项目推荐",
+ "desc": "最近 Code2Video 好火啊：让模型自己写动画代码，再用浏览器或者渲染引擎出片。\n说白了就是——视频不用拍，全是代码写出来的。\n为大家整理了 10 个值得一看的项目 👇\n\t\n🎬 完整 Pipeline\n- Lemo-Opuscar: 43 种影片风格，带分镜和导演指南\n- PDoomVideo: 整支 MV 的分镜＋渲染源码\n\t\n📄 论文\n- TheoremExplainAgent: 自动把定理讲成动画＋旁白（ACL 2025）\n- Code2Video: 规划→写码→自检的闭环，自动产出讲解视频 (ICML 2026)\n\t\n🛠️ 动画框架\n- HyperFrames: 用 HTML/CSS/JS 写视频，逐帧渲染\n- Remotion: 视频写成 React 组件，按帧算动画\n- Motion Canvas motion: TS 写动画，擅长旁白同步\n- ManimGX: Python 写场景，Rust/GPU 渲染\n\t\n🧠 让它越做越好\n- huashu-art-motion: 35 种视觉风格，先把设计要求写成 AI 能执行的约束\n- ManimAgent: 把上次的修复经验存起来，下次直接复用\n\t\n这条路线现在还很糙，对基模能力要求很高，跑一次经常要改好几轮，但方向是对的——只要动画是代码，就能被迭代👍\n\t\n#代码生成视频[话题]# #ai[话题]# #大模型[话题]# #视频生成[话题]#",
+ "tags": [
+  "代码生成视频",
+  "ai",
+  "大模型",
+  "视频生成"
+ ],
+ "author": "Mazy",
+ "user_id": "60d58c3f00000000010076a8",
+ "time": 1791711032000,
+ "ip_location": "上海",
+ "likes": "180",
+ "collects": "300",
+ "comments_count": "",
+ "keywords": [
+  "AI 写代码做动画",
+  "HyperFrames",
+  "Motion Canvas",
+  "Remotion",
+  "代码生成视频"
+ ],
+ "duration": null,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040124/e983c4952eb9a8b1e8b4cea2bdb6dbde/spectrum/1040g0k032665utpml8005o6lhgvg8tl8atcn51g!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040124/0a0451f236956ad601974170b0da14ee/spectrum/1040g0k032665utpml80g5o6lhgvg8tl87hglgno!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040124/f3efb7c1cf8e896fbbca9f7774e58716/spectrum/1040g0k032665utpml8105o6lhgvg8tl8najafe8!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040124/b7f8a6e61b1e6b9f546c898bc6ab2f82/spectrum/1040g0k032665utpml81g5o6lhgvg8tl8b4b9pi8!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040124/abdaaddf6e28890af1648b6712b4df83/spectrum/1040g0k032665utpml8205o6lhgvg8tl8b8cju5g!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040124/452cd3302334218a964e7068264576fc/spectrum/1040g0k032665utpml82g5o6lhgvg8tl8voci158!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040124/07a60f17781ba3b8c0fcf1d4587fb461/spectrum/1040g0k032665utpml8305o6lhgvg8tl8196olf8!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040124/fa988f09a74015a45e6f8ae24c96dbcc/spectrum/1040g0k032665utpml83g5o6lhgvg8tl8jor832o!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040124/32571edebed8f92e06f3d57df6ceaa26/spectrum/1040g0k032665utpml8405o6lhgvg8tl8gajnhp0!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040124/b8f78e7257596d24e89c49fcfb8f9702/spectrum/1040g0k032665utpml84g5o6lhgvg8tl89nskii0!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040124/07f7696fa66782c383580a2ab916451f/spectrum/1040g0k032665utpml8505o6lhgvg8tl8m38m1tg!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040124/3a67a18685e7bf5d09d81d79003216ea/spectrum/1040g0k032665utpml85g5o6lhgvg8tl8mjv48v8!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [],
+ "image_files": [
+  "images/0.jpg",
+  "images/1.jpg",
+  "images/2.jpg",
+  "images/3.jpg",
+  "images/4.jpg",
+  "images/5.jpg",
+  "images/6.jpg",
+  "images/7.jpg",
+  "images/8.jpg",
+  "images/9.jpg",
+  "images/10.jpg",
+  "images/11.jpg"
+ ]
+}

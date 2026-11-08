@@ -1,0 +1,88 @@
+{
+ "note_id": "6a621ecf000000001002a05e",
+ "url": "https://www.xiaohongshu.com/explore/6a621ecf000000001002a05e?xsec_token=ABkwKrWh0Lh_J7Dwm_VSG9KZEy0xYKIATdzVUOPYgr5AY=&xsec_source=pc_search",
+ "type": "video",
+ "title": "Howto用Codex一句话出视频！原来这么简单",
+ "desc": "用Codex+HyperFrames 以后剪视频可以直接交给AI啦！\n\t\n整个视频从风格设计👉生成带时间戳脚本👉生成分镜👉完成视频渲染，除了Codex还需要这3个工具：\nOpendesign：告诉它你要什么效果，它写风格文件\nVideo Use：帮你剪口气、去掉卡壳停顿说错的地方\nHyperframe：负责画面动画、动态表格、动效\n\t\n快去试试看吧！有任何问题欢迎交流🩷#Howto[话题]# #0基础学AI[话题]# #文科生学AI[话题]# #ai工具[话题]# #AI干货[话题]# #howto入门vibecoding[话题]# #vibecoding[话题]# #ClaudeCode[话题]# #Codex[话题]#\n#ai[话题]#",
+ "tags": [
+  "Howto",
+  "0基础学AI",
+  "文科生学AI",
+  "ai工具",
+  "AI干货",
+  "howto入门vibecoding",
+  "vibecoding",
+  "ClaudeCode",
+  "Codex",
+  "ai"
+ ],
+ "author": "Lulu的AI野路子",
+ "user_id": "65340940000000000301e006",
+ "time": 1784815311000,
+ "ip_location": null,
+ "likes": "1584",
+ "collects": "2540",
+ "comments_count": "85",
+ "keywords": [
+  "HyperFrames"
+ ],
+ "duration": 432,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040102/04b003fdee40ac32fb8d20da5a2b412a/1040g2sg322vg153cnol05p9k1500ro066bsgda8!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "felix",
+   "content": "生成1分钟的视频，chatgpt plus会员的token够用么？",
+   "likes": "2"
+  },
+  {
+   "user": "英语故事绘",
+   "content": "做这个除了会员，还需要积分或者其他充值吗",
+   "likes": "2"
+  },
+  {
+   "user": "粒嗲儿",
+   "content": "博主 你这个视频是用什么剪辑出来的，是hyperframe这个插件吗",
+   "likes": "0"
+  },
+  {
+   "user": "阳春面🍜",
+   "content": "找到了…",
+   "likes": "0"
+  },
+  {
+   "user": "Cai～",
+   "content": "好像官方文档也更新了，我找不到博主说的那些[捂脸R]",
+   "likes": "0"
+  },
+  {
+   "user": "星星点灯（被于适夸奖版）",
+   "content": "博主，怎么会这样啊",
+   "likes": "0"
+  },
+  {
+   "user": "阿布",
+   "content": "为什么我的根目录是这样的",
+   "likes": "0"
+  },
+  {
+   "user": "烈日",
+   "content": "请问我这有个十几分钟的播客，要不要都用这个做出视频呢？还是用它做几个关键部分的讲解？每段时长控制在多少好呢？",
+   "likes": "0"
+  },
+  {
+   "user": "leigonhoo",
+   "content": "@点点 总结下内容",
+   "likes": "0"
+  },
+  {
+   "user": "iDA不i",
+   "content": "请问第一步操作的时候就显示断联：stream disconnected before completion: error sending request for url (http://127.0.0.1:57321/v1/responses)",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

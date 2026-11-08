@@ -1,0 +1,463 @@
+{
+ "family": "3d",
+ "scenes": [
+  {
+   "key": "greybox-previs",
+   "cn": "白模预演出片",
+   "desc": "AI 剧集与广告方买单：白模先定机位比例，再让视频模型出片，少抽卡",
+   "cards": [
+    {
+     "title": "Nexus 灰模分镜",
+     "core": [
+      "Claude",
+      "Blender",
+      "Seedance"
+     ],
+     "line": "Claude 搭灰模截成编号分镜喂 Seedance，镜头与比例不再跑偏",
+     "by": "PJ Ace（Genre.ai）× Dreamina",
+     "oss": null,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/samples_src/xhs-vibe-video/notes/6ad9b245000000003103756d/images/0.jpg",
+     "links": [
+      {
+       "kind": "x",
+       "url": "https://x.com/PJaccetturo/status/2112899203701547153"
+      },
+      {
+       "kind": "xhs",
+       "url": "https://www.xiaohongshu.com/explore/6ad9b245000000003103756d?xsec_token=ABRXR_NYOa-6BpvTR6R8HJptSOoBe8WJmwJ8goEiZ3gOY=&xsec_source=pc_search"
+      },
+      {
+       "kind": "doc",
+       "url": "https://docs.google.com/document/d/1MXARcTpDhzahT_r2LV974MfeOGaJFEZsaZujMqpTQSU/edit?usp=sharing",
+       "label": "工作流文档"
+      },
+      {
+       "kind": "site",
+       "url": "https://www.genre.ai/",
+       "label": "Genre.ai"
+      }
+     ],
+     "biz": [
+      {
+       "k": "改前生成费",
+       "v": "日均 2000+ 美元，连续数周（作者自述，2026-10）",
+       "src": "https://x.com/PJaccetturo/status/2112899203701547153"
+      }
+     ],
+     "why": "Dreamina 出品周更剧集的真实生产线，用户点名线索；X 28 万播放，小红书陆三金搬运"
+    },
+    {
+     "title": "Higgsfield 白模插件",
+     "core": [
+      "Agent 搭白模",
+      "Blender",
+      "Seedance 2.5"
+     ],
+     "line": "一句话让 Agent 在 Blender 搭白模、定运镜，视口直出 Seedance 成片",
+     "by": "Higgsfield",
+     "oss": false,
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2092255568828522496/img/wi3TgSqR714QK8gG.jpg",
+     "links": [
+      {
+       "kind": "x",
+       "url": "https://x.com/higgsfield/status/2092255768770920506"
+      },
+      {
+       "kind": "site",
+       "url": "https://higgsfield.ai/plugins/blender",
+       "label": "插件主页"
+      },
+      {
+       "kind": "doc",
+       "url": "https://higgsfield.ai/blog/higgsfield-blender-plugin",
+       "label": "功能说明"
+      }
+     ],
+     "biz": [
+      {
+       "k": "年化收入",
+       "v": "10 亿美元（近 4 周×13，自报，2026-09）",
+       "src": "https://higgsfield.ai/blog/higgsfield-1b-annualized-revenue-run-rate"
+      },
+      {
+       "k": "用户",
+       "v": "3200 万+，付费订阅近 100 万（自报，2026-09）",
+       "src": "https://higgsfield.ai/blog/higgsfield-1b-annualized-revenue-run-rate"
+      },
+      {
+       "k": "融资",
+       "v": "B 轮 4 亿美元，估值 54 亿美元（2026-08）",
+       "src": "https://techcrunch.com/2026/08/17/higgsfield-raises-400m-series-b-quadrupling-its-valuation-in-8-months-to-5-4b/"
+      }
+     ],
+     "why": "把「Agent 经 MCP 搭白模→视频模型」做成商用插件的唯一大厂；收入是全站口径，非插件单列"
+    },
+    {
+     "title": "Codex 白模预演",
+     "core": [
+      "Codex",
+      "Blender MCP",
+      "AI 视频预演"
+     ],
+     "line": "Codex 经 MCP 在 Blender 搭白模，先锁构图机位，再交给视频模型",
+     "by": "小林Kara",
+     "oss": null,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/xhs-6aa7d98c0000000026014c15.jpg",
+     "links": [
+      {
+       "kind": "xhs",
+       "url": "https://www.xiaohongshu.com/explore/6aa7d98c0000000026014c15?xsec_token=ABW2FE_lWlWdyYKOX8ePHrzkyNhkTD_8khy6JbgIZyGU8=&xsec_source=pc_search"
+      },
+      {
+       "kind": "site",
+       "url": "https://developers.openai.com/codex",
+       "label": "Codex"
+      },
+      {
+       "kind": "site",
+       "url": "https://www.blender.org/",
+       "label": "Blender"
+      }
+     ],
+     "biz": [],
+     "why": "小红书该场景赞藏最高（1.7k 赞 / 2.4k 藏），封面白模→成片对照直观"
+    },
+    {
+     "title": "户型图直出白模片",
+     "core": [
+      "Codex",
+      "三维白模",
+      "Seedance 2"
+     ],
+     "line": "一张户型图标好走位，零建模出 30 秒白模，再渲成日系动画",
+     "by": "shine",
+     "oss": null,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/samples_src/xhs-vibe-video/notes/6aa7e7d5000000002b01dcdf/images/0.jpg",
+     "links": [
+      {
+       "kind": "xhs",
+       "url": "https://www.xiaohongshu.com/explore/6aa7e7d5000000002b01dcdf?xsec_token=ABW2FE_lWlWdyYKOX8ePHrzuh3x54NTlmqd6gDpr3q7UY=&xsec_source=pc_search"
+      },
+      {
+       "kind": "site",
+       "url": "https://developers.openai.com/codex",
+       "label": "Codex"
+      },
+      {
+       "kind": "site",
+       "url": "https://seed.bytedance.com/zh/seedance",
+       "label": "Seedance"
+      }
+     ],
+     "biz": [],
+     "why": "国内教程号，评论区有人「高质量白模视频现货大量收」，是需求信号；封面上下对照好看"
+    }
+   ]
+  },
+  {
+   "key": "code-3d-worlds",
+   "cn": "代码造 3D 世界",
+   "desc": "流量最大的一格：网页 3D 世界靠爆款拉流量，变现靠广告、卖资产包",
+   "cards": [
+    {
+     "title": "《小王子》3D 游戏",
+     "core": [
+      "Opus 5.5",
+      "Tripo + Blender",
+      "Unity"
+     ],
+     "line": "一人 16 天把整本书做成可漫游 3D 剧情游戏，网页直接玩",
+     "by": "Sac（@Saccc_c）",
+     "oss": null,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/middle_processing/samples_src/xhs-vibe-video/notes/6ad0eb070000000018019b2a/images/0.jpg",
+     "links": [
+      {
+       "kind": "x",
+       "url": "https://x.com/Saccc_c/status/2109962425512734739"
+      },
+      {
+       "kind": "site",
+       "url": "https://littleprince.dev/",
+       "label": "在线玩"
+      },
+      {
+       "kind": "xhs",
+       "url": "https://www.xiaohongshu.com/explore/6ad0eb070000000018019b2a?xsec_token=ABvwylVLspYl-WzqrTBmvn4iQXlc6vNb02t8bGgRLcxYk=&xsec_source=pc_search"
+      },
+      {
+       "kind": "x",
+       "url": "https://x.com/Saccc_c/status/2110694725640474759",
+       "label": "制作教程"
+      }
+     ],
+     "biz": [],
+     "why": "3D 线最出圈的个人作品：X 388 万浏览，小红书拆解 4.7k 赞 / 7.1k 藏"
+    },
+    {
+     "title": "果冻海岛",
+     "core": [
+      "AI 编程",
+      "three.js",
+      "3D 微缩世界"
+     ],
+     "line": "海岛装进果冻：灯塔、鲸鱼、海浪，可切昼夜、暴风雨和极光",
+     "by": "Ray",
+     "oss": null,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/xhs-6acd9d34000000001803a6da.jpg",
+     "links": [
+      {
+       "kind": "xhs",
+       "url": "https://www.xiaohongshu.com/explore/6acd9d34000000001803a6da?xsec_token=ABHD0Ewhn9mIaID2UroEU8vw8z_8cMzQUtysvJCtthugY=&xsec_source=pc_search"
+      },
+      {
+       "kind": "site",
+       "url": "https://threejs.org/",
+       "label": "three.js"
+      }
+     ],
+     "biz": [],
+     "why": "小红书代码 3D 作品赞数第一（1.1 万），代表普通用户审美；无产品页，只能挂 three.js"
+    },
+    {
+     "title": "Cozy Creek 溪流",
+     "core": [
+      "GPT-6 Astra",
+      "Blender 资产",
+      "three.js"
+     ],
+     "line": "Blender 出资产、three.js 渲染的浏览器溪流，再打包成套件售卖",
+     "by": "Chetan Ankola（@chetanankola）",
+     "oss": null,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/xhs-6ac736fa000000001c01cda1.jpg",
+     "links": [
+      {
+       "kind": "x",
+       "url": "https://x.com/chetanankola/status/2107996576228753545"
+      },
+      {
+       "kind": "xhs",
+       "url": "https://www.xiaohongshu.com/explore/6ac736fa000000001c01cda1?xsec_token=ABoZ5yD4MgUTgwqBKxVVfUJWeidw52UfZ9UtnnIZWvOBE=&xsec_source=pc_search"
+      },
+      {
+       "kind": "site",
+       "url": "https://3ditions.drop3.app/watch/hiroshis-island/",
+       "label": "资产包"
+      }
+     ],
+     "biz": [
+      {
+       "k": "套件售价",
+       "v": "19.99 美元 / 套（3ditions，2026-11 查）",
+       "src": "https://3ditions.drop3.app/watch/hiroshis-island/"
+      }
+     ],
+     "why": "用户点名线索；作品→可售资产包的闭环，X 36 万播放，小红书 2.1k 赞"
+    },
+    {
+     "title": "Fly 飞行模拟",
+     "core": [
+      "Cursor",
+      "three.js",
+      "浏览器多人游戏"
+     ],
+     "line": "AI 写的浏览器多人飞行游戏，卖广告位和飞机，17 天 ARR 破百万",
+     "by": "Pieter Levels（@levelsio）",
+     "oss": false,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/game-13.jpg",
+     "links": [
+      {
+       "kind": "x",
+       "url": "https://x.com/levelsio/status/1893350391158292550"
+      },
+      {
+       "kind": "site",
+       "url": "https://fly.pieter.com/",
+       "label": "在线玩"
+      },
+      {
+       "kind": "x",
+       "url": "https://x.com/levelsio/status/1899596115210891751",
+       "label": "ARR 帖"
+      }
+     ],
+     "biz": [
+      {
+       "k": "峰值 ARR",
+       "v": "100 万美元（MRR 8.7 万，自述，2025-03）",
+       "src": "https://x.com/levelsio/status/1899596115210891751"
+      },
+      {
+       "k": "玩家",
+       "v": "32 万人飞过（自述，2025-03）",
+       "src": "https://x.com/levelsio/status/1899596115210891751"
+      },
+      {
+       "k": "现状",
+       "v": "作者简介显示 0 美元/月（2026 年中）",
+       "src": "https://dev.to/promptway/he-built-a-flight-simulator-in-three-hours-and-hit-1m-a-year-in-17-days-then-it-went-to-zero-1b1l"
+      }
+     ],
+     "why": "唯一有收入披露的 three.js 代码作品；爆款不持续也要写上"
+    },
+    {
+     "title": "BlenderMCP",
+     "core": [
+      "MCP",
+      "LLM 写 bpy",
+      "Blender"
+     ],
+     "line": "任意大模型经 MCP 写 bpy 驱动 Blender，截图回看再改，接 Tripo 出资产",
+     "by": "ahujasid（开源社区）",
+     "oss": true,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/bp-3dcode-01.jpg",
+     "links": [
+      {
+       "kind": "github",
+       "url": "https://github.com/ahujasid/blender-mcp"
+      },
+      {
+       "kind": "site",
+       "url": "https://www.mcp-for-blender.com/",
+       "label": "官网"
+      }
+     ],
+     "biz": [
+      {
+       "k": "PyPI 下载",
+       "v": "月 54 万（pypistats，2026-11-04）",
+       "src": "https://pypistats.org/packages/blender-mcp"
+      },
+      {
+       "k": "用户",
+       "v": "450 万+（官网自报，2026-11）",
+       "src": "https://www.mcp-for-blender.com/"
+      },
+      {
+       "k": "付费版",
+       "v": "Premium 10–60 美元/月，含 Tripo、Meshy 生成额度",
+       "src": "https://www.mcp-for-blender.com/premium"
+      }
+     ],
+     "why": "上面多数 Blender 案例的底座；开源后长出订阅版，是 code 路线少见的变现"
+    }
+   ]
+  },
+  {
+   "key": "cad-as-code",
+   "cn": "代码即 CAD",
+   "desc": "工程师和创客买单：代码天生参数化、可改，直接出 STEP 和打印件",
+   "cards": [
+    {
+     "title": "Adam AI CAD",
+     "core": [
+      "LLM 写 CAD 代码",
+      "Fusion / Onshape",
+      "参数化零件"
+     ],
+     "line": "一句话出可编辑参数化零件，做成 Fusion、Onshape 里的工程师副驾",
+     "by": "Adam（YC W25）",
+     "oss": false,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/industry-15.jpg",
+     "links": [
+      {
+       "kind": "x",
+       "url": "https://x.com/zachdive/status/1882858765613228287"
+      },
+      {
+       "kind": "youtube",
+       "url": "https://www.youtube.com/watch?v=EHu6Vrqo69A",
+       "label": "产品演示"
+      },
+      {
+       "kind": "site",
+       "url": "https://adam.new/",
+       "label": "官网"
+      },
+      {
+       "kind": "github",
+       "url": "https://github.com/Adam-CAD/CADAM",
+       "label": "开源 CADAM"
+      }
+     ],
+     "biz": [
+      {
+       "k": "ARR",
+       "v": "900 万美元+（Caplight 第三方信号，2026-05）",
+       "src": "https://www.caplight.com/company/adam"
+      },
+      {
+       "k": "融资",
+       "v": "种子轮 410 万美元，TQ Ventures 领投（2025-10）",
+       "src": "https://adam.new/seed"
+      },
+      {
+       "k": "用量",
+       "v": "用户已生成 100 万+ 模型（自报，2025-10）",
+       "src": "https://adam.new/seed"
+      }
+     ],
+     "why": "用户点名补全：X 首发 281 万播放 + YouTube + 官网 + 开源 CADAM + 收入融资"
+    },
+    {
+     "title": "text-to-cad",
+     "core": [
+      "Codex / Claude Code",
+      "build123d",
+      "STEP / 3MF"
+     ],
+     "line": "Agent 写 build123d 脚本出 STEP，带 DFM 检查，直连打印与钣金下单",
+     "by": "Jake Fitzgerald（@earthtojake）",
+     "oss": true,
+     "poster": "https://pbs.twimg.com/amplify_video_thumb/2047071671966679040/img/kqxAnJP3sypTfpVi.jpg",
+     "links": [
+      {
+       "kind": "github",
+       "url": "https://github.com/earthtojake/text-to-cad"
+      },
+      {
+       "kind": "x",
+       "url": "https://x.com/earthtojake/status/2047072107612303692"
+      },
+      {
+       "kind": "site",
+       "url": "https://www.texttocad.dev",
+       "label": "官网"
+      }
+     ],
+     "biz": [],
+     "why": "半年 2.5 万 star，CAD 代码路线增长最快的开源件；作为 Adam 的开源对照"
+    },
+    {
+     "title": "AI 电路板外壳",
+     "core": [
+      "Codex",
+      "FreeCAD",
+      "拓竹打印"
+     ],
+     "line": "Codex 驱动 FreeCAD 给电路板画外壳，打印出来真装上了",
+     "by": "天桥底下一书童",
+     "oss": null,
+     "poster": "/mmu_mllm_hdd_4/deep-research/final-visual-code-blog/assets/market/xhs-6aaaa52f0000000026016572.jpg",
+     "links": [
+      {
+       "kind": "xhs",
+       "url": "https://www.xiaohongshu.com/explore/6aaaa52f0000000026016572?xsec_token=ABv4CvemqLeuFMynnuZLrWGNmZxLFrCWQlegcYml5Ntso=&xsec_source=pc_search"
+      },
+      {
+       "kind": "site",
+       "url": "https://www.freecad.org/",
+       "label": "FreeCAD"
+      },
+      {
+       "kind": "site",
+       "url": "https://developers.openai.com/codex",
+       "label": "Codex"
+      }
+     ],
+     "biz": [],
+     "why": "小红书 CAD/产品件最热（1.9k 赞 / 2.1k 藏），代码→实物闭环，国内唯一强案例"
+    }
+   ]
+  }
+ ]
+}

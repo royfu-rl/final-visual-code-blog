@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 不插 <base>：/view 网关的网址总带 index.html，相对路径本来就对；插了 <base href=目录> 反而会让 "#xxx" 解析到目录上，刷新时打开文件夹列表 -->
+<title>__TITLE__ · Visual Coding</title>
+<style>
+  :root{
+    --bg:#ffffff; --bg-soft:#f6f7f9; --bg-band:#f0f2f5;
+    --ink:#111418; --ink-soft:#5b636e; --line:#e4e7ec;
+    --accent:#1a1a1a; --brand:#2f6bff; --brand-soft:#eaf0ff;
+    --radius:14px; --maxw:1180px; --gutter:clamp(20px, 4vw, 56px);
+    --mono:"SF Mono",ui-monospace,"JetBrains Mono",Menlo,Consolas,monospace;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.65;-webkit-font-smoothing:antialiased}
+
+  /* ---------- header ---------- */
+  .header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line)}
+  .header-inner{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px var(--gutter)}
+  .logo{font-weight:700;font-size:17px;letter-spacing:-.01em;display:flex;align-items:center;gap:9px}
+  .logo .logo-img{height:26px;width:auto;display:block}
+  .header-actions{display:flex;gap:10px;align-items:center}
+  .btn{font-size:13.5px;padding:7px 14px;border-radius:999px;text-decoration:none;border:1px solid var(--line);color:var(--ink);transition:.15s}
+  .btn:hover{background:var(--bg-soft)}
+  .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .btn-primary:hover{opacity:.88;background:var(--accent)}
+
+  /* ---------- hero ---------- */
+  .hero{max-width:var(--maxw);margin:0 auto;padding:64px var(--gutter) 28px;text-align:center}
+  .hero .eyebrow{font-size:13px;color:var(--ink-soft);letter-spacing:.04em;text-transform:uppercase;font-weight:600}
+  .hero h1{font-size:clamp(38px,6vw,64px);line-height:1.05;margin:14px 0 12px;letter-spacing:-.03em;font-weight:800}
+  .hero .sub{font-size:clamp(16px,2.4vw,21px);color:var(--ink-soft);max-width:720px;margin:0 auto 26px}
+  .hero-links{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .hero-links a{display:inline-flex;align-items:center;gap:7px;font-size:14.5px}
+
+  /* ---------- result showcase ---------- */
+  .showcase{max-width:var(--maxw);margin:8px auto 10px;padding:0 var(--gutter)}
+  .showcase-grid{display:grid;grid-template-columns:1fr;gap:22px}
+  .result-card{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);padding:22px 22px 12px;overflow:hidden}
+  .result-card h3{margin:0 0 4px;font-size:16px;font-weight:700}
+  .result-card p{margin:0 0 14px;font-size:13.5px;color:var(--ink-soft)}
+  .result-card img{width:100%;height:auto;border-radius:8px;display:block}
+  .result-card iframe{width:100%;height:440px;border:none;border-radius:8px;display:block}
+
+  /* ---------- tabs ---------- */
+  .tabs-wrap{position:sticky;top:57px;z-index:40;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);margin-top:36px}
+  .tabs{max-width:var(--maxw);margin:0 auto;display:flex;gap:4px;padding:0 var(--gutter);overflow-x:auto}
+  .tab{appearance:none;border:0;background:none;font-family:inherit;font-size:14.5px;font-weight:600;color:var(--ink-soft);padding:15px 16px;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;transition:.15s}
+  a.tab{text-decoration:none;display:inline-block}
+  .tab:hover{color:var(--ink)}
+  .tab.active{color:var(--ink);border-bottom-color:var(--brand)}
+
+  /* ---------- doc content ---------- */
+  .doc-wrap{max-width:var(--maxw);margin:0 auto;padding:40px var(--gutter) 96px}
+  .doc{display:none;animation:fade .25s ease}
+  .doc.active{display:block}
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+  .breadcrumb{margin:0 0 8px}
+  .breadcrumb a{font-size:13.5px;color:var(--ink-soft);text-decoration:none;font-weight:600}
+  .breadcrumb a:hover{color:var(--brand)}
+
+  .doc h1{font-size:32px;font-weight:800;letter-spacing:-.02em;margin:0 0 8px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+  .doc h2{font-size:23px;font-weight:750;margin:44px 0 14px;letter-spacing:-.01em}
+  .doc h3{font-size:18px;font-weight:700;margin:28px 0 10px}
+  .doc h4{font-size:15.5px;font-weight:700;margin:20px 0 8px;color:var(--ink-soft)}
+  .doc p{margin:12px 0}
+  .doc a{color:var(--brand);text-decoration:none}
+  .doc a:hover{text-decoration:underline}
+  .doc ul,.doc ol{padding-left:24px;margin:12px 0}
+  .doc li{margin:6px 0}
+  .doc img{max-width:100%;height:auto;border-radius:10px;border:1px solid var(--line);margin:8px 0}
+  /* Inline logos inside tables: keep them text-sized (respect the tag's height attr), no border/margin */
+  .doc td img,.doc th img{height:1.1em;width:auto;max-width:none;border:0;border-radius:0;margin:0 4px 0 0;vertical-align:-0.15em;display:inline-block}
+  .doc div[align="center"]{text-align:center;margin:24px 0}
+  /* Wide embeds: charts that need more room than the 1080px text column. Breaks out of
+     .doc-wrap symmetrically and is capped to the viewport, so the page itself never
+     gains a horizontal scrollbar. On narrow screens it degrades to the column width. */
+  .doc .wide-embed{width:min(1440px,calc(100vw - 40px));margin-left:calc(50% - min(720px,50vw - 20px));margin-right:0}
+  .doc .wide-embed iframe{width:100%;display:block}
+  .doc code{font-family:var(--mono);font-size:.88em;background:var(--bg-band);padding:2px 6px;border-radius:5px}
+  .doc pre{background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;padding:16px;overflow-x:auto}
+  .doc pre code{background:none;padding:0;font-size:13px;line-height:1.6}
+  .doc blockquote{margin:16px 0;padding:8px 18px;border-left:3px solid var(--brand);background:var(--brand-soft);border-radius:0 8px 8px 0;color:var(--ink-soft)}
+  .doc blockquote p{margin:4px 0}
+  /* ── table — Kimi K3 Full Benchmark Table style ── */
+  /* The card + horizontal scroll live on a wrapper div (injected in renderDoc),
+     NOT on the table itself. A `display:block` table wraps its rows in an
+     anonymous shrink-to-fit table box that ignores the block's min-width:100%,
+     so the card stretched full width while the rows stopped at their content
+     width — that gap was the blank block. A real display:table honours
+     width:100%, and the wrapper gives position:sticky a scrollport. */
+  /* ---------- 目录块 ----------
+     Contents 原本就是一个 h2 加一个 ul，混在正文里跟普通小节长得一样。
+     渲染后把这两个元素包进 <nav class="toc">，做成一块明显分离的卡片。 */
+  .doc .toc{margin:0 0 40px;padding:18px 22px 16px;background:var(--bg-soft,#f7f8fa);
+            border:1px solid var(--line,#e4e7ec);border-radius:14px}
+  .doc .toc > h2{margin:0 0 10px;padding:0;border:0;font-size:12px;font-weight:800;
+                 letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft,#5b636e)}
+  .doc .toc ul{margin:0;padding-left:18px}
+  .doc .toc ul ul{margin:2px 0}
+  .doc .toc li{margin:3px 0;font-size:14.5px}
+  .doc .toc a{text-decoration:none}
+  .doc .toc a:hover{text-decoration:underline}
+
+  .doc .tbl-scroll{margin:32px 0;overflow-x:auto;background:#fff;border-radius:12px;
+    box-shadow:0 0 0 1px var(--line),0 2px 12px rgba(0,0,0,.05);
+    scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+  .doc .tbl-scroll::-webkit-scrollbar{height:4px}
+  .doc .tbl-scroll::-webkit-scrollbar-track{background:transparent}
+  .doc .tbl-scroll::-webkit-scrollbar-thumb{background:var(--line);border-radius:2px}
+  .doc table{border-collapse:collapse;display:table;width:100%;margin:0;font-size:13.5px;background:#fff}
+  .doc th{background:#f7f8fa;font-size:11px;font-weight:600;color:var(--ink-soft);letter-spacing:.05em;text-transform:uppercase;padding:11px 16px;text-align:left;white-space:nowrap;border-bottom:1px solid var(--line)}
+  .doc td{padding:10px 16px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.55;background:#fff}
+  .doc tr:last-child td{border-bottom:none}
+  .doc :is(th,td)[align="right"]{text-align:right;font-variant-numeric:tabular-nums}
+  .doc :is(th,td)[align="center"]{text-align:center}
+  /* sticky first column */
+  .doc th:nth-child(1),.doc td:nth-child(1){position:sticky;left:0;z-index:2;border-right:1px solid var(--line);white-space:nowrap}
+  .doc th:nth-child(1){background:#f7f8fa}
+  .doc td:nth-child(1){background:#fff;font-weight:500}
+  /* hover row */
+  .doc tbody tr:hover td{background:#f9fafb}
+  .doc tbody tr:hover td:nth-child(1){background:#f3f4f6}
+  /* compact columns */
+  /* Column widths are decided per table at render time (see the classifier in the
+     render pass): columns whose cells are all short get .c-tight and hug their
+     content, prose columns get .c-prose and absorb the leftover width. A table whose
+     every column is tight hugs its container instead of stretching — otherwise a
+     10-column metrics table pads each number out to a tenth of the page. */
+  .doc th.c-tight,.doc td.c-tight{white-space:nowrap;width:1px}
+  .doc td.c-prose{white-space:normal;min-width:160px}
+  .doc .tbl-scroll.hug{width:fit-content;max-width:100%}
+  .doc .tbl-scroll.hug table{width:auto}
+  /* 合并单元格（见 mergeCells）：被合并行的第一个格子已不是首列，去掉首列的固定、加粗与不换行 */
+  .doc table.merged td[rowspan]{white-space:normal;background:#fbfcfd;font-weight:500}
+  .doc table.merged tr.cont td:nth-child(1){position:static;border-right:none;font-weight:400;white-space:normal;background:#fff}
+  .doc table.wide-lead tr:not(.cont) > td:first-child{width:30%;min-width:220px;white-space:normal}
+  .doc table a{color:var(--brand);text-decoration:none}
+  .doc table a:hover{text-decoration:underline}
+  .doc hr{border:0;border-top:1px solid var(--line);margin:36px 0}
+
+
+  /* ---------- logo ---------- */
+  .logo-mark{width:26px;height:26px;border-radius:7px;background:var(--accent);color:#fff;display:grid;place-items:center;font-size:14px;font-weight:800}
+
+  /* ---------- 章内小节目录：和 overview 的 Contents 同一个形态 ---------- */
+  /* 单章站点：视图上了顶部标签栏，这里只留当前视图的一句话说明 */
+  .doc .view-desc{color:var(--ink-soft);font-size:15px;line-height:1.7;margin:-6px 0 30px}
+  .doc .view-desc:empty{display:none}
+  .doc .view-switch a{cursor:pointer}
+  .doc .view-switch a.active{font-weight:700;color:var(--ink)}
+  .env-view{display:none}
+  .env-view.active{display:block;animation:fade .25s ease}
+
+
+  /* ---------- 机构标识 ---------- */
+  .doc .org{font-size:11.5px;color:var(--ink-soft);white-space:nowrap;margin-left:2px}
+  .doc .org-mark{display:inline-grid;place-items:center;width:14px;height:14px;border-radius:3px;background:var(--bg-band);color:var(--ink-soft);font-size:9.5px;font-weight:700;vertical-align:-0.15em;margin-right:2px}
+
+  /* 细讲标题左侧的机构 logo */
+  .doc h4 .h-logo{height:20px;width:auto;border:0;border-radius:4px;margin:0 6px 0 0;vertical-align:-4px;display:inline-block}
+  .doc h4 .org-mark.h-logo{width:20px;height:20px;font-size:12px;display:inline-grid}
+  .doc h4 .org{font-size:12.5px;font-weight:500;margin-left:6px}
+  .doc h4 .impact{font-size:11.5px;font-weight:600;color:var(--brand);background:var(--brand-soft);padding:2px 8px;border-radius:999px;margin-left:8px;vertical-align:2px;white-space:nowrap}
+  /* HuggingFace 风格影响力徽章 */
+  .doc .hf{display:inline-flex;gap:5px;flex-wrap:wrap;align-items:center;vertical-align:middle;text-decoration:none}
+  .doc .hf-b{display:inline-flex;align-items:center;gap:3px;font-size:11px;font-weight:600;line-height:1;color:var(--ink-soft);background:var(--bg-band);border:1px solid var(--line);border-radius:6px;padding:2.5px 6px;white-space:nowrap}
+  .doc .hf-i{width:11px;height:11px;flex:none;opacity:.9}
+  .doc .hf-lk .hf-i{color:#e0566a}
+  .doc .hf-st .hf-i{color:#e8a13a}
+  .doc a.hf:hover .hf-b{border-color:var(--brand);color:var(--brand)}
+  .doc h4 .hf,.doc .deep-title .hf{margin-left:6px}
+  /* 合并总表：类型标签 / 来源徽章 / top5 加权高亮 */
+  .doc .type{display:inline-block;font-size:10.5px;font-weight:600;padding:1px 6px;border-radius:4px;white-space:nowrap}
+  .doc .type-bench{color:#2563c9;background:rgba(37,99,201,.12)}
+  .doc .type-data{color:#9333a8;background:rgba(147,51,168,.12)}
+  /* 来源表 Artifacts 列：按素材类型分色，一眼看出这个渠道掉下来的是什么 */
+  .doc .art{display:inline-block;font-size:10.5px;font-weight:600;line-height:1.55;color:#fff;
+    padding:1px 7px;border-radius:999px;white-space:nowrap;margin:1.5px 4px 1.5px 0;letter-spacing:.01em}
+  .doc .a-img{background:#f0338a}    /* 图像：截图、设计稿、渲染结果 */
+  .doc .a-txt{background:#00a6c4}    /* 文本：title、desc、指令、问题 */
+  .doc .a-code{background:#7c4dff}   /* 代码：源文件、片段、命令序列 */
+  .doc .a-run{background:#ff7a1a}    /* 可直接跑出产物的整件：.html、.blend、场景 */
+  .doc .a-asset{background:#00b377}  /* 资产：网格、点云、贴图、HDRI */
+  .doc .a-meta{background:#c08a00}   /* 结构化字段：布局框、无障碍树、元数据 */
+  /* Verifier 分层表 Method 列的三类判别方：圆角矩形，颜色沿用上面的语义（程序≈代码、Agent≈可运行件、VLM≈图像） */
+  .doc .judge{display:inline-block;font-size:10.5px;font-weight:650;line-height:1.55;color:#fff;
+    padding:1px 7px;border-radius:5px;white-space:nowrap;margin-right:6px;letter-spacing:.02em;vertical-align:1px}
+  .doc .j-prog{background:#7c4dff}
+  .doc .j-agent{background:#ff7a1a}
+  .doc .j-vlm{background:#f0338a}
+  /* Frontier Lab 表 Insight 列：这条披露落在哪一环（与 .judge 同形，配色错开） */
+  .doc .tx{display:inline-block;font-size:10.5px;font-weight:650;line-height:1.55;color:#fff;
+    padding:1px 7px;border-radius:5px;white-space:nowrap;margin-right:6px;letter-spacing:.02em;vertical-align:1px}
+  .doc .tx-data{background:#0891b2}
+  .doc .tx-verifier{background:#059669}
+  .doc .tx-harness{background:#2563eb}
+  .doc .tx-env{background:#ca8a04}
+  .doc .tx-algo{background:#dc2626}
+  /* Vibe Video 项目表：Field 列的场景标签（颜色与场景画廊一致，由 style="--c:" 给）、Project 列 logo、Example 列缩略图 */
+  .doc .scn{display:inline-block;font-size:10.5px;font-weight:650;line-height:1.55;color:#fff;background:var(--c,#64748b);
+    padding:1px 7px;border-radius:5px;white-space:nowrap;margin:1px 6px 1px 0;letter-spacing:.02em;vertical-align:1px}
+  .doc .plogo{width:20px;height:20px;border-radius:5px;vertical-align:-5px;margin-right:7px;border:1px solid var(--line)}
+  .doc .pstar{display:block;font-size:11.5px;color:var(--ink-soft);margin-top:2px}
+  .doc img.ex-thumb{display:block;width:150px;height:84px;object-fit:cover;border-radius:7px;border:1px solid var(--line);cursor:zoom-in;
+    transition:transform .15s ease,box-shadow .15s ease}
+  .doc img.ex-thumb:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(17,20,24,.16)}
+  .img-zoom{position:fixed;inset:0;z-index:10000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:28px;
+    background:rgba(10,12,16,.72);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);opacity:0;transition:opacity .18s ease;cursor:zoom-out}
+  .img-zoom.show{opacity:1}
+  .img-zoom img{max-width:min(1400px,100%);max-height:calc(100vh - 110px);object-fit:contain;border-radius:10px;box-shadow:0 24px 70px rgba(0,0,0,.5);cursor:default}
+  .img-zoom .iz-cap{max-width:min(1400px,100%);color:#e6e9ee;font-size:13px;text-align:center;line-height:1.6}
+  .img-zoom .iz-cap a{color:#9ec1ff;text-decoration:none;margin-left:8px}
+  .doc .src{display:inline-block;font-size:11px;font-weight:600;text-decoration:none;padding:1.5px 7px;border-radius:5px;border:1px solid var(--line);color:var(--ink-soft);white-space:nowrap}
+  .doc a.src:hover{border-color:var(--brand);color:var(--brand)}
+  .doc .src-hf{color:#d98a00;border-color:rgba(217,138,0,.4)}
+  .doc .src-gh{color:var(--ink)}
+  .doc table.merged tbody tr.top5{background:rgba(46,160,67,.13)}
+  .doc table.merged tbody tr.top5 td:first-child{box-shadow:inset 3px 0 0 #2ea043}
+  .doc table.merged tbody tr.top5:hover{background:rgba(46,160,67,.2)}
+
+  /* ---------- 视图内目录 + 锚点 ---------- */
+  .doc .view-toc ul{list-style:none;padding-left:0;margin:0}
+  .doc .view-toc li{margin:2px 0}
+  .doc .view-toc li.l2{font-weight:700;margin-top:10px}
+  .doc .view-toc li.l2:first-child{margin-top:0}
+  .doc .view-toc li.l3{padding-left:22px}
+  .doc .view-toc li.l4{padding-left:42px}
+  .doc .view-toc li.l4{padding-left:44px;font-size:13.5px}
+  .doc .view-toc .num{display:inline-block;min-width:46px;color:var(--ink-soft);font-family:var(--mono);font-size:12px;font-weight:500}
+  .doc .anchor{scroll-margin-top:130px}
+  /* 正文按小节折叠：h3（如 3.1 Overview）左侧小箭头，点标题收起 / 展开到下一个 h2 / h3 之前的内容 */
+  .doc h3.foldable{position:relative;cursor:pointer;-webkit-user-select:text;user-select:text}
+  .doc h3.foldable::before{content:"";position:absolute;left:-24px;top:50%;width:7px;height:7px;margin-top:-5px;
+    border-right:2px solid #b3bac4;border-bottom:2px solid #b3bac4;transform:rotate(45deg);transition:transform .18s ease,border-color .15s}
+  .doc h3.foldable:hover::before,.doc h3.foldable:focus-visible::before{border-color:var(--ink)}
+  .doc h3.foldable.folded::before{transform:rotate(-45deg);margin-top:-4px}
+  .doc h3.foldable.folded::after{content:"已收起";margin-left:10px;padding:1px 9px;border:1px solid var(--line);border-radius:999px;
+    font-size:11.5px;font-weight:500;color:var(--ink-soft);vertical-align:3px;letter-spacing:0}
+  .doc h3.foldable:focus{outline:none}
+  .doc .fold-body.folded{display:none}
+  .doc .fold-body.opening{animation:fold-in .2s ease}
+  @keyframes fold-in{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+  .doc .view-toc{position:relative}
+  .doc .view-toc .fold-all{position:absolute;top:14px;right:18px;font:inherit;font-size:11.5px;color:var(--ink-soft);
+    background:#fff;border:1px solid var(--line);border-radius:999px;padding:2px 11px;cursor:pointer}
+  .doc .view-toc .fold-all:hover{color:var(--ink);border-color:#c5cad3}
+  @media (max-width:720px){.doc h3.foldable{padding-left:20px}.doc h3.foldable::before{left:2px}}
+  .doc p:has(> a.anchor:only-child){margin:0;height:0}
+
+  /* ---------- 前沿厂商表：Benchmark 列合并单元格 ---------- */
+  .doc table.frontier td.bench{vertical-align:middle;font-weight:600;white-space:normal;min-width:150px;background:#fafbfc}
+  .doc table.frontier td{white-space:normal}
+  .doc table.frontier .self-tag{display:inline-block;margin-left:6px;font-size:11px;font-weight:500;color:var(--ink-soft);background:var(--bg-band);padding:0 6px;border-radius:4px;vertical-align:1px}
+  .doc table.frontier tbody tr:has(td.bench) td{border-top:2px solid var(--line)}
+  .doc table.frontier td:nth-child(1):not(.bench){position:static;font-weight:400;border-right:0;white-space:normal}
+
+  /* ---------- 数据样例组件（细讲内） ---------- */
+  .doc .ds-demo{margin:18px 0;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--bg-soft)}
+  .doc .ds-head{font-size:13px;color:var(--ink-soft);margin-bottom:12px;line-height:1.6}
+  .doc .ds-head b{color:var(--ink);font-size:13.5px}
+  .doc .ds-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+  .doc .ds-card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px;display:flex;flex-direction:column;gap:8px;min-width:0}
+  .doc .ds-card img.ds-img{width:100%;height:auto;max-height:260px;object-fit:contain;border:1px solid var(--line);border-radius:6px;margin:0;background:#fafafa}
+  .doc .ds-meta{font-size:12.5px;color:var(--ink);line-height:1.55;overflow-wrap:anywhere}
+  .doc details.ds-code{font-size:12px}
+  .doc details.ds-code > summary{cursor:pointer;color:var(--brand);font-weight:600}
+  .doc details.ds-code pre{margin:6px 0 0;max-height:320px;overflow:auto;white-space:pre;font-size:11.5px;line-height:1.5;padding:10px}
+
+  /* ---------- 数据样例画廊：方块墙 + 点开弹层（逻辑见页尾 sg-* 脚本） ---------- */
+  .doc .sg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px;margin:18px 0 22px}
+  .doc .sg-tile{display:flex;flex-direction:column;min-width:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;cursor:pointer;outline:none;transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
+  .doc .sg-tile:hover,.doc .sg-tile:focus-visible{transform:translateY(-3px);box-shadow:0 12px 28px rgba(17,20,24,.12);border-color:#cfd5dd}
+  .doc .sg-poster{aspect-ratio:16/10;background:var(--bg-soft);display:grid;place-items:center;overflow:hidden;border-bottom:1px solid var(--line)}
+  .doc .sg-poster img{width:100%;height:100%;object-fit:cover;object-position:top;margin:0;border:0;border-radius:0;max-width:none}
+  .doc .sg-poster pre.sg-code{margin:0;width:100%;height:100%;padding:10px 12px;font-size:9.5px;line-height:1.45;background:#14171d;color:#c9d1d9;overflow:hidden;white-space:pre;border-radius:0;border:0}
+  .doc .sg-mono{font-size:42px;font-weight:700;color:#c3c9d2}
+  .doc .sg-meta{padding:10px 12px 12px;display:flex;flex-direction:column;gap:6px;min-width:0}
+  .doc .sg-name{font-size:14px;font-weight:700;line-height:1.45;color:var(--ink);overflow-wrap:anywhere}
+  .doc .sg-name .org{display:block;margin:2px 0 0;font-size:12px;font-weight:500;color:var(--ink-soft);white-space:normal}
+  .doc .sg-sub{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:12px;color:var(--ink-soft)}
+  .doc .sg-sub .hf{margin:0}
+  /* Example 列：表格里的小卡片 —— 和画廊方块同一套信息（封面 / 名称 / 机构 / 影响力 / 条数），
+     只是缩到单元格大小。沿用 .sg-* 的类名，所以点开弹层那套 JS 不用改。 */
+  .doc .ex-tile{display:inline-flex;flex-direction:column;width:176px;vertical-align:top;text-align:left;
+    border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;cursor:pointer;
+    outline:none;transition:transform .14s ease,box-shadow .14s ease,border-color .14s ease}
+  .doc .ex-tile:hover,.doc .ex-tile:focus-visible{transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(17,20,24,.14);border-color:#cfd5dd}
+  .doc .ex-tile .sg-poster{display:block;height:76px;aspect-ratio:auto;overflow:hidden;
+    background:var(--bg-soft);border-bottom:1px solid var(--line)}
+  .doc .ex-tile .sg-poster img{width:100%;height:100%;object-fit:cover;object-position:top;
+    display:block;margin:0;border:0;border-radius:0;max-width:none}
+  .doc .ex-tile .sg-poster pre.sg-code{margin:0;width:100%;height:100%;padding:6px 8px;font-size:6.5px;
+    line-height:1.4;background:#14171d;color:#c9d1d9;overflow:hidden;white-space:pre;border:0;border-radius:0}
+  .doc .ex-tile .sg-mono{display:grid;place-items:center;width:100%;height:100%;
+    font:700 22px var(--mono);color:var(--ink-soft)}
+  .doc .ex-tile .sg-meta{display:block;padding:7px 9px 8px}
+  .doc .ex-tile .sg-name{display:block;font-size:11.5px;font-weight:700;line-height:1.35;
+    color:var(--ink);overflow-wrap:anywhere}
+  .doc .ex-tile .sg-name .org{display:block;margin:1px 0 0;font-size:10px;font-weight:500;
+    color:var(--ink-soft)}
+  .doc .ex-tile .sg-name img,.doc .ex-tile .sg-name .org-mark{height:11px!important;
+    width:auto;margin:0 3px 0 0;vertical-align:-1px;border:0;border-radius:0}
+  .doc .ex-tile .sg-sub{display:flex;flex-wrap:wrap;align-items:center;gap:4px;margin-top:4px;
+    font-size:9.5px;line-height:1.5;color:var(--ink-soft)}
+  .doc .ex-tile .sg-sub .hf{margin:0;transform:scale(.86);transform-origin:left center}
+  .doc .ex-tile .sg-n{white-space:nowrap}
+  .doc td .ex-tile{margin:2px 0}
+
+  .doc .sg-body{display:none}
+  .doc .sg-body.open{display:flex;flex-direction:column;position:fixed;z-index:10001;left:50%;top:50%;transform:translate(-50%,-50%);width:min(1200px,calc(100vw - 32px));height:min(88vh,960px);background:#fff;border-radius:14px;box-shadow:0 30px 90px rgba(0,0,0,.35);overflow:hidden}
+  .doc .sg-mask{position:fixed;inset:0;z-index:10000;background:rgba(10,12,16,.55);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+  .doc .sg-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;border-bottom:1px solid var(--line);background:#fff;flex:none}
+  .doc .sg-bar .deep-title{font-size:15.5px;font-weight:700;line-height:1.5;min-width:0}
+  .doc .sg-nav{display:flex;align-items:center;gap:6px;flex:none}
+  .doc .sg-nav button{appearance:none;border:1px solid var(--line);background:#fff;color:var(--ink);width:32px;height:32px;border-radius:8px;cursor:pointer;font-size:16px;line-height:1}
+  .doc .sg-nav button:hover{background:var(--bg-soft)}
+  .doc .sg-pos{font-size:12px;color:var(--ink-soft);min-width:46px;text-align:center}
+  .doc .sg-stage{flex:1;min-height:0;overflow:auto;padding:2px 18px 18px}
+  html.sg-lock{overflow:hidden}
+  @media(max-width:720px){.doc .sg-body.open{width:100vw;height:100dvh;border-radius:0}.doc .sg-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}}
+
+  /* ---------- 细讲：可折叠组件 ---------- */
+  .doc details.deep{border:1px solid var(--line);border-radius:12px;margin:14px 0;background:#fff}
+  .doc details.deep > summary{cursor:pointer;list-style:none;padding:14px 18px;display:flex;align-items:center;gap:10px}
+  .doc details.deep > summary::-webkit-details-marker{display:none}
+  .doc details.deep > summary::before{content:"▸";color:var(--ink-soft);font-size:13px;transition:transform .15s;flex:none}
+  .doc details.deep[open] > summary::before{transform:rotate(90deg)}
+  .doc details.deep > summary:hover{background:var(--bg-soft);border-radius:12px}
+  .doc details.deep[open] > summary{border-bottom:1px solid var(--line);border-radius:12px 12px 0 0}
+  .doc details.deep > :not(summary){margin-left:18px;margin-right:18px}
+  .doc details.deep .deep-title{font-size:15.5px;font-weight:700;line-height:1.5}
+  .doc .deep-title .h-logo{height:20px;width:auto;border:0;border-radius:4px;margin:0 6px 0 0;vertical-align:-4px;display:inline-block}
+  .doc .deep-title .org-mark.h-logo{width:20px;height:20px;font-size:12px;display:inline-grid}
+  .doc .deep-title .org{font-size:12.5px;font-weight:500;margin-left:6px}
+  .doc .deep-title .impact{font-size:11.5px;font-weight:600;color:var(--brand);background:var(--brand-soft);padding:2px 8px;border-radius:999px;margin-left:8px;vertical-align:2px;white-space:nowrap}
+
+  /* ---------- 可切换分组表（.tbl-tabs） ---------- */
+  .doc .tbl-tabs{margin:28px 0 32px}
+  .doc .tbl-tabs-bar{display:flex;flex-wrap:wrap;gap:6px;padding:5px;background:var(--bg-band);border-radius:12px;width:fit-content;max-width:100%}
+  .doc .tbl-tabs-bar button{appearance:none;border:0;background:none;font:inherit;font-size:13.5px;font-weight:600;color:var(--ink-soft);padding:7px 14px;border-radius:8px;cursor:pointer;transition:.15s;display:inline-flex;align-items:center;gap:7px}
+  .doc .tbl-tabs-bar button:hover{color:var(--ink)}
+  .doc .tbl-tabs-bar button.active{background:#fff;color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+  .doc .tbl-tabs-bar .n{font-family:var(--mono);font-size:11px;font-weight:600;padding:1px 7px;border-radius:999px;background:rgba(0,0,0,.06);color:var(--ink-soft)}
+  .doc .tbl-tabs-bar button.active .n{background:var(--brand-soft);color:var(--brand)}
+  .doc .tbl-pane{display:none}
+  .doc .tbl-pane.active{display:block;animation:fade .2s ease}
+  .doc .tbl-pane .tbl-desc{margin:14px 2px 0;font-size:13.5px;color:var(--ink-soft)}
+  .doc .tbl-pane .tbl-scroll{margin:12px 0 0}
+  /* 宽表（管线表、仓库表）：列多且带长文本列，向两侧突破正文栏，最宽 1400px；视口不够宽时退回正文宽 */
+  .doc .wide{width:min(1400px,calc(100vw - 48px));margin-left:calc(50% - min(700px,50vw - 24px))}
+
+  /* ---------- 自绘流程图（论文无管线图时） ---------- */
+  .doc .flow{display:flex;flex-wrap:wrap;align-items:stretch;gap:8px;margin:0}
+  .doc .flow .step{flex:1 1 130px;background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:12.5px;line-height:1.5;color:var(--ink-soft)}
+  .doc .flow .step b{display:block;font-size:13px;color:var(--ink);margin-bottom:3px}
+  .doc .flow .arr{align-self:center;color:var(--ink-soft);font-size:15px}
+
+  /* ---------- 论文原图 ---------- */
+  .doc figure.paper-fig{margin:22px 0 18px;padding:16px 16px 10px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.04)}
+  .doc figure.paper-fig img{display:block;width:100%;max-height:520px;object-fit:contain;border:0;border-radius:0;margin:0}
+  .doc figure.paper-fig figcaption{margin-top:10px;font-size:12.5px;color:var(--ink-soft);text-align:center}
+
+  /* ---------- Basic 页：三家厨房地图 ---------- */
+  .doc .fam-map{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0}
+  .doc .fam{border:1px solid var(--line);border-radius:14px;padding:16px 16px 14px;background:var(--bg-soft)}
+  .doc .fam h4{margin:2px 0 6px;color:var(--ink);font-size:15.5px;font-weight:750}
+  .doc .fam .fam-tag{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--brand)}
+  .doc .fam p{margin:6px 0 11px;font-size:12.5px;color:var(--ink-soft);line-height:1.6}
+  .doc .fam .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .doc .fam .chip{font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--ink)}
+  @media(max-width:720px){.doc .fam-map{grid-template-columns:1fr}}
+
+  /* ---------- Open Data 页：横向时间线 ---------- */
+  .doc .tl-wrap{overflow-x:auto;margin:22px 0 6px;padding-bottom:6px}
+  .doc .tl{display:grid;grid-template-columns:repeat(5,minmax(176px,1fr));min-width:900px}
+  .doc .tl-band{grid-column:1/-1;display:flex;align-items:center;gap:12px;margin:0 0 20px;font-size:12px;font-weight:650;color:var(--ink-soft)}
+  .doc .tl-band i{flex:1;position:relative;height:4px;border-radius:2px;background:linear-gradient(90deg,#c9ced6,var(--brand))}
+  .doc .tl-band i::after{content:"";position:absolute;right:-2px;top:-4px;border:6px solid transparent;border-left:8px solid var(--brand);border-right:0}
+  .doc .tl-band span{flex:none;white-space:nowrap}
+  .doc .tl-band span:last-child{color:var(--brand)}
+  .doc .tl-col{padding-right:14px}
+  .doc .tl-date{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--ink-soft);margin-bottom:8px}
+  .doc .tl-node{position:relative;height:12px;margin:0 -14px 12px 0}
+  .doc .tl-node::before{content:"";position:absolute;left:0;right:0;top:5px;height:2px;background:var(--line)}
+  .doc .tl-node::after{content:"";position:absolute;left:0;top:0;width:8px;height:8px;border-radius:50%;background:var(--bg);border:2px solid var(--c,var(--brand))}
+  .doc .tl-title{font-size:14.5px;font-weight:750;line-height:1.4;margin-bottom:8px}
+  .doc .tl-chips{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:10px}
+  .doc .tl-chip{font-size:10.5px;font-weight:650;padding:2px 7px;border-radius:999px;white-space:nowrap}
+  .doc .m-vis{background:#eef0f3;color:#5b636e}
+  .doc .m-vote{background:#fff3df;color:#94600a}
+  .doc .m-mllm{background:#f1edff;color:#6a4fd6}
+  .doc .m-agent{background:var(--brand-soft);color:var(--brand)}
+  .doc .m-geo{background:#e7f6ec;color:#1f7a45}
+  .doc .m-state{background:#e3f3f6;color:#0f6b7a}
+  .doc .tl-card{border:1px solid var(--line);border-radius:10px;background:var(--bg-soft);padding:9px 11px;margin-bottom:8px;font-size:12.5px;line-height:1.55}
+  .doc .tl-card .nm{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:0 6px;font-size:13px;font-weight:700}
+  .doc .tl-card .nm a{color:var(--ink)}
+  .doc .tl-card .nm span{font-family:var(--mono);font-size:11px;font-weight:500;color:var(--ink-soft);white-space:nowrap}
+  .doc .tl-card p{margin:3px 0 0;color:var(--ink-soft)}
+  .doc .tl-m{display:grid;grid-template-columns:1fr auto;align-items:center;gap:1px 8px;margin-top:7px}
+  .doc .tl-m .bar{height:6px;border-radius:3px;background:#e9ecf0;overflow:hidden}
+  .doc .tl-m .bar i{display:block;height:100%;border-radius:3px;background:var(--brand)}
+  .doc .tl-m b{font-family:var(--mono);font-size:11.5px;color:var(--brand)}
+  .doc .tl-m em{grid-column:1/-1;font-style:normal;font-size:10.5px;color:var(--ink-soft)}
+  .doc .tl-m.later .bar i{background:#b8bfc9}
+  .doc .tl-m.later b{color:var(--ink-soft)}
+  .doc .tl-legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:11.5px;color:var(--ink-soft);margin:2px 0 20px}
+  .doc .tl-legend i{display:inline-block;width:14px;height:6px;border-radius:3px;margin-right:6px;vertical-align:middle}
+
+  /* ---------- Open Data 页：前置条件闸门流水线 ---------- */
+  .doc .gp-wrap{overflow-x:auto;margin:18px 0 4px;padding-bottom:6px}
+  .doc .gp{display:grid;grid-template-columns:54px repeat(5,minmax(150px,1fr)) 54px;column-gap:20px;row-gap:10px;min-width:980px}
+  .doc .gp-grp{grid-row:1;position:relative;text-align:center;font-size:12px;font-weight:750;color:var(--g);padding-bottom:7px;border-bottom:2px solid var(--g)}
+  .doc .gp-grp::before,.doc .gp-grp::after{content:"";position:absolute;bottom:-2px;width:2px;height:8px;background:var(--g)}
+  .doc .gp-grp::before{left:0}
+  .doc .gp-grp::after{right:0}
+  .doc .gp-end{grid-row:2;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;border-radius:14px;font-size:12.5px;font-weight:750;line-height:1.4}
+  .doc .gp-in{background:var(--bg-band);color:var(--ink-soft)}
+  .doc .gp-out{background:var(--brand);color:#fff}
+  .doc .gp-g{grid-row:2;position:relative;display:flex;flex-direction:column;gap:7px;border:1px solid var(--line);border-radius:12px;background:var(--bg-soft);padding:11px 12px 12px}
+  .doc .gp .arr::before{content:"";position:absolute;right:-17px;top:50%;width:12px;height:2px;margin-top:-1px;background:#b8bfc9}
+  .doc .gp .arr::after{content:"";position:absolute;right:-19px;top:50%;margin-top:-5px;border:5px solid transparent;border-left:8px solid #b8bfc9;border-right:0}
+  .doc .gp-hot{border-color:#f2cfa6;background:#fff8f0}
+  .doc .gp-step{font-family:var(--mono);font-size:10.5px;font-weight:700;color:var(--ink-soft)}
+  .doc .gp-name{font-size:14px;font-weight:750;margin-top:-5px}
+  .doc .gp-big{font-size:22px;font-weight:800;letter-spacing:-.01em;line-height:1.1}
+  .doc .gp-big small{display:block;margin-top:3px;font-size:11.5px;font-weight:650;color:var(--ink-soft);letter-spacing:0}
+  .doc .gp-cap{font-size:11.5px;line-height:1.5;color:var(--ink-soft);margin-top:auto}
+  .doc .gp-cap .warn{color:#94600a}
+  .doc .gp-row{display:grid;grid-template-columns:1fr auto;align-items:center;gap:3px 6px;font-size:11px;color:var(--ink-soft)}
+  .doc .gp-row .gp-bar{grid-column:1/-1}
+  .doc .gp-row b{font-family:var(--mono);font-size:11px;color:var(--ink);text-align:right}
+  .doc .gp-bar{height:7px;border-radius:4px;background:#e9ecf0;overflow:hidden}
+  .doc .gp-bar i{display:block;height:100%;border-radius:4px;background:var(--brand)}
+  .doc .gp-waffle{display:grid;grid-template-columns:repeat(10,1fr);gap:3px}
+  .doc .gp-waffle i{aspect-ratio:1;border-radius:3px;background:var(--brand)}
+  .doc .gp-waffle i.bad{background:#e8909f}
+  .doc .gp-map{display:flex;flex-direction:column;gap:5px}
+  .doc .gp-map span{font-size:11.5px;font-weight:600;padding:3px 8px;border-radius:7px;background:#fff;border:1px solid var(--line)}
+  .doc .gp-lock{grid-row:3;grid-column:2/4;position:relative;text-align:center;font-size:11.5px;font-weight:650;color:#b45309;padding-top:7px;border-top:2px dashed #e0a458}
+  .doc .gp-note{font-size:11.5px;color:var(--ink-soft);margin:2px 0 20px}
+
+  /* ---------- 划词备注：正文高亮，点开是可折叠的备注卡片 ---------- */
+  mark.nt-mark{background:#fff3c4;color:inherit;border-bottom:1.5px dotted #d4a017;cursor:pointer;padding:0 1px;border-radius:2px}
+  mark.nt-mark:hover,mark.nt-mark.on{background:#ffe48a}
+  mark.nt-end::after{content:"✎";font-size:.66em;color:#b8860b;margin-left:2px;vertical-align:super}
+  .nt-card{margin:8px 0 14px;border:1px solid #f0d78c;border-left:3px solid #d4a017;border-radius:8px;background:#fffbea;padding:9px 13px 10px;font-size:13px;line-height:1.65;color:var(--ink);font-weight:400;text-align:left}
+  .nt-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:2px}
+  .nt-q{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:11.5px;font-weight:650;color:#8a6d0b}
+  .nt-act{display:flex;gap:2px;flex:none}
+  .nt-act button{font:inherit;font-size:11.5px;cursor:pointer;border:0;background:none;color:#8a6d0b;padding:2px 7px;border-radius:5px}
+  .nt-act button:hover{background:#fbe9a9}
+  .doc .nt-body p,.doc .nt-body ul,.doc .nt-body ol{margin:6px 0}
+  .doc .nt-body li{margin:3px 0}
+  .doc .nt-body table{font-size:12px;margin:6px 0}
+  .nt-ts{margin-top:4px;font-size:10.5px;color:#a08a3c}
+  .nt-card textarea{display:block;width:100%;min-height:140px;box-sizing:border-box;margin:4px 0 6px;border:1px solid #e6cf7a;border-radius:6px;padding:8px 10px;background:#fff;font:12.5px/1.6 var(--mono);resize:vertical}
+  .nt-add{position:absolute;z-index:60;font:inherit;font-size:12px;font-weight:650;cursor:pointer;color:#fff;background:#d4a017;border:0;border-radius:999px;padding:5px 12px;box-shadow:0 4px 14px rgba(0,0,0,.16)}
+  .nt-fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:50;font:inherit;font-size:12.5px;font-weight:650;cursor:pointer;color:#8a6d0b;background:#fffbea;border:1px solid #f0d78c;border-radius:999px;padding:7px 14px;box-shadow:0 4px 14px rgba(0,0,0,.08)}
+  /* 闸门流程图变体（.gp.gf，Sources 2.6）：按渲染前后切成四段，段内闸门纵向堆叠；色带、箭头、顺序锁沿用 .gp */
+  .doc .gp.gf{grid-template-columns:54px 1.25fr .8fr 1fr 1fr 54px;min-width:1040px}
+  .doc .gf .gp-end{align-self:center;height:132px}
+  .doc .gf .gp-hot{align-self:center}
+  .doc .gf-col{grid-row:2;position:relative;display:flex;flex-direction:column;justify-content:center;gap:12px}
+  .doc .gf-gate{position:relative;display:flex;flex-direction:column;gap:4px;border:1px solid var(--line);border-radius:10px;background:var(--bg-soft);padding:8px 10px 9px}
+  .doc .gf-gate+.gf-gate::before{content:"";position:absolute;left:50%;top:-13px;width:2px;height:12px;margin-left:-1px;background:#d5dae1}
+  .doc .gf-gate.no-src{border-style:dashed;border-color:#e0a458;background:#fffaf2}
+  .doc .gf-h{display:flex;align-items:baseline;gap:6px}
+  .doc .gf-h b{font-size:13px;font-weight:750}
+  .doc .gf-tag{margin-left:auto;font-size:10.5px;font-weight:700;padding:1px 6px;border-radius:999px;white-space:nowrap}
+  .doc .gf-tag.ok{color:#1a7f37;background:#dafbe1}
+  .doc .gf-tag.warn{color:#94600a;background:#fff1d6}
+  .doc .gf-v{align-self:flex-start;font-family:var(--mono);font-size:11px;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:6px;padding:1px 6px}
+  .doc .gf-r{font-size:11.5px;line-height:1.5;color:var(--ink-soft)}
+  .doc .gf-src{font-size:11px;color:var(--ink-soft)}
+  .doc .gf-src a{color:var(--brand);text-decoration:none}
+
+  /* ---------- Basic 页：代码↔实时渲染 demo ---------- */
+  .doc .demo{margin:22px 0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 2px 14px rgba(0,0,0,.05)}
+  .doc .demo-top{display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--bg-soft);border-bottom:1px solid var(--line)}
+  .doc .demo-lang{font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.03em;padding:3px 9px;border-radius:6px;color:#fff;background:#888;white-space:nowrap}
+  .doc .lang-css{background:#2f6bff}.doc .lang-html{background:#e0566a}
+  .doc .lang-js{background:#e8a13a;color:#1a1200}.doc .lang-svg{background:#16a34a}
+  .doc .lang-react{background:#0ea5c4}.doc .lang-json{background:#9333a8}
+  .doc .lang-py{background:#375a9e}
+  .doc .demo-title{font-size:14px;font-weight:700;color:var(--ink)}
+  .doc .demo-split{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+  .doc .demo-code{margin:0;border:0;border-radius:0;background:#0f1115;color:#e6e9ef;
+    font-family:var(--mono);font-size:12px;line-height:1.65;padding:14px 16px;overflow:auto;max-height:360px;white-space:pre}
+  .doc .demo-code code{background:none;padding:0;color:inherit;font-size:12px;white-space:pre}
+  .doc .demo-frame{width:100%;border:0;border-left:1px solid var(--line);background:#fff;display:block}
+  .doc .demo-note{margin:0;padding:11px 15px;font-size:12.5px;color:var(--ink-soft);background:var(--bg-soft);border-top:1px solid var(--line);line-height:1.65}
+  .doc .demo-note b{color:var(--ink);font-weight:650}
+  @media(max-width:720px){.doc .demo-split{grid-template-columns:1fr}.doc .demo-frame{border-left:0;border-top:1px solid var(--line)}}
+
+  /* Gallery（画廊）——卡片陈列墙 + 全屏 lightbox。海报是主题渐变 + 衬线英文名；
+     点卡片由 galOpen() 懒建 iframe（见页尾脚本），关闭即销毁，任何时刻最多一个
+     WebGL 上下文，绕开浏览器对并发 WebGL 上下文数的上限。 */
+  .doc .gal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));gap:18px;margin:28px 0 10px}
+  .doc .gal-card{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--bg);cursor:pointer;outline:none;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+  .doc .gal-card:hover,.doc .gal-card:focus-visible{transform:translateY(-4px);box-shadow:0 16px 36px rgba(17,20,24,.15);border-color:#d6dae1}
+  /* 海报 = demo 的实拍截图（background，含主体+标题+控制台），渐变作为加载前/失败兜底 */
+  .doc .gal-poster{position:relative;aspect-ratio:4/3;overflow:hidden;display:grid;place-items:center}
+  /* 悬停变暗遮罩 + 居中「点击全屏」提示 */
+  .doc .gal-poster::after{content:"";position:absolute;inset:0;background:rgba(10,12,16,.28);opacity:0;transition:opacity .18s ease}
+  .doc .gal-card:hover .gal-poster::after,.doc .gal-card:focus-visible .gal-poster::after{opacity:1}
+  .doc .gal-play{position:relative;z-index:1;font-size:12.5px;font-weight:600;color:#fff;background:rgba(14,17,22,.55);border:1px solid rgba(255,255,255,.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);padding:6px 15px;border-radius:999px;opacity:0;transform:translateY(5px);transition:.18s}
+  .doc .gal-card:hover .gal-play,.doc .gal-card:focus-visible .gal-play{opacity:1;transform:none}
+  .doc .gal-meta{padding:12px 15px 14px;display:flex;flex-direction:column;gap:5px}
+  .doc .gal-cn{font-size:15px;font-weight:700;color:var(--ink)}
+  .doc .gal-cap{font-size:12.5px;color:var(--ink-soft);line-height:1.55}
+  .doc .gal-slug{align-self:flex-start;font-family:var(--mono);font-size:10.5px;color:var(--ink-soft);background:var(--bg-band);padding:2px 7px;border-radius:5px;margin-top:2px}
+  .gal-lightbox{position:fixed;inset:0;z-index:10000;display:flex;align-items:center;justify-content:center;padding:clamp(10px,3vw,34px);background:rgba(10,12,16,.6);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);opacity:0;transition:opacity .2s ease}
+  .gal-lightbox.show{opacity:1}
+  .gal-lb-panel{display:flex;flex-direction:column;width:min(1180px,100%);height:min(760px,100%);background:#0f1115;border-radius:16px;overflow:hidden;box-shadow:0 30px 90px rgba(0,0,0,.55);transform:scale(.985);transition:transform .2s ease}
+  .gal-lightbox.show .gal-lb-panel{transform:none}
+  .gal-lb-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;background:#14171d;border-bottom:1px solid rgba(255,255,255,.08)}
+  .gal-lb-ttl{display:flex;align-items:baseline;gap:9px;min-width:0}
+  .gal-lb-ttl b{font-size:14px;color:#f4f6f8;font-weight:600;white-space:nowrap}
+  .gal-lb-ttl span{font-family:"Instrument Serif",Georgia,serif;font-size:14px;color:#8b93a0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .gal-lb-act{display:flex;align-items:center;gap:8px;flex-shrink:0}
+  .gal-lb-ext{font-size:12px;color:#aab2bf;text-decoration:none;border:1px solid rgba(255,255,255,.14);padding:5px 11px;border-radius:8px;transition:.15s;white-space:nowrap}
+  .gal-lb-ext:hover{color:#fff;border-color:rgba(255,255,255,.3)}
+  .gal-lb-x{appearance:none;border:0;background:rgba(255,255,255,.08);color:#cfd5dd;width:30px;height:30px;border-radius:8px;cursor:pointer;font-size:14px;line-height:1;transition:.15s}
+  .gal-lb-x:hover{background:rgba(255,255,255,.18);color:#fff}
+  .gal-lb-stage{position:relative;flex:1;background:#0f1115;display:grid;place-items:center;min-height:0}
+  .gal-lb-frame{position:relative;z-index:1;width:100%;height:100%;border:0;background:#0f1115;opacity:0;transition:opacity .25s ease}
+  .gal-lightbox.loaded .gal-lb-frame{opacity:1}
+  .gal-lb-spin{position:absolute;width:30px;height:30px;border:3px solid rgba(255,255,255,.18);border-top-color:#fff;border-radius:50%;animation:gal-spin .8s linear infinite}
+  .gal-lightbox.loaded .gal-lb-spin{display:none}
+  @keyframes gal-spin{to{transform:rotate(360deg)}}
+  @media(max-width:720px){.gal-lb-panel{height:100%;width:100%;border-radius:0}.doc .gal-en{font-size:25px}}
+
+  .footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;color:var(--ink-soft);font-size:13px}
+
+  /* KaTeX display blocks: give them breathing room and horizontal scroll on overflow */
+  .doc .katex-display{margin:20px 0;overflow-x:auto;overflow-y:hidden;padding:2px 0}
+  .doc .katex{font-size:1.05em}
+</style>
+<style>
+/*__KATEX_CSS__*/
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="logo"><span class="logo-mark">__MARK__</span>__TITLE__</div>
+    <div class="header-actions">
+      <a class="btn btn-primary" href="__ARXIV__" target="_blank" rel="noopener">Deep Research ↗</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="eyebrow">__EYEBROW__</div>
+    <h1>__TITLE__</h1>
+    <p class="sub">__SUBTITLE__</p>
+    <div class="hero-links">
+      <a class="btn btn-primary" href="__ARXIV__" target="_blank" rel="noopener">📄 Read the Deep Research</a>
+__LINKS__
+    </div>
+  </section>
+
+  <div class="tabs-wrap">
+    <div class="tabs" id="tabs"></div>
+  </div>
+
+  <div class="doc-wrap" id="docs"></div>
+</main>
+
+<footer class="footer">
+  Visual Coder · built from local markdown · Snapshot 2026.09
+</footer>
+
+<script>/*__MARKED__*/</script>
+<script>/*__KATEX_JS__*/</script>
+<script>
+  // ---- constants -----------------------------------------------------------
+  // Combined height of the two sticky bars (header + tabs-wrap) in pixels.
+  // scrollTo subtracts this so the newly-activated section isn't hidden behind them.
+  const STICKY_HEADER_HEIGHT = 60;
+  // Max parent hops when walking up to the nearest tab ancestor.
+  // Guards against cycles if the doc graph is somehow malformed.
+  const MAX_ANCESTOR_DEPTH = 50;
+
+  // ---- data ----------------------------------------------------------------
+  const DOCS   = __DOCS__;
+  const tabsEl = document.getElementById('tabs');
+  const docsEl = document.getElementById('docs');
+
+  /** Map doc id → doc object for O(1) lookup. */
+  const byId = {};
+  DOCS.forEach(doc => { byId[doc.id] = doc; });
+
+  const firstId = (DOCS.find(d => !d.href) || DOCS[0]).id;   // 带 href 的只是指向别的 html 的标签，本页没有正文
+
+  // 单章站点（web / 3d / video 各一个）：本页只有一章，顶部标签栏就让给这一章的视图，
+  // 不再出现章名。门口页有指向别的站的链接，不走这条路。
+  const SOLO = (DOCS.filter(d => d.tab).length === 1 && !DOCS.some(d => d.href))
+    ? DOCS.find(d => d.tab) : null;
+
+  marked.setOptions({ gfm: true, breaks: false });
+
+  // ---- heading id (TOC anchor support) -------------------------------------
+  // Inject GitHub-style slug ids so TOC links like #1-system-architecture work.
+  marked.use({
+    renderer: {
+      heading({ text, depth }) {
+        // Strip any HTML tags (e.g. <strong>) to get plain text for slug
+        const plain = text.replace(/<[^>]+>/g, '').trim();
+        const slug = plain
+          .toLowerCase()
+          .replace(/[^\w一-鿿\s\-]/g, '') // keep alphanum, CJK, space, hyphen
+          .trim()
+          .replace(/\s+/g, '-');
+        return `<h${depth} id="${slug}">${text}</h${depth}>\n`;
+      }
+    }
+  });
+
+  // ---- math-safe markdown render -------------------------------------------
+  // marked would mangle LaTeX ($a_t$ → emphasis, \frac → lost backslash), so
+  // we stash code spans/blocks first (never treat $ inside code as math), pull
+  // math out to indexed sentinels, run marked, then restore raw $…$/$$…$$ for KaTeX.
+  //
+  // Sentinels wrap the index in Private-Use-Area chars (U+E000…U+E001) that
+  // never occur in real prose or markdown. An earlier scheme used space-padded
+  // " C<n> " / " M<n> " tokens, which collided with ordinary text such as
+  // "美团 M17 fully async" — the restore step then looked up a nonexistent math
+  // entry and threw, aborting the render loop and hiding every later tab.
+  const _S0 = '', _S1 = '';
+  const _CODE_RE = new RegExp(_S0 + 'C(\\d+)' + _S1, 'g');
+  const _MATH_RE = new RegExp(_S0 + 'M(\\d+)' + _S1, 'g');
+  function renderDoc(md) {
+    const codeStash = [];
+    const codeTok = m => { codeStash.push(m); return _S0 + 'C' + (codeStash.length - 1) + _S1; };
+    md = md.replace(/```[\s\S]*?```/g, codeTok);
+    md = md.replace(/`[^`\n]*`/g,      codeTok);
+
+    const mathStash = [];
+    md = md.replace(/\$\$([\s\S]+?)\$\$/g, (_, x) => { mathStash.push({ display: true,  tex: x }); return _S0 + 'M' + (mathStash.length - 1) + _S1; });
+    md = md.replace(/\$([^\$\n]+?)\$/g,    (_, x) => { mathStash.push({ display: false, tex: x }); return _S0 + 'M' + (mathStash.length - 1) + _S1; });
+
+    md = md.replace(_CODE_RE, (_, i) => codeStash[+i]);   // restore code before marked
+    let html = marked.parse(md);
+    html = html.replace(_MATH_RE, (_, i) => {
+      const entry = mathStash[+i];
+      // HTML-escape < > & so the browser doesn't parse LaTeX as HTML tags when
+      // assigned to innerHTML. KaTeX's renderMathInElement reads textContent and
+      // will decode these back to the correct LaTeX characters automatically.
+      const tex = entry.tex.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      return entry.display ? ('$$' + tex + '$$') : ('$' + tex + '$');
+    });
+    return html;
+  }
+
+  function typesetMath(el) {
+    if (window.renderMathInElement) renderMathInElement(el, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true  },
+        { left: '$',  right: '$',  display: false },
+      ],
+      throwOnError: false,
+      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+    });
+  }
+
+  // ---- doc-graph traversal -------------------------------------------------
+
+  /** Walk parent links upward to find the nearest tab ancestor of `id`. */
+  function tabAncestor(id) {
+    let doc = byId[id], depth = 0;
+    while (doc && !doc.tab && doc.parent && depth++ < MAX_ANCESTOR_DEPTH) {
+      doc = byId[doc.parent];
+    }
+    return doc ? doc.id : id;
+  }
+
+  // ---- DOM construction ----------------------------------------------------
+
+  DOCS.forEach(docData => {
+    // 跨文件的标签：本页没有它的正文，渲染成一个指向那个 html 的链接就够了
+    if (docData.href) {
+      const a = document.createElement('a');
+      a.className = 'tab'; a.textContent = docData.label; a.href = docData.href;
+      tabsEl.appendChild(a);
+      return;
+    }
+
+    // Tab button (only for top-level tab docs; 单章站点的标签栏留给视图)
+    if (docData.tab && !SOLO) {
+      const btn       = document.createElement('button');
+      btn.className   = 'tab' + (docData.id === firstId ? ' active' : '');
+      btn.textContent = docData.label;
+      btn.dataset.target = docData.id;
+      btn.onclick     = () => activate(docData.id);
+      tabsEl.appendChild(btn);
+    }
+
+    // Article element that holds the rendered markdown
+    const article     = document.createElement('article');
+    article.className = 'doc' + (docData.id === firstId ? ' active' : '');
+    article.id        = 'doc-' + docData.id;
+
+    // Breadcrumb link for sub-docs
+    if (docData.parent && byId[docData.parent]) {
+      const breadcrumb     = document.createElement('div');
+      breadcrumb.className = 'breadcrumb';
+      breadcrumb.innerHTML = '<a href="#">← 返回 ' + byId[docData.parent].label + '</a>';
+      breadcrumb.querySelector('a').onclick = (e) => { e.preventDefault(); activate(docData.parent); };
+      article.appendChild(breadcrumb);
+    }
+
+    // Rendered markdown body
+    const body     = document.createElement('div');
+    body.innerHTML = renderDoc(docData.md);
+
+    // Wrap every table in a scroll container. The card styling and overflow live
+    // on the wrapper (see .tbl-scroll) so the table can stay a real display:table.
+    // Done on the DOM rather than by regex so raw <table> blocks written directly
+    // in markdown are wrapped too.
+    //
+    // Then size the columns from their actual content: a column of numbers or short
+    // labels hugs its text, prose columns take what's left, and an all-short table
+    // stops stretching to full width (a 10-column P/R/F1 table used to spread four
+    // characters across a tenth of the page each).
+    const TIGHT_MAX = 12;   // longest cell, in characters, that still counts as short
+    // 目录：h2#contents 与其后的 ul 抽成一块 nav.toc，跟正文隔开
+    const cH = body.querySelector('h2#contents');
+    if (cH && cH.nextElementSibling && cH.nextElementSibling.tagName === 'UL') {
+      const nav = document.createElement('nav');
+      nav.className = 'toc';
+      cH.parentNode.insertBefore(nav, cH);
+      nav.appendChild(cH);
+      nav.appendChild(nav.nextElementSibling);   // 上一步之后 ul 正好紧跟在 nav 后面
+    }
+
+    // 同一列上下相邻、内容相同的格子合并成一格（rowspan）；首列的空格、任意列的「同上」当作上一格的延续。
+    // 纯数字与 — ✓ ✗ △ 这类符号是各行各自的取值，碰巧相同也不合并。
+    function mergeCells(t) {
+      if (!t.tBodies[0] || t.querySelector('[rowspan],[colspan]')) return;
+      const rows = Array.prototype.slice.call(t.tBodies[0].rows);
+      const ncol = rows.length ? rows[0].cells.length : 0;
+      if (rows.length < 2 || rows.some(r => r.cells.length !== ncol)) return;
+      const grid = rows.map(r => Array.prototype.slice.call(r.cells));
+      const SKIP = /^[\s—–\-✓✗△?？]*$|^[\d.,\s]+[%x×倍]?$/;
+      let merged = false;
+      for (let c = ncol - 1; c >= 0; c--) {          // 从右往左删格子，左边列的引用不受影响
+        let anchor = null;
+        for (let r = 0; r < grid.length; r++) {
+          const cell = grid[r][c], txt = cell.textContent.trim();
+          const same = anchor && !SKIP.test(txt) && cell.innerHTML.trim() === anchor.innerHTML.trim();
+          if (anchor && ((c === 0 && txt === '') || txt === '同上' || same)) {
+            anchor.rowSpan += 1; cell.remove(); merged = true;
+            if (c === 0) rows[r].classList.add('cont');
+          } else anchor = cell;
+        }
+      }
+      if (merged) t.classList.add('merged');
+      // 首列是长句（如「规则：说明」）时，限定首列宽度，免得把后面的结论列挤成一行几个字
+      if (rows.some(r => !r.classList.contains('cont') && r.cells[0] && r.cells[0].textContent.trim().length > 30))
+        t.classList.add('wide-lead');
+    }
+
+    body.querySelectorAll('table').forEach(t => {
+      let w = t.parentElement;
+      if (!w || !w.classList.contains('tbl-scroll')) {
+        w = document.createElement('div');
+        w.className = 'tbl-scroll';
+        t.parentNode.insertBefore(w, t);
+        w.appendChild(t);
+      }
+      if (docData.id !== 'market') mergeCells(t);     // Market 的表多是矩阵，合并后下面的格子看着像没填
+      // 带合并单元格（rowspan）的表每行格子数不同，按列分类会错位：只包滚动容器，不定列宽
+      if (t.querySelector('[rowspan]')) return;
+      const rows = Array.prototype.slice.call(t.rows);
+      const ncol = rows.reduce((m, r) => Math.max(m, r.cells.length), 0);
+      let allTight = ncol > 0;
+      for (let c = 0; c < ncol; c++) {
+        let longest = 0, wrapped = false;
+        rows.forEach(r => {
+          const cell = r.cells[c];
+          if (!cell || cell.tagName === 'TH') return;   // headers don't decide the class
+          longest = Math.max(longest, (cell.textContent || '').trim().length);
+          if (cell.querySelector('br,ul,ol,p,pre')) wrapped = true;
+        });
+        const tight = !wrapped && longest > 0 && longest <= TIGHT_MAX;
+        if (!tight) allTight = false;
+        rows.forEach(r => {
+          const cell = r.cells[c];
+          if (cell) cell.classList.add(tight ? 'c-tight' : 'c-prose');
+        });
+      }
+      if (allTight) w.classList.add('hug');
+    });
+
+    // External links open in a new tab; local .md links were rewritten by
+    // build.py to #doc:<id> and are handled by the click interceptor below.
+    body.querySelectorAll('a[href]').forEach(a => {
+      const href = a.getAttribute('href') || '';
+      if (/^(https?:|mailto:)/.test(href)) { a.target = '_blank'; a.rel = 'noopener'; }
+    });
+
+    typesetMath(body);
+    article.appendChild(body);
+    docsEl.appendChild(article);
+  });
+
+  // ---- navigation ----------------------------------------------------------
+
+  // Never stretch a table past its natural width. The class pass above sizes
+  // columns, but a table with three short columns and one 20-char prose column
+  // still gets width:100% — the prose column then absorbs ~700px of leftover for
+  // 20 characters, which reads as a broken layout (评测维度 / 视频数 was exactly
+  // that). So measure each table once at width:auto: if its content comfortably
+  // fits the column, let the wrapper hug it (same .hug path all-tight tables take);
+  // otherwise it keeps width:100% and wraps as before. Deferred to activate()
+  // because .doc is display:none until then, and clientWidth would read 0 — hence
+  // the dataset.fit latch, which is only set once a real width was measured.
+  function fitTables(scope) {
+    scope.querySelectorAll('.tbl-scroll').forEach(w => {
+      if (w.dataset.fit || !w.clientWidth) return;
+      w.dataset.fit = '1';
+      const t = w.querySelector('table');
+      if (!t || w.classList.contains('hug')) return;
+      const avail = w.clientWidth;
+      t.style.width = 'auto';
+      const natural = t.scrollWidth;
+      t.style.width = '';
+      if (natural <= avail * 0.94) w.classList.add('hug');
+    });
+  }
+  document.querySelectorAll('.doc.active').forEach(fitTables);
+
+  function activate(id) {
+    const doc = byId[id];
+    if (!doc) return;
+
+    const tabId = tabAncestor(id);
+    document.querySelectorAll('.tab').forEach(
+      tab => tab.classList.toggle('active', tab.dataset.target === tabId)
+    );
+    document.querySelectorAll('.doc').forEach(
+      docEl => docEl.classList.toggle('active', docEl.id === 'doc-' + id)
+    );
+    document.querySelectorAll('.doc.active').forEach(fitTables);
+
+    if (location.hash.slice(1) !== id) history.replaceState(null, '', location.pathname + location.search + '#' + id);   // 写全路径，保证地址栏始终带 index.html
+    window.scrollTo({
+      top: document.querySelector('.tabs-wrap').offsetTop - STICKY_HEADER_HEIGHT,
+      behavior: 'smooth',
+    });
+  }
+
+
+  // ---- Environment 视图切换 ------------------------------------------------
+  // md 里用 <div class="env-view" data-view="web" data-label="Web"> 包住每个视图，
+  // 这里把同一 doc 内的 .view-switch 占位填成按钮组。URL 深链：#env/3d
+  function showView(docEl, key, push) {
+    docEl.querySelectorAll('.env-view').forEach(v => v.classList.toggle('active', v.dataset.view === key));
+    docEl.querySelectorAll('.view-switch a').forEach(b => b.classList.toggle('active', b.dataset.view === key));
+    tabsEl.querySelectorAll('.tab[data-view]').forEach(b => b.classList.toggle('active', b.dataset.view === key));
+    const descEl = docEl.querySelector('.view-desc');
+    const cur    = docEl.querySelector('.env-view[data-view="' + key + '"]');
+    if (descEl && cur) descEl.textContent = cur.dataset.desc || '';
+    fitTables(docEl);
+    if (push) history.replaceState(null, '', location.pathname + location.search + '#' +
+      (SOLO ? key : docEl.id.replace(/^doc-/, '') + '/' + key));
+  }
+  document.querySelectorAll('.doc').forEach(docEl => {
+    const views = docEl.querySelectorAll('.env-view');
+    if (!views.length) return;
+    if (SOLO && docEl.id === 'doc-' + SOLO.id) {
+      // 视图直接当顶部标签；页内那个 Contents 盒子就重复了，换成当前视图的一句话说明
+      docEl.querySelectorAll('.view-switch').forEach(sw => {
+        sw.classList.add('view-desc');
+        sw.classList.remove('view-switch');
+      });
+      views.forEach(v => {
+        const b = document.createElement('button');
+        b.className = 'tab'; b.textContent = v.dataset.label;
+        b.dataset.view = v.dataset.view;
+        b.onclick = () => showView(docEl, v.dataset.view, true);
+        tabsEl.appendChild(b);
+      });
+    } else {
+      docEl.querySelectorAll('.view-switch').forEach(sw => {
+        sw.classList.add('toc');
+        const h = document.createElement('h2');
+        h.textContent = 'Contents';
+        const ul = document.createElement('ul');
+        views.forEach(v => {
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          a.textContent = v.dataset.label; a.dataset.view = v.dataset.view;
+          a.onclick = () => showView(docEl, v.dataset.view, true);
+          li.appendChild(a); ul.appendChild(li);
+        });
+        sw.appendChild(h); sw.appendChild(ul);
+      });
+    }
+    showView(docEl, views[0].dataset.view, false);
+  });
+
+  // ---- 正文按小节折叠 ---------------------------------------------------------
+  // 每个 h3 连同其后直到下一个 h1 / h2 / h3 的兄弟节点包进 .fold-body；点标题收起 / 展开。
+  // 默认全展开；目录或深链跳进收起的小节时自动展开；目录卡片右上角一键全部收起 / 展开。
+  function setFold(h, folded) {
+    const body = h.nextElementSibling;
+    if (!body || !body.classList.contains('fold-body')) return;
+    h.classList.toggle('folded', folded);
+    body.classList.toggle('folded', folded);
+    h.setAttribute('aria-expanded', String(!folded));
+    if (!folded) {
+      body.classList.remove('opening'); void body.offsetWidth; body.classList.add('opening');
+      fitTables(body);
+    }
+  }
+  document.querySelectorAll('.doc h3').forEach(h => {
+    const parent = h.parentElement;
+    if (!parent || parent.closest('nav, table, details, .nt-card, .tbl-pane')) return;
+    const wrap = document.createElement('div');
+    wrap.className = 'fold-body';
+    let n = h.nextSibling;
+    while (n && !(n.nodeType === 1 && /^H[123]$/.test(n.tagName))) {
+      const next = n.nextSibling; wrap.appendChild(n); n = next;
+    }
+    if (!wrap.childNodes.length) return;
+    parent.insertBefore(wrap, h.nextSibling);
+    h.classList.add('foldable');
+    h.tabIndex = 0;
+    h.setAttribute('aria-expanded', 'true');
+    h.title = '点击收起 / 展开本节';
+    h.addEventListener('click', e => {
+      if (e.target.closest('a[href]')) return;
+      if (String(window.getSelection())) return;          // 拖选标题文字划备注时不当作点击
+      setFold(h, !h.classList.contains('folded'));
+    });
+    h.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setFold(h, !h.classList.contains('folded')); }
+    });
+  });
+  // 目录卡片：一键全部收起 / 展开（只管本视图）
+  document.querySelectorAll('.doc .view-toc').forEach(nav => {
+    const scope = nav.closest('.env-view') || nav.parentElement;
+    const heads = () => Array.prototype.slice.call(scope.querySelectorAll('h3.foldable'));
+    if (!heads().length) return;
+    const btn = document.createElement('button');
+    btn.type = 'button'; btn.className = 'fold-all'; btn.textContent = '全部收起';
+    btn.onclick = () => {
+      const anyOpen = heads().some(h => !h.classList.contains('folded'));
+      heads().forEach(h => setFold(h, anyOpen));
+      btn.textContent = anyOpen ? '全部展开' : '全部收起';
+    };
+    nav.appendChild(btn);
+  });
+  // 跳到收起小节里的锚点：先展开所在小节
+  function revealTarget(id) {
+    const t = id && document.getElementById(id);
+    if (!t) return;
+    let b = t.closest('.fold-body.folded');
+    while (b) { setFold(b.previousElementSibling, false); b = b.parentElement && b.parentElement.closest('.fold-body.folded'); }
+    if (t.classList && t.classList.contains('foldable') && t.classList.contains('folded')) setFold(t, false);
+  }
+  document.addEventListener('click', e => {
+    const a = e.target.closest && e.target.closest('a[href^="#"]');
+    if (a) revealTarget(decodeURIComponent(a.getAttribute('href').slice(1)));
+  }, true);
+
+
+  // ---- 可切换分组表 -------------------------------------------------------
+  // md 里 <div class="tbl-tabs"> 包若干 <div class="tbl-pane" data-label data-count>，
+  // 这里生成顶部按钮条，默认显示第一组。
+  document.querySelectorAll('.tbl-tabs').forEach(box => {
+    const panes = Array.prototype.filter.call(box.children, c => c.classList.contains('tbl-pane'));
+    if (!panes.length) return;
+    const bar = document.createElement('div');
+    bar.className = 'tbl-tabs-bar';
+    const show = i => {
+      panes.forEach((p, j) => p.classList.toggle('active', i === j));
+      bar.querySelectorAll('button').forEach((b, j) => b.classList.toggle('active', i === j));
+      fitTables(box);
+    };
+    panes.forEach((p, i) => {
+      const b = document.createElement('button');
+      b.innerHTML = p.dataset.label + '<span class="n">' + p.dataset.count + '</span>';
+      b.onclick = () => show(i);
+      bar.appendChild(b);
+    });
+    box.insertBefore(bar, box.firstChild);
+    show(0);
+  });
+
+  // Intercept in-page doc links (build.py rewrites local .md links to #doc:<id>).
+  docsEl.addEventListener('click', (e) => {
+    const a = e.target.closest('a');
+    if (!a) return;
+    const href  = a.getAttribute('href') || '';
+    // 页内锚点（视图目录）：只滚动，不改 hash——改 hash 会让 #env/3d 这类视图深链失效
+    if (/^#[\w-]+$/.test(href) && !href.startsWith('#doc:')) {
+      const target = a.closest('.doc').querySelector(href);
+      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
+    }
+    const match = href.match(/^#doc:(.+)$/);
+    if (match && byId[match[1]]) {
+      e.preventDefault();
+      // 正文不在本项目里（另一个 html 项目的章）：直接跳过去
+      if (byId[match[1]].href) location.href = byId[match[1]].href;
+      else activate(match[1]);
+    }
+    // External links (target=_blank) and plain #anchors fall through to default.
+  });
+
+  // Deep-link support: accepts both #<id> and #doc:<id> in the URL hash.
+  const [initial, view] = location.hash.slice(1).replace(/^doc:/, '').split('/');
+  if (SOLO) {
+    // 单章站点的深链只剩视图名：#data。老形式 #web/data 也认。
+    const key = view || initial;
+    const docEl = document.getElementById('doc-' + SOLO.id);
+    if (key && docEl.querySelector('.env-view[data-view="' + key + '"]')) showView(docEl, key, false);
+  } else if (initial && byId[initial] && !byId[initial].href) {
+    activate(initial);
+    if (view) showView(document.getElementById('doc-' + initial), view, true);
+  }
+</script>
+
+<!-- kc-expand: tag-system iframe 内打开 modal 时，把发消息的那个 iframe 放大到全屏，
+     modal 悬浮其上；背后铺一层「模糊 + 变暗」遮罩，真实博客页面透过来（不再是图表
+     自己的白底），符合「背景该是什么还是什么，只是模糊一些」。iframe 本身透明，只显示
+     居中的 modal。关闭时精确还原，用占位符保持文档流不跳动。 -->
+<script>
+(function(){
+  var expanded = null;      // 当前被放大的 iframe
+  var savedCss = '';        // 它放大前的 style
+  var placeholder = null;   // 占位符：iframe 变 fixed 后顶住它原来的空间，防止页面回流
+  var scrim = null;         // 变暗 + 模糊遮罩层（盖在博客页面上，iframe 之下）
+  var revealTimer = null;   // 兜底：子页不回 kc-modal-ready 时也要把 iframe 显影
+  var finishTimer = null;   // 兜底：子页不回 kc-revealed 时也要撤遮罩收尾
+  function frameOf(win){
+    var ifr = document.getElementsByTagName('iframe');
+    for (var i = 0; i < ifr.length; i++){
+      if (ifr[i].contentWindow === win) return ifr[i];
+    }
+    return null;
+  }
+  function expand(win){
+    var fr = frameOf(win);
+    if (!fr || expanded) return;
+    expanded = fr; savedCss = fr.getAttribute('style') || '';
+    // 占位符撑住原空间，避免 iframe 脱离文档流导致下方内容上跳
+    var r = fr.getBoundingClientRect();
+    placeholder = document.createElement('div');
+    placeholder.style.cssText = 'height:' + r.height + 'px';
+    fr.parentNode.insertBefore(placeholder, fr);
+    // scrim：模糊+变暗真实页面
+    scrim = document.createElement('div');
+    scrim.style.cssText = 'position:fixed;inset:0;z-index:9998;background:rgba(12,15,20,.5);'
+                        + '-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);';
+    document.body.appendChild(scrim);
+    // iframe 透明铺满，但先 opacity:0 藏起来 —— 放大后的这一两帧里，子页面画的
+    // 还是「行内尺寸的图表」，不藏就会看到那块背景以全屏尺寸闪一下（flash.png）。
+    // 等子页 modal 成形后回 kc-modal-ready，再显影。
+    fr.style.cssText = 'position:fixed;inset:0;width:100vw;height:100vh;'
+                     + 'z-index:9999;border:0;border-radius:0;background:transparent;opacity:0;';
+    document.body.style.overflow = 'hidden';
+    // 等两帧确保 iframe 的新尺寸已生效，再通知子页面开 modal（消除小→大跳动）
+    requestAnimationFrame(function(){ requestAnimationFrame(function(){
+      fr.contentWindow.postMessage({type: 'kc-expand-ack', vw: window.innerWidth, vh: window.innerHeight}, '*');
+    }); });
+    // 兜底：子页面若不回 kc-modal-ready（旧版图表），也不能永远隐身
+    revealTimer = setTimeout(reveal, 600);
+  }
+  // 显影。这里必须再等几帧，不能收到消息就 opacity:1。
+  // iframe 是独立进程：子页在自己进程里 double-rAF 只能证明「子页画完了」，不能证明
+  // 父页的合成器已经取到那一帧。抢跑的结果是父页把 iframe 显影出来，而合成器手上
+  // 还是子页的上一帧 —— 刚按全屏重排、classes 还没生效的标签树，清晰地盖在模糊页面
+  // 上。这就是 flash.png。多等 3 帧（~50ms）让新的子页面帧确定被合成，用户感知不到，
+  // 但闪烁彻底消失。
+  function revealSoon(fn){
+    var n = 0;
+    (function step(){
+      if (++n >= 3) { fn(); return; }
+      requestAnimationFrame(step);
+    })();
+    setTimeout(fn, 150);          // rAF 不跑（后台标签页）时的兜底
+  }
+  function reveal(){
+    clearTimeout(revealTimer); revealTimer = null;
+    var fr = expanded;
+    if (!fr) return;
+    var done = false;
+    revealSoon(function(){
+      if (done || expanded !== fr) return;
+      done = true;
+      fr.style.opacity = '1';
+    });
+  }
+  // 关闭分三步，几何还原和子页恢复内容全部发生在 opacity:0 之下：
+  //   ① collapse(): 先把 iframe 按成透明，再还原几何，然后请子页恢复图表内容。
+  //      这两件事顺序颠倒过来就是上一版残留的 bug —— setAttribute(style, savedCss)
+  //      同时还原了「尺寸」和「不透明」，而子页要等 ack 才恢复内容，中间必然有一帧
+  //      「行内尺寸的空白矩形」。
+  //   ② 子页恢复完内容回 kc-revealed。
+  //   ③ finish(): 同一帧里撤遮罩 + 显影。中间态一帧都不上屏。
+  function collapse(){
+    if (!expanded) return;
+    var fr = expanded;
+    clearTimeout(revealTimer); revealTimer = null;
+    // 隐身 + 还原几何，一次写完：位置、尺寸、边框圆角回到行内，但仍然不可见。
+    // 此时用户看到的还是「模糊的页面」（遮罩还在），iframe 里发生什么都不上屏。
+    fr.setAttribute('style', savedCss + ';opacity:0');
+    // 等两帧确保 iframe 已按行内尺寸重新布局，再让子页把图表放出来 —— 否则子页会
+    // 以全屏尺寸画一两帧。子页恢复完会回 kc-revealed，由 finish() 收尾。
+    requestAnimationFrame(function(){ requestAnimationFrame(function(){
+      try { fr.contentWindow.postMessage({type: 'kc-collapse-ack'}, '*'); } catch(_){}
+    }); });
+    finishTimer = setTimeout(finish, 400);   // 子页不回 kc-revealed 时的兜底
+  }
+  // 撤遮罩 + 显影，同一帧完成。
+  function finish(){
+    clearTimeout(finishTimer); finishTimer = null;
+    if (!expanded) return;
+    var fr = expanded;
+    // 同理：子页说「我恢复好了」不等于父页合成器已经拿到那一帧。抢跑会露出
+    // 「行内尺寸的空白矩形」。等几帧再撤遮罩+显影。
+    revealSoon(function(){
+      if (fr !== expanded) return;
+      if (placeholder) placeholder.remove();
+      if (scrim) scrim.remove();
+      fr.setAttribute('style', savedCss);    // 去掉 opacity:0，恢复原样
+      expanded = null; savedCss = ''; placeholder = null; scrim = null;
+      document.body.style.overflow = '';
+    });
+  }
+  // kc-height: 子页报告自己内容的真实高度，父页把 iframe 高度贴合过去 —— 图表在窄屏
+  // 折行后会变高，写死的行内 height 会把它裁掉（变成 iframe 内的竖向滚动条）。
+  // 放大态的 iframe 是 fixed inset:0，此时不能动它的高度。
+  function fitHeight(win, h){
+    var fr = frameOf(win);
+    if (!fr || fr === expanded || !(h > 0)) return;
+    if (!fr.offsetParent) return;          // 所在小节被收起时 iframe 不可见，报来的高度是 0，不能拿来压扁它
+    fr.style.height = Math.ceil(h) + 'px';
+  }
+  window.addEventListener('message', function(e){
+    if (!e.data) return;
+    if (e.data.type === 'kc-expand')      expand(e.source);
+    if (e.data.type === 'kc-modal-ready') reveal();
+    if (e.data.type === 'kc-collapse')    collapse();
+    if (e.data.type === 'kc-revealed')    finish();
+    if (e.data.type === 'kc-height')      fitHeight(e.source, e.data.h);
+  });
+})();
+</script>
+
+<!-- Gallery lightbox：点卡片全屏运行某个 three.js demo。iframe 点开才建、关闭即销毁，
+     所以任何时刻最多一个活跃 WebGL 上下文（浏览器对并发 WebGL 上下文数有上限，若把 11
+     个 demo 都常驻会被回收、画面变黑）。galOpen 由卡片的 inline onclick 调用（innerHTML
+     注入的节点上，inline handler 照常生效，而 <script> 不会执行，所以逻辑放这里）。 -->
+<script>
+(function(){
+  var ov = null, prevOverflow = '';
+  function onKey(e){ if (e.key === 'Escape') window.galClose(); }
+  window.galOpen = function(card){
+    if (ov) return;                                  // 已有一个在开，忽略
+    var src = card.getAttribute('data-src'),
+        cn  = card.getAttribute('data-title') || '',
+        en  = card.getAttribute('data-en') || '';
+    ov = document.createElement('div');
+    ov.className = 'gal-lightbox';
+    ov.innerHTML =
+      '<div class="gal-lb-panel">'
+    +   '<div class="gal-lb-bar">'
+    +     '<div class="gal-lb-ttl"><b></b><span></span></div>'
+    +     '<div class="gal-lb-act">'
+    +       '<a class="gal-lb-ext" target="_blank" rel="noopener">在新标签打开 ↗</a>'
+    +       '<button class="gal-lb-x" aria-label="关闭">✕</button>'
+    +     '</div>'
+    +   '</div>'
+    +   '<div class="gal-lb-stage"><div class="gal-lb-spin"></div></div>'
+    + '</div>';
+    // 用 textContent 填标题，避免 demo 名里的字符破坏结构
+    ov.querySelector('.gal-lb-ttl b').textContent = cn;
+    ov.querySelector('.gal-lb-ttl span').textContent = en;
+    var ext = ov.querySelector('.gal-lb-ext'); ext.href = src;
+    document.body.appendChild(ov);
+    // 懒建 iframe
+    var ifr = document.createElement('iframe');
+    ifr.className = 'gal-lb-frame';
+    ifr.setAttribute('allow', 'autoplay; fullscreen; xr-spatial-tracking');
+    ifr.addEventListener('load', function(){ if (ov) ov.classList.add('loaded'); });
+    ifr.src = src;
+    ov.querySelector('.gal-lb-stage').appendChild(ifr);
+    prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    requestAnimationFrame(function(){ if (ov) ov.classList.add('show'); });
+    ov.addEventListener('click', function(e){ if (e.target === ov) window.galClose(); });
+    ov.querySelector('.gal-lb-x').onclick = window.galClose;
+    document.addEventListener('keydown', onKey);
+  };
+  window.galClose = function(){
+    if (!ov) return;
+    document.removeEventListener('keydown', onKey);
+    var dead = ov; ov = null;
+    dead.classList.remove('show');
+    document.body.style.overflow = prevOverflow;
+    setTimeout(function(){ dead.remove(); }, 200);   // 移除 = 销毁 iframe、释放 WebGL 上下文
+  };
+})();
+</script>
+
+<!-- 图片放大：正文里 <img onclick="zoomImg(this)" data-cap="…" data-href="…"> 点开全屏看大图，
+     点空白 / Esc 关闭。inline onclick 在 innerHTML 注入的节点上照常生效，逻辑放这里。 -->
+<script>
+(function(){
+  var ov = null;
+  function onKey(e){ if (e.key === 'Escape') close(); }
+  function close(){
+    if (!ov) return;
+    var dead = ov; ov = null;
+    document.removeEventListener('keydown', onKey);
+    dead.classList.remove('show');
+    document.body.style.overflow = '';
+    setTimeout(function(){ dead.remove(); }, 180);
+  }
+  window.zoomImg = function(img){
+    if (ov) return;
+    ov = document.createElement('div');
+    ov.className = 'img-zoom';
+    var big = document.createElement('img');
+    big.src = img.currentSrc || img.src; big.alt = img.alt || '';
+    ov.appendChild(big);
+    var capText = img.getAttribute('data-cap'), href = img.getAttribute('data-href');
+    if (capText || href){
+      var cap = document.createElement('div');
+      cap.className = 'iz-cap';
+      cap.textContent = capText || '';
+      if (href){
+        var a = document.createElement('a');
+        a.href = href; a.target = '_blank'; a.rel = 'noopener'; a.textContent = '看原帖 ↗';
+        cap.appendChild(a);
+      }
+      ov.appendChild(cap);
+    }
+    ov.addEventListener('click', function(e){ if (e.target.tagName !== 'A') close(); });
+    document.body.appendChild(ov);
+    document.body.style.overflow = 'hidden';
+    document.addEventListener('keydown', onKey);
+    requestAnimationFrame(function(){ if (ov) ov.classList.add('show'); });
+  };
+})();
+</script>
+
+<!-- 划词备注：正文只放结论，长解释挂在备注里。备注存 data/notes.json；
+     经 scripts/serve_notes.py 打开时可增删改，其他方式打开只读（用 build 时嵌入的这份）。 -->
+<script>
+// ---- 数据样例画廊：点方块弹出同 id 的 .sg-body；←/→ 翻同一面墙，Esc 或点背景关 ----
+// 弹层就是原位的 .sg-body 本身（加 .open 变成 fixed），不挪节点，所以 .doc 下的样式与划词备注照常生效
+(function () {
+  let cur = null;
+  const mask = document.createElement('div');
+  mask.className = 'sg-mask';
+  mask.addEventListener('click', close);
+
+  function open(tile) {
+    const body = document.getElementById(tile.dataset.sg);
+    if (!body) return;
+    if (cur) cur.body.classList.remove('open');
+    // Example 列的格子挂在表格里，没有 .sg-grid 祖先；退回同一张表，←/→ 就沿着行走
+    const scope = tile.closest('.sg-grid') || tile.closest('table') || document;
+    const tiles = [...scope.querySelectorAll('.sg-tile')];
+    cur = { tile, body, tiles, i: tiles.indexOf(tile) };
+    body.parentNode.insertBefore(mask, body);
+    body.querySelector('.sg-pos').textContent = (cur.i + 1) + ' / ' + tiles.length;
+    body.classList.add('open');
+    body.querySelector('.sg-stage').scrollTop = 0;
+    document.documentElement.classList.add('sg-lock');
+  }
+  function close() {
+    if (!cur) return;
+    cur.body.classList.remove('open');
+    mask.remove();
+    document.documentElement.classList.remove('sg-lock');
+    cur.tile.focus({ preventScroll: true });
+    cur = null;
+  }
+  function step(d) {
+    if (cur) open(cur.tiles[(cur.i + d + cur.tiles.length) % cur.tiles.length]);
+  }
+
+  document.addEventListener('click', e => {
+    const t = e.target.closest('.sg-tile');
+    if (t) return open(t);
+    if (e.target.closest('.sg-x')) close();
+    else if (e.target.closest('.sg-prev')) step(-1);
+    else if (e.target.closest('.sg-next')) step(1);
+  });
+  document.addEventListener('keydown', e => {
+    if (e.target.closest && e.target.closest('textarea, input')) return;
+    if (!cur) {
+      if ((e.key === 'Enter' || e.key === ' ') && e.target.classList && e.target.classList.contains('sg-tile')) {
+        e.preventDefault(); open(e.target);
+      }
+      return;
+    }
+    if (e.key === 'Escape') close();
+    else if (e.key === 'ArrowLeft') step(-1);
+    else if (e.key === 'ArrowRight') step(1);
+  });
+})();
+</script>
+<script>window.NOTES_EMBED = /*__NOTES__*/[];</script>
+<script>
+(function () {
+  const API = new URL('../api/notes', location.href).href;
+  const BLOCK = 'p,li,h2,h3,h4,blockquote,pre,details,.ds-demo,.tl-wrap,.gp-wrap';
+  let notes = window.NOTES_EMBED || [], writable = false, pending = null;
+
+  const docKey = el => (el.closest('.doc').id || '').replace(/^doc-/, '');
+  const clip = s => s.length > 40 ? s.slice(0, 40) + '…' : s;
+  const md = s => window.marked ? marked.parse(s) : s.replace(/[&<]/g, c => c === '&' ? '&amp;' : '&lt;');
+
+  function rootOf(n) {
+    const d = document.getElementById('doc-' + n.doc);
+    return d && (n.view ? d.querySelector('.env-view[data-view="' + n.view + '"]') : d);
+  }
+
+  // 根节点下的正文文本节点拼成一个长串，记下每个节点在串里的起点
+  function index(root) {
+    const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode: t =>
+      t.parentElement.closest('.nt-card,script,style,.katex-mathml') ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT });
+    const nodes = []; let text = '', t;
+    while ((t = w.nextNode())) { nodes.push([t, text.length]); text += t.nodeValue; }
+    return { nodes, text };
+  }
+
+  // quote 可能出现多次，用前后文挑最像的那一处
+  function locate(n, text) {
+    let best = -1, at = -1;
+    for (let i = text.indexOf(n.quote); i >= 0; i = text.indexOf(n.quote, i + 1)) {
+      const s = (n.prefix && text.slice(0, i).endsWith(n.prefix) ? 2 : 0) +
+                (n.suffix && text.slice(i + n.quote.length).startsWith(n.suffix) ? 1 : 0);
+      if (s > best) { best = s; at = i; }
+    }
+    return at;
+  }
+
+  function wrap(n, ix, at) {
+    const end = at + n.quote.length; let last = null;
+    for (const [node, start] of ix.nodes) {
+      const s = Math.max(at, start), e = Math.min(end, start + node.nodeValue.length);
+      if (s >= e || /^(UL|OL|TABLE|TBODY|THEAD|TR)$/.test(node.parentNode.nodeName)) continue;
+      let t = node;
+      if (s > start) t = t.splitText(s - start);
+      if (e - s < t.nodeValue.length) t.splitText(e - s);
+      const m = document.createElement('mark');
+      m.className = 'nt-mark'; m.dataset.nid = n.id;
+      t.parentNode.insertBefore(m, t); m.appendChild(t); last = m;
+    }
+    if (last) last.classList.add('nt-end');
+    return !!last;
+  }
+
+  function clear() {
+    document.querySelectorAll('.nt-card').forEach(c => c.remove());
+    document.querySelectorAll('mark.nt-mark').forEach(m => {
+      const p = m.parentNode; while (m.firstChild) p.insertBefore(m.firstChild, m); m.remove(); p.normalize();
+    });
+  }
+
+  let orphans = 0;
+  function render() {
+    clear(); orphans = 0;
+    for (const n of notes) {
+      const root = rootOf(n); if (!root) continue;
+      const ix = index(root), at = locate(n, ix.text);
+      if (at < 0 || !wrap(n, ix, at)) orphans++;
+    }
+    fab();
+  }
+
+  // 卡片挂在高亮所在的块后面；表格里的高亮挂在整张表后面，列表项里的挂在该项末尾
+  function place(card, el) {
+    const cell = el.closest('td,th');
+    const b = cell ? (cell.closest('.tbl-scroll') || cell.closest('table')) : el.closest(BLOCK);
+    if (!b) return el.after(card);
+    if (b.tagName === 'LI') b.appendChild(card); else b.after(card);
+  }
+
+  function marksOf(id) { return document.querySelectorAll('mark.nt-mark[data-nid="' + id + '"]'); }
+
+  function toggle(id) {
+    const open = document.querySelector('.nt-card[data-nid="' + id + '"]');
+    const ms = marksOf(id);
+    if (open) { open.remove(); ms.forEach(m => m.classList.remove('on')); return; }
+    const n = notes.find(x => x.id === id); if (!n || !ms.length) return;
+    place(card(n, false), ms[ms.length - 1]); ms.forEach(m => m.classList.add('on'));
+  }
+
+  function card(n, editing) {
+    const c = document.createElement('div');
+    c.className = 'nt-card'; c.dataset.nid = n.id || 'new';
+    c.innerHTML = '<div class="nt-head"><span class="nt-q"></span><span class="nt-act"></span></div><div class="nt-main"></div>';
+    c.querySelector('.nt-q').textContent = '“' + clip(n.quote) + '”';
+    const act = c.querySelector('.nt-act'), main = c.querySelector('.nt-main');
+    const btn = (label, fn) => { const b = document.createElement('button'); b.textContent = label; b.onclick = fn; act.appendChild(b); };
+    if (editing) {
+      main.innerHTML = '<textarea placeholder="支持 Markdown"></textarea>';
+      const ta = main.querySelector('textarea'); ta.value = n.body || '';
+      btn('保存', () => save(n, ta.value, c));
+      btn('取消', () => { c.remove(); if (n.id) toggle(n.id); });
+      setTimeout(() => ta.focus(), 0);
+    } else {
+      main.innerHTML = '<div class="nt-body"></div><div class="nt-ts"></div>';
+      main.querySelector('.nt-body').innerHTML = md(n.body || '');
+      main.querySelector('.nt-ts').textContent = n.ts || '';
+      if (writable) {
+        btn('编辑', () => { c.replaceWith(card(n, true)); });
+        btn('删除', () => { if (confirm('删除这条备注？')) post('delete', { id: n.id }); });
+      }
+      btn('收起', () => toggle(n.id));
+    }
+    return c;
+  }
+
+  async function post(op, note) {
+    try {
+      const r = await fetch(API, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ op, note }) });
+      if (!r.ok) throw new Error(r.status);
+      notes = (await r.json()).notes; render(); return true;
+    } catch (e) { alert('备注保存失败：' + e.message); return false; }
+  }
+
+  async function save(n, body, c) {
+    const op = n.id ? 'update' : 'add';
+    if (await post(op, { ...n, body })) {
+      const id = n.id || notes[notes.length - 1].id;
+      toggle(id);
+    }
+  }
+
+  // ---- 划词 → 「＋ 备注」 --------------------------------------------------
+  const add = document.createElement('button');
+  add.className = 'nt-add'; add.textContent = '＋ 备注'; add.hidden = true;
+  document.body.appendChild(add);
+  add.addEventListener('mousedown', e => e.preventDefault());
+  add.addEventListener('click', () => {
+    add.hidden = true; if (!pending) return;
+    place(card(pending.note, true), pending.el);
+    window.getSelection().removeAllRanges();
+  });
+
+  document.addEventListener('mouseup', e => {
+    if (e.target === add || e.target.closest('.nt-card')) return;
+    setTimeout(() => {
+      const sel = window.getSelection();
+      add.hidden = true; pending = null;
+      if (!writable || sel.isCollapsed || !sel.rangeCount) return;
+      const r = sel.getRangeAt(0), el = r.startContainer.nodeType === 1 ? r.startContainer : r.startContainer.parentElement;
+      if (!el.closest('.doc') || el.closest('.nt-card')) return;
+      const view = el.closest('.env-view'), root = view || el.closest('.doc');
+      const ix = index(root); let s = -1, t = -1;
+      for (const [node, start] of ix.nodes) {
+        if (!r.intersectsNode(node)) continue;
+        if (s < 0) s = start + (node === r.startContainer ? r.startOffset : 0);
+        t = start + (node === r.endContainer ? r.endOffset : node.nodeValue.length);
+      }
+      while (s < t && /\s/.test(ix.text[s])) s++;
+      while (t > s && /\s/.test(ix.text[t - 1])) t--;
+      if (s < 0 || t - s < 2) return;
+      pending = { el, note: { doc: docKey(el), view: view ? view.dataset.view : '', quote: ix.text.slice(s, t),
+                              prefix: ix.text.slice(Math.max(0, s - 24), s), suffix: ix.text.slice(t, t + 24) } };
+      const rect = r.getBoundingClientRect();
+      add.style.left = (rect.right + window.scrollX - 60) + 'px';
+      add.style.top = (rect.bottom + window.scrollY + 6) + 'px';
+      add.hidden = false;
+    }, 0);
+  });
+
+  document.addEventListener('click', e => {
+    const m = e.target.closest('mark.nt-mark');
+    if (m && window.getSelection().isCollapsed) toggle(m.dataset.nid);
+  });
+
+  // ---- 右下角：条数 + 全部展开 / 收起 --------------------------------------
+  const fabEl = document.createElement('button');
+  fabEl.className = 'nt-fab'; document.body.appendChild(fabEl);
+  function fab() {
+    const here = notes.filter(n => document.getElementById('doc-' + n.doc)).length;
+    fabEl.hidden = !here && !writable;
+    fabEl.textContent = '备注 ' + here + (orphans ? '（' + orphans + ' 条未定位）' : '') + (writable ? '' : ' · 只读');
+  }
+  fabEl.onclick = () => {
+    const ids = [...new Set([...document.querySelectorAll('mark.nt-mark')].filter(m => m.offsetParent).map(m => m.dataset.nid))];
+    const anyClosed = ids.some(id => !document.querySelector('.nt-card[data-nid="' + id + '"]'));
+    ids.forEach(id => { const open = !!document.querySelector('.nt-card[data-nid="' + id + '"]'); if (open !== anyClosed) toggle(id); });
+  };
+
+  render();
+  fetch(API, { cache: 'no-store' }).then(r => r.ok ? r.json() : Promise.reject())
+    .then(d => { notes = d.notes; writable = true; render(); }).catch(() => {});
+})();
+</script>
+</body>
+</html>
+

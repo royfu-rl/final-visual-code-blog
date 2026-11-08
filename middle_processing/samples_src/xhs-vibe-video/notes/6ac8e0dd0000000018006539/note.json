@@ -1,0 +1,85 @@
+{
+ "note_id": "6ac8e0dd0000000018006539",
+ "url": "https://www.xiaohongshu.com/explore/6ac8e0dd0000000018006539?xsec_token=AB3vw--7Qx53yyzGnC3BavFUYmBpvMKnU27t5RkNI4d_w=&xsec_source=pc_search",
+ "type": "video",
+ "title": "Opus5.5档位越高越好吗？4档盲测",
+ "desc": "用 AI 写代码、做视频的朋友，是不是也纠结过：思考档位到底开多高才值？\n\t\n我做了个实验 👇\n🎯 题目：设计一台连锁机关，每次碰撞都要踩在鼓点上（每一帧都有对错）\n⚙️ 参赛：Opus 5.5 的 medium / high / xhigh / max，各跑一次\n🙈 盲测：四条成片打乱顺序，先猜哪条是 max\n\t\n几个结果：\n⏱ 最快 36 分钟，最慢 2 小时 22 分\n💰 花费：最贵的是最便宜的 6 倍多\n🎬 最贵的那条，不是我最喜欢的\n\t\n我的建议都放在视频最后了，希望能帮你少花冤枉钱。\n你猜中 max 了吗？我自己只猜对了一半😂\n#AI编程[话题]#  #AI工具[话题]#  #ClaudeCode[话题]#  #大模型测评[话题]#  #AI视频制作[话题]#  #效率工具[话题]#  #WeeklyPick[话题]# @HOWTO薯",
+ "tags": [
+  "AI编程",
+  "AI工具",
+  "ClaudeCode",
+  "大模型测评",
+  "AI视频制作",
+  "效率工具",
+  "WeeklyPick"
+ ],
+ "author": "老萨",
+ "user_id": "69fabdcb0000000002001c00",
+ "time": 1791549662000,
+ "ip_location": "浙江",
+ "likes": "255",
+ "collects": "121",
+ "comments_count": "35",
+ "keywords": [
+  "Opus5.5 做视频"
+ ],
+ "duration": 527,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040120/627cc50fbccc66af2f6defdaf23cb0d6/spectrum/1040g0k03263rk0gal8005qfqnn5gg700ubcc4ig!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "雪雨",
+   "content": "视频做的很好，更关心的是怎么不被封",
+   "likes": "0"
+  },
+  {
+   "user": "道一公子",
+   "content": "看最后的钟的精细度就能知道",
+   "likes": "1"
+  },
+  {
+   "user": "momo",
+   "content": "cbda",
+   "likes": "2"
+  },
+  {
+   "user": "鲸落",
+   "content": "@点点 总结测试结果",
+   "likes": "0"
+  },
+  {
+   "user": "渣渣",
+   "content": "@点点 总结一下",
+   "likes": "0"
+  },
+  {
+   "user": "Fussssss",
+   "content": "c感官最好 精细不代表感觉 个人想法",
+   "likes": "0"
+  },
+  {
+   "user": "我永远支持西兰花🥦",
+   "content": "我喜欢 c",
+   "likes": "0"
+  },
+  {
+   "user": "今日不宜工作",
+   "content": "视频挺好，但是文案的 ai 味道太重了[doge]",
+   "likes": "1"
+  },
+  {
+   "user": "低调的奥格斯特",
+   "content": "怎么觉得C更好哎[捂脸R]",
+   "likes": "1"
+  },
+  {
+   "user": "冷靴日记-阿牛",
+   "content": "关注了 这种测评对视频工作者来说 帮助很大",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

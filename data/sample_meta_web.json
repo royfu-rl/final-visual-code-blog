@@ -1,0 +1,167 @@
+[
+ {
+  "name": "Ionic Framework",
+  "industry": {
+   "org": "Ionic"
+  },
+  "impact": "52.7k star",
+  "impact_url": "https://github.com/ionic-team/ionic-framework",
+  "download_url": "https://github.com/ionic-team/ionic-framework"
+ },
+ {
+  "name": "vercel/satori",
+  "industry": {
+   "org": "Vercel"
+  },
+  "impact": "14.1k star",
+  "impact_url": "https://github.com/vercel/satori",
+  "download_url": "https://github.com/vercel/satori"
+ },
+ {
+  "name": "SWE-bench Multimodal",
+  "academic": {
+   "org": "Princeton"
+  },
+  "impact": "10.2k 下载 · 14 likes",
+  "impact_url": "https://huggingface.co/datasets/SWE-bench/SWE-bench_Multimodal",
+  "download_url": "https://huggingface.co/datasets/SWE-bench/SWE-bench_Multimodal"
+ },
+ {
+  "name": "OmniGIRL",
+  "industry": {
+   "org": "Huawei Cloud"
+  },
+  "academic": {
+   "org": "SYSU"
+  },
+  "impact": "206 下载 · 1 likes",
+  "impact_url": "https://huggingface.co/datasets/Deep-Software-Analytics/OmniGIRL",
+  "download_url": "https://huggingface.co/datasets/Deep-Software-Analytics/OmniGIRL"
+ },
+ {
+  "name": "MM-IssueLoc",
+  "industry": {
+   "org": "JD"
+  },
+  "academic": {
+   "org": "Tsinghua"
+  },
+  "impact": "156 下载",
+  "impact_url": "https://huggingface.co/datasets/Jasaxion/MM-IssueLocBench",
+  "download_url": "https://huggingface.co/datasets/Jasaxion/MM-IssueLocBench"
+ },
+ {
+  "name": "WebUI",
+  "academic": {
+   "org": "CMU"
+  },
+  "impact": "132 star",
+  "impact_url": "https://github.com/js0nwu/webui",
+  "download_url": "https://huggingface.co/datasets/biglab/webui-7k"
+ },
+ {
+  "name": "WebMMU",
+  "industry": {
+   "org": "ServiceNow"
+  },
+  "academic": {
+   "org": "Mila"
+  },
+  "impact": "89 下载 · 1 likes",
+  "impact_url": "https://huggingface.co/datasets/McGill-NLP/WebMMU",
+  "download_url": "https://huggingface.co/datasets/McGill-NLP/WebMMU"
+ },
+ {
+  "name": "ronantakizawa/webui",
+  "impact": "1.1k 下载 · 28 likes",
+  "impact_url": "https://huggingface.co/datasets/ronantakizawa/webui",
+  "download_url": "https://huggingface.co/datasets/ronantakizawa/webui"
+ },
+ {
+  "name": "three.js 官方 examples",
+  "industry": {
+   "org": "three.js"
+  },
+  "impact": "117.1k star",
+  "impact_url": "https://github.com/mrdoob/three.js",
+  "download_url": "https://github.com/mrdoob/three.js/tree/dev/examples"
+ },
+ {
+  "name": "pmndrs/examples",
+  "industry": {
+   "org": "Poimandres"
+  },
+  "impact": "132 star",
+  "impact_url": "https://github.com/pmndrs/examples",
+  "download_url": "https://github.com/pmndrs/examples"
+ },
+ {
+  "name": "3DCode",
+  "academic": {
+   "org": "3DCodeBench"
+  },
+  "impact": "79.6k 下载 · 32 likes",
+  "impact_url": "https://huggingface.co/datasets/YipengGao/3DCode",
+  "download_url": "https://huggingface.co/datasets/YipengGao/3DCode"
+ },
+ {
+  "name": "Webflow 可克隆站",
+  "industry": {
+   "org": "Webflow"
+  },
+  "download_url": "https://webflow.com/made-in-webflow"
+ },
+ {
+  "name": "Codrops",
+  "industry": {
+   "org": "Codrops"
+  },
+  "download_url": "https://github.com/codrops"
+ },
+ {
+  "name": "Uiverse",
+  "industry": {
+   "org": "Uiverse"
+  },
+  "impact": "14.0k star",
+  "impact_url": "https://github.com/uiverse-io/galaxy",
+  "download_url": "https://github.com/uiverse-io/galaxy"
+ },
+ {
+  "name": "开源生产级官网",
+  "industry": {
+   "org": "Supabase · Raycast · OpenAI · Resend · Payload · Nuxt"
+  },
+  "download_url": "https://github.com/supabase/supabase/tree/master/apps/www"
+ },
+ {
+  "name": "Experiments with Google",
+  "industry": {
+   "org": "Google"
+  },
+  "download_url": "https://experiments.withgoogle.com/"
+ },
+ {
+  "name": "Hugo 主题",
+  "industry": {
+   "org": "Hugo"
+  },
+  "download_url": "https://themes.gohugo.io/"
+ },
+ {
+  "name": "CGArtPython",
+  "industry": {
+   "org": "CG Art Python"
+  },
+  "impact": "145 star",
+  "impact_url": "https://github.com/CGArtPython/blender_plus_python",
+  "download_url": "https://github.com/CGArtPython/blender_plus_python"
+ },
+ {
+  "name": "Poly Haven",
+  "industry": {
+   "org": "Poly Haven"
+  },
+  "download_url": "https://polyhaven.com/models"
+ }
+]

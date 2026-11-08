@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A9 信噪比</title>
+<style>
+  :root{--ink:#111418;--soft:#5b636e;--line:#e4e7ec;--band:#f6f7f9;--ok:#0b7a4b;--ok-bg:#e6f5ed;--bad:#b42318;--bad-bg:#fdecea;
+        --mono:"SF Mono",ui-monospace,"JetBrains Mono",Menlo,Consolas,monospace}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:transparent;color:var(--ink);
+            font:13px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .top{display:flex;align-items:center;gap:12px;padding:10px 14px;background:var(--band);border-bottom:1px solid var(--line)}
+  .tag{font:600 10.5px/1 var(--mono);letter-spacing:.08em;color:var(--soft);text-transform:uppercase}
+  .query{flex:1;min-width:0;font-size:13.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .rule{font-size:12px;color:var(--soft);white-space:nowrap}
+  button{font:inherit;font-size:12px;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 11px;cursor:pointer}
+  button:hover{border-color:#c5cad3}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:14px}
+  .head{display:flex;align-items:center;gap:8px;margin-bottom:8px;min-height:24px}
+  .side{font:700 12px/1 var(--mono);width:22px;height:22px;border-radius:6px;display:grid;place-items:center;background:var(--ink);color:#fff;flex:none}
+  .pill{font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:999px;flex:none}
+  .ok .pill{color:var(--ok);background:var(--ok-bg)} .bad .pill{color:var(--bad);background:var(--bad-bg)}
+  .say{flex:1;min-width:0;color:var(--soft);font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .open{border:0;background:none;color:#2f6bff;padding:0 2px}
+  .stage{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:10px;background:#eef0f3}
+  .stage iframe{position:absolute;top:0;left:0;width:1280px;height:800px;border:0;transform-origin:0 0;background:#fff}
+  @media (max-width:720px){.grid{grid-template-columns:1fr}.say,.query{white-space:normal}.rule{display:none}}
+  /* 放大态：父页把本 iframe 铺满视口，这里画成居中的大卡片，点卡片外收起 */
+  body.full{height:100vh;display:flex;align-items:center;justify-content:center;padding:28px}
+  body.full .card{width:min(100%,2400px);box-shadow:0 24px 80px rgba(0,0,0,.35)}
+  /* 放大态只放一张、尽量大，A / B 原地切换（空格或方向键），差别最容易看出来 */
+  .flip{display:none;gap:2px;background:#e9ecf1;border-radius:999px;padding:3px}
+  .flip button{border:0;background:none;padding:4px 12px}
+  .flip button.on{background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.12)}
+  body.full .flip{display:inline-flex}
+  body.full .grid{grid-template-columns:1fr}
+  body.full .grid > div{display:none}
+  body.full .grid > div.sel{display:block}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top"><span class="tag">Query</span><span class="query">为智能手表 Pulse One 做发布页</span><span class="rule">A9 · 信噪比</span><span class="flip" title="空格或方向键切换"><button class="on">A 符合</button><button>B 违反</button></span><button id="zoom">放大对比</button></div>
+  <div class="grid">
+    <div class="ok sel"><div class="head"><span class="side">A</span><span class="pill">符合</span><span class="say">产品、标题、价格、一个主按钮，没有多余的东西</span><button class="open" data-v="good">新标签打开</button></div><div class="stage"><iframe title="A" data-v="good"></iframe></div></div>
+    <div class="bad"><div class="head"><span class="side">B</span><span class="pill">违反</span><span class="say">横幅、角标、发光描边、闪光、倒计时、悬浮客服，信息一条没多</span><button class="open" data-v="bad">新标签打开</button></div><div class="stage"><iframe title="B" data-v="bad"></iframe></div></div>
+  </div>
+</div>
+<script>
+(function(){
+  var PAGE = "<!doctype html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>Pulse One<\/title>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link href=\"https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&display=swap\" rel=\"stylesheet\">\n<style>\n  *{box-sizing:border-box;margin:0;padding:0}\n  body{font-family:Sora,system-ui,sans-serif;background:#f1f1ee;color:#111;-webkit-font-smoothing:antialiased;position:relative}\n  a{color:inherit;text-decoration:none}\n  .wrap{max-width:1184px;margin:0 auto;padding:0 52px}\n  nav{display:flex;align-items:center;height:72px;gap:30px;font-size:14px;color:#55575a}\n  .logo{font-weight:700;font-size:18px;color:#111;margin-right:auto;letter-spacing:-.01em}\n  .hero{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:30px 0 40px}\n  .new{font-size:13px;color:#d4561c;font-weight:600;margin-bottom:16px}\n  h1{font-size:68px;line-height:1;letter-spacing:-.04em;font-weight:700;margin-bottom:22px}\n  h1 span{color:#8a8c90;font-weight:400}\n  .sub{font-size:18px;line-height:1.6;color:#55575a;max-width:26em;margin-bottom:34px}\n  .buy{display:flex;align-items:center;gap:26px}\n  .price{font-size:15px;color:#55575a}\n  .price b{display:block;font-size:24px;color:#111;font-weight:600}\n  .btn{background:#111;color:#fff;font-weight:600;font-size:15px;padding:15px 26px;border-radius:999px}\n  .lnk{font-size:15px;font-weight:600;color:#111}\n  .art{height:440px;position:relative;display:grid;place-items:center}\n  .band{position:absolute;width:150px;height:440px;border-radius:40px;background:linear-gradient(#2a2c30,#3a3d42)}\n  .case{position:relative;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#d9dadc,#9a9ca1 70%);display:grid;place-items:center;box-shadow:0 40px 80px rgba(0,0,0,.25)}\n  .face{width:216px;height:216px;border-radius:50%;background:#0d0e10;display:grid;place-items:center;color:#f1f1ee;position:relative}\n  .face b{font-size:44px;font-weight:300;letter-spacing:-.02em}\n  .face span{position:absolute;bottom:52px;font-size:12px;color:#d4561c}\n  .ring{position:absolute;inset:14px;border-radius:50%;border:3px solid #d4561c;border-right-color:transparent;border-bottom-color:transparent;transform:rotate(-20deg)}\n  .specs{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;border-top:1px solid #d9d9d4;padding:30px 0 60px}\n  .specs b{display:block;font-size:20px;font-weight:600;margin-bottom:6px}\n  .specs p{font-size:14.5px;line-height:1.55;color:#55575a}\n  mark{background:none;color:inherit}\n  .only-bad{display:none}\n\n  /* B：同样的产品信息，外面堆满不传达信息的装饰 —— 横幅、角标、发光边、闪光、倒计时 */\n  .bad .only-bad{display:revert}\n  .bad .promo{display:block;background:linear-gradient(90deg,#ff1f5a,#ff8a00,#ff1f5a);color:#fff;text-align:center;font-weight:800;font-size:14px;letter-spacing:.06em;padding:9px;text-transform:uppercase}\n  .bad .new{display:flex;gap:8px}\n  .bad .new em{font-style:normal;color:#fff;font-size:11px;font-weight:800;padding:5px 9px;border-radius:6px;transform:rotate(-3deg)}\n  .bad .new em:nth-child(1){background:#ff1f5a}.bad .new em:nth-child(2){background:#ff8a00}.bad .new em:nth-child(3){background:#7c3aed}\n  .bad h1{text-transform:uppercase;font-weight:800;font-size:58px;background:linear-gradient(90deg,#7c3aed,#ec4899,#f59e0b);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 4px 12px rgba(236,72,153,.45))}\n  .bad h1 span{color:transparent}\n  .bad .sub mark{background:#fde047;padding:0 3px}\n  .bad .stars{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;margin:-18px 0 22px}\n  .bad .stars svg{width:96px;height:18px}\n  .bad .buy{flex-wrap:wrap;gap:12px}\n  .bad .btn{background:linear-gradient(90deg,#7c3aed,#ec4899);box-shadow:0 0 0 3px #fff,0 0 0 5px #ec4899,0 0 24px rgba(236,72,153,.7);text-transform:uppercase;letter-spacing:.04em}\n  .bad .lnk{border:2px dashed #7c3aed;padding:12px 18px;border-radius:12px}\n  .bad .cart{display:inline-block;background:#ff8a00;color:#fff;font-weight:800;font-size:13px;padding:13px 18px;border-radius:12px;box-shadow:0 0 18px rgba(255,138,0,.6);text-transform:uppercase}\n  .bad .price{background:#fff;border:2px solid #ff1f5a;border-radius:12px;padding:6px 12px}\n  .bad .art{background:radial-gradient(circle,#fbcfe8 0,#ede9fe 45%,transparent 70%)}\n  .bad .case{box-shadow:0 0 0 8px #fde047,0 0 0 16px #f472b6,0 0 60px 20px rgba(124,58,237,.5)}\n  .bad .spark{position:absolute;width:34px;height:34px}\n  .bad .s1{left:70px;top:40px}.bad .s2{right:60px;top:110px;width:24px;height:24px}.bad .s3{left:120px;bottom:50px;width:22px;height:22px}.bad .s4{right:110px;bottom:30px}\n  .bad .sticker{position:absolute;right:30px;top:20px;width:110px;height:110px;border-radius:50%;background:#ff1f5a;color:#fff;display:grid;place-items:center;text-align:center;font-weight:800;font-size:15px;line-height:1.1;transform:rotate(12deg);box-shadow:0 0 0 4px #fff,0 8px 20px rgba(0,0,0,.2)}\n  .bad .specs > div{border:2px solid;border-radius:14px;padding:16px}\n  .bad .specs > div:nth-child(1){border-color:#7c3aed}.bad .specs > div:nth-child(2){border-color:#ec4899}.bad .specs > div:nth-child(3){border-color:#f59e0b}\n  .bad .specs b:after{content:\" PRO\";font-size:10px;vertical-align:top;color:#fff;background:#111;padding:2px 5px;border-radius:4px;margin-left:6px}\n  .bad .chat{position:fixed;right:24px;bottom:24px;background:#7c3aed;color:#fff;font-weight:700;font-size:14px;padding:14px 20px;border-radius:999px;box-shadow:0 10px 30px rgba(124,58,237,.5)}\n<\/style>\n<\/head>\n<body class=\"{{V}}\">\n<div class=\"only-bad promo\">Flash sale: 30% off &middot; ends in 02:14:33 &middot; free shipping &middot; free extra strap<\/div>\n<div class=\"wrap\">\n  <nav><a class=\"logo\" href=\"#\">Pulse<\/a><a href=\"#\">Watches<\/a><a href=\"#\">Bands<\/a><a href=\"#\">Health<\/a><a href=\"#\">Support<\/a><\/nav>\n  <section class=\"hero\">\n    <div>\n      <p class=\"new\">New<em class=\"only-bad\">NEW!<\/em><em class=\"only-bad\">HOT<\/em><em class=\"only-bad\">BEST SELLER<\/em><\/p>\n      <h1>Pulse One. <span>Quietly brilliant.<\/span><\/h1>\n      <p class=\"sub\">A titanium watch that tracks your sleep, heart rhythm and training, and lasts <mark>a full week<\/mark> on one charge.<\/p>\n      <div class=\"only-bad stars\"><svg viewBox=\"0 0 100 18\"><g fill=\"#f59e0b\"><path d=\"M9 0l2.6 6 6.4.5-4.9 4.2 1.5 6.3L9 13.6 3.4 17l1.5-6.3L0 6.5 6.4 6z\"/><path transform=\"translate(20)\" d=\"M9 0l2.6 6 6.4.5-4.9 4.2 1.5 6.3L9 13.6 3.4 17l1.5-6.3L0 6.5 6.4 6z\"/><path transform=\"translate(40)\" d=\"M9 0l2.6 6 6.4.5-4.9 4.2 1.5 6.3L9 13.6 3.4 17l1.5-6.3L0 6.5 6.4 6z\"/><path transform=\"translate(60)\" d=\"M9 0l2.6 6 6.4.5-4.9 4.2 1.5 6.3L9 13.6 3.4 17l1.5-6.3L0 6.5 6.4 6z\"/><path transform=\"translate(80)\" d=\"M9 0l2.6 6 6.4.5-4.9 4.2 1.5 6.3L9 13.6 3.4 17l1.5-6.3L0 6.5 6.4 6z\"/><\/g><\/svg>4.9 (12,384 reviews) &middot; Trusted by 2M+<\/div>\n      <div class=\"buy\"><div class=\"price\">From<b>&#36;249<\/b><\/div><a class=\"btn\" href=\"#\">Pre-order<\/a><a class=\"only-bad cart\" href=\"#\">Add to cart<\/a><a class=\"lnk\" href=\"#\">Compare models<\/a><\/div>\n    <\/div>\n    <div class=\"art\">\n      <div class=\"band\"><\/div>\n      <div class=\"case\"><div class=\"face\"><div class=\"ring\"><\/div><b>10:09<\/b><span>7 days left<\/span><\/div><\/div>\n      <svg class=\"only-bad spark s1\" viewBox=\"0 0 24 24\"><path fill=\"#f59e0b\" d=\"M12 0l2.5 9.5L24 12l-9.5 2.5L12 24l-2.5-9.5L0 12l9.5-2.5z\"/><\/svg>\n      <svg class=\"only-bad spark s2\" viewBox=\"0 0 24 24\"><path fill=\"#ec4899\" d=\"M12 0l2.5 9.5L24 12l-9.5 2.5L12 24l-2.5-9.5L0 12l9.5-2.5z\"/><\/svg>\n      <svg class=\"only-bad spark s3\" viewBox=\"0 0 24 24\"><path fill=\"#7c3aed\" d=\"M12 0l2.5 9.5L24 12l-9.5 2.5L12 24l-2.5-9.5L0 12l9.5-2.5z\"/><\/svg>\n      <svg class=\"only-bad spark s4\" viewBox=\"0 0 24 24\"><path fill=\"#f59e0b\" d=\"M12 0l2.5 9.5L24 12l-9.5 2.5L12 24l-2.5-9.5L0 12l9.5-2.5z\"/><\/svg>\n      <div class=\"only-bad sticker\">Only<br>7 left!<\/div>\n    <\/div>\n  <\/section>\n  <section class=\"specs\">\n    <div><b>7-day battery<\/b><p>A full week of tracking, with the always-on display, from a 45-minute charge.<\/p><\/div>\n    <div><b>Heart rhythm alerts<\/b><p>Continuous ECG-grade readings, with a notification if anything looks irregular.<\/p><\/div>\n    <div><b>Titanium, 38 g<\/b><p>Light enough to sleep in, tough enough for the pool and the trail.<\/p><\/div>\n  <\/section>\n<\/div>\n<a class=\"only-bad chat\" href=\"#\">Chat with us!<\/a>\n<\/body>\n<\/html>\n";
+  var W = 1280, H = 800;
+  var full = false, embedded = window.parent !== window;
+  function doc(v){ return PAGE.replace('{{V}}', v); }
+  var frames = [].slice.call(document.querySelectorAll('.stage iframe'));
+  // 一页正文里有十来个对比组件：滚到附近才把两张网页放进去，免得一开页就渲染二十张
+  function load(){ frames.forEach(function(f){ if (!f.srcdoc) f.srcdoc = doc(f.dataset.v); }); }
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){
+      if (es.some(function(e){ return e.isIntersecting; })) { load(); io.disconnect(); }
+    }, {rootMargin: '800px 0px'});
+    io.observe(document.querySelector('.card'));
+  } else load();
+
+  function layout(){
+    var room = full ? window.innerHeight - 56 - 120 : Infinity;   // 放大态按视口高度封顶
+    frames.forEach(function(f){
+      var st = f.parentNode, w = st.clientWidth;
+      var s = Math.min(w / W, room / H);
+      st.style.height = Math.round(H * s) + 'px';
+      f.style.transform = 'translate(' + Math.max(0, (w - W * s) / 2) + 'px,0) scale(' + s + ')';
+    });
+    if (embedded && !full) window.parent.postMessage({type: 'kc-height', h: document.querySelector('.card').offsetHeight + 2}, '*');
+  }
+  window.addEventListener('resize', layout);
+  layout();
+
+  [].slice.call(document.querySelectorAll('.open')).forEach(function(b){
+    b.onclick = function(){
+      var url = URL.createObjectURL(new Blob([doc(b.dataset.v)], {type: 'text/html'}));
+      window.open(url, '_blank');
+      setTimeout(function(){ URL.revokeObjectURL(url); }, 60000);
+    };
+  });
+
+  var panels = [].slice.call(document.querySelectorAll('.grid > div'));
+  var flips = [].slice.call(document.querySelectorAll('.flip button'));
+  var sel = 0;
+  function pick(i){
+    sel = i;
+    panels.forEach(function(p, k){ p.classList.toggle('sel', k === i); });
+    flips.forEach(function(b, k){ b.classList.toggle('on', k === i); });
+    layout();
+  }
+  flips.forEach(function(b, k){ b.onclick = function(){ pick(k); }; });
+
+  var zoom = document.getElementById('zoom');
+  function setFull(on){
+    full = on;
+    document.body.classList.toggle('full', on);
+    zoom.textContent = on ? '收起' : '放大对比';
+    layout();
+  }
+  zoom.onclick = function(){
+    if (!embedded) { setFull(!full); return; }
+    window.parent.postMessage({type: full ? 'kc-collapse' : 'kc-expand'}, '*');
+  };
+  document.body.addEventListener('click', function(e){
+    if (full && e.target === document.body) window.parent.postMessage({type: 'kc-collapse'}, '*');
+  });
+  window.addEventListener('keydown', function(e){
+    if (!full) return;
+    if (e.key === 'Escape') window.parent.postMessage({type: 'kc-collapse'}, '*');
+    if (e.key === ' ' || e.key === 'ArrowLeft' || e.key === 'ArrowRight') { e.preventDefault(); pick(1 - sel); }
+  });
+  // 父页放大 / 还原好 iframe 后回 ack，这边排好版再回话，父页才显影
+  window.addEventListener('message', function(e){
+    if (e.source !== window.parent || !e.data || typeof e.data !== 'object') return;
+    if (e.data.type === 'kc-expand-ack')   { setFull(true);  window.parent.postMessage({type: 'kc-modal-ready'}, '*'); }
+    if (e.data.type === 'kc-collapse-ack') { setFull(false); window.parent.postMessage({type: 'kc-revealed'}, '*'); }
+  });
+})();
+</script>
+</body>
+</html>
+

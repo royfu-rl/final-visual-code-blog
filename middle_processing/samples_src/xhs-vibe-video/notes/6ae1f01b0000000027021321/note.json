@@ -1,0 +1,69 @@
+{
+ "note_id": "6ae1f01b0000000027021321",
+ "url": "https://www.xiaohongshu.com/explore/6ae1f01b0000000027021321?xsec_token=ABUrQj_5U43vWwBIj1tIacyHDNAPQ4_EYo8VvPA0bDHbw=&xsec_source=pc_search",
+ "type": "normal",
+ "title": "开源探索｜让代码成为视频创作的通用语言",
+ "desc": "如果视频可以通过编写和执行代码来构建，会带来怎样的创作可能？\n我们正式开源最新研究成果 SenseNova 6.8 Code2Video : 一个面向代码驱动视频创作的轻量级开源模型。\n\t\n🔍 从代码出发，探索视频创作新路径\nCode2Video 通过生成可执行代码构建与渲染视频，目前聚焦完全由代码实现的短视频创作。初步实验显示，模型在视觉构图与动态编排方面展现出良好能力，也体现了轻量级模型在程序化视频创作中的潜力。\n\t\n💡 让代码成为连接创意与作品的通用语言\n我们期待未来通过代码协同调用不同生成模型与创作工具，实现跨媒介数字内容创作，并逐步拓展至剪辑、合成、动画及三维内容等领域。本次开源正是这一长期探索的初步尝试。\n\t\n🤝 开放模型，也开放创作过程\n为便于社区了解、复现与探索，我们同步开放：\n- 模型权重与配套 Skill\n- 视频生成提示词及完整生成轨迹\n所有展示视频均由模型在配套 Skill 支持下，基于单条提示词一次运行生成。\n\t\n我们希望开放的不只是模型，更是创意转化为作品的过程。欢迎社区共同探索代码驱动视频创作的更多可能！#vibecoding[话题]# #多模态大模型[话题]# #SenseNova[话题]# #商汤大模型[话题]# #商汤日日新[话题]#",
+ "tags": [
+  "vibecoding",
+  "多模态大模型",
+  "SenseNova",
+  "商汤大模型",
+  "商汤日日新"
+ ],
+ "author": "商汤日日新 SenseNova",
+ "user_id": "68f611f200000000370018b5",
+ "time": 1793191963000,
+ "ip_location": "上海",
+ "likes": "95",
+ "collects": "74",
+ "comments_count": "11",
+ "keywords": [
+  "代码生成视频",
+  "视频 skill"
+ ],
+ "duration": null,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040133/79d060cfd1d6335a49e5c04f5675b6db/1040g2sg326saf3844ae05q7m27pdo65ljvuglg8!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040133/921f9b3ce78e6b387a56a8f3ca86c871/1040g2sg326saf3844aeg5q7m27pdo65lm75nvng!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040133/ee96ea10c28d42cae5016329888023a4/1040g2sg326saf3844af05q7m27pdo65lpegcgu8!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040133/c7149fa3a252a1d8da875e71e7cb92c7/1040g2sg326saf3844afg5q7m27pdo65lj8bc4vg!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040133/598d918b84a981df07ca1bf02ec9995c/1040g2sg326saf3844ag05q7m27pdo65l7hn8668!nd_dft_wlteh_webp_3",
+  "http://sns-webpic-qc.xhscdn.com/202611040133/8bbcdd41c1cac15ca02975f80098fc97/1040g2sg326saf3844agg5q7m27pdo65lmvoi2k8!nd_dft_wlteh_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "商汤日日新 SenseNova",
+   "content": "GitHub🔍：OpenSenseNova/SenseNova-6.8-Code2Video",
+   "likes": "1"
+  },
+  {
+   "user": "商汤科技",
+   "content": "我是沙发[嘻嘻R]我为日日新打call",
+   "likes": "1"
+  },
+  {
+   "user": "繁樱之处灼灼银华",
+   "content": "加油[doge]我在用",
+   "likes": "1"
+  },
+  {
+   "user": "袁楚良",
+   "content": "[点赞R][点赞R][点赞R][点赞R][点赞R][点赞R]",
+   "likes": "1"
+  },
+  {
+   "user": "RestNet",
+   "content": "前排[微笑R]",
+   "likes": "1"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg",
+  "images/1.jpg",
+  "images/2.jpg",
+  "images/3.jpg",
+  "images/4.jpg",
+  "images/5.jpg"
+ ]
+}

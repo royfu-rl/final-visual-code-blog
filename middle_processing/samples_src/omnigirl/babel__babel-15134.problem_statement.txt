@@ -1,0 +1,52 @@
+[Bug]: Babel crashes when using `await` as an identifier in ForInOfHead
+### 💻
+
+- [ ] Would you like to work on a fix?
+
+### How are you using Babel?
+
+Other (Next.js, Gatsby, vue-cli, ...)
+
+### Input code
+
+```js
+for( await of [1, 2, 3] )  { console.log(await) }
+```
+
+### Configuration file name
+
+_No response_
+
+### Configuration
+
+_No response_
+
+### Current and expected behavior
+
+Hello,
+
+The input code prints `1`, `2` and `3`:
+```console
+$ node --version
+v18.11.0
+$ node input.js
+1
+2
+3
+```
+However, Babel fails to transpile the input code:
+<img width="446" alt="image" src="https://user-images.githubusercontent.com/68288688/200038280-5710d26b-d188-433c-b675-e83a27e5ef13.png">
+
+
+### Environment
+
+[Reproduction on Babel's own REPL](https://babeljs.io/repl#?browsers=since%202015&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=GYewTgFAhg7lCWAXABCYyDaBGANAJhwGYBdASmWQG9kBjEAOwGcQAbAUwDoWQBzaOJOQC-AKCA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=script&lineWrap=true&presets=env%2Creact%2Cstage-2&prettier=false&targets=&version=7.20.1&externalPlugins=&assumptions=%7B%7D)
+
+### Possible solution
+
+_No response_
+
+### Additional context
+
+_No response_
+

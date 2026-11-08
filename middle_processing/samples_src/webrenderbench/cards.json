@@ -1,0 +1,36 @@
+{
+ "link": "https://huggingface.co/datasets/aleversn/WebRenderBench",
+ "id": "aleversn/WebRenderBench",
+ "cards": [
+  {
+   "img": "1000344_www.elroma.com.br.jpg",
+   "name": "1000344_www.elroma.com.br",
+   "code": [
+    [
+     "index.html",
+     "1000344_www.elroma.com.br.html"
+    ]
+   ]
+  },
+  {
+   "img": "1000846_rev-a-shelf.com_.jpg",
+   "name": "1000846_rev-a-shelf.com_",
+   "code": [
+    [
+     "index.html",
+     "1000846_rev-a-shelf.com_.html"
+    ]
+   ]
+  },
+  {
+   "img": "1000945_www.campos.rj.gov.br_portal_index.php.jpg",
+   "name": "1000945_www.campos.rj.gov.br_portal_index.php",
+   "code": [
+    [
+     "index.html",
+     "1000945_www.campos.rj.gov.br_portal_index.php.html"
+    ]
+   ]
+  }
+ ]
+}

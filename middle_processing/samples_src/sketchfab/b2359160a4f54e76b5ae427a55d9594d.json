@@ -1,0 +1,63 @@
+{
+ "name": "Just a girl",
+ "uid": "b2359160a4f54e76b5ae427a55d9594d",
+ "viewerUrl": "https://sketchfab.com/3d-models/none-b2359160a4f54e76b5ae427a55d9594d",
+ "license": {
+  "uid": "322a749bcfa841b29dff1e8a1bb74b0b",
+  "label": "CC Attribution"
+ },
+ "faceCount": 77725,
+ "vertexCount": 41336,
+ "animationCount": 0,
+ "likeCount": 6464,
+ "viewCount": 386429,
+ "publishedAt": "2020-08-22T21:14:33.552234",
+ "staffpickedAt": "2020-08-25T13:55:52.224937",
+ "archives": {
+  "glb": {
+   "textureCount": 3,
+   "size": 6057616,
+   "type": "glb",
+   "textureMaxResolution": 2048,
+   "faceCount": 77725,
+   "vertexCount": 52437
+  },
+  "gltf": {
+   "textureCount": 3,
+   "size": 5023941,
+   "type": "gltf",
+   "textureMaxResolution": 2048,
+   "faceCount": 77725,
+   "vertexCount": 52437
+  },
+  "source": {
+   "textureCount": null,
+   "size": 9468061,
+   "type": "source",
+   "textureMaxResolution": null,
+   "faceCount": null,
+   "vertexCount": null
+  },
+  "usdz": {
+   "textureCount": null,
+   "size": 2771742,
+   "type": "usdz",
+   "textureMaxResolution": null,
+   "faceCount": null,
+   "vertexCount": null
+  }
+ },
+ "user": "Kensyouen",
+ "tags": [
+  "cute",
+  "freedownload",
+  "maya",
+  "girl",
+  "free",
+  "anime"
+ ],
+ "categories": [
+  "art-abstract",
+  "characters-creatures"
+ ]
+}

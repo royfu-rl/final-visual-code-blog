@@ -1,0 +1,240 @@
+{
+ "id": "shadertoy/Md/Md23RK",
+ "shader_id": "Md23RK",
+ "name": "Polygonal Terrain",
+ "type": "Shader",
+ "language": "GLSL (Shadertoy / WebGL2, GLSL ES 3.00)",
+ "entry": "code.glsl",
+ "multi_file": false,
+ "environment": "Shadertoy / WebGL2",
+ "renders": [
+  "renders/grid00.png",
+  "renders/grid01.png",
+  "renders/grid02.png",
+  "renders/grid03.png",
+  "renders/grid04.png",
+  "renders/grid05.png",
+  "renders/grid06.png",
+  "renders/grid07.png",
+  "renders/grid08.png",
+  "renders/grid09.png",
+  "renders/grid10.png",
+  "renders/grid11.png",
+  "renders/clip.mp4"
+ ],
+ "source": "Shadertoy",
+ "source_url": "https://www.shadertoy.com/view/Md23RK",
+ "license": "CC-BY-NC-SA-3.0",
+ "license_source": "default",
+ "author": "fizzer",
+ "description": "An experiment to produce a terrain using a variant of the diamond-square algorithm. Requires optimisation.",
+ "tags": [
+  "raymarching",
+  "terrain",
+  "polygon",
+  "lowpoly",
+  "minimalist"
+ ],
+ "likes": 71,
+ "views": 2817,
+ "date": "2014-01-30",
+ "date_unix": 1391124356,
+ "published": 1,
+ "parent_id": "",
+ "parent_name": "",
+ "num_passes": 1,
+ "pass_types": [
+  "image"
+ ],
+ "passes": [
+  {
+   "name": "",
+   "type": "image",
+   "code_chars": 2036,
+   "inputs": [],
+   "outputs": []
+  }
+ ],
+ "external_assets": [],
+ "has_common_pass": false,
+ "render": {
+  "id": "Md23RK",
+  "status": "ok",
+  "resolution": [
+   640,
+   360
+  ],
+  "wrapper_version": 1,
+  "engine": "native-d3d12",
+  "grid": [
+   {
+    "file": "grid00.png",
+    "iTime": 0.0,
+    "iMouse": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mouse": "idle",
+    "iFrame": 0,
+    "nonblack_frac": 1.0
+   },
+   {
+    "file": "grid01.png",
+    "iTime": 1.0,
+    "iMouse": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mouse": "idle",
+    "iFrame": 60,
+    "nonblack_frac": 1.0
+   },
+   {
+    "file": "grid02.png",
+    "iTime": 2.0,
+    "iMouse": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mouse": "idle",
+    "iFrame": 120,
+    "nonblack_frac": 1.0
+   },
+   {
+    "file": "grid03.png",
+    "iTime": 4.0,
+    "iMouse": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mouse": "idle",
+    "iFrame": 240,
+    "nonblack_frac": 1.0
+   },
+   {
+    "file": "grid04.png",
+    "iTime": 8.0,
+    "iMouse": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mouse": "idle",
+    "iFrame": 480,
+    "nonblack_frac": 1.0
+   },
+   {
+    "file": "grid05.png",
+    "iTime": 16.0,
+    "iMouse": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mouse": "idle",
+    "iFrame": 960,
+    "nonblack_frac": 1.0
+   },
+   {
+    "file": "grid06.png",
+    "iTime": 0.0,
+    "iMouse": [
+     448.0,
+     216.0,
+     448.0,
+     216.0
+    ],
+    "mouse": "drag",
+    "iFrame": 0,
+    "nonblack_frac": 1.0
+   },
+   {
+    "file": "grid07.png",
+    "iTime": 1.0,
+    "iMouse": [
+     448.0,
+     216.0,
+     448.0,
+     216.0
+    ],
+    "mouse": "drag",
+    "iFrame": 60,
+    "nonblack_frac": 1.0
+   },
+   {
+    "file": "grid08.png",
+    "iTime": 2.0,
+    "iMouse": [
+     448.0,
+     216.0,
+     448.0,
+     216.0
+    ],
+    "mouse": "drag",
+    "iFrame": 120,
+    "nonblack_frac": 1.0
+   },
+   {
+    "file": "grid09.png",
+    "iTime": 4.0,
+    "iMouse": [
+     448.0,
+     216.0,
+     448.0,
+     216.0
+    ],
+    "mouse": "drag",
+    "iFrame": 240,
+    "nonblack_frac": 1.0
+   },
+   {
+    "file": "grid10.png",
+    "iTime": 8.0,
+    "iMouse": [
+     448.0,
+     216.0,
+     448.0,
+     216.0
+    ],
+    "mouse": "drag",
+    "iFrame": 480,
+    "nonblack_frac": 1.0
+   },
+   {
+    "file": "grid11.png",
+    "iTime": 16.0,
+    "iMouse": [
+     448.0,
+     216.0,
+     448.0,
+     216.0
+    ],
+    "mouse": "drag",
+    "iFrame": 960,
+    "nonblack_frac": 1.0
+   }
+  ],
+  "clip": {
+   "file": "clip.mp4",
+   "fps": 20,
+   "seconds": 4.0,
+   "frames": 80
+  },
+  "rendered_at": "2026-06-20 10:39:57",
+  "compiled": true,
+  "render_seconds": 2.48,
+  "renderer": "D3D12 (NVIDIA GeForce RTX 2080 Ti)"
+ },
+ "curator": "wang",
+ "status": "rendered"
+}

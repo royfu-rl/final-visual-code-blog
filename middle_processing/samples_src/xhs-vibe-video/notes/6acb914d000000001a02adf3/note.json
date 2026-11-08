@@ -1,0 +1,49 @@
+{
+ "note_id": "6acb914d000000001a02adf3",
+ "url": "https://www.xiaohongshu.com/explore/6acb914d000000001a02adf3?xsec_token=ABy8oDcatVbkkl_B3KWyHR9Lp-6TK9RLRn2GR27IyWeow=&xsec_source=pc_search",
+ "type": "video",
+ "title": "用Claude直出2分钟的诺奖短片，太惊艳了",
+ "desc": "Claude 这两天上了个新功能 Claude Motion：写代码直出视频，画面、音效、背景音乐一次出齐，效果还不错。配音我用的是 ElevenLabs。\n\t\n正好拿刚得诺贝尔文学奖的安妮·卡森练手，做了支 2 分 20 秒的短片。\n\t\n一个小发现：用 Claude 写 Web Audio API 合成的音效，听起来都挺雷同。想要有点不一样的质感，建议有条件的话自己上音效模型，比如 ElevenLabs Sound Effects v2。\n#vibecoding[话题]# #claude[话题]# #AIGC[话题]# @科技薯",
+ "tags": [
+  "vibecoding",
+  "claude",
+  "AIGC"
+ ],
+ "author": "AI甜妹Alisa",
+ "user_id": "5bcf4f67f4978b0001b75462",
+ "time": 1791725901000,
+ "ip_location": "江苏",
+ "likes": "80",
+ "collects": "73",
+ "comments_count": "8",
+ "keywords": [
+  "Claude Code 做视频",
+  "Claude 产品宣传片",
+  "Claude 做视频",
+  "Claude 口播视频"
+ ],
+ "duration": 139,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040135/ab3e6341c9cc94b2233e25a189bbc8af/spectrum/1040g34o3266fl49dl8104bj8un7mel322156dj8!nd_dft_wgth_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "北隈堂",
+   "content": "[合十R]请问这个用了多少额度",
+   "likes": "0"
+  },
+  {
+   "user": "巴里奥狮Barrios",
+   "content": "claude motion直接在claude code里调用吗？",
+   "likes": "0"
+  },
+  {
+   "user": "偶然的羽毛",
+   "content": "每天都在为cc的能力心动！",
+   "likes": "2"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}

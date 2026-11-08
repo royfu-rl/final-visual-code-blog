@@ -1,0 +1,89 @@
+{
+ "note_id": "6abb7af20000000015002680",
+ "url": "https://www.xiaohongshu.com/explore/6abb7af20000000015002680?xsec_token=ABV14hYFiIAGypBC1an5YMe1FoIpL3BlJjwYZvKJI4FcQ=&xsec_source=pc_search",
+ "type": "video",
+ "title": "为了让codex也能达到opus5.5的审美",
+ "desc": "我收集了opus5.5 动态视频 和 动效网站的 大合集\n这个视频全程cc直出无人工剪辑参与\n网站/项目本身包含从动效预览到描述到prompt，部分原作者由 youmind收录 或 来自 mia-lab 的项目\n\t\n以此为基础，我正在把各个动效蒸馏出来，用到的组件和脚手架做拆解，让供Astra或sonnet或更小的模型直接挑选使用，这个步骤也已经做的差不多了，测试好了就开源出来\n如果感兴趣这个视频本身怎么做的（这个就并非一句话直出了）我也可以分享下\n\t\n#AI[话题]# #howto用好AI[话题]# #AI实用技巧howto[话题]# #永恒的绚美[话题]# #就单纯的想分享[话题]#",
+ "tags": [
+  "AI",
+  "howto用好AI",
+  "AI实用技巧howto",
+  "永恒的绚美",
+  "就单纯的想分享"
+ ],
+ "author": "AI伐木工",
+ "user_id": "5afa5399f7e8b93cb0dbe715",
+ "time": 1790671602000,
+ "ip_location": null,
+ "likes": "1110",
+ "collects": "1099",
+ "comments_count": "27",
+ "keywords": [
+  "Claude 产品宣传片",
+  "Claude 动效设计",
+  "Claude 口播视频",
+  "Claude 数据可视化动画",
+  "Codex 做视频",
+  "Opus5.5 做视频",
+  "vibe video"
+ ],
+ "duration": 60,
+ "images": [
+  "http://sns-webpic-qc.xhscdn.com/202611040105/aa52aeaa1e662ddc420df6ddc72685cf/spectrum/1040g34o325moh2n8k6104a5bbk9pjpol8970q6o!nd_dft_wgth_webp_3"
+ ],
+ "comments": [
+  {
+   "user": "AI伐木工",
+   "content": "10.27更新了100个case \nopus-5-5-unified-gallery  github",
+   "likes": "0"
+  },
+  {
+   "user": "音乐史Mia学姐",
+   "content": "网站在哪呀",
+   "likes": "1"
+  },
+  {
+   "user": "番薯🍠",
+   "content": "求你了 发我吧[皱眉R]",
+   "likes": "0"
+  },
+  {
+   "user": "Grass草草草草",
+   "content": "害，还是底层逻辑不一样，这些效果只会让你的codex风死板。",
+   "likes": "7"
+  },
+  {
+   "user": "山芋树",
+   "content": "老大可以更新一下吗？又出了好多作品[doge]",
+   "likes": "1"
+  },
+  {
+   "user": "刹意",
+   "content": "牛逼，正在苦恼不能用Claude做视频",
+   "likes": "1"
+  },
+  {
+   "user": "薇九",
+   "content": "我需要",
+   "likes": "0"
+  },
+  {
+   "user": "白小菜",
+   "content": "求分享",
+   "likes": "0"
+  },
+  {
+   "user": "momo",
+   "content": "用cc做的吗",
+   "likes": "0"
+  },
+  {
+   "user": "安妮儿（横穿加拿大版）",
+   "content": "老大 谢谢你！！！[哭惹R]",
+   "likes": "0"
+  }
+ ],
+ "image_files": [
+  "images/0.jpg"
+ ]
+}
